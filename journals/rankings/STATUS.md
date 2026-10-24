@@ -2,7 +2,7 @@
 
 Updated: 2026-10-24
 
-ABS/AJG is the Editor-Collector freeze `rankings_abs_ajg_20261024` under `journals/rankings/abs_ajg/releases/`. Other ranking systems are not in this layer yet. Directory chips are unchanged: FT50, ABDC A*/A/B/C, Top 5, and UTD24 stay on the editor directory. This layer does not add an ABS chip.
+ABS/AJG is the Editor-Collector freeze `rankings_abs_ajg_20261024` under `journals/rankings/abs_ajg/releases/`. CNRS is `rankings_cnrs_20261024` (7,361 rows; ratings 1, 1e, 1g, 1eg, 2, 3, 4; years 2011–2015 and 2017–2020; domain in `field`). Handelsblatt/VWL is `rankings_handelsblatt_vwl_20261024` (42,478 rows; years 1998–2020; continuous `weight`; letter class when present). The Rankings page also reads the membership catalogs already in `journals/`: FT50 (50, April 2026 list), UTD24 (24), Top 5 (5), and ABDC A*/A/B/C (219 / 630 / 861 / 941, the 2025 list). Those four catalogs are not copied into this folder. FT50, UTD24, and Top 5 have no grades. Directory chips are unchanged. This layer does not add an ABS chip. Raw PDFs and xlsx are not committed.
 
 These files are journal grades. They are not mastheads. Raw CABS portal extracts (`/workspace/abs-ajg/`) are not committed.
 
@@ -24,4 +24,14 @@ Long panel: 7,245 rows. Unmatched row-years: 1,478 (20.4%). Match methods on the
 
 ## Page
 
-`site/rankings.html` filters by ranking system, edition year, and rating, and searches by journal title. `python scripts/build_site.py` writes `site/rankings-data.js` from this freeze.
+`site/rankings.html` filters by ranking system, edition, rating, and field, and searches by journal title. ABDC uses one system and the rating filter A* / A / B / C. The field filter lists subjects on the selected edition (ABS/AJG `field`, CNRS domain, ABDC `field_for`). Handelsblatt/VWL adds a Weight column. FT50, UTD24, and Top 5 leave rating and field empty. `python scripts/build_site.py` writes `site/rankings-data.js` from these freezes and those catalogs.
+
+| System | Rows |
+|--------|------|
+| ABS/AJG | 7,245 |
+| CNRS | 7,361 |
+| Handelsblatt/VWL | 42,478 |
+| FT50 | 50 |
+| UTD24 | 24 |
+| Top 5 | 5 |
+| ABDC | 2,651 |

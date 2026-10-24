@@ -83,8 +83,10 @@ references to root-absolute paths (``/style.css``); on project Pages those
 resolve at the user-site root instead of ``/econ-journal-dispersion/``.
 
 ``main`` also runs ``scripts/build_rankings.py``, which writes
-``site/rankings-data.js`` from ``journals/rankings/``. That page is journal
-grades (ABS/AJG), not appointments, and it does not add directory chips.
+``site/rankings-data.js`` from the ABS/AJG, CNRS, and Handelsblatt/VWL
+freezes and the FT50, UTD24, Top 5, and ABDC catalogs. That page is journal
+grades, weights, and membership lists, not appointments, and it does not
+add directory chips.
 """
 
 from __future__ import annotations

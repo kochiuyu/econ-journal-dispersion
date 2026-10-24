@@ -2,9 +2,9 @@
 
 Rating catalogs. These files are not editorial boards and they are not appointments.
 
-The editor directory chips (FT50, ABDC A*/A/B/C, Top 5, UTD24) stay on the directory. This folder is the rankings layer. The public page is `site/rankings.html`.
+The editor directory chips (FT50, ABDC A*/A/B/C, Top 5, UTD24) stay on the directory. This folder is the ABS/AJG rankings layer. The public page is `site/rankings.html`.
 
-More ranking systems can be added later. ABS/AJG is the first one.
+That page also lists CNRS and Handelsblatt/VWL from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column and no field. The Field column is ABS/AJG `field`, the CNRS domain, or ABDC `field_for`. Handelsblatt/VWL shows the published weight.
 
 ## Pinned release
 
@@ -29,4 +29,24 @@ Grade columns:
 
 ## Build
 
-`python scripts/build_site.py` runs `scripts/build_rankings.py`, which reads this freeze and writes `site/rankings-data.js`. That file is generated and is not committed. The Pages workflow already runs `scripts/build_site.py`.
+## Other pinned releases
+
+`cnrs/releases/rankings_cnrs_20261024/`
+
+CNRS Section 37 categories for 2011–2015 and 2017–2020. Ratings are `1`, `1e`, `1g`, `1eg`, `2`, `3`, `4`. `field` is the domain code. Raw PDFs are not in this repository.
+
+`handelsblatt_vwl/releases/rankings_handelsblatt_vwl_20261024/`
+
+Forschungsmonitoring VWL weights for 1998–2020, plus the 2015 Handelsblatt journal list. `weight` is the published continuous value. `rating` is the letter class when the freeze has one, and blank on the 2015 PDF rows. Raw xlsx and PDFs are not in this repository.
+
+`python scripts/build_site.py` runs `scripts/build_rankings.py`, which reads these freezes and `journals/catalog_ft50.csv`, `catalog_utd24.csv`, `catalog_top5.csv`, and `catalog_abdc_{a_star,a,b,c}.csv`, then writes `site/rankings-data.js`. That file is generated and is not committed. The Pages workflow already runs `scripts/build_site.py`.
+
+| System | Rows |
+|--------|------|
+| ABS/AJG | 7,245 (five editions) |
+| CNRS | 7,361 (nine editions) |
+| Handelsblatt/VWL | 42,478 (1998–2020) |
+| FT50 | 50 (April 2026 list, no grades) |
+| UTD24 | 24 (no grades) |
+| Top 5 | 5 (no grades) |
+| ABDC | 2,651 (A* 219, A 630, B 861, C 941; 2025 list) |
