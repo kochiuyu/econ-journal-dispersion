@@ -1,0 +1,1938 @@
+{
+  "I103320735": {
+    "country_code": "IT",
+    "display_name": "Universit\u00e0 Cattolica del Sacro Cuore",
+    "latitude": 45.46427,
+    "longitude": 9.18951,
+    "ror": "https://ror.org/03h7r5v07",
+    "type": "education"
+  },
+  "I103531236": {
+    "country_code": "US",
+    "display_name": "Boston College",
+    "latitude": 42.35843,
+    "longitude": -71.05977,
+    "ror": "https://ror.org/02n2fzt79",
+    "type": "education"
+  },
+  "I107639228": {
+    "country_code": "US",
+    "display_name": "University of Notre Dame",
+    "latitude": 41.70019,
+    "longitude": -86.23793,
+    "ror": "https://ror.org/00mkhxb43",
+    "type": "education"
+  },
+  "I107672454": {
+    "country_code": "US",
+    "display_name": "Dartmouth College",
+    "latitude": 43.70229,
+    "longitude": -72.28954,
+    "ror": "https://ror.org/049s0rh22",
+    "type": "education"
+  },
+  "I108192572": {
+    "country_code": "CA",
+    "display_name": "HEC Montr\u00e9al",
+    "latitude": 45.50884,
+    "longitude": -73.58781,
+    "ror": "https://ror.org/05ww3wq27",
+    "type": "education"
+  },
+  "I108403487": {
+    "country_code": "PL",
+    "display_name": "Warsaw University of Technology",
+    "latitude": 52.22977,
+    "longitude": 21.01178,
+    "ror": "https://ror.org/00y0xnp53",
+    "type": "education"
+  },
+  "I110002522": {
+    "country_code": "GB",
+    "display_name": "University of Essex",
+    "latitude": 51.88920974731445,
+    "longitude": 0.9042099714279175,
+    "ror": "https://ror.org/02nkf1q06",
+    "type": "education"
+  },
+  "I1118541": {
+    "country_code": "GB",
+    "display_name": "University of East Anglia",
+    "latitude": 52.62783,
+    "longitude": 1.29834,
+    "ror": "https://ror.org/026k5mg93",
+    "type": "education"
+  },
+  "I111979921": {
+    "country_code": "US",
+    "display_name": "Northwestern University",
+    "latitude": 42.04114,
+    "longitude": -87.69006,
+    "ror": "https://ror.org/000e0be47",
+    "type": "education"
+  },
+  "I114017466": {
+    "country_code": "AU",
+    "display_name": "University of Technology Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732,
+    "ror": "https://ror.org/03f0f6041",
+    "type": "education"
+  },
+  "I114457229": {
+    "country_code": "CH",
+    "display_name": "University of Geneva",
+    "latitude": 46.20222,
+    "longitude": 6.14569,
+    "ror": "https://ror.org/01swzsf04",
+    "type": "education"
+  },
+  "I116555385": {
+    "country_code": "RU",
+    "display_name": "New Economic School",
+    "latitude": 55.697994232177734,
+    "longitude": 37.39384841918945,
+    "ror": "https://ror.org/033904843",
+    "type": "education"
+  },
+  "I118501908": {
+    "country_code": "RU",
+    "display_name": "National Research University Higher School of Economics",
+    "latitude": 55.75204,
+    "longitude": 37.61781,
+    "ror": "https://ror.org/055f7t516",
+    "type": "education"
+  },
+  "I11932220": {
+    "country_code": "ES",
+    "display_name": "Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats",
+    "latitude": 41.38879,
+    "longitude": 2.15899,
+    "ror": "https://ror.org/0371hy230",
+    "type": "nonprofit"
+  },
+  "I119878761": {
+    "country_code": "US",
+    "display_name": "Federal Reserve Bank of Atlanta",
+    "latitude": 33.7828254699707,
+    "longitude": -84.38509368896484,
+    "ror": "https://ror.org/05qg1tz58",
+    "type": "other"
+  },
+  "I121820613": {
+    "country_code": "US",
+    "display_name": "Louisiana State University",
+    "latitude": 30.44332,
+    "longitude": -91.18747,
+    "ror": "https://ror.org/05ect4e57",
+    "type": "education"
+  },
+  "I121934306": {
+    "country_code": "US",
+    "display_name": "Tufts University",
+    "latitude": 42.41843,
+    "longitude": -71.10616,
+    "ror": "https://ror.org/05wvpxv85",
+    "type": "education"
+  },
+  "I122411786": {
+    "country_code": "US",
+    "display_name": "California Institute of Technology",
+    "latitude": 34.14778,
+    "longitude": -118.14452,
+    "ror": "https://ror.org/05dxps055",
+    "type": "education"
+  },
+  "I123387679": {
+    "country_code": "SE",
+    "display_name": "Uppsala University",
+    "latitude": 59.85882,
+    "longitude": 17.63889,
+    "ror": "https://ror.org/048a87296",
+    "type": "education"
+  },
+  "I124055696": {
+    "country_code": "DK",
+    "display_name": "University of Copenhagen",
+    "latitude": 55.67594,
+    "longitude": 12.56553,
+    "ror": "https://ror.org/035b05819",
+    "type": "education"
+  },
+  "I124357947": {
+    "country_code": "GB",
+    "display_name": "University of London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/04cw6st05",
+    "type": "education"
+  },
+  "I125749732": {
+    "country_code": "CA",
+    "display_name": "Western University",
+    "latitude": 42.98339,
+    "longitude": -81.23304,
+    "ror": "https://ror.org/02grkyz14",
+    "type": "education"
+  },
+  "I1279858714": {
+    "country_code": "US",
+    "display_name": "Center for Economic and Policy Research",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/01vqjmx11",
+    "type": "nonprofit"
+  },
+  "I1288051870": {
+    "country_code": "FR",
+    "display_name": "Organisation de Coop\u00e9ration et de D\u00e9veloppement Economiques",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/0438wbg98",
+    "type": "government"
+  },
+  "I12912129": {
+    "country_code": "US",
+    "display_name": "Northeastern University",
+    "latitude": 42.35843,
+    "longitude": -71.05977,
+    "ror": "https://ror.org/04t5xt781",
+    "type": "education"
+  },
+  "I1294671590": {
+    "country_code": "FR",
+    "display_name": "Centre National de la Recherche Scientifique",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/02feahw73",
+    "type": "government"
+  },
+  "I129604602": {
+    "country_code": "AU",
+    "display_name": "The University of Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732,
+    "ror": "https://ror.org/0384j8v12",
+    "type": "education"
+  },
+  "I129774422": {
+    "country_code": "AT",
+    "display_name": "University of Vienna",
+    "latitude": 48.20849,
+    "longitude": 16.37208,
+    "ror": "https://ror.org/03prydq77",
+    "type": "education"
+  },
+  "I130769515": {
+    "country_code": "US",
+    "display_name": "Pennsylvania State University",
+    "latitude": 40.79339,
+    "longitude": -77.86,
+    "ror": "https://ror.org/04p491231",
+    "type": "education"
+  },
+  "I130785548": {
+    "country_code": "US",
+    "display_name": "Clark University",
+    "latitude": 42.26259,
+    "longitude": -71.80229,
+    "ror": "https://ror.org/04123ky43",
+    "type": "education"
+  },
+  "I1310145890": {
+    "country_code": "US",
+    "display_name": "International Monetary Fund",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/05m4rmw09",
+    "type": "other"
+  },
+  "I1317239608": {
+    "country_code": "US",
+    "display_name": "Federal Reserve",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/05fk5tr28",
+    "type": "other"
+  },
+  "I132053463": {
+    "country_code": "BE",
+    "display_name": "Universit\u00e9 Libre de Bruxelles",
+    "latitude": 50.85045,
+    "longitude": 4.34878,
+    "ror": "https://ror.org/01r9htc13",
+    "type": "education"
+  },
+  "I1321305853": {
+    "country_code": "US",
+    "display_name": "National Bureau of Economic Research",
+    "latitude": 42.3751,
+    "longitude": -71.10561,
+    "ror": "https://ror.org/04grmx538",
+    "type": "nonprofit"
+  },
+  "I1330701686": {
+    "country_code": "IT",
+    "display_name": "Collegio Carlo Alberto",
+    "latitude": 44.9994,
+    "longitude": 7.68236,
+    "ror": "https://ror.org/0397knh37",
+    "type": "education"
+  },
+  "I1334287468": {
+    "country_code": "GB",
+    "display_name": "Nottingham University Hospitals NHS Trust",
+    "latitude": 52.9536,
+    "longitude": -1.15047,
+    "ror": "https://ror.org/05y3qh794",
+    "type": "healthcare"
+  },
+  "I1334329717": {
+    "country_code": "US",
+    "display_name": "World Bank",
+    "latitude": 38.895111083984375,
+    "longitude": -77.03636932373047,
+    "ror": "https://ror.org/00ae7jd04",
+    "type": "other"
+  },
+  "I134386540": {
+    "country_code": "US",
+    "display_name": "Louisiana State University Agricultural Center",
+    "latitude": 30.44332,
+    "longitude": -91.18747,
+    "ror": "https://ror.org/01b8rza40",
+    "type": "education"
+  },
+  "I13469542": {
+    "country_code": "BE",
+    "display_name": "Vrije Universiteit Brussel",
+    "latitude": 50.85045,
+    "longitude": 4.34878,
+    "ror": "https://ror.org/006e5kg04",
+    "type": "education"
+  },
+  "I135310074": {
+    "country_code": "US",
+    "display_name": "University of Wisconsin\u2013Madison",
+    "latitude": 43.07305,
+    "longitude": -89.40123,
+    "ror": "https://ror.org/01y2jtd41",
+    "type": "education"
+  },
+  "I136199984": {
+    "country_code": "US",
+    "display_name": "Harvard University",
+    "latitude": 42.3751,
+    "longitude": -71.10561,
+    "ror": "https://ror.org/03vek6s52",
+    "type": "education"
+  },
+  "I136722135": {
+    "country_code": "US",
+    "display_name": "Claremont Graduate University",
+    "latitude": 34.0966796875,
+    "longitude": -117.71977996826172,
+    "ror": "https://ror.org/0157pnt69",
+    "type": "education"
+  },
+  "I138006243": {
+    "country_code": "US",
+    "display_name": "University of Arizona",
+    "latitude": 32.22174,
+    "longitude": -110.92648,
+    "ror": "https://ror.org/03m2x1q45",
+    "type": "education"
+  },
+  "I139264467": {
+    "country_code": "KR",
+    "display_name": "Seoul National University",
+    "latitude": 37.566,
+    "longitude": 126.9784,
+    "ror": "https://ror.org/04h9pn542",
+    "type": "education"
+  },
+  "I13955877": {
+    "country_code": "IL",
+    "display_name": "Bar-Ilan University",
+    "latitude": 32.08227,
+    "longitude": 34.81065,
+    "ror": "https://ror.org/03kgsv495",
+    "type": "education"
+  },
+  "I139607695": {
+    "country_code": "GB",
+    "display_name": "Institute for Fiscal Studies",
+    "latitude": 51.50852966308594,
+    "longitude": -0.12574000656604767,
+    "ror": "https://ror.org/04r1cjx59",
+    "type": "facility"
+  },
+  "I141945490": {
+    "country_code": "CA",
+    "display_name": "University of British Columbia",
+    "latitude": 49.24966,
+    "longitude": -123.11934,
+    "ror": "https://ror.org/03rmrcq20",
+    "type": "education"
+  },
+  "I142263535": {
+    "country_code": "GB",
+    "display_name": "University of Nottingham",
+    "latitude": 52.9536,
+    "longitude": -1.15047,
+    "ror": "https://ror.org/01ee9ar58",
+    "type": "education"
+  },
+  "I142631665": {
+    "country_code": "FR",
+    "display_name": "\u00c9cole nationale des ponts et chauss\u00e9es",
+    "latitude": 48.85,
+    "longitude": 2.6,
+    "ror": "https://ror.org/02nwvxz07",
+    "type": "education"
+  },
+  "I145311948": {
+    "country_code": "US",
+    "display_name": "Johns Hopkins University",
+    "latitude": 39.29038,
+    "longitude": -76.61219,
+    "ror": "https://ror.org/00za53h95",
+    "type": "education"
+  },
+  "I145608581": {
+    "country_code": "US",
+    "display_name": "University of Miami",
+    "latitude": 25.72149,
+    "longitude": -80.26838,
+    "ror": "https://ror.org/02dgjyy92",
+    "type": "education"
+  },
+  "I146416000": {
+    "country_code": "US",
+    "display_name": "University of Kansas",
+    "latitude": 38.97167,
+    "longitude": -95.23525,
+    "ror": "https://ror.org/001tmjg57",
+    "type": "education"
+  },
+  "I146563203": {
+    "country_code": "CN",
+    "display_name": "University of International Business and Economics",
+    "latitude": 39.9075,
+    "longitude": 116.39723,
+    "ror": "https://ror.org/05khqpb71",
+    "type": "education"
+  },
+  "I149213910": {
+    "country_code": "BE",
+    "display_name": "University of Antwerp",
+    "latitude": 51.22047,
+    "longitude": 4.40026,
+    "ror": "https://ror.org/008x57b05",
+    "type": "education"
+  },
+  "I150468666": {
+    "country_code": "US",
+    "display_name": "Emory University",
+    "latitude": 33.749,
+    "longitude": -84.38798,
+    "ror": "https://ror.org/03czfpz43",
+    "type": "education"
+  },
+  "I150744194": {
+    "country_code": "JP",
+    "display_name": "Waseda University",
+    "latitude": 35.68949890136719,
+    "longitude": 139.69171142578125,
+    "ror": "https://ror.org/00ntfnx83",
+    "type": "education"
+  },
+  "I153648349": {
+    "country_code": "GB",
+    "display_name": "University of Leicester",
+    "latitude": 52.6386,
+    "longitude": -1.13169,
+    "ror": "https://ror.org/04h699437",
+    "type": "education"
+  },
+  "I154032705": {
+    "country_code": "IT",
+    "display_name": "Einaudi Institute for Economics and Finance",
+    "latitude": 41.891929626464844,
+    "longitude": 12.511329650878906,
+    "ror": "https://ror.org/04e874t64",
+    "type": "facility"
+  },
+  "I154425047": {
+    "country_code": "CA",
+    "display_name": "University of Alberta",
+    "latitude": 53.55014,
+    "longitude": -113.46871,
+    "ror": "https://ror.org/0160cpw27",
+    "type": "education"
+  },
+  "I158934434": {
+    "country_code": "CN",
+    "display_name": "Zhongnan University of Economics and Law",
+    "latitude": 30.58333,
+    "longitude": 114.26667,
+    "ror": "https://ror.org/04yqxxq63",
+    "type": "education"
+  },
+  "I161318765": {
+    "country_code": "US",
+    "display_name": "University of California, Los Angeles",
+    "latitude": 34.05223,
+    "longitude": -118.24368,
+    "ror": "https://ror.org/046rm7j60",
+    "type": "education"
+  },
+  "I161593684": {
+    "country_code": "SE",
+    "display_name": "Stockholm University",
+    "latitude": 59.32938,
+    "longitude": 18.06871,
+    "ror": "https://ror.org/05f0yaq80",
+    "type": "education"
+  },
+  "I162148367": {
+    "country_code": "CL",
+    "display_name": "Pontificia Universidad Cat\u00f3lica de Chile",
+    "latitude": -33.45694,
+    "longitude": -70.64827,
+    "ror": "https://ror.org/04teye511",
+    "type": "education"
+  },
+  "I162714631": {
+    "country_code": "US",
+    "display_name": "George Mason University",
+    "latitude": 38.84622,
+    "longitude": -77.30637,
+    "ror": "https://ror.org/02jqj7156",
+    "type": "education"
+  },
+  "I164950643": {
+    "country_code": "IL",
+    "display_name": "Open University of Israel",
+    "latitude": 32.1836,
+    "longitude": 34.87386,
+    "ror": "https://ror.org/027z64205",
+    "type": "education"
+  },
+  "I165143802": {
+    "country_code": "AU",
+    "display_name": "The University of Queensland",
+    "latitude": -27.46794,
+    "longitude": 153.02809,
+    "ror": "https://ror.org/00rqy9422",
+    "type": "education"
+  },
+  "I165733156": {
+    "country_code": "US",
+    "display_name": "University of Georgia",
+    "latitude": 33.96095,
+    "longitude": -83.37794,
+    "ror": "https://ror.org/00te3t702",
+    "type": "education"
+  },
+  "I165779595": {
+    "country_code": "AU",
+    "display_name": "The University of Melbourne",
+    "latitude": -37.814,
+    "longitude": 144.96332,
+    "ror": "https://ror.org/01ej9dk98",
+    "type": "education"
+  },
+  "I165932596": {
+    "country_code": "SG",
+    "display_name": "National University of Singapore",
+    "latitude": 1.28967,
+    "longitude": 103.85007,
+    "ror": "https://ror.org/01tgyzw49",
+    "type": "education"
+  },
+  "I166337079": {
+    "country_code": "GB",
+    "display_name": "Queen Mary University of London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/026zzn846",
+    "type": "education"
+  },
+  "I16835326": {
+    "country_code": "GB",
+    "display_name": "University of St Andrews",
+    "latitude": 56.33871,
+    "longitude": -2.79902,
+    "ror": "https://ror.org/02wn5qz54",
+    "type": "education"
+  },
+  "I169381384": {
+    "country_code": "NL",
+    "display_name": "University of Groningen",
+    "latitude": 53.21917,
+    "longitude": 6.56667,
+    "ror": "https://ror.org/012p63287",
+    "type": "education"
+  },
+  "I170201317": {
+    "country_code": "US",
+    "display_name": "University of Pittsburgh",
+    "latitude": 40.44062,
+    "longitude": -79.99589,
+    "ror": "https://ror.org/01an3r305",
+    "type": "education"
+  },
+  "I170486558": {
+    "country_code": "ES",
+    "display_name": "Universitat Pompeu Fabra",
+    "latitude": 41.38879,
+    "longitude": 2.15899,
+    "ror": "https://ror.org/04n0g0b29",
+    "type": "education"
+  },
+  "I170897317": {
+    "country_code": "US",
+    "display_name": "Duke University",
+    "latitude": 35.99403,
+    "longitude": -78.89862,
+    "ror": "https://ror.org/00py81415",
+    "type": "education"
+  },
+  "I171543936": {
+    "country_code": "IT",
+    "display_name": "Free University of Bozen-Bolzano",
+    "latitude": 46.49066925048828,
+    "longitude": 11.33981990814209,
+    "ror": "https://ror.org/012ajp527",
+    "type": "education"
+  },
+  "I173911158": {
+    "country_code": "US",
+    "display_name": "Iowa State University",
+    "latitude": 42.03471,
+    "longitude": -93.61994,
+    "ror": "https://ror.org/04rswrd78",
+    "type": "education"
+  },
+  "I177605424": {
+    "country_code": "US",
+    "display_name": "Amherst College",
+    "latitude": 42.375370025634766,
+    "longitude": -72.51924896240234,
+    "ror": "https://ror.org/028vqfs63",
+    "type": "education"
+  },
+  "I177802217": {
+    "country_code": "DE",
+    "display_name": "University of Mannheim",
+    "latitude": 49.4891,
+    "longitude": 8.46694,
+    "ror": "https://ror.org/031bsb921",
+    "type": "education"
+  },
+  "I177881444": {
+    "country_code": "US",
+    "display_name": "Pomona College",
+    "latitude": 34.0966796875,
+    "longitude": -117.71977996826172,
+    "ror": "https://ror.org/0074grg94",
+    "type": "education"
+  },
+  "I177969490": {
+    "country_code": "DK",
+    "display_name": "University of Southern Denmark",
+    "latitude": 55.39594,
+    "longitude": 10.38831,
+    "ror": "https://ror.org/03yrrjy16",
+    "type": "education"
+  },
+  "I17974374": {
+    "country_code": "BR",
+    "display_name": "Universidade de S\u00e3o Paulo",
+    "latitude": -23.5475,
+    "longitude": -46.63611,
+    "ror": "https://ror.org/036rp1748",
+    "type": "education"
+  },
+  "I180825142": {
+    "country_code": "GB",
+    "display_name": "City, University of London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/04489at23",
+    "type": "education"
+  },
+  "I180923762": {
+    "country_code": "DE",
+    "display_name": "University of Cologne",
+    "latitude": 50.93333,
+    "longitude": 6.95,
+    "ror": "https://ror.org/00rcxh774",
+    "type": "education"
+  },
+  "I181046868": {
+    "country_code": "NO",
+    "display_name": "BI Norwegian Business School",
+    "latitude": 59.91273,
+    "longitude": 10.74609,
+    "ror": "https://ror.org/03ez40v33",
+    "type": "education"
+  },
+  "I181401687": {
+    "country_code": "US",
+    "display_name": "American University",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/052w4zt36",
+    "type": "education"
+  },
+  "I181418319": {
+    "country_code": "FR",
+    "display_name": "SKEMA Business School",
+    "latitude": 50.63391,
+    "longitude": 3.05512,
+    "ror": "https://ror.org/036h8vg94",
+    "type": "education"
+  },
+  "I184558857": {
+    "country_code": "GB",
+    "display_name": "Royal Holloway University of London",
+    "latitude": 51.43158,
+    "longitude": -0.55239,
+    "ror": "https://ror.org/04g2vpn86",
+    "type": "education"
+  },
+  "I184564680": {
+    "country_code": "US",
+    "display_name": "Inter-American Development Bank",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/02gjn4306",
+    "type": "other"
+  },
+  "I184565670": {
+    "country_code": "US",
+    "display_name": "Georgetown University",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/05vzafd60",
+    "type": "education"
+  },
+  "I185071736": {
+    "country_code": "US",
+    "display_name": "Chapman University",
+    "latitude": 33.78778839111328,
+    "longitude": -117.85311126708984,
+    "ror": "https://ror.org/0452jzg20",
+    "type": "education"
+  },
+  "I185492890": {
+    "country_code": "NZ",
+    "display_name": "University of Canterbury",
+    "latitude": -43.53333,
+    "longitude": 172.63333,
+    "ror": "https://ror.org/03y7q9t39",
+    "type": "education"
+  },
+  "I186272606": {
+    "country_code": "CN",
+    "display_name": "Guangdong University of Foreign Studies",
+    "latitude": 23.11667,
+    "longitude": 113.25,
+    "ror": "https://ror.org/00fhc9y79",
+    "type": "education"
+  },
+  "I186335123": {
+    "country_code": "US",
+    "display_name": "East Carolina University",
+    "latitude": 35.61266,
+    "longitude": -77.36635,
+    "ror": "https://ror.org/01vx35703",
+    "type": "education"
+  },
+  "I187481652": {
+    "country_code": "MX",
+    "display_name": "Instituto Tecnol\u00f3gico Aut\u00f3nomo de M\u00e9xico",
+    "latitude": 19.428470611572266,
+    "longitude": -99.1276626586914,
+    "ror": "https://ror.org/029md1766",
+    "type": "education"
+  },
+  "I187531555": {
+    "country_code": "SE",
+    "display_name": "Lund University",
+    "latitude": 55.70584,
+    "longitude": 13.19321,
+    "ror": "https://ror.org/012a77v79",
+    "type": "education"
+  },
+  "I188538660": {
+    "country_code": "US",
+    "display_name": "University of Colorado Boulder",
+    "latitude": 40.01499,
+    "longitude": -105.27055,
+    "ror": "https://ror.org/02ttsq026",
+    "type": "education"
+  },
+  "I188626449": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Lumi\u00e8re Lyon 2",
+    "latitude": 45.74906,
+    "longitude": 4.84789,
+    "ror": "https://ror.org/03rth4p18",
+    "type": "education"
+  },
+  "I189590672": {
+    "country_code": "US",
+    "display_name": "Kansas State University",
+    "latitude": 39.18361,
+    "longitude": -96.57167,
+    "ror": "https://ror.org/05p1j8758",
+    "type": "education"
+  },
+  "I190249584": {
+    "country_code": "AT",
+    "display_name": "Universit\u00e4t Innsbruck",
+    "latitude": 47.26266,
+    "longitude": 11.39454,
+    "ror": "https://ror.org/054pv6659",
+    "type": "education"
+  },
+  "I191208505": {
+    "country_code": "CN",
+    "display_name": "Xiamen University",
+    "latitude": 24.47979,
+    "longitude": 118.08187,
+    "ror": "https://ror.org/00mcjh785",
+    "type": "education"
+  },
+  "I192455969": {
+    "country_code": "CA",
+    "display_name": "York University",
+    "latitude": 43.70643,
+    "longitude": -79.39864,
+    "ror": "https://ror.org/05fq50484",
+    "type": "education"
+  },
+  "I193700539": {
+    "country_code": "NL",
+    "display_name": "Tilburg University",
+    "latitude": 51.555511474609375,
+    "longitude": 5.091300010681152,
+    "ror": "https://ror.org/04b8v1s79",
+    "type": "education"
+  },
+  "I197518295": {
+    "country_code": "DE",
+    "display_name": "IZA - Institute of Labor Economics",
+    "latitude": 50.73438,
+    "longitude": 7.09549,
+    "ror": "https://ror.org/029s44460",
+    "type": "nonprofit"
+  },
+  "I198488067": {
+    "country_code": "NL",
+    "display_name": "Tinbergen Institute",
+    "latitude": 51.9225,
+    "longitude": 4.47917,
+    "ror": "https://ror.org/054xxtt73",
+    "type": "education"
+  },
+  "I198945027": {
+    "country_code": "AT",
+    "display_name": "Central European University",
+    "latitude": 48.20849,
+    "longitude": 16.37208,
+    "ror": "https://ror.org/02zx40v98",
+    "type": "education"
+  },
+  "I200719446": {
+    "country_code": "US",
+    "display_name": "Vanderbilt University",
+    "latitude": 36.16589,
+    "longitude": -86.78444,
+    "ror": "https://ror.org/02vm5rt34",
+    "type": "education"
+  },
+  "I200769079": {
+    "country_code": "HK",
+    "display_name": "Hong Kong University of Science and Technology",
+    "latitude": 22.27832,
+    "longitude": 114.17469,
+    "ror": "https://ror.org/00q4vv597",
+    "type": "education"
+  },
+  "I20089843": {
+    "country_code": "US",
+    "display_name": "Princeton University",
+    "latitude": 40.34872,
+    "longitude": -74.65905,
+    "ror": "https://ror.org/00hx57361",
+    "type": "education"
+  },
+  "I201448701": {
+    "country_code": "US",
+    "display_name": "University of Washington",
+    "latitude": 47.60621,
+    "longitude": -122.33207,
+    "ror": "https://ror.org/00cvxb145",
+    "type": "education"
+  },
+  "I201459984": {
+    "country_code": "CN",
+    "display_name": "Guangdong University Of Finances and Economics",
+    "latitude": 23.116670608520508,
+    "longitude": 113.25,
+    "ror": "https://ror.org/0459pv085",
+    "type": "education"
+  },
+  "I201841394": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 C\u00f4te d'Azur",
+    "latitude": 43.70313,
+    "longitude": 7.26608,
+    "ror": "https://ror.org/019tgvf94",
+    "type": "education"
+  },
+  "I202697423": {
+    "country_code": "CH",
+    "display_name": "University of Zurich",
+    "latitude": 47.36667,
+    "longitude": 8.55,
+    "ror": "https://ror.org/02crff812",
+    "type": "education"
+  },
+  "I203339264": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 de Lyon",
+    "latitude": 45.74906,
+    "longitude": 4.84789,
+    "ror": "https://ror.org/01rk35k63",
+    "type": "education"
+  },
+  "I204337017": {
+    "country_code": "DK",
+    "display_name": "Aarhus University",
+    "latitude": 56.15674,
+    "longitude": 10.21076,
+    "ror": "https://ror.org/01aj84f44",
+    "type": "education"
+  },
+  "I204465549": {
+    "country_code": "US",
+    "display_name": "Washington University in St. Louis",
+    "latitude": 38.62727,
+    "longitude": -90.19789,
+    "ror": "https://ror.org/01yc7t268",
+    "type": "education"
+  },
+  "I205092303": {
+    "country_code": "FR",
+    "display_name": "Institut d'Etudes Politiques de Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/05fe7ax82",
+    "type": "facility"
+  },
+  "I206945453": {
+    "country_code": "DE",
+    "display_name": "Paderborn University",
+    "latitude": 51.71905,
+    "longitude": 8.75439,
+    "ror": "https://ror.org/058kzsd48",
+    "type": "education"
+  },
+  "I21491767": {
+    "country_code": "FR",
+    "display_name": "Aix-Marseille Universit\u00e9",
+    "latitude": 43.29695,
+    "longitude": 5.38107,
+    "ror": "https://ror.org/035xkbk20",
+    "type": "education"
+  },
+  "I219193219": {
+    "country_code": "US",
+    "display_name": "Purdue University West Lafayette",
+    "latitude": 40.42587,
+    "longitude": -86.90807,
+    "ror": "https://ror.org/02dqehb95",
+    "type": "education"
+  },
+  "I22465464": {
+    "country_code": "DE",
+    "display_name": "University of M\u00fcnster",
+    "latitude": 51.96236,
+    "longitude": 7.62571,
+    "ror": "https://ror.org/00pd74e08",
+    "type": "education"
+  },
+  "I241749": {
+    "country_code": "GB",
+    "display_name": "University of Cambridge",
+    "latitude": 52.2,
+    "longitude": 0.11667,
+    "ror": "https://ror.org/013meh722",
+    "type": "education"
+  },
+  "I24943067": {
+    "country_code": "CN",
+    "display_name": "Fudan University",
+    "latitude": 31.22222,
+    "longitude": 121.45806,
+    "ror": "https://ror.org/013q1eq08",
+    "type": "education"
+  },
+  "I2699952": {
+    "country_code": "BR",
+    "display_name": "Pontif\u00edcia Universidade Cat\u00f3lica do Rio de Janeiro",
+    "latitude": -22.90642,
+    "longitude": -43.18223,
+    "ror": "https://ror.org/01dg47b60",
+    "type": "education"
+  },
+  "I2746051580": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Paris Sciences et Lettres",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/013cjyk83",
+    "type": "education"
+  },
+  "I27804330": {
+    "country_code": "US",
+    "display_name": "Brown University",
+    "latitude": 41.82399,
+    "longitude": -71.41283,
+    "ror": "https://ror.org/05gq02987",
+    "type": "education"
+  },
+  "I2799300731": {
+    "country_code": "GB",
+    "display_name": "Norwich Research Park",
+    "latitude": 52.62783,
+    "longitude": 1.29834,
+    "ror": "https://ror.org/0062dz060",
+    "type": "archive"
+  },
+  "I2800387288": {
+    "country_code": "BE",
+    "display_name": "European Commission",
+    "latitude": 50.85045,
+    "longitude": 4.34878,
+    "ror": "https://ror.org/00k4n6c32",
+    "type": "government"
+  },
+  "I2802775521": {
+    "country_code": "MX",
+    "display_name": "Secretariat of Environment and Natural Resources",
+    "latitude": 19.470783233642578,
+    "longitude": -99.19259643554688,
+    "ror": "https://ror.org/036p7gy85",
+    "type": "government"
+  },
+  "I2802905149": {
+    "country_code": "US",
+    "display_name": "Federal Reserve Board of Governors",
+    "latitude": 38.896690368652344,
+    "longitude": -77.04039001464844,
+    "ror": "https://ror.org/00v448643",
+    "type": "government"
+  },
+  "I28290843": {
+    "country_code": "GB",
+    "display_name": "University of Surrey",
+    "latitude": 51.23536,
+    "longitude": -0.57427,
+    "ror": "https://ror.org/00ks66431",
+    "type": "education"
+  },
+  "I29607241": {
+    "country_code": "FR",
+    "display_name": "\u00c9cole Normale Sup\u00e9rieure - PSL",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/05a0dhs15",
+    "type": "other"
+  },
+  "I31721044": {
+    "country_code": "MX",
+    "display_name": "Centro de Investigaci\u00f3n y Docencia Econ\u00f3micas",
+    "latitude": 19.42847,
+    "longitude": -99.12766,
+    "ror": "https://ror.org/014zxe029",
+    "type": "facility"
+  },
+  "I31746571": {
+    "country_code": "AU",
+    "display_name": "UNSW Sydney",
+    "latitude": -33.86785,
+    "longitude": 151.20732,
+    "ror": "https://ror.org/03r8z3t63",
+    "type": "education"
+  },
+  "I32971472": {
+    "country_code": "US",
+    "display_name": "Yale University",
+    "latitude": 41.30815,
+    "longitude": -72.92816,
+    "ror": "https://ror.org/03v76x132",
+    "type": "education"
+  },
+  "I34352273": {
+    "country_code": "NL",
+    "display_name": "Maastricht University",
+    "latitude": 50.84833,
+    "longitude": 5.68889,
+    "ror": "https://ror.org/02jz4aj89",
+    "type": "education"
+  },
+  "I36234482": {
+    "country_code": "GB",
+    "display_name": "University of Bristol",
+    "latitude": 51.45523,
+    "longitude": -2.59665,
+    "ror": "https://ror.org/0524sp257",
+    "type": "education"
+  },
+  "I36258959": {
+    "country_code": "US",
+    "display_name": "University of California San Diego",
+    "latitude": 32.71571,
+    "longitude": -117.16472,
+    "ror": "https://ror.org/0168r3w48",
+    "type": "education"
+  },
+  "I368840534": {
+    "country_code": "US",
+    "display_name": "University of Mississippi",
+    "latitude": 34.36650085449219,
+    "longitude": -89.51924896240234,
+    "ror": "https://ror.org/02teq1165",
+    "type": "education"
+  },
+  "I39555362": {
+    "country_code": "GB",
+    "display_name": "University of Warwick",
+    "latitude": 52.40656,
+    "longitude": -1.51217,
+    "ror": "https://ror.org/01a77tt86",
+    "type": "education"
+  },
+  "I40120149": {
+    "country_code": "GB",
+    "display_name": "University of Oxford",
+    "latitude": 51.75222,
+    "longitude": -1.25596,
+    "ror": "https://ror.org/052gg0110",
+    "type": "education"
+  },
+  "I40347166": {
+    "country_code": "US",
+    "display_name": "University of Chicago",
+    "latitude": 41.85003,
+    "longitude": -87.65005,
+    "ror": "https://ror.org/024mw5h28",
+    "type": "education"
+  },
+  "I4210087131": {
+    "country_code": "FR",
+    "display_name": "Laboratoire d'\u00c9conomie Math\u00e9matique et de Micro\u00e9conomie Appliqu\u00e9e",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/003ckn545",
+    "type": "facility"
+  },
+  "I4210088544": {
+    "country_code": "FR",
+    "display_name": "Centre de Recherche en \u00c9conomie et Management",
+    "latitude": 48.11198,
+    "longitude": -1.67429,
+    "ror": "https://ror.org/0047rmf80",
+    "type": "facility"
+  },
+  "I4210088826": {
+    "country_code": "FR",
+    "display_name": "Centre d'\u00c9conomie de la Sorbonne",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/006shqv80",
+    "type": "facility"
+  },
+  "I4210091279": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Sorbonne Paris Nord",
+    "latitude": 48.95833,
+    "longitude": 2.34167,
+    "ror": "https://ror.org/0199hds37",
+    "type": "education"
+  },
+  "I4210091437": {
+    "country_code": "FR",
+    "display_name": "Sorbonne Paris Cit\u00e9",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/001z21q04",
+    "type": "other"
+  },
+  "I4210092408": {
+    "country_code": "FR",
+    "display_name": "Toulouse School of Economics",
+    "latitude": 43.60426,
+    "longitude": 1.44367,
+    "ror": "https://ror.org/00ff5f522",
+    "type": "education"
+  },
+  "I4210096615": {
+    "country_code": "FR",
+    "display_name": "Groupe de Recherche en Droit, \u00c9conomie, Gestion",
+    "latitude": 43.62235,
+    "longitude": 7.04721,
+    "ror": "https://ror.org/00rfccx09",
+    "type": "facility"
+  },
+  "I4210100400": {
+    "country_code": "PH",
+    "display_name": "Northwestern University",
+    "latitude": 18.1978,
+    "longitude": 120.5957,
+    "ror": "https://ror.org/00m6w7z96",
+    "type": "education"
+  },
+  "I4210114522": {
+    "country_code": "FR",
+    "display_name": "Institut Jean Nicod",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/01qfab443",
+    "type": "facility"
+  },
+  "I4210115356": {
+    "country_code": "QA",
+    "display_name": "Georgetown University in Qatar",
+    "latitude": 25.317901611328125,
+    "longitude": 51.4437370300293,
+    "ror": "https://ror.org/029e47x73",
+    "type": "education"
+  },
+  "I4210116924": {
+    "country_code": "CN",
+    "display_name": "Chinese University of Hong Kong, Shenzhen",
+    "latitude": 22.54554,
+    "longitude": 114.0683,
+    "ror": "https://ror.org/02d5ks197",
+    "type": "education"
+  },
+  "I4210125774": {
+    "country_code": "FR",
+    "display_name": "Institut National de l'Audiovisuel",
+    "latitude": 48.87575912475586,
+    "longitude": 2.350409984588623,
+    "ror": "https://ror.org/02zwkwz55",
+    "type": "other"
+  },
+  "I4210126561": {
+    "country_code": "FR",
+    "display_name": "Institut Louis Bachelier",
+    "latitude": 48.86883544921875,
+    "longitude": 2.3412399291992188,
+    "ror": "https://ror.org/02y5beg61",
+    "type": "nonprofit"
+  },
+  "I4210129108": {
+    "country_code": "FR",
+    "display_name": "Aix-Marseille Sciences Economiques",
+    "latitude": 43.29695,
+    "longitude": 5.38107,
+    "ror": "https://ror.org/02ek9wp67",
+    "type": "facility"
+  },
+  "I4210140326": {
+    "country_code": "GB",
+    "display_name": "Centre for Economic Policy Research",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/04jzmdh37",
+    "type": "nonprofit"
+  },
+  "I4210142724": {
+    "country_code": "FR",
+    "display_name": "Centrale M\u00e9diterran\u00e9e",
+    "latitude": 43.29695,
+    "longitude": 5.38107,
+    "ror": "https://ror.org/040baw385",
+    "type": "education"
+  },
+  "I4210143939": {
+    "country_code": "US",
+    "display_name": "IDinsight",
+    "latitude": 37.77493,
+    "longitude": -122.41942,
+    "ror": "https://ror.org/05ds5y270",
+    "type": "nonprofit"
+  },
+  "I4210146600": {
+    "country_code": "DK",
+    "display_name": "VIVE - The Danish Center for Social Science Research",
+    "latitude": 55.67594,
+    "longitude": 12.56553,
+    "ror": "https://ror.org/0523ssa79",
+    "type": "government"
+  },
+  "I4210147622": {
+    "country_code": "FR",
+    "display_name": "Groupe d'Analyse et de Th\u00e9orie Economique Lyon St Etienne",
+    "latitude": 45.77437,
+    "longitude": 4.77758,
+    "ror": "https://ror.org/042fmc481",
+    "type": "facility"
+  },
+  "I4210148621": {
+    "country_code": "LU",
+    "display_name": "Luxembourg Institute of Socio-Economic Research",
+    "latitude": 49.49583,
+    "longitude": 5.98056,
+    "ror": "https://ror.org/040jf9322",
+    "type": "nonprofit"
+  },
+  "I4210149618": {
+    "country_code": "CN",
+    "display_name": "Guangdong University of Finance",
+    "latitude": 23.11667,
+    "longitude": 113.25,
+    "ror": "https://ror.org/04grzdh47",
+    "type": "education"
+  },
+  "I4210159506": {
+    "country_code": "GB",
+    "display_name": "BresMed",
+    "latitude": 53.385276794433594,
+    "longitude": -1.4693150520324707,
+    "ror": "https://ror.org/05fd45014",
+    "type": "healthcare"
+  },
+  "I4210166444": {
+    "country_code": "FR",
+    "display_name": "Institut de Recherche pour le D\u00e9veloppement",
+    "latitude": 43.29695,
+    "longitude": 5.38107,
+    "ror": "https://ror.org/05q3vnk25",
+    "type": "government"
+  },
+  "I42134832": {
+    "country_code": "ES",
+    "display_name": "Barcelona School of Economics",
+    "latitude": 41.38879,
+    "longitude": 2.15899,
+    "ror": "https://ror.org/02k09n368",
+    "type": "education"
+  },
+  "I43579087": {
+    "country_code": "US",
+    "display_name": "University of Wisconsin\u2013Milwaukee",
+    "latitude": 43.0389,
+    "longitude": -87.90647,
+    "ror": "https://ror.org/031q21x57",
+    "type": "education"
+  },
+  "I4387152941": {
+    "country_code": "FR",
+    "display_name": "Centre d'\u00c9tude des Pathologies Respiratoires",
+    "latitude": 47.39484,
+    "longitude": 0.70398,
+    "ror": "https://ror.org/01vxptj17",
+    "type": "facility"
+  },
+  "I4387154090": {
+    "country_code": "ES",
+    "display_name": "Institut de Pol\u00edtica Econ\u00f2mica i Governan\u00e7a",
+    "latitude": 41.38879,
+    "longitude": 2.15899,
+    "ror": "https://ror.org/03wbt1f24",
+    "type": "facility"
+  },
+  "I4387154094": {
+    "country_code": "",
+    "display_name": "CEPN - Centre d'Economie de l'Universit\u00e9 Paris Nord",
+    "latitude": 48.95832824707031,
+    "longitude": 2.341670036315918,
+    "ror": "https://ror.org/03k32n603",
+    "type": "facility"
+  },
+  "I4387155685": {
+    "country_code": "FR",
+    "display_name": "Paris Jourdan Sciences Economiques",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/03vtagt31",
+    "type": "facility"
+  },
+  "I4401726869": {
+    "country_code": "GB",
+    "display_name": "City St George's, University of London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/047ybhc09",
+    "type": "education"
+  },
+  "I4403386534": {
+    "country_code": "BR",
+    "display_name": "Escola Brasileira de Economia e Finan\u00e7as",
+    "latitude": -22.90642,
+    "longitude": -43.18223,
+    "ror": "https://ror.org/021brj308",
+    "type": "education"
+  },
+  "I4403928399": {
+    "country_code": "",
+    "display_name": "Escola de Economia de S\u00e3o Paulo",
+    "latitude": -23.547500610351562,
+    "longitude": -46.6361083984375,
+    "ror": "https://ror.org/054hyrm55",
+    "type": "education"
+  },
+  "I4405252462": {
+    "country_code": "FR",
+    "display_name": "Centre d\u2019\u00c9conomie et de D\u00e9cision Publique (CEDP)",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/02yv0b554",
+    "type": "facility"
+  },
+  "I4405258264": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Rennes 1",
+    "latitude": 48.11198,
+    "longitude": -1.67429,
+    "ror": "https://ror.org/00crteh33",
+    "type": "education"
+  },
+  "I4405258862": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 de Toulouse",
+    "latitude": 43.60426,
+    "longitude": 1.44367,
+    "ror": "https://ror.org/01ahyrz84",
+    "type": "education"
+  },
+  "I4405259414": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Toulouse Capitole",
+    "latitude": 43.60426,
+    "longitude": 1.44367,
+    "ror": "https://ror.org/027ankh97",
+    "type": "education"
+  },
+  "I4405271375": {
+    "country_code": "US",
+    "display_name": "Stanford Institute for Economic Policy Research",
+    "latitude": 37.42411,
+    "longitude": -122.16608,
+    "ror": "https://ror.org/02bg31g49",
+    "type": "facility"
+  },
+  "I4405273105": {
+    "country_code": "NL",
+    "display_name": "International Institute of Social Studies",
+    "latitude": 52.07667,
+    "longitude": 4.29861,
+    "ror": "https://ror.org/059fp9t53",
+    "type": "education"
+  },
+  "I4405276838": {
+    "country_code": "FR",
+    "display_name": "D\u00e9partement d'\u00e9conomie de Sciences Po",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/00fejzc88",
+    "type": "facility"
+  },
+  "I4405278266": {
+    "country_code": "SG",
+    "display_name": "Energy Studies Institute",
+    "latitude": 1.28967,
+    "longitude": 103.85007,
+    "ror": "https://ror.org/05hhrnv90",
+    "type": "facility"
+  },
+  "I44202434": {
+    "country_code": "BR",
+    "display_name": "Funda\u00e7\u00e3o Getulio Vargas",
+    "latitude": -22.90642,
+    "longitude": -43.18223,
+    "ror": "https://ror.org/01evzkn27",
+    "type": "education"
+  },
+  "I44260953": {
+    "country_code": "DE",
+    "display_name": "Heinrich Heine University D\u00fcsseldorf",
+    "latitude": 51.22319,
+    "longitude": 6.77927,
+    "ror": "https://ror.org/024z2rq82",
+    "type": "education"
+  },
+  "I4432739": {
+    "country_code": "NO",
+    "display_name": "University of Bergen",
+    "latitude": 60.39299,
+    "longitude": 5.32415,
+    "ror": "https://ror.org/03zga2b32",
+    "type": "education"
+  },
+  "I45129253": {
+    "country_code": "GB",
+    "display_name": "University College London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/02jx3x895",
+    "type": "education"
+  },
+  "I4575257": {
+    "country_code": "KR",
+    "display_name": "Hanyang University",
+    "latitude": 37.566,
+    "longitude": 126.9784,
+    "ror": "https://ror.org/046865y68",
+    "type": "education"
+  },
+  "I46860202": {
+    "country_code": "GB",
+    "display_name": "Bank of England",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/04p3y0q03",
+    "type": "other"
+  },
+  "I47508984": {
+    "country_code": "GB",
+    "display_name": "Imperial College London",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/041kmwe10",
+    "type": "education"
+  },
+  "I47818738": {
+    "country_code": "OM",
+    "display_name": "Sultan Qaboos University",
+    "latitude": 23.58413,
+    "longitude": 58.40778,
+    "ror": "https://ror.org/04wq8zb47",
+    "type": "education"
+  },
+  "I5023651": {
+    "country_code": "CA",
+    "display_name": "McGill University",
+    "latitude": 45.50884,
+    "longitude": -73.58781,
+    "ror": "https://ror.org/01pxwe438",
+    "type": "education"
+  },
+  "I51101395": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 Paris 1 Panth\u00e9on-Sorbonne",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/002t25c44",
+    "type": "education"
+  },
+  "I5124864": {
+    "country_code": "CH",
+    "display_name": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+    "latitude": 46.516,
+    "longitude": 6.63282,
+    "ror": "https://ror.org/02s376052",
+    "type": "education"
+  },
+  "I51556381": {
+    "country_code": "US",
+    "display_name": "University of Virginia",
+    "latitude": 38.02931,
+    "longitude": -78.47668,
+    "ror": "https://ror.org/0153tk833",
+    "type": "education"
+  },
+  "I52357470": {
+    "country_code": "US",
+    "display_name": "The Ohio State University",
+    "latitude": 39.96118,
+    "longitude": -82.99879,
+    "ror": "https://ror.org/00rs6vg23",
+    "type": "education"
+  },
+  "I52977244": {
+    "country_code": "BR",
+    "display_name": "Insper",
+    "latitude": -23.547500610351562,
+    "longitude": -46.6361083984375,
+    "ror": "https://ror.org/02nmavx05",
+    "type": "education"
+  },
+  "I52989892": {
+    "country_code": "CH",
+    "display_name": "Bank for International Settlements",
+    "latitude": 47.55839,
+    "longitude": 7.57327,
+    "ror": "https://ror.org/00d062t77",
+    "type": "other"
+  },
+  "I55143463": {
+    "country_code": "IT",
+    "display_name": "University of Turin",
+    "latitude": 45.07049,
+    "longitude": 7.68682,
+    "ror": "https://ror.org/048tbm396",
+    "type": "education"
+  },
+  "I55633929": {
+    "country_code": "US",
+    "display_name": "World Bank Group",
+    "latitude": 38.89511,
+    "longitude": -77.03637,
+    "ror": "https://ror.org/02md09461",
+    "type": "other"
+  },
+  "I55732556": {
+    "country_code": "US",
+    "display_name": "Arizona State University",
+    "latitude": 33.41477,
+    "longitude": -111.90931,
+    "ror": "https://ror.org/03efmqc40",
+    "type": "education"
+  },
+  "I56067802": {
+    "country_code": "FR",
+    "display_name": "Universit\u00e9 de Rennes",
+    "latitude": 48.11109,
+    "longitude": -1.67431,
+    "ror": "https://ror.org/015m7wh34",
+    "type": "education"
+  },
+  "I56590836": {
+    "country_code": "AU",
+    "display_name": "Monash University",
+    "latitude": -37.814,
+    "longitude": 144.96332,
+    "ror": "https://ror.org/02bfwt286",
+    "type": "education"
+  },
+  "I57206974": {
+    "country_code": "US",
+    "display_name": "New York University",
+    "latitude": 40.71427,
+    "longitude": -74.00597,
+    "ror": "https://ror.org/0190ak572",
+    "type": "education"
+  },
+  "I57995698": {
+    "country_code": "FR",
+    "display_name": "Paris School of Economics",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/01qtp1053",
+    "type": "education"
+  },
+  "I59553526": {
+    "country_code": "US",
+    "display_name": "Stony Brook University",
+    "latitude": 40.92565,
+    "longitude": -73.14094,
+    "ror": "https://ror.org/05qghxh33",
+    "type": "education"
+  },
+  "I60668342": {
+    "country_code": "DE",
+    "display_name": "University of Regensburg",
+    "latitude": 49.01512908935547,
+    "longitude": 12.10161018371582,
+    "ror": "https://ror.org/01eezs655",
+    "type": "education"
+  },
+  "I62318514": {
+    "country_code": "DE",
+    "display_name": "University of Duisburg-Essen",
+    "latitude": 51.45657,
+    "longitude": 7.01228,
+    "ror": "https://ror.org/04mz5ra38",
+    "type": "education"
+  },
+  "I63966007": {
+    "country_code": "US",
+    "display_name": "Massachusetts Institute of Technology",
+    "latitude": 42.3751,
+    "longitude": -71.10561,
+    "ror": "https://ror.org/042nb2s44",
+    "type": "education"
+  },
+  "I66946132": {
+    "country_code": "US",
+    "display_name": "University of Maryland, College Park",
+    "latitude": 38.98067,
+    "longitude": -76.93692,
+    "ror": "https://ror.org/047s2c258",
+    "type": "education"
+  },
+  "I68415526": {
+    "country_code": "US",
+    "display_name": "Federal Reserve Bank of Dallas",
+    "latitude": 32.791900634765625,
+    "longitude": -96.80072784423828,
+    "ror": "https://ror.org/05ks2fq79",
+    "type": "other"
+  },
+  "I70768539": {
+    "country_code": "FR",
+    "display_name": "\u00c9cole Nationale Sup\u00e9rieure des Mines de Paris",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/04y8cs423",
+    "type": "education"
+  },
+  "I71209653": {
+    "country_code": "IT",
+    "display_name": "Bocconi University",
+    "latitude": 45.464271545410156,
+    "longitude": 9.189510345458984,
+    "ror": "https://ror.org/05crjpb27",
+    "type": "education"
+  },
+  "I72541430": {
+    "country_code": "CA",
+    "display_name": "Lakehead University",
+    "latitude": 48.38201904296875,
+    "longitude": -89.25018310546875,
+    "ror": "https://ror.org/023p7mg82",
+    "type": "education"
+  },
+  "I74973139": {
+    "country_code": "US",
+    "display_name": "Carnegie Mellon University",
+    "latitude": 40.44062,
+    "longitude": -79.99589,
+    "ror": "https://ror.org/05x2bcf33",
+    "type": "education"
+  },
+  "I77697173": {
+    "country_code": "US",
+    "display_name": "Federal Reserve Bank of Chicago",
+    "latitude": 41.878570556640625,
+    "longitude": -87.633056640625,
+    "ror": "https://ror.org/03n7scr80",
+    "type": "other"
+  },
+  "I78577930": {
+    "country_code": "US",
+    "display_name": "Columbia University",
+    "latitude": 40.71427,
+    "longitude": -74.00597,
+    "ror": "https://ror.org/00hj8s172",
+    "type": "education"
+  },
+  "I79576946": {
+    "country_code": "US",
+    "display_name": "University of Pennsylvania",
+    "latitude": 39.95238,
+    "longitude": -75.16362,
+    "ror": "https://ror.org/00b30xv10",
+    "type": "education"
+  },
+  "I83860666": {
+    "country_code": "FR",
+    "display_name": "HEC Paris",
+    "latitude": 48.75909,
+    "longitude": 2.16966,
+    "ror": "https://ror.org/0423jsj19",
+    "type": "education"
+  },
+  "I84218800": {
+    "country_code": "US",
+    "display_name": "University of California, Davis",
+    "latitude": 38.54491,
+    "longitude": -121.74052,
+    "ror": "https://ror.org/05rrcem69",
+    "type": "education"
+  },
+  "I859038795": {
+    "country_code": "US",
+    "display_name": "Virginia Tech",
+    "latitude": 37.22957,
+    "longitude": -80.41394,
+    "ror": "https://ror.org/02smfhw86",
+    "type": "education"
+  },
+  "I86501945": {
+    "country_code": "US",
+    "display_name": "University of Delaware",
+    "latitude": 39.68372,
+    "longitude": -75.74966,
+    "ror": "https://ror.org/01sbq1a82",
+    "type": "education"
+  },
+  "I86519309": {
+    "country_code": "US",
+    "display_name": "The University of Texas at Austin",
+    "latitude": 30.26715,
+    "longitude": -97.74306,
+    "ror": "https://ror.org/00hj54h04",
+    "type": "education"
+  },
+  "I865915315": {
+    "country_code": "NL",
+    "display_name": "Vrije Universiteit Amsterdam",
+    "latitude": 52.37403,
+    "longitude": 4.88969,
+    "ror": "https://ror.org/008xxew50",
+    "type": "education"
+  },
+  "I87216513": {
+    "country_code": "US",
+    "display_name": "Michigan State University",
+    "latitude": 42.73698,
+    "longitude": -84.48387,
+    "ror": "https://ror.org/05hs6h993",
+    "type": "education"
+  },
+  "I874792244": {
+    "country_code": "IT",
+    "display_name": "European University Institute",
+    "latitude": 43.77925109863281,
+    "longitude": 11.246259689331055,
+    "ror": "https://ror.org/0031wrj91",
+    "type": "education"
+  },
+  "I887064364": {
+    "country_code": "NL",
+    "display_name": "University of Amsterdam",
+    "latitude": 52.37403,
+    "longitude": 4.88969,
+    "ror": "https://ror.org/04dkp9463",
+    "type": "education"
+  },
+  "I90326151": {
+    "country_code": "FR",
+    "display_name": "Ecole des Hautes Etudes Commerciales du Nord",
+    "latitude": 50.69421,
+    "longitude": 3.17456,
+    "ror": "https://ror.org/05q7a8a02",
+    "type": "education"
+  },
+  "I90669466": {
+    "country_code": "FR",
+    "display_name": "\u00c9cole des hautes \u00e9tudes en sciences sociales",
+    "latitude": 48.85341,
+    "longitude": 2.3488,
+    "ror": "https://ror.org/02d9dg697",
+    "type": "facility"
+  },
+  "I909854389": {
+    "country_code": "GB",
+    "display_name": "London School of Economics and Political Science",
+    "latitude": 51.50853,
+    "longitude": -0.12574,
+    "ror": "https://ror.org/0090zs177",
+    "type": "education"
+  },
+  "I91045830": {
+    "country_code": "US",
+    "display_name": "Texas A&M University",
+    "latitude": 30.62798,
+    "longitude": -96.33441,
+    "ror": "https://ror.org/01f5ytq51",
+    "type": "education"
+  },
+  "I913958620": {
+    "country_code": "NL",
+    "display_name": "Erasmus University Rotterdam",
+    "latitude": 51.9225,
+    "longitude": 4.47917,
+    "ror": "https://ror.org/057w15z03",
+    "type": "education"
+  },
+  "I931913249": {
+    "country_code": "NO",
+    "display_name": "Norwegian School of Economics",
+    "latitude": 60.39299,
+    "longitude": 5.32415,
+    "ror": "https://ror.org/04v53s997",
+    "type": "education"
+  },
+  "I9360294": {
+    "country_code": "IT",
+    "display_name": "University of Bologna",
+    "latitude": 44.49381,
+    "longitude": 11.33875,
+    "ror": "https://ror.org/01111rn36",
+    "type": "education"
+  },
+  "I94626330": {
+    "country_code": "DE",
+    "display_name": "University of Bamberg",
+    "latitude": 49.89873,
+    "longitude": 10.90067,
+    "ror": "https://ror.org/01c1w6d29",
+    "type": "education"
+  },
+  "I95457486": {
+    "country_code": "US",
+    "display_name": "University of California, Berkeley",
+    "latitude": 37.87159,
+    "longitude": -122.27275,
+    "ror": "https://ror.org/01an7q238",
+    "type": "education"
+  },
+  "I95674353": {
+    "country_code": "BE",
+    "display_name": "UCLouvain",
+    "latitude": 50.66829,
+    "longitude": 4.61443,
+    "ror": "https://ror.org/02495e989",
+    "type": "education"
+  },
+  "I97018004": {
+    "country_code": "US",
+    "display_name": "Stanford University",
+    "latitude": 37.42411,
+    "longitude": -122.16608,
+    "ror": "https://ror.org/00f54p054",
+    "type": "education"
+  },
+  "I97565354": {
+    "country_code": "CH",
+    "display_name": "University of Lausanne",
+    "latitude": 46.516,
+    "longitude": 6.63282,
+    "ror": "https://ror.org/019whta54",
+    "type": "education"
+  },
+  "I98285908": {
+    "country_code": "JP",
+    "display_name": "The University of Osaka",
+    "latitude": 34.69379,
+    "longitude": 135.50107,
+    "ror": "https://ror.org/035t8zc32",
+    "type": "education"
+  },
+  "I98677209": {
+    "country_code": "GB",
+    "display_name": "University of Edinburgh",
+    "latitude": 55.95206,
+    "longitude": -3.19648,
+    "ror": "https://ror.org/01nrxwf90",
+    "type": "education"
+  },
+  "I99065089": {
+    "country_code": "CN",
+    "display_name": "Tsinghua University",
+    "latitude": 39.9075,
+    "longitude": 116.39723,
+    "ror": "https://ror.org/03cve4549",
+    "type": "education"
+  },
+  "I99464096": {
+    "country_code": "BE",
+    "display_name": "KU Leuven",
+    "latitude": 50.87959,
+    "longitude": 4.70093,
+    "ror": "https://ror.org/05f950310",
+    "type": "education"
+  }
+}

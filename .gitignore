@@ -1,0 +1,22 @@
+# Collector / scrape artifacts (never commit)
+cache/
+raw/
+raw_html/
+scratch/
+logs/
+repec*/
+**/repec*
+*.before_ror.csv
+*.before_impute.csv
+*.before_impute.xlsx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Large HTML / binary dumps
+*.html.gz
+*.warc
+*.warc.gz
