@@ -148,12 +148,16 @@ tbody tr:hover td { background: var(--accent-soft); }
 .u-a { background: #e5f0ea; color: #1c4d38; }
 .u-b { background: #e7eef8; color: #243e6b; }
 .u-c { background: #f1ece6; color: #5c5146; }
+.u-top5 { background: #f6e4e1; color: #6e2c2c; }
+.u-utd24 { background: #e8e6f6; color: #332e66; }
 @media (prefers-color-scheme: dark) {
   .u-ft50 { background: #24343b; color: #d5e4ec; }
   .u-a_star { background: #3d3220; color: #f0d7a6; }
   .u-a { background: #1d3329; color: #c9eadb; }
   .u-b { background: #222a3b; color: #d5e0f5; }
   .u-c { background: #2e2a26; color: #e6ddd4; }
+  .u-top5 { background: #3d2826; color: #f3d2cc; }
+  .u-utd24 { background: #2c2a3d; color: #ddd7f5; }
 }
 
 .pager {

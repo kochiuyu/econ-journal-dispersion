@@ -18,3 +18,5 @@ Excluded: `raw/`, `*.before_impute.*`, Excel duplicates.
 Current editorial boards only (no Wayback history in this stream). Catalog: `journals/catalog_ft50.csv` (FT Research rank list, Apr 2026 revision).
 
 Freeze `editors_current_20261024`: person-only `editor_name` and the same tenure columns on both files in `releases/current/`. Notes: `releases/current/RELEASE_NOTES.md` (pointer) and `../abdc/releases/current/RELEASE_NOTES.md`.
+
+The public directory also tags two subsets of this freeze. Top 5 (`journals/catalog_top5.csv`) is AER, Econometrica, JPE, QJE, and ReStud. Twenty-three UTD24 journals (`journals/catalog_utd24.csv`) are tagged here as well. Neither tag is a separate editor release.
