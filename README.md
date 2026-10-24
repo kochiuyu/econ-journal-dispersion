@@ -39,8 +39,8 @@ data/
 
 | Stream | State in this repo |
 |--------|--------------------|
-| Editors — FT50 | Current-board panels in `releases/current/` |
-| Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` (ROR-enriched where available) |
+| Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_current_20261024` |
+| Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` — same freeze (ROR-enriched where available) |
 | Editors — core49 | Documented in `STATUS.md`; multi-year panels not yet copied into a pinned release |
 | Affiliations (core49 TOC spine) | Canonical articles / affiliations / issues under `releases/canonical/` |
 | Authors (core49) | **In progress** — see `data/authors/STATUS.md`; no analysis dump yet |
