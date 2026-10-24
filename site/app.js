@@ -86,6 +86,7 @@
       continent: params.get("continent") || "",
       country: params.get("country") || "",
       journal: params.get("journal") || "",
+      aff: params.get("aff") || "",
       sort: params.get("sort") || "name",
       dir: params.get("dir") === "desc" ? "desc" : "asc",
       page: page > 0 ? page : 1,
@@ -101,6 +102,7 @@
     if (state.continent) params.set("continent", state.continent);
     if (state.country) params.set("country", state.country);
     if (state.journal) params.set("journal", state.journal);
+    if (state.aff) params.set("aff", state.aff);
     if (state.sort !== "name") params.set("sort", state.sort);
     if (state.dir === "desc") params.set("dir", "desc");
     if (state.page > 1) params.set("page", String(state.page));
@@ -192,6 +194,7 @@
     var continent = state.continent;
     var country = state.country;
     var journal = state.journal;
+    var aff = state.aff;
     var matched = [];
     var uniCounts = {};
     for (var u = 0; u < universes.length; u++) uniCounts[universes[u].id] = 0;
@@ -201,6 +204,7 @@
       var row = rows[index];
       if (mask && (row[3] & mask) === 0) continue;
       if (journal && journals[row[2]] !== journal) continue;
+      if (aff && (row[4] || "") !== aff) continue;
       if (!matchesChoice(continents[row[6]] || "", continent)) continue;
       if (!matchesChoice(countries[row[5]] || "", country)) continue;
       if (role && families[roleFamily[row[1]]] !== role) continue;
@@ -364,6 +368,16 @@
     pageSizeEl.value = String(state.pageSize);
     continentEl.value = state.continent;
     refillCountries();
+    var affNote = document.getElementById("aff-note");
+    if (affNote) {
+      if (state.aff) {
+        affNote.hidden = false;
+        affNote.textContent = "Affiliation filter: " + state.aff + ". Clear removes it.";
+      } else {
+        affNote.hidden = true;
+        affNote.textContent = "";
+      }
+    }
     var chips = universeRow.querySelectorAll(".chip");
     chips.forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
@@ -558,6 +572,7 @@
     state.continent = "";
     state.country = "";
     state.journal = "";
+    state.aff = "";
     state.sort = "name";
     state.dir = "asc";
     state.page = 1;

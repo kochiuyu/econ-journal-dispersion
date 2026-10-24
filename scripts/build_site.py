@@ -82,9 +82,27 @@ The published URL is https://kochiuyu.github.io/econ-journal-dispersion/
 references to root-absolute paths (``/style.css``); on project Pages those
 resolve at the user-site root instead of ``/econ-journal-dispersion/``.
 
-``main`` also runs ``scripts/build_rankings.py``, which writes
-``site/rankings-data.js`` from ``journals/rankings/``. That page is journal
-grades (ABS/AJG), not appointments, and it does not add directory chips.
+``main`` also writes ``site/journals-data.js`` and ``site/institutions-data.js``
+from those collapsed appointments, then runs ``scripts/build_rankings.py``,
+which writes ``site/rankings-data.js``. Journals and institutions regroup the
+same boards. They do not add directory chips. Rankings are journal grades
+(ABS/AJG), not appointments.
+
+Journal and institution pages
+-----------------------------
+``site/journals-data.js`` is one row per journal display name, the same string
+the directory's journal filter uses. Counts are appointments, distinct editor
+names, and distinct countries. List badges are the union of those appointment
+masks. ABDC ``field_for`` is joined from the journal catalogs on ``journal_id``
+(the release id, or the FT50 catalog id when the names match), otherwise on
+the normalized journal name. The board link is the most common ``source_url``
+on that journal, or the catalog ``board_url`` when the release has none.
+
+``site/institutions-data.js`` is one row per institution. The key is ``ror_id``
+when the collapsed row has one, otherwise the normalized affiliation
+(whitespace collapsed, Unicode-casefold). The display name is the most common
+affiliation string for that key. Country and continent are the most common
+non-empty values. Appointments with no ROR id and no affiliation are omitted.
 """
 
 from __future__ import annotations
@@ -95,13 +113,15 @@ import re
 import subprocess
 import sys
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
 DATA_JS = SITE_DIR / "data.js"
+JOURNALS_JS = SITE_DIR / "journals-data.js"
+INSTITUTIONS_JS = SITE_DIR / "institutions-data.js"
 
 # Served at https://kochiuyu.github.io/econ-journal-dispersion/
 PAGES_BASE = "/econ-journal-dispersion/"
@@ -240,6 +260,7 @@ class Rec:
     url: str = ""
     ror_id: str = ""
     confidence: str = ""
+    journal_id: str = ""
 
     def mask(self) -> int:
         bits = 0
@@ -391,11 +412,24 @@ def fill_blanks(primary: Rec, other: Rec) -> None:
     if not primary.role and other.role:
         primary.role = other.role
         primary.role_key = other.role_key
+    if not primary.journal_id and other.journal_id:
+        primary.journal_id = other.journal_id
+    # Keep a ROR id only when it belongs to the affiliation we are showing.
+    if not primary.ror_id and other.ror_id and (
+        not primary.affiliation or norm_space(primary.affiliation) == norm_space(other.affiliation)
+    ):
+        primary.ror_id = other.ror_id
+        if not primary.confidence and other.confidence:
+            primary.confidence = other.confidence
 
 
 def prefer_display(current: Rec, challenger: Rec) -> Rec:
     current.universes |= challenger.universes
     challenger.universes |= current.universes
+    if current.journal_id and not challenger.journal_id:
+        challenger.journal_id = current.journal_id
+    elif challenger.journal_id and not current.journal_id:
+        current.journal_id = challenger.journal_id
     if richness(challenger) > richness(current):
         challenger.universes = set(current.universes)
         return challenger
@@ -567,6 +601,61 @@ def load_catalog_names() -> dict[str, str]:
     return names
 
 
+@dataclass
+class JournalCatalog:
+    """Catalog field and board URL, keyed by journal id and normalized name."""
+
+    by_id: dict[str, dict[str, str]]
+    by_name: dict[str, dict[str, str]]
+
+
+def load_journal_catalog() -> JournalCatalog:
+    """Join ABDC field_for and board_url onto release journal names.
+
+    ABDC catalogs are read first so ``field_for`` sticks. FT50 names are then
+    indexed onto the same id, which is how "American Economic Review" picks up
+    the field stored under "The American Economic Review".
+    """
+    by_id: dict[str, dict[str, str]] = {}
+    by_name: dict[str, dict[str, str]] = {}
+    paths = (
+        ROOT / "journals/catalog_abdc_a_star.csv",
+        ROOT / "journals/catalog_abdc_a.csv",
+        ROOT / "journals/catalog_abdc_b.csv",
+        ROOT / "journals/catalog_abdc_c.csv",
+        FT50_CATALOG,
+    )
+    for path in paths:
+        if not path.exists():
+            raise SystemExit(f"Missing catalog: {path.relative_to(ROOT)}")
+        for row in read_catalog_rows(path):
+            journal_id = (row.get("journal_id") or "").strip()
+            name = scrub(row.get("journal_name") or "")
+            field_for = scrub(row.get("field_for") or "")
+            board = clean_url(row.get("board_url") or "")
+            if not journal_id or not name:
+                continue
+            meta = by_id.get(journal_id)
+            if meta is None:
+                meta = {"id": journal_id, "field": field_for, "board": board, "name": name}
+                by_id[journal_id] = meta
+            else:
+                if field_for and not meta["field"]:
+                    meta["field"] = field_for
+                if board and not meta["board"]:
+                    meta["board"] = board
+            key = norm_plain(name)
+            if key and key not in by_name:
+                by_name[key] = meta
+    return JournalCatalog(by_id=by_id, by_name=by_name)
+
+
+def catalog_meta(rec: Rec, catalog: JournalCatalog) -> dict[str, str]:
+    if rec.journal_id and rec.journal_id in catalog.by_id:
+        return catalog.by_id[rec.journal_id]
+    return catalog.by_name.get(rec.journal_key) or {}
+
+
 def resolve_ft50_path() -> Path:
     for path in FT50_CANDIDATES:
         if path.exists():
@@ -592,6 +681,7 @@ def row_to_rec(
     origin: str,
     catalogs: dict[str, str],
     membership: Membership,
+    catalog: JournalCatalog,
 ) -> Rec | None:
     name = usable_name(row.get("editor_name") or "")
     if not name:
@@ -609,6 +699,10 @@ def row_to_rec(
         if CONTACT_ASSERT_RE.search(affiliation):
             affiliation = ""
     journal_id = (row.get("abdc_journal_id") or "").strip()
+    if not journal_id:
+        named = catalog.by_name.get(norm_plain(journal))
+        if named:
+            journal_id = named["id"]
     universes = {origin}
     universes |= membership.tag(journal_id, journal)
     return Rec(
@@ -626,6 +720,7 @@ def row_to_rec(
         url=clean_url(row.get("source_url") or ""),
         ror_id=(row.get("ror_id") or "").strip(),
         confidence=(row.get("ror_confidence") or "").strip(),
+        journal_id=journal_id,
     )
 
 
@@ -637,6 +732,7 @@ def read_release(
     years: set[str],
     membership: Membership,
     seen_membership_ids: set[str],
+    catalog: JournalCatalog,
 ) -> tuple[list[Rec], int]:
     records: list[Rec] = []
     dropped = 0
@@ -651,7 +747,7 @@ def read_release(
             journal_id = (row.get("abdc_journal_id") or "").strip()
             if journal_id in membership.ids:
                 seen_membership_ids.add(journal_id)
-            rec = row_to_rec(row, origin, catalogs, membership)
+            rec = row_to_rec(row, origin, catalogs, membership, catalog)
             if rec is None:
                 dropped += 1
                 continue
@@ -765,7 +861,29 @@ def assert_static_site() -> None:
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
     if PAGES_BASE not in rankings_js:
         raise SystemExit("site/rankings.js is missing the project Pages base path")
-    for name in ("index.html", "app.js", "style.css", "rankings.html", "rankings.js"):
+    page_files = ("index.html", "journals.html", "institutions.html", "rankings.html")
+    for name in page_files:
+        text = (SITE_DIR / name).read_text(encoding="utf-8")
+        if PAGES_BASE not in text or LIVE_URL not in text:
+            raise SystemExit(f"site/{name} is missing the project Pages URL")
+        for link in ("journals.html", "institutions.html", "rankings.html"):
+            if f'href="{link}"' not in text:
+                raise SystemExit(f"site/{name} is missing the {link} nav link")
+    for script in ("journals.js", "institutions.js"):
+        text = (SITE_DIR / script).read_text(encoding="utf-8")
+        if PAGES_BASE not in text:
+            raise SystemExit(f"site/{script} is missing the project Pages base path")
+    for name in (
+        "index.html",
+        "app.js",
+        "style.css",
+        "rankings.html",
+        "rankings.js",
+        "journals.html",
+        "journals.js",
+        "institutions.html",
+        "institutions.js",
+    ):
         text = (SITE_DIR / name).read_text(encoding="utf-8")
         match = ROOT_ABSOLUTE_RE.search(text)
         if match:
@@ -876,7 +994,7 @@ def build_payload(records: list[Rec], sources: list[str], dates: list[str], year
     }
 
 
-def js_payload(payload: dict) -> str:
+def dump_js(global_name: str, payload: dict, comment: str) -> str:
     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     raw = (
         raw.replace("<", "\\u003c")
@@ -884,13 +1002,16 @@ def js_payload(payload: dict) -> str:
         .replace("\u2028", "\\u2028")
         .replace("\u2029", "\\u2029")
     )
-    return (
-        "/* Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
+    return "/* " + comment + " */\nwindow." + global_name + " = " + raw + ";\n"
+
+
+def js_payload(payload: dict) -> str:
+    return dump_js(
+        "EDITOR_DATA",
+        payload,
+        "Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
         "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
-        "   Do not edit. */\n"
-        "window.EDITOR_DATA = "
-        + raw
-        + ";\n"
+        "   Do not edit.",
     )
 
 
@@ -1001,10 +1122,402 @@ def assert_subset_lists(payload: dict, membership: Membership) -> None:
         raise SystemExit("Journal of Applied Psychology or Journal of Management dropped out of FT50")
 
 
+def mode_text(counter: Counter[str], *, prefer_longer: bool = False) -> str:
+    """Most common string. Ties break alphabetically, or toward the longer text."""
+    if not counter:
+        return ""
+
+    def sort_key(item: tuple[str, int]) -> tuple:
+        text, count = item
+        if prefer_longer:
+            return (-count, -len(text), text.casefold())
+        return (-count, text.casefold())
+
+    return sorted(counter.items(), key=sort_key)[0][0]
+
+
+def shared_meta(directory: dict, page: str) -> dict:
+    return {
+        "base": PAGES_BASE,
+        "liveUrl": LIVE_URL + page,
+        "repo": REPO_URL,
+        "readme": REPO_URL + "#readme",
+        "year": directory["year"],
+        "collectedMin": directory["collectedMin"],
+        "collectedMax": directory["collectedMax"],
+        "universes": list(UNIVERSE_META),
+    }
+
+
+def build_journal_payload(records: list[Rec], catalog: JournalCatalog, directory: dict) -> dict:
+    """One row per directory journal name."""
+    buckets: dict[str, dict] = {}
+    editor_keys: set[str] = set()
+    country_keys: set[str] = set()
+    for rec in records:
+        editor_keys.add(rec.name_key)
+        if rec.country:
+            country_keys.add(norm_space(rec.country))
+        bucket = buckets.get(rec.journal)
+        if bucket is None:
+            bucket = {
+                "name": rec.journal,
+                "mask": 0,
+                "appointments": 0,
+                "editors": set(),
+                "countries": set(),
+                "urls": Counter(),
+                "fields": Counter(),
+                "boards": Counter(),
+            }
+            buckets[rec.journal] = bucket
+        bucket["mask"] |= rec.mask()
+        bucket["appointments"] += 1
+        bucket["editors"].add(rec.name_key)
+        if rec.country:
+            bucket["countries"].add(rec.country)
+        if rec.url:
+            bucket["urls"][rec.url] += 1
+        meta = catalog_meta(rec, catalog)
+        field_for = meta.get("field") or ""
+        board = meta.get("board") or ""
+        if field_for:
+            bucket["fields"][field_for] += 1
+        if board:
+            bucket["boards"][board] += 1
+
+    fields = StringIndex("")
+    urls = StringIndex("")
+    rows: list[list] = []
+    appointments_by_universe = {uid: 0 for uid in BITS}
+    journals_by_universe: dict[str, int] = {uid: 0 for uid in BITS}
+    missing_field = 0
+    with_board = 0
+    mixed_field = 0
+    for name in sorted(buckets, key=lambda value: value.casefold()):
+        bucket = buckets[name]
+        if len(bucket["fields"]) > 1:
+            mixed_field += 1
+        field_for = mode_text(bucket["fields"])
+        if not field_for:
+            missing_field += 1
+        url = mode_text(bucket["urls"]) or mode_text(bucket["boards"])
+        if url:
+            with_board += 1
+        mask = bucket["mask"]
+        rows.append(
+            [
+                bucket["name"],
+                mask,
+                bucket["appointments"],
+                len(bucket["editors"]),
+                len(bucket["countries"]),
+                fields.add(field_for),
+                urls.add(url),
+            ]
+        )
+        for universe, bit in BITS.items():
+            if mask & bit:
+                appointments_by_universe[universe] += bucket["appointments"]
+                journals_by_universe[universe] += 1
+
+    if mixed_field:
+        print(f"Journals with more than one ABDC field: {mixed_field}")
+    by_universe = {
+        uid: {
+            "journals": journals_by_universe[uid],
+            "appointments": appointments_by_universe[uid],
+        }
+        for uid in UNIVERSE_ORDER
+    }
+    payload = shared_meta(directory, "journals.html")
+    payload.update(
+        {
+            "columns": [
+                "journal",
+                "mask",
+                "appointments",
+                "editors",
+                "countries",
+                "field",
+                "url",
+            ],
+            "fields": fields.values,
+            "urls": urls.values,
+            "rows": rows,
+            "counts": {
+                "journals": len(rows),
+                "appointments": sum(row[2] for row in rows),
+                "editors": len(editor_keys),
+                "countries": len(country_keys),
+                "withBoard": with_board,
+                "withField": len(rows) - missing_field,
+                "missingField": missing_field,
+                "byUniverse": by_universe,
+            },
+        }
+    )
+    return payload
+
+
+def institution_key(rec: Rec) -> tuple[str, str] | None:
+    if rec.ror_id:
+        return ("ror", rec.ror_id)
+    folded = norm_space(rec.affiliation)
+    if folded:
+        return ("aff", folded)
+    return None
+
+
+def build_institution_payload(records: list[Rec], directory: dict) -> dict:
+    """One row per ROR id, else per normalized affiliation."""
+    buckets: dict[tuple[str, str], dict] = {}
+    for rec in records:
+        key = institution_key(rec)
+        if key is None:
+            continue
+        bucket = buckets.get(key)
+        if bucket is None:
+            bucket = {
+                "ror": key[0] == "ror",
+                "names": Counter(),
+                "countries": Counter(),
+                "continents": Counter(),
+                "editors": set(),
+                "journals": set(),
+                "appointments": 0,
+                "mask": 0,
+                "by_universe": {uid: 0 for uid in BITS},
+            }
+            buckets[key] = bucket
+        if rec.affiliation:
+            bucket["names"][rec.affiliation] += 1
+        if rec.country:
+            bucket["countries"][rec.country] += 1
+        if rec.continent:
+            bucket["continents"][rec.continent] += 1
+        bucket["editors"].add(rec.name_key)
+        bucket["journals"].add(rec.journal)
+        bucket["appointments"] += 1
+        mask = rec.mask()
+        bucket["mask"] |= mask
+        for universe, bit in BITS.items():
+            if mask & bit:
+                bucket["by_universe"][universe] += 1
+
+    countries = StringIndex("")
+    continents = StringIndex("")
+    prepared: list[dict] = []
+    nameless = 0
+    for bucket in buckets.values():
+        name = mode_text(bucket["names"], prefer_longer=True)
+        if not name:
+            nameless += bucket["appointments"]
+            continue
+        prepared.append(
+            {
+                "name": name,
+                "country": mode_text(bucket["countries"]),
+                "continent": mode_text(bucket["continents"]),
+                "editors": len(bucket["editors"]),
+                "appointments": bucket["appointments"],
+                "journals": len(bucket["journals"]),
+                "mask": bucket["mask"],
+                "ror": bucket["ror"],
+                "by_universe": bucket["by_universe"],
+                "editor_keys": bucket["editors"],
+                "country_keys": set(bucket["countries"]),
+            }
+        )
+    prepared.sort(key=lambda item: (item["name"].casefold(), item["country"].casefold(), item["continent"].casefold()))
+
+    rows: list[list] = []
+    editor_keys: set[str] = set()
+    country_keys: set[str] = set()
+    appointments_by_universe = {uid: 0 for uid in BITS}
+    institutions_by_universe = {uid: 0 for uid in BITS}
+    with_ror = 0
+    emitted = 0
+    for item in prepared:
+        if item["ror"]:
+            with_ror += 1
+        editor_keys |= item["editor_keys"]
+        for country in item["country_keys"]:
+            if country:
+                country_keys.add(norm_space(country))
+        emitted += item["appointments"]
+        mask = item["mask"]
+        rows.append(
+            [
+                item["name"],
+                countries.add(item["country"]),
+                continents.add(item["continent"]),
+                item["editors"],
+                item["appointments"],
+                item["journals"],
+                mask,
+            ]
+        )
+        for universe, bit in BITS.items():
+            if mask & bit:
+                appointments_by_universe[universe] += item["by_universe"][universe]
+                institutions_by_universe[universe] += 1
+
+    if nameless:
+        print(f"Institution keys with no display name: {nameless} appointments")
+    by_universe = {
+        uid: {
+            "institutions": institutions_by_universe[uid],
+            "appointments": appointments_by_universe[uid],
+        }
+        for uid in UNIVERSE_ORDER
+    }
+    payload = shared_meta(directory, "institutions.html")
+    payload.update(
+        {
+            "columns": [
+                "institution",
+                "country",
+                "continent",
+                "editors",
+                "appointments",
+                "journals",
+                "mask",
+            ],
+            "countries": countries.values,
+            "continents": continents.values,
+            "rows": rows,
+            "counts": {
+                "institutions": len(rows),
+                "appointments": emitted,
+                "unmatchedAppointments": len(records) - emitted,
+                "editors": len(editor_keys),
+                "countries": len(country_keys),
+                "withRor": with_ror,
+                "byUniverse": by_universe,
+            },
+        }
+    )
+    return payload
+
+
+def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> None:
+    dcounts = directory["counts"]
+    jcounts = journals["counts"]
+    icounts = institutions["counts"]
+    if jcounts["journals"] != dcounts["journals"]:
+        raise SystemExit(
+            f"Journal rows {jcounts['journals']} != directory journals {dcounts['journals']}"
+        )
+    if jcounts["appointments"] != dcounts["appointments"]:
+        raise SystemExit("Journal appointment total does not match the directory")
+    if jcounts["editors"] != dcounts["editors"]:
+        raise SystemExit("Journal editor total does not match the directory")
+    if jcounts["countries"] != dcounts["countries"]:
+        raise SystemExit("Journal country total does not match the directory")
+    if jcounts["missingField"] > 40:
+        raise SystemExit(f"Too many journals without an ABDC field: {jcounts['missingField']}")
+    if jcounts["withBoard"] < jcounts["journals"] * 0.9:
+        raise SystemExit(
+            f"Only {jcounts['withBoard']} of {jcounts['journals']} journals have a board link"
+        )
+    directory_journals = set(directory["journals"])
+    for row in journals["rows"]:
+        if row[0] not in directory_journals:
+            raise SystemExit(f"Journal {row[0]!r} is not in the directory journal list")
+        for label, text in (("journal", row[0]),):
+            assert_no_contacts(text, label)
+    by_name = {row[0]: row for row in journals["rows"]}
+    aer = by_name.get("American Economic Review")
+    if aer is None:
+        raise SystemExit("American Economic Review is missing from the journal aggregate")
+    ft50_bit = BITS["ft50"]
+    a_star_bit = BITS["a_star"]
+    top5_bit = BITS["top5"]
+    utd_bit = BITS["utd24"]
+    a_bit = BITS["a"]
+    if aer[1] & ft50_bit == 0 or aer[1] & a_star_bit == 0 or aer[1] & top5_bit == 0:
+        raise SystemExit(f"American Economic Review mask is wrong: {aer[1]}")
+    if aer[1] & utd_bit:
+        raise SystemExit("American Economic Review must not carry UTD24")
+    aer_field = journals["fields"][aer[5]]
+    if aer_field != "3801 Applied economics":
+        raise SystemExit(f"American Economic Review field is {aer_field!r}")
+    if not journals["urls"][aer[6]]:
+        raise SystemExit("American Economic Review is missing a board link")
+    jap = by_name.get("Journal of Applied Psychology")
+    if jap is None or jap[1] & utd_bit or jap[1] & top5_bit or not (jap[1] & ft50_bit):
+        raise SystemExit("Journal of Applied Psychology tags are wrong on the journal page")
+    joc = by_name.get("INFORMS Journal on Computing")
+    if joc is None or not (joc[1] & utd_bit) or not (joc[1] & a_bit) or (joc[1] & ft50_bit):
+        raise SystemExit("INFORMS Journal on Computing tags are wrong on the journal page")
+    for uid in ("ft50", "top5", "utd24"):
+        if jcounts["byUniverse"][uid]["journals"] != dcounts["byUniverse"][uid]["journals"]:
+            raise SystemExit(
+                f"{uid} journal count {jcounts['byUniverse'][uid]['journals']} != "
+                f"directory {dcounts['byUniverse'][uid]['journals']}"
+            )
+
+    if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"]:
+        raise SystemExit("Institution appointments plus unmatched rows do not match the directory")
+    if not 4_000 <= icounts["institutions"] <= 15_000:
+        raise SystemExit(f"Unexpected institution count: {icounts['institutions']}")
+    if icounts["withRor"] < icounts["institutions"] * 0.9:
+        raise SystemExit(
+            f"Only {icounts['withRor']} of {icounts['institutions']} institutions have a ROR id"
+        )
+    if icounts["editors"] > dcounts["editors"] or icounts["editors"] < dcounts["editors"] * 0.8:
+        raise SystemExit(
+            f"Institution editors {icounts['editors']} are far from directory {dcounts['editors']}"
+        )
+    directory_affs = {row[4] for row in directory["rows"] if row[4]}
+    seen_names: set[str] = set()
+    duplicate_names = 0
+    for row in institutions["rows"]:
+        name, country_i, continent_i, editors, appointments, journals, mask = row
+        if name not in directory_affs:
+            raise SystemExit(f"Institution {name!r} is not a directory affiliation")
+        if name in seen_names:
+            duplicate_names += 1
+        seen_names.add(name)
+        if appointments < 1 or editors < 1 or journals < 1 or mask < 1:
+            raise SystemExit(f"Empty institution aggregate: {name!r}")
+        country = institutions["countries"][country_i]
+        continent = institutions["continents"][continent_i]
+        for label, text in (("institution", name), ("country", country), ("continent", continent)):
+            assert_no_contacts(text, label)
+    if duplicate_names > 50:
+        raise SystemExit(f"Too many institutions share a display name: {duplicate_names}")
+    dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
+    if len(dartmouth) != 1:
+        raise SystemExit(f"Expected one Dartmouth College row, found {len(dartmouth)}")
+    dartmouth_row = dartmouth[0]
+    if institutions["countries"][dartmouth_row[1]] != "United States":
+        raise SystemExit("Dartmouth College country is not United States")
+    if institutions["continents"][dartmouth_row[2]] != "North America":
+        raise SystemExit("Dartmouth College continent is not North America")
+    if dartmouth_row[4] < 1:
+        raise SystemExit("Dartmouth College has no appointments")
+    for uid in ("ft50", "top5", "utd24", "a_star", "a", "b", "c"):
+        got = icounts["byUniverse"][uid]["appointments"]
+        cap = dcounts["byUniverse"][uid]["appointments"]
+        if got <= 0 or got > cap:
+            raise SystemExit(f"Institution {uid} appointments {got} are outside 1..{cap}")
+    print(
+        "Aggregates: "
+        f"{jcounts['journals']:,} journals ({jcounts['withField']:,} with a field, "
+        f"{jcounts['withBoard']:,} with a board link), "
+        f"{icounts['institutions']:,} institutions "
+        f"({icounts['withRor']:,} with ROR, {duplicate_names:,} shared names), "
+        f"{icounts['unmatchedAppointments']:,} appointments without an institution"
+    )
+
+
 def main() -> int:
     assert_static_site()
     membership = load_membership()
     catalogs = load_catalog_names()
+    journal_catalog = load_journal_catalog()
     ft50_path = resolve_ft50_path()
     dates: list[str] = []
     years: set[str] = set()
@@ -1014,7 +1527,7 @@ def main() -> int:
 
     seen_membership_ids: set[str] = set()
     ft50_records, ft50_dropped = read_release(
-        ft50_path, "ft50", catalogs, dates, years, membership, seen_membership_ids
+        ft50_path, "ft50", catalogs, dates, years, membership, seen_membership_ids, journal_catalog
     )
     dropped += ft50_dropped
     sources.append(ft50_path.relative_to(ROOT).as_posix())
@@ -1024,7 +1537,7 @@ def main() -> int:
         if not path.exists():
             raise SystemExit(f"Missing ABDC release: {path.relative_to(ROOT)}")
         records, n_dropped = read_release(
-            path, origin, catalogs, dates, years, membership, seen_membership_ids
+            path, origin, catalogs, dates, years, membership, seen_membership_ids, journal_catalog
         )
         dropped += n_dropped
         sources.append(path.relative_to(ROOT).as_posix())
@@ -1082,6 +1595,27 @@ def main() -> int:
     )
     print("Role groups: " + ", ".join(f"{name} {family_counts[name]:,}" for name in FAMILIES))
     print(f"Collected {payload['collectedMin']} – {payload['collectedMax']}; board year {payload['year']}")
+
+    journal_payload = build_journal_payload(collapsed, journal_catalog, payload)
+    institution_payload = build_institution_payload(collapsed, payload)
+    assert_aggregates(payload, journal_payload, institution_payload)
+    journal_text = dump_js(
+        "JOURNALS_DATA",
+        journal_payload,
+        "Generated by scripts/build_site.py. One row per journal. Do not edit.",
+    )
+    institution_text = dump_js(
+        "INSTITUTIONS_DATA",
+        institution_payload,
+        "Generated by scripts/build_site.py. One row per institution. Do not edit.",
+    )
+    JOURNALS_JS.write_text(journal_text, encoding="utf-8")
+    INSTITUTIONS_JS.write_text(institution_text, encoding="utf-8")
+    print(
+        "Wrote "
+        f"{JOURNALS_JS.relative_to(ROOT)} ({len(journal_text) / 1_000_000:.1f} MB) and "
+        f"{INSTITUTIONS_JS.relative_to(ROOT)} ({len(institution_text) / 1_000_000:.1f} MB)"
+    )
     build_rankings_page()
     return 0
 

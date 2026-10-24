@@ -62,6 +62,14 @@ One row is one person in one role on one journal. The same person on two journal
 
 Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
+The same boards are also grouped by journal and by institution:
+
+**https://kochiuyu.github.io/econ-journal-dispersion/journals.html**
+
+**https://kochiuyu.github.io/econ-journal-dispersion/institutions.html**
+
+`scripts/build_site.py` writes `site/journals-data.js` (one row per journal: list badges, appointments, distinct editors, countries, ABDC field, board link) and `site/institutions-data.js` (one row per ROR id, or per affiliation name when ROR is missing). A journal name opens the directory with `?journal=`. An institution name opens it with `?aff=` set to that affiliation and `?country=` when the row has a country. Those files are generated and are not committed.
+
 Journal grades are a separate page, not extra directory chips:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
@@ -75,7 +83,7 @@ python scripts/build_site.py
 python -m http.server 8000 -d site
 ```
 
-Open http://127.0.0.1:8000/ . Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. Rankings are at http://127.0.0.1:8000/rankings.html . `site/data.js` and `site/rankings-data.js` are generated and are not committed.
+Open http://127.0.0.1:8000/ . Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. Journals are at http://127.0.0.1:8000/journals.html , institutions at http://127.0.0.1:8000/institutions.html , and rankings at http://127.0.0.1:8000/rankings.html . `site/data.js`, `site/journals-data.js`, `site/institutions-data.js`, and `site/rankings-data.js` are generated and are not committed.
 
 ### Enable GitHub Pages
 
