@@ -33,6 +33,27 @@ country, continent, role, or source URL is filled from the ABDC row.
 A non-empty FT50 value is not replaced. This prefers the FT50 text on the
 handful of rows where the ABDC ROR match disagrees with the FT50 affiliation.
 
+Subset lists (Top 5 and UTD24)
+------------------------------
+Top 5 and UTD24 are extra tags on those same rows. They do not add a release
+file and they do not scrape. Membership is ``journals/catalog_top5.csv`` and
+``journals/catalog_utd24.csv``.
+
+Top 5 is the Editor-Collector ``is_top5`` set: American Economic Review,
+Econometrica, Journal of Political Economy, Quarterly Journal of Economics,
+and Review of Economic Studies. All five are in the FT50 current release, so
+every Top 5 row also carries the FT50 bit.
+
+UTD24 is the UT Dallas Naveen Jindal list of 24 business journals
+(https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/list-of-journals).
+Twenty-three are tagged from the FT50 freeze. INFORMS Journal on Computing
+(the UTD label is Journal on Computing) is tagged from the ABDC A freeze.
+Journal of Applied Psychology is on FT50 and is absent from the UTD24 catalog.
+Journal of Management is likewise on FT50 and absent from UTD24.
+
+Universe bits: FT50 1, ABDC A* 2, ABDC A 4, ABDC B 8, ABDC C 16, Top 5 32,
+UTD24 64.
+
 Within one release file
 -----------------------
 Rows that share a key and the same affiliation signature (ROR id, else the
@@ -99,14 +120,61 @@ CATALOG_FILES = (
     ROOT / "journals/catalog_abdc_c.csv",
     ROOT / "journals/catalog_ft50.csv",
 )
+TOP5_CATALOG = ROOT / "journals/catalog_top5.csv"
+UTD24_CATALOG = ROOT / "journals/catalog_utd24.csv"
+FT50_CATALOG = ROOT / "journals/catalog_ft50.csv"
+ABDC_A_CATALOG = ROOT / "journals/catalog_abdc_a.csv"
+UTD24_SOURCE_URL = (
+    "https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/list-of-journals"
+)
+# Locked to journals/catalog_top5.csv. Editor-Collector is_top5.
+TOP5_IDS = frozenset({"aer", "econometrica", "jpe", "qje", "restud"})
+# Locked to journals/catalog_utd24.csv. Official UTD list order is in that file.
+UTD24_IDS = frozenset(
+    {
+        "tar",
+        "jae",
+        "jar",
+        "jf",
+        "jfe",
+        "rfs",
+        "isr",
+        "informs_journal_computing",
+        "misq",
+        "jcr",
+        "jm",
+        "jmr",
+        "mktg_sci",
+        "ms",
+        "or",
+        "joom",
+        "msom",
+        "pom",
+        "amj",
+        "amr",
+        "asq",
+        "orgsci",
+        "jibs",
+        "smj",
+    }
+)
+UTD24_ABDC_ONLY_ID = "informs_journal_computing"
+# FT50 journals that must stay off the UTD24 chip.
+NOT_UTD24_IDS = frozenset({"jap", "jom"})
+UTD24_ALIAS = {
+    "rfs": "The Review of Financial Studies",
+    "informs_journal_computing": "Journal on Computing",
+}
 
-UNIVERSE_ORDER = ("ft50", "a_star", "a", "b", "c")
+UNIVERSE_ORDER = ("ft50", "a_star", "a", "b", "c", "top5", "utd24")
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
     {"id": "a_star", "label": "ABDC A*", "bit": 2},
     {"id": "a", "label": "ABDC A", "bit": 4},
     {"id": "b", "label": "ABDC B", "bit": 8},
     {"id": "c", "label": "ABDC C", "bit": 16},
+    {"id": "top5", "label": "Top 5", "bit": 32},
+    {"id": "utd24", "label": "UTD24", "bit": 64},
 )
 BITS = {item["id"]: item["bit"] for item in UNIVERSE_META}
 
@@ -329,6 +397,157 @@ def prefer_display(current: Rec, challenger: Rec) -> Rec:
     return current
 
 
+@dataclass
+class Membership:
+    """Extra universe tags keyed by release journal id and by display name."""
+
+    by_id: dict[str, set[str]]
+    by_name: dict[str, set[str]]
+    id_to_name: dict[str, str]
+    names: dict[str, set[str]]
+    ids: set[str]
+
+    def tag(self, journal_id: str, journal: str) -> set[str]:
+        if journal_id:
+            expected = self.id_to_name.get(journal_id)
+            if expected is not None and norm_plain(journal) != norm_plain(expected):
+                raise SystemExit(
+                    f"{journal_id} is {journal!r} in the release and {expected!r} in the membership catalog"
+                )
+            return set(self.by_id.get(journal_id, ()))
+        return set(self.by_name.get(norm_plain(journal), ()))
+
+
+def read_catalog_rows(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        raise SystemExit(f"Missing catalog: {path.relative_to(ROOT)}")
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        return list(csv.DictReader(handle))
+
+
+def catalog_by_id(path: Path) -> dict[str, dict[str, str]]:
+    rows: dict[str, dict[str, str]] = {}
+    for row in read_catalog_rows(path):
+        journal_id = (row.get("journal_id") or "").strip()
+        if not journal_id:
+            raise SystemExit(f"Blank journal_id in {path.relative_to(ROOT)}")
+        if journal_id in rows:
+            raise SystemExit(f"Duplicate journal_id {journal_id} in {path.relative_to(ROOT)}")
+        rows[journal_id] = row
+    return rows
+
+
+def load_membership() -> Membership:
+    """Load Top 5 and UTD24 catalogs and check them against the host catalogs."""
+    ft50 = catalog_by_id(FT50_CATALOG)
+    abdc_a = catalog_by_id(ABDC_A_CATALOG)
+    hosts = {"ft50": ft50, "abdc_a": abdc_a}
+    by_id: dict[str, set[str]] = defaultdict(set)
+    by_name: dict[str, set[str]] = defaultdict(set)
+    id_to_name: dict[str, str] = {}
+    names: dict[str, set[str]] = {"top5": set(), "utd24": set()}
+
+    def bind(universe: str, journal_id: str, journal_name: str) -> None:
+        key = norm_plain(journal_name)
+        if not key:
+            raise SystemExit(f"Blank journal name for {universe} id {journal_id}")
+        previous = id_to_name.get(journal_id)
+        if previous is not None and norm_plain(previous) != key:
+            raise SystemExit(
+                f"{journal_id} has two membership names: {previous!r} and {journal_name!r}"
+            )
+        id_to_name[journal_id] = journal_name
+        by_id[journal_id].add(universe)
+        by_name[key].add(universe)
+        names[universe].add(journal_name)
+
+    top5_rows = read_catalog_rows(TOP5_CATALOG)
+    top5_ids = []
+    for row in top5_rows:
+        journal_id = (row.get("journal_id") or "").strip()
+        ft50_journal_id = (row.get("ft50_journal_id") or "").strip()
+        journal_name = (row.get("journal_name") or "").strip()
+        issn = (row.get("issn") or "").strip()
+        if journal_id != ft50_journal_id:
+            raise SystemExit(f"Top 5 {journal_id} does not point at itself in the FT50 catalog")
+        host = ft50.get(journal_id)
+        if host is None:
+            raise SystemExit(f"Top 5 id {journal_id} is not in {FT50_CATALOG.name}")
+        if journal_name != (host.get("journal_name") or "").strip():
+            raise SystemExit(
+                f"Top 5 name {journal_name!r} does not match the FT50 catalog name for {journal_id}"
+            )
+        if issn != (host.get("issn") or "").strip():
+            raise SystemExit(f"Top 5 ISSN for {journal_id} does not match the FT50 catalog")
+        bind("top5", journal_id, journal_name)
+        top5_ids.append(journal_id)
+    if len(top5_ids) != len(set(top5_ids)):
+        raise SystemExit("Duplicate journal_id in catalog_top5.csv")
+    if frozenset(top5_ids) != TOP5_IDS:
+        raise SystemExit(f"catalog_top5.csv ids {sorted(top5_ids)} != {sorted(TOP5_IDS)}")
+
+    utd_rows = read_catalog_rows(UTD24_CATALOG)
+    utd_ids = []
+    abdc_only = []
+    for row in utd_rows:
+        journal_id = (row.get("journal_id") or "").strip()
+        host_journal_id = (row.get("host_journal_id") or "").strip()
+        host_list = (row.get("host_list") or "").strip()
+        journal_name = (row.get("journal_name") or "").strip()
+        utd_name = (row.get("utd_name") or "").strip()
+        issn = (row.get("issn") or "").strip()
+        source = (row.get("list_source_url") or "").strip()
+        if journal_id != host_journal_id:
+            raise SystemExit(f"UTD24 {journal_id} host_journal_id is {host_journal_id}")
+        if host_list not in hosts:
+            raise SystemExit(f"UTD24 {journal_id} host_list {host_list!r} is not ft50 or abdc_a")
+        if source != UTD24_SOURCE_URL:
+            raise SystemExit(f"UTD24 {journal_id} list_source_url is not the official journal list")
+        if not utd_name:
+            raise SystemExit(f"UTD24 {journal_id} is missing utd_name")
+        host = hosts[host_list].get(journal_id)
+        if host is None:
+            raise SystemExit(f"UTD24 id {journal_id} is not in the {host_list} catalog")
+        if journal_name != (host.get("journal_name") or "").strip():
+            raise SystemExit(
+                f"UTD24 name {journal_name!r} does not match the {host_list} catalog name for {journal_id}"
+            )
+        if issn != (host.get("issn") or "").strip():
+            raise SystemExit(f"UTD24 ISSN for {journal_id} does not match the {host_list} catalog")
+        alias = UTD24_ALIAS.get(journal_id)
+        if alias is None and utd_name != journal_name:
+            raise SystemExit(f"UTD24 label {utd_name!r} differs from the freeze name for {journal_id}")
+        if alias is not None and utd_name != alias:
+            raise SystemExit(f"UTD24 label for {journal_id} should be {alias!r}, found {utd_name!r}")
+        if journal_id in NOT_UTD24_IDS:
+            raise SystemExit(f"{journal_id} is on FT50 and must stay off UTD24")
+        bind("utd24", journal_id, journal_name)
+        utd_ids.append(journal_id)
+        if host_list == "abdc_a":
+            abdc_only.append(journal_id)
+    if len(utd_ids) != len(set(utd_ids)):
+        raise SystemExit("Duplicate journal_id in catalog_utd24.csv")
+    if frozenset(utd_ids) != UTD24_IDS:
+        raise SystemExit(f"catalog_utd24.csv ids {sorted(utd_ids)} != {sorted(UTD24_IDS)}")
+    if abdc_only != [UTD24_ABDC_ONLY_ID]:
+        raise SystemExit(
+            "UTD24 should take only INFORMS Journal on Computing from ABDC A, "
+            f"found {abdc_only}"
+        )
+    if NOT_UTD24_IDS & set(utd_ids):
+        raise SystemExit("Journal of Applied Psychology or Journal of Management is tagged UTD24")
+    if set(top5_ids) & set(utd_ids):
+        raise SystemExit(f"Top 5 and UTD24 share journal ids: {sorted(set(top5_ids) & set(utd_ids))}")
+
+    return Membership(
+        by_id=by_id,
+        by_name=by_name,
+        id_to_name=id_to_name,
+        names=names,
+        ids=set(id_to_name),
+    )
+
+
 def load_catalog_names() -> dict[str, str]:
     names: dict[str, str] = {}
     for path in CATALOG_FILES:
@@ -363,7 +582,12 @@ def journal_name(row: dict[str, str], catalogs: dict[str, str]) -> str:
     return ""
 
 
-def row_to_rec(row: dict[str, str], origin: str, catalogs: dict[str, str]) -> Rec | None:
+def row_to_rec(
+    row: dict[str, str],
+    origin: str,
+    catalogs: dict[str, str],
+    membership: Membership,
+) -> Rec | None:
     name = usable_name(row.get("editor_name") or "")
     if not name:
         return None
@@ -379,6 +603,9 @@ def row_to_rec(row: dict[str, str], origin: str, catalogs: dict[str, str]) -> Re
         affiliation = scrub(affiliation)
         if CONTACT_ASSERT_RE.search(affiliation):
             affiliation = ""
+    journal_id = (row.get("abdc_journal_id") or "").strip()
+    universes = {origin}
+    universes |= membership.tag(journal_id, journal)
     return Rec(
         name=name,
         name_key=norm_name(name),
@@ -387,7 +614,7 @@ def row_to_rec(row: dict[str, str], origin: str, catalogs: dict[str, str]) -> Re
         journal=journal,
         journal_key=norm_plain(journal),
         origin=origin,
-        universes={origin},
+        universes=universes,
         affiliation=affiliation,
         country=scrub(row.get("ror_country") or ""),
         continent=scrub(row.get("continent") or ""),
@@ -403,6 +630,8 @@ def read_release(
     catalogs: dict[str, str],
     dates: list[str],
     years: set[str],
+    membership: Membership,
+    seen_membership_ids: set[str],
 ) -> tuple[list[Rec], int]:
     records: list[Rec] = []
     dropped = 0
@@ -414,7 +643,10 @@ def read_release(
             year = (row.get("year") or "").strip()
             if year:
                 years.add(year)
-            rec = row_to_rec(row, origin, catalogs)
+            journal_id = (row.get("abdc_journal_id") or "").strip()
+            if journal_id in membership.ids:
+                seen_membership_ids.add(journal_id)
+            rec = row_to_rec(row, origin, catalogs, membership)
             if rec is None:
                 dropped += 1
                 continue
@@ -640,7 +872,9 @@ def js_payload(payload: dict) -> str:
         .replace("\u2029", "\\u2029")
     )
     return (
-        "/* Generated by scripts/build_site.py from the current FT50 and ABDC editor releases. Do not edit. */\n"
+        "/* Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
+        "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
+        "   Do not edit. */\n"
         "window.EDITOR_DATA = "
         + raw
         + ";\n"
@@ -683,8 +917,80 @@ def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int
             raise SystemExit(f"FT50 row missing an ABDC badge: {row[0]}")
 
 
+def assert_subset_lists(payload: dict, membership: Membership) -> None:
+    """Top 5 is inside FT50. UTD24 adds INFORMS Journal on Computing from ABDC A."""
+    journals = payload["journals"]
+    top5_bit = BITS["top5"]
+    utd_bit = BITS["utd24"]
+    ft50_bit = BITS["ft50"]
+    a_bit = BITS["a"]
+    top5_journals: set[str] = set()
+    utd_journals: set[str] = set()
+    ft50_journals: set[str] = set()
+    joc_name = "INFORMS Journal on Computing"
+    jap_name = "Journal of Applied Psychology"
+    jom_name = "Journal of Management"
+    joc_rows = 0
+    jap_rows = 0
+    jom_rows = 0
+    for row in payload["rows"]:
+        name = journals[row[2]]
+        mask = row[3]
+        if mask & ft50_bit:
+            ft50_journals.add(name)
+        if mask & top5_bit:
+            if not (mask & ft50_bit):
+                raise SystemExit(f"Top 5 appointment outside FT50: {row[0]} / {name}")
+            top5_journals.add(name)
+        if mask & utd_bit:
+            utd_journals.add(name)
+        if name == joc_name:
+            joc_rows += 1
+            if not (mask & utd_bit) or not (mask & a_bit) or (mask & ft50_bit):
+                raise SystemExit(f"INFORMS Journal on Computing tag is wrong for {row[0]}: mask {mask}")
+        elif mask & utd_bit and not (mask & ft50_bit):
+            raise SystemExit(f"UTD24 appointment outside FT50 is not INFORMS Journal on Computing: {name}")
+        if name == jap_name:
+            jap_rows += 1
+            if (mask & utd_bit) or (mask & top5_bit) or not (mask & ft50_bit):
+                raise SystemExit(f"Journal of Applied Psychology must stay FT50 only: mask {mask}")
+        if name == jom_name:
+            jom_rows += 1
+            if (mask & utd_bit) or not (mask & ft50_bit):
+                raise SystemExit(f"Journal of Management must stay off UTD24: mask {mask}")
+    if top5_journals != membership.names["top5"]:
+        raise SystemExit(
+            "Top 5 journals "
+            f"{sorted(top5_journals)} != catalog {sorted(membership.names['top5'])}"
+        )
+    if utd_journals != membership.names["utd24"]:
+        missing = sorted(membership.names["utd24"] - utd_journals)
+        extra = sorted(utd_journals - membership.names["utd24"])
+        raise SystemExit(f"UTD24 journal mismatch. Missing {missing}. Extra {extra}.")
+    counts = payload["counts"]["byUniverse"]
+    if counts["top5"]["journals"] != 5:
+        raise SystemExit(f"Expected 5 Top 5 journals, found {counts['top5']['journals']}")
+    if counts["utd24"]["journals"] != 24:
+        raise SystemExit(f"Expected 24 UTD24 journals, found {counts['utd24']['journals']}")
+    if counts["top5"]["appointments"] <= 0 or counts["top5"]["appointments"] >= counts["ft50"]["appointments"]:
+        raise SystemExit(
+            f"Top 5 appointments {counts['top5']['appointments']} are not a proper subset of "
+            f"FT50 {counts['ft50']['appointments']}"
+        )
+    if not top5_journals <= ft50_journals:
+        raise SystemExit(f"Top 5 journals outside FT50: {sorted(top5_journals - ft50_journals)}")
+    utd_outside = utd_journals - ft50_journals
+    if utd_outside != {joc_name}:
+        raise SystemExit(f"UTD24 journals outside FT50: {sorted(utd_outside)}")
+    if joc_rows < 100:
+        raise SystemExit(f"Expected the ABDC A INFORMS Journal on Computing board, found {joc_rows} rows")
+    if jap_rows == 0 or jom_rows == 0:
+        raise SystemExit("Journal of Applied Psychology or Journal of Management dropped out of FT50")
+
+
 def main() -> int:
     assert_static_site()
+    membership = load_membership()
     catalogs = load_catalog_names()
     ft50_path = resolve_ft50_path()
     dates: list[str] = []
@@ -693,7 +999,10 @@ def main() -> int:
     sources: list[str] = []
     dropped = 0
 
-    ft50_records, ft50_dropped = read_release(ft50_path, "ft50", catalogs, dates, years)
+    seen_membership_ids: set[str] = set()
+    ft50_records, ft50_dropped = read_release(
+        ft50_path, "ft50", catalogs, dates, years, membership, seen_membership_ids
+    )
     dropped += ft50_dropped
     sources.append(ft50_path.relative_to(ROOT).as_posix())
     print(f"FT50  {ft50_path.name}: {len(ft50_records):,} kept, {ft50_dropped:,} dropped")
@@ -701,7 +1010,9 @@ def main() -> int:
     for origin, path in ABDC_FILES:
         if not path.exists():
             raise SystemExit(f"Missing ABDC release: {path.relative_to(ROOT)}")
-        records, n_dropped = read_release(path, origin, catalogs, dates, years)
+        records, n_dropped = read_release(
+            path, origin, catalogs, dates, years, membership, seen_membership_ids
+        )
         dropped += n_dropped
         sources.append(path.relative_to(ROOT).as_posix())
         print(f"ABDC {origin:6} {path.name}: {len(records):,} kept, {n_dropped:,} dropped")
@@ -723,8 +1034,15 @@ def main() -> int:
         f"{dropped:,} rows dropped before grouping"
     )
 
+    missing_ids = membership.ids - seen_membership_ids
+    if missing_ids:
+        raise SystemExit(
+            "Membership journals missing from the ABDC releases: " + ", ".join(sorted(missing_ids))
+        )
+
     payload = build_payload(collapsed, sources, dates, years)
     assert_payload(payload, collapse_stats, ft50_kept)
+    assert_subset_lists(payload, membership)
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     text = js_payload(payload)

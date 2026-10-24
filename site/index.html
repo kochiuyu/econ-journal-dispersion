@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal Editors — FT50 and ABDC</title>
-  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors from the Geographic Dispersion releases.">
+  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors, with Top 5 and UTD24 filters, from the Geographic Dispersion releases.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:title" content="Journal Editors — FT50 and ABDC">
-  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors.">
+  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors, with Top 5 and UTD24 filters.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Geographic Dispersion · FT50 and ABDC</span>
+          <span class="t2">Geographic Dispersion · FT50, ABDC, Top 5, UTD24</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -41,7 +41,8 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Current editorial boards on the Financial Times FT50 list and the 2025 ABDC Journal Quality List
-      (A*, A, B, and C). <span id="asof">Board year 2026.</span>
+      (A*, A, B, and C). Top 5 and UTD24 are extra filters on those same boards.
+      <span id="asof">Board year 2026.</span>
     </p>
 
     <section class="stats" id="stats" aria-label="Directory totals">
@@ -103,7 +104,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. The same person on another journal is a separate row.</p>
+      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. The same person on another journal is a separate row.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
@@ -135,6 +136,7 @@
         It is built from the analysis releases under <code>data/editors/*/releases/current/</code>,
         not from a live scrape of this repository. The FT50 file is the ROR-enriched current board.
         ABDC is the 2025 Journal Quality List at A*, A, B, and C.
+        Top 5 and UTD24 are tags on those releases, read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
         core49 is an older ABDC A* subset and is not a separate list here. Authors are not in this version.
       </p>
       <p>
@@ -149,6 +151,15 @@
         A different role, or the same role on another journal, stays a separate row.
         The same name and role on one journal with two different affiliations is kept as two rows.
         The role filter groups masthead titles (Editor-in-Chief, Editor, Co-Editor, Senior Editor, Managing Editor, Associate Editor, Guest / Special Issue Editor, Editorial Board, Review Board, Advisory Board, and Other). The Role column is the journal’s own title.
+      </p>
+      <h2>Top 5 and UTD24</h2>
+      <p>
+        Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies.
+        Each of those appointments also carries the FT50 badge.
+        UTD24 is the UT Dallas Naveen Jindal list of 24 business journals.
+        Twenty-three of them are in the FT50 release.
+        INFORMS Journal on Computing, listed by UTD as Journal on Computing, is included from the ABDC A release so the chip covers the full list.
+        Journal of Applied Psychology remains an FT50 appointment and does not carry a UTD24 badge.
       </p>
       <p>
         Country and continent are the ROR fields on the release. Affiliations prefer the matched institution name.

@@ -17,6 +17,8 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **core49** | `journals/catalog_core49.csv` | Geographic Dispersion core economics journals |
 | **FT50** | `journals/catalog_ft50.csv` | Financial Times Research rank journals |
 | **ABDC** | `journals/catalog_abdc_{a_star,a,b,c}.csv` | 2025 ABDC Journal Quality List by rating |
+| **Top 5** | `journals/catalog_top5.csv` | AER, Econometrica, JPE, QJE, and ReStud. Subset tag on the FT50 current release |
+| **UTD24** | `journals/catalog_utd24.csv` | UT Dallas Naveen Jindal Top 24. Twenty-three journals tagged from the FT50 freeze; INFORMS Journal on Computing tagged from the ABDC A freeze |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) — see `docs/README.md`.
 
@@ -47,7 +49,7 @@ data/
 
 ## Website
 
-Searchable directory of **current journal editors** on the FT50 list and the ABDC A*, A, B, and C lists:
+Searchable directory of **current journal editors** on the FT50 list and the ABDC A*, A, B, and C lists. Top 5 and UTD24 are extra multi-select filters on those same boards:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/**
 
@@ -55,7 +57,9 @@ core49 is not included (it is an older ABDC A* subset, not a separate universe i
 
 `scripts/build_site.py` reads the current editor releases and writes `site/data.js`. The page is static HTML, CSS, and JS: a filterable table (name, role, journal, list, affiliation, country, continent), header counts, and a short note on the release. Emails, phone numbers, and photos are not published.
 
-One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
+One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5 or UTD24 journal keeps those badges on that same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
+
+Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
 ### Local build
 
