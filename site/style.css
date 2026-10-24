@@ -137,6 +137,8 @@ th button:hover, th button[aria-sort] { color: var(--ink); }
 td.affiliation, td.journal { max-width: 280px; }
 tbody tr:hover td { background: var(--accent-soft); }
 .journal { font-weight: 650; color: var(--ink); }
+.rating { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.idcode { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
 .muted { color: var(--muted); }
 .badge {
   display: inline-block; margin: 0 4px 4px 0; padding: 1px 7px; border-radius: 999px;

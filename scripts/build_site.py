@@ -81,6 +81,10 @@ The published URL is https://kochiuyu.github.io/econ-journal-dispersion/
 ``python -m http.server -d site`` serve the same files. Do not switch those
 references to root-absolute paths (``/style.css``); on project Pages those
 resolve at the user-site root instead of ``/econ-journal-dispersion/``.
+
+``main`` also runs ``scripts/build_rankings.py``, which writes
+``site/rankings-data.js`` from ``journals/rankings/``. That page is journal
+grades (ABS/AJG), not appointments, and it does not add directory chips.
 """
 
 from __future__ import annotations
@@ -88,6 +92,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 import sys
 import unicodedata
 from collections import defaultdict
@@ -752,7 +757,15 @@ def assert_static_site() -> None:
     app = (SITE_DIR / "app.js").read_text(encoding="utf-8")
     if PAGES_BASE not in app:
         raise SystemExit("site/app.js is missing the project Pages base path")
-    for name in ("index.html", "app.js", "style.css"):
+    rankings = (SITE_DIR / "rankings.html").read_text(encoding="utf-8")
+    if PAGES_BASE not in rankings or LIVE_URL not in rankings:
+        raise SystemExit("site/rankings.html is missing the project Pages URL")
+    if 'href="rankings.html"' not in html:
+        raise SystemExit("site/index.html is missing the Rankings nav link")
+    rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
+    if PAGES_BASE not in rankings_js:
+        raise SystemExit("site/rankings.js is missing the project Pages base path")
+    for name in ("index.html", "app.js", "style.css", "rankings.html", "rankings.js"):
         text = (SITE_DIR / name).read_text(encoding="utf-8")
         match = ROOT_ABSOLUTE_RE.search(text)
         if match:
@@ -1069,7 +1082,16 @@ def main() -> int:
     )
     print("Role groups: " + ", ".join(f"{name} {family_counts[name]:,}" for name in FAMILIES))
     print(f"Collected {payload['collectedMin']} – {payload['collectedMax']}; board year {payload['year']}")
+    build_rankings_page()
     return 0
+
+
+def build_rankings_page() -> None:
+    """Write site/rankings-data.js. Failure here fails the Pages build."""
+    script = Path(__file__).resolve().parent / "build_rankings.py"
+    completed = subprocess.run([sys.executable, str(script)], check=False)
+    if completed.returncode != 0:
+        raise SystemExit(completed.returncode)
 
 
 if __name__ == "__main__":
