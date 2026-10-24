@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal rankings — ABS/AJG</title>
+  <meta name="description" content="ABS and AJG journal grades by edition, from the Geographic Dispersion ranking catalogs.">
+  <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
+  <meta property="og:title" content="Journal rankings — ABS/AJG">
+  <meta property="og:description" content="ABS and AJG journal grades by edition.">
+  <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
+  <meta property="og:type" content="website">
+  <!--
+    Project Pages base path: /econ-journal-dispersion/
+    Asset URLs are relative (style.css, not /style.css) so this directory
+    loads at that project URL and under `python -m http.server -d site`.
+    A root-absolute path would be requested from the user-site root.
+  -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#rankings">Skip to rankings</a>
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="./">
+        <span class="logo" aria-hidden="true">Je</span>
+        <span>
+          <span class="t1">Journal Editors</span>
+          <span class="t2">Rankings · ABS/AJG</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Site">
+        <a href="./#directory">Directory</a>
+        <a href="rankings.html" class="active">Rankings</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="intro" id="intro">
+      CABS Academic Journal Guide grades from the Editor-Collector freeze rankings_abs_ajg_20261024.
+      2010 is the ABS guide (grades 1–4). From 2015 the guide is the AJG and adds 4*.
+      These are journal grades, not editorial appointments.
+    </p>
+
+    <section class="stats" id="stats" aria-label="Edition totals">
+      <div class="stat">
+        <div class="n" id="n-journals">…</div>
+        <div class="l">Journals</div>
+        <div class="sub" id="s-journals">This edition</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-top">…</div>
+        <div class="l" id="l-top">4*</div>
+        <div class="sub" id="s-top">Journals of Distinction</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-mapped">…</div>
+        <div class="l">Mapped</div>
+        <div class="sub" id="s-mapped">Catalog journal id</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editions">…</div>
+        <div class="l">Editions</div>
+        <div class="sub">ABS/AJG years on file</div>
+      </div>
+    </section>
+
+    <section class="controls" id="rankings" aria-label="Filter rankings">
+      <form id="filters" role="search">
+        <div class="row">
+          <label class="sr-only" for="q">Search journals</label>
+          <input id="q" type="search" name="q" placeholder="Search journal title" autocomplete="off" spellcheck="false">
+          <button class="btn" type="submit">Search</button>
+          <button class="btn" type="button" id="clear">Clear</button>
+        </div>
+        <div class="row">
+          <label class="lbl" for="system">Ranking</label>
+          <select id="system" name="system"></select>
+          <label class="lbl" for="year">Edition</label>
+          <select id="year" name="year"></select>
+          <label class="lbl" for="rating">Rating</label>
+          <select id="rating" name="rating">
+            <option value="">All ratings</option>
+          </select>
+          <label class="lbl" for="pagesize">Rows</label>
+          <select id="pagesize" name="n">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+          </select>
+        </div>
+      </form>
+      <p class="hint">Search matches the journal title. A journal id or ISSN matches too. A blank journal id is unmatched in this freeze.</p>
+    </section>
+
+    <p class="count" id="count" aria-live="polite">Loading rankings…</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <caption class="sr-only">ABS and AJG journal grades</caption>
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" data-sort="name">Journal</button></th>
+            <th scope="col"><button type="button" data-sort="rating">Rating</button></th>
+            <th scope="col"><button type="button" data-sort="subject">Subject</button></th>
+            <th scope="col"><button type="button" data-sort="year">Edition</button></th>
+            <th scope="col"><button type="button" data-sort="id">Journal id</button></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="pager"></div>
+
+    <section class="prose" id="about">
+      <h2>About these rankings</h2>
+      <p>
+        This page lists journal grades from the CABS Academic Journal Guide, as published in the Editor-Collector freeze
+        <code>rankings_abs_ajg_20261024</code>.
+        It is a separate page from the
+        <a href="./#directory">editor directory</a>.
+        FT50, ABDC, Top 5, and UTD24 chips on that directory are unchanged.
+        ABS/AJG is not a directory chip.
+      </p>
+      <p>
+        Editions on file are 2010, 2015, 2018, 2021, and 2024.
+        AJG 2024 has 1,823 journals, of which 1,378 (75.6%) have a catalog <code>journal_id</code>.
+        Across all five editions, 1,478 of 7,245 rows are unmatched.
+        The files are under <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
+      </p>
+      <p>
+        <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+      </p>
+      <p class="small">
+        More ranking systems can be added later under <code>journals/rankings/</code>.
+        Build locally with <code>python scripts/build_site.py</code>.
+        The project site is
+        <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>
+      Geographic Dispersion / econ-journal-dispersion.
+      Journal grades, not editorial boards.
+      <a href="./#directory">Editor directory</a>.
+      <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">Repository README</a>.
+    </p>
+  </footer>
+
+  <script src="rankings-data.js"></script>
+  <script src="rankings.js"></script>
+</body>
+</html>

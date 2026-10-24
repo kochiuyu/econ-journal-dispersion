@@ -19,6 +19,7 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **ABDC** | `journals/catalog_abdc_{a_star,a,b,c}.csv` | 2025 ABDC Journal Quality List by rating |
 | **Top 5** | `journals/catalog_top5.csv` | AER, Econometrica, JPE, QJE, and ReStud. Subset tag on the FT50 current release |
 | **UTD24** | `journals/catalog_utd24.csv` | UT Dallas Naveen Jindal Top 24. Twenty-three journals tagged from the FT50 freeze; INFORMS Journal on Computing tagged from the ABDC A freeze |
+| **ABS/AJG** | `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/` | CABS Academic Journal Guide grades for 2010, 2015, 2018, 2021, and 2024, via the Editor-Collector freeze. Ratings, not editor boards. See `journals/rankings/STATUS.md` |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) — see `docs/README.md`.
 
@@ -61,6 +62,12 @@ One row is one person in one role on one journal. The same person on two journal
 
 Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
+Journal grades are a separate page, not extra directory chips:
+
+**https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
+
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which reads the Editor-Collector freeze `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/` and writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition year, and rating, and searches by journal title. ABS/AJG is the first system (2010, 2015, 2018, 2021, 2024). Directory chips stay as they are.
+
 ### Local build
 
 ```bash
@@ -68,7 +75,7 @@ python scripts/build_site.py
 python -m http.server 8000 -d site
 ```
 
-Open http://127.0.0.1:8000/ . Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. `site/data.js` is generated and is not committed.
+Open http://127.0.0.1:8000/ . Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. Rankings are at http://127.0.0.1:8000/rankings.html . `site/data.js` and `site/rankings-data.js` are generated and are not committed.
 
 ### Enable GitHub Pages
 
