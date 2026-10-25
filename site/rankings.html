@@ -49,6 +49,8 @@
       ABDC is the 2025 Journal Quality List (A*, A, B, C).
       FT50, UTD24, and Top 5 are lists with no grade tiers.
       Field is the source subject when the list has one.
+      Directory AJG chips are only the 2024 grades on current FT50 and ABDC boards.
+      Every AJG edition stays on this page.
     </p>
 
     <section class="stats" id="stats" aria-label="Edition totals">
@@ -130,9 +132,10 @@
       <h2>About these rankings</h2>
       <p>
         This page lists journal grades and membership lists. It is separate from the
-        <a href="./#directory">editor directory</a>.
-        FT50, ABDC, Top 5, UTD24, and AJG grades filter the editor directory.
-        The directory AJG chips are the 2024 grade (AJG 4*, AJG 4, AJG 3, AJG 2, AJG 1), joined by catalog id from this freeze, including crosswalk ids.
+        <a href="./#directory">editor directory</a>, whose boards are current FT50 and ABDC only.
+        Top 5 and UTD24 filter that directory as tags on those boards.
+        Directory AJG chips are the 2024 grade (AJG 4*, AJG 4, AJG 3, AJG 2, AJG 1), joined by catalog id from this freeze, including crosswalk ids, onto those same boards.
+        A chip is a grade on a board journal. Unmatched titles, and mapped titles that are not on the current boards, never appear there.
         This page still lists every ABS/AJG edition and grade.
       </p>
       <p>
@@ -141,6 +144,9 @@
         Editions are 2010, 2015, 2018, 2021, and 2024.
         Ratings are 4*, 4, 3, 2, and 1. ABS 2010 has no 4*.
         AJG 2024 has 1,823 journals, of which 1,378 (75.6%) have a catalog <code>journal_id</code>.
+        About 1,356 of those mapped titles are on a current FT50 or ABDC board and can show a Directory chip.
+        The 445 with no id never do, and a small set of mapped titles are not on those boards.
+        Many ABDC board journals have no AJG grade (about 2,400 board journal ids, against about 1,356 with a hit).
         Across all five editions, 1,478 of 7,245 rows are unmatched.
         The files are under <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
       </p>
