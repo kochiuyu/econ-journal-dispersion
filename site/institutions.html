@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Institutions — FT50 and ABDC editors</title>
+  <meta name="description" content="Institutions of current FT50 and ABDC journal editors, with appointment counts and links into the editor directory.">
+  <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/institutions.html">
+  <meta property="og:title" content="Institutions — FT50 and ABDC editors">
+  <meta property="og:description" content="One row per institution on the current FT50 and ABDC editorial boards.">
+  <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/institutions.html">
+  <meta property="og:type" content="website">
+  <!--
+    Project Pages base path: /econ-journal-dispersion/
+    Asset URLs are relative (style.css, not /style.css) so this directory
+    loads at that project URL and under `python -m http.server -d site`.
+    A root-absolute path would be requested from the user-site root.
+  -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#institutions">Skip to institutions</a>
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="./">
+        <span class="logo" aria-hidden="true">Je</span>
+        <span>
+          <span class="t1">Journal Editors</span>
+          <span class="t2">Institutions · FT50, ABDC, Top 5, UTD24</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Site">
+        <a href="./#directory">Directory</a>
+        <a href="journals.html">Journals</a>
+        <a href="institutions.html" class="active">Institutions</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="intro" id="intro">
+      One row per institution on the current FT50 and ABDC boards.
+      A ROR id is one row when the release matched one. Otherwise the row is the affiliation name.
+      The name opens the <a href="./#directory">directory</a> on that affiliation and country.
+      <span id="asof">Board year 2026.</span>
+    </p>
+
+    <section class="stats" id="stats" aria-label="Institution totals">
+      <div class="stat">
+        <div class="n" id="n-institutions">…</div>
+        <div class="l">Institutions</div>
+        <div class="sub">ROR id, or affiliation</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-appointments">…</div>
+        <div class="l">Appointments</div>
+        <div class="sub">With an institution</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editors">…</div>
+        <div class="l">Editors</div>
+        <div class="sub">Distinct names</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-countries">…</div>
+        <div class="l">Countries</div>
+        <div class="sub">Matched affiliation</div>
+      </div>
+    </section>
+
+    <section class="controls" id="institutions" aria-label="Filter institutions">
+      <form id="filters" role="search">
+        <div class="row">
+          <label class="sr-only" for="q">Search institutions</label>
+          <input id="q" type="search" name="q" placeholder="Search institution, country, or continent" autocomplete="off" spellcheck="false">
+          <button class="btn" type="submit">Search</button>
+          <button class="btn" type="button" id="clear">Clear</button>
+        </div>
+        <div class="row" id="universe-row">
+          <span class="lbl" id="universe-label">List</span>
+        </div>
+        <div class="row">
+          <label class="lbl" for="continent">Continent</label>
+          <select id="continent" name="continent">
+            <option value="">All continents</option>
+          </select>
+          <label class="lbl" for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">All countries</option>
+          </select>
+          <label class="lbl" for="pagesize">Rows</label>
+          <select id="pagesize" name="n">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+          </select>
+        </div>
+      </form>
+      <p class="hint">Selecting more than one list shows institutions with an appointment on any of them. Country follows the continent you pick. Appointments with no affiliation are left out.</p>
+    </section>
+
+    <p class="count" id="count" aria-live="polite">Loading institutions…</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <caption class="sr-only">Institutions of current FT50 and ABDC journal editors</caption>
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" data-sort="name">Institution</button></th>
+            <th scope="col"><button type="button" data-sort="country">Country</button></th>
+            <th scope="col"><button type="button" data-sort="continent">Continent</button></th>
+            <th scope="col"><button type="button" data-sort="editors" title="Distinct editor names">Editors</button></th>
+            <th scope="col"><button type="button" data-sort="appointments">Appointments</button></th>
+            <th scope="col"><button type="button" data-sort="journals" title="Distinct journals">Journals</button></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="pager"></div>
+
+    <section class="prose" id="about">
+      <h2>About this institution list</h2>
+      <p>
+        Each row is one institution among the appointments in the
+        <a href="./#directory">editor directory</a>.
+        The build groups on <code>ror_id</code> when the collapsed row has one.
+        Otherwise it groups on the affiliation name, with case and extra spaces ignored.
+        The name in the table is the wording that appears most often for that key.
+        Country and continent are the most common ROR values on those appointments.
+      </p>
+      <p>
+        <span id="about-unmatched">Appointments with no named institution are omitted.</span>
+        <span id="about-ror"></span>
+        Opening a name filters the directory to that affiliation and, when the row has one, that country.
+        A person counted at two institutions is two appointments. The same person on two journals at one institution is one editor and two appointments.
+        Emails, phone numbers, and photos are not published.
+      </p>
+      <p>
+        <span id="about-asof">Board year 2026.</span>
+        Journals are on the <a href="journals.html">Journals</a> page.
+        Journal grades and membership lists are on <a href="rankings.html">Rankings</a> and are not list chips here.
+      </p>
+      <p class="small">
+        Build locally with <code>python scripts/build_site.py</code>.
+        The project site is
+        <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>
+      Geographic Dispersion / econ-journal-dispersion.
+      <span id="footer-asof">Board year 2026.</span>
+      <a href="./#directory">Editor directory</a>.
+      <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">Repository README</a>.
+    </p>
+  </footer>
+
+  <script src="institutions-data.js"></script>
+  <script src="institutions.js"></script>
+</body>
+</html>

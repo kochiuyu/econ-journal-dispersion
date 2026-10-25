@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journals — FT50 and ABDC editors</title>
+  <meta name="description" content="Current FT50 and ABDC journals, with appointment counts, list badges, and links into the editor directory.">
+  <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/journals.html">
+  <meta property="og:title" content="Journals — FT50 and ABDC editors">
+  <meta property="og:description" content="One row per journal on the current FT50 and ABDC editorial boards.">
+  <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/journals.html">
+  <meta property="og:type" content="website">
+  <!--
+    Project Pages base path: /econ-journal-dispersion/
+    Asset URLs are relative (style.css, not /style.css) so this directory
+    loads at that project URL and under `python -m http.server -d site`.
+    A root-absolute path would be requested from the user-site root.
+  -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#journals">Skip to journals</a>
+  <header class="topbar">
+    <div class="wrap bar">
+      <a class="brand" href="./">
+        <span class="logo" aria-hidden="true">Je</span>
+        <span>
+          <span class="t1">Journal Editors</span>
+          <span class="t2">Journals · FT50, ABDC, Top 5, UTD24</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Site">
+        <a href="./#directory">Directory</a>
+        <a href="journals.html" class="active">Journals</a>
+        <a href="institutions.html">Institutions</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="intro" id="intro">
+      One row per journal on the current FT50 and ABDC boards. Top 5 and UTD24 are badges on those same journals.
+      The journal name opens the <a href="./#directory">directory</a> filtered to that journal.
+      <span id="asof">Board year 2026.</span>
+    </p>
+
+    <section class="stats" id="stats" aria-label="Journal totals">
+      <div class="stat">
+        <div class="n" id="n-journals">…</div>
+        <div class="l">Journals</div>
+        <div class="sub">FT50 and ABDC</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-appointments">…</div>
+        <div class="l">Appointments</div>
+        <div class="sub">Person, role, and journal</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editors">…</div>
+        <div class="l">Editors</div>
+        <div class="sub">Distinct names</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-countries">…</div>
+        <div class="l">Countries</div>
+        <div class="sub">Matched affiliation</div>
+      </div>
+    </section>
+
+    <section class="controls" id="journals" aria-label="Filter journals">
+      <form id="filters" role="search">
+        <div class="row">
+          <label class="sr-only" for="q">Search journals</label>
+          <input id="q" type="search" name="q" placeholder="Search journal name or field" autocomplete="off" spellcheck="false">
+          <button class="btn" type="submit">Search</button>
+          <button class="btn" type="button" id="clear">Clear</button>
+        </div>
+        <div class="row" id="universe-row">
+          <span class="lbl" id="universe-label">List</span>
+        </div>
+        <div class="row">
+          <label class="lbl" for="field">Field</label>
+          <select id="field" name="field">
+            <option value="">All fields</option>
+          </select>
+          <label class="lbl" for="pagesize">Rows</label>
+          <select id="pagesize" name="n">
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+          </select>
+        </div>
+      </form>
+      <p class="hint">Selecting more than one list shows journals on any of them. Field is the ABDC field of research when the catalog has one. Board opens the masthead page. The journal name opens the directory.</p>
+    </section>
+
+    <p class="count" id="count" aria-live="polite">Loading journals…</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <caption class="sr-only">Journals on the current FT50 and ABDC boards</caption>
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" data-sort="name">Journal</button></th>
+            <th scope="col"><button type="button" data-sort="lists">Lists</button></th>
+            <th scope="col"><button type="button" data-sort="field">Field</button></th>
+            <th scope="col"><button type="button" data-sort="appointments">Appointments</button></th>
+            <th scope="col"><button type="button" data-sort="editors" title="Distinct editor names">Editors</button></th>
+            <th scope="col"><button type="button" data-sort="countries" title="Distinct countries">Countries</button></th>
+            <th scope="col">Board</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="pager"></div>
+
+    <section class="prose" id="about">
+      <h2>About this journal list</h2>
+      <p>
+        Each row is one journal in the
+        <a href="./#directory">editor directory</a>.
+        Appointment, editor, and country counts are taken from those collapsed rows.
+        An editor who sits on two journals is counted once in the header and once on each journal.
+        List badges are FT50, ABDC A*, A, B, or C, plus Top 5 and UTD24 when the journal is on those lists.
+      </p>
+      <p>
+        Field is <code>field_for</code> from the ABDC journal catalogs, joined on the catalog id when the release has one.
+        <span id="about-field">Journals without a field stay in the table.</span>
+        The board link is the masthead URL on the release, or the catalog board URL when that cell is empty.
+        Emails, phone numbers, and photos are not published.
+      </p>
+      <p>
+        <span id="about-asof">Board year 2026.</span>
+        Institutions are on the <a href="institutions.html">Institutions</a> page.
+        Journal grades and membership lists are on <a href="rankings.html">Rankings</a> and are not list chips here.
+      </p>
+      <p class="small">
+        Build locally with <code>python scripts/build_site.py</code>.
+        The project site is
+        <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>
+      Geographic Dispersion / econ-journal-dispersion.
+      <span id="footer-asof">Board year 2026.</span>
+      <a href="./#directory">Editor directory</a>.
+      <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">Repository README</a>.
+    </p>
+  </footer>
+
+  <script src="journals-data.js"></script>
+  <script src="journals.js"></script>
+</body>
+</html>

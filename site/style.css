@@ -137,6 +137,7 @@ th button {
 }
 th button:hover, th button[aria-sort] { color: var(--ink); }
 td.affiliation, td.journal, td.field { max-width: 280px; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 tbody tr:hover td { background: var(--accent-soft); }
 .journal { font-weight: 650; color: var(--ink); }
 .rating, .weight { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
