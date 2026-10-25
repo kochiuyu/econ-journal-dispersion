@@ -51,8 +51,20 @@ Twenty-three are tagged from the FT50 freeze. INFORMS Journal on Computing
 Journal of Applied Psychology is on FT50 and is absent from the UTD24 catalog.
 Journal of Management is likewise on FT50 and absent from UTD24.
 
+AJG 2024
+--------
+AJG 2024 is an extra tag on those same rows. It does not add a board file
+and it does not scrape. Membership is the 2024 edition in
+``journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/``.
+A journal is tagged when its catalog id is a ``journal_id`` on
+``abs_ajg_2024.csv`` or on a 2024 row of ``journal_id_crosswalk.csv``.
+The crosswalk is required for journals whose primary id is a core49 slug
+while the board file uses the ABDC id (The Economic Journal is ``ej``).
+Unmatched AJG titles have no id and are not tagged. The chip is membership
+in that edition, at any grade. Grades stay on the Rankings page.
+
 Universe bits: FT50 1, ABDC A* 2, ABDC A 4, ABDC B 8, ABDC C 16, Top 5 32,
-UTD24 64.
+UTD24 64, AJG 2024 128.
 
 Within one release file
 -----------------------
@@ -86,9 +98,10 @@ resolve at the user-site root instead of ``/econ-journal-dispersion/``.
 from those collapsed appointments, then runs ``scripts/build_rankings.py``,
 which writes ``site/rankings-data.js`` from the ABS/AJG, CNRS, and
 Handelsblatt/VWL freezes and the FT50, UTD24, Top 5, and ABDC catalogs.
-Journals and institutions regroup the same boards. They do not add directory
-chips. Rankings are journal grades, weights, and membership lists, not
-appointments, and they do not add directory chips.
+Journals and institutions regroup the same boards and show the same list
+chips, including AJG 2024. Rankings are journal grades, weights, and
+membership lists, not appointments. The directory chip is 2024 membership
+from that freeze, not the grade table.
 
 Journal and institution pages
 -----------------------------
@@ -192,8 +205,15 @@ UTD24_ALIAS = {
     "rfs": "The Review of Financial Studies",
     "informs_journal_computing": "Journal on Computing",
 }
+AJG_FREEZE = ROOT / "journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024"
+AJG_EDITION = 2024
+AJG_YEAR = AJG_FREEZE / "abs_ajg_2024.csv"
+AJG_CROSSWALK = AJG_FREEZE / "journal_id_crosswalk.csv"
+# Locked to RELEASE_NOTES.md in rankings_abs_ajg_20261024.
+AJG_EXPECTED_ROWS = 1823
+AJG_EXPECTED_MAPPED = 1378
 
-UNIVERSE_ORDER = ("ft50", "a_star", "a", "b", "c", "top5", "utd24")
+UNIVERSE_ORDER = ("ft50", "a_star", "a", "b", "c", "top5", "utd24", "ajg")
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
     {"id": "a_star", "label": "ABDC A*", "bit": 2},
@@ -202,6 +222,12 @@ UNIVERSE_META = (
     {"id": "c", "label": "ABDC C", "bit": 16},
     {"id": "top5", "label": "Top 5", "bit": 32},
     {"id": "utd24", "label": "UTD24", "bit": 64},
+    {
+        "id": "ajg",
+        "label": "AJG 2024",
+        "bit": 128,
+        "title": "CABS Academic Journal Guide 2024",
+    },
 )
 BITS = {item["id"]: item["bit"] for item in UNIVERSE_META}
 
@@ -589,6 +615,69 @@ def load_membership() -> Membership:
     )
 
 
+def load_ajg_ids() -> frozenset[str]:
+    """Catalog ids on AJG 2024, including non-primary crosswalk ids.
+
+    The year file's primary id is sometimes a core49 slug. The board files
+    use the ABDC id, which the crosswalk keeps with ``is_primary`` no.
+    """
+    rows = read_catalog_rows(AJG_YEAR)
+    if len(rows) != AJG_EXPECTED_ROWS:
+        raise SystemExit(f"AJG 2024 has {len(rows)} rows, expected {AJG_EXPECTED_ROWS}")
+    primary: set[str] = set()
+    for row in rows:
+        if (row.get("edition_year") or "").strip() != str(AJG_EDITION):
+            raise SystemExit(f"AJG edition_year {row.get('edition_year')!r}")
+        if (row.get("source_note") or "").strip() != "AJG2024":
+            raise SystemExit(f"AJG source_note {row.get('source_note')!r}")
+        journal_id = (row.get("journal_id") or "").strip()
+        method = (row.get("match_method") or "").strip()
+        if method == "unmatched":
+            if journal_id or (row.get("catalog") or "").strip():
+                raise SystemExit(f"Unmatched AJG row has an id: {row.get('journal_title')}")
+            continue
+        if method not in {"issn", "title"}:
+            raise SystemExit(f"AJG match_method {method!r}")
+        if not journal_id:
+            raise SystemExit(f"Matched AJG row missing id: {row.get('journal_title')}")
+        if journal_id in primary:
+            raise SystemExit(f"Duplicate AJG 2024 journal_id {journal_id}")
+        primary.add(journal_id)
+    if len(primary) != AJG_EXPECTED_MAPPED:
+        raise SystemExit(f"AJG 2024 mapped {len(primary)}, expected {AJG_EXPECTED_MAPPED}")
+
+    ids = set(primary)
+    xwalk_primary: set[str] = set()
+    xwalk_rows = 0
+    for row in read_catalog_rows(AJG_CROSSWALK):
+        if (row.get("edition_year") or "").strip() != str(AJG_EDITION):
+            continue
+        xwalk_rows += 1
+        journal_id = (row.get("journal_id") or "").strip()
+        if not journal_id:
+            continue
+        ids.add(journal_id)
+        if (row.get("is_primary") or "").strip() == "yes":
+            xwalk_primary.add(journal_id)
+    if not xwalk_rows:
+        raise SystemExit("AJG crosswalk has no 2024 rows")
+    if xwalk_primary != primary:
+        missing = sorted(primary - xwalk_primary)[:8]
+        extra = sorted(xwalk_primary - primary)[:8]
+        raise SystemExit(f"AJG 2024 crosswalk primary ids differ. Missing {missing}. Extra {extra}.")
+    # Board id, not the core49 slug stored as the freeze's primary id.
+    if "ej" not in ids or "ej" in primary:
+        raise SystemExit("AJG 2024 should tag The Economic Journal via crosswalk id ej")
+    if "jeh" not in ids or "jeh" in primary:
+        raise SystemExit("AJG 2024 should tag The Journal of Economic History via crosswalk id jeh")
+    if "accounting_educators_journal" in ids:
+        raise SystemExit("Accounting Educators Journal is not on AJG 2024")
+    missing_top5 = sorted(TOP5_IDS - ids)
+    if missing_top5:
+        raise SystemExit(f"Top 5 ids missing from AJG 2024: {missing_top5}")
+    return frozenset(ids)
+
+
 def load_catalog_names() -> dict[str, str]:
     names: dict[str, str] = {}
     for path in CATALOG_FILES:
@@ -684,6 +773,7 @@ def row_to_rec(
     catalogs: dict[str, str],
     membership: Membership,
     catalog: JournalCatalog,
+    ajg_ids: frozenset[str],
 ) -> Rec | None:
     name = usable_name(row.get("editor_name") or "")
     if not name:
@@ -707,6 +797,8 @@ def row_to_rec(
             journal_id = named["id"]
     universes = {origin}
     universes |= membership.tag(journal_id, journal)
+    if journal_id and journal_id in ajg_ids:
+        universes.add("ajg")
     return Rec(
         name=name,
         name_key=norm_name(name),
@@ -735,6 +827,7 @@ def read_release(
     membership: Membership,
     seen_membership_ids: set[str],
     catalog: JournalCatalog,
+    ajg_ids: frozenset[str],
 ) -> tuple[list[Rec], int]:
     records: list[Rec] = []
     dropped = 0
@@ -749,7 +842,7 @@ def read_release(
             journal_id = (row.get("abdc_journal_id") or "").strip()
             if journal_id in membership.ids:
                 seen_membership_ids.add(journal_id)
-            rec = row_to_rec(row, origin, catalogs, membership, catalog)
+            rec = row_to_rec(row, origin, catalogs, membership, catalog, ajg_ids)
             if rec is None:
                 dropped += 1
                 continue
@@ -860,6 +953,10 @@ def assert_static_site() -> None:
         raise SystemExit("site/rankings.html is missing the project Pages URL")
     if 'href="rankings.html"' not in html:
         raise SystemExit("site/index.html is missing the Rankings nav link")
+    if 'id="institution"' not in html or 'id="field"' not in html:
+        raise SystemExit("site/index.html is missing the institution or field filter")
+    if "AJG 2024" not in html:
+        raise SystemExit("site/index.html does not name the AJG 2024 list")
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
     if PAGES_BASE not in rankings_js:
         raise SystemExit("site/rankings.js is missing the project Pages base path")
@@ -896,13 +993,20 @@ def assert_static_site() -> None:
             )
 
 
-def build_payload(records: list[Rec], sources: list[str], dates: list[str], years: set[str]) -> dict:
+def build_payload(
+    records: list[Rec],
+    sources: list[str],
+    dates: list[str],
+    years: set[str],
+    catalog: JournalCatalog,
+) -> dict:
     roles = StringIndex()
     role_family_idx: list[int] = []
     journals = StringIndex()
     countries = StringIndex("")
     continents = StringIndex("")
     urls = StringIndex("")
+    field_counts: dict[int, Counter[str]] = defaultdict(Counter)
 
     def add_role(role: str) -> int:
         index = roles.add(role)
@@ -935,6 +1039,10 @@ def build_payload(records: list[Rec], sources: list[str], dates: list[str], year
             assert_no_contacts(text, label)
         role_i = add_role(rec.role or "—")
         journal_i = journals.add(rec.journal)
+        field_for = (catalog_meta(rec, catalog).get("field") or "")
+        if field_for:
+            field_counts[journal_i][field_for] += 1
+            assert_no_contacts(field_for, "field")
         country_i = countries.add(rec.country)
         continent_i = continents.add(rec.continent)
         url_i = urls.add(rec.url)
@@ -959,6 +1067,10 @@ def build_payload(records: list[Rec], sources: list[str], dates: list[str], year
                 appointments_by_universe[universe] += 1
                 journal_by_universe[universe].add(journal_i)
 
+    fields = StringIndex("")
+    journal_field = [
+        fields.add(mode_text(field_counts[index])) for index in range(len(journals.values))
+    ]
     collected = sorted(set(dates))
     by_universe = {
         uid: {
@@ -982,6 +1094,8 @@ def build_payload(records: list[Rec], sources: list[str], dates: list[str], year
         "roles": roles.values,
         "roleFamily": role_family_idx,
         "journals": journals.values,
+        "fields": fields.values,
+        "journalField": journal_field,
         "countries": countries.values,
         "continents": continents.values,
         "urls": urls.values,
@@ -1013,7 +1127,8 @@ def js_payload(payload: dict) -> str:
         payload,
         "Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
         "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
-        "   Do not edit.",
+        "   AJG 2024 is a subset tag from the ABS/AJG 2024 freeze, including crosswalk ids.\n"
+        "   fields and journalField are ABDC field_for. Do not edit.",
     )
 
 
@@ -1442,6 +1557,9 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit(f"American Economic Review mask is wrong: {aer[1]}")
     if aer[1] & utd_bit:
         raise SystemExit("American Economic Review must not carry UTD24")
+    ajg_bit = BITS["ajg"]
+    if (aer[1] & ajg_bit) == 0:
+        raise SystemExit(f"American Economic Review is missing AJG 2024: {aer[1]}")
     aer_field = journals["fields"][aer[5]]
     if aer_field != "3801 Applied economics":
         raise SystemExit(f"American Economic Review field is {aer_field!r}")
@@ -1453,7 +1571,32 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     joc = by_name.get("INFORMS Journal on Computing")
     if joc is None or not (joc[1] & utd_bit) or not (joc[1] & a_bit) or (joc[1] & ft50_bit):
         raise SystemExit("INFORMS Journal on Computing tags are wrong on the journal page")
-    for uid in ("ft50", "top5", "utd24"):
+    ej = by_name.get("The Economic Journal")
+    if ej is None or (ej[1] & ajg_bit) == 0:
+        raise SystemExit("The Economic Journal is missing the AJG 2024 chip (crosswalk id ej)")
+    educators = by_name.get("Accounting Educators Journal")
+    if educators is None or educators[1] & ajg_bit:
+        raise SystemExit("Accounting Educators Journal must not carry AJG 2024")
+    ft50_missing_ajg = [
+        row[0] for row in journals["rows"] if (row[1] & ft50_bit) and not (row[1] & ajg_bit)
+    ]
+    if ft50_missing_ajg:
+        raise SystemExit(f"FT50 journals missing AJG 2024: {ft50_missing_ajg}")
+    ajg_journals = jcounts["byUniverse"]["ajg"]["journals"]
+    if not 1_000 <= ajg_journals < jcounts["journals"]:
+        raise SystemExit(f"Unexpected AJG 2024 journal count: {ajg_journals}")
+    if len(directory.get("journalField") or []) != len(directory["journals"]):
+        raise SystemExit("directory journalField does not line up with journals")
+    directory_field = {
+        name: directory["fields"][directory["journalField"][index]]
+        for index, name in enumerate(directory["journals"])
+    }
+    for row in journals["rows"]:
+        expect = journals["fields"][row[5]]
+        got = directory_field.get(row[0])
+        if got != expect:
+            raise SystemExit(f"{row[0]} field {got!r} != journal page {expect!r}")
+    for uid in ("ft50", "top5", "utd24", "ajg"):
         if jcounts["byUniverse"][uid]["journals"] != dcounts["byUniverse"][uid]["journals"]:
             raise SystemExit(
                 f"{uid} journal count {jcounts['byUniverse'][uid]['journals']} != "
@@ -1500,7 +1643,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit("Dartmouth College continent is not North America")
     if dartmouth_row[4] < 1:
         raise SystemExit("Dartmouth College has no appointments")
-    for uid in ("ft50", "top5", "utd24", "a_star", "a", "b", "c"):
+    for uid in ("ft50", "top5", "utd24", "ajg", "a_star", "a", "b", "c"):
         got = icounts["byUniverse"][uid]["appointments"]
         cap = dcounts["byUniverse"][uid]["appointments"]
         if got <= 0 or got > cap:
@@ -1518,6 +1661,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
 def main() -> int:
     assert_static_site()
     membership = load_membership()
+    ajg_ids = load_ajg_ids()
     catalogs = load_catalog_names()
     journal_catalog = load_journal_catalog()
     ft50_path = resolve_ft50_path()
@@ -1529,7 +1673,15 @@ def main() -> int:
 
     seen_membership_ids: set[str] = set()
     ft50_records, ft50_dropped = read_release(
-        ft50_path, "ft50", catalogs, dates, years, membership, seen_membership_ids, journal_catalog
+        ft50_path,
+        "ft50",
+        catalogs,
+        dates,
+        years,
+        membership,
+        seen_membership_ids,
+        journal_catalog,
+        ajg_ids,
     )
     dropped += ft50_dropped
     sources.append(ft50_path.relative_to(ROOT).as_posix())
@@ -1539,7 +1691,15 @@ def main() -> int:
         if not path.exists():
             raise SystemExit(f"Missing ABDC release: {path.relative_to(ROOT)}")
         records, n_dropped = read_release(
-            path, origin, catalogs, dates, years, membership, seen_membership_ids, journal_catalog
+            path,
+            origin,
+            catalogs,
+            dates,
+            years,
+            membership,
+            seen_membership_ids,
+            journal_catalog,
+            ajg_ids,
         )
         dropped += n_dropped
         sources.append(path.relative_to(ROOT).as_posix())
@@ -1568,7 +1728,7 @@ def main() -> int:
             "Membership journals missing from the ABDC releases: " + ", ".join(sorted(missing_ids))
         )
 
-    payload = build_payload(collapsed, sources, dates, years)
+    payload = build_payload(collapsed, sources, dates, years, journal_catalog)
     assert_payload(payload, collapse_stats, ft50_kept)
     assert_subset_lists(payload, membership)
 

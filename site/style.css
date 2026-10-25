@@ -104,7 +104,7 @@ input[type="search"] { flex: 1 1 260px; min-width: 200px; }
 select { max-width: 240px; }
 #field { max-width: 420px; flex: 1 1 240px; }
 select:disabled { opacity: 0.6; cursor: default; }
-#journal { max-width: 320px; flex: 1 1 220px; }
+#journal, #institution { max-width: 320px; flex: 1 1 220px; }
 .btn {
   background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; cursor: pointer;
   font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; color: var(--muted);
@@ -156,6 +156,7 @@ tbody tr:hover td { background: var(--accent-soft); }
 .u-c { background: #f1ece6; color: #5c5146; }
 .u-top5 { background: #f6e4e1; color: #6e2c2c; }
 .u-utd24 { background: #e8e6f6; color: #332e66; }
+.u-ajg { background: #e3f4f1; color: #0f4f4a; }
 @media (prefers-color-scheme: dark) {
   .u-ft50 { background: #24343b; color: #d5e4ec; }
   .u-a_star { background: #3d3220; color: #f0d7a6; }
@@ -164,6 +165,7 @@ tbody tr:hover td { background: var(--accent-soft); }
   .u-c { background: #2e2a26; color: #e6ddd4; }
   .u-top5 { background: #3d2826; color: #f3d2cc; }
   .u-utd24 { background: #2c2a3d; color: #ddd7f5; }
+  .u-ajg { background: #1c3330; color: #c9efe8; }
 }
 
 .pager {
