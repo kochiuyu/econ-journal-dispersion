@@ -1,73 +1,104 @@
-# editors_ft50_faculty_masthead_20261025
+# editors_ft50_utd24_faculty_20261025
 
-FT50 current boards after filling blank `faculty_profile_url` cells from journal masthead website anchors on 2026-10-25 (Asia/Hong_Kong). The new links are the "website" anchors already on the MIS Quarterly editorial board. ABDC and AJG-gap panels are not part of this freeze.
+FT50 current boards after a UTD24 faculty-profile fill on 2026-10-25 (Asia/Hong_Kong, 21:32). This freeze includes the MIS Quarterly masthead links from `editors_ft50_faculty_masthead_20261025` and adds profile URLs on other boards. ABDC and AJG-gap panels are not part of this freeze.
 
 `editor_name` and `editor_name_raw` are still freeze `editors_display_names_20261025`. This pass left both columns as they were. The directory shows `editor_name`. It does not display `editor_name_raw`, and it does not invent a name.
 
+The collector gap note `UTD24_FACULTY_GAP_20261025.md` is summarized below. The fill log `UTD24_FACULTY_FILLS_20261025.csv` is not used by the site and is not in this repository.
+
 ## Files
 
-`editors_ft50_current.csv` is the slim panel: 10,050 rows, with no ROR columns. Person profile columns are `faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. `faculty_profile_url` is filled on 8,211 rows (81.7%), up from 8,199 rows (81.6%) in `editors_ft50_faculty_20261025` and from 4,724 rows (47.0%) in `editors_current_20261025`. 1,839 rows are still blank. `faculty_home_page` is still filled on 1,824 rows (18.1%).
+`editors_ft50_current.csv` is the slim panel: 10,050 rows, with no ROR columns. Person profile columns are `faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. `faculty_profile_url` is filled on 8,360 rows (83.2%), up from 8,211 (81.7%) in `editors_ft50_faculty_masthead_20261025`, 8,199 (81.6%) in `editors_ft50_faculty_20261025`, and 4,724 (47.0%) in `editors_current_20261025`. 1,690 rows are still blank. `faculty_home_page` is still filled on 1,824 rows (18.1%).
 
-`editors_ft50_current_with_ror.csv` is the file `scripts/build_site.py` reads when it is present (`FT50_CANDIDATES` prefers it over the slim CSV). It has the same 10,050 rows and the same `faculty_*` values, including `faculty_profile_url` on 8,211 rows (81.7%). ROR, imputation, OpenAlex, and RePEc columns match the previous file in this folder. `ror_id` was not changed (9,895 rows still have one). The five `faculty_*` columns changed only where `faculty_profile_url` had been blank: 12 new URLs, all `masthead_website` at high confidence. A non-empty `faculty_profile_url` was not replaced, and no filled URL was cleared.
+`editors_ft50_current_with_ror.csv` is the file `scripts/build_site.py` reads when it is present (`FT50_CANDIDATES` prefers it over the slim CSV). It has the same 10,050 rows. `faculty_profile_url` is filled on 8,348 rows (83.1%). Twelve URLs that are on the slim file are still blank here, so this file gained 137 URLs rather than 149. ROR, imputation, OpenAlex, and RePEc columns match the previous file in this folder. `ror_id` was not changed (9,895 rows still have one). A non-empty `faculty_profile_url` was not replaced, and no filled URL was cleared. `faculty_person_key` was filled where this freeze supplied one (132 new keys on the slim file, 120 on the ROR file) and no existing key was changed.
 
 ## Fill
 
-| Milestone | Filled / 10,050 | Fill % |
+| Milestone | Slim file | ROR file |
 |---|---:|---:|
-| `editors_current_20261025` | 4,724 | 47.0% |
-| `editors_ft50_faculty_20261025` | 8,199 | 81.6% |
-| This freeze | 8,211 | 81.7% |
+| `editors_current_20261025` | 4,724 (47.0%) | 4,724 (47.0%) |
+| `editors_ft50_faculty_20261025` | 8,199 (81.6%) | 8,199 (81.6%) |
+| `editors_ft50_faculty_masthead_20261025` | 8,211 (81.7%) | 8,211 (81.7%) |
+| This freeze | 8,360 (83.2%) | 8,348 (83.1%) |
 
-| Scope | Before | After |
-|---|---:|---:|
-| FT50 overall | 8,199 / 10,050 (81.6%) | 8,211 / 10,050 (81.7%) |
-| MIS Quarterly | 66 / 81 (81.5%) | 78 / 81 (96.3%) |
+On the 4,906-row set in the collector gap note, the slim file moved from 4,171 (85.0%) to 4,320 (88.1%). Blanks went from 735 to 586. That set is 23 journals. It includes Journal of Applied Psychology, Journal of Political Economy, and Quarterly Journal of Economics. Manufacturing and Service Operations Management, Production and Operations Management, and Review of Financial Studies had no new URLs in this pass and are outside that count. The ROR file has 4,308 of those 4,906 rows filled (87.8%).
 
-Blank cells were not filled with invented OpenAlex, ORCID, or Google Scholar links. Each new URL is an http(s) page the journal already listed.
+| Journal | Rows | Blank before | Blank after | Filled | Fill % |
+|---|---:|---:|---:|---:|---:|
+| Academy of Management Journal | 120 | 14 | 11 | 3 | 90.8% |
+| Academy of Management Review | 109 | 19 | 17 | 2 | 84.4% |
+| Administrative Science Quarterly | 138 | 14 | 10 | 4 | 92.8% |
+| Information Systems Research | 166 | 24 | 12 | 12 | 92.8% |
+| Journal of Accounting and Economics | 54 | 1 | 1 | 0 | 98.1% |
+| Journal of Accounting Research | 22 | 2 | 2 | 0 | 90.9% |
+| Journal of Applied Psychology | 675 | 181 | 152 | 29 | 77.5% |
+| Journal of Consumer Research | 260 | 23 | 15 | 8 | 94.2% |
+| Journal of Finance | 57 | 0 | 0 | 0 | 100.0% |
+| Journal of Financial Economics | 65 | 12 | 8 | 4 | 87.7% |
+| Journal of International Business Studies | 338 | 74 | 66 | 8 | 80.5% |
+| Journal of Marketing | 261 | 20 | 15 | 5 | 94.3% |
+| Journal of Marketing Research | 222 | 13 | 12 | 1 | 94.6% |
+| Journal of Operations Management | 266 | 110 | 65 | 45 | 75.6% |
+| Journal of Political Economy | 45 | 9 | 9 | 0 | 80.0% |
+| Management Science | 571 | 47 | 41 | 6 | 92.8% |
+| Marketing Science | 142 | 10 | 10 | 0 | 93.0% |
+| MIS Quarterly | 81 | 3 | 3 | 0 | 96.3% |
+| Operations Research | 245 | 32 | 29 | 3 | 88.2% |
+| Organization Science | 425 | 51 | 44 | 7 | 89.6% |
+| Quarterly Journal of Economics | 35 | 2 | 0 | 2 | 100.0% |
+| Strategic Management Journal | 410 | 54 | 46 | 8 | 88.8% |
+| The Accounting Review | 199 | 20 | 18 | 2 | 91.0% |
 
-## MIS Quarterly
+MIS Quarterly stays at 78/81. The twelve masthead links from the previous pass are still here, including Abayomi Baiyere at https://smith.queensu.ca/faculty_and_research/faculty_list/abayomi-baiyere.php (`masthead_website`, high). Kaylee Brosius, Todd Balazovic, and Monica Birth stay blank.
 
-Twelve senior and associate editors whose `faculty_profile_url` was blank now use the masthead website anchor. `faculty_match_method` is `masthead_website` and `faculty_match_confidence` is `high`.
+## What was added
 
-| Editor | Role | `faculty_profile_url` |
+Blank cells only. New slim-file URLs, by method:
+
+| Method | Rows | Confidence |
+|---|---:|---|
+| `masthead_href` | 40 | high |
+| `masthead_website` | 10 | high |
+| `web_search_near_miss` | 98 | 88 medium, 10 high |
+| `web_search` | 1 | high |
+
+Phase A is the 50 masthead links (`masthead_website` and `masthead_href`): ISR personal sites, JCR name links, JOOM sites, and AMR faculty pages. Phase B is the 98 near-miss and cached hits (`web_search_near_miss`). One further URL is `web_search` at high confidence: Annapoornima Subramanian, https://cde.nus.edu.sg/isem/staff/m-subramanian-annapoornima/. Eleven bad near-miss candidates were not kept (journal author pages, a salary site, a blog, an alumni page, and wrong-person pages).
+
+Examples:
+
+| Editor | Journal | URL | Method |
+|---|---|---|---|
+| Jane Feng | Information Systems Research | https://www.sem.tsinghua.edu.cn/en/info/1219/7156.htm | `masthead_website` |
+| Jay Handelman | Journal of Consumer Research | https://smith.queensu.ca/faculty_and_research/faculty_list/handelman-jay.php | `masthead_href` |
+| Benn Lawson | Journal of Operations Management | https://www.sbs.ox.ac.uk/about-us/people/benn-lawson | `web_search_near_miss` |
+
+The largest remaining blanks on this 4,906-row set are Journal of Applied Psychology (152), Journal of International Business Studies (66), Journal of Operations Management (65), Strategic Management Journal (46), and Organization Science (44). This freeze does not add another search pass for them.
+
+## Slim URLs still blank on the ROR file
+
+These twelve `faculty_profile_url` values are on `editors_ft50_current.csv` and blank on `editors_ft50_current_with_ror.csv`. The directory reads the ROR file, so it does not copy them across.
+
+| Editor on the slim file | Journal | URL |
 |---|---|---|
-| Miguel Godinho de Matos | Senior Editors | https://www.clsbe.lisboa.ucp.pt/pt-pt/pessoa/miguel-godinho-matos |
-| Matti Rossi | Senior Editors | https://research.aalto.fi/en/persons/matti-rossi/ |
-| Mari-Klara Stein | Senior Editors | https://www.etis.ee/CV/Mari-Klara_Stein/eng/ |
-| Abayomi Baiyere | Associate Editors | https://smith.queensu.ca/faculty_and_research/faculty_list/abayomi-baiyere.php |
-| Leona Chandra Kruse | Associate Editors | https://www.uia.no/english/about-uia/employees/leonac/ |
-| Seung Hyun Kim | Associate Editors | https://ysb.yonsei.ac.kr/faculty.asp?mid=n02&uid=107 |
-| Zhepeng (Lionel) Li | Associate Editors | https://www.hkubs.hku.hk/people/zhepeng-li/ |
-| Alexander Maedche | Associate Editors | https://h-lab.win.kit.edu/team_maedche.php |
-| Sabine Matook | Associate Editors | https://about.uq.edu.au/experts/1654 |
-| Mareike Möhlmann | Associate Editors | https://www.mareikemohlmann.com/ |
-| Rene Riedl | Associate Editors | https://fh-ooe.at/studienangebot/digital-business-management-master/personen-kontakt |
-| Xiao Xiao | Associate Editors | https://www.cbs.dk/en/research/departments-and-centres/department-of-digitalization/staff/xxdigi |
-
-Example: Abayomi Baiyere (Associate Editors, Queen's University) is https://smith.queensu.ca/faculty_and_research/faculty_list/abayomi-baiyere.php. That cell was blank before this freeze.
-
-Three MIS Quarterly rows stay blank. They are staff roles with no masthead website anchor: Kaylee Brosius, Todd Balazovic, and Monica Birth.
-
-Two masthead website anchors have no panel row (Eric Zheng; Yingjie Zhang). This freeze does not add rows for them.
-
-Only MIS Quarterly had a per-editor website anchor on the FT50 board HTML. Other journals were left unchanged.
-
-## Rules
-
-1. Fill only where `faculty_profile_url` was blank.
-2. Leave a non-empty URL as it was.
-3. Reject `mailto:` links and links on `misq.umn.edu`.
-4. Keep the http(s) page the journal listed.
-5. Match on the normalized `editor_name`.
-6. Set `faculty_match_method` to `masthead_website` and `faculty_match_confidence` to `high`.
-7. Leave an unmatched masthead name unmatched. No new web search.
+| Christof Brandtner | Academy of Management Journal | https://sociology.stanford.edu/people/christof-brandtner |
+| Sule Alan | Quarterly Journal of Economics | https://publicpolicy.cornell.edu/people/sule-alan/ |
+| Todd Schoellman | Quarterly Journal of Economics | https://economics.stanford.edu/people/todd-schoellman |
+| V. Astvansh | Journal of Operations Management | https://www.binghamton.edu/apps/directory/person/profile/vastvansh |
+| M. Besiou | Journal of Operations Management | https://www.klu.org/faculty-research/faculty/resident-faculty/maria-besiou |
+| M. Eftekhar | Journal of Operations Management | https://search.asu.edu/profile/2183845 |
+| L. Fredendall | Journal of Operations Management | https://www.clemson.edu/business/about/profiles/FLAWREN |
+| M. Johnson | Journal of Operations Management | https://www.wbs.ac.uk/about/person/mark-johnson/ |
+| Xiaojin Liu | Journal of Operations Management | https://directory.business.vcu.edu/profile.php?urn=xliu22 |
+| R. Metters | Journal of Operations Management | https://mays.tamu.edu/directory/rich-metters/ |
+| J. Shockley | Journal of Operations Management | https://directory.business.vcu.edu/profile.php?urn=tjshockley |
+| S. Wan | Journal of Operations Management | https://fisher.osu.edu/people/wan.207 |
 
 ## Display names
 
-Unchanged from `editors_display_names_20261025`. `editor_name` is the cleaned display name (degrees and leading titles removed, ALL-CAPS names in title case, a bare initial expanded only from another row with the same identity evidence). `editor_name_raw` is the pre-clean value when the name changed, and blank when it did not. The slim file has 1,368 non-empty `editor_name_raw` cells. The ROR file has 1,397. This freeze did not edit either column.
+Unchanged from `editors_display_names_20261025`. `editor_name` is the cleaned display name. `editor_name_raw` is the pre-clean value when the name changed, and blank when it did not. The slim file has 1,368 non-empty `editor_name_raw` cells. The ROR file has 1,397. This freeze did not edit either column.
 
 ## Public site
 
-The public directory links a name to `faculty_profile_url` when that value is a non-empty http(s) URL. It prefers that column over `faculty_home_page`. It does not link `faculty_home_page`, and it does not invent an OpenAlex or ORCID person link. Where an FT50 appointment is also on an ABDC board, display fields, including `faculty_profile_url`, come from this FT50 file. A blank FT50 profile URL may be filled from the ABDC partner. A non-empty FT50 URL is not replaced.
+The public directory links a name to `faculty_profile_url` when that value is a non-empty http(s) URL. It prefers that column over `faculty_home_page`. It does not link `faculty_home_page`, and it does not invent an OpenAlex or ORCID person link. Where an FT50 appointment is also on an ABDC board, display fields come from the FT50 ROR file. A blank FT50 profile URL may be filled from the ABDC partner. A non-empty FT50 URL is not replaced.
 
 Emails, phone numbers, and photos are not written to the site. ORCID, OpenAlex, and RePEc ids stay on the ROR CSV and are not published as person links. This release has no raw HTML and no search cache.
