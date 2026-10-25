@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Journal rankings — ABS/AJG</title>
-  <meta name="description" content="ABS and AJG journal grades by edition, from the Geographic Dispersion ranking catalogs.">
+  <title>Journal rankings</title>
+  <meta name="description" content="ABS/AJG grades by edition, the 2025 ABDC list (A*, A, B, C), and FT50, UTD24, and Top 5 membership lists.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
-  <meta property="og:title" content="Journal rankings — ABS/AJG">
-  <meta property="og:description" content="ABS and AJG journal grades by edition.">
+  <meta property="og:title" content="Journal rankings">
+  <meta property="og:description" content="ABS/AJG grades, ABDC ratings, and FT50, UTD24, and Top 5 membership lists.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Rankings · ABS/AJG</span>
+          <span class="t2">Rankings · ABS/AJG, FT50, UTD24, ABDC</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -43,9 +43,12 @@
 
   <main class="wrap">
     <p class="intro" id="intro">
-      CABS Academic Journal Guide grades from the Editor-Collector freeze rankings_abs_ajg_20261024.
-      2010 is the ABS guide (grades 1–4). From 2015 the guide is the AJG and adds 4*.
-      These are journal grades, not editorial appointments.
+      Journal grades, weights, and membership lists, not editorial appointments.
+      ABS/AJG, CNRS, and Handelsblatt/VWL are editions with ratings.
+      Handelsblatt/VWL also shows the published weight.
+      ABDC is the 2025 Journal Quality List (A*, A, B, C).
+      FT50, UTD24, and Top 5 are lists with no grade tiers.
+      Field is the source subject when the list has one.
     </p>
 
     <section class="stats" id="stats" aria-label="Edition totals">
@@ -67,7 +70,7 @@
       <div class="stat">
         <div class="n" id="n-editions">…</div>
         <div class="l">Editions</div>
-        <div class="sub">ABS/AJG years on file</div>
+        <div class="sub" id="s-editions">Editions on file</div>
       </div>
     </section>
 
@@ -88,6 +91,10 @@
           <select id="rating" name="rating">
             <option value="">All ratings</option>
           </select>
+          <label class="lbl" for="field">Field</label>
+          <select id="field" name="field">
+            <option value="">All fields</option>
+          </select>
           <label class="lbl" for="pagesize">Rows</label>
           <select id="pagesize" name="n">
             <option value="50">50</option>
@@ -96,20 +103,21 @@
           </select>
         </div>
       </form>
-      <p class="hint">Search matches the journal title. A journal id or ISSN matches too. A blank journal id is unmatched in this freeze.</p>
+      <p class="hint">Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
 
     <div class="tbl-wrap">
       <table>
-        <caption class="sr-only">ABS and AJG journal grades</caption>
+        <caption class="sr-only">Journal rankings</caption>
         <thead>
           <tr>
             <th scope="col"><button type="button" data-sort="name">Journal</button></th>
             <th scope="col"><button type="button" data-sort="rating">Rating</button></th>
-            <th scope="col"><button type="button" data-sort="subject">Subject</button></th>
+            <th scope="col"><button type="button" data-sort="field">Field</button></th>
             <th scope="col"><button type="button" data-sort="year">Edition</button></th>
+            <th scope="col" id="col-weight" hidden><button type="button" data-sort="weight">Weight</button></th>
             <th scope="col"><button type="button" data-sort="id">Journal id</button></th>
           </tr>
         </thead>
@@ -121,24 +129,66 @@
     <section class="prose" id="about">
       <h2>About these rankings</h2>
       <p>
-        This page lists journal grades from the CABS Academic Journal Guide, as published in the Editor-Collector freeze
-        <code>rankings_abs_ajg_20261024</code>.
-        It is a separate page from the
+        This page lists journal grades and membership lists. It is separate from the
         <a href="./#directory">editor directory</a>.
         FT50, ABDC, Top 5, and UTD24 chips on that directory are unchanged.
         ABS/AJG is not a directory chip.
       </p>
       <p>
-        Editions on file are 2010, 2015, 2018, 2021, and 2024.
+        <strong>ABS/AJG</strong> is the CABS Academic Journal Guide in the Editor-Collector freeze
+        <code>rankings_abs_ajg_20261024</code>.
+        Editions are 2010, 2015, 2018, 2021, and 2024.
+        Ratings are 4*, 4, 3, 2, and 1. ABS 2010 has no 4*.
         AJG 2024 has 1,823 journals, of which 1,378 (75.6%) have a catalog <code>journal_id</code>.
         Across all five editions, 1,478 of 7,245 rows are unmatched.
         The files are under <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
       </p>
       <p>
-        <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+        <strong>CNRS</strong> is Section 37 <em>Catégorisation des revues</em> in freeze
+        <code>rankings_cnrs_20261024</code>.
+        Editions are 2011–2015 and 2017–2020 (no separate 2016 list).
+        Ratings are 1, 1e, 1g, 1eg, 2, 3, and 4, as published.
+        Field is the domain code on that freeze.
+        June 2020 has 840 journals, of which 713 (84.9%) have a catalog <code>journal_id</code>.
+        The long panel has 7,361 rows.
+      </p>
+      <p>
+        <strong>Handelsblatt/VWL</strong> is Forschungsmonitoring journal weights plus the 2015 Handelsblatt list, in freeze
+        <code>rankings_handelsblatt_vwl_20261024</code>.
+        Editions are 1998–2020.
+        The weight is the published continuous value.
+        Letter classes are A+, A, B, C, D, E, and F when the freeze has one.
+        The 2015 Handelsblatt PDF rows have a weight and no letter class.
+        2020 has 1,777 journals, of which 882 (49.6%) have a catalog <code>journal_id</code>.
+        2015 has 3,384 rows because it stacks both sources.
+        The long panel has 42,478 rows. This list has no field.
+      </p>
+      <p>
+        <strong>ABDC</strong> is the 2025 ABDC Journal Quality List, one edition, with ratings A*, A, B, and C.
+        Those tiers are the catalogs
+        <code>journals/catalog_abdc_a_star.csv</code> (219),
+        <code>catalog_abdc_a.csv</code> (630),
+        <code>catalog_abdc_b.csv</code> (861), and
+        <code>catalog_abdc_c.csv</code> (941): 2,651 journals.
+      </p>
+      <p>
+        <strong>FT50</strong>, <strong>UTD24</strong>, and <strong>Top 5</strong> are membership lists.
+        The catalogs have no grade column, so this page does not assign one.
+        FT50 is the April 2026 list in <code>journals/catalog_ft50.csv</code> (50 journals).
+        UTD24 is <code>journals/catalog_utd24.csv</code> (24 journals).
+        Top 5 is <code>journals/catalog_top5.csv</code> (5 journals).
+      </p>
+      <p>
+        The Field column is the source subject. ABS/AJG uses the guide’s <code>field</code> code.
+        CNRS uses its domain code.
+        ABDC uses <code>field_for</code> from the 2025 catalogs.
+        Handelsblatt/VWL, FT50, UTD24, and Top 5 have no field, so those cells stay blank.
+      </p>
+      <p>
+        On ABS/AJG, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+        On ABDC, FT50, UTD24, and Top 5, <code>journal_id</code> is the catalog id.
       </p>
       <p class="small">
-        More ranking systems can be added later under <code>journals/rankings/</code>.
         Build locally with <code>python scripts/build_site.py</code>.
         The project site is
         <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.

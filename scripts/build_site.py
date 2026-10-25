@@ -84,9 +84,11 @@ resolve at the user-site root instead of ``/econ-journal-dispersion/``.
 
 ``main`` also writes ``site/journals-data.js`` and ``site/institutions-data.js``
 from those collapsed appointments, then runs ``scripts/build_rankings.py``,
-which writes ``site/rankings-data.js``. Journals and institutions regroup the
-same boards. They do not add directory chips. Rankings are journal grades
-(ABS/AJG), not appointments.
+which writes ``site/rankings-data.js`` from the ABS/AJG, CNRS, and
+Handelsblatt/VWL freezes and the FT50, UTD24, Top 5, and ABDC catalogs.
+Journals and institutions regroup the same boards. They do not add directory
+chips. Rankings are journal grades, weights, and membership lists, not
+appointments, and they do not add directory chips.
 
 Journal and institution pages
 -----------------------------

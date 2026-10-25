@@ -102,6 +102,8 @@ input[type="search"], select {
 }
 input[type="search"] { flex: 1 1 260px; min-width: 200px; }
 select { max-width: 240px; }
+#field { max-width: 420px; flex: 1 1 240px; }
+select:disabled { opacity: 0.6; cursor: default; }
 #journal { max-width: 320px; flex: 1 1 220px; }
 .btn {
   background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; cursor: pointer;
@@ -136,10 +138,10 @@ th button {
 th button:hover, th button[aria-sort] { color: var(--ink); }
 td.affiliation, td.journal, td.field { max-width: 280px; }
 td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
-#field { max-width: 360px; flex: 1 1 220px; }
 tbody tr:hover td { background: var(--accent-soft); }
 .journal { font-weight: 650; color: var(--ink); }
-.rating { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rating, .weight { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.weight { font-weight: 650; }
 .idcode { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
 .muted { color: var(--muted); }
 .badge {

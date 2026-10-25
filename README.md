@@ -20,6 +20,8 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **Top 5** | `journals/catalog_top5.csv` | AER, Econometrica, JPE, QJE, and ReStud. Subset tag on the FT50 current release |
 | **UTD24** | `journals/catalog_utd24.csv` | UT Dallas Naveen Jindal Top 24. Twenty-three journals tagged from the FT50 freeze; INFORMS Journal on Computing tagged from the ABDC A freeze |
 | **ABS/AJG** | `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/` | CABS Academic Journal Guide grades for 2010, 2015, 2018, 2021, and 2024, via the Editor-Collector freeze. Ratings, not editor boards. See `journals/rankings/STATUS.md` |
+| **CNRS** | `journals/rankings/cnrs/releases/rankings_cnrs_20261024/` | Section 37 categories for 2011–2015 and 2017–2020. Ratings 1, 1e, 1g, 1eg, 2, 3, 4, plus domain |
+| **Handelsblatt/VWL** | `journals/rankings/handelsblatt_vwl/releases/rankings_handelsblatt_vwl_20261024/` | Forschungsmonitoring weights for 1998–2020, plus the 2015 Handelsblatt list. Continuous weight, letter class when present |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) — see `docs/README.md`.
 
@@ -74,7 +76,19 @@ Journal grades are a separate page, not extra directory chips:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
-`scripts/build_site.py` also runs `scripts/build_rankings.py`, which reads the Editor-Collector freeze `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/` and writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition year, and rating, and searches by journal title. ABS/AJG is the first system (2010, 2015, 2018, 2021, 2024). Directory chips stay as they are.
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, or the ABDC `field_for`. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Systems on the page:
+
+| System | Rows | What the filter shows |
+|--------|------|------------------------|
+| ABS/AJG | 7,245 | Editions 2010, 2015, 2018, 2021, 2024, ratings 4* / 4 / 3 / 2 / 1 (2010 has no 4*), from freeze `rankings_abs_ajg_20261024` |
+| CNRS | 7,361 | Editions 2011–2015 and 2017–2020, ratings 1 / 1e / 1g / 1eg / 2 / 3 / 4, with domain, from freeze `rankings_cnrs_20261024` |
+| Handelsblatt/VWL | 42,478 | Editions 1998–2020, continuous weight and letter class A+–F when present, from freeze `rankings_handelsblatt_vwl_20261024` |
+| FT50 | 50 | April 2026 membership list. No grades |
+| UTD24 | 24 | Membership list. No grades |
+| Top 5 | 5 | Membership list. No grades |
+| ABDC | 2,651 | 2025 list, ratings A* 219, A 630, B 861, C 941 |
+
+Directory chips stay as they are. FT50, UTD24, and Top 5 are not given grades on this page.
 
 ### Local build
 
