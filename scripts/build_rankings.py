@@ -6,6 +6,8 @@ journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/.
 FT50, UTD24, Top 5, and ABDC rows are copied from the catalogs under
 journals/. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24,
 and Top 5 have no grade column and are stored with an empty rating.
+FT50 field is the McMaster LibGuide subject area on catalog_ft50.csv.
+UTD24 and Top 5 leave field empty.
 CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern
 Economics, and ShanghaiRanking rows are copied from their pinned freezes.
 CNRS keeps the published category and domain. Handelsblatt/VWL keeps the
@@ -22,6 +24,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -76,6 +79,37 @@ ALLOWED_SOURCES = {"ajg_2024.csv", "ajg_2021.csv"}
 # ABDC catalogs are the 2025 list named in data/editors/abdc/STATUS.md.
 # UTD24 and Top 5 catalogs do not carry an edition year.
 FT50_SOURCE = "https://www.ft.com/ft50-journals"
+# Subject areas are the McMaster LibGuide "Subject Area" column, not an FT grade.
+# https://libguides.mcmaster.ca/ft-top50
+# Two subjects stay in one cell, comma-separated, as that table prints them.
+# The Rankings field filter matches the whole cell, as it does for Shanghai.
+FT50_FIELD_SOURCE = "https://libguides.mcmaster.ca/ft-top50"
+FT50_SUBJECTS = frozenset({
+    "Accounting",
+    "Economics",
+    "Entrepreneurship",
+    "Finance",
+    "Human Resources",
+    "International Business",
+    "Management",
+    "Marketing",
+    "Operations & Information Systems",
+    "Organizational Behaviour",
+})
+# Titles a loose HTML parse drops. Locked to the LibGuide cells.
+FT50_FIELD_CHECKS = {
+    "jf": "Finance",
+    "jfqa": "Finance",
+    "jfe": "Finance",
+    "jpe": "Economics",
+    "sloan_mr": "Management",
+    "jibs": "International Business",
+    "asr": "Organizational Behaviour, Human Resources",
+    "psych_sci": "Organizational Behaviour, Human Resources",
+    "rp": "Economics, Management",
+    "jap": "Organizational Behaviour",
+}
+CONTACT_RE = re.compile(r"@|https?://|mailto:|\d", re.IGNORECASE)
 UTD24_SOURCE = (
     "https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/list-of-journals"
 )
@@ -362,6 +396,23 @@ def require_columns(header: list[str], required: tuple[str, ...], path: Path) ->
         raise SystemExit(f"{path.relative_to(ROOT)} missing columns: {', '.join(missing)}")
 
 
+def check_ft50_field(field: str, title: str) -> None:
+    """McMaster subject area, including a second subject when the cell prints one."""
+    if CONTACT_RE.search(field):
+        raise SystemExit(f"FT50 field on {title} is not a subject: {field!r}")
+    parts = [part.strip() for part in field.split(",")]
+    if not parts or any(not part for part in parts) or ", ".join(parts) != field:
+        raise SystemExit(f"FT50 field on {title} is not a subject list: {field!r}")
+    if len(parts) > 2:
+        raise SystemExit(f"FT50 field on {title} has more than two subjects: {field!r}")
+    unknown = [part for part in parts if part not in FT50_SUBJECTS]
+    if unknown:
+        raise SystemExit(
+            f"FT50 field on {title} has unknown subject {unknown!r} "
+            f"(expected a subject area from {FT50_FIELD_SOURCE})"
+        )
+
+
 def load_catalog(
     path: Path,
     *,
@@ -424,6 +475,7 @@ def load_list_catalogs() -> list[list]:
         rating="",
         expected=LIST_COUNTS["ft50"],
         source_url=FT50_SOURCE,
+        field_column="field",
     )
     utd24 = load_catalog(
         ROOT / "journals/catalog_utd24.csv",
@@ -474,7 +526,20 @@ def load_list_catalogs() -> list[list]:
         raise SystemExit(f"UTD24 ids outside FT50: {sorted(outside_ft50)}")
     if UTD24_ABDC_ONLY_ID not in abdc_ids or abdc_ids[UTD24_ABDC_ONLY_ID] != "A":
         raise SystemExit("UTD24 INFORMS Journal on Computing is not in the ABDC A catalog")
-    for row in ft50 + utd24 + top5:
+    for row in ft50:
+        if row[4]:
+            raise SystemExit(f"{row[0]} {row[3]} has a grade {row[4]!r}")
+        check_ft50_field(row[5], row[3])
+    by_id = {row[2]: row for row in ft50}
+    for journal_id, expected in FT50_FIELD_CHECKS.items():
+        match = by_id.get(journal_id)
+        if not match or match[5] != expected:
+            got = None if match is None else match[5]
+            raise SystemExit(f"FT50 {journal_id} field {got!r} != {expected!r}")
+    dual = [row[2] for row in ft50 if ", " in row[5]]
+    if len(dual) != 3:
+        raise SystemExit(f"FT50 dual-subject rows {sorted(dual)} != 3")
+    for row in utd24 + top5:
         if row[4]:
             raise SystemExit(f"{row[0]} {row[3]} has a grade {row[4]!r}")
         if row[5]:

@@ -91,14 +91,14 @@ Journal grades for every ranking system are also a separate page. The directory�
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
-`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, or the Shanghai subject. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Tilburg, FNEGE, ERIM, Stern, and Shanghai are Rankings lists only. They are not directory chips. Systems on the page:
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, the Shanghai subject, or the FT50 subject area from the McMaster LibGuide (https://libguides.mcmaster.ca/ft-top50). Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no grades. UTD24 and Top 5 have no field. Tilburg, FNEGE, ERIM, Stern, and Shanghai are Rankings lists only. They are not directory chips. Systems on the page:
 
 | System | Rows | What the filter shows |
 |--------|------|------------------------|
 | ABS/AJG | 7,245 | Editions 2010, 2015, 2018, 2021, 2024, ratings 4* / 4 / 3 / 2 / 1 (2010 has no 4*), from freeze `rankings_abs_ajg_20261024` |
 | CNRS | 7,361 | Editions 2011–2015 and 2017–2020, ratings 1 / 1e / 1g / 1eg / 2 / 3 / 4, with domain, from freeze `rankings_cnrs_20261024` |
 | Handelsblatt/VWL | 42,478 | Editions 1998–2020, continuous weight and letter class A+–F when present, from freeze `rankings_handelsblatt_vwl_20261024` |
-| FT50 | 50 | April 2026 membership list. No grades |
+| FT50 | 50 | April 2026 membership list. No grades. Field is the McMaster LibGuide subject area |
 | UTD24 | 24 | Membership list. No grades |
 | Top 5 | 5 | Membership list. No grades |
 | ABDC | 2,651 | 2025 list, ratings A* 219, A 630, B 861, C 941 |
