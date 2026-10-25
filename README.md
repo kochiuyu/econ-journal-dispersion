@@ -54,7 +54,7 @@ data/
 
 ## Website
 
-Searchable directory of **current journal editors** on the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards (journals in the 2024 Academic Journal Guide that are not already in those editor files). Top 5 and UTD24 are extra multi-select filters on the FT50 and ABDC boards. AJG grades (4*, 4, 3, 2, and 1) are the 2024 grade: joined by catalog id on FT50 and ABDC rows, and taken from the gap panel (4*/4/3, then 2, then 1) on gap rows. The full guide is larger than these boards. Rankings still lists every AJG title. The directory also filters by institution (the row affiliation) and by ABDC field:
+Searchable directory of **current journal editors** on the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards (journals in the 2024 Academic Journal Guide that are not already in those editor files). Top 5 and UTD24 are extra multi-select filters on the FT50 and ABDC boards. AJG chips are 2024 CABS grades on those boards: joined by catalog id on FT50 and ABDC rows, and taken from the gap panel (4*/4/3, then 2, then 1) on gap rows. The id join does not add a board. The full guide is larger than these boards and stays on Rankings. The directory also filters by institution (the row affiliation) and by ABDC field:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/**
 
@@ -66,7 +66,7 @@ One row is one person in one role on one journal. The same person on two journal
 
 Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
-AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. On FT50 and ABDC rows the join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. Unmatched titles on those boards are not tagged, and that join does not add a board. AJG-gap rows (`data/editors/abs_ajg_gap/releases/current/`, freeze `editors_abs_ajg_gap_20261025`) are extra boards. Their grade is the 2024 title rating, constrained to the file: `prio43` is 4*, 4, or 3 (this freeze is 4 and 3), `ajg2` is 2, and `ajg1` is 1. A gap row carries that grade only. There is no `faculty_profile_url` on these files, so the name stays plain text and the journal links to `source_url` when it is http(s). ABDC chips stay A*, A, B, and C. The full guide is larger than the boards here. Earlier AJG editions, and every 2024 title, stay on Rankings.
+AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. On FT50 and ABDC rows the join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. That edition has 1,823 journals. 1,378 map to a catalog id. About 1,356 of those sit on an FT50 or ABDC board and show a chip from the id join. The 445 unmatched titles have no catalog id, so that join does not tag them and does not add a board. Many ABDC board journals have no AJG grade (about 2,400 board journal ids, against about 1,356 with a hit). AJG-gap rows (`data/editors/abs_ajg_gap/releases/current/`, freeze `editors_abs_ajg_gap_20261025`) are extra boards for journals not already in those editor files. Their grade is the 2024 title rating, constrained to the file: `prio43` is 4*, 4, or 3 (this freeze is 4 and 3), `ajg2` is 2, and `ajg1` is 1. A gap row carries that grade only. There is no `faculty_profile_url` on these files, so the name stays plain text and the journal links to `source_url` when it is http(s). With those boards the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide still have no board. ABDC chips stay A*, A, B, and C. Full AJG editions stay on Rankings.
 
 The directory Institution menu lists the affiliation on each row (ROR name, otherwise the canonical or masthead affiliation). It uses the same `aff` query the Institutions page already opens. Field is ABDC `field_for`, the same subject string as the Journals page, with the leading code hidden in the menu.
 
@@ -78,7 +78,7 @@ The same boards are also grouped by journal and by institution:
 
 `scripts/build_site.py` writes `site/journals-data.js` (one row per journal: list badges, appointments, distinct editors, countries, ABDC field, board link) and `site/institutions-data.js` (one row per ROR id, or per affiliation name when ROR is missing). A journal name opens the directory with `?journal=`. An institution name opens it with `?aff=` set to that affiliation and `?country=` when the row has a country. Those files are generated and are not committed.
 
-Journal grades for every ranking system are also a separate page. The directory’s AJG chips are only the 2024 grade:
+Journal grades for every ranking system are also a separate page. The directory’s AJG chips are the 2024 grades on the current FT50, ABDC, and AJG-gap boards:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
@@ -94,7 +94,7 @@ Journal grades for every ranking system are also a separate page. The directory�
 | Top 5 | 5 | Membership list. No grades |
 | ABDC | 2,651 | 2025 list, ratings A* 219, A 630, B 861, C 941 |
 
-The directory AJG chips are the 2024 grade (AJG 4* through AJG 1). FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
+The directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards (AJG 4* through AJG 1). The full guide stays on this page, including titles that still have no board. FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
 
 ### Local build
 
