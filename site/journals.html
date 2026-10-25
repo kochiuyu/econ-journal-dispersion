@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Journals — FT50 and ABDC editors</title>
-  <meta name="description" content="Current FT50 and ABDC journals, with appointment counts, list badges, and links into the editor directory.">
+  <title>Journals — FT50, ABDC, and AJG editors</title>
+  <meta name="description" content="Current FT50, ABDC, and AJG-gap journals, with appointment counts, list badges, and links into the editor directory.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/journals.html">
-  <meta property="og:title" content="Journals — FT50 and ABDC editors">
-  <meta property="og:description" content="One row per journal on the current FT50 and ABDC editorial boards.">
+  <meta property="og:title" content="Journals — FT50, ABDC, and AJG editors">
+  <meta property="og:description" content="One row per journal on the current FT50, ABDC, and AJG-gap editorial boards.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/journals.html">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Journals · FT50, ABDC, Top 5, UTD24, AJG</span>
+          <span class="t2">Journals · FT50, ABDC, AJG-gap</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -43,7 +43,9 @@
 
   <main class="wrap">
     <p class="intro" id="intro">
-      One row per journal on the current FT50 and ABDC boards. Top 5, UTD24, and AJG grades are badges on those same journals.
+      One row per journal on the current FT50 and ABDC boards, plus AJG-gap boards for journals that are not already on those lists.
+      Top 5 and UTD24 stay badges on the FT50 and ABDC journals. AJG grades cover those boards and the gap boards.
+      The full Academic Journal Guide is larger than these boards. <a href="rankings.html">Rankings</a> still lists every title.
       The journal name opens the <a href="./#directory">directory</a> filtered to that journal.
       <span id="asof">Board year 2026.</span>
     </p>
@@ -52,7 +54,7 @@
       <div class="stat">
         <div class="n" id="n-journals">…</div>
         <div class="l">Journals</div>
-        <div class="sub">FT50 and ABDC</div>
+        <div class="sub">FT50, ABDC, and AJG-gap</div>
       </div>
       <div class="stat">
         <div class="n" id="n-appointments">…</div>
@@ -95,14 +97,14 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows journals on any of them. Field is the ABDC field of research when the catalog has one. Board opens the masthead page. The journal name opens the directory.</p>
+      <p class="hint">Selecting more than one list shows journals on any of them. Field is the ABDC field of research when the catalog has one. AJG-gap journals often have no ABDC field. Board opens the masthead page when the release has a public URL. The journal name opens the directory.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading journals…</p>
 
     <div class="tbl-wrap">
       <table>
-        <caption class="sr-only">Journals on the current FT50 and ABDC boards</caption>
+        <caption class="sr-only">Journals on the current FT50, ABDC, and AJG-gap boards</caption>
         <thead>
           <tr>
             <th scope="col"><button type="button" data-sort="name">Journal</button></th>
@@ -128,6 +130,7 @@
         An editor who sits on two journals is counted once in the header and once on each journal.
         List badges are FT50, ABDC A*, A, B, or C, plus Top 5 and UTD24 when the journal is on those lists.
         AJG adds one grade badge: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1.
+        AJG-gap journals carry that grade and are not given an FT50 or ABDC badge.
       </p>
       <p>
         Field is <code>field_for</code> from the ABDC journal catalogs, joined on the catalog id when the release has one.
@@ -139,7 +142,8 @@
         <span id="about-asof">Board year 2026.</span>
         Institutions are on the <a href="institutions.html">Institutions</a> page.
         The AJG badge is the journal's grade in the 2024 CABS Academic Journal Guide, the latest edition in that freeze.
-        Earlier editions stay on <a href="rankings.html">Rankings</a>.
+        On FT50 and ABDC journals the grade is joined by catalog id. On AJG-gap journals it comes from the panel in <code>data/editors/abs_ajg_gap/releases/current/</code>.
+        The full guide is larger than these boards. Earlier editions, and every 2024 title, stay on <a href="rankings.html">Rankings</a>.
       </p>
       <p class="small">
         Build locally with <code>python scripts/build_site.py</code>.

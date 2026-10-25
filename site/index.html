@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Journal Editors — FT50 and ABDC</title>
-  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG grade filters, from the Geographic Dispersion releases.">
+  <title>Journal Editors — FT50, ABDC, and AJG</title>
+  <meta name="description" content="Searchable directory of current journal editors on the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards, with institution, field, Top 5, UTD24, and AJG grade filters.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
-  <meta property="og:title" content="Journal Editors — FT50 and ABDC">
-  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG grade filters.">
+  <meta property="og:title" content="Journal Editors — FT50, ABDC, and AJG">
+  <meta property="og:description" content="Searchable directory of current journal editors on FT50, ABDC A*/A/B/C, and AJG-gap boards, with institution, field, Top 5, UTD24, and AJG grade filters.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Geographic Dispersion · FT50, ABDC, Top 5, UTD24, AJG</span>
+          <span class="t2">Geographic Dispersion · FT50, ABDC, AJG-gap</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -43,8 +43,11 @@
 
   <main class="wrap">
     <p class="intro" id="intro">
-      Current editorial boards on the Financial Times FT50 list and the 2025 ABDC Journal Quality List
-      (A*, A, B, and C). Top 5, UTD24, and AJG grades (4*, 4, 3, 2, and 1) are extra filters on those same boards.
+      Current editorial boards on the Financial Times FT50 list, the 2025 ABDC Journal Quality List
+      (A*, A, B, and C), and AJG-gap journals that are not already on those boards.
+      Top 5 and UTD24 are extra filters on the FT50 and ABDC boards.
+      AJG grades (4*, 4, 3, 2, and 1) are the 2024 grade on each board in this directory.
+      The full Academic Journal Guide is larger than these boards. <a href="rankings.html">Rankings</a> still lists every title.
       <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
       <span id="asof">Board year 2026.</span>
     </p>
@@ -63,7 +66,7 @@
       <div class="stat">
         <div class="n" id="n-journals">…</div>
         <div class="l">Journals</div>
-        <div class="sub">FT50 and ABDC</div>
+        <div class="sub">FT50, ABDC, and AJG-gap</div>
       </div>
       <div class="stat">
         <div class="n" id="n-countries">…</div>
@@ -116,14 +119,14 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG adds one grade badge, AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. Many names stay plain text because that fill is partial.</p>
+      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG adds one grade badge, AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. AJG-gap rows take that grade from their panel (4*, 4, and 3, then AJG 2, then AJG 1) and carry the grade on its own. FT50 and ABDC rows keep the grade from the 2024 rankings join. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap names stay plain text. Many other names stay plain text because that fill is partial.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
 
     <div class="tbl-wrap">
       <table>
-        <caption class="sr-only">Current FT50 and ABDC journal editors</caption>
+        <caption class="sr-only">Current FT50, ABDC, and AJG-gap journal editors</caption>
         <thead>
           <tr>
             <th scope="col"><button type="button" data-sort="name">Name</button></th>
@@ -149,9 +152,11 @@
         It is built from the analysis releases under <code>data/editors/*/releases/current/</code>,
         not from a live scrape of this repository. The FT50 file is the ROR-enriched current board.
         ABDC is the 2025 Journal Quality List at A*, A, B, and C.
-        Top 5, UTD24, and AJG grades are tags on those releases.
-        Top 5 and UTD24 are read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
-        AJG grades are read from the 2024 edition in <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
+        AJG-gap is the current boards in <code>data/editors/abs_ajg_gap/releases/current/</code>
+        (freeze <code>editors_abs_ajg_gap_20261025</code>): journals in the 2024 guide that are not already in the FT50 or ABDC editor files.
+        Top 5 and UTD24 are tags on the FT50 and ABDC releases, read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
+        AJG grades on those releases are read from the 2024 edition in <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
+        Gap rows take the grade from the panel that supplied the board.
         core49 is an older ABDC A* subset and is not a separate list here. Authors are not in this version.
       </p>
       <p>
@@ -180,13 +185,16 @@
       <p>
         AJG chips follow the same pattern as ABDC A*, A, B, and C: the list chip and the row badge both show the grade.
         The grades are AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1.
-        They come from <code>rating</code> on the 2024 edition, the latest edition in
+        On FT50 and ABDC rows the grade comes from <code>rating</code> on the 2024 edition, the latest edition in
         <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
         The id join uses <code>abs_ajg_2024.csv</code> and the 2024 rows of <code>journal_id_crosswalk.csv</code>, so a journal whose primary id is a core49 slug still matches the ABDC id on the board file.
         The Economic Journal is one of those, and its badge is AJG 4.
-        Titles the freeze left unmatched are not tagged, and journals that are not on that edition do not get an AJG badge.
+        Titles that join left unmatched stay untagged on those boards.
         Accounting Educators Journal stays an ABDC journal without an AJG badge.
-        Earlier editions stay on the <a href="rankings.html">Rankings</a> page.
+        AJG-gap rows are the extra boards. The priority file is grades 4*, 4, and 3; in this freeze those rows are AJG 4 and AJG 3, because every 4* title is already on an FT50 or ABDC board.
+        The other two files are AJG 2 and AJG 1.
+        A gap row carries that AJG grade. FT50 and ABDC badges stay on appointments from those releases.
+        The 2024 guide has 1,823 titles. This directory has a board for every 4*, 4, and 3 title, and for most 2 and 1 titles. The rest of the guide, and the earlier editions, stay on the <a href="rankings.html">Rankings</a> page.
         ABDC labels are unchanged.
       </p>
       <h2>Institution and field</h2>
@@ -200,9 +208,11 @@
       <p>
         Country and continent are the ROR fields on the release. Affiliations prefer the matched institution name.
         Emails, phone numbers, and photos are not published; contact strings found in a masthead field are removed.
-        Journal names link to the public board page the row was collected from.
+        Journal names link to the public board page when <code>source_url</code> is an http(s) URL.
+        Some AJG-gap journals in this freeze have no public board URL, so the name stays plain text.
         A name links to a faculty profile when <code>faculty_profile_url</code> is filled.
-        Coverage is partial: higher on FT50 and ABDC A* than on B and C, so a name with no profile stays plain text.
+        The AJG-gap files have no faculty profile URL, so those names stay plain text.
+        Coverage on the other releases is partial: higher on FT50 and ABDC A* than on B and C, so a name with no profile stays plain text.
         The directory does not link <code>faculty_home_page</code>, and it does not invent ORCID, OpenAlex, or RePEc person links.
       </p>
       <p>

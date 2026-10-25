@@ -33,6 +33,7 @@ data/
     core49/          # STATUS only for now (wayback / multi-year panels still in collector)
     ft50/releases/current/
     abdc/releases/current/
+    abs_ajg_gap/releases/current/   # AJG journals not already in the FT50/ABDC board freezes
   authors/           # STATUS only — stream still in progress (no 1GB caches here)
   affiliations/
     releases/canonical/   # TOC-first articles / affiliations / issues
@@ -46,13 +47,14 @@ data/
 |--------|--------------------|
 | Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_current_20261025` |
 | Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` — same freeze (ROR-enriched where available) |
+| Editors — AJG gap | Current-board panels in `releases/current/` — freeze `editors_abs_ajg_gap_20261025` (journals not already in the FT50/ABDC boards) |
 | Editors — core49 | Documented in `STATUS.md`; multi-year panels not yet copied into a pinned release |
 | Affiliations (core49 TOC spine) | Canonical articles / affiliations / issues under `releases/canonical/` |
 | Authors (core49) | **In progress** — see `data/authors/STATUS.md`; no analysis dump yet |
 
 ## Website
 
-Searchable directory of **current journal editors** on the FT50 list and the ABDC A*, A, B, and C lists. Top 5, UTD24, and AJG grades (4*, 4, 3, 2, and 1) are extra multi-select filters on those same boards. The directory also filters by institution (the row affiliation) and by ABDC field:
+Searchable directory of **current journal editors** on the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards (journals in the 2024 Academic Journal Guide that are not already in those editor files). Top 5 and UTD24 are extra multi-select filters on the FT50 and ABDC boards. AJG grades (4*, 4, 3, 2, and 1) are the 2024 grade: joined by catalog id on FT50 and ABDC rows, and taken from the gap panel (4*/4/3, then 2, then 1) on gap rows. The full guide is larger than these boards. Rankings still lists every AJG title. The directory also filters by institution (the row affiliation) and by ABDC field:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/**
 
@@ -64,7 +66,7 @@ One row is one person in one role on one journal. The same person on two journal
 
 Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
-AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. The join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. Unmatched AJG titles are not tagged. The chips do not add boards. ABDC chips stay A*, A, B, and C. Earlier AJG editions stay on Rankings.
+AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. On FT50 and ABDC rows the join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. Unmatched titles on those boards are not tagged, and that join does not add a board. AJG-gap rows (`data/editors/abs_ajg_gap/releases/current/`, freeze `editors_abs_ajg_gap_20261025`) are extra boards. Their grade is the 2024 title rating, constrained to the file: `prio43` is 4*, 4, or 3 (this freeze is 4 and 3), `ajg2` is 2, and `ajg1` is 1. A gap row carries that grade only. There is no `faculty_profile_url` on these files, so the name stays plain text and the journal links to `source_url` when it is http(s). ABDC chips stay A*, A, B, and C. The full guide is larger than the boards here. Earlier AJG editions, and every 2024 title, stay on Rankings.
 
 The directory Institution menu lists the affiliation on each row (ROR name, otherwise the canonical or masthead affiliation). It uses the same `aff` query the Institutions page already opens. Field is ABDC `field_for`, the same subject string as the Journals page, with the leading code hidden in the menu.
 
