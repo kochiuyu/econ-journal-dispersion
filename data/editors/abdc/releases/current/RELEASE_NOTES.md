@@ -20,9 +20,9 @@ Frozen editorial-board current panels in this repository. Source handoff: `edito
 | `data/editors/abdc/releases/current/editors_abdc_a_current.csv` | 45,363 | 5,202 (11.5%) | 1,758 (3.9%) |
 | `data/editors/abdc/releases/current/editors_abdc_b_current.csv` | 42,193 | 3,129 (7.4%) | 1,192 (2.8%) |
 | `data/editors/abdc/releases/current/editors_abdc_c_current.csv` | 26,915 | 1,228 (4.6%) | 486 (1.8%) |
-| `data/editors/ft50/releases/current/editors_ft50_current.csv` | 10,050 | 4,724 (47.0%) | 1,824 (18.1%) |
+| `data/editors/ft50/releases/current/editors_ft50_current.csv` | 10,050 | 8,199 (81.6%) | 1,824 (18.1%) |
 
-The four ABDC files in this folder are the freeze files. The FT50 slim file has no ROR columns. `editors_ft50_current_with_ror.csv` keeps the ROR columns already in this repository and adds the same `faculty_*` values. See [`../../../ft50/releases/current/RELEASE_NOTES.md`](../../../ft50/releases/current/RELEASE_NOTES.md).
+The four ABDC files in this folder are the `editors_current_20261025` freeze files. The FT50 path in the table was refreshed later by freeze `editors_ft50_faculty_20261025` (`faculty_profile_url` on 8,199 of 10,050 rows, 81.6%, up from 4,724 / 47.0% in this freeze). Those ABDC CSVs were not changed. The FT50 slim file has no ROR columns. `editors_ft50_current_with_ror.csv` keeps the ROR columns already in this repository and carries the same `faculty_*` values as the slim FT50 file. See [`../../../ft50/releases/current/RELEASE_NOTES.md`](../../../ft50/releases/current/RELEASE_NOTES.md).
 
 Do not invent names, ROR ids, or OpenAlex/ORCID person links on republish.
 
