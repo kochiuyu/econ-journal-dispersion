@@ -22,6 +22,9 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **ABS/AJG** | `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/` | CABS Academic Journal Guide grades for 2010, 2015, 2018, 2021, and 2024, via the Editor-Collector freeze. Ratings, not editor boards. See `journals/rankings/STATUS.md` |
 | **CNRS** | `journals/rankings/cnrs/releases/rankings_cnrs_20261024/` | Section 37 categories for 2011–2015 and 2017–2020. Ratings 1, 1e, 1g, 1eg, 2, 3, 4, plus domain |
 | **Handelsblatt/VWL** | `journals/rankings/handelsblatt_vwl/releases/rankings_handelsblatt_vwl_20261024/` | Forschungsmonitoring weights for 1998–2020, plus the 2015 Handelsblatt list. Continuous weight, letter class when present |
+| **Tilburg** | `journals/rankings/tilburg/releases/rankings_tilburg_20261025/` | TISEM top journal list. Tiers Top-core, Top, and Very good. Rankings page only |
+| **FNEGE** | `journals/rankings/fnege/releases/rankings_fnege_20261025/` | FNEGE Journal Quality List grades for 2019, 2022, and 2025. Rankings page only |
+| **ERIM** | `journals/rankings/erim/releases/rankings_erim_20261025/` | ERIM Journals List Core 2024–2028. Classes as published in the Core file. Rankings page only |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) — see `docs/README.md`.
 
@@ -86,7 +89,7 @@ Journal grades for every ranking system are also a separate page. The directory�
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
-`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, or the ABDC `field_for`. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Systems on the page:
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, or the TISEM very-good group. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Tilburg, FNEGE, and ERIM are Rankings lists only. They are not directory chips. Systems on the page:
 
 | System | Rows | What the filter shows |
 |--------|------|------------------------|
@@ -97,6 +100,9 @@ Journal grades for every ranking system are also a separate page. The directory�
 | UTD24 | 24 | Membership list. No grades |
 | Top 5 | 5 | Membership list. No grades |
 | ABDC | 2,651 | 2025 list, ratings A* 219, A 630, B 861, C 941 |
+| Tilburg | 179 | TISEM tiers Top-core / Top / Very good, from freeze `rankings_tilburg_20261025`. 164 matched (91.6%) |
+| FNEGE | 2,044 | Editions 2019, 2022, and 2025, grades 1* / 1 / 2 / 3 / 4 (EM and NC kept when printed), from freeze `rankings_fnege_20261025`. 2025 has 891 journals, 733 matched (82.3%) |
+| ERIM | 283 | Core 2024–2028 classes as published (STAR, M-STAR, P, EP*, PA, S, S (3=1), M), from freeze `rankings_erim_20261025`. 257 matched (90.8%) |
 
 The directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards (AJG 4* through AJG 1). The full guide stays on this page, including titles that still have no board. FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
 

@@ -1,0 +1,670 @@
+edition_year,rating,rating_raw,journal_title,print_issn,e_issn,field,publisher,journal_id,catalog,match_method,source_file,source_note
+2022,3,3,@GRH,2034-9130,2295-9149,HRM,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ABACUS,0001-3072,1467-6281,ACC,,abacus,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ACADEMY OF MANAGEMENT ANNALS,1941-6067,1941-6520,GEN MAN,,aom_annals,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ACADEMY OF MANAGEMENT DISCOVERIES,2168-1007,2168-1007,GEN MAN,,academy_management_discoveries,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ACADEMY OF MANAGEMENT JOURNAL,0001-4273,1948-0989,GEN MAN,,amj,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ACADEMY OF MANAGEMENT LEARNING AND EDUCATION,1537-260X,1944-9585,EDUC,,academy_management_learning_education,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ACADEMY OF MANAGEMENT PERSPECTIVES,1558-9080,1558-9080,GEN MAN,,academy_management_perspectives,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ACADEMY OF MANAGEMENT REVIEW,0363-7425,1930-3807,GEN MAN,,amr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ACCOUNTING AND BUSINESS RESEARCH,0001-4788,2159-4260,ACC,,accounting_business_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ACCOUNTING AND FINANCE,0810-5391,1467-629X,ACC,,accounting_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ACCOUNTING FORUM,0155-9982,1467-6303,ACC,,accounting_forum,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ACCOUNTING HISTORIANS JOURNAL,0148-4184,2327-4468,BUS HIST,,accounting_historians_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ACCOUNTING HISTORY,1032-3732,1749-3374,BUS HIST,,accounting_history,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"ACCOUNTING HISTORY REVIEW (FORMERLY: ACCOUNTING, BUSINESS AND FINANCIAL HISTORY)",2155-2851,2155-286X,BUS HIST,,accounting_history_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ACCOUNTING HORIZONS,0888-7993,1558-7975,ACC,,accounting_horizons,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ACCOUNTING IN EUROPE,1744-9480,1744-9499,ACC,,accounting_europe,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ACCOUNTING REVIEW (THE),0001-4826,1558-7967,ACC,,tar,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"ACCOUNTING, AUDITING AND ACCOUNTABILITY JOURNAL",0951-3574,1758-4205,ACC,,accounting_auditing_accountability_journal,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,"ACCOUNTING, ORGANIZATION AND SOCIETY",0361-3682,1873-6289,ACC,,aos,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ACCRA,,2617-2399,ACC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ACM TRANSACTIONS ON COMPUTER-HUMAN INTERACTION,1073-0516,1557-7325,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ACTION RESEARCH,1476-7503,1741-2617,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ADMINISTRATION AND SOCIETY,0095-3997,1552-3039,PUB MAN,,administration_society,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ADMINISTRATIVE SCIENCE QUARTERLY,0001-8392,1930-3815,ORG STUD,,asq,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ADVANCES IN ACCOUNTING (INCORPORATING: ADVANCES IN INTERNATIONAL ACCOUNTING),0882-6110,1046-5715,ACC,,advances_accounting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ADVANCES IN STRATEGIC MANAGEMENT,0742-3322,0742-3322,STRAT,,advances_strategic_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,AFRICA JOURNAL OF MANAGEMENT,2332-2373,2332-2373,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,AMERICAN ECONOMIC REVIEW,0002-8282,1944-7981,FIN,,aer,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,AMERICAN JOURNAL OF MANAGED CARE,1088-0224,1088-0224,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,AMERICAN JOURNAL OF MEDICAL QUALITY,1062-8606,1062-8606,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,AMERICAN JOURNAL OF SOCIOLOGY,0002-9602,1537-5390,BUS SOC,,american_journal_sociology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,AMERICAN REVIEW OF PUBLIC ADMINISTRATION,0275-0740,1552-3357,PUB MAN,,american_review_public_administration,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,AMERICAN SOCIOLOGICAL REVIEW,0003-1224,1939-8271,BUS SOC,,asr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ANNALS OF FINANCE,1614-2446,1614-2454,FIN,,annals_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ANNALS OF OPERATIONS RESEARCH,0254-5330,1572-9338,GEN MAN,,annals_operations_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ANNALS OF PUBLIC AND COOPERATIVE ECONOMICS,1370-4788,1467-8292,PUB MAN,,annals_public_cooperative_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ANNALS OF TOURISM RESEARCH,0160-7383,1873-7722,SECTOR,,annals_tourism_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ANNUAL REVIEW OF ORGANIZATIONAL PSYCHOLOGY AND ORGANIZATIONAL BEHAVIOR,2327-0608,2327-0616,ORG STUD,,annual_review_organizational_psychology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ANNUAL REVIEW OF SOCIOLOGY,0360-0572,1545-2115,BUS SOC,,annual_review_sociology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,APPLIED ECONOMICS,0003-6846,1466-4283,FIN,,applied_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,APPLIED FINANCIAL ECONOMICS,0960-3107,1466-4305,FIN,,applied_financial_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,APPLIED MATHEMATICAL FINANCE,1350-486X,1466-4313,FIN,,applied_mathematical_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,APPLIED PSYCHOLOGY: AN INTERNATIONAL REVIEW,0269-994X,1464-0597,HRM,,applied_psychology_international_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ASIA PACIFIC BUSINESS REVIEW,1360-2381,1743-792X,INT,,asia_pacific_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ASIA PACIFIC JOURNAL OF HUMAN RESOURCES,1038-4111,1744-7941,HRM,,asia_pacific_journal_human_resources,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ASIA PACIFIC JOURNAL OF MANAGEMENT,0217-4561,1572-9958,GEN MAN,,asia_pacific_journal_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ASIA-PACIFIC JOURNAL OF ACCOUNTING AND ECONOMICS,1608-1625,2164-2257,ACC,,asia_pacific_journal_accounting_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ASIAN BUSINESS AND MANAGEMENT,1472-4782,1476-9328,GEN MAN,,asian_business_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ASTIN BULLETIN,0515-0361,1783-1350,FIN,,astin_bulletin,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,AUDITING-A JOURNAL OF PRACTICE & THEORY,0278-0380,1558-7991,ACC,,auditing_journal_practice_theory,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,AUSTRALIAN ACCOUNTING REVIEW,1035-6908,1835-2561,ACC,,australian_accounting_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,AUSTRALIAN JOURNAL OF MANAGEMENT,0312-8962,1327-2020,GEN MAN,,australian_journal_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BALTIC JOURNAL OF MANAGEMENT,1746-5265,1746-5273,GEN MAN,,baltic_journal_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"BANKERS, MARKETS AND INVESTORS",2101-9304,2726-8004,FIN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BEHAVIORAL RESEARCH IN ACCOUNTING,1050-4753,1558-8009,ACC,,behavioral_research_accounting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BMC HEALTH SERVICES RESEARCH,1472-6963,1472-6963,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,BMJ QUALITY AND SAFETY (ORIGINAL RESEARCH),2044-5415,2044-5423,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BRITISH ACCOUNTING REVIEW,0890-8389,1095-8347,ACC,,british_accounting_review,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BRITISH FOOD JOURNAL,0007-070X,1758-4108,SECTOR,,british_food_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,BRITISH JOURNAL OF INDUSTRIAL RELATIONS,0007-1080,1467-8543,HRM,,british_journal_industrial_relations,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,BRITISH JOURNAL OF MANAGEMENT,1045-3172,1467-8551,GEN MAN,,british_journal_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BRITISH JOURNAL OF SOCIOLOGY,0007-1315,1468-4446,BUS SOC,,british_journal_sociology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BUILDING RESEARCH AND INFORMATION,0961-3218,1466-4321,SECTOR,,building_research_information,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BULLETIN OF THE WORLD HEALTH ORGANIZATION,0042-9686,1564-0604,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BUSINESS AND INFORMATION SYSTEMS ENGINEERING (BISE) (FORMERLY: WIRTSCHAFTSINFORMATIK (WI)),1867-0202,2363-7005,MIS,,business_information_systems_engineering,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BUSINESS AND POLITICS,1369-5258,1469-3569,BUS SOC,,business_politics,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BUSINESS AND PROFESSIONAL ETHICS JOURNAL,0277-2027,2153-7828,GEN MAN,,business_professional_ethics_journal,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,BUSINESS AND SOCIETY,0007-6503,1552-4205,BUS SOC,,business_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,BUSINESS ETHICS QUARTERLY,1052-150X,2153-3326,HRM,,business_ethics_quarterly,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"BUSINESS ETHICS, THE ENVIRONMENT & RESPONSIBILITY",0962-8770,1467-8608,HRM,,business_ethics_environment_responsibility,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"BUSINESS ETHICS, THE ENVIRONMENT AND RESPONSIBILITY",2694-6416,2694-6424,BUS SOC,,business_ethics_environment_responsibility,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,BUSINESS HISTORY,0007-6791,1743-7938,BUS HIST,,business_history,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BUSINESS HISTORY REVIEW,0007-6805,2044-768X,BUS HIST,,business_history_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BUSINESS HORIZONS,0007-6813,1873-6068,GEN MAN,,business_horizons,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,BUSINESS PROCESS MANAGEMENT JOURNAL,1463-7154,1758-4116,MIS,,business_process_management_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,BUSINESS STRATEGY AND THE ENVIRONMENT,0964-4733,1099-0836,STRAT,,business_strategy_environment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,CALIFORNIA MANAGEMENT REVIEW,0008-1256,2162-8564,GEN MAN,,california_management_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CAREER DEVELOPMENT INTERNATIONAL,1362-0436,1758-6003,HRM,,career_development_international,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CAREER DEVELOPMENT QUARTERLY,0889-4019,2161-0045,HRM,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,COMMUNICATION ET MANAGEMENT,1779-3572,2271-734X,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,COMMUNICATIONS OF THE ASSOCIATION FOR INFORMATION SYSTEMS,1529-3181,1529-3181,MIS,,communications_association_information_systems,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,COMPETITION AND CHANGE,1024-5294,1477-2221,GEN MAN,,competition_change,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,COMPTABILITÉ-CONTRÔLE-AUDIT,1262-2788,2313-514X,ACC,,comptabilit_contr_le_audit,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,COMPUTERS & INDUSTRIAL ENGINEERING,0360-8352,1879-0550,MIS,,computers_industrial_engineering,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"CONSUMPTION, MARKETS AND CULTURE",1025-3866,1477-223X,MKG,,consumption_markets_culture,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,CONTEMPORARY ACCOUNTING RESEARCH,0823-9150,1911-3846,ACC,,car,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CORNELL HOSPITALITY QUARTERLY,1938-9663,1938-9663,SECTOR,,cornell_hospitality_quarterly,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,CORPORATE GOVERNANCE: AN INTERNATIONAL REVIEW,0964-8410,1467-8683,GEN MAN,,corporate_governance_international_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,CORPORATE SOCIAL RESPONSIBILITY AND ENVIRONMENTAL MANAGEMENT,1535-3958,1535-3966,GEN MAN,,corporate_social_responsibility_environmental,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,CREATIVITY AND INNOVATION MANAGEMENT,0963-1690,1467-8691,INNOV,,creativity_innovation_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CREATIVITY RESEARCH JOURNAL,1040-0419,1532-6934,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,CRITICAL PERSPECTIVES ON ACCOUNTING,1045-2354,1095-9955,ACC,,critical_perspectives_accounting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CRITICAL PERSPECTIVES ON INTERNATIONAL BUSINESS,1742-2043,1758-6062,INT,,critical_perspectives_international_business,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CROSS-CULTURAL MANAGEMENT: AN INTERNATIONAL JOURNAL (FORMELY: CROSS CULTURAL & STRATEGIC MANAGEMENT),2059-5794,2059-5794,INT,,cross_cultural_strategic_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CULTURE AND ORGANIZATION,1475-9551,1477-2760,ORG STUD,,culture_organization,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,CURRENT ISSUES IN TOURISM,1368-3500,1747-7603,SECTOR,,current_issues_tourism,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,CURRENT SOCIOLOGY,0268-5809,1461-7064,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,DATABASE FOR ADVANCES IN INFORMATION SYSTEMS,1532-0936,1532-0936,MIS,,data_base_advances_information_systems,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,DECISION SCIENCES,0011-7315,1540-5915,MIS,,decision_sciences,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,DECISION SUPPORT SYSTEMS,0167-9236,1873-5797,MIS,,decision_support_systems,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,DEVELOPMENT AND CHANGE,0012-155X,1467-7660,BUS SOC,,development_change,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,DÉCISIONS MARKETING,0779-7389,2269-8469,MKG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ECOLOGICAL ECONOMICS,1873-6106,1989-2021,BUS SOC,,ecological_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ECONOMETRICA,0012-9682,1468-0262,FIN,,econometrica,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ECONOMIC AND INDUSTRIAL DEMOCRACY,0143-831X,1461-7099,HRM,,economic_industrial_democracy_international_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ECONOMIC GEOGRAPHY,0013-0095,1944-8287,BUS SOC,,economic_geography,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ECONOMIC MODELLING,0264-9993,1873-6122,FIN,,economic_modelling,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ECONOMICA,0013-0427,1468-0335,GEN MAN,,economica,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ECONOMICS OF INNOVATION AND NEW TECHNOLOGY,1043-8599,1476-8364,INNOV,,economics_innovation_new_technology,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ECONOMY AND SOCIETY,0308-5147,1469-5766,BUS SOC,,economy_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ELECTRONIC COMMERCE RESEARCH,1389-5753,1572-9362,MKG,,electronic_commerce_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ELECTRONIC COMMERCE RESEARCH AND APPLICATIONS,1567-4223,1873-7846,MIS,,electronic_commerce_research_applications,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ELECTRONIC MARKETS,1019-6781,1422-8890,MIS,,electronic_markets,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,EMERGING MARKETS FINANCE AND TRADE,1540-496X,1558-0938,FIN,,emerging_markets_finance_trade,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EMERGING MARKETS REVIEW,1566-0141,1873-6173,FIN,,emerging_markets_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EMPLOYEE RELATIONS,0142-5455,1758-7069,HRM,,employee_relations,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENERGY ECONOMICS,0140-9883,1873-6181,SECTOR,,energy-economics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENERGY JOURNAL,0195-6574,1944-9089,SECTOR,,energy_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENERGY POLICY,0301-4215,1873-6777,SECTOR,,energy_policy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"ENGINEERING, CONSTRUCTION AND ARCHITECTURAL MANAGEMENT",0969-9988,1365-232X,SECTOR,,engineering_construction_architectural_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ENTERPRISE & SOCIETY,1467-2227,1467-2235,BUS HIST,,enterprise_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ENTREPRENDRE & INNOVER,2034-7634,2034-7642,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENTREPRENEURSHIP AND REGIONAL DEVELOPMENT,0898-5626,1464-5114,INNOV,,entrepreneurship_regional_development,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ENTREPRENEURSHIP RESEARCH JOURNAL,2157-5665,2157-5665,INNOV,,entrepreneurship_research_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ENTREPRENEURSHIP THEORY AND PRACTICE,1042-2587,1540-6520,INNOV,,etp,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ENTREPRISE ET SOCIÉTÉ,2553-7830,2554-9626,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ENTREPRISES ET HISTOIRE,1161-2770,2100-9864,BUS HIST,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENVIRONMENT AND PLANNING A,0308-518X,1472-3409,SECTOR,,environment_planning_economy_space,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ENVIRONMENT AND PLANNING D,1472-3433,1472-3433,BUS SOC,,environment_planning_d_society_space,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ENVIRONMENTAL AND RESOURCE ECONOMICS,0924-6460,1573-1502,BUS SOC,,environmental_resource_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ENVIRONMENTAL MANAGEMENT,0364-152X,1432-1009,SECTOR,,environmental_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"EQUALITY, DIVERSITY AND INCLUSION: AN INTERNATIONAL JOURNAL",0261-0159,2040-7149,HRM,,equality_diversity_inclusion,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,EURASIAN BUSINESS REVIEW,1309-4297,2147-4281,GEN MAN,,eurasian_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,EUROPE-ASIA STUDIES,0966-8136,1465-3427,INT,,europe_asia_studies,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,EUROPEAN ACCOUNTING REVIEW,0963-8180,1468-4497,ACC,,european_accounting_review,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN BUSINESS REVIEW,0955-534X,1758-7107,GEN MAN,,european_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN FINANCIAL MANAGEMENT,1354-7798,1468-036X,FIN,,european_financial_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN JOURNAL OF INDUSTRIAL RELATIONS,0959-6801,1461-7129,HRM,,european_journal_industrial_relations,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,EUROPEAN JOURNAL OF INFORMATION SYSTEMS,0960-085X,1476-9344,MIS,,european_journal_information_systems,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,EUROPEAN JOURNAL OF INNOVATION MANAGEMENT,1460-1060,1758-7115,INNOV,,european_journal_innovation_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,EUROPEAN JOURNAL OF INTERNATIONAL MANAGEMENT,1751-6757,1751-6765,INT,,european_journal_international_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,EUROPEAN JOURNAL OF MARKETING,0309-0566,1758-7123,MKG,,european_journal_marketing,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,EUROPEAN JOURNAL OF OPERATIONAL RESEARCH,0377-2217,1872-6860,GEN MAN,,european_journal_operational_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN JOURNAL OF PUBLIC HEALTH,1101-1262,1464-360X,HLTH,,european_journal_public_health,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN JOURNAL OF THE HISTORY OF ECONOMIC THOUGHT,0967-2567,1469-5936,BUS HIST,,european_journal_history_economic_thought,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN JOURNAL OF WORK & ORGANIZATIONAL PSYCHOLOGY,1359-432X,1464-0643,HRM,,european_journal_work_organizational_psychology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EUROPEAN MANAGEMENT JOURNAL,0263-2373,1873-5681,GEN MAN,,european_management_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,EUROPEAN MANAGEMENT REVIEW,1740-4754,1740-4762,GEN MAN,,european_management_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"EVALUATION: THE INTERNATIONAL JOURNAL OF THEORY, RESEARCH AND PRACTICE",1356-3890,1461-7153,PUB MAN,,evaluation,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,EXPERT SYSTEMS WITH APPLICATIONS,0957-4174,1873-6793,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,FACILITIES,0263-2772,1758-7131,SECTOR,,facilities,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,FAMILY BUSINESS REVIEW,0894-4865,1741-6248,INNOV,,family_business_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,FINANCE,0752-6180,2101-0145,FIN,,finance,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,FINANCE AND STOCHASTICS,0949-2984,1432-1122,FIN,,finance_stochastics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FINANCE CONTRÔLE STRATÉGIE,1287-1141,2261-5512,FIN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FINANCE RESEARCH LETTERS,1544-6123,1544-6131,FIN,,finance_research_letters,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FINANCIAL ACCOUNTABILITY AND MANAGEMENT,0267-4424,1468-0408,ACC,,financial_accountability_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,FINANCIAL ANALYSTS JOURNAL,0015-198X,1938-3312,FIN,,financial_analysts_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,FINANCIAL HISTORY REVIEW,0968-5650,1474-0052,BUS HIST,,financial_history_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,FINANCIAL MANAGEMENT,0046-3892,1755-053X,FIN,,financial_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,FINANCIAL MARKETS AND PORTFOLIO MANAGEMENT,1555-4961,1555-4961,FIN,,financial_markets_portfolio_management,abdc_b,title,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"FINANCIAL MARKETS, INSTITUTIONS AND INSTRUMENTS",0963-8008,1468-0416,FIN,,financial_markets_institutions_instruments,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FINANCIAL REVIEW,0732-8516,1540-6288,FIN,,financial_review_us,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,FLEXIBLE SERVICES AND MANUFACTURING JOURNAL (FORMERLY: INTERNATIONAL JOURNAL OF MANUFACTURING SYSTEMS),1936-6582,1936-6590,LOG,,flexible_services_manufacturing_journal,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FOOD POLICY,0306-9192,1873-5657,MKG,,food_policy,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,FUTURES,0016-3287,1873-6378,INNOV,,futures,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GENDER AND SOCIETY,0891-2432,1552-3977,BUS SOC,,gender_society,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"GENDER, WORK AND ORGANIZATION",0968-6673,1468-0432,HRM,,gender_work_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GENEVA PAPERS ON RISK AND INSURANCE: ISSUES AND PRACTICE,1018-5895,1468-0440,FIN,,geneva_papers_risk_insurance_issues_practice,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,GESTION ET MANAGEMENT PUBLIC,,2116-8865,PUB MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GLOBAL ENVIRONMENTAL CHANGE,0959-3780,1872-9495,BUS SOC,,global_environmental_change,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,GLOBAL FINANCE JOURNAL,1044-0283,1873-5665,FIN,,global_finance_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,GLOBAL STRATEGY JOURNAL,2042-5791,2042-5805,STRAT,,global_strategy_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GOVERNANCE,0952-1895,1468-0491,PUB MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,GROUP AND ORGANIZATION MANAGEMENT,1059-6011,1552-3993,HRM,,group_organization_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GROUP DECISION AND NEGOTIATION,0926-2644,1572-9907,HRM,,group_decision_negotiation,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"GROUP DYNAMICS: THEORY, RESEARCH AND PRACTICE",1089-2699,1930-7802,ORG STUD,,group_dynamics_theory_research_practice,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GROUP PROCESSES AND INTERGROUP RELATIONS,1368-4302,1461-7188,ORG STUD,,group_processes_intergroup_relations,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,GROWTH AND CHANGE,0017-4815,1468-2257,INNOV,,growth_change,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,GÉRER ET COMPRENDRE,0295-4397,2271-7943,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,HARVARD BUSINESS REVIEW,0017-8012,0017-8012,GEN MAN,,hbr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,HEALTH AFFAIRS,0278-2715,1544-5208,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,HEALTH CARE MANAGEMENT REVIEW,0361-6274,1550-5030,HLTH,,health_care_management_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,HEALTH CARE MANAGEMENT SCIENCE,1386-9620,1572-9389,HLTH,,health_care_management_science,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,HEALTH POLICY,0168-8510,1872-6054,HLTH,,health_policy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,HEALTH POLICY AND PLANNING,0268-1080,1460-2237,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,HEALTH SERVICES MANAGEMENT RESEARCH,0951-4848,1758-1044,HLTH,,health_services_management_research,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,HEALTH SERVICES RESEARCH,0017-9124,1475-6773,HLTH,,health_services_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,HISTORY OF POLITICAL ECONOMY,0018-2702,1527-1919,BUS HIST,,history_political_economy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,HUMAN PERFORMANCE,0895-9285,1532-7043,HRM,,human_performance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,HUMAN RELATIONS,0018-7267,1741-282X,HRM,,human_relations,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,HUMAN RESOURCE DEVELOPMENT QUARTERLY,1044-8004,1532-1096,HRM,,human_resource_development_quarterly,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,HUMAN RESOURCE DEVELOPMENT REVIEW,1534-4843,1552-6712,HRM,,human_resource_development_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,HUMAN RESOURCE MANAGEMENT,0090-4848,1099-050X,HRM,,hrm,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,HUMAN RESOURCE MANAGEMENT JOURNAL,0954-5395,1748-8583,HRM,,human_resource_management_journal_uk,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,HUMAN RESOURCE MANAGEMENT REVIEW,1053-4822,1873-7889,HRM,,human_resource_management_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"IEEE TRANSACTION ON SYSTEMS, MAN AND CYBERNETICS: SYSTEMS (FORMERLY ""IEEE TRANSACTIONS ON SYSTEMS, MAN AND CYBERNETICS - PART A: SYSTEMS AND HUMANS"")",2168-2216,2168-2232,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,IEEE TRANSACTIONS ON ENGINEERING MANAGEMENT,0018-9391,1558-0040,MIS,,ieee_transactions_engineering_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING,1041-4347,1041-4347,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,IEEE TRANSACTIONS ON SOFTWARE ENGINEERING,0098-5589,1939-3520,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,IIM KOZHIKODE SOCIETY & MANAGEMENT REVIEW,2321-029X,2321-029X,GEN MAN,,iim_kozhikode_society_management_review,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ILR REVIEW (INDUSTRIAL AND LABOR RELATIONS REVIEW),0019-7939,2162-271X,HRM,,ilr_review_industrial_labor_relations_review,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,IMA JOURNAL OF MANAGEMENT MATHEMATICS,1471-678X,1471-6798,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,IMPLEMENTATION SCIENCE,1748-5908,1748-5908,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INDUSTRIAL AND CORPORATE CHANGE,0960-6491,1464-3650,GEN MAN,,industrial_corporate_change,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INDUSTRIAL AND ORGANIZATIONAL PSYCHOLOGY - PERSPECTIVES ON SCIENCE AND PRACTICE,1754-9426,1754-9434,HRM,,industrial_organizational_psychology_perspectives,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INDUSTRIAL MANAGEMENT AND DATA SYSTEMS,0263-5577,1758-5783,MIS,,industrial_management_data_systems,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INDUSTRIAL MARKETING MANAGEMENT,0019-8501,1873-2062,MKG,,industrial_marketing_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,INDUSTRIAL RELATIONS: A JOURNAL OF ECONOMY AND SOCIETY,0019-8676,1468-232X,HRM,,industrial_relations_journal_economy_society,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INDUSTRY AND INNOVATION,1366-2716,1469-8390,INNOV,,industry_innovation,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INFORMATION AND MANAGEMENT,0378-7206,1872-7530,MIS,,information_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INFORMATION AND ORGANIZATION,1471-7727,1873-7919,MIS,,information_organization,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INFORMATION COMMUNICATION AND SOCIETY,1369-118X,1468-4462,MIS,,information_communication_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INFORMATION SYSTEMS AND E-BUSINESS MANAGEMENT,1617-9846,1617-9854,MIS,,information_systems_e_business_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INFORMATION SYSTEMS FRONTIERS,1387-3326,1572-9419,MIS,,information_systems_frontiers,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,INFORMATION SYSTEMS JOURNAL,1350-1917,1365-2575,MIS,,information_systems_journal,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,INFORMATION SYSTEMS RESEARCH,1047-7047,1526-5536,MIS,,isr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INFORMATION TECHNOLOGY AND MANAGEMENT,1385-951X,1573-7667,MIS,,information_technology_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INFORMATION TECHNOLOGY AND PEOPLE,0959-3845,1758-5813,MIS,,information_technology_people,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INFORMS JOURNAL ON APPLIED ANALYTICS,0092-2102,1526-551X,GEN MAN,,informs_journal_applied_analytics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"INNOVATION: ORGANIZATION & MANAGEMENT (FORMERLY: INNOVATION: MANAGEMENT, POLICY AND PRACTICE)",1447-9338,2204-0226,INNOV,,innovation_organization_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"INNOVATIONS, JOURNAL OF INNOVATION ECONOMICS AND MANAGEMENT",,2032-5355,INNOV,,journal_innovation_economics,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"INNOVATIONS, REVUE D'ÉCONOMIE ET DE MANAGEMENT DE L'INNOVATION",1267-4982,1965-0256,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INSURANCE: MATHEMATICS AND ECONOMICS,0167-6687,1873-5959,FIN,,insurance_mathematics_economics,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL BUSINESS REVIEW,0969-5931,1873-6149,INT,,international_business_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL ENTREPRENEURSHIP AND MANAGEMENT JOURNAL,1554-7191,1555-1938,INNOV,,international_entrepreneurship_management_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL FOR QUALITY IN HEALTH CARE,1353-4505,1464-3677,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ACCOUNTING INFORMATION SYSTEMS,1467-0895,1873-4723,ACC,,international_journal_accounting_information_systems,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF ADVERTISING,0265-0487,1759-3948,MKG,,international_journal_advertising,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ARTS MANAGEMENT,1480-8986,1480-8986,SECTOR,,international_journal_arts_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF AUDITING,1090-6738,1099-1123,ACC,,international_journal_auditing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF BANK MARKETING,0265-2323,1758-5937,MKG,,international_journal_bank_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF BUSINESS GOVERNANCE AND ETHICS,1741-802X,1741-802X,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF CONSUMER STUDIES,1470-6423,1470-6431,MKG,,international_journal_consumer_studies,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF CONTEMPORARY HOSPITALITY MANAGEMENT,0959-6119,1757-1049,SECTOR,,international_journal_contemporary_hospitality,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF CROSS CULTURAL MANAGEMENT,1470-5958,1741-2838,INT,,international_journal_cross_cultural_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF ELECTRONIC COMMERCE,1086-4415,1557-9301,MIS,,international_journal_electronic_commerce,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ENERGY SECTOR MANAGEMENT,1750-6220,1750-6239,SECTOR,,international_journal_energy_sector_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF ENTREPRENEURIAL BEHAVIOUR AND RESEARCH,1355-2554,1758-6534,INNOV,,international_journal_entrepreneurial_behaviour,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ENTREPRENEURSHIP AND INNOVATION,1465-7503,2043-6882,INNOV,,international_journal_entrepreneurship_innovation,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ENTREPRENEURSHIP AND INNOVATION MANAGEMENT,1368-275X,1741-5098,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF ENTREPRENEURSHIP AND SMALL BUSINESS,1476-1297,1741-8054,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF FINANCE AND ECONOMICS,1076-9307,1099-1158,FIN,,international_journal_finance_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF FORECASTING,0169-2070,1872-8200,STRAT,,international_journal_forecasting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF GENDER AND ENTREPRENEURSHIP,1756-6266,1756-6274,HRM,,international_journal_gender_entrepreneurship,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF HEALTH ECONOMICS AND MANAGEMENT,2199-9023,2199-9031,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF HEALTH PLANNING AND MANAGEMENT,0749-6753,1099-1751,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF HERITAGE STUDIES,1352-7258,1470-3610,SECTOR,,international_journal_heritage_studies,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF HOSPITALITY MANAGEMENT,0278-4319,1873-4693,SECTOR,,international_journal_hospitality_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF HUMAN COMPUTER STUDIES,1071-5819,1095-9300,MIS,,international_journal_human_computer_studies,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF HUMAN RESOURCE MANAGEMENT,0958-5192,1466-4399,HRM,,international_journal_human_resource_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF INFORMATION MANAGEMENT,0268-4012,1873-4707,MIS,,international_journal_information_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF INNOVATION MANAGEMENT,1363-9196,1757-5877,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF INTERCULTURAL RELATIONS,0147-1767,1873-7552,INT,,international_journal_intercultural_relations,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"INTERNATIONAL JOURNAL OF KNOWLEDGE, CULTURE AND CHANGE MANAGEMENT",1447-9524,1447-9575,GEN MAN,,international_journal_knowledge_culture_change,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF LOGISTICS: RESEARCH AND APPLICATIONS,1367-5567,1469-848X,LOG,,international_journal_logistics_research_applications,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF MANAGEMENT AND DECISION MAKING,1462-4621,1741-5187,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF MANAGEMENT REVIEWS,1460-8545,1468-2370,GEN MAN,,international_journal_management_reviews,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF MANAGING PROJECTS IN BUSINESS,1753-8378,1753-8386,LOG,,international_journal_managing_projects_business,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF MANPOWER,0143-7720,1758-6577,HRM,,international_journal_manpower,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF MANUFACTURING TECHNOLOGY AND MANAGEMENT,1368-2148,1741-5195,LOG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF MARKET RESEARCH,1470-7853,2515-2173,MKG,,international_journal_market_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,INTERNATIONAL JOURNAL OF OPERATIONS AND PRODUCTION MANAGEMENT,0144-3577,1758-6593,LOG,,international_journal_operations_production_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF PHYSICAL DISTRIBUTION AND LOGISTICS MANAGEMENT,0960-0035,1758-664X,LOG,,international_journal_physical_distribution_logistics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS,0925-5273,1873-7579,LOG,,international_journal_production_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH,0020-7543,1366-588X,LOG,,international_journal_production_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL JOURNAL OF PROJECT MANAGEMENT,0263-7863,1873-4634,LOG,,international_journal_project_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF PUBLIC ADMINISTRATION,0190-0692,1532-4265,PUB MAN,,international_journal_public_administration,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF PUBLIC SECTOR MANAGEMENT,0951-3558,1758-6666,PUB MAN,,international_journal_public_sector_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF QUALITY AND RELIABILITY MANAGEMENT,0265-671X,1758-6682,LOG,,international_journal_quality_reliability_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,INTERNATIONAL JOURNAL OF RESEARCH IN MARKETING,0167-8116,1873-8001,MKG,,international_journal_research_marketing,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF RETAIL AND DISTRIBUTION MANAGEMENT,0959-0552,1758-6690,MKG,,international_journal_retail_distribution_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF SELECTION AND ASSESSMENT,0965-075X,1468-2389,HRM,,international_journal_selection_assessment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF STRESS MANAGEMENT,1072-5245,1573-3424,HRM,,international_journal_stress_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF TECHNOLOGY ASSESSMENT IN HEALTH CARE,0266-4623,1471-6348,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF TECHNOLOGY MANAGEMENT,0267-5730,1741-5276,INNOV,,international_journal_technology_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE,0219-0249,1793-6322,FIN,,international_journal_theoretical_applied_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF TOURISM RESEARCH,1099-2340,1522-1970,SECTOR,,international_journal_tourism_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL JOURNAL OF TRANSPORT ECONOMICS,0391-8440,0391-8440,SECTOR,,international_journal_transport_economics,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL JOURNAL OF URBAN AND REGIONAL RESEARCH,0309-1317,1468-2427,PUB MAN,,international_journal_urban_regional_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL LABOUR REVIEW,0020-7780,1564-913X,ACC,,international_labour_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL MARKETING REVIEW,0265-1335,1758-6763,MKG,,international_marketing_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL PUBLIC MANAGEMENT JOURNAL,1096-7494,1559-3169,PUB MAN,,international_public_management_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL REVIEW OF ADMINISTRATIVE SCIENCES,0020-8523,1461-7226,HRM,,international_review_administrative_sciences,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL REVIEW OF ECONOMICS AND FINANCE,1059-0560,1873-8036,FIN,,international_review_economics_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS,1057-5219,1873-8079,FIN,,international_review_financial_analysis,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL REVIEW OF PUBLIC ADMINISTRATION,1229-4659,2331-7795,PUB MAN,,international_review_public_administration,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,INTERNATIONAL SMALL BUSINESS JOURNAL,0266-2426,1741-2870,INNOV,,international_small_business_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,INTERNATIONAL STUDIES OF MANAGEMENT AND ORGANIZATION,0020-8825,1558-0911,PUB MAN,,international_studies_management_organization,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNATIONAL TRANSACTIONS IN OPERATIONAL RESEARCH,0969-6016,1475-3995,GEN MAN,,international_transactions_operational_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,INTERNET RESEARCH,1066-2243,1066-2243,MIS,,internet_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL DE GESTION ET D'ÉCONOMIE DE LA SANTÉ,2679-2346,2534-4269,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF ACCOUNTING AND ECONOMICS,0165-4101,1879-1980,ACC,,jae,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ACCOUNTING AND ORGANIZATIONAL CHANGE,1832-5912,1839-5473,ACC,,journal_accounting_organizational_change,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ACCOUNTING AND PUBLIC POLICY,0278-4254,1873-2070,PUB MAN,,journal_accounting_public_policy,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF ACCOUNTING LITERATURE,0737-4607,2452-1469,ACC,,journal_accounting_literature,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF ACCOUNTING RESEARCH,0021-8456,1475-679X,ACC,,jar,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"JOURNAL OF ACCOUNTING, AUDITING AND FINANCE",0148-558X,2160-4061,ACC,,journal_accounting_auditing_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ADVERTISING,0091-3367,1557-7805,MKG,,journal_advertising,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ADVERTISING RESEARCH,0021-8499,1740-1909,MKG,,journal_advertising_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ALTERNATIVE INVESTMENTS,1520-3255,2168-8435,FIN,,journal_alternative_investments,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF APPLIED ACCOUNTING RESEARCH,0967-5426,1758-8855,ACC,,journal_applied_accounting_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF APPLIED PSYCHOLOGY,0021-9010,1939-1854,HRM,,jap,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF APPLIED SOCIAL PSYCHOLOGY,0021-9029,1559-1816,MKG,,journal_applied_social_psychology,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ASSET MANAGEMENT,1470-8272,1479-179X,FIN,,journal_asset_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF BANKING AND FINANCE,0378-4266,1872-6372,FIN,,journal_banking_finance,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF BEHAVIORAL AND EXPERIMENTAL ECONOMICS (FORMERLY: JOURNAL OF SOCIO-ECONOMICS),2214-8043,2214-8051,ORG STUD,,journal_behavioral_experimental_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF BEHAVIORAL DECISION MAKING,0894-3257,1099-0771,HRM,,journal_behavioral_decision_making,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF BEHAVIORAL FINANCE,1542-7560,1542-7579,FIN,,journal_behavioral_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF BRAND MANAGEMENT,1350-231X,1479-1803,MKG,,journal_brand_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF BUSINESS & INDUSTRIAL MARKETING,0885-8624,2052-1189,MKG,,journal_business_industrial_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF BUSINESS AND ECONOMIC STATISTICS,0735-0015,1537-2707,FIN,,journal-of-business-and-economic-statistics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF BUSINESS AND PSYCHOLOGY,0889-3268,1573-353X,HRM,,journal_business_psychology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF BUSINESS ECONOMICS AND MANAGEMENT,1611-1699,2029-4433,GEN MAN,,journal_business_economics_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF BUSINESS ETHICS,0167-4544,1573-0697,GEN MAN,,journal_business_ethics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF BUSINESS FINANCE AND ACCOUNTING,0306-686X,1468-5957,ACC,,journal_business_finance_accounting,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF BUSINESS LOGISTICS,0735-3766,2158-1592,LOG,,journal_business_logistics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF BUSINESS RESEARCH,0148-2963,1873-7978,MKG,,journal_business_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF BUSINESS STRATEGY,0275-6668,0275-6668,STRAT,,journal_business_strategy,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF BUSINESS TO BUSINESS MARKETING,1051-712X,1547-0628,MKG,,journal_business_business_marketing,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF BUSINESS VENTURING,0883-9026,1873-2003,INNOV,,jbv,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF CAREER ASSESSMENT,1069-0727,1552-4590,HRM,,journal_career_assessment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CAREER DEVELOPMENT,0894-8453,1573-3548,HRM,,journal_career_development,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CHANGE MANAGEMENT,1469-7017,1479-1811,STRAT,,journal_change_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF CLEANER PRODUCTION,0959-6526,1879-1786,LOG,,journal_cleaner_production,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF COMMODITY MARKETS,2405-8505,2405-8513,FIN,,journal_commodity_markets,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF COMPUTATIONAL FINANCE,1460-1559,1755-2850,FIN,,journal_computational_finance,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF COMPUTER MEDIATED COMMUNICATION,1083-6101,1083-6101,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF CONFLICT RESOLUTION,0022-0027,1552-8766,HRM,,journal_conflict_resolution,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF CONSUMER AFFAIRS,0022-0078,1745-6606,MKG,,journal_consumer_affairs,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CONSUMER BEHAVIOUR,1472-0817,1479-1838,MKG,,journal_consumer_behaviour,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CONSUMER MARKETING,0736-3761,0736-3761,MKG,,journal_consumer_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CONSUMER POLICY,0168-7034,1573-0700,MKG,,journal_consumer_policy,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF CONSUMER PSYCHOLOGY,1057-7408,1532-7663,MKG,,jcp,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF CONSUMER RESEARCH,0093-5301,1537-5277,MKG,,jcr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,"JOURNAL OF CORPORATE FINANCE: CONTRACTING, GOVERNANCE AND ORGANIZATION",0929-1199,1872-6313,FIN,,journal_corporate_finance,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CREDIT RISK,1744-6619,1755-9723,FIN,,journal_credit_risk,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF CULTURAL ECONOMY,1753-0350,1753-0369,SECTOR,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF DECISION SYSTEMS,1246-0125,2116-7052,MIS,,journal_decision_systems,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF DERIVATIVES,1074-1240,2168-8524,FIN,,journal_derivatives,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF DEVELOPMENT STUDIES,0022-0388,1743-9140,INT,,journal_development_studies,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ECONOMIC BEHAVIOR AND ORGANIZATION,0167-2681,1879-1751,ORG STUD,,journal-of-economic-behavior-and-organization,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ECONOMIC DYNAMICS AND CONTROL,0165-1889,1879-1743,GEN MAN,,journal-of-economic-dynamics-and-control,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF ECONOMIC GEOGRAPHY,1468-2702,1468-2710,BUS SOC,,journal_economic_geography,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF ECONOMIC PSYCHOLOGY,0167-4870,1872-7719,HRM,,journal_economic_psychology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ECONOMICS AND MANAGEMENT STRATEGY,1058-6407,1530-9134,STRAT,,journal_economics_management_strategy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ELECTRONIC COMMERCE RESEARCH,1526-6133,1938-9027,MKG,,journal_electronic_commerce_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF EMERGING MARKET FINANCE,0972-6527,0973-0710,FIN,,journal_emerging_market_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF EMPIRICAL FINANCE,0927-5398,1879-1727,FIN,,journal_empirical_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF EMPLOYMENT COUNSELING,0022-0787,2161-1920,HRM,,journal_employment_counseling,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF ENGINEERING AND TECHNOLOGY MANAGEMENT,0923-4748,1879-1719,INNOV,,journal_engineering_technology_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ENTERPRISE INFORMATION MANAGEMENT,1741-0398,1758-7409,MIS,,journal_enterprise_information_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ENTERPRISING CULTURE,0218-4958,1793-6330,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF ENVIRONMENTAL ECONOMICS AND MANAGEMENT,0095-0696,1096-0449,BUS SOC,,journal-of-environmental-economics-and-management,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF ENVIRONMENTAL MANAGEMENT,0301-4797,1095-8630,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FAMILY BUSINESS STRATEGY,1877-8585,1877-8593,INNOV,,journal_family_business_strategy,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF FASHION MARKETING AND MANAGEMENT,1361-2026,1758-7433,MKG,,journal_fashion_marketing_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF FINANCE,0022-1082,1540-6261,FIN,,jf,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS,0022-1090,1756-6916,FIN,,jfqa,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF FINANCIAL ECONOMETRICS,1479-8409,1479-8417,FIN,,journal-of-financial-econometrics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF FINANCIAL ECONOMICS,0304-405X,0304-405X,FIN,,jfe,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF FINANCIAL INTERMEDIATION,1042-9573,1096-0473,FIN,,journal_financial_intermediation,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF FINANCIAL MARKETS,1386-4181,1878-576X,FIN,,journal_financial_markets,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FINANCIAL RESEARCH,0270-2592,1475-6803,FIN,,journal_financial_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FINANCIAL SERVICES RESEARCH,0920-8550,1573-0735,FIN,,journal_financial_services_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FINANCIAL STABILITY,1572-3089,1878-0962,FIN,,journal_financial_stability,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FIXED INCOME,1059-8596,1059-8596,FIN,,journal_fixed_income,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FORECASTING,0277-6693,1099-131X,STRAT,,journal_forecasting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF FUTURES MARKETS,0270-7314,1096-9934,FIN,,journal_futures_markets,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF GENERAL MANAGEMENT,0306-3070,1759-6106,GEN MAN,,journal_general_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF GLOBAL INFORMATION MANAGEMENT,1062-7375,1533-7995,MIS,,journal_global_information_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"JOURNAL OF HEALTH POLITICS, POLICY AND LAW",0361-6878,1527-1927,HLTH,,journal_health_politics_policy_law,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF HEALTH SERVICES RESEARCH AND POLICY,1355-8196,1758-1060,HLTH,,journal_health_services_research_policy,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF HIGH TECHNOLOGY MANAGEMENT RESEARCH,1047-8310,1047-8310,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF HISTORICAL RESEARCH IN MARKETING,1755-750X,1755-7518,BUS HIST,,journal_historical_research_marketing,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF HOSPITALITY AND TOURISM MANAGEMENT,1447-6770,1839-5260,SECTOR,,journal_hospitality_tourism_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF HOSPITALITY AND TOURISM RESEARCH,1096-3480,1557-7554,SECTOR,,journal_hospitality_tourism_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"JOURNAL OF HOSPITALITY, LEISURE, SPORT AND TOURISM EDUCATION",1473-8376,1473-8376,SECTOR,,journal_hospitality_leisure_sport_tourism_education,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF HUMAN RESOURCES,0022-166X,1548-8004,HRM,,journal-of-human-resources,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF INDUSTRIAL ECONOMICS,0022-1821,1467-6451,INT,,journal_industrial_economics,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF INDUSTRIAL RELATIONS,0022-1856,1472-9296,HRM,,journal_industrial_relations,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF INFORMATION SYSTEMS,0888-7985,1558-7959,MIS,,journal_information_systems,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF INFORMATION TECHNOLOGY,0268-3962,1466-4437,MIS,,journal_information_technology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF INTELLECTUAL CAPITAL,1469-1930,1758-7468,INNOV,,journal_intellectual_capital,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF INTERACTIVE MARKETING,1094-9968,1520-6653,MKG,,journal_interactive_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF INTERNATIONAL ACCOUNTING RESEARCH,1542-6297,1558-8025,ACC,,journal_international_accounting_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF INTERNATIONAL BUSINESS STUDIES,0047-2506,1478-6990,INT,,jibs,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF INTERNATIONAL ENTREPRENEURSHIP,1570-7385,1573-7349,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"JOURNAL OF INTERNATIONAL FINANCIAL MARKETS, INSTITUTIONS AND MONEY",1042-4431,1873-0612,FIN,,journal_international_financial_markets_institutions,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF INTERNATIONAL MANAGEMENT,1075-4253,1873-0620,INT,,journal_international_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF INTERNATIONAL MARKETING,1069-031X,1547-7215,MKG,,journal_international_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF INTERNATIONAL MONEY AND FINANCE,0261-5606,1873-0639,FIN,,journal_international_money_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF KNOWLEDGE MANAGEMENT,1367-3270,1758-7484,ORG STUD,,journal_knowledge_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF LABOR ECONOMICS,0734-306X,1537-5307,HRM,,journal-of-labor-economics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF LABOR RESEARCH,0195-3613,1936-4768,HRM,,journal_labor_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF LAW AND ECONOMICS,0022-2186,1537-5285,GEN MAN,,journal-of-law-and-economics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"JOURNAL OF LAW, ECONOMICS, AND ORGANIZATION",1465-7341,8756-6222,GEN MAN,,journal_law_economics_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF MACROMARKETING,0276-1467,1552-6534,MKG,,journal_macromarketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF MANAGEMENT,0149-2063,1557-1211,GEN MAN,,jom,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANAGEMENT & ORGANIZATION,1833-3672,1839-3527,GEN MAN,,journal_management_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF MANAGEMENT ACCOUNTING RESEARCH,1049-2127,1558-8033,ACC,,journal_management_accounting_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANAGEMENT AND GOVERNANCE,1385-3457,1572-963X,GEN MAN,,journal_management_governance,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANAGEMENT DEVELOPMENT,0262-1711,1758-7492,HRM,,journal_management_development,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANAGEMENT HISTORY,1751-1348,1758-7751,BUS HIST,,journal_management_history,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANAGEMENT IN ENGINEERING,0742-597X,1943-5479,SECTOR,,journal_management_engineering,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF MANAGEMENT INFORMATION SYSTEMS,0742-1222,1557-928X,MIS,,jmis,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF MANAGEMENT INQUIRY,1056-4926,1552-6542,GEN MAN,,journal_management_inquiry,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF MANAGEMENT STUDIES,0022-2380,1467-6486,GEN MAN,,jms,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,"JOURNAL OF MANAGEMENT, SPIRITUALITY AND RELIGION",1476-6086,1942-258X,GEN MAN,,journal_management_spirituality_religion,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF MANAGERIAL PSYCHOLOGY,0268-3946,1758-7778,HRM,,journal_managerial_psychology,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANUFACTURING SYSTEMS,0278-6125,1878-6642,LOG,,journal_manufacturing_systems,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MANUFACTURING TECHNOLOGY MANAGEMENT,1741-038X,1758-7786,MIS,,journal_manufacturing_technology_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF MARKETING,0022-2429,1547-7185,MKG,,jm,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MARKETING EDUCATION,0273-4753,1552-6550,MKG,,journal_marketing_education,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF MARKETING MANAGEMENT,0267-257X,1472-1376,MKG,,journal_marketing_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF MARKETING RESEARCH,0022-2437,1547-7193,MKG,,jmr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MARKETING THEORY AND PRACTICE,1069-6679,1944-7175,MKG,,journal_marketing_theory_practice,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MARKETING TRENDS,1961-7798,2114-8910,MKG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,"JOURNAL OF MONEY, CREDIT AND BANKING",0022-2879,1538-4616,FIN,,journal-of-money-credit-and-banking,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF MULTINATIONAL FINANCIAL MANAGEMENT,1042-444X,1873-1309,FIN,,journal_multinational_financial_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF NURSING MANAGEMENT,0966-0429,1365-2834,HLTH,,journal_nursing_management,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF OCCUPATIONAL AND ORGANIZATIONAL PSYCHOLOGY,0963-1798,2044-8325,HRM,,journal_occupational_organizational_psychology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF OCCUPATIONAL HEALTH PSYCHOLOGY,1076-8998,1939-1307,HRM,,journal_occupational_health_psychology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF OPERATIONS MANAGEMENT,0272-6963,1873-1317,LOG,,joom,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ORGANIZATIONAL AND END USER COMPUTING,1546-2234,1546-5012,MIS,,journal_organizational_end_user_computing,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF ORGANIZATIONAL BEHAVIOR,0894-3796,1099-1379,ORG STUD,,journal_organizational_behavior,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF ORGANIZATIONAL BEHAVIOR MANAGEMENT,0160-8061,1540-8604,ORG STUD,,journal_organizational_behavior_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF ORGANIZATIONAL CHANGE MANAGEMENT,0953-4814,1758-7816,ORG STUD,,journal_organizational_change_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PENSION ECONOMICS AND FINANCE,1474-7472,1475-3022,FIN,,journal_pension_economics_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF PERSONAL SELLING AND SALES MANAGEMENT,0885-3134,1557-7813,MKG,,journal_personal_selling_sales_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PERSONNEL PSYCHOLOGY,1866-5888,2190-5150,HRM,,journal_personnel_psychology,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,JOURNAL OF POLITICAL ECONOMY,0022-3808,1537-534X,GEN MAN,,jpe,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF PORTFOLIO MANAGEMENT,0095-4918,2168-8656,FIN,,journal_portfolio_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PRODUCT AND BRAND MANAGEMENT,1061-0421,2054-1643,MKG,,journal_product_brand_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF PRODUCT INNOVATION MANAGEMENT,0737-6782,1540-5885,INNOV,,journal_product_innovation_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PRODUCTIVITY ANALYSIS,0895-562X,1573-0441,GEN MAN,,journal_productivity_analysis,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PROFESSIONS AND ORGANIZATION,2051-8803,2051-8811,HRM,,journal_professions_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF PSYCHOLOGY: INTERDISCIPLINARY AND APPLIED,1940-1019,1940-1019,HRM,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF PUBLIC ADMINISTRATION RESEARCH AND THEORY,1053-1858,1477-9803,PUB MAN,,journal_public_administration_research_theory,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF PUBLIC ECONOMICS,0047-2727,0047-2727,PUB MAN,,journal-of-public-economics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF PUBLIC POLICY AND MARKETING,0743-9156,1547-7207,MKG,,journal_public_policy_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF PURCHASING AND SUPPLY MANAGEMENT,1478-4092,1873-6505,LOG,,journal_purchasing_supply_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF QUALITY TECHNOLOGY,0022-4065,2575-6230,INNOV,,journal_quality_technology,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF REAL ESTATE FINANCE AND ECONOMICS,0895-5638,1573-045X,FIN,,journal_real_estate_finance_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF RETAILING,0022-4359,1873-3271,MKG,,journal_retailing,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF RETAILING AND CONSUMER SERVICES,0969-6989,1873-1384,MKG,,journal_retailing_consumer_services,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF REVENUE AND PRICING MANAGEMENT,1476-6930,1477-657X,GEN MAN,,journal_revenue_pricing_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF RISK,1465-1211,1755-2842,FIN,,journal_risk,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF RISK AND INSURANCE,0022-4367,1539-6975,FIN,,journal_risk_insurance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF RISK AND UNCERTAINTY,0895-5646,1573-0476,FIN,,journal-of-risk-and-uncertainty,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF SERVICE MANAGEMENT,1757-5818,1757-5826,GEN MAN,,journal_service_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF SERVICE RESEARCH,1094-6705,1552-7379,MKG,,journal_service_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF SERVICE THEORY AND PRACTICE (FORMERLY: MANAGING SERVICE QUALITY: AN INTERNATIONAL JOURNAL),2055-6225,2055-6225,LOG,,journal_service_theory_practice,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF SERVICES MARKETING,0887-6045,0887-6045,MKG,,journal_services_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF SMALL BUSINESS AND ENTERPRISE DEVELOPMENT,1462-6004,1758-7840,INNOV,,journal_small_business_enterprise_development,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF SMALL BUSINESS AND ENTREPRENEURSHIP,0827-6331,2169-2610,INNOV,,journal_small_business_entrepreneurship,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF SMALL BUSINESS MANAGEMENT,0047-2778,1540-627X,INNOV,,journal_small_business_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF SPORT MANAGEMENT,0888-4773,1543-270X,SECTOR,,journal_sport_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF STRATEGIC INFORMATION SYSTEMS,0963-8687,1873-1198,MIS,,journal_strategic_information_systems,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF STRATEGIC MARKETING,0965-254X,1466-4488,MKG,,journal_strategic_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF SUPPLY CHAIN MANAGEMENT,1523-2409,1745-493X,LOG,,journal_supply_chain_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF SUSTAINABLE TOURISM,0966-9582,1747-7646,SECTOR,,journal_sustainable_tourism,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF TECHNOLOGY TRANSFER,0892-9912,1573-7047,INNOV,,journal_technology_transfer,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF THE ACADEMY OF MARKETING SCIENCE,0092-0703,1552-7824,MKG,,jams,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF THE ASSOCIATION FOR INFORMATION SYSTEMS,1536-9323,1558-3457,MIS,,journal_association_information_systems,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY,0160-5682,1476-9360,GEN MAN,,journal_operational_research_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF TRANSPORT ECONOMICS AND POLICY,0022-5258,1754-5951,SECTOR,,journal_transport_economics_policy,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,JOURNAL OF TRANSPORT GEOGRAPHY,0966-6923,1873-1236,SECTOR,,journal_transport_geography,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JOURNAL OF TRAVEL & TOURISM MARKETING,1054-8408,1540-7306,SECTOR,,journal_travel_tourism_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF TRAVEL RESEARCH,0047-2875,1552-6763,SECTOR,,journal_travel_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,JOURNAL OF VOCATIONAL BEHAVIOR,0001-8791,1095-9084,HRM,,journal_vocational_behavior,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,JOURNAL OF WORLD BUSINESS,1090-9516,1878-5573,INT,,journal_world_business,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,JUDGMENT AND DECISION MAKING,1930-2975,1930-2975,MKG,,judgment_decision_making,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,KNOWLEDGE AND PROCESS MANAGEMENT,1099-1441,1099-1441,ORG STUD,,knowledge_process_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,KNOWLEDGE MANAGEMENT RESEARCH & PRACTICE,1477-8238,1477-8246,MIS,,knowledge_management_research_practice,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,KYKLOS,0023-5962,1467-6435,BUS SOC,,kyklos,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LA REVUE DES SCIENCES DE GESTION,1160-7742,1760-6136,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LABOR HISTORY,0023-656X,1469-9702,BUS HIST,,labor_history,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,LABOUR ECONOMICS,0927-5371,1879-1034,HRM,,labour_economics,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,LAND ECONOMICS,0023-7639,1543-8325,SECTOR,,land_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LEADERSHIP,1742-7150,1742-7169,ORG STUD,,leadership,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LEADERSHIP AND ORGANIZATION DEVELOPMENT JOURNAL,0143-7739,1472-5347,ORG STUD,,leadership_organization_development_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,LEADERSHIP QUARTERLY,1048-9843,1873-3409,HRM,,leadership_quarterly,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LEISURE STUDIES,0261-4367,1466-4496,SECTOR,,leisure_studies,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,LOCAL ECONOMY,0269-0942,1470-9325,SECTOR,,local_economy,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,LOCAL GOVERNMENT STUDIES,0300-3930,1743-9388,PUB MAN,,local_government_studies,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,LOGISTIQUE ET MANAGEMENT,1250-7970,2377-9640,LOG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,LONG RANGE PLANNING,0024-6301,1873-1872,STRAT,,long_range_planning,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,M@N@GEMENT,,1286-4692,STRAT,,management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGEMENT & AVENIR,1768-5958,1969-6574,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGEMENT & PROSPECTIVE (GESTION 2000),0773-0543,2406-4734,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,MANAGEMENT ACCOUNTING RESEARCH,1044-5005,1096-1224,ACC,,management_accounting_research,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGEMENT AND ORGANIZATION REVIEW,1740-8776,1740-8784,ORG STUD,,management_organization_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGEMENT AND ORGANIZATIONAL HISTORY,1744-9359,1744-9367,BUS HIST,,management_organizational_history,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGEMENT COMMUNICATION QUARTERLY,0893-3189,1552-6798,ORG STUD,,management_communication_quarterly,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGEMENT DECISION,0025-1747,1758-6070,GEN MAN,,management_decision,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGEMENT ET SCIENCES SOCIALES,1952-3262,2102-6572,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MANAGEMENT INTERNATIONAL,1206-1697,1918-9222,INT,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGEMENT INTERNATIONAL REVIEW,0938-8249,1861-8901,INT,,management_international_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MANAGEMENT LEARNING,1350-5076,1461-7307,EDUC,,management_learning,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGEMENT RESEARCH REVIEW,2040-8269,2040-8277,GEN MAN,,management_research_review,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,MANAGEMENT SCIENCE,0025-1909,1526-5501,GEN MAN,,ms,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGERIAL AND DECISION ECONOMICS,0143-6570,1099-1468,GEN MAN,,managerial_decision_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MANAGERIAL AUDITING JOURNAL,0268-6902,1758-7735,ACC,,managerial_auditing_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MANAGERIAL FINANCE,0307-4358,1758-7743,FIN,,managerial_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,MANUFACTURING AND SERVICE OPERATIONS MANAGEMENT,1523-4614,1526-5498,LOG,,msom,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MARINE POLICY,0308-597X,1872-9460,SECTOR,,marine_policy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MARINE RESOURCE ECONOMICS,0738-1360,2334-5985,SECTOR,,marine_resource_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MARKETING LETTERS,0923-0645,1573-059X,MKG,,marketing_letters,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,MARKETING SCIENCE,0732-2399,1526-548X,MKG,,mktg_sci,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MARKETING THEORY,1470-5931,1741-301X,MKG,,marketing_theory,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MATHEMATICAL FINANCE,0960-1627,1467-9965,FIN,,mathematical_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MEASURING BUSINESS EXCELLENCE,1368-3047,1758-8057,GEN MAN,,measuring_business_excellence,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MEDICAL CARE,0025-7079,1537-1948,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MEDICAL CARE RESEARCH AND REVIEW,1077-5587,1552-6801,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MEDICAL DECISION MAKING,0272-989X,1552-681X,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,MIS QUARTERLY,0276-7783,2162-9730,MIS,,misq,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,MIS QUARTERLY EXECUTIVE,1540-1960,1540-1979,MIS,,mis_quarterly_executive,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,MIT SLOAN MANAGEMENT REVIEW,1532-9194,1532-9194,GEN MAN,,sloan_mr,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,MULTINATIONAL BUSINESS REVIEW,1525-383X,2054-1686,INT,,multinational_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,NEGOTIATION JOURNAL,0748-4526,1571-9979,GEN MAN,,negotiation_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"NEW TECHNOLOGY, WORK AND EMPLOYMENT",0268-1072,1468-005X,HRM,,new_technology_work_employment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,NONPROFIT AND VOLUNTARY SECTOR QUARTERLY,0899-7640,1552-7395,SECTOR,,nonprofit_voluntary_sector_quarterly,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,NONPROFIT MANAGEMENT AND LEADERSHIP,1048-6682,1542-7854,SECTOR,,nonprofit_management_leadership,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,NORTH AMERICAN ACTUARIAL JOURNAL,1092-0277,2325-0453,FIN,,north_american_actuarial_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,NÉGOCIATIONS,1780-9231,1782-1452,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,OMEGA: THE INTERNATIONAL JOURNAL OF MANAGEMENT SCIENCE,0305-0483,1873-5274,GEN MAN,,omega,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,OPERATIONS RESEARCH,0030-364X,1526-5463,GEN MAN,,or,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ORGANIZATION,1350-5084,1461-7323,ORG STUD,,organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,ORGANIZATION AND ENVIRONMENT,1086-0266,1552-7417,ORG STUD,,organization_environment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,ORGANIZATION SCIENCE,1047-7039,1526-5455,ORG STUD,,orgsci,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ORGANIZATION STUDIES,0170-8406,1741-3044,ORG STUD,,organization_studies,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ORGANIZATION THEORY,2631-7877,2631-7877,ORG STUD,,organization_theory,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ORGANIZATIONAL BEHAVIOR AND HUMAN DECISION PROCESSES,0749-5978,1095-9920,HRM,,obhdp,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,ORGANIZATIONAL DYNAMICS,0090-2616,1873-3530,ORG STUD,,organizational_dynamics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,ORGANIZATIONAL PSYCHOLOGY REVIEW,2041-3866,2041-3874,ORG STUD,,organizational_psychology_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,ORGANIZATIONAL RESEARCH METHODS,1094-4281,1552-7425,ORG STUD,,organizational_research_methods,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PACIFIC BASIN FINANCE JOURNAL,0927-538X,1879-0585,FIN,,pacific_basin_finance_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PAPERS IN REGIONAL SCIENCE,1056-8190,1435-5957,SECTOR,,papers_regional_science,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,PERSONNEL PSYCHOLOGY,0031-5826,1744-6570,HRM,,personnel_psychology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PERSONNEL REVIEW,0048-3486,1758-6933,HRM,,personnel_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,PHILOSOPHY OF MANAGEMENT,1740-3812,2052-9597,GEN MAN,,philosophy_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,POLICY AND POLITICS,0305-5736,1470-8442,PUB MAN,,policy_politics_international_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,POLITIQUES ET MANAGEMENT PUBLIC,0758-1726,2119-4831,PUB MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,PRODUCTION AND INVENTORY MANAGEMENT JOURNAL,0897-8336,0897-8336,LOG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,PRODUCTION AND OPERATIONS MANAGEMENT,1059-1478,1937-5956,LOG,,pom,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,PRODUCTION PLANNING AND CONTROL,0953-7287,1366-5871,LOG,,production_planning_control,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,PROJECT MANAGEMENT JOURNAL,1938-9507,8756-9728,LOG,,project_management_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,PSYCHOLOGY AND MARKETING,0742-6046,1520-6793,MKG,,psychology_marketing,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PUBLIC ADMINISTRATION AND DEVELOPMENT,0271-2075,1099-162X,PUB MAN,,public_administration_development,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,PUBLIC ADMINISTRATION REVIEW,0033-3352,1540-6210,PUB MAN,,public_administration_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,PUBLIC ADMINISTRATION: AN INTERNATIONAL QUARTERLY,0033-3298,1467-9299,PUB MAN,,public_administration_international_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,PUBLIC HEALTH,0033-3506,1476-5616,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PUBLIC MANAGEMENT REVIEW,1471-9037,1471-9045,PUB MAN,,public_management_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,PUBLIC MONEY AND MANAGEMENT,0954-0962,1467-9302,PUB MAN,,public_money_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,PUBLIC ORGANIZATION REVIEW,1566-7170,1573-7098,PUB MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,QUALITATIVE MARKET RESEARCH,1352-2752,1758-7646,MKG,,qualitative_market_research_international_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,QUALITATIVE RESEARCH,1468-7941,1741-3109,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,QUALITATIVE RESEARCH IN ACCOUNTING AND MANAGEMENT,1176-6093,1758-7654,ACC,,qualitative_research_accounting_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,QUALITY OF LIFE RESEARCH,0962-9343,1573-2649,HLTH,,quality_life_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,QUANTITATIVE FINANCE,1469-7688,1469-7696,FIN,,quantitative_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,QUANTITATIVE MARKETING AND ECONOMICS,1570-7156,1573-711X,MKG,,quantitative_marketing_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,QUESTION(S) DE MANAGEMENT,2262-7030,2271-2127,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,R&D MANAGEMENT,0033-6807,1467-9310,INNOV,,r_d_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,RAND JOURNAL OF ECONOMICS,0741-6261,1756-2171,GEN MAN,,rand-journal-of-economics,core49,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REAL ESTATE ECONOMICS,1080-8620,1540-6229,FIN,,real_estate_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,RECHERCHE ET APPLICATIONS EN MARKETING,0767-3701,2051-2821,MKG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,RECHERCHE ET CAS EN SCIENCES DE GESTION,2646-6546,2678-0631,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,RECHERCHES EN SCIENCES DE GESTION - MANAGEMENT SCIENCES - CIENCIAS DE GESTION,2259-6372,2271-2836,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REGIONAL SCIENCE AND URBAN ECONOMICS,0166-0462,1879-2308,SECTOR,,regional_science_urban_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,REGIONAL STUDIES,0034-3404,1360-0591,SECTOR,,regional_studies,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,RELATIONS INDUSTRIELLES,0034-379X,1703-8138,HRM,,relations_industrielles_industrial_relations,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE,0275-5319,1878-3384,FIN,,research_international_business_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,RESEARCH IN ORGANIZATIONAL BEHAVIOR,0191-3085,0191-3085,ORG STUD,,research_organizational_behavior,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,RESEARCH POLICY,0048-7333,1873-7625,INNOV,,rp,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,RESEARCH-TECHNOLOGY MANAGEMENT,0895-6308,1930-0166,GEN MAN,,research_technology_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,RESOURCE AND ENERGY ECONOMICS,0928-7655,1873-0221,SECTOR,,resource_energy_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVIEW OF ACCOUNTING AND FINANCE,1475-7702,1758-7700,ACC,,review_accounting_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,REVIEW OF ACCOUNTING STUDIES,1380-6653,1573-7136,ACC,,rast,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVIEW OF ASSET PRICING STUDIES,2045-9939,2045-9939,FIN,,review_asset_pricing_studies,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVIEW OF CORPORATE FINANCE STUDIES,2046-9136,2046-9136,FIN,,review_corporate_finance_studies,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVIEW OF DERIVATIVES RESEARCH,1380-6645,1573-7144,FIN,,review_derivatives_research,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,REVIEW OF FINANCE,1572-3097,1573-692X,FIN,,rof,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVIEW OF FINANCIAL ECONOMICS,1058-3300,1873-5924,FIN,,review_financial_economics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,REVIEW OF FINANCIAL STUDIES,0893-9454,1465-7368,FIN,,rfs,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVIEW OF INDUSTRIAL ORGANIZATION,0889-938X,1573-7160,ORG STUD,,review_industrial_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVIEW OF MANAGERIAL SCIENCE,1863-6683,1863-6691,GEN MAN,,review_managerial_science,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVIEW OF PUBLIC PERSONNEL ADMINISTRATION,0734-371X,1552-759X,PUB MAN,,review_public_personnel_administration,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVIEW OF QUANTITATIVE FINANCE AND ACCOUNTING,0924-865X,1573-7179,FIN,,review_quantitative_finance_accounting,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVUE CANADIENNE DES SCIENCES DE L'ADMINISTRATION (CJAS),0825-0383,1936-4490,GEN MAN,,canadian_journal_administrative_sciences_revue,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,REVUE D'ECONOMIE FINANCIÈRE,0987-3368,1777-5744,FIN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,REVUE DE GESTION DES RESSOURCES HUMAINES (RGRH),1163-913X,2271-2186,HRM,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,REVUE DE L'ENTREPRENEURIAT,1766-2524,1630-7542,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVUE DE L'ORGANISATION RESPONSABLE (ROR),1951-0187,2105-3022,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,EM,EM,REVUE EUROPÉENNE D'ÉCONOMIE ET MANAGEMENT DES SERVICES,2497-0107,,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,REVUE FRANÇAISE DE GESTION,0338-4551,1777-5663,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,EM,EM,REVUE FRANÇAISE DE GESTION INDUSTRIELLE,0242-9780,,LOG,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"REVUE INTERDISCIPLINAIRE, MANAGEMENT, HOMME & ENTREPRISE (RIMHE)",2259-2490,2260-5584,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,REVUE INTERNATIONALE DE PSYCHOSOCIOLOGIE ET DE GESTION DES COMPORTEMENTS ORGANISATIONNELS (RIPCO),1260-1705,2430-3275,HRM,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,EM,EM,REVUE INTERNATIONALE DES SCIENCES DE L'ORGANISATION (RISO),,2551-3583,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,REVUE INTERNATIONALE PME (RIPME),0776-5436,1918-9699,INNOV,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,EM,EM,REVUE MANAGEMENT & AVENIR - SANTÉ ET ENVIRONNEMENT,,2426-5551,HLTH,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,SCANDINAVIAN JOURNAL OF MANAGEMENT,0956-5221,1873-3387,GEN MAN,,scandinavian_journal_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SCHMALENBACH JOURNAL OF BUSINESS RESEARCH,1439-2917,2194-072X,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SERVICE INDUSTRIES JOURNAL,0264-2069,1743-9507,SECTOR,,service_industries_journal,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SIAM JOURNAL ON FINANCIAL MATHEMATICS,1945-497X,1945-497X,FIN,,siam_journal_financial_mathematics,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SMALL BUSINESS ECONOMICS,0921-898X,1573-0913,INNOV,,small_business_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SMALL GROUP RESEARCH,1046-4964,1552-8278,ORG STUD,,small_group_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SOCIAL BUSINESS,2044-4087,2044-9860,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,SOCIAL FORCES,0037-7732,1534-7605,BUS SOC,,social_forces,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SOCIAL NETWORKS,0378-8733,1879-2111,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SOCIAL SCIENCE AND MEDICINE,0277-9536,1873-5347,HLTH,,social_science_medicine,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SOCIETY AND BUSINESS REVIEW,1746-5680,1746-5699,BUS SOC,,society_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SOCIO-ECONOMIC PLANNING SCIENCES: THE INTERNATIONAL JOURNAL OF PUBLIC SECTOR DECISION-MAKING,0038-0121,1873-6041,PUB MAN,,socio_economic_planning_sciences,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SOCIO-ECONOMIC REVIEW,1475-1461,1475-147X,HRM,,socio_economic_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SOCIOLOGICAL METHODS & RESEARCH,0049-1241,1552-8294,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SOCIOLOGY,0038-0385,1469-8684,BUS SOC,,sociology,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SPORT MANAGEMENT REVIEW,1441-3523,1839-2083,SECTOR,,sport_management_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SPORT MARKETING QUARTERLY,1061-6934,1557-2528,MKG,,sport_marketing_quarterly,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,STRATEGIC CHANGE,1086-1718,1099-1697,STRAT,,strategic_change_briefings_entrepreurial_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,STRATEGIC ENTREPRENEURSHIP JOURNAL,1932-4391,1932-443X,INNOV,,sej,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1*,1*,STRATEGIC MANAGEMENT JOURNAL,0143-2095,1097-0266,STRAT,,smj,ft50,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,STRATEGIC ORGANIZATION,1476-1270,1741-315X,STRAT,,strategic_organization,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,SUPPLY CHAIN FORUM : AN INTERNATIONAL JOURNAL,1625-8312,1624-6039,LOG,,supply_chain_forum_international_journal,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SUPPLY CHAIN MANAGEMENT: AN INTERNATIONAL JOURNAL,1359-8546,1758-6852,LOG,,supply_chain_management_international_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"SUSTAINABILITY ACCOUNTING, MANAGEMENT AND POLICY JOURNAL",2040-8021,2040-803X,ACC,,sustainability_accounting_management_policy_journal,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,SYSTÈMES AGROALIMENTAIRES / FOOD SYSTEMS,2555-4670,2555-0411,SECTOR,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,SYSTÈMES D'INFORMATION ET MANAGEMENT (SIM),1260-4984,2271-7188,MIS,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,TECHNOLOGICAL FORECASTING AND SOCIAL CHANGE,0040-1625,1873-5509,INNOV,,technological_forecasting_social_change,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,TECHNOLOGY ANALYSIS AND STRATEGIC MANAGEMENT,0953-7325,1465-3990,STRAT,,technology_analysis_strategic_management,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,TECHNOVATION,0166-4972,1879-2383,INNOV,,technovation,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TELECOMMUNICATIONS POLICY,0308-5961,1879-3258,SECTOR,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,THE EUROPEAN JOURNAL OF FINANCE,1351-847X,1466-4364,FIN,,european_journal_finance,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,THE GENEVA RISK AND INSURANCE REVIEW,1554-964X,1554-9658,FIN,,geneva_risk_insurance_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,THE INTERNATIONAL JOURNAL OF ACCOUNTING,1094-4060,2213-3933,ACC,,international_journal_accounting,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,THE INTERNATIONAL JOURNAL OF LOGISTICS MANAGEMENT,0957-4093,1758-6550,LOG,,international_journal_logistics_management,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,THE JOURNAL OF APPLIED BEHAVIORAL SCIENCE,0021-8863,1552-6879,GEN MAN,,journal_applied_behavioral_science,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,THE JOURNAL OF ENTREPRENEURSHIP,0971-3557,0973-0745,INNOV,,journal_entrepreneurship,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,THE LEARNING ORGANIZATION,0969-6474,1758-7905,ORG STUD,,learning_organization,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,THE MILBANK QUARTERLY,0887-378X,1468-0009,HLTH,,milbank_quarterly,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,THE QUARTERLY REVIEW OF ECONOMICS AND FINANCE,1062-9769,1878-4259,FIN,,quarterly_review_economics_finance,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,"THEORY, CULTURE AND SOCIETY",0263-2764,1460-3616,BUS SOC,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,THUNDERBIRD INTERNATIONAL BUSINESS REVIEW,1096-4762,1520-6874,INT,,thunderbird_international_business_review,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOTAL QUALITY MANAGEMENT & BUSINESS EXCELLENCE,1478-3363,1478-3371,LOG,,total_quality_management_business_excellence,abdc_c,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM ANALYSIS,1083-5423,1943-3999,SECTOR,,tourism_analysis,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM ECONOMICS,1354-8166,2044-0375,SECTOR,,tourism_economics,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM GEOGRAPHIES,1461-6688,1470-1340,SECTOR,,tourism_geographies,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,TOURISM MANAGEMENT,0261-5177,1879-3193,SECTOR,,tourism_management,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM MANAGEMENT PERSPECTIVES,2211-9736,2211-9744,SECTOR,,tourism_management_perspectives,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM PLANNING AND DEVELOPMENT (FORMERLY: TOURISM AND HOSPITALITY PLANNING AND DEVELOPMENT),1479-053X,2156-8324,SECTOR,,tourism_planning_development,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURISM RECREATION RESEARCH,0250-8281,2320-0308,SECTOR,,tourism_recreation_research,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TOURIST STUDIES,1468-7976,1741-3206,SECTOR,,tourist_studies,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,TRANSPORT POLICY,0967-070X,1879-310X,SECTOR,,transport_policy,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,TRANSPORT REVIEWS,0144-1647,1464-5327,SECTOR,,transport_reviews,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,TRANSPORTATION,0049-4488,1572-9435,SECTOR,,transportation,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,TRANSPORTATION RESEARCH A: POLICY AND PRACTICE,0965-8564,1879-2375,SECTOR,,transportation_research_part_policy_practice,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,1,1,TRANSPORTATION RESEARCH B: METHODOLOGICAL,0191-2615,1879-2367,SECTOR,,transportation_research_part_b_methodological,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,TRANSPORTATION RESEARCH D: TRANSPORT AND ENVIRONMENT,1361-9209,1879-2340,SECTOR,,transportation_research_part_d_transport_environment,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,TRANSPORTATION RESEARCH PART E: LOGISTICS AND TRANSPORTATION REVIEW,1366-5545,1878-5794,LOG,,transportation_research_part_e_logistics_transportation,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,URBAN STUDIES,0042-0980,1360-063X,SECTOR,,urban_studies_international_journal_research_urban,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,UTILITIES POLICY,0957-1787,1878-4356,SECTOR,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,VENTURE CAPITAL: AN INTERNATIONAL JOURNAL OF ENTREPRENEURIAL FINANCE,1369-1066,1464-5343,FIN,,venture_capital,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,VIE ET SCIENCES DE L'ENTREPRISE (VSE),2262-5321,2262-5372,GEN MAN,,,,unmatched,fnege-journal-quality-list,FNEGE 2022
+2022,4,4,VOLUNTAS: INTERNATIONAL JOURNAL OF VOLUNTARY AND NONPROFIT ORGANIZATIONS,0957-8765,1573-7888,SECTOR,,voluntas_international_journal_voluntary_non_profit,abdc_b,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,WORK AND OCCUPATIONS,0730-8884,1552-8464,HRM,,work_occupations,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,3,3,WORK AND STRESS,0267-8373,1464-5335,HRM,,work_stress_international_journal_work_health,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,"WORK, EMPLOYMENT AND SOCIETY",0950-0170,1469-8722,HRM,,work_employment_society,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,WORLD BANK ECONOMIC REVIEW,0258-6770,1564-698X,INT,,world_bank_economic_review,abdc_a,issn,fnege-journal-quality-list,FNEGE 2022
+2022,2,2,WORLD DEVELOPMENT,0305-750X,1873-5991,INT,,world_development,abdc_a_star,issn,fnege-journal-quality-list,FNEGE 2022

@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Build site/rankings-data.js from the pinned ABS/AJG freeze and list catalogs.
+"""Build site/rankings-data.js from the pinned rankings freezes and list catalogs.
 
 ABS/AJG grades and journal_id values are copied from
 journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/.
 FT50, UTD24, Top 5, and ABDC rows are copied from the catalogs under
 journals/. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24,
 and Top 5 have no grade column and are stored with an empty rating.
-CNRS and Handelsblatt/VWL rows are copied from their pinned freezes.
-CNRS keeps the published category and domain. Handelsblatt/VWL keeps the
-published weight and, when the freeze has one, the letter class.
+CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, and ERIM Core rows are
+copied from their pinned freezes. CNRS keeps the published category and
+domain. Handelsblatt/VWL keeps the published weight and, when the freeze
+has one, the letter class. Tilburg keeps the TISEM tier. FNEGE keeps the
+published grade. ERIM keeps the Core class.
 
 This script does not fetch sources, does not read portal extracts or raw
 PDFs, and does not assign ratings, weights, or ids of its own.
@@ -94,6 +96,9 @@ LIST_COUNTS = {
     "utd24": 24,
     "top5": 5,
     "abdc": 2651,
+    "tilburg": 179,
+    "fnege": 2044,
+    "erim": 283,
 }
 CNRS_RELEASE = ROOT / "journals/rankings/cnrs/releases/rankings_cnrs_20261024"
 CNRS_YEARS = (2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020)
@@ -153,7 +158,58 @@ SYSTEM_ORDER = (
     "utd24",
     "top5",
     "abdc",
+    "tilburg",
+    "fnege",
+    "erim",
 )
+TILBURG_RELEASE = ROOT / "journals/rankings/tilburg/releases/rankings_tilburg_20261025"
+TILBURG_RATINGS = ("Top-core", "Top", "Very good")
+TILBURG_NOTES = {
+    "TISEM top-core",
+    "TISEM top-core allocation supplement",
+    "TISEM top",
+    "TISEM very good",
+}
+TILBURG_EXPECTED = {"rows": 179, "mapped": 164, "match_pct": 91.6}
+FNEGE_RELEASE = ROOT / "journals/rankings/fnege/releases/rankings_fnege_20261025"
+FNEGE_YEARS = (2019, 2022, 2025)
+FNEGE_RATINGS = ("1*", "1", "2", "3", "4", "EM", "NC")
+FNEGE_EXPECTED = {
+    2019: {"rows": 484, "mapped": 410, "match_pct": 84.7},
+    2022: {"rows": 669, "mapped": 577, "match_pct": 86.2},
+    2025: {"rows": 891, "mapped": 733, "match_pct": 82.3},
+}
+FNEGE_FIELD_LABELS = {
+    "ACC": "Accounting",
+    "BUS HIST": "Business History",
+    "BUS SOC": "Business and Society",
+    "EDUC": "Education",
+    "FIN": "Finance",
+    "GEN MAN": "General Management",
+    "HLTH": "Health",
+    "HRM": "Human Resource Management",
+    "INNOV": "Innovation",
+    "INT": "International",
+    "LOG": "Logistics",
+    "MIS": "Management Information Systems",
+    "MKG": "Marketing",
+    "ORG STUD": "Organisation Studies",
+    "PUB MAN": "Public Management",
+    "SECTOR": "Sector Studies",
+    "STRAT": "Strategy",
+}
+ERIM_RELEASE = ROOT / "journals/rankings/erim/releases/rankings_erim_20261025"
+ERIM_EDITION = "2024–2028"
+ERIM_RATINGS = ("STAR", "M-STAR", "P", "EP*", "PA", "S", "S (3=1)", "M")
+ERIM_EXPECTED = {"rows": 283, "mapped": 257, "match_pct": 90.8}
+ERIM_TRACKS = {
+    "LIS": "Logistics and Information Systems",
+    "F&A": "Finance and Accounting",
+    "ORG": "Organisation",
+    "GEN": "General",
+    "MKT": "Marketing",
+    "S&E": "Strategy and Entrepreneurship",
+}
 
 # Display names for the field codes stored on the freeze. Not a second rating.
 SUBJECT_LABELS = {
@@ -556,11 +612,213 @@ def load_handelsblatt() -> list[list]:
     return packed
 
 
+def load_grade_freeze(
+    release: Path,
+    *,
+    stem: str,
+    years: tuple[str, ...],
+    ratings: tuple[str, ...],
+    expected: dict[str, dict[str, int | float]],
+    source_file: str,
+    source_note_for,
+    edition_for,
+    system: str,
+    unmatched_rows: int,
+    conflict_rows: int,
+    long_rows_expected: int,
+) -> list[list]:
+    loaded: dict[str, list[dict[str, str]]] = {}
+    for year in years:
+        path = release / f"{stem}_{year}.csv"
+        header, rows = read_csv(path)
+        if tuple(header) != GRADE_COLUMNS:
+            raise SystemExit(f"Unexpected columns in {path.name}: {header}")
+        expect = expected[year]
+        edition = edition_for(year)
+        mapped = 0
+        for row in rows:
+            if row["edition_year"] != edition:
+                raise SystemExit(f"{system} {year}: edition_year {row['edition_year']!r} != {edition!r}")
+            if row["rating"] not in ratings or row["rating"] != row["rating_raw"]:
+                raise SystemExit(f"{system} {year}: rating {row['rating']!r}/{row['rating_raw']!r} on {row['journal_title']}")
+            if not row["journal_title"]:
+                raise SystemExit(f"{system} {year}: blank title")
+            if row["source_file"] != source_file:
+                raise SystemExit(f"{system} {year}: source_file {row['source_file']!r}")
+            note = source_note_for(row)
+            if row["source_note"] != note:
+                raise SystemExit(f"{system} {year}: source_note {row['source_note']!r} != {note!r}")
+            if mapped_id(row, f"{system} {year}"):
+                mapped += 1
+        if len(rows) != expect["rows"] or mapped != expect["mapped"]:
+            raise SystemExit(
+                f"{system} {year}: {len(rows)} rows / {mapped} mapped, expected {expect['rows']} / {expect['mapped']}"
+            )
+        pct = round(100 * mapped / len(rows), 1)
+        if pct != expect["match_pct"]:
+            raise SystemExit(f"{system} {year}: match percent {pct} != {expect['match_pct']}")
+        loaded[year] = rows
+    long_header, long_rows = read_csv(release / f"{stem}_long.csv")
+    if tuple(long_header) != GRADE_COLUMNS:
+        raise SystemExit(f"Unexpected columns in {stem}_long.csv: {long_header}")
+    if len(long_rows) != long_rows_expected:
+        raise SystemExit(f"{system} long panel has {len(long_rows)} rows, expected {long_rows_expected}")
+    stacked = [row for year in years for row in loaded[year]]
+    if Counter(row_key(row) for row in long_rows) != Counter(row_key(row) for row in stacked):
+        raise SystemExit(f"{stem}_long.csv does not match the per-year files")
+    check_conflicts(release / "conflicts.csv", conflict_rows)
+    unmatched_header, unmatched = read_csv(release / "unmatched_journals.csv")
+    if "journal_title" not in unmatched_header or len(unmatched) != unmatched_rows:
+        raise SystemExit(f"{system} unmatched file has {len(unmatched)} rows, expected {unmatched_rows}")
+    require_sidecars(release)
+    packed: list[list] = []
+    for year in years:
+        edition_label = edition_for(year)
+        if isinstance(edition_label, str) and edition_label.isdigit():
+            edition_label = int(edition_label)
+        edition = sorted(loaded[year], key=lambda row: (row["journal_title"].casefold(), row["field"], row["rating"]))
+        for row in edition:
+            packed.append(
+                [
+                    system,
+                    edition_label,
+                    row["journal_id"],
+                    row["journal_title"],
+                    row["rating"],
+                    row["field"],
+                    row["print_issn"],
+                    row["e_issn"],
+                    "",
+                ]
+            )
+    return packed
+
+
+def erim_field_labels(rows: list[dict[str, str]]) -> dict[str, str]:
+    labels: dict[str, str] = {}
+    for row in rows:
+        field = row["field"].strip()
+        if not field or field in labels:
+            continue
+        parts = [part.strip() for part in field.split(",")]
+        unknown = [part for part in parts if part not in ERIM_TRACKS]
+        if unknown:
+            raise SystemExit(f"ERIM track {field!r} has no label")
+        labels[field] = "; ".join(ERIM_TRACKS[part] for part in parts)
+    return labels
+
+
+def load_tilburg() -> list[list]:
+    rows = load_grade_freeze(
+        TILBURG_RELEASE,
+        stem="tilburg",
+        years=("current",),
+        ratings=TILBURG_RATINGS,
+        expected={"current": TILBURG_EXPECTED},
+        source_file="topjournals",
+        source_note_for=lambda row: row["source_note"],
+        edition_for=lambda year: "Current",
+        system="tilburg",
+        unmatched_rows=15,
+        conflict_rows=0,
+        long_rows_expected=LIST_COUNTS["tilburg"],
+    )
+    # source_note_for returns "" when the note is unexpected; the loader then
+    # compares row["source_note"] != note. Re-check the note set explicitly.
+    header, raw = read_csv(TILBURG_RELEASE / "tilburg_current.csv")
+    del header
+    for row in raw:
+        if row["source_note"] not in TILBURG_NOTES:
+            raise SystemExit(f"Tilburg source_note {row['source_note']!r}")
+        if row["rating"] == "Very good" and not row["field"].strip():
+            raise SystemExit(f"Tilburg very good row has no field: {row['journal_title']}")
+        if row["rating"] != "Very good" and row["field"].strip():
+            raise SystemExit(f"Tilburg {row['rating']} row has a field: {row['journal_title']}")
+    by_title = {row[3].casefold(): row for row in rows}
+    aer = by_title.get("american economic review")
+    if not aer or aer[4] != "Top-core" or aer[2] != "aer":
+        raise SystemExit(f"Tilburg AER row {aer}")
+    omega = by_title.get("omega-international journal of management science")
+    if not omega or omega[2] != "omega" or omega[4] != "Top":
+        raise SystemExit(f"Tilburg Omega row {omega}")
+    return rows
+
+
+def load_fnege() -> tuple[list[list], dict[str, str]]:
+    def note_for(row: dict[str, str]) -> str:
+        return f"FNEGE {row['edition_year']}"
+
+    packed = load_grade_freeze(
+        FNEGE_RELEASE,
+        stem="fnege",
+        years=tuple(str(year) for year in FNEGE_YEARS),
+        ratings=FNEGE_RATINGS,
+        expected={str(year): FNEGE_EXPECTED[year] for year in FNEGE_YEARS},
+        source_file="fnege-journal-quality-list",
+        source_note_for=note_for,
+        edition_for=lambda year: year,
+        system="fnege",
+        unmatched_rows=324,
+        conflict_rows=3,
+        long_rows_expected=LIST_COUNTS["fnege"],
+    )
+    fields = {row[5] for row in packed if row[5]}
+    unknown = sorted(fields - set(FNEGE_FIELD_LABELS))
+    if unknown:
+        raise SystemExit(f"FNEGE field codes have no label: {unknown}")
+    latest = [row for row in packed if row[1] == 2025]
+    by_title = {row[3].casefold(): row for row in latest}
+    aer = by_title.get("american economic review")
+    if not aer or aer[4] != "1*" or aer[2] != "aer":
+        raise SystemExit(f"FNEGE 2025 AER row {aer}")
+    appetite = by_title.get("appetite")
+    if not appetite or appetite[2] != "appetite":
+        raise SystemExit(f"FNEGE 2025 Appetite row {appetite}")
+    return packed, FNEGE_FIELD_LABELS
+
+
+def load_erim() -> tuple[list[list], dict[str, str]]:
+    header, raw = read_csv(ERIM_RELEASE / "erim_2024_2028.csv")
+    if tuple(header) != GRADE_COLUMNS:
+        raise SystemExit(f"Unexpected columns in erim_2024_2028.csv: {header}")
+    labels = erim_field_labels(raw)
+    packed = load_grade_freeze(
+        ERIM_RELEASE,
+        stem="erim",
+        years=("2024_2028",),
+        ratings=ERIM_RATINGS,
+        expected={"2024_2028": ERIM_EXPECTED},
+        source_file="EJL-Core-List-2024-2028.xlsx",
+        source_note_for=lambda row: "ERIM Journals List Core 2024-2028",
+        edition_for=lambda year: ERIM_EDITION,
+        system="erim",
+        unmatched_rows=26,
+        conflict_rows=1,
+        long_rows_expected=LIST_COUNTS["erim"],
+    )
+    for row in packed:
+        if row[1] != ERIM_EDITION:
+            raise SystemExit(f"ERIM edition {row[1]!r}")
+    by_title = {row[3].casefold(): row for row in packed}
+    amj = by_title.get("academy of management journal")
+    if not amj or amj[4] != "STAR" or amj[2] != "amj":
+        raise SystemExit(f"ERIM AMJ row {amj}")
+    ethics = by_title.get("business ethics-a european review")
+    if not ethics or ethics[2] != "business_ethics_environment_responsibility":
+        raise SystemExit(f"ERIM Business Ethics row {ethics}")
+    return packed, labels
+
+
 def payload(
     loaded: dict[int, list[dict[str, str]]],
     list_rows: list[list],
     cnrs_rows: list[list],
     hb_rows: list[list],
+    tilburg_rows: list[list],
+    fnege_rows: list[list],
+    erim_rows: list[list],
+    fnege_labels: dict[str, str],
+    erim_labels: dict[str, str],
 ) -> dict:
     rows: list[list] = []
     for year in sorted(EDITIONS, reverse=True):
@@ -582,6 +840,9 @@ def payload(
     rows.extend(cnrs_rows)
     rows.extend(hb_rows)
     rows.extend(list_rows)
+    rows.extend(tilburg_rows)
+    rows.extend(fnege_rows)
+    rows.extend(erim_rows)
     if any(len(row) != 9 for row in rows):
         raise SystemExit("Ranking row width is not 9")
     counts = Counter(row[0] for row in rows)
@@ -606,6 +867,9 @@ def payload(
             {"id": "utd24", "label": "UTD24"},
             {"id": "top5", "label": "Top 5"},
             {"id": "abdc", "label": "ABDC"},
+            {"id": "tilburg", "label": "Tilburg"},
+            {"id": "fnege", "label": "FNEGE"},
+            {"id": "erim", "label": "ERIM"},
         ],
         "editions": {
             "abs_ajg": list(EDITIONS),
@@ -615,6 +879,9 @@ def payload(
             "utd24": ["Current"],
             "top5": ["Current"],
             "abdc": [ABDC_EDITION],
+            "tilburg": ["Current"],
+            "fnege": list(FNEGE_YEARS),
+            "erim": [ERIM_EDITION],
         },
         "ratings": {
             "abs_ajg": ["4*", "4", "3", "2", "1"],
@@ -624,8 +891,15 @@ def payload(
             "utd24": [],
             "top5": [],
             "abdc": ["A*", "A", "B", "C"],
+            "tilburg": list(TILBURG_RATINGS),
+            "fnege": list(FNEGE_RATINGS),
+            "erim": list(ERIM_RATINGS),
         },
         "subjectLabels": SUBJECT_LABELS,
+        "fieldLabels": {
+            "fnege": fnege_labels,
+            "erim": erim_labels,
+        },
         "columns": [
             "system",
             "year",
@@ -654,6 +928,9 @@ def js_payload(body: dict) -> str:
         "journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/, "
         "journals/rankings/cnrs/releases/rankings_cnrs_20261024/, "
         "journals/rankings/handelsblatt_vwl/releases/rankings_handelsblatt_vwl_20261024/, "
+        "journals/rankings/tilburg/releases/rankings_tilburg_20261025/, "
+        "journals/rankings/fnege/releases/rankings_fnege_20261025/, "
+        "journals/rankings/erim/releases/rankings_erim_20261025/, "
         "and journals/catalog_{ft50,utd24,top5,abdc_*}.csv. Do not edit. */\n"
         "window.RANKINGS_DATA = "
         + raw
@@ -685,7 +962,20 @@ def main() -> int:
     list_rows = load_list_catalogs()
     cnrs_rows = load_cnrs()
     hb_rows = load_handelsblatt()
-    body = payload(loaded, list_rows, cnrs_rows, hb_rows)
+    tilburg_rows = load_tilburg()
+    fnege_rows, fnege_labels = load_fnege()
+    erim_rows, erim_labels = load_erim()
+    body = payload(
+        loaded,
+        list_rows,
+        cnrs_rows,
+        hb_rows,
+        tilburg_rows,
+        fnege_rows,
+        erim_rows,
+        fnege_labels,
+        erim_labels,
+    )
     if body["base"] != PAGES_BASE or body["freeze"] != FREEZE_ID:
         raise SystemExit("rankings payload is not the pinned freeze")
     if [system["id"] for system in body["systems"]] != list(SYSTEM_ORDER):
@@ -712,7 +1002,14 @@ def main() -> int:
         f"Handelsblatt/VWL {LIST_COUNTS['handelsblatt_vwl']:,} "
         f"(2020 {HB_EXPECTED[2020]['rows']:,} journals, "
         f"{HB_EXPECTED[2020]['mapped']:,} matched, {HB_EXPECTED[2020]['match_pct']}%; "
-        f"2015 {HB_EXPECTED[2015]['rows']:,})."
+        f"2015 {HB_EXPECTED[2015]['rows']:,}). "
+        f"Tilburg {LIST_COUNTS['tilburg']} "
+        f"({TILBURG_EXPECTED['mapped']} matched, {TILBURG_EXPECTED['match_pct']}%). "
+        f"FNEGE {LIST_COUNTS['fnege']:,} "
+        f"(2025 {FNEGE_EXPECTED[2025]['rows']:,} journals, "
+        f"{FNEGE_EXPECTED[2025]['mapped']:,} matched, {FNEGE_EXPECTED[2025]['match_pct']}%). "
+        f"ERIM {LIST_COUNTS['erim']} "
+        f"({ERIM_EXPECTED['mapped']} matched, {ERIM_EXPECTED['match_pct']}%)."
     )
     return 0
 

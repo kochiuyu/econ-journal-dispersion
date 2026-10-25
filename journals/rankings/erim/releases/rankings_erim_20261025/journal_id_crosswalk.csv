@@ -1,0 +1,306 @@
+edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+2024–2028,Abacus-A Journal of Accounting Finance and Business Studies,0001-3072,1467-6281,P,abdc_a,abacus,issn,yes
+2024–2028,Academy of Management Annals,1941-6520,1941-6067,STAR,ft50,aom_annals,issn,yes
+2024–2028,Academy of Management Annals,1941-6520,1941-6067,STAR,abdc_a_star,aom_annals,issn,no
+2024–2028,Academy of Management Discoveries,2168-1007,,P,abdc_a_star,academy_management_discoveries,issn,yes
+2024–2028,ACADEMY OF MANAGEMENT JOURNAL,0001-4273,1948-0989,STAR,ft50,amj,issn,yes
+2024–2028,ACADEMY OF MANAGEMENT JOURNAL,0001-4273,1948-0989,STAR,abdc_a_star,amj,issn,no
+2024–2028,Academy of Management Perspectives,1558-9080,,S,abdc_a,academy_management_perspectives,issn,yes
+2024–2028,ACADEMY OF MANAGEMENT REVIEW,0363-7425,1930-3807,STAR,ft50,amr,issn,yes
+2024–2028,ACADEMY OF MANAGEMENT REVIEW,0363-7425,1930-3807,STAR,abdc_a_star,amr,issn,no
+2024–2028,ACCOUNTING AND BUSINESS RESEARCH,0001-4788,2159-4260,S,abdc_a,accounting_business_research,issn,yes
+2024–2028,Accounting and Finance,0810-5391,1467-629X,S,abdc_a,accounting_finance,issn,yes
+2024–2028,Accounting Auditing & Accountability Journal,0951-3574,1758-4205,S,abdc_a_star,accounting_auditing_accountability_journal,issn,yes
+2024–2028,Accounting Horizons,0888-7993,1558-7975,S,abdc_a,accounting_horizons,issn,yes
+2024–2028,ACCOUNTING ORGANIZATIONS AND SOCIETY,0361-3682,1873-6289,STAR,ft50,aos,issn,yes
+2024–2028,ACCOUNTING ORGANIZATIONS AND SOCIETY,0361-3682,1873-6289,STAR,abdc_a_star,aos,issn,no
+2024–2028,ACCOUNTING REVIEW,0001-4826,1558-7967,STAR,ft50,tar,issn,yes
+2024–2028,ACCOUNTING REVIEW,0001-4826,1558-7967,STAR,abdc_a_star,tar,issn,no
+2024–2028,ACM TRANSACTIONS ON INFORMATION SYSTEMS,1046-8188,1558-2868,S,abdc_c,acm_transactions_information_systems,issn,yes
+2024–2028,ADMINISTRATION & SOCIETY,0095-3997,1552-3039,S,abdc_b,administration_society,issn,yes
+2024–2028,ADMINISTRATIVE SCIENCE QUARTERLY,0001-8392,1930-3815,STAR,ft50,asq,issn,yes
+2024–2028,ADMINISTRATIVE SCIENCE QUARTERLY,0001-8392,1930-3815,STAR,abdc_a_star,asq,issn,no
+2024–2028,ANNALS OF OPERATIONS RESEARCH,0254-5330,1572-9338,S,abdc_a,annals_operations_research,issn,yes
+2024–2028,ANNALS OF TOURISM RESEARCH,0160-7383,1873-7722,S,abdc_a_star,annals_tourism_research,issn,yes
+2024–2028,Applied Financial Economics,0960-3107,,S,abdc_b,applied_financial_economics,issn,yes
+2024–2028,APPLIED PSYCHOLOGY-AN INTERNATIONAL REVIEW-PSYCHOLOGIE APPLIQUEE-REVUE INTERNATIONALE,0269-994X,1464-0597,S,abdc_a,applied_psychology_international_review,issn,yes
+2024–2028,Asia Pacific Journal of Management,0217-4561,1572-9958,S,abdc_a,asia_pacific_journal_management,issn,yes
+2024–2028,AUDITING-A JOURNAL OF PRACTICE & THEORY,0278-0380,1558-7991,P,abdc_a_star,auditing_journal_practice_theory,issn,yes
+2024–2028,Behavioral Research in Accounting,1050-4753,1558-8009,S,abdc_a,behavioral_research_accounting,issn,yes
+2024–2028,British Accounting Review,0890-8389,1095-8347,S,abdc_a_star,british_accounting_review,issn,yes
+2024–2028,BRITISH JOURNAL OF INDUSTRIAL RELATIONS,0007-1080,1467-8543,P,abdc_a_star,british_journal_industrial_relations,issn,yes
+2024–2028,BRITISH JOURNAL OF MANAGEMENT,1045-3172,1467-8551,S,abdc_a_star,british_journal_management,issn,yes
+2024–2028,Business & Information Systems Engineering,2363-7005,1867-0202,S,abdc_a,business_information_systems_engineering,issn,yes
+2024–2028,Business & Society,0007-6503,1552-4205,P,abdc_a,business_society,issn,yes
+2024–2028,Business Ethics-A European Review,0962-8770,,S,abdc_b,business_ethics_environment_responsibility,issn,yes
+2024–2028,BUSINESS HISTORY,0007-6791,1743-7938,P,abdc_a_star,business_history,issn,yes
+2024–2028,BUSINESS HISTORY REVIEW,0007-6805,2044-768X,S,abdc_a,business_history_review,issn,yes
+2024–2028,CALIFORNIA MANAGEMENT REVIEW,0008-1256,2162-8564,M-STAR,abdc_a,california_management_review,issn,yes
+2024–2028,COMMUNICATION RESEARCH,0093-6502,1552-3810,S,abdc_a,communication_research,issn,yes
+2024–2028,COMPUTERS & INDUSTRIAL ENGINEERING,0360-8352,1879-0550,S,abdc_a,computers_industrial_engineering,issn,yes
+2024–2028,COMPUTERS & OPERATIONS RESEARCH,0305-0548,1873-765X,P,abdc_a,computers_operations_research,issn,yes
+2024–2028,CONTEMPORARY ACCOUNTING RESEARCH,0823-9150,1911-3846,STAR,ft50,car,issn,yes
+2024–2028,CONTEMPORARY ACCOUNTING RESEARCH,0823-9150,1911-3846,STAR,abdc_a_star,car,issn,no
+2024–2028,CORPORATE GOVERNANCE-AN INTERNATIONAL REVIEW,0964-8410,1467-8683,S,abdc_a,corporate_governance_international_review,issn,yes
+2024–2028,Corporate Reputation Review,1363-3589,1479-1889,S,abdc_c,corporate_reputation_review,issn,yes
+2024–2028,Critical Finance Review,2164-5744,2164-5760,PA,abdc_a_star,critical_finance_review,issn,yes
+2024–2028,DECISION SCIENCES,0011-7315,1540-5915,P,abdc_a_star,decision_sciences,issn,yes
+2024–2028,DECISION SUPPORT SYSTEMS,0167-9236,1873-5797,P,abdc_a_star,decision_support_systems,issn,yes
+2024–2028,DEVELOPMENT AND CHANGE,0012-155X,1467-7660,S,abdc_b,development_change,issn,yes
+2024–2028,Electronic Commerce Research and Applications,1567-4223,1873-7846,S,abdc_b,electronic_commerce_research_applications,issn,yes
+2024–2028,ENTERPRISE & SOCIETY,1467-2227,1467-2235,S,abdc_a,enterprise_society,issn,yes
+2024–2028,ENTREPRENEURSHIP AND REGIONAL DEVELOPMENT,0898-5626,1464-5114,S,abdc_a,entrepreneurship_regional_development,issn,yes
+2024–2028,ENTREPRENEURSHIP THEORY AND PRACTICE,1042-2587,1540-6520,P,ft50,etp,issn,yes
+2024–2028,ENTREPRENEURSHIP THEORY AND PRACTICE,1042-2587,1540-6520,P,abdc_a_star,etp,issn,no
+2024–2028,European Accounting Review,0963-8180,1468-4497,P,abdc_a_star,european_accounting_review,issn,yes
+2024–2028,European Financial Management,1354-7798,1468-036X,S,abdc_a,european_financial_management,issn,yes
+2024–2028,European Journal of Finance,1351-847X,1466-4364,S,abdc_a,european_journal_finance,issn,yes
+2024–2028,EUROPEAN JOURNAL OF INDUSTRIAL RELATIONS,0959-6801,1461-7129,S,abdc_a,european_journal_industrial_relations,issn,yes
+2024–2028,EUROPEAN JOURNAL OF INFORMATION SYSTEMS,0960-085X,1476-9344,P,abdc_a_star,european_journal_information_systems,issn,yes
+2024–2028,EUROPEAN JOURNAL OF MARKETING,0309-0566,1758-7123,S,abdc_a_star,european_journal_marketing,issn,yes
+2024–2028,EUROPEAN JOURNAL OF OPERATIONAL RESEARCH,0377-2217,1872-6860,P,abdc_a_star,european_journal_operational_research,issn,yes
+2024–2028,European Journal of Work and Organizational Psychology,1359-432X,1464-0643,S,abdc_a,european_journal_work_organizational_psychology,issn,yes
+2024–2028,European Management Journal,0263-2373,1873-5681,S,abdc_a,european_management_journal,issn,yes
+2024–2028,European Management Review,1740-4754,1740-4762,S,abdc_b,european_management_review,issn,yes
+2024–2028,Family Business Review,0894-4865,1741-6248,S,abdc_a,family_business_review,issn,yes
+2024–2028,FINANCE AND STOCHASTICS,0949-2984,1432-1122,S,abdc_a,finance_stochastics,issn,yes
+2024–2028,Financial Accountability and Management,0267-4424,1468-0408,S,abdc_a,financial_accountability_management,issn,yes
+2024–2028,FINANCIAL ANALYSTS JOURNAL,0015-198X,1938-3312,S,abdc_a,financial_analysts_journal,issn,yes
+2024–2028,FINANCIAL MANAGEMENT,0046-3892,1755-053X,P,abdc_a_star,financial_management,issn,yes
+2024–2028,Financial Review,0732-8516,1540-6288,S,abdc_a,financial_review_us,issn,yes
+2024–2028,Global Strategy Journal,2042-5791,2042-5805,P,abdc_a,global_strategy_journal,issn,yes
+2024–2028,GROUP & ORGANIZATION MANAGEMENT,1059-6011,1552-3993,S,abdc_a,group_organization_management,issn,yes
+2024–2028,GROUP DECISION AND NEGOTIATION,0926-2644,1572-9907,S,abdc_a,group_decision_negotiation,issn,yes
+2024–2028,HARVARD BUSINESS REVIEW,0017-8012,0017-8012,M-STAR,ft50,hbr,issn,yes
+2024–2028,HARVARD BUSINESS REVIEW,0017-8012,0017-8012,M-STAR,abdc_a,hbr,issn,no
+2024–2028,Health Care Management Science,1386-9620,1572-9389,S,abdc_b,health_care_management_science,issn,yes
+2024–2028,HUMAN RELATIONS,0018-7267,1741-282X,P,abdc_a_star,human_relations,issn,yes
+2024–2028,HUMAN RESOURCE MANAGEMENT,0090-4848,1099-050X,P,ft50,hrm,issn,yes
+2024–2028,HUMAN RESOURCE MANAGEMENT,0090-4848,1099-050X,P,abdc_a_star,hrm,issn,no
+2024–2028,Human Resource Management Journal,0954-5395,1748-8583,P,abdc_a_star,human_resource_management_journal_uk,issn,yes
+2024–2028,HUMAN RESOURCE MANAGEMENT REVIEW,1053-4822,1873-7889,P,abdc_a,human_resource_management_review,issn,yes
+2024–2028,IEEE TRANSACTIONS ON ENGINEERING MANAGEMENT,0018-9391,1558-0040,S,abdc_a,ieee_transactions_engineering_management,issn,yes
+2024–2028,IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS,1524-9050,1558-0016,S,abdc_a,ieee_transactions_intelligent_transportation_systems,issn,yes
+2024–2028,IIE TRANSACTIONS,0740-817X,,P,abdc_a,iise_transactions,issn,yes
+2024–2028,IISE Transactions,2472-5854,2472-5862,P,abdc_a,iise_transactions,issn,yes
+2024–2028,INDUSTRIAL AND CORPORATE CHANGE,0960-6491,1464-3650,P,abdc_a,industrial_corporate_change,issn,yes
+2024–2028,INDUSTRIAL MARKETING MANAGEMENT,0019-8501,1873-2062,S,abdc_a_star,industrial_marketing_management,issn,yes
+2024–2028,INDUSTRIAL RELATIONS,0019-8676,1468-232X,S,abdc_a_star,industrial_relations_journal_economy_society,issn,yes
+2024–2028,Industry and Innovation,1366-2716,1469-8390,S,abdc_a,industry_innovation,issn,yes
+2024–2028,INFORMATION & MANAGEMENT,0378-7206,1872-7530,P,abdc_a_star,information_management,issn,yes
+2024–2028,INFORMATION SYSTEMS JOURNAL,1350-1917,1365-2575,S,abdc_a_star,information_systems_journal,issn,yes
+2024–2028,INFORMATION SYSTEMS RESEARCH,1047-7047,1526-5536,STAR,ft50,isr,issn,yes
+2024–2028,INFORMATION SYSTEMS RESEARCH,1047-7047,1526-5536,STAR,abdc_a_star,isr,issn,no
+2024–2028,INFORMS JOURNAL ON COMPUTING,1091-9856,1526-5528,STAR,abdc_a,informs_journal_computing,issn,yes
+2024–2028,Interfaces,0092-2102,,P,abdc_b,informs_journal_applied_analytics,issn,yes
+2024–2028,International Business Review,0969-5931,1873-6149,S,abdc_a,international_business_review,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF ELECTRONIC COMMERCE,1086-4415,1557-9301,P,abdc_a,international_journal_electronic_commerce,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF HUMAN RESOURCE MANAGEMENT,0958-5192,1466-4399,S,abdc_a,international_journal_human_resource_management,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF HUMAN-COMPUTER STUDIES,1071-5819,1095-9300,S,abdc_b,international_journal_human_computer_studies,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF INDUSTRIAL ORGANIZATION,0167-7187,1873-7986,P,abdc_a_star,international_journal_industrial_organization,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF INFORMATION MANAGEMENT,0268-4012,1873-4707,S,abdc_a,international_journal_information_management,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF OPERATIONS & PRODUCTION MANAGEMENT,0144-3577,1758-6593,P,abdc_a,international_journal_operations_production_management,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF PHYSICAL DISTRIBUTION & LOGISTICS MANAGEMENT,0960-0035,1758-664X,S,abdc_a,international_journal_physical_distribution_logistics,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF PRODUCTION ECONOMICS,0925-5273,1873-7579,S,abdc_a,international_journal_production_economics,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH,0020-7543,1366-588X,P,abdc_a,international_journal_production_research,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF RESEARCH IN MARKETING,0167-8116,1873-8001,STAR,abdc_a_star,international_journal_research_marketing,issn,yes
+2024–2028,INTERNATIONAL JOURNAL OF SELECTION AND ASSESSMENT,0965-075X,1468-2389,S,abdc_a,international_journal_selection_assessment,issn,yes
+2024–2028,INTERNATIONAL MARKETING REVIEW,0265-1335,1758-6763,S,abdc_a,international_marketing_review,issn,yes
+2024–2028,International Small Business Journal-Researching Entrepreneurship,0266-2426,1741-2870,S,abdc_a,international_small_business_journal,issn,yes
+2024–2028,JCMS-Journal of Common Market Studies,0021-9886,1468-5965,S,abdc_b,journal_common_market_studies,issn,yes
+2024–2028,JOURNAL OF ACCOUNTING & ECONOMICS,0165-4101,1879-1980,STAR,ft50,jae,issn,yes
+2024–2028,JOURNAL OF ACCOUNTING & ECONOMICS,0165-4101,1879-1980,STAR,abdc_a_star,jae,issn,no
+2024–2028,JOURNAL OF ACCOUNTING AND PUBLIC POLICY,0278-4254,1873-2070,P,abdc_a_star,journal_accounting_public_policy,issn,yes
+2024–2028,Journal of Accounting Literature,0737-4607,2452-1469,S,abdc_a,journal_accounting_literature,issn,yes
+2024–2028,JOURNAL OF ACCOUNTING RESEARCH,0021-8456,1475-679X,STAR,ft50,jar,issn,yes
+2024–2028,JOURNAL OF ACCOUNTING RESEARCH,0021-8456,1475-679X,STAR,abdc_a_star,jar,issn,no
+2024–2028,"Journal of Accounting, Auditing and Finance",0148-558X,2160-4061,S,abdc_a,journal_accounting_auditing_finance,issn,yes
+2024–2028,JOURNAL OF ADVERTISING,0091-3367,1557-7805,P,abdc_a,journal_advertising,issn,yes
+2024–2028,JOURNAL OF ADVERTISING RESEARCH,0021-8499,1740-1909,S,abdc_a,journal_advertising_research,issn,yes
+2024–2028,Journal of Applied Corporate Finance,1078-1196,1745-6622,S,abdc_a,journal_applied_corporate_finance,issn,yes
+2024–2028,JOURNAL OF APPLIED PSYCHOLOGY,0021-9010,1939-1854,STAR,ft50,jap,issn,yes
+2024–2028,JOURNAL OF APPLIED PSYCHOLOGY,0021-9010,1939-1854,STAR,abdc_a_star,jap,issn,no
+2024–2028,JOURNAL OF BANKING & FINANCE,0378-4266,1872-6372,P,abdc_a_star,journal_banking_finance,issn,yes
+2024–2028,JOURNAL OF BEHAVIORAL DECISION MAKING,0894-3257,1099-0771,S,abdc_a,journal_behavioral_decision_making,issn,yes
+2024–2028,Journal of Brand Management,1350-231X,1479-1803,S,abdc_a,journal_brand_management,issn,yes
+2024–2028,JOURNAL OF BUSINESS & ECONOMIC STATISTICS,0735-0015,1537-2707,P,core49,journal-of-business-and-economic-statistics,issn,yes
+2024–2028,JOURNAL OF BUSINESS & ECONOMIC STATISTICS,0735-0015,1537-2707,P,abdc_a_star,jbes,issn,no
+2024–2028,JOURNAL OF BUSINESS ETHICS,0167-4544,1573-0697,P,abdc_a,journal_business_ethics,issn,yes
+2024–2028,Journal of Business Finance & Accounting,0306-686X,1468-5957,P,abdc_a_star,journal_business_finance_accounting,issn,yes
+2024–2028,Journal of Business Logistics,0735-3766,2158-1592,S,abdc_a,journal_business_logistics,issn,yes
+2024–2028,JOURNAL OF BUSINESS RESEARCH,0148-2963,1873-7978,S,abdc_a,journal_business_research,issn,yes
+2024–2028,JOURNAL OF BUSINESS VENTURING,0883-9026,1873-2003,STAR,ft50,jbv,issn,yes
+2024–2028,JOURNAL OF BUSINESS VENTURING,0883-9026,1873-2003,STAR,abdc_a_star,jbv,issn,no
+2024–2028,Journal of Business-to-Business Marketing,1051-712X,1547-0628,S,abdc_b,journal_business_business_marketing,issn,yes
+2024–2028,JOURNAL OF CONSUMER AFFAIRS,0022-0078,1745-6606,S,abdc_a,journal_consumer_affairs,issn,yes
+2024–2028,JOURNAL OF CONSUMER PSYCHOLOGY,1057-7408,1532-7663,STAR,ft50,jcp,issn,yes
+2024–2028,JOURNAL OF CONSUMER PSYCHOLOGY,1057-7408,1532-7663,STAR,abdc_a_star,jcp,issn,no
+2024–2028,JOURNAL OF CONSUMER RESEARCH,0093-5301,1537-5277,STAR,ft50,jcr,issn,yes
+2024–2028,JOURNAL OF CONSUMER RESEARCH,0093-5301,1537-5277,STAR,abdc_a_star,jcr,issn,no
+2024–2028,JOURNAL OF CORPORATE FINANCE,0929-1199,1872-6313,P,abdc_a_star,journal_corporate_finance,issn,yes
+2024–2028,Journal of Cultural Economics,0885-2545,1573-6997,S,abdc_a,journal_cultural_economics,issn,yes
+2024–2028,Journal of Derivatives,1074-1240,2168-8524,S,abdc_a,journal_derivatives,issn,yes
+2024–2028,JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION,0167-2681,1879-1751,S,core49,journal-of-economic-behavior-and-organization,issn,yes
+2024–2028,JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION,0167-2681,1879-1751,S,abdc_a_star,jebo,issn,no
+2024–2028,JOURNAL OF ECONOMIC PSYCHOLOGY,0167-4870,1872-7719,S,abdc_a,journal_economic_psychology,issn,yes
+2024–2028,JOURNAL OF ECONOMICS & MANAGEMENT STRATEGY,1058-6407,1530-9134,P,abdc_a,journal_economics_management_strategy,issn,yes
+2024–2028,Journal of Empirical Finance,0927-5398,1879-1727,P,abdc_a,journal_empirical_finance,issn,yes
+2024–2028,JOURNAL OF ENGINEERING AND TECHNOLOGY MANAGEMENT,0923-4748,1879-1719,S,abdc_b,journal_engineering_technology_management,issn,yes
+2024–2028,JOURNAL OF EVOLUTIONARY ECONOMICS,0936-9937,1432-1386,S,abdc_a,journal_evolutionary_economics,issn,yes
+2024–2028,JOURNAL OF FINANCE,0022-1082,1540-6261,STAR,ft50,jf,issn,yes
+2024–2028,JOURNAL OF FINANCE,0022-1082,1540-6261,STAR,abdc_a_star,jf,issn,no
+2024–2028,JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS,0022-1090,1756-6916,STAR,ft50,jfqa,issn,yes
+2024–2028,JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS,0022-1090,1756-6916,STAR,abdc_a_star,jfqa,issn,no
+2024–2028,Journal of Financial Econometrics,1479-8409,1479-8417,S,core49,journal-of-financial-econometrics,issn,yes
+2024–2028,Journal of Financial Econometrics,1479-8409,1479-8417,S,abdc_a_star,journal_of_financial_econometrics,issn,no
+2024–2028,JOURNAL OF FINANCIAL ECONOMICS,0304-405X,,STAR,ft50,jfe,issn,yes
+2024–2028,JOURNAL OF FINANCIAL ECONOMICS,0304-405X,,STAR,abdc_a_star,jfe,issn,no
+2024–2028,JOURNAL OF FINANCIAL INTERMEDIATION,1042-9573,1096-0473,P,abdc_a_star,journal_financial_intermediation,issn,yes
+2024–2028,JOURNAL OF FINANCIAL MARKETS,1386-4181,1878-576X,P,abdc_a_star,journal_financial_markets,issn,yes
+2024–2028,JOURNAL OF FINANCIAL RESEARCH,0270-2592,1475-6803,S,abdc_a,journal_financial_research,issn,yes
+2024–2028,JOURNAL OF FINANCIAL SERVICES RESEARCH,0920-8550,1573-0735,S,abdc_a,journal_financial_services_research,issn,yes
+2024–2028,Journal of Fixed Income,1059-8596,,S,abdc_a,journal_fixed_income,issn,yes
+2024–2028,JOURNAL OF FUTURES MARKETS,0270-7314,1096-9934,S,abdc_a,journal_futures_markets,issn,yes
+2024–2028,JOURNAL OF INFORMATION TECHNOLOGY,0268-3962,1466-4437,STAR,abdc_a_star,journal_information_technology,issn,yes
+2024–2028,JOURNAL OF INTELLIGENT MANUFACTURING,0956-5515,1572-8145,S,abdc_b,journal_intelligent_manufacturing,issn,yes
+2024–2028,JOURNAL OF INTERACTIVE MARKETING,1094-9968,1520-6653,P,abdc_a,journal_interactive_marketing,issn,yes
+2024–2028,Journal of International Accounting Research,1542-6297,1558-8025,S,abdc_a,journal_international_accounting_research,issn,yes
+2024–2028,JOURNAL OF INTERNATIONAL BUSINESS STUDIES,0047-2506,1478-6990,STAR,ft50,jibs,issn,yes
+2024–2028,JOURNAL OF INTERNATIONAL BUSINESS STUDIES,0047-2506,1478-6990,STAR,abdc_a_star,jibs,issn,no
+2024–2028,Journal of International Financial Markets Institutions & Money,1042-4431,1873-0612,S,abdc_a,journal_international_financial_markets_institutions,issn,yes
+2024–2028,Journal of International Management,1075-4253,1873-0620,S,abdc_a,journal_international_management,issn,yes
+2024–2028,JOURNAL OF INTERNATIONAL MARKETING,1069-031X,1547-7215,S,abdc_a,journal_international_marketing,issn,yes
+2024–2028,JOURNAL OF INTERNATIONAL MONEY AND FINANCE,0261-5606,1873-0639,P,abdc_a,journal_international_money_finance,issn,yes
+2024–2028,JOURNAL OF LAW ECONOMICS & ORGANIZATION,8756-6222,1465-7341,S,abdc_a,journal_law_economics_organization,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT,0149-2063,1557-1211,STAR,ft50,jom,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT,0149-2063,1557-1211,STAR,abdc_a_star,jom,issn,no
+2024–2028,Journal of Management Accounting Research,1049-2127,1558-8033,S,abdc_a_star,journal_management_accounting_research,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT INFORMATION SYSTEMS,0742-1222,1557-928X,STAR,ft50,jmis,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT INFORMATION SYSTEMS,0742-1222,1557-928X,STAR,abdc_a_star,jmis,issn,no
+2024–2028,JOURNAL OF MANAGEMENT INQUIRY,1056-4926,1552-6542,S,abdc_a,journal_management_inquiry,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT STUDIES,0022-2380,1467-6486,STAR,ft50,jms,issn,yes
+2024–2028,JOURNAL OF MANAGEMENT STUDIES,0022-2380,1467-6486,STAR,abdc_a_star,jms,issn,no
+2024–2028,JOURNAL OF MARKETING,0022-2429,1547-7185,STAR,ft50,jm,issn,yes
+2024–2028,JOURNAL OF MARKETING,0022-2429,1547-7185,STAR,abdc_a_star,jm,issn,no
+2024–2028,JOURNAL OF MARKETING RESEARCH,0022-2437,1547-7193,STAR,ft50,jmr,issn,yes
+2024–2028,JOURNAL OF MARKETING RESEARCH,0022-2437,1547-7193,STAR,abdc_a_star,jmr,issn,no
+2024–2028,JOURNAL OF MONEY CREDIT AND BANKING,0022-2879,1538-4616,P,core49,journal-of-money-credit-and-banking,issn,yes
+2024–2028,JOURNAL OF MONEY CREDIT AND BANKING,0022-2879,1538-4616,P,abdc_a_star,jmcb,issn,no
+2024–2028,JOURNAL OF OCCUPATIONAL AND ORGANIZATIONAL PSYCHOLOGY,0963-1798,2044-8325,P,abdc_a_star,journal_occupational_organizational_psychology,issn,yes
+2024–2028,JOURNAL OF OPERATIONS MANAGEMENT,0272-6963,1873-1317,STAR,ft50,joom,issn,yes
+2024–2028,JOURNAL OF OPERATIONS MANAGEMENT,0272-6963,1873-1317,STAR,abdc_a_star,joom,issn,no
+2024–2028,JOURNAL OF ORGANIZATIONAL BEHAVIOR,0894-3796,1099-1379,P,abdc_a_star,journal_organizational_behavior,issn,yes
+2024–2028,JOURNAL OF ORGANIZATIONAL CHANGE MANAGEMENT,0953-4814,1758-7816,S,abdc_b,journal_organizational_change_management,issn,yes
+2024–2028,Journal of Personnel Psychology,1866-5888,2190-5150,S,abdc_b,journal_personnel_psychology,issn,yes
+2024–2028,JOURNAL OF PORTFOLIO MANAGEMENT,0095-4918,2168-8656,S,abdc_a,journal_portfolio_management,issn,yes
+2024–2028,JOURNAL OF PRODUCT INNOVATION MANAGEMENT,0737-6782,1540-5885,P,abdc_a_star,journal_product_innovation_management,issn,yes
+2024–2028,JOURNAL OF PUBLIC POLICY & MARKETING,0743-9156,1547-7207,P,abdc_a,journal_public_policy_marketing,issn,yes
+2024–2028,Journal of Purchasing and Supply Management,1478-4092,1873-6505,P,abdc_a,journal_purchasing_supply_management,issn,yes
+2024–2028,JOURNAL OF REAL ESTATE FINANCE AND ECONOMICS,0895-5638,1573-045X,S,abdc_a,journal_real_estate_finance_economics,issn,yes
+2024–2028,JOURNAL OF RETAILING,0022-4359,1873-3271,P,abdc_a_star,journal_retailing,issn,yes
+2024–2028,Journal of Retailing and Consumer Services,0969-6989,1873-1384,S,abdc_a,journal_retailing_consumer_services,issn,yes
+2024–2028,JOURNAL OF RISK AND INSURANCE,0022-4367,1539-6975,S,abdc_a,journal_risk_insurance,issn,yes
+2024–2028,JOURNAL OF RISK AND UNCERTAINTY,0895-5646,1573-0476,S,core49,journal-of-risk-and-uncertainty,issn,yes
+2024–2028,JOURNAL OF RISK AND UNCERTAINTY,0895-5646,1573-0476,S,abdc_a_star,jru,issn,no
+2024–2028,JOURNAL OF SCHEDULING,1094-6136,1099-1425,S,abdc_b,journal_scheduling,issn,yes
+2024–2028,JOURNAL OF SERVICE RESEARCH,1094-6705,1552-7379,P,abdc_a_star,journal_service_research,issn,yes
+2024–2028,JOURNAL OF SMALL BUSINESS MANAGEMENT,0047-2778,1540-627X,S,abdc_a,journal_small_business_management,issn,yes
+2024–2028,JOURNAL OF STRATEGIC INFORMATION SYSTEMS,0963-8687,1873-1198,S,abdc_a_star,journal_strategic_information_systems,issn,yes
+2024–2028,Journal of Supply Chain Management,1523-2409,1745-493X,P,abdc_a_star,journal_supply_chain_management,issn,yes
+2024–2028,JOURNAL OF TECHNOLOGY TRANSFER,0892-9912,1573-7047,S,abdc_a,journal_technology_transfer,issn,yes
+2024–2028,JOURNAL OF THE ACADEMY OF MARKETING SCIENCE,0092-0703,1552-7824,STAR,ft50,jams,issn,yes
+2024–2028,JOURNAL OF THE ACADEMY OF MARKETING SCIENCE,0092-0703,1552-7824,STAR,abdc_a_star,jams,issn,no
+2024–2028,Journal of the Association for Consumer Research,2378-1815,2378-1823,PA,abdc_b,journal_association_consumer_research,issn,yes
+2024–2028,Journal of the Association for Information Systems,1536-9323,1558-3457,P,abdc_a_star,journal_association_information_systems,issn,yes
+2024–2028,JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY,0160-5682,1476-9360,S,abdc_a,journal_operational_research_society,issn,yes
+2024–2028,Journal of Transport Geography,0966-6923,1873-1236,S,abdc_a,journal_transport_geography,issn,yes
+2024–2028,JOURNAL OF VOCATIONAL BEHAVIOR,0001-8791,1095-9084,P,abdc_a_star,journal_vocational_behavior,issn,yes
+2024–2028,JOURNAL OF WORLD BUSINESS,1090-9516,1878-5573,P,abdc_a_star,journal_world_business,issn,yes
+2024–2028,LEADERSHIP QUARTERLY,1048-9843,1873-3409,P,abdc_a_star,leadership_quarterly,issn,yes
+2024–2028,LONG RANGE PLANNING,0024-6301,1873-1872,P,abdc_a_star,long_range_planning,issn,yes
+2024–2028,M&SOM-Manufacturing & Service Operations Management,1523-4614,1526-5498,STAR,ft50,msom,issn,yes
+2024–2028,M&SOM-Manufacturing & Service Operations Management,1523-4614,1526-5498,STAR,abdc_a_star,msom,issn,no
+2024–2028,Management Accounting Research,1044-5005,1096-1224,P,abdc_a_star,management_accounting_research,issn,yes
+2024–2028,Management and Organization Review,1740-8776,1740-8784,S,abdc_a,management_organization_review,issn,yes
+2024–2028,Management Communication Quarterly,0893-3189,1552-6798,S,abdc_b,management_communication_quarterly,issn,yes
+2024–2028,MANAGEMENT INTERNATIONAL REVIEW,0938-8249,1861-8901,S,abdc_a,management_international_review,issn,yes
+2024–2028,MANAGEMENT LEARNING,1350-5076,1461-7307,S,abdc_a,management_learning,issn,yes
+2024–2028,MANAGEMENT SCIENCE,0025-1909,1526-5501,STAR,ft50,ms,issn,yes
+2024–2028,MANAGEMENT SCIENCE,0025-1909,1526-5501,STAR,abdc_a_star,ms,issn,no
+2024–2028,Maritime Economics & Logistics,1479-2931,1479-294X,S,abdc_b,maritime_economics_logistics,issn,yes
+2024–2028,Maritime Policy & Management,0308-8839,1464-5254,S,abdc_b,maritime_policy_management,issn,yes
+2024–2028,MARKETING LETTERS,0923-0645,1573-059X,P,abdc_a,marketing_letters,issn,yes
+2024–2028,MARKETING SCIENCE,0732-2399,1526-548X,STAR,ft50,mktg_sci,issn,yes
+2024–2028,MARKETING SCIENCE,0732-2399,1526-548X,STAR,abdc_a_star,mktg_sci,issn,no
+2024–2028,MATHEMATICAL FINANCE,0960-1627,1467-9965,S,abdc_a,mathematical_finance,issn,yes
+2024–2028,MIS QUARTERLY,0276-7783,,STAR,ft50,misq,issn,yes
+2024–2028,MIS QUARTERLY,0276-7783,,STAR,abdc_a_star,misq,issn,no
+2024–2028,MIS Quarterly Executive,1540-1960,1540-1979,M,abdc_a,mis_quarterly_executive,issn,yes
+2024–2028,MIT SLOAN MANAGEMENT REVIEW,1532-9194,1532-8937,M-STAR,ft50,sloan_mr,issn,yes
+2024–2028,MIT SLOAN MANAGEMENT REVIEW,1532-9194,1532-8937,M-STAR,abdc_a,sloan_mr,issn,no
+2024–2028,Multinational Business Review,1525-383X,2054-1686,M,abdc_b,multinational_business_review,issn,yes
+2024–2028,NAVAL RESEARCH LOGISTICS,0894-069X,1520-6750,S,abdc_b,naval_research_logistics,issn,yes
+2024–2028,NEW TECHNOLOGY WORK AND EMPLOYMENT,0268-1072,1468-005X,S,abdc_a,new_technology_work_employment,issn,yes
+2024–2028,NONPROFIT AND VOLUNTARY SECTOR QUARTERLY,0899-7640,1552-7395,S,abdc_a,nonprofit_voluntary_sector_quarterly,issn,yes
+2024–2028,OMEGA-INTERNATIONAL JOURNAL OF MANAGEMENT SCIENCE,0305-0483,1873-5274,P,abdc_a,omega,title,yes
+2024–2028,OPERATIONS RESEARCH,0030-364X,,STAR,ft50,or,issn,yes
+2024–2028,OPERATIONS RESEARCH,0030-364X,,STAR,abdc_a_star,or,issn,no
+2024–2028,OPERATIONS RESEARCH LETTERS,0167-6377,1872-7468,S,abdc_b,operations_research_letters,issn,yes
+2024–2028,OR SPECTRUM,0171-6468,1436-6304,S,abdc_b,or_spectrum,issn,yes
+2024–2028,ORGANIZATION,1350-5084,1461-7323,S,abdc_a,organization,issn,yes
+2024–2028,ORGANIZATION & ENVIRONMENT,1086-0266,1552-7417,P,abdc_a,organization_environment,issn,yes
+2024–2028,ORGANIZATION SCIENCE,1047-7039,,STAR,ft50,orgsci,issn,yes
+2024–2028,ORGANIZATION SCIENCE,1047-7039,,STAR,abdc_a_star,orgsci,issn,no
+2024–2028,ORGANIZATION STUDIES,0170-8406,1741-3044,STAR,abdc_a_star,organization_studies,issn,yes
+2024–2028,ORGANIZATIONAL BEHAVIOR AND HUMAN DECISION PROCESSES,0749-5978,1095-9920,STAR,ft50,obhdp,issn,yes
+2024–2028,ORGANIZATIONAL BEHAVIOR AND HUMAN DECISION PROCESSES,0749-5978,1095-9920,STAR,abdc_a_star,obhdp,issn,no
+2024–2028,ORGANIZATIONAL DYNAMICS,0090-2616,1873-3530,S,abdc_a,organizational_dynamics,issn,yes
+2024–2028,ORGANIZATIONAL RESEARCH METHODS,1094-4281,1552-7425,P,abdc_a_star,organizational_research_methods,issn,yes
+2024–2028,Pacific-Basin Finance Journal,0927-538X,1879-0585,S,abdc_a,pacific_basin_finance_journal,issn,yes
+2024–2028,PERSONNEL PSYCHOLOGY,0031-5826,1744-6570,STAR,abdc_a_star,personnel_psychology,issn,yes
+2024–2028,PERSONNEL REVIEW,0048-3486,1758-6933,S,abdc_a,personnel_review,issn,yes
+2024–2028,PRODUCTION AND OPERATIONS MANAGEMENT,1059-1478,1937-5956,STAR,ft50,pom,issn,yes
+2024–2028,PRODUCTION AND OPERATIONS MANAGEMENT,1059-1478,1937-5956,STAR,abdc_a_star,pom,issn,no
+2024–2028,PSYCHOLOGY & MARKETING,0742-6046,1520-6793,S,abdc_a,psychology_marketing,issn,yes
+2024–2028,PUBLIC ADMINISTRATION,0033-3298,1467-9299,S,abdc_a,public_administration_international_journal,issn,yes
+2024–2028,PUBLIC ADMINISTRATION REVIEW,0033-3352,1540-6210,S,abdc_a,public_administration_review,issn,yes
+2024–2028,QME-Quantitative Marketing and Economics,1570-7156,1573-711X,P,abdc_a,quantitative_marketing_economics,issn,yes
+2024–2028,QUANTITATIVE FINANCE,1469-7688,1469-7696,S,abdc_a,quantitative_finance,issn,yes
+2024–2028,R & D MANAGEMENT,0033-6807,1467-9310,S,abdc_a,r_d_management,issn,yes
+2024–2028,REAL ESTATE ECONOMICS,1080-8620,1540-6229,S,abdc_a,real_estate_economics,issn,yes
+2024–2028,RESEARCH POLICY,0048-7333,1873-7625,STAR,ft50,rp,issn,yes
+2024–2028,RESEARCH POLICY,0048-7333,1873-7625,STAR,abdc_a_star,rp,issn,no
+2024–2028,RESEARCH-TECHNOLOGY MANAGEMENT,0895-6308,1930-0166,S,abdc_b,research_technology_management,issn,yes
+2024–2028,REVIEW OF ACCOUNTING STUDIES,1380-6653,1573-7136,STAR,ft50,rast,issn,yes
+2024–2028,REVIEW OF ACCOUNTING STUDIES,1380-6653,1573-7136,STAR,abdc_a_star,rast,issn,no
+2024–2028,Review of Asset Pricing Studies,2045-9920,2045-9939,P,abdc_a_star,review_asset_pricing_studies,issn,yes
+2024–2028,Review of Corporate Finance Studies,2046-9128,2046-9136,P,abdc_a_star,review_corporate_finance_studies,issn,yes
+2024–2028,Review of Finance,1572-3097,1573-692X,STAR,ft50,rof,issn,yes
+2024–2028,Review of Finance,1572-3097,1573-692X,STAR,abdc_a_star,rof,issn,no
+2024–2028,REVIEW OF FINANCIAL STUDIES,0893-9454,1465-7368,STAR,ft50,rfs,issn,yes
+2024–2028,REVIEW OF FINANCIAL STUDIES,0893-9454,1465-7368,STAR,abdc_a_star,rfs,issn,no
+2024–2028,REVIEW OF INDUSTRIAL ORGANIZATION,0889-938X,1573-7160,S,abdc_a,review_industrial_organization,issn,yes
+2024–2028,REVIEW OF INTERNATIONAL POLITICAL ECONOMY,0969-2290,1466-4526,S,abdc_a,review_international_political_economy,issn,yes
+2024–2028,Scandinavian Journal of Management,0956-5221,1873-3387,S,abdc_b,scandinavian_journal_management,issn,yes
+2024–2028,SERVICE INDUSTRIES JOURNAL,0264-2069,1743-9507,S,abdc_b,service_industries_journal,issn,yes
+2024–2028,Service Science,2164-3962,2164-3970,PA,abdc_b,service_science,issn,yes
+2024–2028,SMALL BUSINESS ECONOMICS,0921-898X,1573-0913,P,abdc_a,small_business_economics,issn,yes
+2024–2028,Strategic Entrepreneurship Journal,1932-4391,1932-443X,P,ft50,sej,issn,yes
+2024–2028,Strategic Entrepreneurship Journal,1932-4391,1932-443X,P,abdc_a,sej,issn,no
+2024–2028,STRATEGIC MANAGEMENT JOURNAL,0143-2095,1097-0266,STAR,ft50,smj,issn,yes
+2024–2028,STRATEGIC MANAGEMENT JOURNAL,0143-2095,1097-0266,STAR,abdc_a_star,smj,issn,no
+2024–2028,Strategic Organization,1476-1270,1741-315X,P,abdc_a,strategic_organization,issn,yes
+2024–2028,Strategy Science,2333-2050,2333-2077,PA,abdc_a,strategy_science,issn,yes
+2024–2028,SUPPLY CHAIN MANAGEMENT-AN INTERNATIONAL JOURNAL,1359-8546,1758-6852,S,abdc_a,supply_chain_management_international_journal,issn,yes
+2024–2028,TECHNOLOGICAL FORECASTING AND SOCIAL CHANGE,0040-1625,1873-5509,S,abdc_a,technological_forecasting_social_change,issn,yes
+2024–2028,TECHNOLOGY ANALYSIS & STRATEGIC MANAGEMENT,0953-7325,1465-3990,S,abdc_b,technology_analysis_strategic_management,issn,yes
+2024–2028,TECHNOVATION,0166-4972,1879-2383,S,abdc_a,technovation,issn,yes
+2024–2028,TOTAL QUALITY MANAGEMENT & BUSINESS EXCELLENCE,1478-3363,1478-3371,S,abdc_c,total_quality_management_business_excellence,issn,yes
+2024–2028,TRANSPORT REVIEWS,0144-1647,1464-5327,S,abdc_a,transport_reviews,issn,yes
+2024–2028,TRANSPORTATION,0049-4488,1572-9435,S,abdc_a,transportation,issn,yes
+2024–2028,TRANSPORTATION RESEARCH PART A-POLICY AND PRACTICE,0965-8564,1879-2375,S,abdc_a_star,transportation_research_part_policy_practice,issn,yes
+2024–2028,TRANSPORTATION RESEARCH PART C-EMERGING TECHNOLOGIES,0968-090X,1879-2359,S,abdc_a_star,transportation_research_part_c_emerging_technologies,issn,yes
+2024–2028,TRANSPORTATION RESEARCH PART D-TRANSPORT AND ENVIRONMENT,1361-9209,1879-2340,S,abdc_a,transportation_research_part_d_transport_environment,issn,yes
+2024–2028,TRANSPORTATION RESEARCH PART E-LOGISTICS AND TRANSPORTATION REVIEW,1366-5545,1878-5794,P,abdc_a_star,transportation_research_part_e_logistics_transportation,issn,yes
+2024–2028,TRANSPORTATION SCIENCE,0041-1655,,STAR,abdc_a_star,transportation_science,issn,yes
+2024–2028,WORK EMPLOYMENT AND SOCIETY,0950-0170,1469-8722,S,abdc_a,work_employment_society,issn,yes

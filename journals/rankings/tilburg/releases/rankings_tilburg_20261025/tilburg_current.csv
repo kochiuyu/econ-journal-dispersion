@@ -1,0 +1,180 @@
+edition_year,rating,rating_raw,journal_title,print_issn,e_issn,field,publisher,journal_id,catalog,match_method,source_file,source_note
+Current,Very good,Very good,4or-A Quarterly Journal of Operations Research,,,Operations Research,,4or,abdc_b,title,topjournals,TISEM very good
+Current,Very good,Very good,Abacus,,,Accounting,,abacus,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Academy of Management Annals,,,Strategy,,aom_annals,ft50,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Academy of Management Journal,,,,,amj,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,Academy of Management Review,,,,,amr,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Accounting and Business Research,,,Accounting,,accounting_business_research,abdc_a,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Accounting Review,,,,,tar,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,"Accounting, Organizations & Society",,,,,aos,ft50,title,topjournals,TISEM top
+Current,Very good,Very good,ACM Computing Surveys,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,ACM Transactions on Information Systems,,,Information Management,,acm_transactions_information_systems,abdc_c,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Administrative Science Quarterly,,,,,asq,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Advances in Applied Probability,,,Econometrics,,advances_applied_probability,abdc_a,title,topjournals,TISEM very good
+Current,Top-core,Top-core,American Economic Journal - Applied Economics,,,,,aej_applied,abdc_a_star,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,American Economic Journal - Economic Policy,,,,,aej_policy,abdc_a_star,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,American Economic Journal - Macroeconomics,,,,,aej_macro,abdc_a_star,title,topjournals,TISEM top-core
+Current,Top,Top,American Economic Journal - Microeconomics,,,,,aej_micro,abdc_a_star,title,topjournals,TISEM top
+Current,Top-core,Top-core,American Economic Review,,,,,aer,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Annals of Operations Research,,,Operations Research,,annals_operations_research,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Annals of Probability,,,Econometrics,,annals_probability,abdc_a_star,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Annals of Statistics,,,,,annals_statistics,abdc_a_star,title,topjournals,TISEM top-core
+Current,Very good,Very good,Artificial Intelligence,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,Auditing: A Journal of Practice and Theory,,,Accounting,,auditing_journal_practice_theory,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Bernoulli,,,Econometrics,,bernoulli,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Canadian Journal of Economics,,,Macro/Microeconomics,,canadian_journal_economics_revue_canadienne_deconomique,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Climate Policy,,,Public Governance,,climate_policy,abdc_c,title,topjournals,TISEM very good
+Current,Very good,Very good,Communications of the ACM,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,Computational Optimization and Applications,,,Operations Research,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,Computers & Operations Research,,,Operations Research,,computers_operations_research,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Contemporary Accounting Research,,,,,car,ft50,title,topjournals,TISEM top
+Current,Top,Top,Decision Sciences,,,,,decision_sciences,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,Decision Support Systems,,,Information Management,,decision_support_systems,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Econometric Theory,,,Econometrics,,econometric-theory,core49,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Econometrica,,,,,econometrica,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Econometrics Journal,,,Econometrics,,econometrics_journal,abdc_a_star,title,topjournals,TISEM very good
+Current,Top,Top,Economic Journal,,,,,the-economic-journal,core49,title,topjournals,TISEM top
+Current,Very good,Very good,Economic Policy,,,Macro/Microeconomics,,economic_policy_european_forum,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Economic Theory,,,Macro/Microeconomics,,economic-theory,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Entrepreneurship Theory and Practice,,,Strategy,,etp,ft50,title,topjournals,TISEM very good
+Current,Very good,Very good,European Accounting Review,,,Accounting,,european_accounting_review,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,European Economic Review,,,Macro/Microeconomics,,european-economic-review,core49,title,topjournals,TISEM very good
+Current,Top,Top,European Journal of Information Systems,,,,,european_journal_information_systems,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,European Journal of Operational Research,,,Operations Research; Supply Chain Management,,european_journal_operational_research,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Finance and Stochastics,,,Finance,,finance_stochastics,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Financial Management,,,Finance,,financial_management,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Games and Economic Behavior,,,Macro/Microeconomics,,games-and-economic-behavior,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Global Strategy Journal,,,Strategy,,global_strategy_journal,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Governance - An International Journal of Policy Administration and Institutions,,,,,,,unmatched,topjournals,TISEM top
+Current,Very good,Very good,IEEE Software,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,IEEE Transactions on Engineering Management,,,Supply Chain Management,,ieee_transactions_engineering_management,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,IEEE Transactions on Knowledge and Data Engineering,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,IEEE Transactions on Software Engineering,,,Information Management,,,,unmatched,topjournals,TISEM very good
+Current,Very good,Very good,IIE Transactions,,,Operations Research; Supply Chain Management,,iise_transactions,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Industrial Marketing Management,,,Marketing,,industrial_marketing_management,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Information & Management,,,Information Management,,information_management,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Information and Organization,,,Information Management,,information_organization,abdc_a_star,title,topjournals,TISEM very good
+Current,Top,Top,Information Systems Journal,,,,,information_systems_journal,abdc_a_star,title,topjournals,TISEM top
+Current,Top-core,Top-core,Information Systems Research,,,,,isr,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,INFORMS Journal on Computing,,,,,informs_journal_computing,abdc_a,title,topjournals,TISEM top-core
+Current,Very good,Very good,International Economic Review,,,Macro/Microeconomics,,international-economic-review,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,International Journal of Information Management,,,Information Management,,international_journal_information_management,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,International Journal of Operations and Production Management,,,,,international_journal_operations_production_management,abdc_a,title,topjournals,TISEM top
+Current,Very good,Very good,International Journal of Physical Distribution & Logistics Management,,,Supply Chain Management,,international_journal_physical_distribution_logistics,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,International Journal of Production Economics,,,Operations Research; Supply Chain Management,,international_journal_production_economics,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,International Journal of Production Research,,,Supply Chain Management,,international_journal_production_research,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,International Journal of Research in Marketing,,,,,international_journal_research_marketing,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,International Public Management Journal,,,Public Governance,,international_public_management_journal,abdc_b,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of Accounting and Economics,,,,,jae,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,Journal of Accounting Research,,,,,jar,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,"Journal of Accounting, Auditing and Finance",,,Accounting,,journal_accounting_auditing_finance,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Advertising,,,Marketing,,journal_advertising,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Applied Econometrics,,,Econometrics,,journal-of-applied-econometrics,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Banking and Finance,,,Finance,,journal_banking_finance,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Business and Economic Statistics,,,Econometrics,,journal-of-business-and-economic-statistics,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Business Finance and Accounting,,,Accounting,,journal_business_finance_accounting,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Business Logistics,,,Supply Chain Management,,journal_business_logistics,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Business Research,,,Marketing,,journal_business_research,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Business Venturing,,,,,jbv,ft50,title,topjournals,TISEM top
+Current,Top,Top,Journal of Combinatorial Theory A,,,,,,,unmatched,topjournals,TISEM top
+Current,Top,Top,Journal of Combinatorial Theory B,,,,,,,unmatched,topjournals,TISEM top
+Current,Very good,Very good,Journal of Computational Finance,,,Finance,,journal_computational_finance,abdc_c,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Consumer Psychology,,,,,jcp,ft50,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of Consumer Research,,,,,jcr,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Journal of Corporate Finance,,,Finance,,journal_corporate_finance,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Development Economics,,,Macro/Microeconomics,,journal-of-development-economics,core49,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Econometrics,,,,,journal-of-econometrics,core49,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of Economic Behavior and Organization,,,Macro/Microeconomics,,journal-of-economic-behavior-and-organization,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Economic Dynamics and Control,,,Macro/Microeconomics,,journal-of-economic-dynamics-and-control,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Economic Growth,,,Macro/Microeconomics,,journal-of-economic-growth,core49,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of Economic Literature,,,,,journal-of-economic-literature,core49,title,topjournals,TISEM top-core allocation supplement
+Current,Top-core,Top-core,Journal of Economic Perspectives,,,,,journal-of-economic-perspectives,core49,title,topjournals,TISEM top-core allocation supplement
+Current,Top,Top,Journal of Economic Theory,,,,,journal-of-economic-theory,core49,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of Empirical Finance,,,Finance,,journal_empirical_finance,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Environmental Economics and Management,,,Macro/Microeconomics,,journal-of-environmental-economics-and-management,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of European Public Policy,,,Public Governance,,journal_european_public_policy,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of European Social Policy,,,Public Governance,,,,unmatched,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of Finance,,,,,jf,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of Financial and Quantitative Analysis,,,,,jfqa,ft50,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of Financial Economics,,,,,jfe,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of Financial Intermediation,,,,,journal_financial_intermediation,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of Health Economics,,,Macro/Microeconomics,,journal-of-health-economics,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Industrial Economics,,,Macro/Microeconomics,,journal_industrial_economics,abdc_a_star,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Information Technology,,,,,journal_information_technology,abdc_a_star,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of International Business Studies,,,,,jibs,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of International Economics,,,,,journal-of-international-economics,core49,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of International Money and Finance,,,Finance,,journal_international_money_finance,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Labor Economics,,,Macro/Microeconomics,,journal-of-labor-economics,core49,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Law and Economics,,,Macro/Microeconomics,,journal-of-law-and-economics,core49,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Management,,,,,jom,ft50,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of Management Accounting Research,,,Accounting,,journal_management_accounting_research,abdc_a_star,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Management Information Systems,,,,,jmis,ft50,title,topjournals,TISEM top
+Current,Top,Top,Journal of Management Studies,,,,,jms,ft50,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of Marketing,,,,,jm,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,Journal of Marketing Research,,,,,jmr,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Journal of Mathematical Economics,,,Macro/Microeconomics,,journal_mathematical_economics,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Monetary Economics,,,,,journal-of-monetary-economics,core49,title,topjournals,TISEM top
+Current,Very good,Very good,"Journal of Money, Credit and Banking",,,Finance; Macro/Microeconomics,,journal-of-money-credit-and-banking,core49,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of Operations Management,,,,,joom,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of Policy Analysis and Management,,,,,journal_policy_analysis_management,abdc_a,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of Political Economy,,,,,jpe,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Journal of Product Innovation Management,,,Marketing; Supply Chain Management,,journal_product_innovation_management,abdc_a_star,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of Public Administration Research and Theory,,,,,journal_public_administration_research_theory,abdc_a,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of Public Economics,,,,,journal-of-public-economics,core49,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of Public Policy,,,Public Governance,,journal_public_policy,abdc_b,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Purchasing and Supply Management,,,Supply Chain Management,,journal_purchasing_supply_management,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Retailing,,,Marketing,,journal_retailing,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Journal of Risk and Uncertainty,,,Econometrics,,journal-of-risk-and-uncertainty,core49,title,topjournals,TISEM very good
+Current,Top,Top,Journal of Strategic Information Systems,,,,,journal_strategic_information_systems,abdc_a_star,title,topjournals,TISEM top
+Current,Top,Top,Journal of Supply Chain Management,,,,,journal_supply_chain_management,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,Journal of the Academy of Marketing Science,,,Marketing,,jams,ft50,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Journal of the American Statistical Association,,,,,journal_american_statistical_association,abdc_a_star,title,topjournals,TISEM top-core
+Current,Very good,Very good,Journal of the American Taxation Association,,,Accounting,,journal_american_taxation_association,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Journal of the Association for Information Systems,,,,,journal_association_information_systems,abdc_a_star,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of the European Economic Association,,,,,journal-of-the-european-economic-association,core49,title,topjournals,TISEM top-core
+Current,Top,Top,Journal of the Royal Statistical Society A,,,,,journal_royal_statistical_society_series_statistics,abdc_a,title,topjournals,TISEM top
+Current,Top-core,Top-core,Journal of the Royal Statistical Society B,,,,,journal_royal_statistical_society_series_b,abdc_a_star,title,topjournals,TISEM top-core
+Current,Very good,Very good,Long Range Planning,,,Strategy,,long_range_planning,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Macroeconomic Dynamics,,,Macro/Microeconomics,,macroeconomic_dynamics,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Management Accounting Research,,,Accounting,,management_accounting_research,abdc_a_star,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Management Science,,,,,ms,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,Manufacturing and Service Operations Management,,,,,msom,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Marketing Letters,,,Marketing,,marketing_letters,abdc_a,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Marketing Science,,,,,mktg_sci,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Mathematical Finance,,,Finance,,mathematical_finance,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Mathematical Methods of Operations Research,,,Operations Research,,,,unmatched,topjournals,TISEM very good
+Current,Top-core,Top-core,Mathematical Programming,,,,,,,unmatched,topjournals,TISEM top-core
+Current,Top-core,Top-core,Mathematics of Operations Research,,,,,mathematics_operations_research,abdc_a,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,MIS Quarterly,,,,,misq,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,OMEGA-International Journal of Management Science,,,,,omega,abdc_a,title,topjournals,TISEM top
+Current,Top-core,Top-core,Operations Research,,,,,or,ft50,title,topjournals,TISEM top-core
+Current,Top-core,Top-core,Organization Science,,,,,orgsci,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Organization Studies,,,Strategy,,organization_studies,abdc_a_star,title,topjournals,TISEM very good
+Current,Very good,Very good,Policy Sciences,,,Public Governance,,policy_science,abdc_b,title,topjournals,TISEM very good
+Current,Very good,Very good,Policy Studies Journal,,,Public Governance,,policy_studies_journal,abdc_b,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Production and Operations Management,,,,,pom,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Psychology & Marketing,,,Marketing,,psychology_marketing,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Public Administration,,,,,public_administration_international_journal,abdc_a,title,topjournals,TISEM top
+Current,Top-core,Top-core,Public Administration Review,,,,,public_administration_review,abdc_a,title,topjournals,TISEM top-core
+Current,Very good,Very good,Public Management Review,,,Public Governance,,public_management_review,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Quantitative Marketing & Economics,,,,,quantitative_marketing_economics,abdc_a,title,topjournals,TISEM top
+Current,Top-core,Top-core,Quarterly Journal of Economics,,,,,qje,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,Rand Journal of Economics,,,,,rand-journal-of-economics,core49,title,topjournals,TISEM top
+Current,Top,Top,Regulation and Governance,,,,,regulation_governance,abdc_a,title,topjournals,TISEM top
+Current,Very good,Very good,Research Policy,,,Strategy,,rp,ft50,title,topjournals,TISEM very good
+Current,Top,Top,Review of Accounting Studies,,,,,rast,ft50,title,topjournals,TISEM top
+Current,Very good,Very good,Review of Economic Dynamics,,,Macro/Microeconomics,,review-of-economic-dynamics,core49,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Review of Economic Studies,,,,,restud,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Review of Economics and Statistics,,,Econometrics,,review-of-economics-and-statistics,core49,title,topjournals,TISEM very good
+Current,Top,Top,Review of Finance,,,,,rof,ft50,title,topjournals,TISEM top
+Current,Top-core,Top-core,Review of Financial Studies,,,,,rfs,ft50,title,topjournals,TISEM top-core
+Current,Top,Top,SIAM Journal on Optimization,,,,,,,unmatched,topjournals,TISEM top
+Current,Very good,Very good,Stochastic Processes and their Applications,,,Econometrics,,stochastic_processes_their_applications,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Strategic Entrepreneurship Journal,,,Strategy,,sej,ft50,title,topjournals,TISEM very good
+Current,Top-core,Top-core,Strategic Management Journal,,,,,smj,ft50,title,topjournals,TISEM top-core
+Current,Very good,Very good,Strategic Organization,,,Strategy,,strategic_organization,abdc_a,title,topjournals,TISEM very good
+Current,Very good,Very good,Supply Chain Management: an international journal,,,Supply Chain Management,,supply_chain_management_international_journal,abdc_a,title,topjournals,TISEM very good
+Current,Top,Top,Systems & Control Letters,,,,,,,unmatched,topjournals,TISEM top
+Current,Top,Top,Transportation Research Part B - Methodological,,,,,transportation_research_part_b_methodological,abdc_a_star,title,topjournals,TISEM top
+Current,Very good,Very good,Transportation Research Part E-Logistics and Transportation Review,,,Operations Research,,transportation_research_part_e_logistics_transportation,abdc_a_star,title,topjournals,TISEM very good
+Current,Top,Top,Transportation Science,,,,,transportation_science,abdc_a_star,title,topjournals,TISEM top

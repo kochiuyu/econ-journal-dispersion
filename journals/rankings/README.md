@@ -4,7 +4,7 @@ Rating catalogs. These files are not editorial boards and they are not appointme
 
 The editor directory is current FT50 and ABDC A*/A/B/C boards, plus AJG-gap boards in `data/editors/abs_ajg_gap/releases/current/`. Top 5 and UTD24 are tags on the FT50 and ABDC boards. AJG chips are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, where the journal is already on an FT50 or ABDC board. That join does not add a board. Gap rows take the same 2024 grade from the journal title, and only for journals that are not already in those editor files. The label does not include the year. Titles that still have no board, and the rest of the guide, stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
 
-That page also lists CNRS and Handelsblatt/VWL from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column and no field. The Field column is ABS/AJG `field`, the CNRS domain, or ABDC `field_for`. Handelsblatt/VWL shows the published weight.
+That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, and ERIM Core from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column and no field. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, or the TISEM very-good group. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, and ERIM stay on this page. They are not directory chips.
 
 ## Pinned release
 
@@ -39,6 +39,18 @@ CNRS Section 37 categories for 2011–2015 and 2017–2020. Ratings are `1`, `1e
 
 Forschungsmonitoring VWL weights for 1998–2020, plus the 2015 Handelsblatt journal list. `weight` is the published continuous value. `rating` is the letter class when the freeze has one, and blank on the 2015 PDF rows. Raw xlsx and PDFs are not in this repository.
 
+`tilburg/releases/rankings_tilburg_20261025/`
+
+TISEM top journal list. Ratings are `Top-core`, `Top`, and `Very good`. The public page does not publish a separate good tier. Raw HTML is not in this repository.
+
+`fnege/releases/rankings_fnege_20261025/`
+
+FNEGE Journal Quality List for 2019, 2022, and 2025. Ratings are `1*`, `1`, `2`, `3`, `4`, and `EM` or `NC` when the table prints them. Raw HTML is not in this repository.
+
+`erim/releases/rankings_erim_20261025/`
+
+ERIM Journals List Core 2024–2028. Ratings are the Core class strings (`STAR`, `M-STAR`, `P`, `EP*`, `PA`, `S`, `S (3=1)`, `M`). The intranet list is not included. Raw xlsx is not in this repository.
+
 `python scripts/build_site.py` runs `scripts/build_rankings.py`, which reads these freezes and `journals/catalog_ft50.csv`, `catalog_utd24.csv`, `catalog_top5.csv`, and `catalog_abdc_{a_star,a,b,c}.csv`, then writes `site/rankings-data.js`. That file is generated and is not committed. The Pages workflow already runs `scripts/build_site.py`.
 
 | System | Rows |
@@ -50,3 +62,6 @@ Forschungsmonitoring VWL weights for 1998–2020, plus the 2015 Handelsblatt jou
 | UTD24 | 24 (no grades) |
 | Top 5 | 5 (no grades) |
 | ABDC | 2,651 (A* 219, A 630, B 861, C 941; 2025 list) |
+| Tilburg | 179 (Top-core 42, Top 41, Very good 96; 164 matched, 91.6%) |
+| FNEGE | 2,044 (2019 / 2022 / 2025; 2025 is 891 journals, 733 matched, 82.3%) |
+| ERIM | 283 (Core 2024–2028; 257 matched, 90.8%) |
