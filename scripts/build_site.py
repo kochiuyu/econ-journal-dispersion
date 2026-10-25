@@ -27,6 +27,23 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 (the ABDC panels were seeded from FT50 where the journals overlap). That is
 one seat, not two.
 
+The key is the cleaned ``editor_name`` from freeze
+``editors_display_names_20261025``. ``editor_name_raw`` keeps the pre-clean
+spelling when that cell changed, and is blank when it did not. The directory
+displays ``editor_name``. It does not invent a name, and it does not display
+``editor_name_raw``.
+
+A faculty URL on the FT50 file can expand a bare initial when the ABDC copy
+of that same masthead line still has the pre-clean name. Those ABDC rows are
+reattached to the cleaned FT50 key so the seat stays one appointment. The
+displayed name is the FT50 ``editor_name``. An alias claimed by two FT50
+keys, or a group that already contains an FT50 row or an AJG-gap row, is
+left alone.
+
+Two FT50 rows that share a cleaned name, journal, and role — the same
+masthead line stored once with a degree and once without — collapse to one
+appointment.
+
 When a key is in FT50 and in exactly one ABDC row, the build emits one row
 tagged with both universes (for example FT50 and ABDC A*). Display fields
 come from ``editors_ft50_current_with_ror.csv``. A blank affiliation,
@@ -411,6 +428,8 @@ class Rec:
     ror_id: str = ""
     confidence: str = ""
     journal_id: str = ""
+    # Pre-clean name key when editor_name_raw differs. Not written to the site.
+    alias_key: str = ""
 
     def mask(self) -> int:
         bits = 0
@@ -445,6 +464,14 @@ def norm_name(text: str) -> str:
     text = scrub(text)
     text = text.replace(".", " ").replace(",", " ")
     return norm_space(text)
+
+
+def raw_name_key(raw: str, cleaned_key: str) -> str:
+    """Identity key of ``editor_name_raw`` when it differs from the display name."""
+    alias = norm_name(usable_name(raw))
+    if not alias or alias == cleaned_key:
+        return ""
+    return alias
 
 
 def norm_plain(text: str) -> str:
@@ -1022,9 +1049,10 @@ def row_to_rec(
             rating = ajg_grades.get(journal_id)
             if rating:
                 universes.add(AJG_RATING_TO_ID[rating])
+    name_key = norm_name(name)
     return Rec(
         name=name,
-        name_key=norm_name(name),
+        name_key=name_key,
         role=role,
         role_key=norm_plain(role),
         journal=journal,
@@ -1039,6 +1067,7 @@ def row_to_rec(
         ror_id=(row.get("ror_id") or "").strip(),
         confidence=(row.get("ror_confidence") or "").strip(),
         journal_id=journal_id,
+        alias_key=raw_name_key(row.get("editor_name_raw") or "", name_key),
     )
 
 
@@ -1119,6 +1148,40 @@ def cluster_rows(rows: list[Rec]) -> tuple[dict[tuple[str, str], Rec], list[Rec]
         else:
             clusters[sig] = prefer_display(current, rec)
     return clusters, empties
+
+
+ABDC_ORIGINS = frozenset({"a_star", "a", "b", "c"})
+
+
+def reattach_pre_clean_partners(grouped: dict[tuple[str, str, str], list[Rec]]) -> int:
+    """Move ABDC rows that still use a pre-clean name onto the cleaned FT50 key.
+
+    Display stays the cleaned FT50 ``editor_name``. See the module docstring.
+    Returns the number of ABDC rows moved.
+    """
+    claimants: dict[tuple[str, str, str], list[tuple[str, str, str]]] = defaultdict(list)
+    for key, recs in grouped.items():
+        if not any(rec.origin == "ft50" for rec in recs):
+            continue
+        for rec in recs:
+            if not rec.alias_key:
+                continue
+            alias = (rec.alias_key, rec.journal_key, rec.role_key)
+            if alias == key or alias not in grouped:
+                continue
+            claimants[alias].append(key)
+    moved = 0
+    for alias, keys in claimants.items():
+        unique = list(dict.fromkeys(keys))
+        alias_recs = grouped.get(alias)
+        if len(unique) != 1 or not alias_recs:
+            continue
+        if any(rec.origin not in ABDC_ORIGINS for rec in alias_recs):
+            continue
+        grouped[unique[0]].extend(alias_recs)
+        del grouped[alias]
+        moved += len(alias_recs)
+    return moved
 
 
 def collapse(groups: dict[tuple[str, str, str], list[Rec]]) -> tuple[list[Rec], dict[str, int]]:
@@ -1428,13 +1491,13 @@ def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int
         raise SystemExit(f"Expected 50 FT50 journals, found {ft50['journals']}")
     if ft50["appointments"] != ft50_kept:
         raise SystemExit(
-            f"FT50 appointments {ft50['appointments']} != kept FT50 rows {ft50_kept}"
+            f"FT50 appointments {ft50['appointments']} != FT50 seats {ft50_kept}"
         )
     if collapse_stats["ft50_only"] != 0:
         raise SystemExit(f"FT50 rows without an ABDC partner: {collapse_stats['ft50_only']}")
     if collapse_stats["cross_merged"] != ft50_kept:
         raise SystemExit(
-            f"Merged overlap {collapse_stats['cross_merged']} != kept FT50 rows {ft50_kept}"
+            f"Merged overlap {collapse_stats['cross_merged']} != FT50 seats {ft50_kept}"
         )
     if collapse_stats["split_keys"] < 5:
         raise SystemExit("Expected same-name appointments with different affiliations to stay split")
@@ -1498,6 +1561,7 @@ def assert_profiles(payload: dict) -> None:
         raise SystemExit(f"Too few faculty profile links: {linked}")
     if not luttmer:
         raise SystemExit("Expected Erzo F.P. Luttmer to link to the Dartmouth faculty profile")
+    assert_cleaned_display_names(payload)
     helena = [
         profiles[row[8]]
         for row in payload["rows"]
@@ -1506,6 +1570,45 @@ def assert_profiles(payload: dict) -> None:
     if helena:
         raise SystemExit(f"Helena Skyt Nielsen profile contains an email and must not be published: {helena[:2]}")
     print(f"Faculty profile links: {linked:,}")
+
+
+def assert_cleaned_display_names(payload: dict) -> None:
+    """Directory names are the cleaned editor_name, with faculty links unchanged."""
+    names = {row[0] for row in payload["rows"]}
+    for name in (
+        "Dimitris Papanikolaou",
+        "Paul Hribar",
+        "Lisa de Simone",
+        "M. Serkan Akturk",
+        "Suvrat Dhanorkar",
+    ):
+        if name not in names:
+            raise SystemExit(f"Cleaned display name missing from the directory: {name}")
+    for name in ("Dimitris Papanikolaou, PhD", "PAUL HRIBAR", "M. Akturk"):
+        if name in names:
+            raise SystemExit(f"Pre-clean display name still in the directory: {name}")
+    journals = payload["journals"]
+    profiles = payload["profiles"]
+    ft50_bit = BITS["ft50"]
+    a_star_bit = BITS["a_star"]
+    seats = [
+        row
+        for row in payload["rows"]
+        if row[0] == "Suvrat Dhanorkar"
+        and journals[row[2]] == "Journal of Operations Management"
+    ]
+    if len(seats) != 1:
+        raise SystemExit(
+            f"Expected one Journal of Operations Management row for Suvrat Dhanorkar, found {len(seats)}"
+        )
+    seat = seats[0]
+    if not (seat[3] & ft50_bit) or not (seat[3] & a_star_bit):
+        raise SystemExit(
+            f"Suvrat Dhanorkar lost the FT50 or ABDC A* badge: mask {seat[3]}"
+        )
+    url = profiles[seat[8]]
+    if "sustainablesystems.gatech.edu/people/suvrat-dhanorkar" not in url:
+        raise SystemExit(f"Suvrat Dhanorkar faculty profile changed: {url[:180]}")
 
 
 def assert_subset_lists(payload: dict, membership: Membership) -> None:
@@ -2610,10 +2713,14 @@ def main() -> int:
                 raise SystemExit(f"AJG-gap row picked up a host board: {rec.name} / {rec.journal}")
             grouped[(rec.name_key, rec.journal_key, rec.role_key)].append(rec)
 
-    ft50_kept = 0
     for rec in ft50_records:
         grouped[(rec.name_key, rec.journal_key, rec.role_key)].append(rec)
-        ft50_kept += 1
+
+    reattached = reattach_pre_clean_partners(grouped)
+    # One seat, not one CSV row: a degree suffix on a duplicate masthead line
+    # shares the cleaned key and collapses to one appointment.
+    ft50_kept = sum(1 for recs in grouped.values() if any(rec.origin == "ft50" for rec in recs))
+    print(f"Reattached {reattached} ABDC rows onto a cleaned FT50 name; FT50 seats {ft50_kept:,}")
 
     collapsed, collapse_stats = collapse(grouped)
     print(

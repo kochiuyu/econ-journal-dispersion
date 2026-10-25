@@ -1,38 +1,33 @@
-# editors_abs_ajg_gap_20261025
+# editors_display_names_20261025
 
-Frozen ABS/AJG **gap** current editor panels (journals not already covered by FT50/ABDC freezes), cleaned for public Directory display.
+Display names on the ABS/AJG gap current boards, cleaned 2026-10-25 20:20 Asia/Hong_Kong. The journal set is still freeze `editors_abs_ajg_gap_20261025`: AJG titles that are not already in the FT50 or ABDC editor files. Grades, tenure columns, and the empty ROR columns were not edited. There is still no `faculty_profile_url`.
 
-Generated: 2026-10-25 11:49 HKT (Asia/Hong_Kong).
+`editor_name` is the name the directory shows. `editor_name_raw` is the pre-clean value when the name changed, and blank when it did not. The build does not invent a name and does not display `editor_name_raw`.
 
-## Files
-| File | Freeze rows | Live panel rows | Excluded drop-quality |
-|---|---:|---:|---:|
-| `editors_abs_ajg_gap_prio43_current.csv` | 3490 | 3490 | 0 |
-| `editors_abs_ajg_gap_ajg2_current.csv` | 5030 | 5032 | 2 |
-| `editors_abs_ajg_gap_ajg1_current.csv` | 11276 | 11288 | 12 |
+`CHANGE_LOG.csv` from the collector freeze is about 6MB and is not used by the site. It is not in this repository.
 
-Columns include `tenure_start`, `tenure_end`, `tenure_raw`, `is_current` plus existing ROR / impute / id fields. No faculty_profile_url on these gap panels yet.
+## Files in this repository
 
-## QC summary (Collector, 2026-10-25)
-1. **Name-year strip + tenure:** term years like `(2004–2022)` stripped from `editor_name`; tenure_* filled (12 name strips, 80 year-only aff clears, 91 tenure fills across AJG).
-2. **Junk drop pass:** Emerald metrics, TOC `Vol/Issue`, postal lines, role-only, non-person titles removed from live panels (277 rows).
-3. **Manual-review pass 2:** 209 flags → 126 drop, 75 safe_fix (single-year→tenure, Vol markers, role parens, A-and-B splits, HTML unescape), 8 residual.
-4. **Residual-8 hand fix:** all 8 mashed strings fixed (institution/dept moved into `raw_affiliation` or titles stripped; no invented given names). See `abs_ajg/reports/RESIDUAL8_FIX_20261025.csv`.
-5. **Aff email strip:** parenthetical `(name @ domain)` removed from `raw_affiliation`, institution text kept. Log: `abs_ajg/reports/AFF_EMAIL_STRIP_20261025.csv`.
-6. **Freeze filter:** any remaining drop-quality `editor_name` patterns excluded from this release (not deleted from live panels if any). Log: `abs_ajg/reports/FREEZE_EXCLUDED_DROP_QUALITY_20261025.csv`.
+The collector cleaned the live panels (11,288 / 5,032 / 3,490). Fourteen of those rows were already excluded from `editors_abs_ajg_gap_20261025` as drop-quality chrome (publisher navigation, a paper title, a metrics line, and similar). They stay out of these files. One of the fourteen was a case fix (`INFORMATION FOR` → `Information For`), so the committed ajg1 file has 602 changed names rather than 603.
 
-## Do not display
-Rows matching publisher metrics, volume TOC lines, postal fragments, role-only labels, ethics/mission blurbs — excluded above. Aff-only prose blobs may remain rare; Web may hide empty/`editor_name` blanks.
+| File | Rows | Changed | Degrees stripped | Case fixed | Initials expanded | Bare initials left |
+|---|---:|---:|---:|---:|---:|---:|
+| `editors_abs_ajg_gap_prio43_current.csv` | 3,490 | 52 | 48 | 0 | 4 | 257 |
+| `editors_abs_ajg_gap_ajg2_current.csv` | 5,030 | 106 | 87 | 1 | 18 | 272 |
+| `editors_abs_ajg_gap_ajg1_current.csv` | 11,276 | 602 | 496 | 108 | 10 | 167 |
 
-## Handoff
-Copy these three CSVs into the public monorepo under `data/editors/abs_ajg_gap/` (or project equivalent) `releases/editors_abs_ajg_gap_20261025/`.  
-Collector does **not** push GitHub; Econ-Journal-Web publishes.  
-See sibling `HANDOFF_WEB.md` in this folder.
+Degree, case, and initial columns for ajg1 are the collector's live-panel counts except the one excluded case fix. The other excluded rows were not name changes.
 
-## In this repository
+Collector totals across every live panel, including both FT50 files: 179,571 rows, 21,732 changed, 17,757 degrees stripped, 2,933 case fixes, 1,306 initials expanded, 2,928 bare initials left as printed. After the fourteen-row exclusion, the files committed here (all panels) are 179,557 rows and 21,731 changed names.
 
-Published at `data/editors/abs_ajg_gap/releases/current/`, the same current-board layout as the FT50 and ABDC freezes. The freeze id is `editors_abs_ajg_gap_20261025`.
+## Rules
 
-`scripts/build_site.py` reads the three CSVs into the directory, the journal list, and the institution list. ORCID, OpenAlex, and RePEc ids stay off the site. Emails, phone numbers, and photos are not written to the site. There is no `faculty_profile_url` on these files, so person names stay plain text. A board link is `source_url` when that value is http(s). Paths that are not http(s) are omitted.
+Strip trailing degrees and leading titles, turn ALL-CAPS person names into title case, and expand a bare given initial only from another row with the same initial, surname, and `ror_id`, normalized affiliation, or faculty URL. No invented givens. Bare initials with no such evidence stay as printed.
 
-Eight prio43 rows whose `editor_name` is `Email` (Nature Human Behaviour) stay in the CSV and are omitted from the directory by the existing non-person name filter. The ROR columns are on the files and are empty in this freeze, so those appointments group by affiliation text.
+## Public site
+
+`scripts/build_site.py` reads these three CSVs. ORCID, OpenAlex, and RePEc ids stay off the site. Emails, phone numbers, and photos are not written to the site. There is no `faculty_profile_url`, so person names stay plain text. A board link is `source_url` when that value is http(s).
+
+Eight prio43 rows whose `editor_name` is `Email` (Nature Human Behaviour) stay in the CSV and are omitted from the directory by the existing non-person name filter. The ROR columns are empty, so those appointments group by affiliation text.
+
+Do not merge these boards into the ABDC files.
