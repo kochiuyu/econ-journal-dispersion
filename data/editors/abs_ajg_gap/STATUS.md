@@ -1,10 +1,10 @@
 # Editors — ABS/AJG gap
 
-Updated: 2026-10-25 (Asia/Hong_Kong)
+Updated: 2026-10-26 (Asia/Hong_Kong)
 
 ## Release in this repo
 
-`releases/current/` — display names from freeze `editors_display_names_20261025`. The journal set and the row filter are still `editors_abs_ajg_gap_20261025`.
+`releases/current/` — ROR from freeze `editors_abs_ajg_gap_ror_20261025`. Display names are still freeze `editors_display_names_20261025`. The journal set and the row filter are still `editors_abs_ajg_gap_20261025`.
 
 Current boards for AJG journals that are not already in the FT50 or ABDC editor freezes:
 
@@ -22,6 +22,6 @@ Excluded: collector `raw/`, QC logs, and `HANDOFF_WEB.md`.
 
 One current snapshot, not a multi-year panel. Grades on the public directory come from the journal’s 2024 title in `journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`, and they must sit in the panel above. These files do not add FT50 or ABDC badges.
 
-`editor_name` is the cleaned display name. When the name changed, the previous value is `editor_name_raw`. Fourteen live-panel rows that this public freeze already excluded as drop-quality chrome stay out, so the row counts above are unchanged. `faculty_profile_url` is not on these files. Tenure columns are present. ROR columns are present and unfilled. The public directory does not display tenure, and it does not publish ORCID, OpenAlex, or RePEc ids.
+`editor_name` is the cleaned display name. When the name changed, the previous value is `editor_name_raw`. Fourteen live-panel rows that this public freeze already excluded as drop-quality chrome stay out, so the row counts above are unchanged. `faculty_profile_url` is not on these files. Tenure columns are present. `ror_id` is filled on 15,390 of 15,974 nonempty affiliations (96.3%): ajg1 8,400/8,645 (97.2%), ajg2 4,487/4,687 (95.7%), prio43 2,503/2,642 (94.7%). Before this freeze those columns were empty. `raw_affiliation` was not overwritten. The public directory does not display tenure, and it does not publish ORCID, OpenAlex, or RePEc ids.
 
 The full Academic Journal Guide is still larger than the boards in the directory. Rankings keeps every AJG title.

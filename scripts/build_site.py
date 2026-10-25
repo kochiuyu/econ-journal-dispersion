@@ -92,7 +92,11 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. There is no ``faculty_profile_url`` on these files. With those boards
+badge. There is no ``faculty_profile_url`` on these files. ROR columns
+are freeze ``editors_abs_ajg_gap_ror_20261025``. ``ror_id`` is filled only
+where the collector recorded high or medium confidence. ``raw_affiliation``
+is unchanged. ``editor_name`` is still freeze
+``editors_display_names_20261025``. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
 still have no board.
 
@@ -2176,12 +2180,15 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         continent = institutions["continents"][continent_i]
         for label, text in (("institution", name), ("country", country), ("continent", continent)):
             assert_no_contacts(text, label)
-    # Gap rows have no ror_id, so a masthead string can sit beside the same ROR name.
-    # 512 is the count for editors_abs_ajg_gap_20261025.
-    if duplicate_names != 512:
-        raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 512")
+    # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 (gap rows
+    # had no ror_id, so a masthead string sat beside the same ROR name) to 64
+    # after editors_abs_ajg_gap_ror_20261025. The remainder are unmatched
+    # affiliation strings, or two ROR ids that still share a display name.
+    if duplicate_names != 64:
+        raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 64")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
-    # The ROR row stays. A gap affiliation with the same words and no ror_id is a second row.
+    # The United States ROR row stays one row. A gap affiliation with the same
+    # words and no ror_id can still be a second row.
     matched = [
         row
         for row in dartmouth
