@@ -86,9 +86,16 @@ Display affiliation is ``ror_name``, else ``canonical_name``, else
 ``continent`` as released (including the small "Australasia" label). If
 ``journal`` is blank, the ABDC catalog name for ``abdc_journal_id`` is used.
 
+``faculty_profile_url`` is the person link on the directory. A non-empty
+http(s) value is kept. A blank FT50 value is filled from the ABDC partner.
+A non-empty FT50 value is not replaced. ``faculty_home_page`` is not
+written to the site. A profile URL that contains an email address is
+dropped, so a person slug like ``name@university`` is not published.
+
 Emails and phone numbers are removed from displayed text. A row whose name
 is only a phone number or an email address is dropped. ORCID, OpenAlex,
-RePEc, coordinates, and photos are not written to the site.
+RePEc, coordinates, and photos are not written to the site. The directory
+does not invent those ids as person links.
 
 Project Pages
 -------------
@@ -307,6 +314,7 @@ class Rec:
     country: str = ""
     continent: str = ""
     url: str = ""
+    profile_url: str = ""
     ror_id: str = ""
     confidence: str = ""
     journal_id: str = ""
@@ -420,6 +428,14 @@ def clean_url(url: str) -> str:
     return ""
 
 
+def profile_url(row: dict[str, str]) -> str:
+    """Faculty profile link, or blank when the cell is empty or contains an email."""
+    url = clean_url(row.get("faculty_profile_url") or "")
+    if not url or EMAIL_RE.search(url) or "@" in url:
+        return ""
+    return url
+
+
 def display_affiliation(row: dict[str, str]) -> str:
     for key in ("ror_name", "canonical_name", "raw_affiliation"):
         text = scrub(row.get(key) or "")
@@ -458,6 +474,8 @@ def fill_blanks(primary: Rec, other: Rec) -> None:
         primary.continent = other.continent
     if not primary.url and other.url:
         primary.url = other.url
+    if not primary.profile_url and other.profile_url:
+        primary.profile_url = other.profile_url
     if not primary.role and other.role:
         primary.role = other.role
         primary.role_key = other.role_key
@@ -480,9 +498,13 @@ def prefer_display(current: Rec, challenger: Rec) -> Rec:
     elif challenger.journal_id and not current.journal_id:
         current.journal_id = challenger.journal_id
     if richness(challenger) > richness(current):
-        challenger.universes = set(current.universes)
-        return challenger
-    return current
+        winner, other = challenger, current
+    else:
+        winner, other = current, challenger
+    winner.universes = set(current.universes)
+    if not winner.profile_url and other.profile_url:
+        winner.profile_url = other.profile_url
+    return winner
 
 
 @dataclass
@@ -880,6 +902,7 @@ def row_to_rec(
         country=scrub(row.get("ror_country") or ""),
         continent=scrub(row.get("continent") or ""),
         url=clean_url(row.get("source_url") or ""),
+        profile_url=profile_url(row),
         ror_id=(row.get("ror_id") or "").strip(),
         confidence=(row.get("ror_confidence") or "").strip(),
         journal_id=journal_id,
@@ -1025,6 +1048,10 @@ def assert_static_site() -> None:
         raise SystemExit("site/index.html is missing the institution or field filter")
     if "AJG 4*" not in html or "AJG 1" not in html:
         raise SystemExit("site/index.html does not name the AJG grades")
+    if "faculty profile" not in html.casefold():
+        raise SystemExit("site/index.html does not say a name opens a faculty profile")
+    if "DATA.profiles" not in app:
+        raise SystemExit("site/app.js does not read faculty profile URLs")
     if "AJG 2024" in html:
         raise SystemExit("site/index.html still labels AJG with the edition year")
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
@@ -1078,6 +1105,7 @@ def build_payload(
     countries = StringIndex("")
     continents = StringIndex("")
     urls = StringIndex("")
+    profiles = StringIndex("")
     field_counts: dict[int, Counter[str]] = defaultdict(Counter)
 
     def add_role(role: str) -> int:
@@ -1118,7 +1146,9 @@ def build_payload(
         country_i = countries.add(rec.country)
         continent_i = continents.add(rec.continent)
         url_i = urls.add(rec.url)
+        profile_i = profiles.add(rec.profile_url)
         mask = rec.mask()
+        # name, role, journal, mask, affiliation, country, continent, board url, faculty profile
         rows.append(
             [
                 rec.name,
@@ -1129,6 +1159,7 @@ def build_payload(
                 country_i,
                 continent_i,
                 url_i,
+                profile_i,
             ]
         )
         editor_keys.add(rec.name_key)
@@ -1171,6 +1202,7 @@ def build_payload(
         "countries": countries.values,
         "continents": continents.values,
         "urls": urls.values,
+        "profiles": profiles.values,
         "rows": rows,
         "counts": {
             "appointments": len(rows),
@@ -1264,6 +1296,41 @@ def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int
         mask = row[3]
         if mask & ft50_bit and not (mask & abdc_bits):
             raise SystemExit(f"FT50 row missing an ABDC badge: {row[0]}")
+    assert_profiles(payload)
+
+
+def assert_profiles(payload: dict) -> None:
+    """Person links are faculty_profile_url only, and they carry no email address."""
+    profiles = payload.get("profiles") or []
+    if not profiles or profiles[0] != "":
+        raise SystemExit("profiles string table must start with an empty URL")
+    linked = 0
+    luttmer = False
+    for row in payload["rows"]:
+        if len(row) != 9:
+            raise SystemExit(f"Directory row width {len(row)}, expected 9")
+        url = profiles[row[8]]
+        if not url:
+            continue
+        linked += 1
+        if not (url.startswith("http://") or url.startswith("https://")):
+            raise SystemExit(f"Profile URL is not http(s): {url[:180]}")
+        if "@" in url or CONTACT_ASSERT_RE.search(url):
+            raise SystemExit(f"Profile URL contains contact text: {url[:180]}")
+        if row[0] == "Erzo F.P. Luttmer" and "dartmouth.edu/people/erzo-fp-luttmer" in url:
+            luttmer = True
+    if linked < 10_000:
+        raise SystemExit(f"Too few faculty profile links: {linked}")
+    if not luttmer:
+        raise SystemExit("Expected Erzo F.P. Luttmer to link to the Dartmouth faculty profile")
+    helena = [
+        profiles[row[8]]
+        for row in payload["rows"]
+        if row[0] == "Helena Skyt Nielsen" and profiles[row[8]]
+    ]
+    if helena:
+        raise SystemExit(f"Helena Skyt Nielsen profile contains an email and must not be published: {helena[:2]}")
+    print(f"Faculty profile links: {linked:,}")
 
 
 def assert_subset_lists(payload: dict, membership: Membership) -> None:

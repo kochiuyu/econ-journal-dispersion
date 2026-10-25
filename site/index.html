@@ -116,7 +116,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG adds one grade badge, AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row.</p>
+      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG adds one grade badge, AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. Many names stay plain text because that fill is partial.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
@@ -201,6 +201,9 @@
         Country and continent are the ROR fields on the release. Affiliations prefer the matched institution name.
         Emails, phone numbers, and photos are not published; contact strings found in a masthead field are removed.
         Journal names link to the public board page the row was collected from.
+        A name links to a faculty profile when <code>faculty_profile_url</code> is filled.
+        Coverage is partial: higher on FT50 and ABDC A* than on B and C, so a name with no profile stays plain text.
+        The directory does not link <code>faculty_home_page</code>, and it does not invent ORCID, OpenAlex, or RePEc person links.
       </p>
       <p>
         <a href="journals.html">Journals</a> is one row per journal.

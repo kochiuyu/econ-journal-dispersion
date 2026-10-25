@@ -44,7 +44,7 @@ data/
 
 | Stream | State in this repo |
 |--------|--------------------|
-| Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_current_20261024` |
+| Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_current_20261025` |
 | Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` — same freeze (ROR-enriched where available) |
 | Editors — core49 | Documented in `STATUS.md`; multi-year panels not yet copied into a pinned release |
 | Affiliations (core49 TOC spine) | Canonical articles / affiliations / issues under `releases/canonical/` |
@@ -58,7 +58,7 @@ Searchable directory of **current journal editors** on the FT50 list and the ABD
 
 core49 is not included (it is an older ABDC A* subset, not a separate universe in this directory). Authors are out of scope.
 
-`scripts/build_site.py` reads the current editor releases and writes `site/data.js`. The page is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. Emails, phone numbers, and photos are not published.
+`scripts/build_site.py` reads the current editor releases and writes `site/data.js`. The page is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. A name links to `faculty_profile_url` when that cell is filled. Many rows have no profile, and the page does not substitute a faculty home page or an ORCID, OpenAlex, or RePEc id. Emails, phone numbers, and photos are not published.
 
 One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5, UTD24, or AJG grade keeps that badge on the same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
 

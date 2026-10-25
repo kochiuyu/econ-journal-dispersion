@@ -1,6 +1,6 @@
 # Editors — FT50
 
-Updated: 2026-10-24 (Asia/Hong_Kong)
+Updated: 2026-10-25 (Asia/Hong_Kong)
 
 ## Release in this repo
 
@@ -17,6 +17,6 @@ Excluded: `raw/`, `*.before_impute.*`, Excel duplicates.
 
 Current editorial boards only (no Wayback history in this stream). Catalog: `journals/catalog_ft50.csv` (FT Research rank list, Apr 2026 revision).
 
-Freeze `editors_current_20261024`: person-only `editor_name` and the same tenure columns on both files in `releases/current/`. Notes: `releases/current/RELEASE_NOTES.md` (pointer) and `../abdc/releases/current/RELEASE_NOTES.md`.
+Freeze `editors_current_20261025`: both files in `releases/current/` add `faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. The slim CSV is the freeze file. `editors_ft50_current_with_ror.csv` keeps its existing ROR columns and receives those `faculty_*` values from the same row order. Notes: `releases/current/RELEASE_NOTES.md` and `../abdc/releases/current/RELEASE_NOTES.md`.
 
 The public directory also tags two subsets of this freeze. Top 5 (`journals/catalog_top5.csv`) is AER, Econometrica, JPE, QJE, and ReStud. Twenty-three UTD24 journals (`journals/catalog_utd24.csv`) are tagged here as well. Neither tag is a separate editor release.

@@ -140,6 +140,7 @@ td.affiliation, td.journal, td.field { max-width: 280px; }
 td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 tbody tr:hover td { background: var(--accent-soft); }
 .journal { font-weight: 650; color: var(--ink); }
+a.person { font-weight: 650; }
 .rating, .weight { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .weight { font-weight: 650; }
 .idcode { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; }
