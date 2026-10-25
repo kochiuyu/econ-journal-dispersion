@@ -8,13 +8,14 @@ journals/. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24,
 and Top 5 have no grade column and are stored with an empty rating.
 FT50 field is the McMaster LibGuide subject area on catalog_ft50.csv.
 UTD24 and Top 5 leave field empty.
-CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern
-Economics, and ShanghaiRanking rows are copied from their pinned freezes.
+CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern,
+and ShanghaiRanking rows are copied from their pinned freezes.
 CNRS keeps the published category and domain. Handelsblatt/VWL keeps the
 published weight and, when the freeze has one, the letter class. Tilburg
 keeps the TISEM tier. FNEGE keeps the published grade. ERIM keeps the Core
-class. Stern keeps the memo tier. Shanghai keeps binary membership and the
-subject.
+class. Stern keeps the department and the memo tier. The page field is the
+department, plus the memo heading when the row has one. Shanghai keeps
+binary membership and the subject.
 
 This script does not fetch sources, does not read portal extracts or raw
 PDFs, and does not assign ratings, weights, or ids of its own.
@@ -135,7 +136,7 @@ LIST_COUNTS = {
     "tilburg": 179,
     "fnege": 2044,
     "erim": 283,
-    "stern": 49,
+    "stern": 233,
     "shanghai": 76,
 }
 CNRS_RELEASE = ROOT / "journals/rankings/cnrs/releases/rankings_cnrs_20261024"
@@ -251,14 +252,108 @@ ERIM_TRACKS = {
     "S&E": "Strategy and Entrepreneurship",
 }
 STERN_RELEASE = ROOT / "journals/rankings/stern/releases/rankings_stern_20261025"
-STERN_RATINGS = ("Top 5", "Really excellent", "Field", "Review")
-STERN_NOTES = {
-    "Stern memo 2020 top 5",
-    "Stern memo 2020 general interest",
-    "Stern memo 2020 field",
-    "Stern memo 2020 review",
+# Best tier first. site/rankings.js RATING_RANK uses the same order, with
+# Field tied with Specialized high-impact, and Other notable tied with
+# Notable review and Review. Economics keeps Top 5 above Really excellent
+# above Field above Review. Other departments rank their top-tier list
+# above a specialized or notable list.
+STERN_RATINGS = (
+    "Top 5",
+    "Really excellent",
+    "Top-tier",
+    "Field",
+    "Specialized high-impact",
+    "Other notable",
+    "Notable review",
+    "Review",
+)
+STERN_COLUMNS = (
+    "edition_year",
+    "department",
+    "rating",
+    "rating_raw",
+    "journal_title",
+    "print_issn",
+    "e_issn",
+    "field",
+    "publisher",
+    "journal_id",
+    "catalog",
+    "match_method",
+    "source_file",
+    "source_note",
+)
+STERN_METHODS = frozenset(ALLOWED_METHODS | {"alias+title"})
+# Splits department from the memo heading in the page field. site/rankings.js
+# uses the same separator and lists departments in the Field filter.
+STERN_FIELD_SEP = "\u001f"
+STERN_DEPT_LABELS = {
+    "accounting": "Accounting",
+    "economics": "Economics",
+    "finance": "Finance",
+    "management": "Management & Organizations",
+    "marketing": "Marketing",
+    "tops": "Technology, Operations & Statistics",
 }
-STERN_FIELDS = {
+STERN_DEPT_YEAR = {
+    "accounting": "2020",
+    "economics": "2020",
+    "finance": "2020",
+    "management": "2020",
+    "marketing": "2020",
+    "tops": "2021",
+}
+STERN_DEPT_COUNTS = {
+    "accounting": 6,
+    "economics": 49,
+    "finance": 52,
+    "management": 49,
+    "marketing": 20,
+    "tops": 57,
+}
+# Source PDF, then the note printed for each rating in that department.
+STERN_SOURCE = {
+    "accounting": (
+        "Accounting-Top-Journals-FINAL-8.26.20.pdf",
+        {"Top-tier": "Stern Accounting memo 2020 top-tier"},
+    ),
+    "economics": (
+        "Econ-Top-Journals-July-2020.pdf",
+        {
+            "Top 5": "Stern memo 2020 top 5",
+            "Really excellent": "Stern memo 2020 general interest",
+            "Field": "Stern memo 2020 field",
+            "Review": "Stern memo 2020 review",
+        },
+    ),
+    "finance": (
+        "FINC-Top-tier-journals-12.12.20.pdf",
+        {
+            "Top-tier": "Stern Finance memo 2020 top-tier",
+            "Other notable": "Stern Finance memo 2020 other notable",
+        },
+    ),
+    "management": (
+        "Management-Journal-Subcommittee-Memo-AY20-21.pdf",
+        {
+            "Top-tier": "Stern Management memo 2020 top-tier",
+            "Other notable": "Stern Management memo 2020 other notable",
+            "Notable review": "Stern Management memo 2020 notable review",
+        },
+    ),
+    "marketing": (
+        "Marketing-Dpt-Top-Journal-List-12.16.20.pdf",
+        {"Top-tier": "Stern Marketing memo 2020 top-tier"},
+    ),
+    "tops": (
+        "TOpS-Top-Publication-List-8_9_21_Final.pdf",
+        {
+            "Top-tier": "Stern TOpS memo 2021 top-tier",
+            "Specialized high-impact": "Stern TOpS memo 2021 specialized high-impact",
+        },
+    ),
+}
+STERN_ECON_FIELDS = {
     "Agriculture, natural resources, and the environment",
     "Business economics",
     "Econometrics",
@@ -274,7 +369,70 @@ STERN_FIELDS = {
     "Public economics",
     "Regional and urban economics",
 }
-STERN_EXPECTED = {"rows": 49, "mapped": 47, "match_pct": 95.9}
+STERN_FINANCE_FIELDS = {
+    "Accounting",
+    "Economics",
+    "Finance",
+    "Other disciplines",
+}
+STERN_MANAGEMENT_FIELDS = {
+    "General Science",
+    "Management—General (incl. Organization Theory & Labor Relations)",
+    "Management—General (incl. Organization Theory)",
+    "Management—Organizational Behavior",
+    "Management—Strategy",
+    "Psychology—General",
+    "Psychology—Social & Personality",
+    "Sociology",
+}
+STERN_MARKETING_FIELDS = {
+    "General Science / Multi-Disciplinary",
+    "Marketing—Behavioral",
+    "Marketing—General",
+    "Marketing—Quantitative",
+    "Psychology—Cognitive",
+    "Psychology—General",
+    "Psychology—Social",
+    "Psychometrics",
+}
+STERN_TOPS_FIELDS = {
+    "Artificial Intelligence, Data Science, and Machine Learning",
+    "Econometrics",
+    "Economics of Information Systems",
+    "Financial Mathematics",
+    "Information Systems",
+    "Information and Control Theory",
+    "Interdisciplinary/Cross-Cutting",
+    "Management and Policy",
+    "Network Science",
+    "Operations",
+    "Optimization",
+    "Qualitative Behavioral Information Systems",
+    "Sociology",
+    "Statistics",
+    "Statistics and Probability",
+    "Stochastic Modeling and Applied Probability",
+    "Technical Information Systems",
+}
+STERN_RATING_COUNTS = {
+    ("accounting", "Top-tier"): 6,
+    ("economics", "Top 5"): 5,
+    ("economics", "Really excellent"): 10,
+    ("economics", "Field"): 27,
+    ("economics", "Review"): 7,
+    ("finance", "Top-tier"): 8,
+    ("finance", "Other notable"): 44,
+    ("management", "Top-tier"): 21,
+    ("management", "Other notable"): 22,
+    ("management", "Notable review"): 6,
+    ("marketing", "Top-tier"): 20,
+    ("tops", "Top-tier"): 26,
+    ("tops", "Specialized high-impact"): 31,
+}
+STERN_EXPECTED = {
+    "2020": {"rows": 176, "mapped": 157, "match_pct": 89.2},
+    "2021": {"rows": 57, "mapped": 31, "match_pct": 54.4},
+}
 SHANGHAI_RELEASE = ROOT / "journals/rankings/shanghai/releases/rankings_shanghai_20261025"
 SHANGHAI_YEARS = (2024, 2026)
 SHANGHAI_RATINGS = ("Top",)
@@ -565,9 +723,14 @@ def require_sidecars(release: Path) -> None:
             raise SystemExit(f"Missing freeze file: {path.relative_to(ROOT)}")
 
 
-def mapped_id(row: dict[str, str], label: str) -> bool:
+def mapped_id(
+    row: dict[str, str],
+    label: str,
+    methods: frozenset[str] | None = None,
+) -> bool:
+    allowed = ALLOWED_METHODS if methods is None else methods
     has_id = bool(row["journal_id"].strip())
-    if row["match_method"] not in ALLOWED_METHODS:
+    if row["match_method"] not in allowed:
         raise SystemExit(f"{label}: match_method {row['match_method']!r}")
     if row["match_method"] == "unmatched":
         if has_id or row["catalog"].strip():
@@ -735,12 +898,17 @@ def load_grade_freeze(
     unmatched_rows: int,
     conflict_rows: int,
     long_rows_expected: int,
+    columns: tuple[str, ...] | None = None,
+    methods: frozenset[str] | None = None,
+    field_for=None,
+    source_files: frozenset[str] | None = None,
 ) -> list[list]:
+    columns = GRADE_COLUMNS if columns is None else columns
     loaded: dict[str, list[dict[str, str]]] = {}
     for year in years:
         path = release / f"{stem}_{year}.csv"
         header, rows = read_csv(path)
-        if tuple(header) != GRADE_COLUMNS:
+        if tuple(header) != columns:
             raise SystemExit(f"Unexpected columns in {path.name}: {header}")
         expect = expected[year]
         edition = edition_for(year)
@@ -752,12 +920,15 @@ def load_grade_freeze(
                 raise SystemExit(f"{system} {year}: rating {row['rating']!r}/{row['rating_raw']!r} on {row['journal_title']}")
             if not row["journal_title"]:
                 raise SystemExit(f"{system} {year}: blank title")
-            if row["source_file"] != source_file:
+            if source_files is not None:
+                if row["source_file"] not in source_files:
+                    raise SystemExit(f"{system} {year}: source_file {row['source_file']!r}")
+            elif row["source_file"] != source_file:
                 raise SystemExit(f"{system} {year}: source_file {row['source_file']!r}")
             note = source_note_for(row)
             if row["source_note"] != note:
                 raise SystemExit(f"{system} {year}: source_note {row['source_note']!r} != {note!r}")
-            if mapped_id(row, f"{system} {year}"):
+            if mapped_id(row, f"{system} {year}", methods):
                 mapped += 1
         if len(rows) != expect["rows"] or mapped != expect["mapped"]:
             raise SystemExit(
@@ -768,12 +939,16 @@ def load_grade_freeze(
             raise SystemExit(f"{system} {year}: match percent {pct} != {expect['match_pct']}")
         loaded[year] = rows
     long_header, long_rows = read_csv(release / f"{stem}_long.csv")
-    if tuple(long_header) != GRADE_COLUMNS:
+    if tuple(long_header) != columns:
         raise SystemExit(f"Unexpected columns in {stem}_long.csv: {long_header}")
     if len(long_rows) != long_rows_expected:
         raise SystemExit(f"{system} long panel has {len(long_rows)} rows, expected {long_rows_expected}")
     stacked = [row for year in years for row in loaded[year]]
-    if Counter(row_key(row) for row in long_rows) != Counter(row_key(row) for row in stacked):
+
+    def freeze_key(row: dict[str, str]) -> tuple[str, ...]:
+        return tuple(row[column] for column in columns)
+
+    if Counter(freeze_key(row) for row in long_rows) != Counter(freeze_key(row) for row in stacked):
         raise SystemExit(f"{stem}_long.csv does not match the per-year files")
     check_conflicts(release / "conflicts.csv", conflict_rows)
     unmatched_header, unmatched = read_csv(release / "unmatched_journals.csv")
@@ -785,7 +960,15 @@ def load_grade_freeze(
         edition_label = edition_for(year)
         if isinstance(edition_label, str) and edition_label.isdigit():
             edition_label = int(edition_label)
-        edition = sorted(loaded[year], key=lambda row: (row["journal_title"].casefold(), row["field"], row["rating"]))
+        edition = sorted(
+            loaded[year],
+            key=lambda row: (
+                row["journal_title"].casefold(),
+                row.get("department", ""),
+                row["field"],
+                row["rating"],
+            ),
+        )
         for row in edition:
             packed.append(
                 [
@@ -794,7 +977,7 @@ def load_grade_freeze(
                     row["journal_id"],
                     row["journal_title"],
                     row["rating"],
-                    row["field"],
+                    field_for(row) if field_for else row["field"],
                     row["print_issn"],
                     row["e_issn"],
                     "",
@@ -918,41 +1101,157 @@ def load_erim() -> tuple[list[list], dict[str, str]]:
     return packed, labels
 
 
+def stern_page_field(row: dict[str, str]) -> str:
+    department = row["department"].strip()
+    heading = row["field"].strip()
+    if heading:
+        return department + STERN_FIELD_SEP + heading
+    return department
+
+
+def stern_expected_note(row: dict[str, str]) -> str:
+    spec = STERN_SOURCE.get(row["department"])
+    if not spec:
+        return ""
+    return spec[1].get(row["rating"], "")
+
+
+def check_stern_heading(dept: str, rating: str, heading: str, title: str) -> None:
+    if dept == "accounting":
+        if heading:
+            raise SystemExit(f"Stern accounting row has a heading: {title}")
+        return
+    if dept == "economics":
+        if rating == "Field":
+            if heading not in STERN_ECON_FIELDS:
+                raise SystemExit(f"Stern economics field {heading!r} on {title}")
+        elif heading:
+            raise SystemExit(f"Stern economics {rating} row has a heading: {title}")
+        return
+    if dept == "finance":
+        if rating == "Top-tier":
+            if heading:
+                raise SystemExit(f"Stern finance Top-tier row has a heading: {title}")
+        elif heading not in STERN_FINANCE_FIELDS:
+            raise SystemExit(f"Stern finance heading {heading!r} on {title}")
+        return
+    expected = {
+        "management": STERN_MANAGEMENT_FIELDS,
+        "marketing": STERN_MARKETING_FIELDS,
+        "tops": STERN_TOPS_FIELDS,
+    }[dept]
+    if heading not in expected:
+        raise SystemExit(f"Stern {dept} heading {heading!r} on {title}")
+
+
+def stern_dept(field: str) -> str:
+    return field.split(STERN_FIELD_SEP, 1)[0]
+
+
 def load_stern() -> list[list]:
     rows = load_grade_freeze(
         STERN_RELEASE,
         stem="stern",
-        years=("2020",),
+        years=("2020", "2021"),
         ratings=STERN_RATINGS,
-        expected={"2020": STERN_EXPECTED},
-        source_file="Econ-Top-Journals-July-2020.pdf",
-        source_note_for=lambda row: row["source_note"],
+        expected=STERN_EXPECTED,
+        source_file="",
+        source_note_for=stern_expected_note,
         edition_for=lambda year: year,
         system="stern",
-        unmatched_rows=2,
+        unmatched_rows=45,
         conflict_rows=0,
         long_rows_expected=LIST_COUNTS["stern"],
+        columns=STERN_COLUMNS,
+        methods=STERN_METHODS,
+        field_for=stern_page_field,
+        source_files=frozenset(spec[0] for spec in STERN_SOURCE.values()),
     )
-    header, raw = read_csv(STERN_RELEASE / "stern_2020.csv")
-    del header
+    header, raw = read_csv(STERN_RELEASE / "stern_long.csv")
+    if tuple(header) != STERN_COLUMNS:
+        raise SystemExit(f"Unexpected columns in stern_long.csv: {header}")
+    dept_counts: Counter[str] = Counter()
+    rating_counts: Counter[tuple[str, str]] = Counter()
+    headings: dict[str, set[str]] = {dept: set() for dept in STERN_DEPT_LABELS}
     for row in raw:
-        if row["source_note"] not in STERN_NOTES:
-            raise SystemExit(f"Stern source_note {row['source_note']!r}")
-        if row["rating"] == "Field":
-            if row["field"] not in STERN_FIELDS:
-                raise SystemExit(f"Stern field {row['field']!r} on {row['journal_title']}")
-        elif row["field"].strip():
-            raise SystemExit(f"Stern {row['rating']} row has a field: {row['journal_title']}")
-    by_title = {row[3].casefold(): row for row in rows}
-    aer = by_title.get("american economic review")
-    if not aer or aer[4] != "Top 5" or aer[2] != "aer" or aer[1] != 2020:
-        raise SystemExit(f"Stern AER row {aer}")
+        dept = row["department"]
+        if dept not in STERN_DEPT_LABELS:
+            raise SystemExit(f"Stern department {dept!r} on {row['journal_title']}")
+        if row["edition_year"] != STERN_DEPT_YEAR[dept]:
+            raise SystemExit(
+                f"Stern {dept} edition_year {row['edition_year']!r} on {row['journal_title']}"
+            )
+        source_file, notes = STERN_SOURCE[dept]
+        if row["source_file"] != source_file:
+            raise SystemExit(f"Stern {dept} source_file {row['source_file']!r}")
+        if row["rating"] not in notes or row["source_note"] != notes[row["rating"]]:
+            raise SystemExit(
+                f"Stern {dept} rating/note {row['rating']!r}/{row['source_note']!r} "
+                f"on {row['journal_title']}"
+            )
+        heading = row["field"].strip()
+        check_stern_heading(dept, row["rating"], heading, row["journal_title"])
+        headings[dept].add(heading)
+        dept_counts[dept] += 1
+        rating_counts[(dept, row["rating"])] += 1
+    if dict(dept_counts) != STERN_DEPT_COUNTS:
+        raise SystemExit(f"Stern department counts {dict(dept_counts)}")
+    if dict(rating_counts) != STERN_RATING_COUNTS:
+        raise SystemExit(f"Stern rating counts {dict(rating_counts)}")
+    heading_sets = {
+        "accounting": {""},
+        "economics": STERN_ECON_FIELDS | {""},
+        "finance": STERN_FINANCE_FIELDS | {""},
+        "management": set(STERN_MANAGEMENT_FIELDS),
+        "marketing": set(STERN_MARKETING_FIELDS),
+        "tops": set(STERN_TOPS_FIELDS),
+    }
+    for dept, expected_headings in heading_sets.items():
+        if headings[dept] != expected_headings:
+            raise SystemExit(f"Stern {dept} headings {sorted(headings[dept])}")
+    by_key = {(stern_dept(row[5]), row[3].casefold()): row for row in rows}
+    aer = by_key.get(("economics", "american economic review"))
+    if not aer or aer[4] != "Top 5" or aer[2] != "aer" or aer[1] != 2020 or aer[5] != "economics":
+        raise SystemExit(f"Stern economics AER row {aer}")
+    finance_aer = by_key.get(("finance", "american economic review"))
+    if (
+        not finance_aer
+        or finance_aer[4] != "Top-tier"
+        or finance_aer[2] != "aer"
+        or finance_aer[5] != "finance"
+    ):
+        raise SystemExit(f"Stern finance AER row {finance_aer}")
     top5 = {row[2] for row in rows if row[4] == "Top 5"}
     if top5 != {"aer", "econometrica", "jpe", "qje", "restud"}:
         raise SystemExit(f"Stern Top 5 ids {sorted(top5)}")
-    nber = by_title.get("nber macro annual")
-    if not nber or nber[4] != "Review" or nber[2] != "nber_macroeconomics_annual":
+    nber = by_key.get(("economics", "nber macro annual"))
+    if (
+        not nber
+        or nber[4] != "Review"
+        or nber[2] != "nber_macroeconomics_annual"
+        or nber[5] != "economics"
+    ):
         raise SystemExit(f"Stern NBER Macro row {nber}")
+    jf = by_key.get(("economics", "journal of finance"))
+    if not jf or jf[4] != "Field" or jf[5] != "economics" + STERN_FIELD_SEP + "Financial economics":
+        raise SystemExit(f"Stern economics Journal of Finance row {jf}")
+    tar = by_key.get(("accounting", "the accounting review"))
+    if not tar or tar[4] != "Top-tier" or tar[2] != "tar" or tar[5] != "accounting":
+        raise SystemExit(f"Stern Accounting Review row {tar}")
+    alias = by_key.get(("finance", "accounting review"))
+    if not alias or alias[2] != "tar" or alias[4] != "Other notable":
+        raise SystemExit(f"Stern finance Accounting Review row {alias}")
+    ms_depts = {stern_dept(row[5]) for row in rows if row[3].casefold() == "management science"}
+    if ms_depts != set(STERN_DEPT_LABELS):
+        raise SystemExit(f"Stern Management Science departments {sorted(ms_depts)}")
+    finance_top = {
+        row[2] for row in rows if stern_dept(row[5]) == "finance" and row[4] == "Top-tier"
+    }
+    if finance_top != {"aer", "econometrica", "jf", "jfe", "jpe", "qje", "restud", "rfs"}:
+        raise SystemExit(f"Stern finance Top-tier ids {sorted(finance_top)}")
+    mapped = sum(1 for row in rows if row[2])
+    if len(rows) != LIST_COUNTS["stern"] or mapped != 188:
+        raise SystemExit(f"Stern packed {len(rows)} rows / {mapped} mapped")
     return rows
 
 
@@ -1082,7 +1381,7 @@ def payload(
             "tilburg": ["Current"],
             "fnege": list(FNEGE_YEARS),
             "erim": [ERIM_EDITION],
-            "stern": [2020],
+            "stern": [2020, 2021],
             "shanghai": list(SHANGHAI_YEARS),
         },
         "ratings": {
@@ -1103,6 +1402,7 @@ def payload(
         "fieldLabels": {
             "fnege": fnege_labels,
             "erim": erim_labels,
+            "stern": STERN_DEPT_LABELS,
         },
         "columns": [
             "system",
@@ -1221,7 +1521,10 @@ def main() -> int:
         f"ERIM {LIST_COUNTS['erim']} "
         f"({ERIM_EXPECTED['mapped']} matched, {ERIM_EXPECTED['match_pct']}%). "
         f"Stern {LIST_COUNTS['stern']} "
-        f"({STERN_EXPECTED['mapped']} matched, {STERN_EXPECTED['match_pct']}%). "
+        f"(2020 {STERN_EXPECTED['2020']['rows']} journals, "
+        f"{STERN_EXPECTED['2020']['mapped']} matched, {STERN_EXPECTED['2020']['match_pct']}%; "
+        f"2021 {STERN_EXPECTED['2021']['rows']} journals, "
+        f"{STERN_EXPECTED['2021']['mapped']} matched, {STERN_EXPECTED['2021']['match_pct']}%). "
         f"Shanghai {LIST_COUNTS['shanghai']} "
         f"(2026 {SHANGHAI_EXPECTED[2026]['rows']} journals, "
         f"{SHANGHAI_EXPECTED[2026]['mapped']} matched, {SHANGHAI_EXPECTED[2026]['match_pct']}%; "

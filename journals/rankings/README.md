@@ -4,7 +4,7 @@ Rating catalogs. These files are not editorial boards and they are not appointme
 
 The editor directory is current FT50 and ABDC A*/A/B/C boards, plus AJG-gap boards in `data/editors/abs_ajg_gap/releases/current/`. Top 5 and UTD24 are tags on the FT50 and ABDC boards. AJG chips are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, where the journal is already on an FT50 or ABDC board. That join does not add a board. Gap rows take the same 2024 grade from the journal title, and only for journals that are not already in those editor files. The label does not include the year. Titles that still have no board, and the rest of the guide, stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
 
-That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern Economics, and ShanghaiRanking from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column. UTD24 and Top 5 have no field. FT50 `field` is the McMaster LibGuide subject area (https://libguides.mcmaster.ca/ft-top50), including both subjects when that table prints two. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, the Shanghai subject, or that FT50 subject area. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, and Shanghai stay on this page. They are not directory chips.
+That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern, and ShanghaiRanking from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column. UTD24 and Top 5 have no field. FT50 `field` is the McMaster LibGuide subject area (https://libguides.mcmaster.ca/ft-top50), including both subjects when that table prints two. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern department (with the memo heading when the row has one), the Shanghai subject, or that FT50 subject area. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, and Shanghai stay on this page. They are not directory chips.
 
 ## Pinned release
 
@@ -53,7 +53,7 @@ ERIM Journals List Core 2024–2028. Ratings are the Core class strings (`STAR`,
 
 `stern/releases/rankings_stern_20261025/`
 
-NYU Stern Economics top-tier journals, 31 July 2020. Ratings are `Top 5`, `Really excellent`, `Field`, and `Review`. The finance list is not included. Raw PDF is not in this repository.
+NYU Stern top-tier journals by department, from the [Top-Tier Journals by Department](https://www.stern.nyu.edu/portal-partners/faculty-guide/employment/full-time-faculty/top-tier-journals-department) page. Departments are Accounting, Economics, Finance, Management, Marketing, and TOpS. Editions are 2020 (176) and 2021 (57 TOpS). Ratings follow each memo: Accounting and Marketing `Top-tier`; Economics `Top 5`, `Really excellent`, `Field`, and `Review`; Finance `Top-tier` and `Other notable`; Management `Top-tier`, `Other notable`, and `Notable review`; TOpS `Top-tier` and `Specialized high-impact`. `department` is the page filter. `field` keeps the memo heading when the memo prints one. Raw PDFs are not in this repository.
 
 `shanghai/releases/rankings_shanghai_20261025/`
 
@@ -73,5 +73,5 @@ ShanghaiRanking top journals for 2024 and 2026. Subjects are Economics, Business
 | Tilburg | 179 (Top-core 42, Top 41, Very good 96; 164 matched, 91.6%) |
 | FNEGE | 2,044 (2019 / 2022 / 2025; 2025 is 891 journals, 733 matched, 82.3%) |
 | ERIM | 283 (Core 2024–2028; 257 matched, 90.8%) |
-| Stern | 49 (Top 5 5, Really excellent 10, Field 27, Review 7; 47 matched, 95.9%) |
+| Stern | 233 (2020: 176 journals, 157 matched, 89.2%; 2021 TOpS: 57 journals, 31 matched, 54.4%; 188 matched, 80.7%) |
 | Shanghai | 76 (2024 / 2026; 2026 is 19 journals, 19 matched, 100.0%) |

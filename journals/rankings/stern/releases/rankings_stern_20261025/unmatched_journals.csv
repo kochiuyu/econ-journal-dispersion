@@ -1,3 +1,46 @@
-edition_year,journal_title,print_issn,e_issn,field,publisher,rating,match_method,source_file
-2020,American Economic Association Papers & Proceedings,,,,,Review,unmatched,Econ-Top-Journals-July-2020.pdf
-2020,Carnegie-Rochester Series,,,,,Review,unmatched,Econ-Top-Journals-July-2020.pdf
+edition_year,department,journal_title,print_issn,e_issn,field,publisher,rating,match_method,source_file
+2020,economics,American Economic Association Papers & Proceedings,,,,,Review,unmatched,Econ-Top-Journals-July-2020.pdf
+2020,economics,Carnegie-Rochester Series,,,,,Review,unmatched,Econ-Top-Journals-July-2020.pdf
+2020,finance,Applied Psychology,,,Other disciplines,,Other notable,unmatched,FINC-Top-tier-journals-12.12.20.pdf
+2020,finance,Journal of Computing,,,Other disciplines,,Other notable,unmatched,FINC-Top-tier-journals-12.12.20.pdf
+2020,management,Nature,,,General Science,,Top-tier,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Nature Human Behaviour,,,General Science,,Other notable,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Personality and Social Psychology Review,,,Psychology—Social & Personality,,Top-tier,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Proceedings of the National Academy of Sciences (PNAS),,,General Science,,Top-tier,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Science,,,General Science,,Top-tier,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Social Networks,,,Sociology,,Other notable,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Social Psychology Quarterly,,,Sociology,,Other notable,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Social Studies of Science,,,Sociology,,Other notable,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,management,Theory and Society,,,Sociology,,Other notable,unmatched,Management-Journal-Subcommittee-Memo-AY20-21.pdf
+2020,marketing,Nature,,,General Science / Multi-Disciplinary,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2020,marketing,Perspectives on Psychological Science,,,Psychology—General,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2020,marketing,Proceedings of the National Academy of Sciences (PNAS),,,General Science / Multi-Disciplinary,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2020,marketing,Psychometrika,,,Psychometrics,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2020,marketing,Science,,,General Science / Multi-Disciplinary,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2020,marketing,Trends in Cognitive Sciences,,,Psychology—Cognitive,,Top-tier,unmatched,Marketing-Dpt-Top-Journal-List-12.16.20.pdf
+2021,tops,ACM Transactions on Intelligent Systems and Technology,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,ACM Transactions on Management Information Systems,,,Technical Information Systems,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Annales de l'Institut Henri Poincare,,,Statistics and Probability,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Big Data (research articles),,,Technical Information Systems,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Communications of the ACM (research articles),,,Technical Information Systems,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Computational Linguistics,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Data Mining and Knowledge Discovery,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,IEEE Transactions on Automatic Control,,,Information and Control Theory,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,IEEE Transactions on Information Theory,,,Information and Control Theory,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,IEEE Transactions on Knowledge and Data Engineering,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,IEEE Transactions on Pattern Recognition and Machine Intelligence,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Journal of Artificial Intelligence Research,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Journal of Machine Learning Research,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Machine Learning,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Mathematical Programming,,,Optimization,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Nature,,,Interdisciplinary/Cross-Cutting,,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Network Science,,,Network Science,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,PLOS One,,,Network Science,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Proceedings of the National Academy of Sciences,,,Interdisciplinary/Cross-Cutting,,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Science,,,Interdisciplinary/Cross-Cutting,,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,SIAM Journal on Control and Optimization,,,Financial Mathematics,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,SIAM Journal on Optimization,,,Optimization,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,SIAM Journal on the Mathematics of Data Science,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Social Networks,,,Network Science,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Stochastic Systems,,,Stochastic Modeling and Applied Probability,,Specialized high-impact,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf
+2021,tops,Transactions of the Association for Computational Linguistics,,,"Artificial Intelligence, Data Science, and Machine Learning",,Top-tier,unmatched,TOpS-Top-Publication-List-8_9_21_Final.pdf

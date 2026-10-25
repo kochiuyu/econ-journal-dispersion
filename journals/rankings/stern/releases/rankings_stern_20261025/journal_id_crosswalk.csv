@@ -1,60 +1,189 @@
-edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
-2020,American Economic Journal: Applied Economics,,,Really excellent,abdc_a_star,aej_applied,title,yes
-2020,American Economic Journal: Economic Policy,,,Really excellent,abdc_a_star,aej_policy,title,yes
-2020,American Economic Journal: Macroeconomics,,,Really excellent,abdc_a_star,aej_macro,title,yes
-2020,American Economic Journal: Microeconomics,,,Really excellent,abdc_a_star,aej_micro,title,yes
-2020,American Economic Review,,,Top 5,ft50,aer,title,yes
-2020,American Economic Review,,,Top 5,core49,aer,title,no
-2020,American Economic Review,,,Top 5,abdc_a_star,aer,title,no
-2020,American Economic Review: Insights,,,Really excellent,abdc_a_star,aer_insights,title,yes
-2020,American Journal of Health Economics,,,Field,abdc_a_star,american_journal_health_economics,title,yes
-2020,Annual Review of Economics,,,Review,abdc_a_star,annual_review_economics,title,yes
-2020,Brookings Papers on Economic Activity,,,Review,abdc_a,brookings_papers_economic_activity,title,yes
-2020,Econometrica,,,Top 5,ft50,econometrica,title,yes
-2020,Econometrica,,,Top 5,core49,econometrica,title,no
-2020,Econometrica,,,Top 5,abdc_a_star,econometrica,title,no
-2020,Economic Journal,,,Really excellent,core49,the-economic-journal,title,yes
-2020,Explorations in Economic History,,,Field,abdc_a,explorations_economic_history,title,yes
-2020,Games and Economic Behavior,,,Field,core49,games-and-economic-behavior,title,yes
-2020,International Economic Review,,,Really excellent,core49,international-economic-review,title,yes
-2020,Journal of Development Economics,,,Field,core49,journal-of-development-economics,title,yes
-2020,Journal of Econometrics,,,Field,core49,journal-of-econometrics,title,yes
-2020,Journal of Economic Growth,,,Field,core49,journal-of-economic-growth,title,yes
-2020,Journal of Economic History,,,Field,core49,the-journal-of-economic-history,title,yes
-2020,Journal of Economic Literature,,,Review,core49,journal-of-economic-literature,title,yes
-2020,Journal of Economic Perspectives,,,Review,core49,journal-of-economic-perspectives,title,yes
-2020,Journal of Economic Theory,,,Field,core49,journal-of-economic-theory,title,yes
-2020,Journal of Environmental Economics and Management,,,Field,core49,journal-of-environmental-economics-and-management,title,yes
-2020,Journal of Finance,,,Field,ft50,jf,title,yes
-2020,Journal of Finance,,,Field,abdc_a_star,jf,title,no
-2020,Journal of Financial Economics,,,Field,ft50,jfe,title,yes
-2020,Journal of Financial Economics,,,Field,abdc_a_star,jfe,title,no
-2020,Journal of Health Economics,,,Field,core49,journal-of-health-economics,title,yes
-2020,Journal of Human Resources,,,Field,core49,journal-of-human-resources,title,yes
-2020,Journal of Industrial Economics,,,Field,abdc_a_star,journal_industrial_economics,title,yes
-2020,Journal of International Economics,,,Field,core49,journal-of-international-economics,title,yes
-2020,Journal of Labor Economics,,,Field,core49,journal-of-labor-economics,title,yes
-2020,Journal of Monetary Economics,,,Field,core49,journal-of-monetary-economics,title,yes
-2020,"Journal of Money, Credit, and Banking",,,Field,core49,journal-of-money-credit-and-banking,title,yes
-2020,Journal of Political Economy,,,Top 5,ft50,jpe,title,yes
-2020,Journal of Political Economy,,,Top 5,abdc_a_star,jpe,title,no
-2020,Journal of Public Economics,,,Field,core49,journal-of-public-economics,title,yes
-2020,Journal of the Association of Environmental and Resource Economists,,,Field,abdc_a_star,journal_association_environmental_resource_economists,title,yes
-2020,Journal of the European Economic Association,,,Really excellent,core49,journal-of-the-european-economic-association,title,yes
-2020,Journal of Urban Economics,,,Field,core49,journal-of-urban-economics,title,yes
-2020,Management Science,,,Field,ft50,ms,title,yes
-2020,Management Science,,,Field,abdc_a_star,ms,title,no
-2020,Marketing Science,,,Field,ft50,mktg_sci,title,yes
-2020,Marketing Science,,,Field,abdc_a_star,mktg_sci,title,no
-2020,NBER Macro Annual,,,Review,abdc_a,nber_macroeconomics_annual,title,yes
-2020,Quantitative Economics,,,Really excellent,core49,quantitative-economics,title,yes
-2020,Quarterly Journal of Economics,,,Top 5,ft50,qje,title,yes
-2020,Quarterly Journal of Economics,,,Top 5,abdc_a_star,qje,title,no
-2020,RAND Journal of Economics,,,Field,core49,rand-journal-of-economics,title,yes
-2020,Review of Economic Dynamics,,,Field,core49,review-of-economic-dynamics,title,yes
-2020,Review of Economic Studies,,,Top 5,ft50,restud,title,yes
-2020,Review of Economic Studies,,,Top 5,abdc_a_star,restud,title,no
-2020,Review of Economics and Statistics,,,Really excellent,core49,review-of-economics-and-statistics,title,yes
-2020,Review of Financial Studies,,,Field,ft50,rfs,title,yes
-2020,Review of Financial Studies,,,Field,abdc_a_star,rfs,title,no
-2020,Theoretical Economics,,,Field,core49,theoretical-economics,title,yes
+edition_year,department,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+2020,accounting,Contemporary Accounting Research,,,Top-tier,ft50,car,title,yes
+2020,accounting,Journal of Accounting and Economics,,,Top-tier,ft50,jae,title,yes
+2020,accounting,Journal of Accounting Research,,,Top-tier,ft50,jar,title,yes
+2020,accounting,Management Science,,,Top-tier,ft50,ms,title,yes
+2020,accounting,Review of Accounting Studies,,,Top-tier,ft50,rast,title,yes
+2020,accounting,The Accounting Review,,,Top-tier,ft50,tar,title,yes
+2020,economics,American Economic Journal: Applied Economics,,,Really excellent,abdc_a_star,aej_applied,title,yes
+2020,economics,American Economic Journal: Economic Policy,,,Really excellent,abdc_a_star,aej_policy,title,yes
+2020,economics,American Economic Journal: Macroeconomics,,,Really excellent,abdc_a_star,aej_macro,title,yes
+2020,economics,American Economic Journal: Microeconomics,,,Really excellent,abdc_a_star,aej_micro,title,yes
+2020,economics,American Economic Review,,,Top 5,ft50,aer,title,yes
+2020,economics,American Economic Review: Insights,,,Really excellent,abdc_a_star,aer_insights,title,yes
+2020,economics,American Journal of Health Economics,,,Field,abdc_a_star,american_journal_health_economics,title,yes
+2020,economics,Annual Review of Economics,,,Review,abdc_a_star,annual_review_economics,title,yes
+2020,economics,Brookings Papers on Economic Activity,,,Review,abdc_a,brookings_papers_economic_activity,title,yes
+2020,economics,Econometrica,,,Top 5,ft50,econometrica,title,yes
+2020,economics,Economic Journal,,,Really excellent,core49,the-economic-journal,alias+title,yes
+2020,economics,Explorations in Economic History,,,Field,abdc_a,explorations_economic_history,title,yes
+2020,economics,Games and Economic Behavior,,,Field,core49,games-and-economic-behavior,title,yes
+2020,economics,International Economic Review,,,Really excellent,core49,international-economic-review,title,yes
+2020,economics,Journal of Development Economics,,,Field,core49,journal-of-development-economics,title,yes
+2020,economics,Journal of Econometrics,,,Field,core49,journal-of-econometrics,title,yes
+2020,economics,Journal of Economic Growth,,,Field,core49,journal-of-economic-growth,title,yes
+2020,economics,Journal of Economic History,,,Field,core49,the-journal-of-economic-history,alias+title,yes
+2020,economics,Journal of Economic Literature,,,Review,core49,journal-of-economic-literature,title,yes
+2020,economics,Journal of Economic Perspectives,,,Review,core49,journal-of-economic-perspectives,title,yes
+2020,economics,Journal of Economic Theory,,,Field,core49,journal-of-economic-theory,title,yes
+2020,economics,Journal of Environmental Economics and Management,,,Field,core49,journal-of-environmental-economics-and-management,title,yes
+2020,economics,Journal of Finance,,,Field,ft50,jf,title,yes
+2020,economics,Journal of Financial Economics,,,Field,ft50,jfe,title,yes
+2020,economics,Journal of Health Economics,,,Field,core49,journal-of-health-economics,title,yes
+2020,economics,Journal of Human Resources,,,Field,core49,journal-of-human-resources,title,yes
+2020,economics,Journal of Industrial Economics,,,Field,abdc_a_star,journal_industrial_economics,alias+title,yes
+2020,economics,Journal of International Economics,,,Field,core49,journal-of-international-economics,title,yes
+2020,economics,Journal of Labor Economics,,,Field,core49,journal-of-labor-economics,title,yes
+2020,economics,Journal of Monetary Economics,,,Field,core49,journal-of-monetary-economics,title,yes
+2020,economics,"Journal of Money, Credit, and Banking",,,Field,core49,journal-of-money-credit-and-banking,title,yes
+2020,economics,Journal of Political Economy,,,Top 5,ft50,jpe,title,yes
+2020,economics,Journal of Public Economics,,,Field,core49,journal-of-public-economics,title,yes
+2020,economics,Journal of the Association of Environmental and Resource Economists,,,Field,abdc_a_star,journal_association_environmental_resource_economists,title,yes
+2020,economics,Journal of the European Economic Association,,,Really excellent,core49,journal-of-the-european-economic-association,title,yes
+2020,economics,Journal of Urban Economics,,,Field,core49,journal-of-urban-economics,title,yes
+2020,economics,Management Science,,,Field,ft50,ms,title,yes
+2020,economics,Marketing Science,,,Field,ft50,mktg_sci,title,yes
+2020,economics,NBER Macro Annual,,,Review,abdc_a,nber_macroeconomics_annual,alias+title,yes
+2020,economics,Quantitative Economics,,,Really excellent,core49,quantitative-economics,title,yes
+2020,economics,Quarterly Journal of Economics,,,Top 5,ft50,qje,title,yes
+2020,economics,RAND Journal of Economics,,,Field,core49,rand-journal-of-economics,title,yes
+2020,economics,Review of Economic Dynamics,,,Field,core49,review-of-economic-dynamics,title,yes
+2020,economics,Review of Economic Studies,,,Top 5,ft50,restud,title,yes
+2020,economics,Review of Economics and Statistics,,,Really excellent,core49,review-of-economics-and-statistics,title,yes
+2020,economics,Review of Financial Studies,,,Field,ft50,rfs,title,yes
+2020,economics,Theoretical Economics,,,Field,core49,theoretical-economics,title,yes
+2020,finance,Academy of Management Journal,,,Other notable,ft50,amj,title,yes
+2020,finance,Academy of Management Review,,,Other notable,ft50,amr,title,yes
+2020,finance,Accounting Review,,,Other notable,ft50,tar,alias+title,yes
+2020,finance,Administrative Science Quarterly,,,Other notable,ft50,asq,title,yes
+2020,finance,American Economic Journal: Applied Economics,,,Other notable,abdc_a_star,aej_applied,title,yes
+2020,finance,American Economic Journal: Economic Policy,,,Other notable,abdc_a_star,aej_policy,title,yes
+2020,finance,American Economic Journal: Macroeconomics,,,Other notable,abdc_a_star,aej_macro,title,yes
+2020,finance,American Economic Journal: Microeconomics,,,Other notable,abdc_a_star,aej_micro,title,yes
+2020,finance,American Economic Review,,,Top-tier,ft50,aer,title,yes
+2020,finance,American Economic Review: Insights,,,Other notable,abdc_a_star,aer_insights,title,yes
+2020,finance,Contemporary Accounting Research,,,Other notable,ft50,car,title,yes
+2020,finance,Econometrica,,,Top-tier,ft50,econometrica,title,yes
+2020,finance,Financial Management,,,Other notable,abdc_a_star,financial_management,title,yes
+2020,finance,Information System Research,,,Other notable,ft50,isr,alias+title,yes
+2020,finance,International Economic Review,,,Other notable,core49,international-economic-review,title,yes
+2020,finance,Journal of Accounting and Economics,,,Other notable,ft50,jae,title,yes
+2020,finance,Journal of Accounting Research,,,Other notable,ft50,jar,title,yes
+2020,finance,Journal of Banking and Finance,,,Other notable,abdc_a_star,journal_banking_finance,title,yes
+2020,finance,Journal of Business and Economic Statistics,,,Other notable,core49,journal-of-business-and-economic-statistics,title,yes
+2020,finance,Journal of Corporate Finance,,,Other notable,abdc_a_star,journal_corporate_finance,title,yes
+2020,finance,Journal of Development Economics,,,Other notable,core49,journal-of-development-economics,title,yes
+2020,finance,Journal of Econometrics,,,Other notable,core49,journal-of-econometrics,title,yes
+2020,finance,Journal of Economic Theory,,,Other notable,core49,journal-of-economic-theory,title,yes
+2020,finance,Journal of Finance,,,Top-tier,ft50,jf,title,yes
+2020,finance,Journal of Financial and Quantitative Analysis,,,Other notable,ft50,jfqa,title,yes
+2020,finance,Journal of Financial Econometrics,,,Other notable,core49,journal-of-financial-econometrics,title,yes
+2020,finance,Journal of Financial Economics,,,Top-tier,ft50,jfe,title,yes
+2020,finance,Journal of Financial Intermediation,,,Other notable,abdc_a_star,journal_financial_intermediation,title,yes
+2020,finance,Journal of Financial Markets,,,Other notable,abdc_a_star,journal_financial_markets,title,yes
+2020,finance,Journal of Financial Services Research,,,Other notable,abdc_a,journal_financial_services_research,title,yes
+2020,finance,Journal of International Business Studies,,,Other notable,ft50,jibs,title,yes
+2020,finance,Journal of Labor Economics,,,Other notable,core49,journal-of-labor-economics,title,yes
+2020,finance,Journal of Law and Economics,,,Other notable,core49,journal-of-law-and-economics,title,yes
+2020,finance,"Journal of Law, Economics and Organizations",,,Other notable,abdc_a,journal_law_economics_organization,alias+title,yes
+2020,finance,Journal of Monetary Economics,,,Other notable,core49,journal-of-monetary-economics,title,yes
+2020,finance,"Journal of Money, Credit, and Banking",,,Other notable,core49,journal-of-money-credit-and-banking,title,yes
+2020,finance,Journal of Political Economy,,,Top-tier,ft50,jpe,title,yes
+2020,finance,Management Science,,,Other notable,ft50,ms,title,yes
+2020,finance,MIS Quarterly,,,Other notable,ft50,misq,title,yes
+2020,finance,Organization Science,,,Other notable,ft50,orgsci,title,yes
+2020,finance,Quarterly Journal of Economics,,,Top-tier,ft50,qje,title,yes
+2020,finance,RAND Journal of Economics,,,Other notable,core49,rand-journal-of-economics,title,yes
+2020,finance,Review of Accounting Studies,,,Other notable,ft50,rast,title,yes
+2020,finance,Review of Asset Pricing Studies,,,Other notable,abdc_a_star,review_asset_pricing_studies,title,yes
+2020,finance,Review of Corporate Finance Studies,,,Other notable,abdc_a_star,review_corporate_finance_studies,title,yes
+2020,finance,Review of Economic Studies,,,Top-tier,ft50,restud,title,yes
+2020,finance,Review of Economics and Statistics,,,Other notable,core49,review-of-economics-and-statistics,title,yes
+2020,finance,Review of Finance,,,Other notable,ft50,rof,title,yes
+2020,finance,Review of Financial Studies,,,Top-tier,ft50,rfs,title,yes
+2020,finance,Strategic Management Journal,,,Other notable,ft50,smj,title,yes
+2020,management,Academy of Management Annals,,,Notable review,ft50,aom_annals,title,yes
+2020,management,Academy of Management Discoveries,,,Other notable,abdc_a_star,academy_management_discoveries,title,yes
+2020,management,Academy of Management Journal,,,Top-tier,ft50,amj,title,yes
+2020,management,Academy of Management Review,,,Top-tier,ft50,amr,title,yes
+2020,management,Administrative Science Quarterly,,,Top-tier,ft50,asq,title,yes
+2020,management,Advances in Experimental Social Psychology,,,Notable review,abdc_a_star,advances_experimental_social_psychology,title,yes
+2020,management,American Journal of Sociology,,,Top-tier,abdc_a_star,american_journal_sociology,title,yes
+2020,management,American Sociological Review,,,Top-tier,ft50,asr,title,yes
+2020,management,Annual Review of Organizational Psychology and Organizational Behavior,,,Notable review,abdc_a_star,annual_review_organizational_psychology,title,yes
+2020,management,Annual Review of Psychology,,,Notable review,abdc_a_star,annual_review_psychology,title,yes
+2020,management,Annual Review of Sociology,,,Notable review,abdc_a_star,annual_review_sociology,title,yes
+2020,management,Gender & Society,,,Other notable,abdc_a_star,gender_society,title,yes
+2020,management,Global Strategy Journal,,,Other notable,abdc_a,global_strategy_journal,title,yes
+2020,management,Journal of Applied Psychology,,,Top-tier,ft50,jap,title,yes
+2020,management,Journal of Experimental Psychology: General,,,Top-tier,abdc_a_star,journal_experimental_psychology_general,title,yes
+2020,management,Journal of Experimental Social Psychology,,,Top-tier,abdc_a,journal_experimental_social_psychology,title,yes
+2020,management,Journal of International Business Studies,,,Other notable,ft50,jibs,title,yes
+2020,management,Journal of Management,,,Other notable,ft50,jom,title,yes
+2020,management,Journal of Management Studies,,,Other notable,ft50,jms,title,yes
+2020,management,Journal of Organizational Behavior,,,Other notable,abdc_a_star,journal_organizational_behavior,title,yes
+2020,management,Journal of Personality and Social Psychology,,,Top-tier,abdc_a_star,journal_personality_social_psychology,title,yes
+2020,management,Management Science,,,Top-tier,ft50,ms,title,yes
+2020,management,Organization Science,,,Top-tier,ft50,orgsci,title,yes
+2020,management,Organization Studies,,,Other notable,abdc_a_star,organization_studies,title,yes
+2020,management,Organizational Behavior & Human Decision Processes,,,Top-tier,ft50,obhdp,title,yes
+2020,management,Personality and Social Psychology Bulletin,,,Top-tier,abdc_a_star,personality_social_psychology_bulletin,title,yes
+2020,management,Personnel Psychology,,,Other notable,abdc_a_star,personnel_psychology,title,yes
+2020,management,Psychological Bulletin,,,Top-tier,abdc_a_star,psychological_bulletin,title,yes
+2020,management,Psychological Review,,,Top-tier,abdc_a_star,psychological_review,title,yes
+2020,management,Psychological Science,,,Top-tier,ft50,psych_sci,title,yes
+2020,management,Research in Organizational Behavior,,,Notable review,abdc_a,research_organizational_behavior,title,yes
+2020,management,Research Policy,,,Other notable,ft50,rp,title,yes
+2020,management,Social Forces,,,Other notable,abdc_a,social_forces,title,yes
+2020,management,Social Psychological and Personality Science,,,Other notable,abdc_b,social_psychological_personality_science,title,yes
+2020,management,Socio-Economic Review,,,Other notable,abdc_a,socio_economic_review,title,yes
+2020,management,Strategic Entrepreneurship Journal,,,Other notable,ft50,sej,title,yes
+2020,management,Strategic Management Journal,,,Top-tier,ft50,smj,title,yes
+2020,management,Strategic Organization,,,Other notable,abdc_a,strategic_organization,title,yes
+2020,management,Strategy Science,,,Other notable,abdc_a,strategy_science,title,yes
+2020,management,Work and Occupations,,,Other notable,abdc_a,work_occupations,title,yes
+2020,marketing,Annual Review of Psychology,,,Top-tier,abdc_a_star,annual_review_psychology,title,yes
+2020,marketing,Journal of Consumer Psychology,,,Top-tier,ft50,jcp,title,yes
+2020,marketing,Journal of Consumer Research,,,Top-tier,ft50,jcr,title,yes
+2020,marketing,Journal of Experimental Psychology: General,,,Top-tier,abdc_a_star,journal_experimental_psychology_general,title,yes
+2020,marketing,Journal of Experimental Social Psychology,,,Top-tier,abdc_a,journal_experimental_social_psychology,title,yes
+2020,marketing,Journal of Marketing,,,Top-tier,ft50,jm,title,yes
+2020,marketing,Journal of Marketing Research,,,Top-tier,ft50,jmr,title,yes
+2020,marketing,Journal of Personality and Social Psychology,,,Top-tier,abdc_a_star,journal_personality_social_psychology,title,yes
+2020,marketing,Management Science,,,Top-tier,ft50,ms,title,yes
+2020,marketing,Marketing Science,,,Top-tier,ft50,mktg_sci,title,yes
+2020,marketing,Psychological Bulletin,,,Top-tier,abdc_a_star,psychological_bulletin,title,yes
+2020,marketing,Psychological Review,,,Top-tier,abdc_a_star,psychological_review,title,yes
+2020,marketing,Psychological Science,,,Top-tier,ft50,psych_sci,title,yes
+2020,marketing,Quantitative Marketing and Economics,,,Top-tier,abdc_a,quantitative_marketing_economics,title,yes
+2021,tops,ACM Transactions on Information Systems,,,Top-tier,abdc_c,acm_transactions_information_systems,title,yes
+2021,tops,American Journal of Sociology,,,Specialized high-impact,abdc_a_star,american_journal_sociology,title,yes
+2021,tops,Annals of Applied Probability,,,Specialized high-impact,abdc_a,annals_applied_probability,title,yes
+2021,tops,Annals of Applied Statistics,,,Top-tier,abdc_a,annals_applied_statistics,title,yes
+2021,tops,Annals of Statistics,,,Top-tier,abdc_a_star,annals_statistics,title,yes
+2021,tops,Biometrika,,,Top-tier,abdc_a_star,biometrika,title,yes
+2021,tops,Econometric Theory,,,Specialized high-impact,core49,econometric-theory,title,yes
+2021,tops,Electronic Journal of Statistics,,,Specialized high-impact,abdc_a,electronic_journal_statistics,alias+title,yes
+2021,tops,Finance and Stochastics,,,Specialized high-impact,abdc_a,finance_stochastics,title,yes
+2021,tops,Information and Organization,,,Specialized high-impact,abdc_a_star,information_organization,title,yes
+2021,tops,Information Systems Research,,,Top-tier,ft50,isr,title,yes
+2021,tops,INFORMS Journal on Computing,,,Specialized high-impact,abdc_a,informs_journal_computing,title,yes
+2021,tops,Journal of Business & Economic Statistics,,,Specialized high-impact,core49,journal-of-business-and-economic-statistics,title,yes
+2021,tops,Journal of Computational and Graphical Statistics,,,Specialized high-impact,abdc_a_star,journal_computational_graphical_statistics,title,yes
+2021,tops,Journal of Econometrics,,,Specialized high-impact,core49,journal-of-econometrics,title,yes
+2021,tops,Journal of Management Information Systems,,,Specialized high-impact,ft50,jmis,title,yes
+2021,tops,Journal of the American Statistical Association,,,Top-tier,abdc_a_star,journal_american_statistical_association,title,yes
+2021,tops,"Journal of the Royal Statistical Society, Series B",,,Top-tier,abdc_a_star,journal_royal_statistical_society_series_b,alias+title,yes
+2021,tops,Journal of Time Series Analysis,,,Specialized high-impact,abdc_a,journal_time_series_analysis,title,yes
+2021,tops,Management Science,,,Top-tier,ft50,ms,title,yes
+2021,tops,Manufacturing & Service Operations Management,,,Top-tier,ft50,msom,title,yes
+2021,tops,Mathematical Finance,,,Specialized high-impact,abdc_a,mathematical_finance,title,yes
+2021,tops,Mathematics and Financial Economics,,,Specialized high-impact,abdc_c,mathematics_financial_economics,title,yes
+2021,tops,Mathematics of Operations Research,,,Top-tier,abdc_a,mathematics_operations_research,title,yes
+2021,tops,MIS Quarterly,,,Top-tier,ft50,misq,title,yes
+2021,tops,Operations Research,,,Top-tier,ft50,or,title,yes
+2021,tops,Probability Theory and Related Fields,,,Specialized high-impact,abdc_a_star,probability_theory_related_fields,title,yes
+2021,tops,Production and Operations Management,,,Top-tier,ft50,pom,title,yes
+2021,tops,Research Policy,,,Specialized high-impact,ft50,rp,title,yes
+2021,tops,Statistica Sinica,,,Specialized high-impact,abdc_a,statistica_sinica,title,yes
+2021,tops,Stochastic Processes and their Applications,,,Specialized high-impact,abdc_a,stochastic_processes_their_applications,title,yes

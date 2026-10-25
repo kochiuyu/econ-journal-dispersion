@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal rankings</title>
-  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, Stern Economics, and Shanghai top-journal grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
+  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, and Shanghai top-journal grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:title" content="Journal rankings">
-  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, Stern Economics, Shanghai, and ABDC, plus FT50, UTD24, and Top 5.">
+  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, Shanghai, and ABDC, plus FT50, UTD24, and Top 5.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:type" content="website">
   <!--
@@ -52,7 +52,7 @@
       Tilburg is the TISEM top-journal list (Top-core, Top, Very good).
       FNEGE grades are 1*, 1, 2, 3, and 4.
       ERIM is the Core list for 2024–2028.
-      Stern is the NYU Stern Economics memo (Top 5, Really excellent, Field, Review).
+      Stern is NYU Stern top-tier journals by department. Grades differ by department.
       Shanghai is binary membership (Top) for Economics, Business Administration, Finance, and Management.
       Field is the source subject when the list has one.
       Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
@@ -111,7 +111,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Stern tiers are Top 5, Really excellent, Field, and Review. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
+      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
@@ -213,16 +213,23 @@
         Field is the Core track.
       </p>
       <p>
-        <strong>Stern</strong> is the NYU Stern Economics top-tier journal memo of 31 July 2020 in freeze
+        <strong>Stern</strong> is NYU Stern’s top-tier journals by department in freeze
         <code>rankings_stern_20261025</code>.
-        The department page is
-        <a href="https://www.stern.nyu.edu/portal-partners/faculty-guide/employment/full-time-faculty/top-tier-journals-department">Top-Tier Journals by Department</a>,
-        and the rows are the
-        <a href="https://www.stern.nyu.edu/sites/default/files/assets/documents/Econ%20Top%20Journals%20-%20July%202020.pdf">economics memo</a>.
-        The finance list on that page is not included.
-        Tiers are Top 5 (5), Really excellent (10 general-interest journals), Field (27), and Review (7).
-        47 of 49 journals (95.9%) have a catalog <code>journal_id</code>.
-        Field journals use the memo’s field heading. The other tiers have no field.
+        The six lists are the memos linked from
+        <a href="https://www.stern.nyu.edu/portal-partners/faculty-guide/employment/full-time-faculty/top-tier-journals-department">Top-Tier Journals by Department</a>.
+        2020 has 176 journals: Accounting 6, Economics 49, Finance 52, Management &amp; Organizations 49, and Marketing 20.
+        157 of those (89.2%) have a catalog <code>journal_id</code>.
+        2021 is Technology, Operations &amp; Statistics: 57 journals, of which 31 (54.4%) have a catalog <code>journal_id</code>.
+        The long panel has 233 rows, of which 188 (80.7%) are matched.
+        Ratings follow each memo.
+        Accounting and Marketing are Top-tier.
+        Economics is Top 5 (5), Really excellent (10), Field (27), and Review (7).
+        Finance is Top-tier (8) and Other notable (44).
+        Management is Top-tier (21), Other notable (22), and Notable review (6).
+        TOpS is Top-tier (26) and Specialized high-impact (31).
+        The grade sort is Top 5, then Really excellent, then Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review.
+        Field on this page is the department.
+        When a memo prints a heading, the cell adds it after the department, including the economics field headings on Field-tier rows.
         The label on this page is Stern.
       </p>
       <p>
@@ -267,7 +274,7 @@
         CNRS uses its domain code.
         ABDC uses <code>field_for</code> from the 2025 catalogs.
         FNEGE uses its domain code. ERIM uses the Core track. Tilburg very-good rows use the group on the TISEM page.
-        Stern field journals use the memo’s field heading. Shanghai uses the subject, and joins two subjects on one row.
+        Stern uses the department, and adds the memo heading when that row has one. Shanghai uses the subject, and joins two subjects on one row.
         FT50 uses the McMaster subject area. A two-subject cell stays one field, and the filter lists that whole subject area.
         Handelsblatt/VWL, UTD24, and Top 5 have no field, so those cells stay blank.
       </p>

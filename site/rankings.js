@@ -16,6 +16,11 @@
   // Handelsblatt letter sits below F; the same letter then uses weight,
   // higher first. Shanghai is one Top grade, so that list stays A–Z.
   // FT50, UTD24, and Top 5 are absent and stay A–Z.
+  // Stern mixes six department vocabularies. Top 5 outranks Really excellent,
+  // which outranks Top-tier. Field and Specialized high-impact are the
+  // specialized tier under that. Other notable, Notable review, and Review
+  // share the bottom tier. Economics keeps its printed order. A department's
+  // top-tier list outranks its notable or specialized list.
   var RATING_RANK = {
     abs_ajg: { "4*": 5, "4": 4, "3": 3, "2": 2, "1": 1 },
     abdc: { "A*": 4, "A": 3, "B": 2, "C": 1 },
@@ -24,9 +29,20 @@
     tilburg: { "Top-core": 3, "Top": 2, "Very good": 1 },
     fnege: { "1*": 7, "1": 6, "2": 5, "3": 4, "4": 3, "EM": 2, "NC": 1 },
     erim: { "STAR": 8, "M-STAR": 7, "P": 6, "EP*": 5, "PA": 4, "S": 3, "S (3=1)": 2, "M": 1 },
-    stern: { "Top 5": 4, "Really excellent": 3, "Field": 2, "Review": 1 },
+    stern: {
+      "Top 5": 5,
+      "Really excellent": 4,
+      "Top-tier": 3,
+      "Field": 2,
+      "Specialized high-impact": 2,
+      "Other notable": 1,
+      "Notable review": 1,
+      "Review": 1
+    },
     shanghai: { "Top": 1 }
   };
+  // build_rankings.py joins a Stern department code and memo heading with this.
+  var STERN_FIELD_SEP = "\u001f";
   var TOP_SUB = {
     abs_ajg: "Highest grade that year",
     cnrs: "Highest category",
@@ -79,7 +95,21 @@
     return numberFormat.format(value);
   }
 
+  function sternParts(code) {
+    var text = code || "";
+    var sep = text.indexOf(STERN_FIELD_SEP);
+    if (sep === -1) return { dept: text, sub: "" };
+    return { dept: text.slice(0, sep), sub: text.slice(sep + 1) };
+  }
+
   function subjectLabel(system, code) {
+    if (system === "stern") {
+      var parts = sternParts(code);
+      var sternLabels = (DATA.fieldLabels && DATA.fieldLabels.stern) || {};
+      var dept = sternLabels[parts.dept] || parts.dept || "";
+      if (!dept) return "";
+      return parts.sub ? dept + " — " + parts.sub : dept;
+    }
     var bySystem = (DATA.fieldLabels && DATA.fieldLabels[system]) || {};
     if (code && Object.prototype.hasOwnProperty.call(bySystem, code)) return bySystem[code];
     return labels[code] || code || "";
@@ -150,6 +180,16 @@
       : ["4*", "4", "3", "2", "1"];
     if (system === "abs_ajg" && String(year) === "2010") {
       return all.filter(function (grade) { return grade !== "4*"; });
+    }
+    if (system === "stern") {
+      var seen = {};
+      var yearKey = String(year);
+      for (var i = 0; i < total; i++) {
+        var row = rows[i];
+        if (row[0] !== "stern" || String(row[1]) !== yearKey || !row[4]) continue;
+        seen[row[4]] = true;
+      }
+      return all.filter(function (grade) { return seen[grade]; });
     }
     return all;
   }
@@ -275,6 +315,7 @@
     var list = [];
     editionRows().forEach(function (index) {
       var code = rows[index][5] || "";
+      if (state.system === "stern") code = sternParts(code).dept;
       if (!code || seen[code]) return;
       seen[code] = true;
       list.push(code);
@@ -289,12 +330,17 @@
     var fields = fieldsForEdition();
     var current = state.field;
     fieldEl.replaceChildren();
-    addOption(fieldEl, "", fields.length ? "All fields" : "No fields");
+    var fieldBlank = state.system === "stern" ? "All departments" : "All fields";
+    addOption(fieldEl, "", fields.length ? fieldBlank : "No fields");
     fields.forEach(function (code) {
       addOption(fieldEl, code, subjectLabel(state.system, code));
     });
     fieldEl.disabled = fields.length === 0;
-    fieldEl.title = fields.length ? "" : "This list has no field";
+    if (state.system === "stern" && fields.length) {
+      fieldEl.title = "Department on this edition. The table adds the memo heading when the row has one.";
+    } else {
+      fieldEl.title = fields.length ? "" : "This list has no field";
+    }
     if (current && fields.indexOf(current) === -1) state.field = "";
   }
 
@@ -334,7 +380,12 @@
     indexes.forEach(function (index) {
       var row = rows[index];
       if (rating && row[4] !== rating) return;
-      if (field && (row[5] || "") !== field) return;
+      if (field) {
+        var rowField = row[5] || "";
+        if (state.system === "stern") {
+          if (sternParts(rowField).dept !== field) return;
+        } else if (rowField !== field) return;
+      }
       if (query && hay[index].indexOf(query) === -1) return;
       matched.push(index);
     });
@@ -431,12 +482,17 @@
       if (row[4] && state.system === "tilburg") ratingCell.title = "TISEM top journal list";
       if (row[4] && state.system === "fnege") ratingCell.title = "FNEGE " + row[1];
       if (row[4] && state.system === "erim") ratingCell.title = "ERIM Journals List Core 2024–2028";
-      if (row[4] && state.system === "stern") ratingCell.title = "NYU Stern Economics top journals, 31 July 2020";
+      if (row[4] && state.system === "stern") {
+        ratingCell.title = "NYU Stern " + subjectLabel("stern", sternParts(row[5] || "").dept) + " top journals, " + row[1];
+      }
       if (row[4] && state.system === "shanghai") ratingCell.title = "ShanghaiRanking top journals " + row[1];
       tr.appendChild(ratingCell);
       var fieldText = row[5] ? subjectLabel(state.system, row[5]) : "";
       var fieldCell = cell(fieldText || "—", row[5] ? "field" : "muted");
-      if (row[5] && fieldText !== row[5]) fieldCell.title = row[5];
+      if (state.system === "stern" && row[5]) {
+        var sternField = sternParts(row[5]);
+        fieldCell.title = sternField.sub ? sternField.dept + " · " + sternField.sub : sternField.dept;
+      } else if (row[5] && fieldText !== row[5]) fieldCell.title = row[5];
       tr.appendChild(fieldCell);
       tr.appendChild(cell(String(row[1])));
       if (showsWeight(state.system)) tr.appendChild(cell(row[8] || "—", row[8] ? "weight" : "muted"));
