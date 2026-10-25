@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal Editors — FT50 and ABDC</title>
-  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors, with Top 5 and UTD24 filters, from the Geographic Dispersion releases.">
+  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG 2024 filters, from the Geographic Dispersion releases.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:title" content="Journal Editors — FT50 and ABDC">
-  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors, with Top 5 and UTD24 filters.">
+  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG 2024 filters.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Geographic Dispersion · FT50, ABDC, Top 5, UTD24</span>
+          <span class="t2">Geographic Dispersion · FT50, ABDC, Top 5, UTD24, AJG 2024</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -44,7 +44,7 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Current editorial boards on the Financial Times FT50 list and the 2025 ABDC Journal Quality List
-      (A*, A, B, and C). Top 5 and UTD24 are extra filters on those same boards.
+      (A*, A, B, and C). Top 5, UTD24, and AJG 2024 are extra filters on those same boards.
       <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
       <span id="asof">Board year 2026.</span>
     </p>
@@ -76,7 +76,7 @@
       <form id="filters" role="search">
         <div class="row">
           <label class="sr-only" for="q">Search editors</label>
-          <input id="q" type="search" name="q" placeholder="Search name, journal, affiliation, or role" autocomplete="off" spellcheck="false">
+          <input id="q" type="search" name="q" placeholder="Search name, journal, affiliation, field, or role" autocomplete="off" spellcheck="false">
           <button class="btn" type="submit">Search</button>
           <button class="btn" type="button" id="clear">Clear</button>
         </div>
@@ -96,6 +96,14 @@
           <select id="country" name="country">
             <option value="">All countries</option>
           </select>
+          <label class="lbl" for="institution">Institution</label>
+          <select id="institution" name="aff">
+            <option value="">All institutions</option>
+          </select>
+          <label class="lbl" for="field">Field</label>
+          <select id="field" name="field">
+            <option value="">All fields</option>
+          </select>
           <label class="lbl" for="journal">Journal</label>
           <select id="journal" name="journal">
             <option value="">All journals</option>
@@ -108,8 +116,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. The same person on another journal is a separate row.</p>
-      <p class="hint" id="aff-note" hidden></p>
+      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG 2024 adds a badge on journals in the CABS Academic Journal Guide 2024. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
@@ -122,6 +129,7 @@
             <th scope="col"><button type="button" data-sort="name">Name</button></th>
             <th scope="col"><button type="button" data-sort="role">Role</button></th>
             <th scope="col"><button type="button" data-sort="journal">Journal</button></th>
+            <th scope="col"><button type="button" data-sort="field">Field</button></th>
             <th scope="col"><button type="button" data-sort="universe">List</button></th>
             <th scope="col"><button type="button" data-sort="affiliation">Affiliation</button></th>
             <th scope="col"><button type="button" data-sort="country">Country</button></th>
@@ -141,7 +149,9 @@
         It is built from the analysis releases under <code>data/editors/*/releases/current/</code>,
         not from a live scrape of this repository. The FT50 file is the ROR-enriched current board.
         ABDC is the 2025 Journal Quality List at A*, A, B, and C.
-        Top 5 and UTD24 are tags on those releases, read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
+        Top 5, UTD24, and AJG 2024 are tags on those releases.
+        Top 5 and UTD24 are read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
+        AJG 2024 is read from <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
         core49 is an older ABDC A* subset and is not a separate list here. Authors are not in this version.
       </p>
       <p>
@@ -166,6 +176,24 @@
         INFORMS Journal on Computing, listed by UTD as Journal on Computing, is included from the ABDC A release so the chip covers the full list.
         Journal of Applied Psychology remains an FT50 appointment and does not carry a UTD24 badge.
       </p>
+      <h2>AJG 2024</h2>
+      <p>
+        AJG 2024 is the CABS Academic Journal Guide 2024 edition.
+        The chip means the journal is on that list, at any grade.
+        The id join uses <code>abs_ajg_2024.csv</code> and the 2024 rows of <code>journal_id_crosswalk.csv</code>, so a journal whose primary id is a core49 slug still matches the ABDC id on the board file.
+        The Economic Journal is one of those.
+        Titles the freeze left unmatched are not tagged, and journals that are not on the 2024 list do not get the badge.
+        Accounting Educators Journal stays an ABDC journal without an AJG 2024 badge.
+        Other editions and the grade table stay on the <a href="rankings.html">Rankings</a> page.
+      </p>
+      <h2>Institution and field</h2>
+      <p>
+        Institution lists the affiliation stored on the row: the matched ROR name when the release has one, otherwise the canonical or masthead affiliation.
+        Choosing an institution keeps appointments with that exact affiliation.
+        The <a href="institutions.html">Institutions</a> page links here with that name.
+        Field is <code>field_for</code> from the 2025 ABDC catalogs, the same subject as the Field filter on <a href="journals.html">Journals</a>.
+        The menu shows the subject name. The code stays on the cell title.
+      </p>
       <p>
         Country and continent are the ROR fields on the release. Affiliations prefer the matched institution name.
         Emails, phone numbers, and photos are not published; contact strings found in a masthead field are removed.
@@ -177,8 +205,9 @@
         A journal name opens this directory on that journal. An institution name opens it on that affiliation and country.
       </p>
       <p>
-        ABS/AJG, CNRS, and Handelsblatt/VWL grades, the 2025 ABDC ratings, and FT50, UTD24, and Top 5 membership lists are on the <a href="rankings.html">Rankings</a> page.
-        They are not editorial appointments. The chips on this directory are unchanged, and ABS/AJG is not a chip.
+        CNRS and Handelsblatt/VWL grades, the other ABS/AJG editions, the 2025 ABDC ratings, and FT50, UTD24, and Top 5 membership lists are on the <a href="rankings.html">Rankings</a> page.
+        Those rows are journal grades, not editorial appointments.
+        The AJG chip on this directory is 2024 membership only.
       </p>
       <p class="small">
         Dataset license CC-BY-4.0. Journal mastheads remain the publishers’.

@@ -184,6 +184,7 @@
       button.className = "chip";
       button.dataset.universe = universe.id;
       button.setAttribute("aria-pressed", "false");
+      if (universe.title) button.title = universe.title;
       var count = DATA.counts.byUniverse[universe.id];
       button.appendChild(document.createTextNode(universe.label + " "));
       var countNode = document.createElement("span");
@@ -292,6 +293,7 @@
     var node = document.createElement("span");
     node.className = "badge u-" + universe.id;
     node.textContent = universe.label;
+    if (universe.title) node.title = universe.title;
     return node;
   }
 

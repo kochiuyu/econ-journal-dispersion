@@ -29,6 +29,8 @@
   var roleFamily = DATA.roleFamily;
   var families = DATA.families;
   var journals = DATA.journals;
+  var fields = DATA.fields || [""];
+  var journalField = DATA.journalField || [];
   var countries = DATA.countries;
   var continents = DATA.continents;
   var urls = DATA.urls;
@@ -42,6 +44,8 @@
   var continentEl = document.getElementById("continent");
   var countryEl = document.getElementById("country");
   var journalEl = document.getElementById("journal");
+  var institutionEl = document.getElementById("institution");
+  var fieldEl = document.getElementById("field");
   var pageSizeEl = document.getElementById("pagesize");
   var universeRow = document.getElementById("universe-row");
   var form = document.getElementById("filters");
@@ -87,6 +91,7 @@
       country: params.get("country") || "",
       journal: params.get("journal") || "",
       aff: params.get("aff") || "",
+      field: params.get("field") || "",
       sort: params.get("sort") || "name",
       dir: params.get("dir") === "desc" ? "desc" : "asc",
       page: page > 0 ? page : 1,
@@ -103,6 +108,7 @@
     if (state.country) params.set("country", state.country);
     if (state.journal) params.set("journal", state.journal);
     if (state.aff) params.set("aff", state.aff);
+    if (state.field) params.set("field", state.field);
     if (state.sort !== "name") params.set("sort", state.sort);
     if (state.dir === "desc") params.set("dir", "desc");
     if (state.page > 1) params.set("page", String(state.page));
@@ -124,12 +130,27 @@
       roles[row[1]],
       families[roleFamily[row[1]]],
       journals[row[2]],
+      fieldText(journalField[row[2]]),
+      fieldLabel(fieldText(journalField[row[2]])),
       row[4],
       countries[row[5]],
       continents[row[6]]
     ].join("\n").toLowerCase();
     hay[index] = cached;
     return cached;
+  }
+
+  function fieldText(index) {
+    return fields[index] || "";
+  }
+
+  function fieldLabel(field) {
+    var match = /^(\d+)\s+([\s\S]+)$/.exec(field || "");
+    return match ? match[2] : (field || "");
+  }
+
+  function fieldOf(row) {
+    return fieldText(journalField[row[2]]);
   }
 
   function universeText(mask) {
@@ -149,6 +170,7 @@
     switch (sort) {
       case "role": return roles[row[1]] || "";
       case "journal": return journals[row[2]] || "";
+      case "field": return fieldLabel(fieldOf(row));
       case "universe": return universeText(row[3]);
       case "affiliation": return row[4] || "";
       case "country": return countries[row[5]] || "";
@@ -195,6 +217,7 @@
     var country = state.country;
     var journal = state.journal;
     var aff = state.aff;
+    var field = state.field;
     var matched = [];
     var uniCounts = {};
     for (var u = 0; u < universes.length; u++) uniCounts[universes[u].id] = 0;
@@ -204,7 +227,8 @@
       var row = rows[index];
       if (mask && (row[3] & mask) === 0) continue;
       if (journal && journals[row[2]] !== journal) continue;
-      if (aff && (row[4] || "") !== aff) continue;
+      if (!matchesChoice(row[4] || "", aff)) continue;
+      if (!matchesChoice(fieldOf(row), field)) continue;
       if (!matchesChoice(continents[row[6]] || "", continent)) continue;
       if (!matchesChoice(countries[row[5]] || "", country)) continue;
       if (role && families[roleFamily[row[1]]] !== role) continue;
@@ -339,6 +363,52 @@
     var journalNames = journals.slice().sort(function (a, b) { return collator.compare(a, b); });
     journalNames.forEach(function (name) { addOption(journalEl, name, name); });
 
+    var institutionNames = [];
+    var seenInstitution = new Set();
+    var blankInstitution = false;
+    for (var i = 0; i < total; i++) {
+      var institution = rows[i][4] || "";
+      if (!institution) {
+        blankInstitution = true;
+        continue;
+      }
+      if (seenInstitution.has(institution)) continue;
+      seenInstitution.add(institution);
+      institutionNames.push(institution);
+    }
+    institutionNames.sort(function (a, b) { return collator.compare(a, b); });
+    institutionNames.forEach(function (name) { addOption(institutionEl, name, name); });
+    if (blankInstitution) addOption(institutionEl, "__blank__", "Unknown");
+    if (state.aff && state.aff !== "__blank__" && !seenInstitution.has(state.aff)) {
+      addOption(institutionEl, state.aff, state.aff);
+    }
+
+    var fieldNames = [];
+    var seenField = new Set();
+    var blankField = false;
+    for (var j = 0; j < journals.length; j++) {
+      var fieldName = fieldText(journalField[j]);
+      if (!fieldName) {
+        blankField = true;
+        continue;
+      }
+      if (seenField.has(fieldName)) continue;
+      seenField.add(fieldName);
+      fieldNames.push(fieldName);
+    }
+    fieldNames.sort(function (a, b) { return collator.compare(fieldLabel(a), fieldLabel(b)); });
+    fieldNames.forEach(function (name) {
+      var option = document.createElement("option");
+      option.value = name;
+      option.textContent = fieldLabel(name);
+      if (fieldLabel(name) !== name) option.title = name;
+      fieldEl.appendChild(option);
+    });
+    if (blankField) addOption(fieldEl, "__blank__", "Unknown");
+    if (state.field && state.field !== "__blank__" && !seenField.has(state.field)) {
+      addOption(fieldEl, state.field, fieldLabel(state.field));
+    }
+
     universes.forEach(function (universe) {
       var button = document.createElement("button");
       button.type = "button";
@@ -346,6 +416,7 @@
       button.dataset.universe = universe.id;
       button.setAttribute("aria-pressed", "false");
       var count = DATA.counts.byUniverse[universe.id];
+      if (universe.title) button.title = universe.title;
       button.appendChild(document.createTextNode(universe.label + " "));
       var countNode = document.createElement("span");
       countNode.className = "c";
@@ -365,19 +436,11 @@
     if (document.activeElement !== qEl) qEl.value = state.q;
     roleEl.value = state.role;
     journalEl.value = state.journal;
+    institutionEl.value = state.aff;
+    fieldEl.value = state.field;
     pageSizeEl.value = String(state.pageSize);
     continentEl.value = state.continent;
     refillCountries();
-    var affNote = document.getElementById("aff-note");
-    if (affNote) {
-      if (state.aff) {
-        affNote.hidden = false;
-        affNote.textContent = "Affiliation filter: " + state.aff + ". Clear removes it.";
-      } else {
-        affNote.hidden = true;
-        affNote.textContent = "";
-      }
-    }
     var chips = universeRow.querySelectorAll(".chip");
     chips.forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
@@ -395,6 +458,7 @@
     var node = document.createElement("span");
     node.className = "badge u-" + universe.id;
     node.textContent = universe.label;
+    if (universe.title) node.title = universe.title;
     return node;
   }
 
@@ -412,7 +476,7 @@
     if (!slice.length) {
       var tr = document.createElement("tr");
       var td = document.createElement("td");
-      td.colSpan = 7;
+      td.colSpan = 8;
       td.className = "empty";
       td.textContent = "No editors match these filters.";
       tr.appendChild(td);
@@ -440,6 +504,13 @@
         journalCell.textContent = journalName;
       }
       tr.appendChild(journalCell);
+
+      var fieldName = fieldOf(row);
+      var fieldCell = document.createElement("td");
+      fieldCell.className = fieldName ? "field" : "muted";
+      fieldCell.textContent = fieldName ? fieldLabel(fieldName) : "—";
+      if (fieldName && fieldLabel(fieldName) !== fieldName) fieldCell.title = fieldName;
+      tr.appendChild(fieldCell);
 
       var listCell = document.createElement("td");
       var any = false;
@@ -549,6 +620,16 @@
     state.page = 1;
     render();
   });
+  institutionEl.addEventListener("change", function () {
+    state.aff = institutionEl.value;
+    state.page = 1;
+    render();
+  });
+  fieldEl.addEventListener("change", function () {
+    state.field = fieldEl.value;
+    state.page = 1;
+    render();
+  });
   continentEl.addEventListener("change", function () {
     state.continent = continentEl.value;
     state.page = 1;
@@ -573,6 +654,7 @@
     state.country = "";
     state.journal = "";
     state.aff = "";
+    state.field = "";
     state.sort = "name";
     state.dir = "asc";
     state.page = 1;
