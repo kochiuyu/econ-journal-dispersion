@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal rankings</title>
-  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, and ERIM Core grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
+  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, Stern Economics, and Shanghai top-journal grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:title" content="Journal rankings">
-  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, and ABDC, plus FT50, UTD24, and Top 5.">
+  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, Stern Economics, Shanghai, and ABDC, plus FT50, UTD24, and Top 5.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:type" content="website">
   <!--
@@ -45,13 +45,15 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Journal grades, weights, and membership lists, not editorial appointments.
-      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, and ERIM are editions with ratings.
+      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, and Shanghai are editions with ratings.
       Handelsblatt/VWL also shows the published weight.
       ABDC is the 2025 Journal Quality List (A*, A, B, C).
       FT50, UTD24, and Top 5 are lists with no grade tiers.
       Tilburg is the TISEM top-journal list (Top-core, Top, Very good).
       FNEGE grades are 1*, 1, 2, 3, and 4.
       ERIM is the Core list for 2024–2028.
+      Stern is the NYU Stern Economics memo (Top 5, Really excellent, Field, Review).
+      Shanghai is binary membership (Top) for Economics, Business Administration, Finance, and Management.
       Field is the source subject when the list has one.
       Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
       Every AJG edition stays on this page.
@@ -109,7 +111,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Hover a Tilburg, FNEGE, or ERIM grade for the source name. A blank journal id is unmatched in that freeze.</p>
+      <p class="hint">Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Stern tiers are Top 5, Really excellent, Field, and Review. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
@@ -211,6 +213,38 @@
         Field is the Core track.
       </p>
       <p>
+        <strong>Stern</strong> is the NYU Stern Economics top-tier journal memo of 31 July 2020 in freeze
+        <code>rankings_stern_20261025</code>.
+        The department page is
+        <a href="https://www.stern.nyu.edu/portal-partners/faculty-guide/employment/full-time-faculty/top-tier-journals-department">Top-Tier Journals by Department</a>,
+        and the rows are the
+        <a href="https://www.stern.nyu.edu/sites/default/files/assets/documents/Econ%20Top%20Journals%20-%20July%202020.pdf">economics memo</a>.
+        The finance list on that page is not included.
+        Tiers are Top 5 (5), Really excellent (10 general-interest journals), Field (27), and Review (7).
+        47 of 49 journals (95.9%) have a catalog <code>journal_id</code>.
+        Field journals use the memo’s field heading. The other tiers have no field.
+        The label on this page is Stern.
+      </p>
+      <p>
+        <strong>Shanghai</strong> is the ShanghaiRanking top-journal list for Economics, Business Administration, Finance, and Management in freeze
+        <code>rankings_shanghai_20261025</code>.
+        The survey page is the
+        <a href="https://www.shanghairanking.com/activities/aes">Academic Excellence Survey</a>.
+        2026 is the
+        <a href="https://wjgs-rk.oss-cn-hangzhou.aliyuncs.com/univCn/gras/2026/Top_Journal_list_2026.pdf">2026 PDF</a>:
+        19 journals, all with a catalog <code>journal_id</code>.
+        Economics is the classic top five and is kept as a subject.
+        2024 is the
+        <a href="https://www.shanghairanking.com/_pub/com/gras/2024/Top%20Journal%20list.pdf">2024 PDF</a>:
+        57 journals, of which 55 (96.5%) have a catalog <code>journal_id</code>.
+        Membership is binary, so every row is Top.
+        Field is the subject. A journal in two subjects is one row, and Field joins those subjects.
+        2026 is 19 journals because Academy of Management Journal, Administrative Science Quarterly, and Strategic Management Journal are in both Business Administration and Management.
+        2024 Business Administration is the Journal Citation Report block in that PDF. The other included rows are the Academic Excellence Survey.
+        The long panel has 76 rows, of which 74 (97.4%) are matched.
+        The label on this page is Shanghai.
+      </p>
+      <p>
         <strong>ABDC</strong> is the 2025 ABDC Journal Quality List, one edition, with ratings A*, A, B, and C.
         Those tiers are the catalogs
         <code>journals/catalog_abdc_a_star.csv</code> (219),
@@ -230,10 +264,11 @@
         CNRS uses its domain code.
         ABDC uses <code>field_for</code> from the 2025 catalogs.
         FNEGE uses its domain code. ERIM uses the Core track. Tilburg very-good rows use the group on the TISEM page.
+        Stern field journals use the memo’s field heading. Shanghai uses the subject, and joins two subjects on one row.
         Handelsblatt/VWL, FT50, UTD24, and Top 5 have no field, so those cells stay blank.
       </p>
       <p>
-        On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, and ERIM, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+        On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, ERIM, Stern, and Shanghai, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
         On ABDC, FT50, UTD24, and Top 5, <code>journal_id</code> is the catalog id.
       </p>
       <p class="small">
