@@ -34,6 +34,7 @@
   var countries = DATA.countries;
   var continents = DATA.continents;
   var urls = DATA.urls;
+  var profiles = DATA.profiles || [""];
   var universes = DATA.universes;
   var total = rows.length;
   var hay = new Array(total);
@@ -481,6 +482,28 @@
     return td;
   }
 
+  function httpUrl(url) {
+    return url.indexOf("http://") === 0 || url.indexOf("https://") === 0;
+  }
+
+  function nameCell(name, url) {
+    var td = document.createElement("td");
+    if (name && httpUrl(url)) {
+      var link = document.createElement("a");
+      link.className = "person";
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.title = "Faculty profile";
+      link.textContent = name;
+      td.appendChild(link);
+    } else {
+      td.textContent = name || "—";
+      if (!name) td.className = "muted";
+    }
+    return td;
+  }
+
   function renderTable(matched) {
     var start = (state.page - 1) * state.pageSize;
     var slice = matched.slice(start, start + state.pageSize);
@@ -497,14 +520,15 @@
     slice.forEach(function (index) {
       var row = rows[index];
       var tr = document.createElement("tr");
-      tr.appendChild(cell(row[0]));
+      var profileUrl = row.length > 8 ? (profiles[row[8]] || "") : "";
+      tr.appendChild(nameCell(row[0], profileUrl));
       tr.appendChild(cell(roles[row[1]]));
 
       var journalCell = document.createElement("td");
       journalCell.className = "journal";
       var url = urls[row[7]] || "";
       var journalName = journals[row[2]] || "—";
-      if (url.indexOf("http://") === 0 || url.indexOf("https://") === 0) {
+      if (httpUrl(url)) {
         var link = document.createElement("a");
         link.className = "journal";
         link.href = url;

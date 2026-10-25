@@ -1,74 +1,31 @@
-# editors_current_20261024 — current-board release for Econ-Journal-Web
+# editors_current_20261025
 
-Frozen: 2026-10-24 (Asia/Hong_Kong). Source panels under `abdc/panels/` and `ft50/panels/`.
+Frozen editorial-board current panels in this repository. Source handoff: `editors_current_20261025` (2026-10-25). The previous public freeze was `editors_current_20261024`.
 
-## Contents
+## Change vs editors_current_20261024
 
-| File | Rows |
-|---|---:|
-| `editors_abdc_a_star_current.csv` | 25,190 |
-| `editors_abdc_a_current.csv` | 45,363 |
-| `editors_abdc_b_current.csv` | 42,193 |
-| `editors_abdc_c_current.csv` | 26,915 |
-| `editors_ft50_current.csv` | 10,050 |
+- Adds person profile columns from the live panels (QS / econ-faculty join, plus a partial HV web pass):
+  - `faculty_profile_url` (primary person link for the directory)
+  - `faculty_home_page` (secondary; the directory uses `faculty_profile_url` and does not link the home page)
+  - `faculty_match_method`, `faculty_match_confidence`, `faculty_person_key`
+- No new scrape for this freeze. ORCID was not filled. OpenAlex and RePEc columns already on these files are unchanged, and the public site still does not publish them as person links.
+- AJG gap panels are not in this freeze.
+- Tenure columns from `editors_current_20261024` (`tenure_start`, `tenure_end`, `tenure_raw`, `is_current`) are unchanged. `ror_id` was not modified. `raw_html` is not included.
 
-`raw_html` is **not** included. Do not invent names or ROR IDs on republish.
+## Files in this repository
 
-## What changed since prior public release
+| File | Rows | `faculty_profile_url` | `faculty_home_page` |
+|---|---:|---:|---:|
+| `data/editors/abdc/releases/current/editors_abdc_a_star_current.csv` | 25,190 | 8,467 (33.6%) | 3,565 (14.2%) |
+| `data/editors/abdc/releases/current/editors_abdc_a_current.csv` | 45,363 | 5,202 (11.5%) | 1,758 (3.9%) |
+| `data/editors/abdc/releases/current/editors_abdc_b_current.csv` | 42,193 | 3,129 (7.4%) | 1,192 (2.8%) |
+| `data/editors/abdc/releases/current/editors_abdc_c_current.csv` | 26,915 | 1,228 (4.6%) | 486 (1.8%) |
+| `data/editors/ft50/releases/current/editors_ft50_current.csv` | 10,050 | 4,724 (47.0%) | 1,824 (18.1%) |
 
-### 1. Name-year clean (`editor_name` person-only)
+The four ABDC files in this folder are the freeze files. The FT50 slim file has no ROR columns. `editors_ft50_current_with_ror.csv` keeps the ROR columns already in this repository and adds the same `faculty_*` values. See [`../../../ft50/releases/current/RELEASE_NOTES.md`](../../../ft50/releases/current/RELEASE_NOTES.md).
 
-Term years / tenure labels stripped from `editor_name` (colon/paren/comma/leading ranges, etc.). Year-only and Business History garbage affiliations cleared. Bio/memorial lifespan names left as-is (`Nuno Monteiro (1971-2021)`, `Rob Potter (b. 1950 –d. 2014)`).
+Do not invent names, ROR ids, or OpenAlex/ORCID person links on republish.
 
-| Panel | Names cleaned | Aff junk cleared |
-|---|---:|---:|
-| A* | 56 (+1 prose extract) | 22 |
-| A | 21 | 6 |
-| B | 36 | 14 |
-| C | 0 | 7 |
-| FT50 | 51 (+1 prose) | 1 |
+## Public site
 
-Log: `abdc/reports/NAME_YEAR_CLEAN_log.csv`.
-
-### 2. Tenure columns (new)
-
-Added to every panel:
-
-| Column | Meaning |
-|---|---|
-| `tenure_start` | YYYY or blank |
-| `tenure_end` | YYYY or blank (blank if open-ended / present) |
-| `tenure_raw` | Original range text (e.g. `2017–2018`, `2025–present`, `-2026`) |
-| `is_current` | `true` if open/present or end ≥ 2026; `false` if closed past term; **blank** if no tenure info (not invented for ordinary current-board rows) |
-
-Filled from pre-clean name (and year-only affiliation) backups — same evidence as the name-year strip. Bio/lifespan patterns never become tenure.
-
-| Panel | Rows with tenure_raw | Nonempty tenure_start | is_current true | is_current false |
-|---|---:|---:|---:|---:|
-| A* | 57 | 57 | 3 | 54 |
-| A | 27 | 11 | 22 | 5 |
-| B | 50 | 50 | 1 | 49 |
-| C | 7 | 7 | 0 | 7 |
-| FT50 | 52 | 52 | 2 | 50 |
-
-Note: A’s `tenure_start` count is lower than `tenure_raw` because open-start forms like `(-2026)` leave start blank. Report: `abdc/reports/TENURE_COLS.md`, fill log `TENURE_COLS_fill_log.csv`.
-
-### 3. ROR (already present; unchanged this freeze)
-
-ABDC A*/A/B/C panels already have ROR + geo (~99.7–99.9% of non-empty affiliations). This freeze did **not** modify `ror_id`. FT50 current CSV in this package is the slim panel (no ROR columns); FT50+ROR remains at `ft50/panels/editors_ft50_current_with_ror.csv` if needed separately.
-
-## Republish
-
-Copy into `data/editors/*/releases/` and rebuild Pages. No GitHub push from this side.
-
-## In this repository
-
-Copied 2026-10-24 into the analysis releases only (no scrapes, raw HTML, or caches):
-
-- `data/editors/abdc/releases/current/editors_abdc_{a_star,a,b,c}_current.csv`
-- `data/editors/ft50/releases/current/editors_ft50_current.csv` (10,050 rows)
-- `data/editors/ft50/releases/current/editors_ft50_current_with_ror.csv` (10,050 rows)
-
-`editors_ft50_current_with_ror.csv` has the same person-only `editor_name` values and the same tenure columns (`tenure_start`, `tenure_end`, `tenure_raw`, `is_current`) as the slim FT50 panel. `ror_id` was not changed in this freeze.
-
-`site/data.js` is generated by `scripts/build_site.py` in the GitHub Pages workflow and is not committed. Tenure columns stay on the CSVs; the public directory does not display them.
+`scripts/build_site.py` passes a non-empty `faculty_profile_url` into `site/data.js`. The directory links the person name only when that URL is http(s) and does not contain an email. `site/data.js` is generated by the GitHub Pages workflow and is not committed. Tenure columns stay on the CSVs; the public directory does not display them.
