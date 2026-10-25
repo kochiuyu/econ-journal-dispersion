@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal Editors — FT50 and ABDC</title>
-  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG grade filters, from the Geographic Dispersion releases.">
+  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors. AJG chips are 2024 CABS grades on those boards, not the full guide.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:title" content="Journal Editors — FT50 and ABDC">
-  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors, with institution, field, Top 5, UTD24, and AJG grade filters.">
+  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors. AJG chips are 2024 CABS grades on those boards, not the full guide.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:type" content="website">
   <!--
@@ -44,8 +44,11 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Current editorial boards on the Financial Times FT50 list and the 2025 ABDC Journal Quality List
-      (A*, A, B, and C). Top 5, UTD24, and AJG grades (4*, 4, 3, 2, and 1) are extra filters on those same boards.
+      (A*, A, B, and C) only. Top 5 and UTD24 are extra filters on those same boards.
+      AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) tagged onto those rows.
+      They do not add a separate board scrape, and the full guide is not in this directory.
       <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
+      Full AJG editions are on <a href="rankings.html">Rankings</a>.
       <span id="asof">Board year 2026.</span>
     </p>
 
@@ -116,7 +119,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. AJG adds one grade badge, AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. Many names stay plain text because that fill is partial.</p>
+      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip adds one grade when the journal has a 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Many board journals have no grade, and AJG titles outside these boards never appear. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. Many names stay plain text because that fill is partial.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
@@ -149,9 +152,10 @@
         It is built from the analysis releases under <code>data/editors/*/releases/current/</code>,
         not from a live scrape of this repository. The FT50 file is the ROR-enriched current board.
         ABDC is the 2025 Journal Quality List at A*, A, B, and C.
-        Top 5, UTD24, and AJG grades are tags on those releases.
-        Top 5 and UTD24 are read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
-        AJG grades are read from the 2024 edition in <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
+        Those two releases are the whole directory.
+        Top 5 and UTD24 are tags read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
+        AJG chips are 2024 CABS grades tagged onto the same rows from <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code> and its crosswalk.
+        They do not add a board scrape.
         core49 is an older ABDC A* subset and is not a separate list here. Authors are not in this version.
       </p>
       <p>
@@ -178,15 +182,19 @@
       </p>
       <h2>AJG grades</h2>
       <p>
-        AJG chips follow the same pattern as ABDC A*, A, B, and C: the list chip and the row badge both show the grade.
-        The grades are AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1.
-        They come from <code>rating</code> on the 2024 edition, the latest edition in
+        AJG chips are grades on the FT50 and ABDC rows. The list chip and the row badge both show one grade:
+        AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1.
+        The grade is <code>rating</code> on the 2024 edition, the latest edition in
         <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
         The id join uses <code>abs_ajg_2024.csv</code> and the 2024 rows of <code>journal_id_crosswalk.csv</code>, so a journal whose primary id is a core49 slug still matches the ABDC id on the board file.
         The Economic Journal is one of those, and its badge is AJG 4.
-        Titles the freeze left unmatched are not tagged, and journals that are not on that edition do not get an AJG badge.
+      </p>
+      <p>
+        That edition has 1,823 journals. 1,378 map to a catalog id, and about 1,356 of those sit on a current board and can show a chip here.
+        The 445 unmatched titles have no id and never get a chip. A small set of mapped titles are not on these boards, so they stay off the directory too.
+        Many ABDC board journals have no AJG grade: about 2,400 ABDC board journal ids, against about 1,356 with an AJG hit.
         Accounting Educators Journal stays an ABDC journal without an AJG badge.
-        Earlier editions stay on the <a href="rankings.html">Rankings</a> page.
+        Earlier editions, and the AJG titles that never receive a chip, stay on the <a href="rankings.html">Rankings</a> page.
         ABDC labels are unchanged.
       </p>
       <h2>Institution and field</h2>
@@ -213,7 +221,7 @@
       <p>
         CNRS and Handelsblatt/VWL grades, the earlier ABS/AJG editions, the 2025 ABDC ratings, and FT50, UTD24, and Top 5 membership lists are on the <a href="rankings.html">Rankings</a> page.
         Those rows are journal grades, not editorial appointments.
-        The AJG chips on this directory are the 2024 grade only.
+        The AJG chips on this directory are the 2024 grades that match a current board.
       </p>
       <p class="small">
         Dataset license CC-BY-4.0. Journal mastheads remain the publishers’.
