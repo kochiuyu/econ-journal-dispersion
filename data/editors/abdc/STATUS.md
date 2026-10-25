@@ -23,6 +23,6 @@ Excluded: `*.before_ror.csv`, `abdc/raw/`, scrape queues, `journals_abdc_b_produ
 
 Coverage still varies by rating (live scrape / overlap seeding). Treat these as **current-board snapshots**, not a balanced historical panel.
 
-Freeze `editors_current_20261025`: the current CSVs add `faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. Tenure columns from the previous freeze are unchanged. See `releases/current/RELEASE_NOTES.md`.
+Freeze `editors_display_names_20261025`: `editor_name` is the cleaned display name. When the name changed, the previous value is `editor_name_raw`. Faculty columns (`faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, `faculty_person_key`), tenure columns, and `ror_id` are still the `editors_current_20261025` values. See `releases/current/RELEASE_NOTES.md`.
 
 UTD24’s INFORMS Journal on Computing (`informs_journal_computing`; UTD label “Journal on Computing”) is multi-tagged from the A panel. See `journals/catalog_utd24.csv`. There is no separate UTD24 release.
