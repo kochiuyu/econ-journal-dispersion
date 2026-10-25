@@ -51,8 +51,8 @@ data/
 
 | Stream | State in this repo |
 |--------|--------------------|
-| Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_current_20261025` |
-| Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` — same freeze (ROR-enriched where available) |
+| Editors — FT50 | Current-board panels in `releases/current/` — freeze `editors_ft50_faculty_20261025` (`faculty_profile_url` on 8,199 of 10,050 rows, 81.6%) |
+| Editors — ABDC A*/A/B/C | Current-board panels in `releases/current/` — freeze `editors_current_20261025` (ROR-enriched where available) |
 | Editors — AJG gap | Current-board panels in `releases/current/` — freeze `editors_abs_ajg_gap_20261025` (journals not already in the FT50/ABDC boards) |
 | Editors — core49 | Documented in `STATUS.md`; multi-year panels not yet copied into a pinned release |
 | Affiliations (core49 TOC spine) | Canonical articles / affiliations / issues under `releases/canonical/` |
@@ -70,7 +70,7 @@ core49 is not included (it is an older ABDC A* subset, not a separate universe i
 
 `scripts/build_site.py` reads the current editor releases and writes `site/meta.json` plus `site/data/`. The hub fetches only `meta.json` (counts and per-list totals). The directory loads `site/data/shell.js`, then one file per list chip (`ft50.js`, `a_star.js`, `a.js`, `b.js`, `c.js`, `top5.js`, `utd24.js`, `ajg_4star.js`, `ajg_4.js`, `ajg_3.js`, `ajg_2.js`, `ajg_1.js`). A row is copied into every chip whose bit is set; the browser dedupes. The directory opens on FT50. Top 5 rows are already in that file. Other chips download when selected, or when a journal or institution link needs them. `?u=` names chips. `u=-` selects none. `?journal=` or `?aff=` with no `u` loads the chip set that contains that journal or affiliation. An old root URL with a directory query, or `#directory`, redirects to `directory.html`.
 
-The directory is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. Institution is a typeahead over the lists loaded so far, not a menu of every affiliation. A name links to `faculty_profile_url` when that cell is filled. Many rows have no profile, and the page does not substitute a faculty home page or an ORCID, OpenAlex, or RePEc id. Emails, phone numbers, and photos are not published. `site/data.js` is not written.
+The directory is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. Institution is a typeahead over the lists loaded so far, not a menu of every affiliation. A name links to `faculty_profile_url` when that cell is filled. On the FT50 current release that cell is filled on 8,199 of 10,050 rows (81.6%). Rows that are still blank stay plain text, and the page does not substitute a faculty home page or an ORCID, OpenAlex, or RePEc id. Emails, phone numbers, and photos are not published. `site/data.js` is not written.
 
 One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5, UTD24, or AJG grade keeps that badge on the same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
 
