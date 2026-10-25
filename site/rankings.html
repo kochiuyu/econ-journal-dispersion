@@ -49,7 +49,7 @@
       ABDC is the 2025 Journal Quality List (A*, A, B, C).
       FT50, UTD24, and Top 5 are lists with no grade tiers.
       Field is the source subject when the list has one.
-      Directory AJG chips are only the 2024 grades on current FT50 and ABDC boards.
+      Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
       Every AJG edition stays on this page.
     </p>
 
@@ -132,11 +132,13 @@
       <h2>About these rankings</h2>
       <p>
         This page lists journal grades and membership lists. It is separate from the
-        <a href="./#directory">editor directory</a>, whose boards are current FT50 and ABDC only.
-        Top 5 and UTD24 filter that directory as tags on those boards.
-        Directory AJG chips are the 2024 grade (AJG 4*, AJG 4, AJG 3, AJG 2, AJG 1), joined by catalog id from this freeze, including crosswalk ids, onto those same boards.
-        A chip is a grade on a board journal. Unmatched titles, and mapped titles that are not on the current boards, never appear there.
-        This page still lists every ABS/AJG edition and grade.
+        <a href="./#directory">editor directory</a>.
+        The editor directory is FT50, ABDC A*/A/B/C, and AJG-gap boards.
+        Top 5 and UTD24 filter that directory as tags on the FT50 and ABDC boards.
+        Directory AJG chips are the 2024 grade (AJG 4*, AJG 4, AJG 3, AJG 2, AJG 1), joined by catalog id from this freeze, including crosswalk ids, onto FT50 and ABDC boards.
+        A chip from that join is a grade on a board journal. Unmatched titles on those boards are not tagged by the join.
+        AJG-gap boards are journals not already in those editor files; their grade comes from the panel.
+        This page still lists every ABS/AJG edition and grade, including titles with no board.
       </p>
       <p>
         <strong>ABS/AJG</strong> is the CABS Academic Journal Guide in the Editor-Collector freeze
@@ -144,9 +146,10 @@
         Editions are 2010, 2015, 2018, 2021, and 2024.
         Ratings are 4*, 4, 3, 2, and 1. ABS 2010 has no 4*.
         AJG 2024 has 1,823 journals, of which 1,378 (75.6%) have a catalog <code>journal_id</code>.
-        About 1,356 of those mapped titles are on a current FT50 or ABDC board and can show a Directory chip.
-        The 445 with no id never do, and a small set of mapped titles are not on those boards.
+        About 1,356 of those mapped titles are on a current FT50 or ABDC board and can show a Directory chip from the id join.
+        The 445 with no id are not tagged by that join, and a small set of mapped titles are not on those boards.
         Many ABDC board journals have no AJG grade (about 2,400 board journal ids, against about 1,356 with a hit).
+        AJG-gap boards add journals that are not in those editor files. Directory chips cover 1,796 journals. 27 titles still have no board.
         Across all five editions, 1,478 of 7,245 rows are unmatched.
         The files are under <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
       </p>

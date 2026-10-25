@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build the public editor directory (site/data.js) from current releases.
 
-The site lists current FT50 and ABDC editorial-board appointments only.
+The site lists current FT50 and ABDC editorial-board appointments, plus
+AJG-gap boards for journals that are not already in those freezes.
 core49 is not a source. Authors are not included.
 
 Identity
@@ -53,23 +54,36 @@ Journal of Management is likewise on FT50 and absent from UTD24.
 
 AJG grades
 -----------
-AJG grades are extra tags on those same rows. They do not add a board file
-and they do not scrape. The grade is the 2024 edition in
-``journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/``, the latest
-edition in that freeze. ``rating`` on ``abs_ajg_2024.csv`` is ``4*``, ``4``,
-``3``, ``2``, or ``1``. A journal is tagged when its catalog id is a
-``journal_id`` on that file or on a 2024 row of ``journal_id_crosswalk.csv``.
-The crosswalk is required for journals whose primary id is a core49 slug
-while the board file uses the ABDC id (The Economic Journal is ``ej``,
-grade 4). The 2024 edition has 1,823 journals. 1,378 map to a catalog id.
-1,356 of those are on a current board and receive a chip. The 445 unmatched
-titles have no id and are not tagged. A small set of mapped titles are not
-on the current boards. Many ABDC board journals have no AJG grade (about
-2,400 board journal ids versus about 1,356 with a hit). Each tagged
-journal gets one grade, labeled ``AJG 4*``, ``AJG 4``, ``AJG 3``, ``AJG 2``,
-or ``AJG 1`` on both the list chip and the row badge. The label does not
-include the edition year. Earlier editions, and titles that never receive
-a chip, stay on the Rankings page.
+AJG grades are tags on directory rows. They do not scrape. The grade is the
+2024 edition in ``journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/``,
+the latest edition in that freeze. ``rating`` on ``abs_ajg_2024.csv`` is
+``4*``, ``4``, ``3``, ``2``, or ``1``.
+
+On FT50 and ABDC rows the grade is joined by catalog id. A journal is tagged
+when its catalog id is a ``journal_id`` on that file or on a 2024 row of
+``journal_id_crosswalk.csv``. The crosswalk is required for journals whose
+primary id is a core49 slug while the board file uses the ABDC id (The
+Economic Journal is ``ej``, grade 4). The 2024 edition has 1,823 journals.
+1,378 map to a catalog id. About 1,356 of those sit on an FT50 or ABDC board
+and receive a chip from this join. The 445 unmatched titles have no id and
+are not tagged. This join does not add a board. Many ABDC board journals
+have no AJG grade (about 2,400 board journal ids versus about 1,356 with a
+hit).
+
+AJG-gap rows come from ``data/editors/abs_ajg_gap/releases/current/``.
+Those journals are not already in the FT50 or ABDC editor files. The grade
+is the 2024 title rating, and it has to sit in the panel that supplied the
+file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
+carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
+badge. There is no ``faculty_profile_url`` on these files. With those boards
+the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
+still have no board.
+
+Each tagged journal gets one grade, labeled ``AJG 4*``, ``AJG 4``, ``AJG 3``,
+``AJG 2``, or ``AJG 1`` on both the list chip and the row badge. The label
+does not include the edition year. Earlier editions, and titles that still
+have no board, stay on the Rankings page. The guide is larger than the
+boards here.
 ABDC chips stay A*, A, B, and C.
 
 Universe bits: FT50 1, ABDC A* 2, ABDC A 4, ABDC B 8, ABDC C 16, Top 5 32,
@@ -115,10 +129,11 @@ from those collapsed appointments, then runs ``scripts/build_rankings.py``,
 which writes ``site/rankings-data.js`` from the ABS/AJG, CNRS, and
 Handelsblatt/VWL freezes and the FT50, UTD24, Top 5, and ABDC catalogs.
 Journals and institutions regroup the same boards and show the same list
-chips, including a 2024 AJG grade when the journal has one. Rankings still
-list every ABS/AJG edition, plus CNRS and Handelsblatt/VWL. The directory
-AJG chips are that edition's grade on current boards, not a membership
-flag, not the full guide, and not the earlier editions.
+chips, including the 2024 AJG grade on FT50, ABDC, and AJG-gap rows when
+the journal has one. Rankings still list every ABS/AJG edition, plus CNRS
+and Handelsblatt/VWL. The directory AJG chips are that edition's grade on
+those boards, not a membership flag, not the full guide, and not the
+earlier editions.
 
 Journal and institution pages
 -----------------------------
@@ -240,6 +255,39 @@ AJG_GRADE_META = (
 )
 AJG_RATING_TO_ID = {item["rating"]: item["id"] for item in AJG_GRADE_META}
 AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
+# Current boards for AJG journals that are not in the FT50 or ABDC editor files.
+# Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
+AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
+# panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
+AJG_GAP_FILES = (
+    (
+        "prio43",
+        AJG_GAP_DIR / "editors_abs_ajg_gap_prio43_current.csv",
+        frozenset({"4*", "4", "3"}),
+        3490,
+        8,
+    ),
+    (
+        "ajg2",
+        AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
+        frozenset({"2"}),
+        5030,
+        0,
+    ),
+    (
+        "ajg1",
+        AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
+        frozenset({"1"}),
+        11276,
+        0,
+    ),
+)
+# Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
+AJG_GAP_JOURNAL_RATINGS = {
+    "prio43": {"4": 9, "3": 37},
+    "ajg2": {"2": 105},
+    "ajg1": {"1": 289},
+}
 
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
@@ -264,6 +312,10 @@ BITS = {item["id"]: item["bit"] for item in UNIVERSE_META}
 AJG_MASK = 0
 for _ajg_id in AJG_IDS:
     AJG_MASK |= BITS[_ajg_id]
+# Boards a gap row must not receive. The grade chip is the only list bit.
+HOST_BOARD_MASK = (
+    BITS["ft50"] | BITS["a_star"] | BITS["a"] | BITS["b"] | BITS["c"] | BITS["top5"] | BITS["utd24"]
+)
 
 FAMILIES = (
     "Editor-in-Chief",
@@ -772,6 +824,32 @@ def load_ajg_grades() -> dict[str, str]:
     return grades
 
 
+def load_ajg_title_grades() -> dict[str, str]:
+    """Normalized 2024 title to rating, including titles with no catalog id.
+
+    Gap boards are mostly unmatched in the rankings freeze, so the catalog-id
+    map does not cover them. The title is the grade key. Two titles that fold
+    to the same string must share one rating.
+    """
+    grades: dict[str, str] = {}
+    rows = read_catalog_rows(AJG_YEAR)
+    if len(rows) != AJG_EXPECTED_ROWS:
+        raise SystemExit(f"AJG 2024 has {len(rows)} rows, expected {AJG_EXPECTED_ROWS}")
+    for row in rows:
+        rating = (row.get("rating") or "").strip()
+        title = (row.get("journal_title") or "").strip()
+        if rating not in AJG_RATINGS:
+            raise SystemExit(f"AJG rating {rating!r} on {title}")
+        key = norm_plain(title)
+        if not key:
+            raise SystemExit("Blank AJG 2024 title")
+        previous = grades.get(key)
+        if previous is not None and previous != rating:
+            raise SystemExit(f"AJG title {title!r} has ratings {previous} and {rating}")
+        grades[key] = rating
+    return grades
+
+
 def load_catalog_names() -> dict[str, str]:
     names: dict[str, str] = {}
     for path in CATALOG_FILES:
@@ -868,6 +946,7 @@ def row_to_rec(
     membership: Membership,
     catalog: JournalCatalog,
     ajg_grades: dict[str, str],
+    gap_rating: str | None = None,
 ) -> Rec | None:
     name = usable_name(row.get("editor_name") or "")
     if not name:
@@ -884,17 +963,30 @@ def row_to_rec(
         affiliation = scrub(affiliation)
         if CONTACT_ASSERT_RE.search(affiliation):
             affiliation = ""
-    journal_id = (row.get("abdc_journal_id") or "").strip()
-    if not journal_id:
-        named = catalog.by_name.get(norm_plain(journal))
-        if named:
-            journal_id = named["id"]
-    universes = {origin}
-    universes |= membership.tag(journal_id, journal)
-    if journal_id:
-        rating = ajg_grades.get(journal_id)
-        if rating:
-            universes.add(AJG_RATING_TO_ID[rating])
+    if gap_rating is not None:
+        # Gap files are not FT50 or ABDC boards. The grade is the only chip.
+        if gap_rating not in AJG_RATINGS:
+            raise SystemExit(f"AJG-gap rating {gap_rating!r} on {journal}")
+        journal_id = (row.get("journal_id") or "").strip()
+        mapped = ajg_grades.get(journal_id)
+        if mapped and mapped != gap_rating:
+            raise SystemExit(
+                f"{journal} id {journal_id} rankings grade {mapped} != panel grade {gap_rating}"
+            )
+        universes = {AJG_RATING_TO_ID[gap_rating]}
+        origin = "ajg_gap"
+    else:
+        journal_id = (row.get("abdc_journal_id") or "").strip()
+        if not journal_id:
+            named = catalog.by_name.get(norm_plain(journal))
+            if named:
+                journal_id = named["id"]
+        universes = {origin}
+        universes |= membership.tag(journal_id, journal)
+        if journal_id:
+            rating = ajg_grades.get(journal_id)
+            if rating:
+                universes.add(AJG_RATING_TO_ID[rating])
     return Rec(
         name=name,
         name_key=norm_name(name),
@@ -925,26 +1017,57 @@ def read_release(
     seen_membership_ids: set[str],
     catalog: JournalCatalog,
     ajg_grades: dict[str, str],
-) -> tuple[list[Rec], int]:
+    gap_panel: frozenset[str] | None = None,
+    ajg_titles: dict[str, str] | None = None,
+    gap_journals: dict[str, tuple[str, str]] | None = None,
+    gap_panel_id: str = "",
+) -> tuple[list[Rec], int, int]:
     records: list[Rec] = []
     dropped = 0
+    raw = 0
     with path.open(newline="", encoding="utf-8-sig") as handle:
         for row in csv.DictReader(handle):
+            raw += 1
             collected = (row.get("collection_date") or "").strip()
             if collected:
                 dates.append(collected)
             year = (row.get("year") or "").strip()
             if year:
                 years.add(year)
+            # Membership presence is an ABDC-board check. Gap ids must not satisfy it.
             journal_id = (row.get("abdc_journal_id") or "").strip()
             if journal_id in membership.ids:
                 seen_membership_ids.add(journal_id)
-            rec = row_to_rec(row, origin, catalogs, membership, catalog, ajg_grades)
+            gap_rating: str | None = None
+            if gap_panel is not None:
+                preview = journal_name(row, catalogs)
+                gap_rating = (ajg_titles or {}).get(norm_plain(preview)) if preview else None
+                if gap_rating not in gap_panel:
+                    raise SystemExit(
+                        f"{path.name}: {preview!r} rating {gap_rating!r} "
+                        f"is not in {sorted(gap_panel)}"
+                    )
+                if gap_journals is not None and preview:
+                    previous = gap_journals.get(preview)
+                    if previous is not None and previous != (gap_panel_id, gap_rating):
+                        raise SystemExit(
+                            f"{preview} is {previous} and {(gap_panel_id, gap_rating)}"
+                        )
+                    gap_journals[preview] = (gap_panel_id, gap_rating)
+            rec = row_to_rec(
+                row,
+                origin,
+                catalogs,
+                membership,
+                catalog,
+                ajg_grades,
+                gap_rating=gap_rating,
+            )
             if rec is None:
                 dropped += 1
                 continue
             records.append(rec)
-    return records, dropped
+    return records, dropped, raw
 
 
 def cluster_rows(rows: list[Rec]) -> tuple[dict[tuple[str, str], Rec], list[Rec]]:
@@ -1054,6 +1177,8 @@ def assert_static_site() -> None:
         raise SystemExit("site/index.html is missing the institution or field filter")
     if "AJG 4*" not in html or "AJG 1" not in html:
         raise SystemExit("site/index.html does not name the AJG grades")
+    if "AJG-gap" not in html:
+        raise SystemExit("site/index.html does not name the AJG-gap boards")
     if "faculty profile" not in html.casefold():
         raise SystemExit("site/index.html does not say a name opens a faculty profile")
     if "DATA.profiles" not in app:
@@ -1073,6 +1198,8 @@ def assert_static_site() -> None:
                 raise SystemExit(f"site/{name} is missing the {link} nav link")
         if name != "rankings.html" and "AJG 2024" in text:
             raise SystemExit(f"site/{name} still labels AJG with the edition year")
+        if "AJG-gap" not in text:
+            raise SystemExit(f"site/{name} does not name the AJG-gap boards")
     for script in ("journals.js", "institutions.js"):
         text = (SITE_DIR / script).read_text(encoding="utf-8")
         if PAGES_BASE not in text:
@@ -1237,10 +1364,10 @@ def js_payload(payload: dict) -> str:
     return dump_js(
         "EDITOR_DATA",
         payload,
-        "Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
+        "Generated by scripts/build_site.py from the current FT50, ABDC, and AJG-gap editor releases.\n"
         "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
-        "   AJG grades 4*, 4, 3, 2, and 1 are the 2024 edition of the ABS/AJG freeze, including crosswalk ids, tagged onto current boards only.\n"
-        "   fields and journalField are ABDC field_for. Do not edit.",
+        "   AJG grades 4*, 4, 3, 2, and 1 are the 2024 edition, including crosswalk ids on FT50 and ABDC rows.\n"
+        "   AJG-gap rows take the grade from their panel. fields and journalField are ABDC field_for. Do not edit.",
     )
 
 
@@ -1626,9 +1753,16 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
     institutions_by_universe = {uid: 0 for uid in BITS}
     with_ror = 0
     emitted = 0
+    host_bits = BITS["ft50"] | BITS["a_star"] | BITS["a"] | BITS["b"] | BITS["c"]
+    host_institutions = 0
+    host_with_ror = 0
     for item in prepared:
         if item["ror"]:
             with_ror += 1
+        if item["mask"] & host_bits:
+            host_institutions += 1
+            if item["ror"]:
+                host_with_ror += 1
         editor_keys |= item["editor_keys"]
         for country in item["country_keys"]:
             if country:
@@ -1682,11 +1816,57 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "editors": len(editor_keys),
                 "countries": len(country_keys),
                 "withRor": with_ror,
+                "hostInstitutions": host_institutions,
+                "hostWithRor": host_with_ror,
                 "byUniverse": by_universe,
             },
         }
     )
     return payload
+
+
+def assert_gap_boards(journals: dict, gap_journals: dict[str, tuple[str, str]]) -> None:
+    """Gap journals carry one panel grade and no FT50, ABDC, Top 5, or UTD24 bit."""
+    by_name = {row[0]: row for row in journals["rows"]}
+    by_panel: dict[str, Counter[str]] = defaultdict(Counter)
+    if len(gap_journals) != 440:
+        raise SystemExit(f"Expected 440 AJG-gap journals, found {len(gap_journals)}")
+    for name, (panel_id, rating) in gap_journals.items():
+        row = by_name.get(name)
+        if row is None:
+            raise SystemExit(f"AJG-gap journal dropped from the journal list: {name}")
+        grades = [uid for uid in AJG_IDS if row[1] & BITS[uid]]
+        expected = AJG_RATING_TO_ID[rating]
+        if grades != [expected]:
+            raise SystemExit(f"{name} AJG grade {grades}, expected {[expected]}")
+        if row[1] & HOST_BOARD_MASK:
+            raise SystemExit(f"{name} carries a non-AJG board bit {row[1]}")
+        by_panel[panel_id][rating] += 1
+    for panel_id, expected in AJG_GAP_JOURNAL_RATINGS.items():
+        got = dict(by_panel.get(panel_id, {}))
+        if got != expected:
+            raise SystemExit(f"{panel_id} journal ratings {got} != {expected}")
+    urls = journals["urls"]
+    affairs = by_name.get("African Affairs")
+    if affairs is None or urls[affairs[6]]:
+        raise SystemExit("African Affairs should stay in the directory with no public board URL")
+    politics = by_name.get("Journal of Politics")
+    if politics is None or not urls[politics[6]].startswith("https://"):
+        raise SystemExit("Journal of Politics is missing its public board URL")
+    latin = by_name.get("Journal of Latin American Studies")
+    if latin is None or [uid for uid in AJG_IDS if latin[1] & BITS[uid]] != ["ajg_2"]:
+        raise SystemExit("Journal of Latin American Studies should be AJG 2 only")
+    cmot = by_name.get("Computational and Mathematical Organization Theory")
+    if cmot is None or [uid for uid in AJG_IDS if cmot[1] & BITS[uid]] != ["ajg_1"]:
+        raise SystemExit("Computational and Mathematical Organization Theory should be AJG 1 only")
+    print(
+        "AJG-gap: "
+        + ", ".join(
+            f"{panel_id} "
+            + " ".join(f"{rating} {count}" for rating, count in sorted(counts.items()))
+            for panel_id, counts in by_panel.items()
+        )
+    )
 
 
 def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> None:
@@ -1703,8 +1883,21 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit("Journal editor total does not match the directory")
     if jcounts["countries"] != dcounts["countries"]:
         raise SystemExit("Journal country total does not match the directory")
-    if jcounts["missingField"] > 40:
-        raise SystemExit(f"Too many journals without an ABDC field: {jcounts['missingField']}")
+    host_bits = BITS["ft50"] | BITS["a_star"] | BITS["a"] | BITS["b"] | BITS["c"]
+    missing_host = 0
+    missing_gap = 0
+    for row in journals["rows"]:
+        if journals["fields"][row[5]]:
+            continue
+        if row[1] & host_bits:
+            missing_host += 1
+        else:
+            missing_gap += 1
+    if missing_host > 40:
+        raise SystemExit(f"Too many FT50/ABDC journals without an ABDC field: {missing_host}")
+    # Gap journals are outside the ABDC catalogs except for a handful of ids.
+    if not 350 <= missing_gap <= 440:
+        raise SystemExit(f"Unexpected AJG-gap journals without an ABDC field: {missing_gap}")
     if jcounts["withBoard"] < jcounts["journals"] * 0.9:
         raise SystemExit(
             f"Only {jcounts['withBoard']} of {jcounts['journals']} journals have a board link"
@@ -1770,14 +1963,15 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     ]
     if multi_ajg:
         raise SystemExit(f"Journals with more than one AJG grade: {multi_ajg[:8]}")
-    # 4*, 4, and 3 are every matched journal in abs_ajg_2024.csv.
-    # 2 and 1 drop the matched titles that are not on a current board.
+    # 4*, 4, and 3 are every title in the 2024 guide: FT50/ABDC boards plus the
+    # prio43 gap file (this freeze has no 4* titles outside those boards).
+    # 2 and 1 add the ajg2 and ajg1 gap files and are still short of the guide.
     expected_ajg_journals = {
         "ajg_4star": 47,
-        "ajg_4": 89,
-        "ajg_3": 287,
-        "ajg_2": 459,
-        "ajg_1": 474,
+        "ajg_4": 98,
+        "ajg_3": 324,
+        "ajg_2": 564,
+        "ajg_1": 763,
     }
     ajg_journals = 0
     for uid, expected in expected_ajg_journals.items():
@@ -1785,7 +1979,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         ajg_journals += got
         if got != expected:
             raise SystemExit(f"{uid} journals {got}, expected {expected}")
-    if ajg_journals != 1_356:
+    if ajg_journals != 1_796:
         raise SystemExit(f"Unexpected AJG journal count: {ajg_journals}")
     if len(directory.get("journalField") or []) != len(directory["journals"]):
         raise SystemExit("directory journalField does not line up with journals")
@@ -1807,11 +2001,15 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
 
     if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"]:
         raise SystemExit("Institution appointments plus unmatched rows do not match the directory")
-    if not 4_000 <= icounts["institutions"] <= 15_000:
+    if not 4_000 <= icounts["institutions"] <= 30_000:
         raise SystemExit(f"Unexpected institution count: {icounts['institutions']}")
-    if icounts["withRor"] < icounts["institutions"] * 0.9:
+    host_institutions = icounts["hostInstitutions"]
+    host_with_ror = icounts["hostWithRor"]
+    if not 4_000 <= host_institutions <= 15_000:
+        raise SystemExit(f"Unexpected FT50/ABDC institution count: {host_institutions}")
+    if host_with_ror < host_institutions * 0.9:
         raise SystemExit(
-            f"Only {icounts['withRor']} of {icounts['institutions']} institutions have a ROR id"
+            f"Only {host_with_ror} of {host_institutions} FT50/ABDC institutions have a ROR id"
         )
     if icounts["editors"] > dcounts["editors"] or icounts["editors"] < dcounts["editors"] * 0.8:
         raise SystemExit(
@@ -1833,18 +2031,23 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         continent = institutions["continents"][continent_i]
         for label, text in (("institution", name), ("country", country), ("continent", continent)):
             assert_no_contacts(text, label)
-    if duplicate_names > 50:
-        raise SystemExit(f"Too many institutions share a display name: {duplicate_names}")
+    # Gap rows have no ror_id, so a masthead string can sit beside the same ROR name.
+    # 512 is the count for editors_abs_ajg_gap_20261025.
+    if duplicate_names != 512:
+        raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 512")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
-    if len(dartmouth) != 1:
-        raise SystemExit(f"Expected one Dartmouth College row, found {len(dartmouth)}")
-    dartmouth_row = dartmouth[0]
-    if institutions["countries"][dartmouth_row[1]] != "United States":
-        raise SystemExit("Dartmouth College country is not United States")
-    if institutions["continents"][dartmouth_row[2]] != "North America":
-        raise SystemExit("Dartmouth College continent is not North America")
-    if dartmouth_row[4] < 1:
-        raise SystemExit("Dartmouth College has no appointments")
+    # The ROR row stays. A gap affiliation with the same words and no ror_id is a second row.
+    matched = [
+        row
+        for row in dartmouth
+        if institutions["countries"][row[1]] == "United States"
+        and institutions["continents"][row[2]] == "North America"
+        and row[4] >= 1
+    ]
+    if len(matched) != 1:
+        raise SystemExit(
+            f"Expected one Dartmouth College ROR row in the United States, found {len(dartmouth)} name rows"
+        )
     for uid in ("ft50", "top5", "utd24", *AJG_IDS, "a_star", "a", "b", "c"):
         got = icounts["byUniverse"][uid]["appointments"]
         cap = dcounts["byUniverse"][uid]["appointments"]
@@ -1874,7 +2077,7 @@ def main() -> int:
     dropped = 0
 
     seen_membership_ids: set[str] = set()
-    ft50_records, ft50_dropped = read_release(
+    ft50_records, ft50_dropped, _ft50_raw = read_release(
         ft50_path,
         "ft50",
         catalogs,
@@ -1892,7 +2095,7 @@ def main() -> int:
     for origin, path in ABDC_FILES:
         if not path.exists():
             raise SystemExit(f"Missing ABDC release: {path.relative_to(ROOT)}")
-        records, n_dropped = read_release(
+        records, n_dropped, _raw = read_release(
             path,
             origin,
             catalogs,
@@ -1907,6 +2110,51 @@ def main() -> int:
         sources.append(path.relative_to(ROOT).as_posix())
         print(f"ABDC {origin:6} {path.name}: {len(records):,} kept, {n_dropped:,} dropped")
         for rec in records:
+            grouped[(rec.name_key, rec.journal_key, rec.role_key)].append(rec)
+
+    ajg_titles = load_ajg_title_grades()
+    gap_journals: dict[str, tuple[str, str]] = {}
+    host_journal_keys = {rec.journal_key for rec in ft50_records}
+    for recs in grouped.values():
+        for rec in recs:
+            host_journal_keys.add(rec.journal_key)
+    for panel_id, path, allowed, expected_rows, expected_dropped in AJG_GAP_FILES:
+        if not path.exists():
+            raise SystemExit(f"Missing AJG-gap release: {path.relative_to(ROOT)}")
+        records, n_dropped, raw = read_release(
+            path,
+            "ajg_gap",
+            catalogs,
+            dates,
+            years,
+            membership,
+            seen_membership_ids,
+            journal_catalog,
+            ajg_grades,
+            gap_panel=allowed,
+            ajg_titles=ajg_titles,
+            gap_journals=gap_journals,
+            gap_panel_id=panel_id,
+        )
+        if raw != expected_rows:
+            raise SystemExit(f"{path.name} has {raw} rows, expected {expected_rows}")
+        if n_dropped != expected_dropped:
+            raise SystemExit(
+                f"{path.name} dropped {n_dropped} names, expected {expected_dropped}"
+            )
+        dropped += n_dropped
+        sources.append(path.relative_to(ROOT).as_posix())
+        print(
+            f"AJG  {panel_id:6} {path.name}: {len(records):,} kept, "
+            f"{n_dropped:,} dropped, {raw:,} rows"
+        )
+        for rec in records:
+            if rec.journal_key in host_journal_keys:
+                raise SystemExit(
+                    f"AJG-gap journal {rec.journal!r} is already on an FT50 or ABDC board"
+                )
+            if rec.origin != "ajg_gap" or rec.mask() & HOST_BOARD_MASK:
+                raise SystemExit(f"AJG-gap row picked up a host board: {rec.name} / {rec.journal}")
             grouped[(rec.name_key, rec.journal_key, rec.role_key)].append(rec)
 
     ft50_kept = 0
@@ -1963,6 +2211,7 @@ def main() -> int:
     journal_payload = build_journal_payload(collapsed, journal_catalog, payload)
     institution_payload = build_institution_payload(collapsed, payload)
     assert_aggregates(payload, journal_payload, institution_payload)
+    assert_gap_boards(journal_payload, gap_journals)
     journal_text = dump_js(
         "JOURNALS_DATA",
         journal_payload,
