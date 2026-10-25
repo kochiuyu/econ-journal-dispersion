@@ -2,7 +2,7 @@
 
 Rating catalogs. These files are not editorial boards and they are not appointments.
 
-The editor directory is current FT50 and ABDC A*/A/B/C boards, with Top 5 and UTD24 as tags. AJG chips on that directory are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, and only where the journal is already on those boards. The label does not include the year. Unmatched titles and the rest of the guide stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
+The editor directory is current FT50 and ABDC A*/A/B/C boards, plus AJG-gap boards in `data/editors/abs_ajg_gap/releases/current/`. Top 5 and UTD24 are tags on the FT50 and ABDC boards. AJG chips are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, where the journal is already on an FT50 or ABDC board. That join does not add a board. Gap rows take the same 2024 grade from the journal title, and only for journals that are not already in those editor files. The label does not include the year. Titles that still have no board, and the rest of the guide, stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
 
 That page also lists CNRS and Handelsblatt/VWL from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column and no field. The Field column is ABS/AJG `field`, the CNRS domain, or ABDC `field_for`. Handelsblatt/VWL shows the published weight.
 
