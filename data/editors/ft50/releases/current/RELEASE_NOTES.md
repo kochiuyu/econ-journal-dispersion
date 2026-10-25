@@ -10,7 +10,7 @@ The collector gap note `UTD24_FACULTY_GAP_20261025.md` is summarized below. The 
 
 `editors_ft50_current.csv` is the slim panel: 10,050 rows, with no ROR columns. Person profile columns are `faculty_profile_url`, `faculty_home_page`, `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. `faculty_profile_url` is filled on 8,360 rows (83.2%), up from 8,211 (81.7%) in `editors_ft50_faculty_masthead_20261025`, 8,199 (81.6%) in `editors_ft50_faculty_20261025`, and 4,724 (47.0%) in `editors_current_20261025`. 1,690 rows are still blank. `faculty_home_page` is still filled on 1,824 rows (18.1%).
 
-`editors_ft50_current_with_ror.csv` is the file `scripts/build_site.py` reads when it is present (`FT50_CANDIDATES` prefers it over the slim CSV). It has the same 10,050 rows. `faculty_profile_url` is filled on 8,348 rows (83.1%). Twelve URLs that are on the slim file are still blank here, so this file gained 137 URLs rather than 149. ROR, imputation, OpenAlex, and RePEc columns match the previous file in this folder. `ror_id` was not changed (9,895 rows still have one). A non-empty `faculty_profile_url` was not replaced, and no filled URL was cleared. `faculty_person_key` was filled where this freeze supplied one (132 new keys on the slim file, 120 on the ROR file) and no existing key was changed.
+`editors_ft50_current_with_ror.csv` is the file `scripts/build_site.py` reads when it is present (`FT50_CANDIDATES` prefers it over the slim CSV). It has the same 10,050 rows. `faculty_profile_url` is filled on 8,360 rows (83.2%), the same count as the slim file. Twelve URLs that the collector wrote only on the slim file were copied onto the matching blank ROR rows, along with `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key`. A non-empty ROR URL was not replaced. ROR, imputation, OpenAlex, and RePEc columns are otherwise unchanged. `ror_id` was not changed (9,895 rows still have one). `faculty_person_key` on the copied rows is the slim-file key. The five `faculty_*` columns now match the slim file on every row.
 
 ## Fill
 
@@ -19,9 +19,9 @@ The collector gap note `UTD24_FACULTY_GAP_20261025.md` is summarized below. The 
 | `editors_current_20261025` | 4,724 (47.0%) | 4,724 (47.0%) |
 | `editors_ft50_faculty_20261025` | 8,199 (81.6%) | 8,199 (81.6%) |
 | `editors_ft50_faculty_masthead_20261025` | 8,211 (81.7%) | 8,211 (81.7%) |
-| This freeze | 8,360 (83.2%) | 8,348 (83.1%) |
+| This freeze | 8,360 (83.2%) | 8,360 (83.2%) |
 
-On the 4,906-row set in the collector gap note, the slim file moved from 4,171 (85.0%) to 4,320 (88.1%). Blanks went from 735 to 586. That set is 23 journals. It includes Journal of Applied Psychology, Journal of Political Economy, and Quarterly Journal of Economics. Manufacturing and Service Operations Management, Production and Operations Management, and Review of Financial Studies had no new URLs in this pass and are outside that count. The ROR file has 4,308 of those 4,906 rows filled (87.8%).
+On the 4,906-row set in the collector gap note, both files are filled on 4,320 rows (88.1%), up from 4,171 (85.0%). Blanks went from 735 to 586. That set is 23 journals. It includes Journal of Applied Psychology, Journal of Political Economy, and Quarterly Journal of Economics. Manufacturing and Service Operations Management, Production and Operations Management, and Review of Financial Studies had no new URLs in this pass and are outside that count.
 
 | Journal | Rows | Blank before | Blank after | Filled | Fill % |
 |---|---:|---:|---:|---:|---:|
@@ -74,9 +74,9 @@ Examples:
 
 The largest remaining blanks on this 4,906-row set are Journal of Applied Psychology (152), Journal of International Business Studies (66), Journal of Operations Management (65), Strategic Management Journal (46), and Organization Science (44). This freeze does not add another search pass for them.
 
-## Slim URLs still blank on the ROR file
+## Slim URLs copied onto the ROR file
 
-These twelve `faculty_profile_url` values are on `editors_ft50_current.csv` and blank on `editors_ft50_current_with_ror.csv`. The directory reads the ROR file, so it does not copy them across.
+These twelve `faculty_profile_url` values were on the slim file only. Each ROR cell was blank. The row match is `journal` + `year` + `editor_name` + `role` when that key is unique in both files. Where the ROR file keeps a fuller or shorter display name, the match is `journal` + `year` + `role` + `raw_affiliation`, plus a shared `editor_name` or `editor_name_raw`. `faculty_match_method`, `faculty_match_confidence`, and `faculty_person_key` were copied with the URL. `faculty_home_page` was already empty on both sides and was left as it was. No non-empty ROR URL was overwritten. Display names were not edited. The directory name for the Journal of Operations Management row is still `X. Liu` (the ROR `editor_name`); the URL is the one stored under `Xiaojin Liu` on the slim file.
 
 | Editor on the slim file | Journal | URL |
 |---|---|---|
