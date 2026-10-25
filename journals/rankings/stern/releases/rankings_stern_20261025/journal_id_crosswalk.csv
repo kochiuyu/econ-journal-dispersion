@@ -1,0 +1,60 @@
+edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+2020,American Economic Journal: Applied Economics,,,Really excellent,abdc_a_star,aej_applied,title,yes
+2020,American Economic Journal: Economic Policy,,,Really excellent,abdc_a_star,aej_policy,title,yes
+2020,American Economic Journal: Macroeconomics,,,Really excellent,abdc_a_star,aej_macro,title,yes
+2020,American Economic Journal: Microeconomics,,,Really excellent,abdc_a_star,aej_micro,title,yes
+2020,American Economic Review,,,Top 5,ft50,aer,title,yes
+2020,American Economic Review,,,Top 5,core49,aer,title,no
+2020,American Economic Review,,,Top 5,abdc_a_star,aer,title,no
+2020,American Economic Review: Insights,,,Really excellent,abdc_a_star,aer_insights,title,yes
+2020,American Journal of Health Economics,,,Field,abdc_a_star,american_journal_health_economics,title,yes
+2020,Annual Review of Economics,,,Review,abdc_a_star,annual_review_economics,title,yes
+2020,Brookings Papers on Economic Activity,,,Review,abdc_a,brookings_papers_economic_activity,title,yes
+2020,Econometrica,,,Top 5,ft50,econometrica,title,yes
+2020,Econometrica,,,Top 5,core49,econometrica,title,no
+2020,Econometrica,,,Top 5,abdc_a_star,econometrica,title,no
+2020,Economic Journal,,,Really excellent,core49,the-economic-journal,title,yes
+2020,Explorations in Economic History,,,Field,abdc_a,explorations_economic_history,title,yes
+2020,Games and Economic Behavior,,,Field,core49,games-and-economic-behavior,title,yes
+2020,International Economic Review,,,Really excellent,core49,international-economic-review,title,yes
+2020,Journal of Development Economics,,,Field,core49,journal-of-development-economics,title,yes
+2020,Journal of Econometrics,,,Field,core49,journal-of-econometrics,title,yes
+2020,Journal of Economic Growth,,,Field,core49,journal-of-economic-growth,title,yes
+2020,Journal of Economic History,,,Field,core49,the-journal-of-economic-history,title,yes
+2020,Journal of Economic Literature,,,Review,core49,journal-of-economic-literature,title,yes
+2020,Journal of Economic Perspectives,,,Review,core49,journal-of-economic-perspectives,title,yes
+2020,Journal of Economic Theory,,,Field,core49,journal-of-economic-theory,title,yes
+2020,Journal of Environmental Economics and Management,,,Field,core49,journal-of-environmental-economics-and-management,title,yes
+2020,Journal of Finance,,,Field,ft50,jf,title,yes
+2020,Journal of Finance,,,Field,abdc_a_star,jf,title,no
+2020,Journal of Financial Economics,,,Field,ft50,jfe,title,yes
+2020,Journal of Financial Economics,,,Field,abdc_a_star,jfe,title,no
+2020,Journal of Health Economics,,,Field,core49,journal-of-health-economics,title,yes
+2020,Journal of Human Resources,,,Field,core49,journal-of-human-resources,title,yes
+2020,Journal of Industrial Economics,,,Field,abdc_a_star,journal_industrial_economics,title,yes
+2020,Journal of International Economics,,,Field,core49,journal-of-international-economics,title,yes
+2020,Journal of Labor Economics,,,Field,core49,journal-of-labor-economics,title,yes
+2020,Journal of Monetary Economics,,,Field,core49,journal-of-monetary-economics,title,yes
+2020,"Journal of Money, Credit, and Banking",,,Field,core49,journal-of-money-credit-and-banking,title,yes
+2020,Journal of Political Economy,,,Top 5,ft50,jpe,title,yes
+2020,Journal of Political Economy,,,Top 5,abdc_a_star,jpe,title,no
+2020,Journal of Public Economics,,,Field,core49,journal-of-public-economics,title,yes
+2020,Journal of the Association of Environmental and Resource Economists,,,Field,abdc_a_star,journal_association_environmental_resource_economists,title,yes
+2020,Journal of the European Economic Association,,,Really excellent,core49,journal-of-the-european-economic-association,title,yes
+2020,Journal of Urban Economics,,,Field,core49,journal-of-urban-economics,title,yes
+2020,Management Science,,,Field,ft50,ms,title,yes
+2020,Management Science,,,Field,abdc_a_star,ms,title,no
+2020,Marketing Science,,,Field,ft50,mktg_sci,title,yes
+2020,Marketing Science,,,Field,abdc_a_star,mktg_sci,title,no
+2020,NBER Macro Annual,,,Review,abdc_a,nber_macroeconomics_annual,title,yes
+2020,Quantitative Economics,,,Really excellent,core49,quantitative-economics,title,yes
+2020,Quarterly Journal of Economics,,,Top 5,ft50,qje,title,yes
+2020,Quarterly Journal of Economics,,,Top 5,abdc_a_star,qje,title,no
+2020,RAND Journal of Economics,,,Field,core49,rand-journal-of-economics,title,yes
+2020,Review of Economic Dynamics,,,Field,core49,review-of-economic-dynamics,title,yes
+2020,Review of Economic Studies,,,Top 5,ft50,restud,title,yes
+2020,Review of Economic Studies,,,Top 5,abdc_a_star,restud,title,no
+2020,Review of Economics and Statistics,,,Really excellent,core49,review-of-economics-and-statistics,title,yes
+2020,Review of Financial Studies,,,Field,ft50,rfs,title,yes
+2020,Review of Financial Studies,,,Field,abdc_a_star,rfs,title,no
+2020,Theoretical Economics,,,Field,core49,theoretical-economics,title,yes

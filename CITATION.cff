@@ -11,7 +11,7 @@ abstract: >
   Public research data for Geographic Dispersion work on economics
   (and related) journals: journal catalogs (core49, FT50, ABDC),
   journal-ranking freezes (ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg/TISEM,
-  FNEGE, ERIM Core), and analysis-ready editor / author-affiliation
+  FNEGE, ERIM Core, NYU Stern Economics, ShanghaiRanking), and analysis-ready editor / author-affiliation
   release panels. Scrapes and caches live in separate collector
   workspaces and are not part of this repository.
 keywords:
@@ -25,6 +25,8 @@ keywords:
   - Tilburg
   - FNEGE
   - ERIM
+  - Stern
+  - ShanghaiRanking
 license: CC-BY-4.0
 repository-code: "https://github.com/kochiuyu/econ-journal-dispersion"
 url: "https://github.com/kochiuyu/econ-journal-dispersion"

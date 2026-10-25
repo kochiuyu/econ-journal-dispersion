@@ -17,7 +17,9 @@
     handelsblatt_vwl: { "A+": 7, "A": 6, "B": 5, "C": 4, "D": 3, "E": 2, "F": 1 },
     tilburg: { "Top-core": 3, "Top": 2, "Very good": 1 },
     fnege: { "1*": 7, "1": 6, "2": 5, "3": 4, "4": 3, "EM": 2, "NC": 1 },
-    erim: { "STAR": 8, "M-STAR": 7, "P": 6, "EP*": 5, "PA": 4, "S": 3, "S (3=1)": 2, "M": 1 }
+    erim: { "STAR": 8, "M-STAR": 7, "P": 6, "EP*": 5, "PA": 4, "S": 3, "S (3=1)": 2, "M": 1 },
+    stern: { "Top 5": 4, "Really excellent": 3, "Field": 2, "Review": 1 },
+    shanghai: { "Top": 1 }
   };
   var TOP_SUB = {
     abs_ajg: "Highest grade that year",
@@ -25,7 +27,9 @@
     handelsblatt_vwl: "Highest class",
     tilburg: "Highest tier",
     fnege: "Highest grade",
-    erim: "Highest class"
+    erim: "Highest class",
+    stern: "Highest tier",
+    shanghai: "Top journals"
   };
 
   var countEl = document.getElementById("count");
@@ -390,6 +394,8 @@
       if (row[4] && state.system === "tilburg") ratingCell.title = "TISEM top journal list";
       if (row[4] && state.system === "fnege") ratingCell.title = "FNEGE " + row[1];
       if (row[4] && state.system === "erim") ratingCell.title = "ERIM Journals List Core 2024–2028";
+      if (row[4] && state.system === "stern") ratingCell.title = "NYU Stern Economics top journals, 31 July 2020";
+      if (row[4] && state.system === "shanghai") ratingCell.title = "ShanghaiRanking top journals " + row[1];
       tr.appendChild(ratingCell);
       var fieldText = row[5] ? subjectLabel(state.system, row[5]) : "";
       var fieldCell = cell(fieldText || "—", row[5] ? "field" : "muted");

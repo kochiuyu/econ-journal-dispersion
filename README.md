@@ -25,6 +25,8 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **Tilburg** | `journals/rankings/tilburg/releases/rankings_tilburg_20261025/` | TISEM top journal list. Tiers Top-core, Top, and Very good. Rankings page only |
 | **FNEGE** | `journals/rankings/fnege/releases/rankings_fnege_20261025/` | FNEGE Journal Quality List grades for 2019, 2022, and 2025. Rankings page only |
 | **ERIM** | `journals/rankings/erim/releases/rankings_erim_20261025/` | ERIM Journals List Core 2024â€“2028. Classes as published in the Core file. Rankings page only |
+| **Stern** | `journals/rankings/stern/releases/rankings_stern_20261025/` | NYU Stern Economics top-tier journals, 31 July 2020. Tiers Top 5, Really excellent, Field, and Review. Rankings page only |
+| **Shanghai** | `journals/rankings/shanghai/releases/rankings_shanghai_20261025/` | ShanghaiRanking top journals for 2024 and 2026. Economics, Business Administration, Finance, and Management. Rankings page only |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) â€” see `docs/README.md`.
 
@@ -89,7 +91,7 @@ Journal grades for every ranking system are also a separate page. The directoryâ
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
-`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, or the TISEM very-good group. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Tilburg, FNEGE, and ERIM are Rankings lists only. They are not directory chips. Systems on the page:
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, or the Shanghai subject. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no field and no grades. Tilburg, FNEGE, ERIM, Stern, and Shanghai are Rankings lists only. They are not directory chips. Systems on the page:
 
 | System | Rows | What the filter shows |
 |--------|------|------------------------|
@@ -103,6 +105,8 @@ Journal grades for every ranking system are also a separate page. The directoryâ
 | Tilburg | 179 | TISEM tiers Top-core / Top / Very good, from freeze `rankings_tilburg_20261025`. 164 matched (91.6%) |
 | FNEGE | 2,044 | Editions 2019, 2022, and 2025, grades 1* / 1 / 2 / 3 / 4 (EM and NC kept when printed), from freeze `rankings_fnege_20261025`. 2025 has 891 journals, 733 matched (82.3%) |
 | ERIM | 283 | Core 2024â€“2028 classes as published (STAR, M-STAR, P, EP*, PA, S, S (3=1), M), from freeze `rankings_erim_20261025`. 257 matched (90.8%) |
+| Stern | 49 | NYU Stern Economics tiers Top 5 / Really excellent / Field / Review, from freeze `rankings_stern_20261025`. 47 matched (95.9%) |
+| Shanghai | 76 | Editions 2024 and 2026, binary Top, subjects Economics, Business Administration, Finance, and Management, from freeze `rankings_shanghai_20261025`. 2026 has 19 journals, all matched |
 
 The directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards (AJG 4* through AJG 1). The full guide stays on this page, including titles that still have no board. FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
 

@@ -24,9 +24,9 @@ Long panel: 7,245 rows. Unmatched row-years: 1,478 (20.4%). Match methods on the
 
 ## Page
 
-Tilburg/TISEM is `rankings_tilburg_20261025` (179 journals; tiers Top-core 42, Top 41, Very good 96; 164 matched, 91.6%). The public page does not publish a good tier, and the TiU Econtop database is not joined. FNEGE is `rankings_fnege_20261025` (2,044 rows; 2019, 2022, and 2025; grades 1*, 1, 2, 3, 4, plus EM and NC when printed). 2025 has 891 journals, 733 matched (82.3%). ERIM Core is `rankings_erim_20261025` (283 journals; edition 2024–2028; classes STAR, M-STAR, P, EP*, PA, S, S (3=1), and M; 257 matched, 90.8%). These three lists are Rankings rows only. They do not add directory chips. Raw HTML and xlsx are not committed.
+Tilburg/TISEM is `rankings_tilburg_20261025` (179 journals; tiers Top-core 42, Top 41, Very good 96; 164 matched, 91.6%). The public page does not publish a good tier, and the TiU Econtop database is not joined. FNEGE is `rankings_fnege_20261025` (2,044 rows; 2019, 2022, and 2025; grades 1*, 1, 2, 3, 4, plus EM and NC when printed). 2025 has 891 journals, 733 matched (82.3%). ERIM Core is `rankings_erim_20261025` (283 journals; edition 2024–2028; classes STAR, M-STAR, P, EP*, PA, S, S (3=1), and M; 257 matched, 90.8%). NYU Stern Economics is `rankings_stern_20261025` (49 journals; edition 2020; tiers Top 5, Really excellent, Field, and Review; 47 matched, 95.9%). ShanghaiRanking is `rankings_shanghai_20261025` (76 rows; 2024 and 2026; rating Top; subjects Economics, Business Administration, Finance, and Management). 2026 has 19 journals, all matched. These lists are Rankings rows only. They do not add directory chips. Raw HTML, xlsx, and PDFs are not committed.
 
-`site/rankings.html` filters by ranking system, edition, rating, and field, and searches by journal title. ABDC uses one system and the rating filter A* / A / B / C. The field filter lists subjects on the selected edition (ABS/AJG `field`, CNRS domain, ABDC `field_for`, FNEGE domain, ERIM track, or the TISEM very-good group). Handelsblatt/VWL adds a Weight column. FT50, UTD24, and Top 5 leave rating and field empty. The directory field filter uses the same ABDC `field_for` strings. `python scripts/build_site.py` writes `site/rankings-data.js` from these freezes and those catalogs, and tags the 2024 AJG grade on the directory from `abs_ajg_2024.csv` plus the 2024 crosswalk.
+`site/rankings.html` filters by ranking system, edition, rating, and field, and searches by journal title. ABDC uses one system and the rating filter A* / A / B / C. The field filter lists subjects on the selected edition (ABS/AJG `field`, CNRS domain, ABDC `field_for`, FNEGE domain, ERIM track, the TISEM very-good group, the Stern field heading, or the Shanghai subject). Handelsblatt/VWL adds a Weight column. FT50, UTD24, and Top 5 leave rating and field empty. The directory field filter uses the same ABDC `field_for` strings. `python scripts/build_site.py` writes `site/rankings-data.js` from these freezes and those catalogs, and tags the 2024 AJG grade on the directory from `abs_ajg_2024.csv` plus the 2024 crosswalk.
 
 | System | Rows |
 |--------|------|
@@ -40,3 +40,5 @@ Tilburg/TISEM is `rankings_tilburg_20261025` (179 journals; tiers Top-core 42, T
 | Tilburg | 179 |
 | FNEGE | 2,044 |
 | ERIM | 283 |
+| Stern | 49 |
+| Shanghai | 76 |

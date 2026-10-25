@@ -1,0 +1,50 @@
+edition_year,rating,rating_raw,journal_title,print_issn,e_issn,field,publisher,journal_id,catalog,match_method,source_file,source_note
+2020,Review,Review,American Economic Association Papers & Proceedings,,,,,,,unmatched,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Really excellent,Really excellent,American Economic Journal: Applied Economics,,,,,aej_applied,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Really excellent,Really excellent,American Economic Journal: Economic Policy,,,,,aej_policy,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Really excellent,Really excellent,American Economic Journal: Macroeconomics,,,,,aej_macro,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Really excellent,Really excellent,American Economic Journal: Microeconomics,,,,,aej_micro,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Top 5,Top 5,American Economic Review,,,,,aer,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 top 5
+2020,Really excellent,Really excellent,American Economic Review: Insights,,,,,aer_insights,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Field,Field,American Journal of Health Economics,,,Health economics,,american_journal_health_economics,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Review,Review,Annual Review of Economics,,,,,annual_review_economics,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Review,Review,Brookings Papers on Economic Activity,,,,,brookings_papers_economic_activity,abdc_a,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Review,Review,Carnegie-Rochester Series,,,,,,,unmatched,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Top 5,Top 5,Econometrica,,,,,econometrica,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 top 5
+2020,Really excellent,Really excellent,Economic Journal,,,,,the-economic-journal,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Field,Field,Explorations in Economic History,,,Economic history,,explorations_economic_history,abdc_a,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Games and Economic Behavior,,,Economic theory,,games-and-economic-behavior,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Really excellent,Really excellent,International Economic Review,,,,,international-economic-review,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Field,Field,Journal of Development Economics,,,Economic development,,journal-of-development-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Econometrics,,,Econometrics,,journal-of-econometrics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Economic Growth,,,Economic development,,journal-of-economic-growth,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Economic History,,,Economic history,,the-journal-of-economic-history,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Review,Review,Journal of Economic Literature,,,,,journal-of-economic-literature,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Review,Review,Journal of Economic Perspectives,,,,,journal-of-economic-perspectives,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Field,Field,Journal of Economic Theory,,,Economic theory,,journal-of-economic-theory,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Environmental Economics and Management,,,"Agriculture, natural resources, and the environment",,journal-of-environmental-economics-and-management,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Finance,,,Financial economics,,jf,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Financial Economics,,,Financial economics,,jfe,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Health Economics,,,Health economics,,journal-of-health-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Human Resources,,,Labor economics,,journal-of-human-resources,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Industrial Economics,,,Industrial organization,,journal_industrial_economics,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of International Economics,,,International trade,,journal-of-international-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Labor Economics,,,Labor economics,,journal-of-labor-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of Monetary Economics,,,Macroeconomics,,journal-of-monetary-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,"Journal of Money, Credit, and Banking",,,Macroeconomics,,journal-of-money-credit-and-banking,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Top 5,Top 5,Journal of Political Economy,,,,,jpe,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 top 5
+2020,Field,Field,Journal of Public Economics,,,Public economics,,journal-of-public-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Journal of the Association of Environmental and Resource Economists,,,"Agriculture, natural resources, and the environment",,journal_association_environmental_resource_economists,abdc_a_star,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Really excellent,Really excellent,Journal of the European Economic Association,,,,,journal-of-the-european-economic-association,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Field,Field,Journal of Urban Economics,,,Regional and urban economics,,journal-of-urban-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Management Science,,,Business economics,,ms,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Marketing Science,,,Business economics,,mktg_sci,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Review,Review,NBER Macro Annual,,,,,nber_macroeconomics_annual,abdc_a,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 review
+2020,Really excellent,Really excellent,Quantitative Economics,,,,,quantitative-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Top 5,Top 5,Quarterly Journal of Economics,,,,,qje,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 top 5
+2020,Field,Field,RAND Journal of Economics,,,Industrial organization,,rand-journal-of-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Review of Economic Dynamics,,,Macroeconomics,,review-of-economic-dynamics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Top 5,Top 5,Review of Economic Studies,,,,,restud,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 top 5
+2020,Really excellent,Really excellent,Review of Economics and Statistics,,,,,review-of-economics-and-statistics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 general interest
+2020,Field,Field,Review of Financial Studies,,,Financial economics,,rfs,ft50,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field
+2020,Field,Field,Theoretical Economics,,,Economic theory,,theoretical-economics,core49,title,Econ-Top-Journals-July-2020.pdf,Stern memo 2020 field

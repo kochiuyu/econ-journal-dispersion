@@ -6,11 +6,13 @@ journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/.
 FT50, UTD24, Top 5, and ABDC rows are copied from the catalogs under
 journals/. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24,
 and Top 5 have no grade column and are stored with an empty rating.
-CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, and ERIM Core rows are
-copied from their pinned freezes. CNRS keeps the published category and
-domain. Handelsblatt/VWL keeps the published weight and, when the freeze
-has one, the letter class. Tilburg keeps the TISEM tier. FNEGE keeps the
-published grade. ERIM keeps the Core class.
+CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern
+Economics, and ShanghaiRanking rows are copied from their pinned freezes.
+CNRS keeps the published category and domain. Handelsblatt/VWL keeps the
+published weight and, when the freeze has one, the letter class. Tilburg
+keeps the TISEM tier. FNEGE keeps the published grade. ERIM keeps the Core
+class. Stern keeps the memo tier. Shanghai keeps binary membership and the
+subject.
 
 This script does not fetch sources, does not read portal extracts or raw
 PDFs, and does not assign ratings, weights, or ids of its own.
@@ -99,6 +101,8 @@ LIST_COUNTS = {
     "tilburg": 179,
     "fnege": 2044,
     "erim": 283,
+    "stern": 49,
+    "shanghai": 76,
 }
 CNRS_RELEASE = ROOT / "journals/rankings/cnrs/releases/rankings_cnrs_20261024"
 CNRS_YEARS = (2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020)
@@ -161,6 +165,8 @@ SYSTEM_ORDER = (
     "tilburg",
     "fnege",
     "erim",
+    "stern",
+    "shanghai",
 )
 TILBURG_RELEASE = ROOT / "journals/rankings/tilburg/releases/rankings_tilburg_20261025"
 TILBURG_RATINGS = ("Top-core", "Top", "Very good")
@@ -209,6 +215,44 @@ ERIM_TRACKS = {
     "GEN": "General",
     "MKT": "Marketing",
     "S&E": "Strategy and Entrepreneurship",
+}
+STERN_RELEASE = ROOT / "journals/rankings/stern/releases/rankings_stern_20261025"
+STERN_RATINGS = ("Top 5", "Really excellent", "Field", "Review")
+STERN_NOTES = {
+    "Stern memo 2020 top 5",
+    "Stern memo 2020 general interest",
+    "Stern memo 2020 field",
+    "Stern memo 2020 review",
+}
+STERN_FIELDS = {
+    "Agriculture, natural resources, and the environment",
+    "Business economics",
+    "Econometrics",
+    "Economic history",
+    "Economic development",
+    "Economic theory",
+    "Financial economics",
+    "Health economics",
+    "Industrial organization",
+    "International trade",
+    "Labor economics",
+    "Macroeconomics",
+    "Public economics",
+    "Regional and urban economics",
+}
+STERN_EXPECTED = {"rows": 49, "mapped": 47, "match_pct": 95.9}
+SHANGHAI_RELEASE = ROOT / "journals/rankings/shanghai/releases/rankings_shanghai_20261025"
+SHANGHAI_YEARS = (2024, 2026)
+SHANGHAI_RATINGS = ("Top",)
+SHANGHAI_SUBJECTS = ("Economics", "Business Administration", "Finance", "Management")
+SHANGHAI_NOTES = {
+    "ShanghaiRanking AES 2024",
+    "ShanghaiRanking AES 2026",
+    "ShanghaiRanking JCR 2024",
+}
+SHANGHAI_EXPECTED = {
+    2024: {"rows": 57, "mapped": 55, "match_pct": 96.5},
+    2026: {"rows": 19, "mapped": 19, "match_pct": 100.0},
 }
 
 # Display names for the field codes stored on the freeze. Not a second rating.
@@ -809,6 +853,91 @@ def load_erim() -> tuple[list[list], dict[str, str]]:
     return packed, labels
 
 
+def load_stern() -> list[list]:
+    rows = load_grade_freeze(
+        STERN_RELEASE,
+        stem="stern",
+        years=("2020",),
+        ratings=STERN_RATINGS,
+        expected={"2020": STERN_EXPECTED},
+        source_file="Econ-Top-Journals-July-2020.pdf",
+        source_note_for=lambda row: row["source_note"],
+        edition_for=lambda year: year,
+        system="stern",
+        unmatched_rows=2,
+        conflict_rows=0,
+        long_rows_expected=LIST_COUNTS["stern"],
+    )
+    header, raw = read_csv(STERN_RELEASE / "stern_2020.csv")
+    del header
+    for row in raw:
+        if row["source_note"] not in STERN_NOTES:
+            raise SystemExit(f"Stern source_note {row['source_note']!r}")
+        if row["rating"] == "Field":
+            if row["field"] not in STERN_FIELDS:
+                raise SystemExit(f"Stern field {row['field']!r} on {row['journal_title']}")
+        elif row["field"].strip():
+            raise SystemExit(f"Stern {row['rating']} row has a field: {row['journal_title']}")
+    by_title = {row[3].casefold(): row for row in rows}
+    aer = by_title.get("american economic review")
+    if not aer or aer[4] != "Top 5" or aer[2] != "aer" or aer[1] != 2020:
+        raise SystemExit(f"Stern AER row {aer}")
+    top5 = {row[2] for row in rows if row[4] == "Top 5"}
+    if top5 != {"aer", "econometrica", "jpe", "qje", "restud"}:
+        raise SystemExit(f"Stern Top 5 ids {sorted(top5)}")
+    nber = by_title.get("nber macro annual")
+    if not nber or nber[4] != "Review" or nber[2] != "nber_macroeconomics_annual":
+        raise SystemExit(f"Stern NBER Macro row {nber}")
+    return rows
+
+
+def load_shanghai() -> list[list]:
+    def note_for(row: dict[str, str]) -> str:
+        return row["source_note"]
+
+    packed = load_grade_freeze(
+        SHANGHAI_RELEASE,
+        stem="shanghai",
+        years=tuple(str(year) for year in SHANGHAI_YEARS),
+        ratings=SHANGHAI_RATINGS,
+        expected={str(year): SHANGHAI_EXPECTED[year] for year in SHANGHAI_YEARS},
+        source_file="shanghai-top-journals",
+        source_note_for=note_for,
+        edition_for=lambda year: year,
+        system="shanghai",
+        unmatched_rows=2,
+        conflict_rows=0,
+        long_rows_expected=LIST_COUNTS["shanghai"],
+    )
+    header, raw = read_csv(SHANGHAI_RELEASE / "shanghai_long.csv")
+    del header
+    for row in raw:
+        if row["source_note"] not in SHANGHAI_NOTES:
+            raise SystemExit(f"Shanghai source_note {row['source_note']!r}")
+        parts = [part.strip() for part in row["field"].split(";")]
+        if not parts or any(part not in SHANGHAI_SUBJECTS for part in parts):
+            raise SystemExit(f"Shanghai field {row['field']!r} on {row['journal_title']}")
+    latest = [row for row in packed if row[1] == 2026]
+    by_title = {row[3].casefold(): row for row in latest}
+    aer = by_title.get("american economic review")
+    if not aer or aer[4] != "Top" or aer[2] != "aer" or aer[5] != "Economics":
+        raise SystemExit(f"Shanghai 2026 AER row {aer}")
+    econ_ids = {row[2] for row in latest if row[5] == "Economics"}
+    if econ_ids != {"aer", "econometrica", "jpe", "qje", "restud"}:
+        raise SystemExit(f"Shanghai 2026 Economics ids {sorted(econ_ids)}")
+    amj = by_title.get("academy of management journal")
+    if not amj or amj[2] != "amj" or amj[5] != "Business Administration; Management":
+        raise SystemExit(f"Shanghai 2026 AMJ row {amj}")
+    earlier = [row for row in packed if row[1] == 2024]
+    governance = next(
+        (row for row in earlier if row[3].casefold().startswith("corporate governance")),
+        None,
+    )
+    if not governance or governance[2] != "corporate_governance":
+        raise SystemExit(f"Shanghai 2024 Corporate Governance row {governance}")
+    return packed
+
+
 def payload(
     loaded: dict[int, list[dict[str, str]]],
     list_rows: list[list],
@@ -817,6 +946,8 @@ def payload(
     tilburg_rows: list[list],
     fnege_rows: list[list],
     erim_rows: list[list],
+    stern_rows: list[list],
+    shanghai_rows: list[list],
     fnege_labels: dict[str, str],
     erim_labels: dict[str, str],
 ) -> dict:
@@ -843,6 +974,8 @@ def payload(
     rows.extend(tilburg_rows)
     rows.extend(fnege_rows)
     rows.extend(erim_rows)
+    rows.extend(stern_rows)
+    rows.extend(shanghai_rows)
     if any(len(row) != 9 for row in rows):
         raise SystemExit("Ranking row width is not 9")
     counts = Counter(row[0] for row in rows)
@@ -870,6 +1003,8 @@ def payload(
             {"id": "tilburg", "label": "Tilburg"},
             {"id": "fnege", "label": "FNEGE"},
             {"id": "erim", "label": "ERIM"},
+            {"id": "stern", "label": "Stern"},
+            {"id": "shanghai", "label": "Shanghai"},
         ],
         "editions": {
             "abs_ajg": list(EDITIONS),
@@ -882,6 +1017,8 @@ def payload(
             "tilburg": ["Current"],
             "fnege": list(FNEGE_YEARS),
             "erim": [ERIM_EDITION],
+            "stern": [2020],
+            "shanghai": list(SHANGHAI_YEARS),
         },
         "ratings": {
             "abs_ajg": ["4*", "4", "3", "2", "1"],
@@ -894,6 +1031,8 @@ def payload(
             "tilburg": list(TILBURG_RATINGS),
             "fnege": list(FNEGE_RATINGS),
             "erim": list(ERIM_RATINGS),
+            "stern": list(STERN_RATINGS),
+            "shanghai": list(SHANGHAI_RATINGS),
         },
         "subjectLabels": SUBJECT_LABELS,
         "fieldLabels": {
@@ -931,6 +1070,8 @@ def js_payload(body: dict) -> str:
         "journals/rankings/tilburg/releases/rankings_tilburg_20261025/, "
         "journals/rankings/fnege/releases/rankings_fnege_20261025/, "
         "journals/rankings/erim/releases/rankings_erim_20261025/, "
+        "journals/rankings/stern/releases/rankings_stern_20261025/, "
+        "journals/rankings/shanghai/releases/rankings_shanghai_20261025/, "
         "and journals/catalog_{ft50,utd24,top5,abdc_*}.csv. Do not edit. */\n"
         "window.RANKINGS_DATA = "
         + raw
@@ -965,6 +1106,8 @@ def main() -> int:
     tilburg_rows = load_tilburg()
     fnege_rows, fnege_labels = load_fnege()
     erim_rows, erim_labels = load_erim()
+    stern_rows = load_stern()
+    shanghai_rows = load_shanghai()
     body = payload(
         loaded,
         list_rows,
@@ -973,6 +1116,8 @@ def main() -> int:
         tilburg_rows,
         fnege_rows,
         erim_rows,
+        stern_rows,
+        shanghai_rows,
         fnege_labels,
         erim_labels,
     )
@@ -1009,7 +1154,13 @@ def main() -> int:
         f"(2025 {FNEGE_EXPECTED[2025]['rows']:,} journals, "
         f"{FNEGE_EXPECTED[2025]['mapped']:,} matched, {FNEGE_EXPECTED[2025]['match_pct']}%). "
         f"ERIM {LIST_COUNTS['erim']} "
-        f"({ERIM_EXPECTED['mapped']} matched, {ERIM_EXPECTED['match_pct']}%)."
+        f"({ERIM_EXPECTED['mapped']} matched, {ERIM_EXPECTED['match_pct']}%). "
+        f"Stern {LIST_COUNTS['stern']} "
+        f"({STERN_EXPECTED['mapped']} matched, {STERN_EXPECTED['match_pct']}%). "
+        f"Shanghai {LIST_COUNTS['shanghai']} "
+        f"(2026 {SHANGHAI_EXPECTED[2026]['rows']} journals, "
+        f"{SHANGHAI_EXPECTED[2026]['mapped']} matched, {SHANGHAI_EXPECTED[2026]['match_pct']}%; "
+        f"2024 {SHANGHAI_EXPECTED[2024]['rows']})."
     )
     return 0
 

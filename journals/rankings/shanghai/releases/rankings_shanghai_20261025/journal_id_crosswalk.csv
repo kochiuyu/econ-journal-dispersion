@@ -1,0 +1,122 @@
+edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+2024,ACADEMY OF MANAGEMENT JOURNAL,,,Top,ft50,amj,title,yes
+2024,ACADEMY OF MANAGEMENT JOURNAL,,,Top,abdc_a_star,amj,title,no
+2024,ACADEMY OF MANAGEMENT REVIEW,,,Top,ft50,amr,title,yes
+2024,ACADEMY OF MANAGEMENT REVIEW,,,Top,abdc_a_star,amr,title,no
+2024,ADMINISTRATIVE SCIENCE QUARTERLY,,,Top,ft50,asq,title,yes
+2024,ADMINISTRATIVE SCIENCE QUARTERLY,,,Top,abdc_a_star,asq,title,no
+2024,ADVANCES IN DEVELOPING HUMAN RESOURCES,,,Top,abdc_c,advances_developing_human_resources,title,yes
+2024,AMERICAN ECONOMIC REVIEW,,,Top,ft50,aer,title,yes
+2024,AMERICAN ECONOMIC REVIEW,,,Top,core49,aer,title,no
+2024,AMERICAN ECONOMIC REVIEW,,,Top,abdc_a_star,aer,title,no
+2024,BUSINESS & SOCIETY,,,Top,abdc_a,business_society,title,yes
+2024,BUSINESS HORIZONS,,,Top,abdc_b,business_horizons,title,yes
+2024,CORPORATE GOVERNANCE-THE INTERNATIONAL JOURNAL OF BUSINESS IN SOCIETY,,,Top,abdc_b,corporate_governance,title,yes
+2024,ECONOMETRICA,,,Top,ft50,econometrica,title,yes
+2024,ECONOMETRICA,,,Top,core49,econometrica,title,no
+2024,ECONOMETRICA,,,Top,abdc_a_star,econometrica,title,no
+2024,ELECTRONIC MARKETS,,,Top,abdc_a,electronic_markets,title,yes
+2024,ENTREPRENEURSHIP THEORY AND PRACTICE,,,Top,ft50,etp,title,yes
+2024,ENTREPRENEURSHIP THEORY AND PRACTICE,,,Top,abdc_a_star,etp,title,no
+2024,FAMILY BUSINESS REVIEW,,,Top,abdc_a,family_business_review,title,yes
+2024,HARVARD BUSINESS REVIEW,,,Top,ft50,hbr,title,yes
+2024,HARVARD BUSINESS REVIEW,,,Top,abdc_a,hbr,title,no
+2024,HUMAN RESOURCE MANAGEMENT JOURNAL,,,Top,abdc_a_star,human_resource_management_journal_uk,title,yes
+2024,ILR REVIEW,,,Top,abdc_a_star,ilr_review_industrial_labor_relations_review,title,yes
+2024,INDUSTRIAL MARKETING MANAGEMENT,,,Top,abdc_a_star,industrial_marketing_management,title,yes
+2024,INTERNATIONAL BUSINESS REVIEW,,,Top,abdc_a,international_business_review,title,yes
+2024,INTERNATIONAL JOURNAL OF BANK MARKETING,,,Top,abdc_a,international_journal_bank_marketing,title,yes
+2024,INTERNATIONAL JOURNAL OF CONSUMER STUDIES,,,Top,abdc_a,international_journal_consumer_studies,title,yes
+2024,INTERNATIONAL JOURNAL OF MANPOWER,,,Top,abdc_a,international_journal_manpower,title,yes
+2024,INTERNATIONAL JOURNAL OF RESEARCH IN MARKETING,,,Top,abdc_a_star,international_journal_research_marketing,title,yes
+2024,INTERNATIONAL MARKETING REVIEW,,,Top,abdc_a,international_marketing_review,title,yes
+2024,JOURNAL OF APPLIED PSYCHOLOGY,,,Top,ft50,jap,title,yes
+2024,JOURNAL OF APPLIED PSYCHOLOGY,,,Top,abdc_a_star,jap,title,no
+2024,JOURNAL OF BUSINESS RESEARCH,,,Top,abdc_a,journal_business_research,title,yes
+2024,JOURNAL OF BUSINESS VENTURING,,,Top,ft50,jbv,title,yes
+2024,JOURNAL OF BUSINESS VENTURING,,,Top,abdc_a_star,jbv,title,no
+2024,JOURNAL OF CONSUMER RESEARCH,,,Top,ft50,jcr,title,yes
+2024,JOURNAL OF CONSUMER RESEARCH,,,Top,abdc_a_star,jcr,title,no
+2024,JOURNAL OF FINANCE,,,Top,ft50,jf,title,yes
+2024,JOURNAL OF FINANCE,,,Top,abdc_a_star,jf,title,no
+2024,JOURNAL OF FINANCIAL ECONOMICS,,,Top,ft50,jfe,title,yes
+2024,JOURNAL OF FINANCIAL ECONOMICS,,,Top,abdc_a_star,jfe,title,no
+2024,JOURNAL OF HUMAN RESOURCES,,,Top,core49,journal-of-human-resources,title,yes
+2024,JOURNAL OF INNOVATION & KNOWLEDGE,,,Top,abdc_c,journal_innovation_knowledge,title,yes
+2024,JOURNAL OF INTERACTIVE MARKETING,,,Top,abdc_a,journal_interactive_marketing,title,yes
+2024,JOURNAL OF INTERNATIONAL BUSINESS POLICY,,,Top,abdc_b,journal_international_business_policy,title,yes
+2024,JOURNAL OF INTERNATIONAL BUSINESS STUDIES,,,Top,ft50,jibs,title,yes
+2024,JOURNAL OF INTERNATIONAL BUSINESS STUDIES,,,Top,abdc_a_star,jibs,title,no
+2024,JOURNAL OF INTERNATIONAL MARKETING,,,Top,abdc_a,journal_international_marketing,title,yes
+2024,JOURNAL OF LABOR ECONOMICS,,,Top,core49,journal-of-labor-economics,title,yes
+2024,JOURNAL OF MANAGEMENT,,,Top,ft50,jom,title,yes
+2024,JOURNAL OF MANAGEMENT,,,Top,abdc_a_star,jom,title,no
+2024,JOURNAL OF MARKETING,,,Top,ft50,jm,title,yes
+2024,JOURNAL OF MARKETING,,,Top,abdc_a_star,jm,title,no
+2024,JOURNAL OF MARKETING RESEARCH,,,Top,ft50,jmr,title,yes
+2024,JOURNAL OF MARKETING RESEARCH,,,Top,abdc_a_star,jmr,title,no
+2024,JOURNAL OF POLITICAL ECONOMY,,,Top,ft50,jpe,title,yes
+2024,JOURNAL OF POLITICAL ECONOMY,,,Top,abdc_a_star,jpe,title,no
+2024,JOURNAL OF PUBLIC POLICY & MARKETING,,,Top,abdc_a,journal_public_policy_marketing,title,yes
+2024,JOURNAL OF RESEARCH IN INTERACTIVE MARKETING,,,Top,abdc_b,journal_research_interactive_marketing,title,yes
+2024,JOURNAL OF RETAILING,,,Top,abdc_a_star,journal_retailing,title,yes
+2024,JOURNAL OF RETAILING AND CONSUMER SERVICES,,,Top,abdc_a,journal_retailing_consumer_services,title,yes
+2024,JOURNAL OF SERVICE RESEARCH,,,Top,abdc_a_star,journal_service_research,title,yes
+2024,JOURNAL OF THE ACADEMY OF MARKETING SCIENCE,,,Top,ft50,jams,title,yes
+2024,JOURNAL OF THE ACADEMY OF MARKETING SCIENCE,,,Top,abdc_a_star,jams,title,no
+2024,JOURNAL OF WORLD BUSINESS,,,Top,abdc_a_star,journal_world_business,title,yes
+2024,MANAGEMENT SCIENCE,,,Top,ft50,ms,title,yes
+2024,MANAGEMENT SCIENCE,,,Top,abdc_a_star,ms,title,no
+2024,ORGANIZATION SCIENCE,,,Top,ft50,orgsci,title,yes
+2024,ORGANIZATION SCIENCE,,,Top,abdc_a_star,orgsci,title,no
+2024,PERSONNEL REVIEW,,,Top,abdc_a,personnel_review,title,yes
+2024,QUARTERLY JOURNAL OF ECONOMICS,,,Top,ft50,qje,title,yes
+2024,QUARTERLY JOURNAL OF ECONOMICS,,,Top,abdc_a_star,qje,title,no
+2024,REVIEW OF ECONOMIC STUDIES,,,Top,ft50,restud,title,yes
+2024,REVIEW OF ECONOMIC STUDIES,,,Top,abdc_a_star,restud,title,no
+2024,REVIEW OF FINANCIAL STUDIES,,,Top,ft50,rfs,title,yes
+2024,REVIEW OF FINANCIAL STUDIES,,,Top,abdc_a_star,rfs,title,no
+2024,STRATEGIC MANAGEMENT JOURNAL,,,Top,ft50,smj,title,yes
+2024,STRATEGIC MANAGEMENT JOURNAL,,,Top,abdc_a_star,smj,title,no
+2024,SUPPLY CHAIN MANAGEMENT-AN INTERNATIONAL JOURNAL,,,Top,abdc_a,supply_chain_management_international_journal,title,yes
+2024,TRANSFER-EUROPEAN REVIEW OF LABOUR AND RESEARCH,,,Top,abdc_c,transfer_european_review_labour_research,title,yes
+2026,ACADEMY OF MANAGEMENT JOURNAL,,,Top,ft50,amj,title,yes
+2026,ACADEMY OF MANAGEMENT JOURNAL,,,Top,abdc_a_star,amj,title,no
+2026,ACADEMY OF MANAGEMENT REVIEW,,,Top,ft50,amr,title,yes
+2026,ACADEMY OF MANAGEMENT REVIEW,,,Top,abdc_a_star,amr,title,no
+2026,ADMINISTRATIVE SCIENCE QUARTERLY,,,Top,ft50,asq,title,yes
+2026,ADMINISTRATIVE SCIENCE QUARTERLY,,,Top,abdc_a_star,asq,title,no
+2026,AMERICAN ECONOMIC REVIEW,,,Top,ft50,aer,title,yes
+2026,AMERICAN ECONOMIC REVIEW,,,Top,core49,aer,title,no
+2026,AMERICAN ECONOMIC REVIEW,,,Top,abdc_a_star,aer,title,no
+2026,ECONOMETRICA,,,Top,ft50,econometrica,title,yes
+2026,ECONOMETRICA,,,Top,core49,econometrica,title,no
+2026,ECONOMETRICA,,,Top,abdc_a_star,econometrica,title,no
+2026,JOURNAL OF APPLIED PSYCHOLOGY,,,Top,ft50,jap,title,yes
+2026,JOURNAL OF APPLIED PSYCHOLOGY,,,Top,abdc_a_star,jap,title,no
+2026,JOURNAL OF CONSUMER RESEARCH,,,Top,ft50,jcr,title,yes
+2026,JOURNAL OF CONSUMER RESEARCH,,,Top,abdc_a_star,jcr,title,no
+2026,JOURNAL OF FINANCE,,,Top,ft50,jf,title,yes
+2026,JOURNAL OF FINANCE,,,Top,abdc_a_star,jf,title,no
+2026,JOURNAL OF FINANCIAL ECONOMICS,,,Top,ft50,jfe,title,yes
+2026,JOURNAL OF FINANCIAL ECONOMICS,,,Top,abdc_a_star,jfe,title,no
+2026,JOURNAL OF MANAGEMENT,,,Top,ft50,jom,title,yes
+2026,JOURNAL OF MANAGEMENT,,,Top,abdc_a_star,jom,title,no
+2026,JOURNAL OF MARKETING,,,Top,ft50,jm,title,yes
+2026,JOURNAL OF MARKETING,,,Top,abdc_a_star,jm,title,no
+2026,JOURNAL OF MARKETING RESEARCH,,,Top,ft50,jmr,title,yes
+2026,JOURNAL OF MARKETING RESEARCH,,,Top,abdc_a_star,jmr,title,no
+2026,JOURNAL OF POLITICAL ECONOMY,,,Top,ft50,jpe,title,yes
+2026,JOURNAL OF POLITICAL ECONOMY,,,Top,abdc_a_star,jpe,title,no
+2026,MANAGEMENT SCIENCE,,,Top,ft50,ms,title,yes
+2026,MANAGEMENT SCIENCE,,,Top,abdc_a_star,ms,title,no
+2026,ORGANIZATION SCIENCE,,,Top,ft50,orgsci,title,yes
+2026,ORGANIZATION SCIENCE,,,Top,abdc_a_star,orgsci,title,no
+2026,QUARTERLY JOURNAL OF ECONOMICS,,,Top,ft50,qje,title,yes
+2026,QUARTERLY JOURNAL OF ECONOMICS,,,Top,abdc_a_star,qje,title,no
+2026,REVIEW OF ECONOMIC STUDIES,,,Top,ft50,restud,title,yes
+2026,REVIEW OF ECONOMIC STUDIES,,,Top,abdc_a_star,restud,title,no
+2026,REVIEW OF FINANCIAL STUDIES,,,Top,ft50,rfs,title,yes
+2026,REVIEW OF FINANCIAL STUDIES,,,Top,abdc_a_star,rfs,title,no
+2026,STRATEGIC MANAGEMENT JOURNAL,,,Top,ft50,smj,title,yes
+2026,STRATEGIC MANAGEMENT JOURNAL,,,Top,abdc_a_star,smj,title,no
