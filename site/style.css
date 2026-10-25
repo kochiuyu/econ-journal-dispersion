@@ -156,7 +156,11 @@ tbody tr:hover td { background: var(--accent-soft); }
 .u-c { background: #f1ece6; color: #5c5146; }
 .u-top5 { background: #f6e4e1; color: #6e2c2c; }
 .u-utd24 { background: #e8e6f6; color: #332e66; }
-.u-ajg { background: #e3f4f1; color: #0f4f4a; }
+.u-ajg_4star { background: #c5ebe4; color: #06332e; }
+.u-ajg_4 { background: #d7f3ee; color: #0c4a44; }
+.u-ajg_3 { background: #e4f7f3; color: #146058; }
+.u-ajg_2 { background: #eef8f6; color: #2a6f68; }
+.u-ajg_1 { background: #f4faf8; color: #4d736e; }
 @media (prefers-color-scheme: dark) {
   .u-ft50 { background: #24343b; color: #d5e4ec; }
   .u-a_star { background: #3d3220; color: #f0d7a6; }
@@ -165,7 +169,11 @@ tbody tr:hover td { background: var(--accent-soft); }
   .u-c { background: #2e2a26; color: #e6ddd4; }
   .u-top5 { background: #3d2826; color: #f3d2cc; }
   .u-utd24 { background: #2c2a3d; color: #ddd7f5; }
-  .u-ajg { background: #1c3330; color: #c9efe8; }
+  .u-ajg_4star { background: #12332f; color: #d5f6f0; }
+  .u-ajg_4 { background: #1a3d38; color: #c9efe8; }
+  .u-ajg_3 { background: #234742; color: #c5ebe4; }
+  .u-ajg_2 { background: #2c4e49; color: #d5eee8; }
+  .u-ajg_1 { background: #3a524e; color: #e4f3ef; }
 }
 
 .pager {

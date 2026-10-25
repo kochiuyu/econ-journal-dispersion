@@ -51,20 +51,24 @@ Twenty-three are tagged from the FT50 freeze. INFORMS Journal on Computing
 Journal of Applied Psychology is on FT50 and is absent from the UTD24 catalog.
 Journal of Management is likewise on FT50 and absent from UTD24.
 
-AJG 2024
---------
-AJG 2024 is an extra tag on those same rows. It does not add a board file
-and it does not scrape. Membership is the 2024 edition in
-``journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/``.
-A journal is tagged when its catalog id is a ``journal_id`` on
-``abs_ajg_2024.csv`` or on a 2024 row of ``journal_id_crosswalk.csv``.
+AJG grades
+-----------
+AJG grades are extra tags on those same rows. They do not add a board file
+and they do not scrape. The grade is the 2024 edition in
+``journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/``, the latest
+edition in that freeze. ``rating`` on ``abs_ajg_2024.csv`` is ``4*``, ``4``,
+``3``, ``2``, or ``1``. A journal is tagged when its catalog id is a
+``journal_id`` on that file or on a 2024 row of ``journal_id_crosswalk.csv``.
 The crosswalk is required for journals whose primary id is a core49 slug
-while the board file uses the ABDC id (The Economic Journal is ``ej``).
-Unmatched AJG titles have no id and are not tagged. The chip is membership
-in that edition, at any grade. Grades stay on the Rankings page.
+while the board file uses the ABDC id (The Economic Journal is ``ej``,
+grade 4). Unmatched AJG titles have no id and are not tagged. Each tagged
+journal gets one grade, labeled ``AJG 4*``, ``AJG 4``, ``AJG 3``, ``AJG 2``,
+or ``AJG 1`` on both the list chip and the row badge. The label does not
+include the edition year. Earlier editions stay on the Rankings page.
+ABDC chips stay A*, A, B, and C.
 
 Universe bits: FT50 1, ABDC A* 2, ABDC A 4, ABDC B 8, ABDC C 16, Top 5 32,
-UTD24 64, AJG 2024 128.
+UTD24 64, AJG 4* 128, AJG 4 256, AJG 3 512, AJG 2 1024, AJG 1 2048.
 
 Within one release file
 -----------------------
@@ -99,9 +103,9 @@ from those collapsed appointments, then runs ``scripts/build_rankings.py``,
 which writes ``site/rankings-data.js`` from the ABS/AJG, CNRS, and
 Handelsblatt/VWL freezes and the FT50, UTD24, Top 5, and ABDC catalogs.
 Journals and institutions regroup the same boards and show the same list
-chips, including AJG 2024. Rankings are journal grades, weights, and
-membership lists, not appointments. The directory chip is 2024 membership
-from that freeze, not the grade table.
+chips, including the 2024 AJG grade. Rankings still list every ABS/AJG
+edition, plus CNRS and Handelsblatt/VWL. The directory AJG chips are that
+edition's grade, not a membership flag and not the earlier editions.
 
 Journal and institution pages
 -----------------------------
@@ -212,8 +216,18 @@ AJG_CROSSWALK = AJG_FREEZE / "journal_id_crosswalk.csv"
 # Locked to RELEASE_NOTES.md in rankings_abs_ajg_20261024.
 AJG_EXPECTED_ROWS = 1823
 AJG_EXPECTED_MAPPED = 1378
+AJG_RATINGS = ("4*", "4", "3", "2", "1")
+# Chip and badge text. The edition year stays in the title, not the label.
+AJG_GRADE_META = (
+    {"id": "ajg_4star", "label": "AJG 4*", "bit": 128, "rating": "4*"},
+    {"id": "ajg_4", "label": "AJG 4", "bit": 256, "rating": "4"},
+    {"id": "ajg_3", "label": "AJG 3", "bit": 512, "rating": "3"},
+    {"id": "ajg_2", "label": "AJG 2", "bit": 1024, "rating": "2"},
+    {"id": "ajg_1", "label": "AJG 1", "bit": 2048, "rating": "1"},
+)
+AJG_RATING_TO_ID = {item["rating"]: item["id"] for item in AJG_GRADE_META}
+AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 
-UNIVERSE_ORDER = ("ft50", "a_star", "a", "b", "c", "top5", "utd24", "ajg")
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
     {"id": "a_star", "label": "ABDC A*", "bit": 2},
@@ -222,14 +236,21 @@ UNIVERSE_META = (
     {"id": "c", "label": "ABDC C", "bit": 16},
     {"id": "top5", "label": "Top 5", "bit": 32},
     {"id": "utd24", "label": "UTD24", "bit": 64},
-    {
-        "id": "ajg",
-        "label": "AJG 2024",
-        "bit": 128,
-        "title": "CABS Academic Journal Guide 2024",
-    },
+    *(
+        {
+            "id": item["id"],
+            "label": item["label"],
+            "bit": item["bit"],
+            "title": f"CABS Academic Journal Guide 2024, grade {item['rating']}",
+        }
+        for item in AJG_GRADE_META
+    ),
 )
+UNIVERSE_ORDER = tuple(item["id"] for item in UNIVERSE_META)
 BITS = {item["id"]: item["bit"] for item in UNIVERSE_META}
+AJG_MASK = 0
+for _ajg_id in AJG_IDS:
+    AJG_MASK |= BITS[_ajg_id]
 
 FAMILIES = (
     "Editor-in-Chief",
@@ -615,21 +636,26 @@ def load_membership() -> Membership:
     )
 
 
-def load_ajg_ids() -> frozenset[str]:
-    """Catalog ids on AJG 2024, including non-primary crosswalk ids.
+def load_ajg_grades() -> dict[str, str]:
+    """Catalog id to AJG 2024 rating, including non-primary crosswalk ids.
 
     The year file's primary id is sometimes a core49 slug. The board files
     use the ABDC id, which the crosswalk keeps with ``is_primary`` no.
+    Every matched id gets the ``rating`` on that 2024 row (``4*``, ``4``,
+    ``3``, ``2``, or ``1``). Earlier editions are not read.
     """
     rows = read_catalog_rows(AJG_YEAR)
     if len(rows) != AJG_EXPECTED_ROWS:
         raise SystemExit(f"AJG 2024 has {len(rows)} rows, expected {AJG_EXPECTED_ROWS}")
-    primary: set[str] = set()
+    primary: dict[str, str] = {}
     for row in rows:
         if (row.get("edition_year") or "").strip() != str(AJG_EDITION):
             raise SystemExit(f"AJG edition_year {row.get('edition_year')!r}")
         if (row.get("source_note") or "").strip() != "AJG2024":
             raise SystemExit(f"AJG source_note {row.get('source_note')!r}")
+        rating = (row.get("rating") or "").strip()
+        if rating not in AJG_RATINGS:
+            raise SystemExit(f"AJG rating {rating!r} on {row.get('journal_title')}")
         journal_id = (row.get("journal_id") or "").strip()
         method = (row.get("match_method") or "").strip()
         if method == "unmatched":
@@ -642,40 +668,80 @@ def load_ajg_ids() -> frozenset[str]:
             raise SystemExit(f"Matched AJG row missing id: {row.get('journal_title')}")
         if journal_id in primary:
             raise SystemExit(f"Duplicate AJG 2024 journal_id {journal_id}")
-        primary.add(journal_id)
+        primary[journal_id] = rating
     if len(primary) != AJG_EXPECTED_MAPPED:
         raise SystemExit(f"AJG 2024 mapped {len(primary)}, expected {AJG_EXPECTED_MAPPED}")
 
-    ids = set(primary)
+    grades = dict(primary)
     xwalk_primary: set[str] = set()
     xwalk_rows = 0
+    grouped: dict[tuple[str, str], set[str]] = defaultdict(set)
+    grouped_primary: dict[tuple[str, str], str] = {}
     for row in read_catalog_rows(AJG_CROSSWALK):
         if (row.get("edition_year") or "").strip() != str(AJG_EDITION):
             continue
         xwalk_rows += 1
         journal_id = (row.get("journal_id") or "").strip()
+        rating = (row.get("rating") or "").strip()
         if not journal_id:
-            continue
-        ids.add(journal_id)
+            raise SystemExit(f"AJG 2024 crosswalk row missing id: {row.get('journal_title')}")
+        if rating not in AJG_RATINGS:
+            raise SystemExit(f"AJG crosswalk rating {rating!r} on {journal_id}")
+        existing = grades.get(journal_id)
+        if existing is not None and existing != rating:
+            raise SystemExit(f"AJG 2024 id {journal_id} has ratings {existing} and {rating}")
+        grades[journal_id] = rating
+        key = (
+            (row.get("journal_title") or "").strip(),
+            (row.get("print_issn") or "").strip(),
+        )
+        grouped[key].add(rating)
         if (row.get("is_primary") or "").strip() == "yes":
             xwalk_primary.add(journal_id)
+            grouped_primary[key] = journal_id
+            if primary.get(journal_id) != rating:
+                raise SystemExit(
+                    f"AJG 2024 primary {journal_id} crosswalk rating {rating} != year file {primary.get(journal_id)}"
+                )
     if not xwalk_rows:
         raise SystemExit("AJG crosswalk has no 2024 rows")
-    if xwalk_primary != primary:
-        missing = sorted(primary - xwalk_primary)[:8]
-        extra = sorted(xwalk_primary - primary)[:8]
+    if xwalk_primary != set(primary):
+        missing = sorted(set(primary) - xwalk_primary)[:8]
+        extra = sorted(xwalk_primary - set(primary))[:8]
         raise SystemExit(f"AJG 2024 crosswalk primary ids differ. Missing {missing}. Extra {extra}.")
+    for key, ratings in grouped.items():
+        if len(ratings) != 1:
+            raise SystemExit(f"AJG 2024 title {key[0]!r} has ratings {sorted(ratings)}")
+        primary_id = grouped_primary.get(key)
+        if primary_id and primary.get(primary_id) not in ratings:
+            raise SystemExit(f"AJG 2024 title {key[0]!r} disagrees with {primary_id}")
     # Board id, not the core49 slug stored as the freeze's primary id.
-    if "ej" not in ids or "ej" in primary:
-        raise SystemExit("AJG 2024 should tag The Economic Journal via crosswalk id ej")
-    if "jeh" not in ids or "jeh" in primary:
-        raise SystemExit("AJG 2024 should tag The Journal of Economic History via crosswalk id jeh")
-    if "accounting_educators_journal" in ids:
+    if grades.get("ej") != "4" or "ej" in primary:
+        raise SystemExit(f"The Economic Journal should be AJG 4 via crosswalk id ej, found {grades.get('ej')}")
+    if grades.get("jeh") != "3" or "jeh" in primary:
+        raise SystemExit(
+            f"The Journal of Economic History should be AJG 3 via crosswalk id jeh, found {grades.get('jeh')}"
+        )
+    if "accounting_educators_journal" in grades:
         raise SystemExit("Accounting Educators Journal is not on AJG 2024")
-    missing_top5 = sorted(TOP5_IDS - ids)
-    if missing_top5:
-        raise SystemExit(f"Top 5 ids missing from AJG 2024: {missing_top5}")
-    return frozenset(ids)
+    for journal_id in sorted(TOP5_IDS):
+        if grades.get(journal_id) != "4*":
+            raise SystemExit(f"{journal_id} AJG grade is {grades.get(journal_id)!r}, expected 4*")
+    if grades.get("informs_journal_computing") != "3":
+        raise SystemExit(
+            f"INFORMS Journal on Computing AJG grade is {grades.get('informs_journal_computing')!r}, expected 3"
+        )
+    if grades.get("jap") != "4*":
+        raise SystemExit(f"Journal of Applied Psychology AJG grade is {grades.get('jap')!r}, expected 4*")
+    ft50_ids = {
+        (row.get("journal_id") or "").strip()
+        for row in read_catalog_rows(FT50_CATALOG)
+        if (row.get("journal_id") or "").strip()
+    }
+    missing_ft50 = sorted(journal_id for journal_id in ft50_ids if journal_id not in grades)
+    if len(ft50_ids) != 50 or missing_ft50:
+        raise SystemExit(f"FT50 ids missing an AJG 2024 grade: {missing_ft50 or sorted(ft50_ids)}")
+    return grades
 
 
 def load_catalog_names() -> dict[str, str]:
@@ -773,7 +839,7 @@ def row_to_rec(
     catalogs: dict[str, str],
     membership: Membership,
     catalog: JournalCatalog,
-    ajg_ids: frozenset[str],
+    ajg_grades: dict[str, str],
 ) -> Rec | None:
     name = usable_name(row.get("editor_name") or "")
     if not name:
@@ -797,8 +863,10 @@ def row_to_rec(
             journal_id = named["id"]
     universes = {origin}
     universes |= membership.tag(journal_id, journal)
-    if journal_id and journal_id in ajg_ids:
-        universes.add("ajg")
+    if journal_id:
+        rating = ajg_grades.get(journal_id)
+        if rating:
+            universes.add(AJG_RATING_TO_ID[rating])
     return Rec(
         name=name,
         name_key=norm_name(name),
@@ -827,7 +895,7 @@ def read_release(
     membership: Membership,
     seen_membership_ids: set[str],
     catalog: JournalCatalog,
-    ajg_ids: frozenset[str],
+    ajg_grades: dict[str, str],
 ) -> tuple[list[Rec], int]:
     records: list[Rec] = []
     dropped = 0
@@ -842,7 +910,7 @@ def read_release(
             journal_id = (row.get("abdc_journal_id") or "").strip()
             if journal_id in membership.ids:
                 seen_membership_ids.add(journal_id)
-            rec = row_to_rec(row, origin, catalogs, membership, catalog, ajg_ids)
+            rec = row_to_rec(row, origin, catalogs, membership, catalog, ajg_grades)
             if rec is None:
                 dropped += 1
                 continue
@@ -955,8 +1023,10 @@ def assert_static_site() -> None:
         raise SystemExit("site/index.html is missing the Rankings nav link")
     if 'id="institution"' not in html or 'id="field"' not in html:
         raise SystemExit("site/index.html is missing the institution or field filter")
-    if "AJG 2024" not in html:
-        raise SystemExit("site/index.html does not name the AJG 2024 list")
+    if "AJG 4*" not in html or "AJG 1" not in html:
+        raise SystemExit("site/index.html does not name the AJG grades")
+    if "AJG 2024" in html:
+        raise SystemExit("site/index.html still labels AJG with the edition year")
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
     if PAGES_BASE not in rankings_js:
         raise SystemExit("site/rankings.js is missing the project Pages base path")
@@ -968,6 +1038,8 @@ def assert_static_site() -> None:
         for link in ("journals.html", "institutions.html", "rankings.html"):
             if f'href="{link}"' not in text:
                 raise SystemExit(f"site/{name} is missing the {link} nav link")
+        if name != "rankings.html" and "AJG 2024" in text:
+            raise SystemExit(f"site/{name} still labels AJG with the edition year")
     for script in ("journals.js", "institutions.js"):
         text = (SITE_DIR / script).read_text(encoding="utf-8")
         if PAGES_BASE not in text:
@@ -1111,6 +1183,8 @@ def build_payload(
 
 
 def dump_js(global_name: str, payload: dict, comment: str) -> str:
+    if "*/" in comment:
+        raise SystemExit("Generated JS comment contains */ and would close early")
     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     raw = (
         raw.replace("<", "\\u003c")
@@ -1127,7 +1201,7 @@ def js_payload(payload: dict) -> str:
         payload,
         "Generated by scripts/build_site.py from the current FT50 and ABDC editor releases.\n"
         "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
-        "   AJG 2024 is a subset tag from the ABS/AJG 2024 freeze, including crosswalk ids.\n"
+        "   AJG grades 4*, 4, 3, 2, and 1 are the 2024 edition of the ABS/AJG freeze, including crosswalk ids.\n"
         "   fields and journalField are ABDC field_for. Do not edit.",
     )
 
@@ -1159,6 +1233,30 @@ def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int
         raise SystemExit("Expected same-name appointments with different affiliations to stay split")
     if payload["base"] != PAGES_BASE:
         raise SystemExit("data.js base path is not the project Pages path")
+    labels = {item["id"]: item["label"] for item in payload["universes"]}
+    expected_labels = {
+        "ft50": "FT50",
+        "a_star": "ABDC A*",
+        "a": "ABDC A",
+        "b": "ABDC B",
+        "c": "ABDC C",
+        "top5": "Top 5",
+        "utd24": "UTD24",
+        "ajg_4star": "AJG 4*",
+        "ajg_4": "AJG 4",
+        "ajg_3": "AJG 3",
+        "ajg_2": "AJG 2",
+        "ajg_1": "AJG 1",
+    }
+    if labels != expected_labels:
+        raise SystemExit(f"List labels {labels} != {expected_labels}")
+    for item in payload["universes"]:
+        if re.search(r"20\d{2}", item["label"]):
+            raise SystemExit(f"List label includes a year: {item['label']}")
+    for row in payload["rows"]:
+        ajg_bits = row[3] & AJG_MASK
+        if ajg_bits & (ajg_bits - 1):
+            raise SystemExit(f"Appointment has two AJG grades: {row[0]} mask {row[3]}")
     # Every FT50 badge row must also carry an ABDC badge.
     ft50_bit = BITS["ft50"]
     abdc_bits = BITS["a_star"] | BITS["a"] | BITS["b"] | BITS["c"]
@@ -1557,9 +1655,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit(f"American Economic Review mask is wrong: {aer[1]}")
     if aer[1] & utd_bit:
         raise SystemExit("American Economic Review must not carry UTD24")
-    ajg_bit = BITS["ajg"]
-    if (aer[1] & ajg_bit) == 0:
-        raise SystemExit(f"American Economic Review is missing AJG 2024: {aer[1]}")
+    def ajg_on(mask: int) -> list[str]:
+        return [uid for uid in AJG_IDS if mask & BITS[uid]]
+
+    aer_ajg = ajg_on(aer[1])
+    if aer_ajg != ["ajg_4star"]:
+        raise SystemExit(f"American Economic Review AJG grade {aer_ajg}, expected AJG 4*")
     aer_field = journals["fields"][aer[5]]
     if aer_field != "3801 Applied economics":
         raise SystemExit(f"American Economic Review field is {aer_field!r}")
@@ -1568,23 +1669,51 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     jap = by_name.get("Journal of Applied Psychology")
     if jap is None or jap[1] & utd_bit or jap[1] & top5_bit or not (jap[1] & ft50_bit):
         raise SystemExit("Journal of Applied Psychology tags are wrong on the journal page")
+    if ajg_on(jap[1]) != ["ajg_4star"]:
+        raise SystemExit("Journal of Applied Psychology should carry AJG 4*")
     joc = by_name.get("INFORMS Journal on Computing")
     if joc is None or not (joc[1] & utd_bit) or not (joc[1] & a_bit) or (joc[1] & ft50_bit):
         raise SystemExit("INFORMS Journal on Computing tags are wrong on the journal page")
+    if ajg_on(joc[1]) != ["ajg_3"]:
+        raise SystemExit("INFORMS Journal on Computing should carry AJG 3")
     ej = by_name.get("The Economic Journal")
-    if ej is None or (ej[1] & ajg_bit) == 0:
-        raise SystemExit("The Economic Journal is missing the AJG 2024 chip (crosswalk id ej)")
+    if ej is None or ajg_on(ej[1]) != ["ajg_4"]:
+        raise SystemExit("The Economic Journal should carry AJG 4 via crosswalk id ej")
+    jeh = by_name.get("The Journal of Economic History")
+    if jeh is None or ajg_on(jeh[1]) != ["ajg_3"]:
+        raise SystemExit("The Journal of Economic History should carry AJG 3 via crosswalk id jeh")
     educators = by_name.get("Accounting Educators Journal")
-    if educators is None or educators[1] & ajg_bit:
-        raise SystemExit("Accounting Educators Journal must not carry AJG 2024")
-    ft50_missing_ajg = [
-        row[0] for row in journals["rows"] if (row[1] & ft50_bit) and not (row[1] & ajg_bit)
+    if educators is None or ajg_on(educators[1]):
+        raise SystemExit("Accounting Educators Journal must not carry an AJG grade")
+    ft50_bad_ajg = [
+        f"{row[0]} {ajg_on(row[1])}"
+        for row in journals["rows"]
+        if (row[1] & ft50_bit) and len(ajg_on(row[1])) != 1
     ]
-    if ft50_missing_ajg:
-        raise SystemExit(f"FT50 journals missing AJG 2024: {ft50_missing_ajg}")
-    ajg_journals = jcounts["byUniverse"]["ajg"]["journals"]
-    if not 1_000 <= ajg_journals < jcounts["journals"]:
-        raise SystemExit(f"Unexpected AJG 2024 journal count: {ajg_journals}")
+    if ft50_bad_ajg:
+        raise SystemExit(f"FT50 journals should have one AJG grade: {ft50_bad_ajg}")
+    multi_ajg = [
+        row[0] for row in journals["rows"] if len(ajg_on(row[1])) > 1
+    ]
+    if multi_ajg:
+        raise SystemExit(f"Journals with more than one AJG grade: {multi_ajg[:8]}")
+    # 4*, 4, and 3 are every matched journal in abs_ajg_2024.csv.
+    # 2 and 1 drop the matched titles that are not on a current board.
+    expected_ajg_journals = {
+        "ajg_4star": 47,
+        "ajg_4": 89,
+        "ajg_3": 287,
+        "ajg_2": 459,
+        "ajg_1": 474,
+    }
+    ajg_journals = 0
+    for uid, expected in expected_ajg_journals.items():
+        got = jcounts["byUniverse"][uid]["journals"]
+        ajg_journals += got
+        if got != expected:
+            raise SystemExit(f"{uid} journals {got}, expected {expected}")
+    if ajg_journals != 1_356:
+        raise SystemExit(f"Unexpected AJG journal count: {ajg_journals}")
     if len(directory.get("journalField") or []) != len(directory["journals"]):
         raise SystemExit("directory journalField does not line up with journals")
     directory_field = {
@@ -1596,7 +1725,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         got = directory_field.get(row[0])
         if got != expect:
             raise SystemExit(f"{row[0]} field {got!r} != journal page {expect!r}")
-    for uid in ("ft50", "top5", "utd24", "ajg"):
+    for uid in ("ft50", "top5", "utd24", *AJG_IDS):
         if jcounts["byUniverse"][uid]["journals"] != dcounts["byUniverse"][uid]["journals"]:
             raise SystemExit(
                 f"{uid} journal count {jcounts['byUniverse'][uid]['journals']} != "
@@ -1643,7 +1772,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit("Dartmouth College continent is not North America")
     if dartmouth_row[4] < 1:
         raise SystemExit("Dartmouth College has no appointments")
-    for uid in ("ft50", "top5", "utd24", "ajg", "a_star", "a", "b", "c"):
+    for uid in ("ft50", "top5", "utd24", *AJG_IDS, "a_star", "a", "b", "c"):
         got = icounts["byUniverse"][uid]["appointments"]
         cap = dcounts["byUniverse"][uid]["appointments"]
         if got <= 0 or got > cap:
@@ -1661,7 +1790,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
 def main() -> int:
     assert_static_site()
     membership = load_membership()
-    ajg_ids = load_ajg_ids()
+    ajg_grades = load_ajg_grades()
     catalogs = load_catalog_names()
     journal_catalog = load_journal_catalog()
     ft50_path = resolve_ft50_path()
@@ -1681,7 +1810,7 @@ def main() -> int:
         membership,
         seen_membership_ids,
         journal_catalog,
-        ajg_ids,
+        ajg_grades,
     )
     dropped += ft50_dropped
     sources.append(ft50_path.relative_to(ROOT).as_posix())
@@ -1699,7 +1828,7 @@ def main() -> int:
             membership,
             seen_membership_ids,
             journal_catalog,
-            ajg_ids,
+            ajg_grades,
         )
         dropped += n_dropped
         sources.append(path.relative_to(ROOT).as_posix())

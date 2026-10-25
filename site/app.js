@@ -78,14 +78,26 @@
     return year + ".";
   }
 
+  function universeSelection(raw) {
+    var selected = (raw || "").split(",").filter(Boolean);
+    if (selected.indexOf("ajg") === -1) return selected;
+    var next = [];
+    selected.forEach(function (id) {
+      if (id !== "ajg" && next.indexOf(id) === -1) next.push(id);
+    });
+    universes.forEach(function (universe) {
+      if (universe.id.indexOf("ajg_") === 0 && next.indexOf(universe.id) === -1) next.push(universe.id);
+    });
+    return next;
+  }
+
   function readUrl() {
     var params = new URLSearchParams(window.location.search);
     var size = Number(params.get("n"));
     var page = Number(params.get("page"));
-    var universesSelected = (params.get("u") || "").split(",").filter(Boolean);
     return {
       q: params.get("q") || "",
-      universes: new Set(universesSelected),
+      universes: new Set(universeSelection(params.get("u"))),
       role: params.get("role") || "",
       continent: params.get("continent") || "",
       country: params.get("country") || "",

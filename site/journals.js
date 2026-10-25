@@ -84,6 +84,19 @@
     return labels.join(" ");
   }
 
+  function universeSelection(raw) {
+    var selected = (raw || "").split(",").filter(Boolean);
+    if (selected.indexOf("ajg") === -1) return selected;
+    var next = [];
+    selected.forEach(function (id) {
+      if (id !== "ajg" && next.indexOf(id) === -1) next.push(id);
+    });
+    universes.forEach(function (universe) {
+      if (universe.id.indexOf("ajg_") === 0 && next.indexOf(universe.id) === -1) next.push(universe.id);
+    });
+    return next;
+  }
+
   function readUrl() {
     var params = new URLSearchParams(window.location.search);
     var size = Number(params.get("n"));
@@ -92,7 +105,7 @@
     if (["name", "lists", "field", "appointments", "editors", "countries"].indexOf(sort) === -1) sort = "name";
     return {
       q: params.get("q") || "",
-      universes: new Set((params.get("u") || "").split(",").filter(Boolean)),
+      universes: new Set(universeSelection(params.get("u"))),
       field: params.get("field") || "",
       sort: sort,
       dir: params.get("dir") === "desc" ? "desc" : "asc",
