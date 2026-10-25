@@ -52,7 +52,7 @@ data/
 
 ## Website
 
-Searchable directory of **current journal editors** on the FT50 list and the ABDC A*, A, B, and C lists. Top 5, UTD24, and AJG 2024 are extra multi-select filters on those same boards. The directory also filters by institution (the row affiliation) and by ABDC field:
+Searchable directory of **current journal editors** on the FT50 list and the ABDC A*, A, B, and C lists. Top 5, UTD24, and AJG grades (4*, 4, 3, 2, and 1) are extra multi-select filters on those same boards. The directory also filters by institution (the row affiliation) and by ABDC field:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/**
 
@@ -60,11 +60,11 @@ core49 is not included (it is an older ABDC A* subset, not a separate universe i
 
 `scripts/build_site.py` reads the current editor releases and writes `site/data.js`. The page is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. Emails, phone numbers, and photos are not published.
 
-One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5, UTD24, or AJG 2024 journal keeps those badges on that same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
+One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5, UTD24, or AJG grade keeps that badge on the same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
 
 Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies (`journals/catalog_top5.csv`). UTD24 is the official UT Dallas list (`journals/catalog_utd24.csv`): 23 journals already in the FT50 freeze, plus INFORMS Journal on Computing from `editors_abdc_a_current.csv`. Journal of Applied Psychology stays on FT50 only.
 
-AJG 2024 is membership in the CABS Academic Journal Guide 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), any grade. The join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. Unmatched AJG titles are not tagged. The chip does not add boards. Grades for every edition stay on Rankings.
+AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. The join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. Unmatched AJG titles are not tagged. The chips do not add boards. ABDC chips stay A*, A, B, and C. Earlier AJG editions stay on Rankings.
 
 The directory Institution menu lists the affiliation on each row (ROR name, otherwise the canonical or masthead affiliation). It uses the same `aff` query the Institutions page already opens. Field is ABDC `field_for`, the same subject string as the Journals page, with the leading code hidden in the menu.
 
@@ -76,7 +76,7 @@ The same boards are also grouped by journal and by institution:
 
 `scripts/build_site.py` writes `site/journals-data.js` (one row per journal: list badges, appointments, distinct editors, countries, ABDC field, board link) and `site/institutions-data.js` (one row per ROR id, or per affiliation name when ROR is missing). A journal name opens the directory with `?journal=`. An institution name opens it with `?aff=` set to that affiliation and `?country=` when the row has a country. Those files are generated and are not committed.
 
-Journal grades are a separate page, not extra directory chips:
+Journal grades for every ranking system are also a separate page. The directory’s AJG chips are only the 2024 grade:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
@@ -92,7 +92,7 @@ Journal grades are a separate page, not extra directory chips:
 | Top 5 | 5 | Membership list. No grades |
 | ABDC | 2,651 | 2025 list, ratings A* 219, A 630, B 861, C 941 |
 
-The directory AJG chip is 2024 membership only. FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
+The directory AJG chips are the 2024 grade (AJG 4* through AJG 1). FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
 
 ### Local build
 
