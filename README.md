@@ -27,6 +27,7 @@ Analysis-friendly **catalogs + release panels** only. Use the files under `data/
 | **ERIM** | `journals/rankings/erim/releases/rankings_erim_20261025/` | ERIM Journals List Core 2024â€“2028. Classes as published in the Core file. Rankings page only |
 | **Stern** | `journals/rankings/stern/releases/rankings_stern_20261025/` | NYU Stern top-tier journals by department, 2020 and 2021 (TOpS). Accounting, Economics, Finance, Management, Marketing, and TOpS. Rankings page only |
 | **Shanghai** | `journals/rankings/shanghai/releases/rankings_shanghai_20261025/` | ShanghaiRanking top journals for 2024 and 2026. Economics, Business Administration, Finance, and Management. Rankings page only |
+| **SHUFE** | `journals/rankings/shufe/releases/rankings_shufe_20261025/` | SUFE Tenure-Track Journal List. Tiers Top Tier, First Tier, Second Tier, and Third Tier. No edition year on the source page. Rankings page only |
 
 Prefer joining on stable keys (`journal_slug` / `journal_id`, `year`, `doi`) â€” see `docs/README.md`.
 
@@ -91,7 +92,7 @@ Journal grades for every ranking system are also a separate page. The directoryâ
 
 **https://kochiuyu.github.io/econ-journal-dispersion/rankings.html**
 
-`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern department, the Shanghai subject, or the FT50 subject area from the McMaster LibGuide (https://libguides.mcmaster.ca/ft-top50). A Stern memo heading is shown after the department when the row has one. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no grades. UTD24 and Top 5 have no field. Tilburg, FNEGE, ERIM, Stern, and Shanghai are Rankings lists only. They are not directory chips. Systems on the page:
+`scripts/build_site.py` also runs `scripts/build_rankings.py`, which writes `site/rankings-data.js`. The Rankings page filters by ranking system, edition, rating, and field, and searches by journal title. Field is the ABS/AJG subject, the CNRS domain, the ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern department, the Shanghai subject, or the FT50 subject area from the McMaster LibGuide (https://libguides.mcmaster.ca/ft-top50). A Stern memo heading is shown after the department when the row has one. Handelsblatt/VWL shows the published weight. FT50, UTD24, and Top 5 have no grades. UTD24, Top 5, and SHUFE have no field. Tilburg, FNEGE, ERIM, Stern, Shanghai, and SHUFE are Rankings lists only. They are not directory chips. Systems on the page:
 
 | System | Rows | What the filter shows |
 |--------|------|------------------------|
@@ -107,6 +108,7 @@ Journal grades for every ranking system are also a separate page. The directoryâ
 | ERIM | 283 | Core 2024â€“2028 classes as published (STAR, M-STAR, P, EP*, PA, S, S (3=1), M), from freeze `rankings_erim_20261025`. 257 matched (90.8%) |
 | Stern | 233 | NYU Stern departments Accounting, Economics, Finance, Management, Marketing, and TOpS, from freeze `rankings_stern_20261025`. 2020 has 176 journals (157 matched, 89.2%). 2021 is TOpS, 57 journals (31 matched, 54.4%). 188 of 233 rows are matched (80.7%) |
 | Shanghai | 76 | Editions 2024 and 2026, binary Top, subjects Economics, Business Administration, Finance, and Management, from freeze `rankings_shanghai_20261025`. 2026 has 19 journals, all matched |
+| SHUFE | 123 | SUFE Tenure-Track tiers Top Tier / First Tier / Second Tier / Third Tier (5 / 20 / 39 / 59), from freeze `rankings_shufe_20261025`. The source page has no edition year, so the selector is Current. 120 matched (97.6%) |
 
 The directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards (AJG 4* through AJG 1). The full guide stays on this page, including titles that still have no board. FT50, UTD24, and Top 5 are not given grades on the Rankings page. The other ABS/AJG editions stay there as grades.
 
