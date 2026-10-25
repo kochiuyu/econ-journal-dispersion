@@ -1,0 +1,16 @@
+edition_year,journal_title,print_issn,e_issn,field,publisher,rating,match_method,source_file
+Current,ACM Computing Surveys,,,Information Management,,Very good,unmatched,topjournals
+Current,Artificial Intelligence,,,Information Management,,Very good,unmatched,topjournals
+Current,Communications of the ACM,,,Information Management,,Very good,unmatched,topjournals
+Current,Computational Optimization and Applications,,,Operations Research,,Very good,unmatched,topjournals
+Current,Governance - An International Journal of Policy Administration and Institutions,,,,,Top,unmatched,topjournals
+Current,IEEE Software,,,Information Management,,Very good,unmatched,topjournals
+Current,IEEE Transactions on Knowledge and Data Engineering,,,Information Management,,Very good,unmatched,topjournals
+Current,IEEE Transactions on Software Engineering,,,Information Management,,Very good,unmatched,topjournals
+Current,Journal of Combinatorial Theory A,,,,,Top,unmatched,topjournals
+Current,Journal of Combinatorial Theory B,,,,,Top,unmatched,topjournals
+Current,Journal of European Social Policy,,,Public Governance,,Very good,unmatched,topjournals
+Current,Mathematical Methods of Operations Research,,,Operations Research,,Very good,unmatched,topjournals
+Current,Mathematical Programming,,,,,Top-core,unmatched,topjournals
+Current,SIAM Journal on Optimization,,,,,Top,unmatched,topjournals
+Current,Systems & Control Letters,,,,,Top,unmatched,topjournals

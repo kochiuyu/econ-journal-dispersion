@@ -1,0 +1,210 @@
+edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+Current,4or-A Quarterly Journal of Operations Research,,,Very good,abdc_b,4or,title,yes
+Current,Abacus,,,Very good,abdc_a,abacus,title,yes
+Current,Academy of Management Annals,,,Very good,ft50,aom_annals,title,yes
+Current,Academy of Management Annals,,,Very good,abdc_a_star,aom_annals,title,no
+Current,Academy of Management Journal,,,Top-core,ft50,amj,title,yes
+Current,Academy of Management Journal,,,Top-core,abdc_a_star,amj,title,no
+Current,Academy of Management Review,,,Top-core,ft50,amr,title,yes
+Current,Academy of Management Review,,,Top-core,abdc_a_star,amr,title,no
+Current,Accounting and Business Research,,,Very good,abdc_a,accounting_business_research,title,yes
+Current,Accounting Review,,,Top-core,ft50,tar,title,yes
+Current,Accounting Review,,,Top-core,abdc_a_star,tar,title,no
+Current,"Accounting, Organizations & Society",,,Top,ft50,aos,title,yes
+Current,"Accounting, Organizations & Society",,,Top,abdc_a_star,aos,title,no
+Current,ACM Transactions on Information Systems,,,Very good,abdc_c,acm_transactions_information_systems,title,yes
+Current,Administrative Science Quarterly,,,Top-core,ft50,asq,title,yes
+Current,Administrative Science Quarterly,,,Top-core,abdc_a_star,asq,title,no
+Current,Advances in Applied Probability,,,Very good,abdc_a,advances_applied_probability,title,yes
+Current,American Economic Journal - Applied Economics,,,Top-core,abdc_a_star,aej_applied,title,yes
+Current,American Economic Journal - Economic Policy,,,Top-core,abdc_a_star,aej_policy,title,yes
+Current,American Economic Journal - Macroeconomics,,,Top-core,abdc_a_star,aej_macro,title,yes
+Current,American Economic Journal - Microeconomics,,,Top,abdc_a_star,aej_micro,title,yes
+Current,American Economic Review,,,Top-core,ft50,aer,title,yes
+Current,American Economic Review,,,Top-core,core49,aer,title,no
+Current,American Economic Review,,,Top-core,abdc_a_star,aer,title,no
+Current,Annals of Operations Research,,,Very good,abdc_a,annals_operations_research,title,yes
+Current,Annals of Probability,,,Very good,abdc_a_star,annals_probability,title,yes
+Current,Annals of Statistics,,,Top-core,abdc_a_star,annals_statistics,title,yes
+Current,Auditing: A Journal of Practice and Theory,,,Very good,abdc_a_star,auditing_journal_practice_theory,title,yes
+Current,Bernoulli,,,Very good,abdc_a,bernoulli,title,yes
+Current,Canadian Journal of Economics,,,Very good,abdc_a,canadian_journal_economics_revue_canadienne_deconomique,title,yes
+Current,Climate Policy,,,Very good,abdc_c,climate_policy,title,yes
+Current,Computers & Operations Research,,,Very good,abdc_a,computers_operations_research,title,yes
+Current,Contemporary Accounting Research,,,Top,ft50,car,title,yes
+Current,Contemporary Accounting Research,,,Top,abdc_a_star,car,title,no
+Current,Decision Sciences,,,Top,abdc_a_star,decision_sciences,title,yes
+Current,Decision Support Systems,,,Very good,abdc_a_star,decision_support_systems,title,yes
+Current,Econometric Theory,,,Very good,core49,econometric-theory,title,yes
+Current,Econometrica,,,Top-core,ft50,econometrica,title,yes
+Current,Econometrica,,,Top-core,core49,econometrica,title,no
+Current,Econometrica,,,Top-core,abdc_a_star,econometrica,title,no
+Current,Econometrics Journal,,,Very good,abdc_a_star,econometrics_journal,title,yes
+Current,Economic Journal,,,Top,core49,the-economic-journal,title,yes
+Current,Economic Policy,,,Very good,abdc_a,economic_policy_european_forum,title,yes
+Current,Economic Theory,,,Very good,core49,economic-theory,title,yes
+Current,Entrepreneurship Theory and Practice,,,Very good,ft50,etp,title,yes
+Current,Entrepreneurship Theory and Practice,,,Very good,abdc_a_star,etp,title,no
+Current,European Accounting Review,,,Very good,abdc_a_star,european_accounting_review,title,yes
+Current,European Economic Review,,,Very good,core49,european-economic-review,title,yes
+Current,European Journal of Information Systems,,,Top,abdc_a_star,european_journal_information_systems,title,yes
+Current,European Journal of Operational Research,,,Very good,abdc_a_star,european_journal_operational_research,title,yes
+Current,Finance and Stochastics,,,Very good,abdc_a,finance_stochastics,title,yes
+Current,Financial Management,,,Very good,abdc_a_star,financial_management,title,yes
+Current,Games and Economic Behavior,,,Very good,core49,games-and-economic-behavior,title,yes
+Current,Global Strategy Journal,,,Very good,abdc_a,global_strategy_journal,title,yes
+Current,IEEE Transactions on Engineering Management,,,Very good,abdc_a,ieee_transactions_engineering_management,title,yes
+Current,IIE Transactions,,,Very good,abdc_a,iise_transactions,title,yes
+Current,Industrial Marketing Management,,,Very good,abdc_a_star,industrial_marketing_management,title,yes
+Current,Information & Management,,,Very good,abdc_a_star,information_management,title,yes
+Current,Information and Organization,,,Very good,abdc_a_star,information_organization,title,yes
+Current,Information Systems Journal,,,Top,abdc_a_star,information_systems_journal,title,yes
+Current,Information Systems Research,,,Top-core,ft50,isr,title,yes
+Current,Information Systems Research,,,Top-core,abdc_a_star,isr,title,no
+Current,INFORMS Journal on Computing,,,Top-core,abdc_a,informs_journal_computing,title,yes
+Current,International Economic Review,,,Very good,core49,international-economic-review,title,yes
+Current,International Journal of Information Management,,,Very good,abdc_a,international_journal_information_management,title,yes
+Current,International Journal of Operations and Production Management,,,Top,abdc_a,international_journal_operations_production_management,title,yes
+Current,International Journal of Physical Distribution & Logistics Management,,,Very good,abdc_a,international_journal_physical_distribution_logistics,title,yes
+Current,International Journal of Production Economics,,,Very good,abdc_a,international_journal_production_economics,title,yes
+Current,International Journal of Production Research,,,Very good,abdc_a,international_journal_production_research,title,yes
+Current,International Journal of Research in Marketing,,,Top,abdc_a_star,international_journal_research_marketing,title,yes
+Current,International Public Management Journal,,,Very good,abdc_b,international_public_management_journal,title,yes
+Current,Journal of Accounting and Economics,,,Top-core,ft50,jae,title,yes
+Current,Journal of Accounting and Economics,,,Top-core,abdc_a_star,jae,title,no
+Current,Journal of Accounting Research,,,Top-core,ft50,jar,title,yes
+Current,Journal of Accounting Research,,,Top-core,abdc_a_star,jar,title,no
+Current,"Journal of Accounting, Auditing and Finance",,,Very good,abdc_a,journal_accounting_auditing_finance,title,yes
+Current,Journal of Advertising,,,Very good,abdc_a,journal_advertising,title,yes
+Current,Journal of Applied Econometrics,,,Very good,core49,journal-of-applied-econometrics,title,yes
+Current,Journal of Banking and Finance,,,Very good,abdc_a_star,journal_banking_finance,title,yes
+Current,Journal of Business and Economic Statistics,,,Very good,core49,journal-of-business-and-economic-statistics,title,yes
+Current,Journal of Business Finance and Accounting,,,Very good,abdc_a_star,journal_business_finance_accounting,title,yes
+Current,Journal of Business Logistics,,,Very good,abdc_a,journal_business_logistics,title,yes
+Current,Journal of Business Research,,,Very good,abdc_a,journal_business_research,title,yes
+Current,Journal of Business Venturing,,,Top,ft50,jbv,title,yes
+Current,Journal of Business Venturing,,,Top,abdc_a_star,jbv,title,no
+Current,Journal of Computational Finance,,,Very good,abdc_c,journal_computational_finance,title,yes
+Current,Journal of Consumer Psychology,,,Top,ft50,jcp,title,yes
+Current,Journal of Consumer Psychology,,,Top,abdc_a_star,jcp,title,no
+Current,Journal of Consumer Research,,,Top-core,ft50,jcr,title,yes
+Current,Journal of Consumer Research,,,Top-core,abdc_a_star,jcr,title,no
+Current,Journal of Corporate Finance,,,Very good,abdc_a_star,journal_corporate_finance,title,yes
+Current,Journal of Development Economics,,,Very good,core49,journal-of-development-economics,title,yes
+Current,Journal of Econometrics,,,Top,core49,journal-of-econometrics,title,yes
+Current,Journal of Economic Behavior and Organization,,,Very good,core49,journal-of-economic-behavior-and-organization,title,yes
+Current,Journal of Economic Dynamics and Control,,,Very good,core49,journal-of-economic-dynamics-and-control,title,yes
+Current,Journal of Economic Growth,,,Very good,core49,journal-of-economic-growth,title,yes
+Current,Journal of Economic Literature,,,Top-core,core49,journal-of-economic-literature,title,yes
+Current,Journal of Economic Perspectives,,,Top-core,core49,journal-of-economic-perspectives,title,yes
+Current,Journal of Economic Theory,,,Top,core49,journal-of-economic-theory,title,yes
+Current,Journal of Empirical Finance,,,Very good,abdc_a,journal_empirical_finance,title,yes
+Current,Journal of Environmental Economics and Management,,,Very good,core49,journal-of-environmental-economics-and-management,title,yes
+Current,Journal of European Public Policy,,,Very good,abdc_a,journal_european_public_policy,title,yes
+Current,Journal of Finance,,,Top-core,ft50,jf,title,yes
+Current,Journal of Finance,,,Top-core,abdc_a_star,jf,title,no
+Current,Journal of Financial and Quantitative Analysis,,,Top,ft50,jfqa,title,yes
+Current,Journal of Financial and Quantitative Analysis,,,Top,abdc_a_star,jfqa,title,no
+Current,Journal of Financial Economics,,,Top-core,ft50,jfe,title,yes
+Current,Journal of Financial Economics,,,Top-core,abdc_a_star,jfe,title,no
+Current,Journal of Financial Intermediation,,,Top,abdc_a_star,journal_financial_intermediation,title,yes
+Current,Journal of Health Economics,,,Very good,core49,journal-of-health-economics,title,yes
+Current,Journal of Industrial Economics,,,Very good,abdc_a_star,journal_industrial_economics,title,yes
+Current,Journal of Information Technology,,,Top,abdc_a_star,journal_information_technology,title,yes
+Current,Journal of International Business Studies,,,Top-core,ft50,jibs,title,yes
+Current,Journal of International Business Studies,,,Top-core,abdc_a_star,jibs,title,no
+Current,Journal of International Economics,,,Top,core49,journal-of-international-economics,title,yes
+Current,Journal of International Money and Finance,,,Very good,abdc_a,journal_international_money_finance,title,yes
+Current,Journal of Labor Economics,,,Very good,core49,journal-of-labor-economics,title,yes
+Current,Journal of Law and Economics,,,Very good,core49,journal-of-law-and-economics,title,yes
+Current,Journal of Management,,,Top,ft50,jom,title,yes
+Current,Journal of Management,,,Top,abdc_a_star,jom,title,no
+Current,Journal of Management Accounting Research,,,Very good,abdc_a_star,journal_management_accounting_research,title,yes
+Current,Journal of Management Information Systems,,,Top,ft50,jmis,title,yes
+Current,Journal of Management Information Systems,,,Top,abdc_a_star,jmis,title,no
+Current,Journal of Management Studies,,,Top,ft50,jms,title,yes
+Current,Journal of Management Studies,,,Top,abdc_a_star,jms,title,no
+Current,Journal of Marketing,,,Top-core,ft50,jm,title,yes
+Current,Journal of Marketing,,,Top-core,abdc_a_star,jm,title,no
+Current,Journal of Marketing Research,,,Top-core,ft50,jmr,title,yes
+Current,Journal of Marketing Research,,,Top-core,abdc_a_star,jmr,title,no
+Current,Journal of Mathematical Economics,,,Very good,abdc_a,journal_mathematical_economics,title,yes
+Current,Journal of Monetary Economics,,,Top,core49,journal-of-monetary-economics,title,yes
+Current,"Journal of Money, Credit and Banking",,,Very good,core49,journal-of-money-credit-and-banking,title,yes
+Current,Journal of Operations Management,,,Top-core,ft50,joom,title,yes
+Current,Journal of Operations Management,,,Top-core,abdc_a_star,joom,title,no
+Current,Journal of Policy Analysis and Management,,,Top,abdc_a,journal_policy_analysis_management,title,yes
+Current,Journal of Political Economy,,,Top-core,ft50,jpe,title,yes
+Current,Journal of Political Economy,,,Top-core,abdc_a_star,jpe,title,no
+Current,Journal of Product Innovation Management,,,Very good,abdc_a_star,journal_product_innovation_management,title,yes
+Current,Journal of Public Administration Research and Theory,,,Top-core,abdc_a,journal_public_administration_research_theory,title,yes
+Current,Journal of Public Economics,,,Top,core49,journal-of-public-economics,title,yes
+Current,Journal of Public Policy,,,Very good,abdc_b,journal_public_policy,title,yes
+Current,Journal of Purchasing and Supply Management,,,Very good,abdc_a,journal_purchasing_supply_management,title,yes
+Current,Journal of Retailing,,,Very good,abdc_a_star,journal_retailing,title,yes
+Current,Journal of Risk and Uncertainty,,,Very good,core49,journal-of-risk-and-uncertainty,title,yes
+Current,Journal of Strategic Information Systems,,,Top,abdc_a_star,journal_strategic_information_systems,title,yes
+Current,Journal of Supply Chain Management,,,Top,abdc_a_star,journal_supply_chain_management,title,yes
+Current,Journal of the Academy of Marketing Science,,,Very good,ft50,jams,title,yes
+Current,Journal of the Academy of Marketing Science,,,Very good,abdc_a_star,jams,title,no
+Current,Journal of the American Statistical Association,,,Top-core,abdc_a_star,journal_american_statistical_association,title,yes
+Current,Journal of the American Taxation Association,,,Very good,abdc_a,journal_american_taxation_association,title,yes
+Current,Journal of the Association for Information Systems,,,Top,abdc_a_star,journal_association_information_systems,title,yes
+Current,Journal of the European Economic Association,,,Top-core,core49,journal-of-the-european-economic-association,title,yes
+Current,Journal of the Royal Statistical Society A,,,Top,abdc_a,journal_royal_statistical_society_series_statistics,title,yes
+Current,Journal of the Royal Statistical Society B,,,Top-core,abdc_a_star,journal_royal_statistical_society_series_b,title,yes
+Current,Long Range Planning,,,Very good,abdc_a_star,long_range_planning,title,yes
+Current,Macroeconomic Dynamics,,,Very good,abdc_a,macroeconomic_dynamics,title,yes
+Current,Management Accounting Research,,,Very good,abdc_a_star,management_accounting_research,title,yes
+Current,Management Science,,,Top-core,ft50,ms,title,yes
+Current,Management Science,,,Top-core,abdc_a_star,ms,title,no
+Current,Manufacturing and Service Operations Management,,,Top-core,ft50,msom,title,yes
+Current,Manufacturing and Service Operations Management,,,Top-core,abdc_a_star,msom,title,no
+Current,Marketing Letters,,,Very good,abdc_a,marketing_letters,title,yes
+Current,Marketing Science,,,Top-core,ft50,mktg_sci,title,yes
+Current,Marketing Science,,,Top-core,abdc_a_star,mktg_sci,title,no
+Current,Mathematical Finance,,,Very good,abdc_a,mathematical_finance,title,yes
+Current,Mathematics of Operations Research,,,Top-core,abdc_a,mathematics_operations_research,title,yes
+Current,MIS Quarterly,,,Top-core,ft50,misq,title,yes
+Current,MIS Quarterly,,,Top-core,abdc_a_star,misq,title,no
+Current,OMEGA-International Journal of Management Science,,,Top,abdc_a,omega,title,yes
+Current,Operations Research,,,Top-core,ft50,or,title,yes
+Current,Operations Research,,,Top-core,abdc_a_star,or,title,no
+Current,Organization Science,,,Top-core,ft50,orgsci,title,yes
+Current,Organization Science,,,Top-core,abdc_a_star,orgsci,title,no
+Current,Organization Studies,,,Very good,abdc_a_star,organization_studies,title,yes
+Current,Policy Sciences,,,Very good,abdc_b,policy_science,title,yes
+Current,Policy Studies Journal,,,Very good,abdc_b,policy_studies_journal,title,yes
+Current,Production and Operations Management,,,Top-core,ft50,pom,title,yes
+Current,Production and Operations Management,,,Top-core,abdc_a_star,pom,title,no
+Current,Psychology & Marketing,,,Very good,abdc_a,psychology_marketing,title,yes
+Current,Public Administration,,,Top,abdc_a,public_administration_international_journal,title,yes
+Current,Public Administration Review,,,Top-core,abdc_a,public_administration_review,title,yes
+Current,Public Management Review,,,Very good,abdc_a,public_management_review,title,yes
+Current,Quantitative Marketing & Economics,,,Top,abdc_a,quantitative_marketing_economics,title,yes
+Current,Quarterly Journal of Economics,,,Top-core,ft50,qje,title,yes
+Current,Quarterly Journal of Economics,,,Top-core,abdc_a_star,qje,title,no
+Current,Rand Journal of Economics,,,Top,core49,rand-journal-of-economics,title,yes
+Current,Regulation and Governance,,,Top,abdc_a,regulation_governance,title,yes
+Current,Research Policy,,,Very good,ft50,rp,title,yes
+Current,Research Policy,,,Very good,abdc_a_star,rp,title,no
+Current,Review of Accounting Studies,,,Top,ft50,rast,title,yes
+Current,Review of Accounting Studies,,,Top,abdc_a_star,rast,title,no
+Current,Review of Economic Dynamics,,,Very good,core49,review-of-economic-dynamics,title,yes
+Current,Review of Economic Studies,,,Top-core,ft50,restud,title,yes
+Current,Review of Economic Studies,,,Top-core,abdc_a_star,restud,title,no
+Current,Review of Economics and Statistics,,,Very good,core49,review-of-economics-and-statistics,title,yes
+Current,Review of Finance,,,Top,ft50,rof,title,yes
+Current,Review of Finance,,,Top,abdc_a_star,rof,title,no
+Current,Review of Financial Studies,,,Top-core,ft50,rfs,title,yes
+Current,Review of Financial Studies,,,Top-core,abdc_a_star,rfs,title,no
+Current,Stochastic Processes and their Applications,,,Very good,abdc_a,stochastic_processes_their_applications,title,yes
+Current,Strategic Entrepreneurship Journal,,,Very good,ft50,sej,title,yes
+Current,Strategic Entrepreneurship Journal,,,Very good,abdc_a,sej,title,no
+Current,Strategic Management Journal,,,Top-core,ft50,smj,title,yes
+Current,Strategic Management Journal,,,Top-core,abdc_a_star,smj,title,no
+Current,Strategic Organization,,,Very good,abdc_a,strategic_organization,title,yes
+Current,Supply Chain Management: an international journal,,,Very good,abdc_a,supply_chain_management_international_journal,title,yes
+Current,Transportation Research Part B - Methodological,,,Top,abdc_a_star,transportation_research_part_b_methodological,title,yes
+Current,Transportation Research Part E-Logistics and Transportation Review,,,Very good,abdc_a_star,transportation_research_part_e_logistics_transportation,title,yes
+Current,Transportation Science,,,Top,abdc_a_star,transportation_science,title,yes

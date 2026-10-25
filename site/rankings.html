@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal rankings</title>
-  <meta name="description" content="ABS/AJG grades by edition, the 2025 ABDC list (A*, A, B, C), and FT50, UTD24, and Top 5 membership lists.">
+  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, and ERIM Core grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:title" content="Journal rankings">
-  <meta property="og:description" content="ABS/AJG grades, ABDC ratings, and FT50, UTD24, and Top 5 membership lists.">
+  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, and ABDC, plus FT50, UTD24, and Top 5.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:type" content="website">
   <!--
@@ -27,7 +27,7 @@
         <span class="logo" aria-hidden="true">Je</span>
         <span>
           <span class="t1">Journal Editors</span>
-          <span class="t2">Rankings · ABS/AJG, FT50, UTD24, ABDC</span>
+          <span class="t2">Rankings · ABS/AJG, FT50, FNEGE, ERIM</span>
         </span>
       </a>
       <nav class="nav" aria-label="Site">
@@ -45,10 +45,13 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Journal grades, weights, and membership lists, not editorial appointments.
-      ABS/AJG, CNRS, and Handelsblatt/VWL are editions with ratings.
+      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, and ERIM are editions with ratings.
       Handelsblatt/VWL also shows the published weight.
       ABDC is the 2025 Journal Quality List (A*, A, B, C).
       FT50, UTD24, and Top 5 are lists with no grade tiers.
+      Tilburg is the TISEM top-journal list (Top-core, Top, Very good).
+      FNEGE grades are 1*, 1, 2, 3, and 4.
+      ERIM is the Core list for 2024–2028.
       Field is the source subject when the list has one.
       Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
       Every AJG edition stays on this page.
@@ -106,7 +109,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. A blank journal id is unmatched in that freeze.</p>
+      <p class="hint">Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Hover a Tilburg, FNEGE, or ERIM grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
@@ -175,6 +178,39 @@
         The long panel has 42,478 rows. This list has no field.
       </p>
       <p>
+        <strong>Tilburg</strong> is the TISEM top journal list in freeze
+        <code>rankings_tilburg_20261025</code>, from the
+        <a href="https://www.tilburguniversity.edu/research/economics-and-management/publications/topjournals">Tilburg University page</a>.
+        The page does not name a dated edition, so this list is Current.
+        Tiers are Top-core, Top, and Very good. The page intro mentions good journals, and the page does not publish a good-journal list.
+        Top-core has 42 journals, including Journal of Economic Literature and Journal of Economic Perspectives from the allocation supplement. Top has 41. Very good has 96.
+        164 of 179 journals (91.6%) have a catalog <code>journal_id</code>.
+        Very good rows use the group on that page as the field. The other tiers have no field.
+        The label on this page is Tilburg. The grade hover says TISEM.
+      </p>
+      <p>
+        <strong>FNEGE</strong> is the Journal Quality List in freeze
+        <code>rankings_fnege_20261025</code>, from the
+        <a href="https://fnege.org/en/fnege-journal-quality-list/">FNEGE table</a>.
+        Editions are 2019, 2022, and 2025. 2025 is the current list: 891 journals, of which 733 (82.3%) have a catalog <code>journal_id</code>.
+        2022 has 669 journals (577 matched, 86.2%). 2019 has 484 (410 matched, 84.7%).
+        Grades are 1*, 1, 2, 3, and 4. The table also prints EM and NC; those cells are kept as published. 2025 has 31 journals at 1*, 59 at 1, 153 at 2, 251 at 3, 393 at 4, and 4 EM.
+        The long panel has 2,044 rows, of which 1,720 (84.1%) are matched.
+        Field is the published domain code.
+      </p>
+      <p>
+        <strong>ERIM</strong> is the ERIM Journals List Core for 2024–2028 in freeze
+        <code>rankings_erim_20261025</code>.
+        The public page is the
+        <a href="https://www.eur.nl/en/erim/erim/journal-list">ERIM Journal List</a>,
+        and the rows are the
+        <a href="https://www.eur.nl/en/erim/media/2026-02-erim-journal-list-core-list-2024-2028">Core workbook</a>.
+        The intranet list is not included.
+        Classes are the Core file’s own labels: STAR 44, M-STAR 3, P 69, EP* 3, PA 5, S 144, S (3=1) 7, and M 8.
+        257 of 283 journals (90.8%) have a catalog <code>journal_id</code>.
+        Field is the Core track.
+      </p>
+      <p>
         <strong>ABDC</strong> is the 2025 ABDC Journal Quality List, one edition, with ratings A*, A, B, and C.
         Those tiers are the catalogs
         <code>journals/catalog_abdc_a_star.csv</code> (219),
@@ -193,10 +229,11 @@
         The Field column is the source subject. ABS/AJG uses the guide’s <code>field</code> code.
         CNRS uses its domain code.
         ABDC uses <code>field_for</code> from the 2025 catalogs.
+        FNEGE uses its domain code. ERIM uses the Core track. Tilburg very-good rows use the group on the TISEM page.
         Handelsblatt/VWL, FT50, UTD24, and Top 5 have no field, so those cells stay blank.
       </p>
       <p>
-        On ABS/AJG, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+        On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, and ERIM, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
         On ABDC, FT50, UTD24, and Top 5, <code>journal_id</code> is the catalog id.
       </p>
       <p class="small">

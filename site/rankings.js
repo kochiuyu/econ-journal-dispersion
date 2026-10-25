@@ -14,7 +14,18 @@
     abs_ajg: { "4*": 5, "4": 4, "3": 3, "2": 2, "1": 1 },
     abdc: { "A*": 4, "A": 3, "B": 2, "C": 1 },
     cnrs: { "1": 5, "1e": 5, "1g": 5, "1eg": 5, "2": 4, "3": 3, "4": 2 },
-    handelsblatt_vwl: { "A+": 7, "A": 6, "B": 5, "C": 4, "D": 3, "E": 2, "F": 1 }
+    handelsblatt_vwl: { "A+": 7, "A": 6, "B": 5, "C": 4, "D": 3, "E": 2, "F": 1 },
+    tilburg: { "Top-core": 3, "Top": 2, "Very good": 1 },
+    fnege: { "1*": 7, "1": 6, "2": 5, "3": 4, "4": 3, "EM": 2, "NC": 1 },
+    erim: { "STAR": 8, "M-STAR": 7, "P": 6, "EP*": 5, "PA": 4, "S": 3, "S (3=1)": 2, "M": 1 }
+  };
+  var TOP_SUB = {
+    abs_ajg: "Highest grade that year",
+    cnrs: "Highest category",
+    handelsblatt_vwl: "Highest class",
+    tilburg: "Highest tier",
+    fnege: "Highest grade",
+    erim: "Highest class"
   };
 
   var countEl = document.getElementById("count");
@@ -58,7 +69,9 @@
     return numberFormat.format(value);
   }
 
-  function subjectLabel(code) {
+  function subjectLabel(system, code) {
+    var bySystem = (DATA.fieldLabels && DATA.fieldLabels[system]) || {};
+    if (code && Object.prototype.hasOwnProperty.call(bySystem, code)) return bySystem[code];
     return labels[code] || code || "";
   }
 
@@ -163,7 +176,7 @@
         row[3] || "",
         row[2] || "",
         code,
-        subjectLabel(code),
+        subjectLabel(row[0], code),
         row[6] || "",
         row[7] || "",
         row[8] || ""
@@ -226,7 +239,7 @@
       list.push(code);
     });
     list.sort(function (a, b) {
-      return collator.compare(subjectLabel(a), subjectLabel(b));
+      return collator.compare(subjectLabel(state.system, a), subjectLabel(state.system, b));
     });
     return list;
   }
@@ -237,7 +250,7 @@
     fieldEl.replaceChildren();
     addOption(fieldEl, "", fields.length ? "All fields" : "No fields");
     fields.forEach(function (code) {
-      addOption(fieldEl, code, subjectLabel(code));
+      addOption(fieldEl, code, subjectLabel(state.system, code));
     });
     fieldEl.disabled = fields.length === 0;
     fieldEl.title = fields.length ? "" : "This list has no field";
@@ -299,7 +312,7 @@
         else if (aok) cmp = 1;
         else if (bok) cmp = -1;
       }
-      else if (state.sort === "field") cmp = collator.compare(subjectLabel(ra[5]), subjectLabel(rb[5]));
+      else if (state.sort === "field") cmp = collator.compare(subjectLabel(state.system, ra[5]), subjectLabel(state.system, rb[5]));
       else if (state.sort === "year") {
         var ya = Number(ra[1]);
         var yb = Number(rb[1]);
@@ -337,9 +350,7 @@
       lTop.textContent = topGrade;
       sTop.textContent = topGrade === "4*"
         ? "Journals of Distinction"
-        : (state.system === "abs_ajg"
-          ? "Highest grade that year"
-          : (state.system === "cnrs" ? "Highest category" : (state.system === "handelsblatt_vwl" ? "Highest class" : "Highest rating")));
+        : (TOP_SUB[state.system] || "Highest rating");
     } else {
       nTop.textContent = "—";
       lTop.textContent = "Rating";
@@ -375,9 +386,14 @@
       var tr = document.createElement("tr");
       var name = cell(row[3], "journal");
       tr.appendChild(name);
-      tr.appendChild(cell(row[4] || "—", row[4] ? "rating" : "muted"));
-      var fieldCell = cell(row[5] ? subjectLabel(row[5]) : "—", row[5] ? "field" : "muted");
-      if (row[5] && subjectLabel(row[5]) !== row[5]) fieldCell.title = row[5];
+      var ratingCell = cell(row[4] || "—", row[4] ? "rating" : "muted");
+      if (row[4] && state.system === "tilburg") ratingCell.title = "TISEM top journal list";
+      if (row[4] && state.system === "fnege") ratingCell.title = "FNEGE " + row[1];
+      if (row[4] && state.system === "erim") ratingCell.title = "ERIM Journals List Core 2024–2028";
+      tr.appendChild(ratingCell);
+      var fieldText = row[5] ? subjectLabel(state.system, row[5]) : "";
+      var fieldCell = cell(fieldText || "—", row[5] ? "field" : "muted");
+      if (row[5] && fieldText !== row[5]) fieldCell.title = row[5];
       tr.appendChild(fieldCell);
       tr.appendChild(cell(String(row[1])));
       if (showsWeight(state.system)) tr.appendChild(cell(row[8] || "—", row[8] ? "weight" : "muted"));
