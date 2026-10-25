@@ -1,51 +1,51 @@
-journal_id,journal_name,issn,publisher,board_url,list_source_url,econ49_overlap,notes
-aom_annals,Academy of Management Annals,1941-6520,Academy of Management,https://aom.org/research/journals/annals/annals-editorial-team,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision
-amj,Academy of Management Journal,0001-4273,Academy of Management,https://www.aom.org/publications/journals/journal/journal-editorial-team/,https://www.ft.com/ft50-journals,no,
-amr,Academy of Management Review,0363-7425,Academy of Management,https://aom.org/research/journals/review/review-editorial-team,https://www.ft.com/ft50-journals,no,
-tar,The Accounting Review,0001-4826,American Accounting Association,https://aaahq.org/Research/Journals/The-Accounting-Review,https://www.ft.com/ft50-journals,no,AAA; board often on journal homepage or aaahq
-aos,Accounting Organizations and Society,0361-3682,Elsevier,https://www.sciencedirect.com/journal/accounting-organizations-and-society/about/editorial-board,https://www.ft.com/ft50-journals,no,
-asq,Administrative Science Quarterly,0001-8392,Sage / Cornell University,https://journals.sagepub.com/editorial-board/ASQ,https://www.ft.com/ft50-journals,no,
-aer,American Economic Review,0002-8282,American Economic Association,https://www.aeaweb.org/journals/aer/editors,https://www.ft.com/ft50-journals,yes,Econ49=AER
-asr,American Sociological Review,0003-1224,Sage / ASA,https://journals.sagepub.com/editorial-board/ASR,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision
-car,Contemporary Accounting Research,0823-9150,Wiley / CAAA,https://onlinelibrary.wiley.com/page/journal/19113846/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-econometrica,Econometrica,0012-9682,Wiley / Econometric Society,https://www.econometricsociety.org/publications/econometrica/editorial-board,https://www.ft.com/ft50-journals,yes,Econ49=Econometrica
-etp,Entrepreneurship Theory and Practice,1042-2587,Sage,https://journals.sagepub.com/editorial-board/ETP,https://www.ft.com/ft50-journals,no,
-hbr,Harvard Business Review,0017-8012,Harvard Business Publishing,https://hbr.org/magazine,https://www.ft.com/ft50-journals,no,Practitioner; masthead may differ from peer-reviewed boards
-hrm,Human Resource Management,0090-4848,Wiley,https://onlinelibrary.wiley.com/page/journal/1099050x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-isr,Information Systems Research,1047-7047,INFORMS,https://pubsonline.informs.org/page/isre/editorial-board,https://www.ft.com/ft50-journals,no,
-jae,Journal of Accounting and Economics,0165-4101,Elsevier,https://www.sciencedirect.com/journal/journal-of-accounting-and-economics/about/editorial-board,https://www.ft.com/ft50-journals,no,
-jar,Journal of Accounting Research,0021-8456,Wiley / University of Chicago,https://onlinelibrary.wiley.com/page/journal/1475679x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-jap,Journal of Applied Psychology,0021-9010,American Psychological Association,https://www.apa.org/pubs/journals/apl/editorial-board,https://www.ft.com/ft50-journals,no,
-jbv,Journal of Business Venturing,0883-9026,Elsevier,https://www.sciencedirect.com/journal/journal-of-business-venturing/about/editorial-board,https://www.ft.com/ft50-journals,no,
-jcp,Journal of Consumer Psychology,1057-7408,Wiley / SCP,https://onlinelibrary.wiley.com/page/journal/15327663/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-jcr,Journal of Consumer Research,0093-5301,Oxford University Press,https://academic.oup.com/jcr/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,
-jf,Journal of Finance,0022-1082,Wiley / AFA,https://afajof.org/journal-of-finance/editorial-board/,https://www.ft.com/ft50-journals,no,
-jfqa,Journal of Financial and Quantitative Analysis,0022-1090,Cambridge University Press,https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/information/editorial-board,https://www.ft.com/ft50-journals,no,
-jfe,Journal of Financial Economics,0304-405X,Elsevier,https://www.sciencedirect.com/journal/journal-of-financial-economics/about/editorial-board,https://www.ft.com/ft50-journals,no,
-jibs,Journal of International Business Studies,0047-2506,Palgrave / AIB,https://www.palgrave.com/gp/journal/41267/editors,https://www.ft.com/ft50-journals,no,
-jom,Journal of Management,0149-2063,Sage,https://journals.sagepub.com/editorial-board/JOM,https://www.ft.com/ft50-journals,no,
-jmis,Journal of Management Information Systems,0742-1222,Taylor & Francis,https://www.tandfonline.com/journals/mmis20/about-this-journal#editorial-board,https://www.ft.com/ft50-journals,no,
-jms,Journal of Management Studies,0022-2380,Wiley / SAMS,https://onlinelibrary.wiley.com/page/journal/14676486/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-jm,Journal of Marketing,0022-2429,Sage / AMA,https://journals.sagepub.com/editorial-board/JMX,https://www.ft.com/ft50-journals,no,
-jmr,Journal of Marketing Research,0022-2437,Sage / AMA,https://journals.sagepub.com/editorial-board/MRJ,https://www.ft.com/ft50-journals,no,
-joom,Journal of Operations Management,0272-6963,Wiley / ASCM,https://onlinelibrary.wiley.com/page/journal/18731317/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-jpe,Journal of Political Economy,0022-3808,University of Chicago Press,https://www.journals.uchicago.edu/journals/jpe/board,https://www.ft.com/ft50-journals,yes,Econ49=Journal of Political Economy
-jams,Journal of the Academy of Marketing Science,0092-0703,Springer,https://link.springer.com/journal/11747/editors,https://www.ft.com/ft50-journals,no,
-ms,Management Science,0025-1909,INFORMS,https://pubsonline.informs.org/page/mnsc/editorial-board,https://www.ft.com/ft50-journals,no,
-msom,Manufacturing and Service Operations Management,1523-4614,INFORMS,https://pubsonline.informs.org/page/msom/editorial-board,https://www.ft.com/ft50-journals,no,
-mktg_sci,Marketing Science,0732-2399,INFORMS,https://pubsonline.informs.org/page/mksc/editorial-board,https://www.ft.com/ft50-journals,no,
-misq,MIS Quarterly,0276-7783,MISRC University of Minnesota,https://misq.umn.edu/editorial-board,https://www.ft.com/ft50-journals,no,
-sloan_mr,MIT Sloan Management Review,1532-9194,MIT Sloan,https://sloanreview.mit.edu/about/,https://www.ft.com/ft50-journals,no,Practitioner; masthead may be limited
-or,Operations Research,0030-364X,INFORMS,https://pubsonline.informs.org/page/opre/editorial-board,https://www.ft.com/ft50-journals,no,
-orgsci,Organization Science,1047-7039,INFORMS,https://pubsonline.informs.org/page/orsc/editorial-board,https://www.ft.com/ft50-journals,no,
-obhdp,Organizational Behavior and Human Decision Processes,0749-5978,Elsevier,https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes/about/editorial-board,https://www.ft.com/ft50-journals,no,
-pom,Production and Operations Management,1059-1478,Sage / POMS,https://journals.sagepub.com/editorial-board/PAO,https://www.ft.com/ft50-journals,no,
-psych_sci,Psychological Science,0956-7976,Sage / APS,https://journals.sagepub.com/editorial-board/PSS,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision
-qje,Quarterly Journal of Economics,0033-5533,Oxford University Press / Harvard,https://academic.oup.com/qje/pages/Editorial_Board,https://www.ft.com/ft50-journals,yes,Econ49=Quarterly Journal of Economics
-rp,Research Policy,0048-7333,Elsevier,https://www.sciencedirect.com/journal/research-policy/about/editorial-board,https://www.ft.com/ft50-journals,no,
-rast,Review of Accounting Studies,1380-6653,Springer,https://link.springer.com/journal/11142/editors,https://www.ft.com/ft50-journals,no,
-restud,Review of Economic Studies,0034-6527,Oxford University Press,https://www.restud.com/editorial-board/,https://www.ft.com/ft50-journals,yes,Econ49=Review of Economic Studies; OUP alt academic.oup.com/restud/pages/Editorial_Board
-rof,Review of Finance,1572-3097,Oxford University Press / EFA,https://academic.oup.com/rof/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,
-rfs,Review of Financial Studies,0893-9454,Oxford University Press,https://academic.oup.com/rfs/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,
-sej,Strategic Entrepreneurship Journal,1932-4391,Wiley / SMS,https://onlinelibrary.wiley.com/page/journal/1932443x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
-smj,Strategic Management Journal,0143-2095,Wiley,https://onlinelibrary.wiley.com/page/journal/10970266/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,
+journal_id,journal_name,issn,publisher,board_url,list_source_url,econ49_overlap,notes,field
+aom_annals,Academy of Management Annals,1941-6520,Academy of Management,https://aom.org/research/journals/annals/annals-editorial-team,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision,Management
+amj,Academy of Management Journal,0001-4273,Academy of Management,https://www.aom.org/publications/journals/journal/journal-editorial-team/,https://www.ft.com/ft50-journals,no,,Management
+amr,Academy of Management Review,0363-7425,Academy of Management,https://aom.org/research/journals/review/review-editorial-team,https://www.ft.com/ft50-journals,no,,Management
+tar,The Accounting Review,0001-4826,American Accounting Association,https://aaahq.org/Research/Journals/The-Accounting-Review,https://www.ft.com/ft50-journals,no,AAA; board often on journal homepage or aaahq,Accounting
+aos,Accounting Organizations and Society,0361-3682,Elsevier,https://www.sciencedirect.com/journal/accounting-organizations-and-society/about/editorial-board,https://www.ft.com/ft50-journals,no,,Accounting
+asq,Administrative Science Quarterly,0001-8392,Sage / Cornell University,https://journals.sagepub.com/editorial-board/ASQ,https://www.ft.com/ft50-journals,no,,Management
+aer,American Economic Review,0002-8282,American Economic Association,https://www.aeaweb.org/journals/aer/editors,https://www.ft.com/ft50-journals,yes,Econ49=AER,Economics
+asr,American Sociological Review,0003-1224,Sage / ASA,https://journals.sagepub.com/editorial-board/ASR,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision,"Organizational Behaviour, Human Resources"
+car,Contemporary Accounting Research,0823-9150,Wiley / CAAA,https://onlinelibrary.wiley.com/page/journal/19113846/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Accounting
+econometrica,Econometrica,0012-9682,Wiley / Econometric Society,https://www.econometricsociety.org/publications/econometrica/editorial-board,https://www.ft.com/ft50-journals,yes,Econ49=Econometrica,Economics
+etp,Entrepreneurship Theory and Practice,1042-2587,Sage,https://journals.sagepub.com/editorial-board/ETP,https://www.ft.com/ft50-journals,no,,Entrepreneurship
+hbr,Harvard Business Review,0017-8012,Harvard Business Publishing,https://hbr.org/magazine,https://www.ft.com/ft50-journals,no,Practitioner; masthead may differ from peer-reviewed boards,Management
+hrm,Human Resource Management,0090-4848,Wiley,https://onlinelibrary.wiley.com/page/journal/1099050x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Human Resources
+isr,Information Systems Research,1047-7047,INFORMS,https://pubsonline.informs.org/page/isre/editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+jae,Journal of Accounting and Economics,0165-4101,Elsevier,https://www.sciencedirect.com/journal/journal-of-accounting-and-economics/about/editorial-board,https://www.ft.com/ft50-journals,no,,Accounting
+jar,Journal of Accounting Research,0021-8456,Wiley / University of Chicago,https://onlinelibrary.wiley.com/page/journal/1475679x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Accounting
+jap,Journal of Applied Psychology,0021-9010,American Psychological Association,https://www.apa.org/pubs/journals/apl/editorial-board,https://www.ft.com/ft50-journals,no,,Organizational Behaviour
+jbv,Journal of Business Venturing,0883-9026,Elsevier,https://www.sciencedirect.com/journal/journal-of-business-venturing/about/editorial-board,https://www.ft.com/ft50-journals,no,,Entrepreneurship
+jcp,Journal of Consumer Psychology,1057-7408,Wiley / SCP,https://onlinelibrary.wiley.com/page/journal/15327663/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Marketing
+jcr,Journal of Consumer Research,0093-5301,Oxford University Press,https://academic.oup.com/jcr/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,,Marketing
+jf,Journal of Finance,0022-1082,Wiley / AFA,https://afajof.org/journal-of-finance/editorial-board/,https://www.ft.com/ft50-journals,no,,Finance
+jfqa,Journal of Financial and Quantitative Analysis,0022-1090,Cambridge University Press,https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/information/editorial-board,https://www.ft.com/ft50-journals,no,,Finance
+jfe,Journal of Financial Economics,0304-405X,Elsevier,https://www.sciencedirect.com/journal/journal-of-financial-economics/about/editorial-board,https://www.ft.com/ft50-journals,no,,Finance
+jibs,Journal of International Business Studies,0047-2506,Palgrave / AIB,https://www.palgrave.com/gp/journal/41267/editors,https://www.ft.com/ft50-journals,no,,International Business
+jom,Journal of Management,0149-2063,Sage,https://journals.sagepub.com/editorial-board/JOM,https://www.ft.com/ft50-journals,no,,Management
+jmis,Journal of Management Information Systems,0742-1222,Taylor & Francis,https://www.tandfonline.com/journals/mmis20/about-this-journal#editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+jms,Journal of Management Studies,0022-2380,Wiley / SAMS,https://onlinelibrary.wiley.com/page/journal/14676486/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Management
+jm,Journal of Marketing,0022-2429,Sage / AMA,https://journals.sagepub.com/editorial-board/JMX,https://www.ft.com/ft50-journals,no,,Marketing
+jmr,Journal of Marketing Research,0022-2437,Sage / AMA,https://journals.sagepub.com/editorial-board/MRJ,https://www.ft.com/ft50-journals,no,,Marketing
+joom,Journal of Operations Management,0272-6963,Wiley / ASCM,https://onlinelibrary.wiley.com/page/journal/18731317/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+jpe,Journal of Political Economy,0022-3808,University of Chicago Press,https://www.journals.uchicago.edu/journals/jpe/board,https://www.ft.com/ft50-journals,yes,Econ49=Journal of Political Economy,Economics
+jams,Journal of the Academy of Marketing Science,0092-0703,Springer,https://link.springer.com/journal/11747/editors,https://www.ft.com/ft50-journals,no,,Marketing
+ms,Management Science,0025-1909,INFORMS,https://pubsonline.informs.org/page/mnsc/editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+msom,Manufacturing and Service Operations Management,1523-4614,INFORMS,https://pubsonline.informs.org/page/msom/editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+mktg_sci,Marketing Science,0732-2399,INFORMS,https://pubsonline.informs.org/page/mksc/editorial-board,https://www.ft.com/ft50-journals,no,,Marketing
+misq,MIS Quarterly,0276-7783,MISRC University of Minnesota,https://misq.umn.edu/editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+sloan_mr,MIT Sloan Management Review,1532-9194,MIT Sloan,https://sloanreview.mit.edu/about/,https://www.ft.com/ft50-journals,no,Practitioner; masthead may be limited,Management
+or,Operations Research,0030-364X,INFORMS,https://pubsonline.informs.org/page/opre/editorial-board,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+orgsci,Organization Science,1047-7039,INFORMS,https://pubsonline.informs.org/page/orsc/editorial-board,https://www.ft.com/ft50-journals,no,,Organizational Behaviour
+obhdp,Organizational Behavior and Human Decision Processes,0749-5978,Elsevier,https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes/about/editorial-board,https://www.ft.com/ft50-journals,no,,Organizational Behaviour
+pom,Production and Operations Management,1059-1478,Sage / POMS,https://journals.sagepub.com/editorial-board/PAO,https://www.ft.com/ft50-journals,no,,Operations & Information Systems
+psych_sci,Psychological Science,0956-7976,Sage / APS,https://journals.sagepub.com/editorial-board/PSS,https://www.ft.com/ft50-journals,no,Added in FT50 Apr 2026 revision,"Organizational Behaviour, Human Resources"
+qje,Quarterly Journal of Economics,0033-5533,Oxford University Press / Harvard,https://academic.oup.com/qje/pages/Editorial_Board,https://www.ft.com/ft50-journals,yes,Econ49=Quarterly Journal of Economics,Economics
+rp,Research Policy,0048-7333,Elsevier,https://www.sciencedirect.com/journal/research-policy/about/editorial-board,https://www.ft.com/ft50-journals,no,,"Economics, Management"
+rast,Review of Accounting Studies,1380-6653,Springer,https://link.springer.com/journal/11142/editors,https://www.ft.com/ft50-journals,no,,Accounting
+restud,Review of Economic Studies,0034-6527,Oxford University Press,https://www.restud.com/editorial-board/,https://www.ft.com/ft50-journals,yes,Econ49=Review of Economic Studies; OUP alt academic.oup.com/restud/pages/Editorial_Board,Economics
+rof,Review of Finance,1572-3097,Oxford University Press / EFA,https://academic.oup.com/rof/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,,Finance
+rfs,Review of Financial Studies,0893-9454,Oxford University Press,https://academic.oup.com/rfs/pages/Editorial_Board,https://www.ft.com/ft50-journals,no,,Finance
+sej,Strategic Entrepreneurship Journal,1932-4391,Wiley / SMS,https://onlinelibrary.wiley.com/page/journal/1932443x/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Entrepreneurship
+smj,Strategic Management Journal,0143-2095,Wiley,https://onlinelibrary.wiley.com/page/journal/10970266/homepage/editorialboard.html,https://www.ft.com/ft50-journals,no,,Management

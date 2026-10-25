@@ -4,7 +4,7 @@ Rating catalogs. These files are not editorial boards and they are not appointme
 
 The editor directory is current FT50 and ABDC A*/A/B/C boards, plus AJG-gap boards in `data/editors/abs_ajg_gap/releases/current/`. Top 5 and UTD24 are tags on the FT50 and ABDC boards. AJG chips are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, where the journal is already on an FT50 or ABDC board. That join does not add a board. Gap rows take the same 2024 grade from the journal title, and only for journals that are not already in those editor files. The label does not include the year. Titles that still have no board, and the rest of the guide, stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
 
-That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern Economics, and ShanghaiRanking from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column and no field. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, or the Shanghai subject. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, and Shanghai stay on this page. They are not directory chips.
+That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern Economics, and ShanghaiRanking from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column. UTD24 and Top 5 have no field. FT50 `field` is the McMaster LibGuide subject area (https://libguides.mcmaster.ca/ft-top50), including both subjects when that table prints two. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern field heading, the Shanghai subject, or that FT50 subject area. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, and Shanghai stay on this page. They are not directory chips.
 
 ## Pinned release
 
@@ -66,7 +66,7 @@ ShanghaiRanking top journals for 2024 and 2026. Subjects are Economics, Business
 | ABS/AJG | 7,245 (five editions) |
 | CNRS | 7,361 (nine editions) |
 | Handelsblatt/VWL | 42,478 (1998–2020) |
-| FT50 | 50 (April 2026 list, no grades) |
+| FT50 | 50 (April 2026 list, no grades; field is the McMaster subject area) |
 | UTD24 | 24 (no grades) |
 | Top 5 | 5 (no grades) |
 | ABDC | 2,651 (A* 219, A 630, B 861, C 941; 2025 list) |

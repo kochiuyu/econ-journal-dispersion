@@ -111,7 +111,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating and no field. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Stern tiers are Top 5, Really excellent, Field, and Review. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
+      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. Stern tiers are Top 5, Really excellent, Field, and Review. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
@@ -256,6 +256,9 @@
         <strong>FT50</strong>, <strong>UTD24</strong>, and <strong>Top 5</strong> are membership lists.
         The catalogs have no grade column, so this page does not assign one.
         FT50 is the April 2026 list in <code>journals/catalog_ft50.csv</code> (50 journals).
+        Its field is the subject area on the
+        <a href="https://libguides.mcmaster.ca/ft-top50">McMaster LibGuide</a>.
+        A journal with two subjects keeps both in that cell, comma-separated, as the table prints them.
         UTD24 is <code>journals/catalog_utd24.csv</code> (24 journals).
         Top 5 is <code>journals/catalog_top5.csv</code> (5 journals).
       </p>
@@ -265,7 +268,8 @@
         ABDC uses <code>field_for</code> from the 2025 catalogs.
         FNEGE uses its domain code. ERIM uses the Core track. Tilburg very-good rows use the group on the TISEM page.
         Stern field journals use the memo’s field heading. Shanghai uses the subject, and joins two subjects on one row.
-        Handelsblatt/VWL, FT50, UTD24, and Top 5 have no field, so those cells stay blank.
+        FT50 uses the McMaster subject area. A two-subject cell stays one field, and the filter lists that whole subject area.
+        Handelsblatt/VWL, UTD24, and Top 5 have no field, so those cells stay blank.
       </p>
       <p>
         On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, ERIM, Stern, and Shanghai, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
