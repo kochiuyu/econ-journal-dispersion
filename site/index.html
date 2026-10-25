@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal Editors — FT50 and ABDC</title>
-  <meta name="description" content="Searchable directory of current FT50 and ABDC journal editors. AJG chips are 2024 CABS grades on those boards, not the full guide.">
+  <meta name="description" content="Current FT50 and ABDC journal editors, with Top 5, UTD24, and 2024 CABS grades. Open the directory on FT50, or browse journals, institutions, and rankings.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:title" content="Journal Editors — FT50 and ABDC">
-  <meta property="og:description" content="Searchable directory of current FT50 and ABDC journal editors. AJG chips are 2024 CABS grades on those boards, not the full guide.">
+  <meta property="og:description" content="Current FT50 and ABDC journal editors. The directory opens on FT50 and loads other lists on demand.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:type" content="website">
   <!--
@@ -18,9 +18,23 @@
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <script>
+    /* Old directory URLs lived on this page. Send them to directory.html. */
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var keys = ["q", "u", "role", "continent", "country", "journal", "aff", "field", "sort", "dir", "page", "n"];
+      var send = location.hash === "#directory";
+      for (var i = 0; i < keys.length; i++) {
+        if (params.has(keys[i])) send = true;
+      }
+      if (!send) return;
+      var hash = location.hash === "#directory" ? "#directory" : location.hash;
+      location.replace("directory.html" + location.search + hash);
+    })();
+  </script>
 </head>
 <body>
-  <a class="skip" href="#directory">Skip to directory</a>
+  <a class="skip" href="#lists">Skip to lists</a>
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="./">
@@ -31,7 +45,8 @@
         </span>
       </a>
       <nav class="nav" aria-label="Site">
-        <a href="#directory" class="active">Directory</a>
+        <a href="./" class="active">Home</a>
+        <a href="directory.html">Directory</a>
         <a href="journals.html">Journals</a>
         <a href="institutions.html">Institutions</a>
         <a href="rankings.html">Rankings</a>
@@ -43,12 +58,10 @@
 
   <main class="wrap">
     <p class="intro" id="intro">
-      Current editorial boards on the Financial Times FT50 list and the 2025 ABDC Journal Quality List
-      (A*, A, B, and C) only. Top 5 and UTD24 are extra filters on those same boards.
-      AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) tagged onto those rows.
-      They do not add a separate board scrape, and the full guide is not in this directory.
-      <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
-      Full AJG editions are on <a href="rankings.html">Rankings</a>.
+      Current editorial boards for the Financial Times FT50 list and the 2025 ABDC Journal Quality List
+      (A*, A, B, and C). Top 5, UTD24, and 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1)
+      are tags on those same boards. The <a href="directory.html">directory</a> opens on FT50 and loads
+      another list when you choose it.
       <span id="asof">Board year 2026.</span>
     </p>
 
@@ -74,154 +87,107 @@
         <div class="sub">Matched affiliation</div>
       </div>
     </section>
+    <p class="hint meta-status" id="meta-status" aria-live="polite"></p>
 
-    <section class="controls" id="directory" aria-label="Filter editors">
-      <form id="filters" role="search">
-        <div class="row">
-          <label class="sr-only" for="q">Search editors</label>
-          <input id="q" type="search" name="q" placeholder="Search name, journal, affiliation, field, or role" autocomplete="off" spellcheck="false">
-          <button class="btn" type="submit">Search</button>
-          <button class="btn" type="button" id="clear">Clear</button>
-        </div>
-        <div class="row" id="universe-row">
-          <span class="lbl" id="universe-label">List</span>
-        </div>
-        <div class="row">
-          <label class="lbl" for="role">Role</label>
-          <select id="role" name="role">
-            <option value="">All roles</option>
-          </select>
-          <label class="lbl" for="continent">Continent</label>
-          <select id="continent" name="continent">
-            <option value="">All continents</option>
-          </select>
-          <label class="lbl" for="country">Country</label>
-          <select id="country" name="country">
-            <option value="">All countries</option>
-          </select>
-          <label class="lbl" for="institution">Institution</label>
-          <select id="institution" name="aff">
-            <option value="">All institutions</option>
-          </select>
-          <label class="lbl" for="field">Field</label>
-          <select id="field" name="field">
-            <option value="">All fields</option>
-          </select>
-          <label class="lbl" for="journal">Journal</label>
-          <select id="journal" name="journal">
-            <option value="">All journals</option>
-          </select>
-          <label class="lbl" for="pagesize">Rows</label>
-          <select id="pagesize" name="n">
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
-          </select>
-        </div>
-      </form>
-      <p class="hint">Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip adds one grade when the journal has a 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. Many board journals have no grade, and AJG titles outside these boards never appear. Institution is the affiliation on the row. Field is the 2025 ABDC subject, shown without the leading code. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. Many names stay plain text because that fill is partial.</p>
-    </section>
-
-    <p class="count" id="count" aria-live="polite">Loading directory…</p>
-
-    <div class="tbl-wrap">
-      <table>
-        <caption class="sr-only">Current FT50 and ABDC journal editors</caption>
-        <thead>
-          <tr>
-            <th scope="col"><button type="button" data-sort="name">Name</button></th>
-            <th scope="col"><button type="button" data-sort="role">Role</button></th>
-            <th scope="col"><button type="button" data-sort="journal">Journal</button></th>
-            <th scope="col"><button type="button" data-sort="field">Field</button></th>
-            <th scope="col"><button type="button" data-sort="universe">List</button></th>
-            <th scope="col"><button type="button" data-sort="affiliation">Affiliation</button></th>
-            <th scope="col"><button type="button" data-sort="country">Country</button></th>
-            <th scope="col"><button type="button" data-sort="continent">Continent</button></th>
-          </tr>
-        </thead>
-        <tbody id="rows"></tbody>
-      </table>
+    <h2 class="section-title" id="lists">Lists</h2>
+    <div class="universe-grid" id="universe-summary">
+      <a class="universe-card" href="directory.html?u=ft50" data-universe="ft50">
+        <span class="label">FT50</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals · opens first</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=a_star" data-universe="a_star">
+        <span class="label">ABDC A*</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=a" data-universe="a">
+        <span class="label">ABDC A</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=b" data-universe="b">
+        <span class="label">ABDC B</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=c" data-universe="c">
+        <span class="label">ABDC C</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=top5" data-universe="top5">
+        <span class="label">Top 5</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=utd24" data-universe="utd24">
+        <span class="label">UTD24</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=ajg_4star" data-universe="ajg_4star" title="CABS Academic Journal Guide 2024, grade 4*">
+        <span class="label">AJG 4*</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=ajg_4" data-universe="ajg_4" title="CABS Academic Journal Guide 2024, grade 4">
+        <span class="label">AJG 4</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=ajg_3" data-universe="ajg_3" title="CABS Academic Journal Guide 2024, grade 3">
+        <span class="label">AJG 3</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=ajg_2" data-universe="ajg_2" title="CABS Academic Journal Guide 2024, grade 2">
+        <span class="label">AJG 2</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+      <a class="universe-card" href="directory.html?u=ajg_1" data-universe="ajg_1" title="CABS Academic Journal Guide 2024, grade 1">
+        <span class="label">AJG 1</span>
+        <span class="n" data-universe-count>…</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
     </div>
-    <div class="pager" id="pager"></div>
+
+    <h2 class="section-title" id="explore-title">Explore</h2>
+    <div class="explore">
+      <a href="journals.html">
+        <span class="label">Journals</span>
+        <span class="sub">One row per journal, with list badges, field, and appointment counts.</span>
+      </a>
+      <a href="institutions.html">
+        <span class="label">Institutions</span>
+        <span class="sub">One row per institution. A name opens the directory on that affiliation.</span>
+      </a>
+      <a href="rankings.html">
+        <span class="label">Rankings</span>
+        <span class="sub">ABS/AJG editions, CNRS, Handelsblatt/VWL, and the membership lists.</span>
+      </a>
+    </div>
 
     <section class="prose" id="about">
-      <h2>About this directory</h2>
+      <h2>About</h2>
       <p>
-        This is the public editor list for
+        This site is the public editor list for
         <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">Geographic Dispersion / econ-journal-dispersion</a>.
-        It is built from the analysis releases under <code>data/editors/*/releases/current/</code>,
-        not from a live scrape of this repository. The FT50 file is the ROR-enriched current board.
-        ABDC is the 2025 Journal Quality List at A*, A, B, and C.
-        Those two releases are the whole directory.
-        Top 5 and UTD24 are tags read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
-        AJG chips are 2024 CABS grades tagged onto the same rows from <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code> and its crosswalk.
-        They do not add a board scrape.
-        core49 is an older ABDC A* subset and is not a separate list here. Authors are not in this version.
+        It is built from the releases under <code>data/editors/*/releases/current/</code>, not from a live scrape.
+        FT50 and the 2025 ABDC list (A*, A, B, and C) are the whole directory.
+        Top 5 and UTD24 are tags. AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) on those rows.
+        core49 is not a separate list. Authors are not included.
       </p>
       <p>
         <span id="about-asof">Board year 2026.</span>
-        Counts above are appointments (one person, in one role, on one journal), distinct names, journals, and countries with a matched institution.
-        Two people whose names fold to the same string are counted once. Different spellings are counted twice.
-      </p>
-      <h2>How overlap is shown</h2>
-      <p>
-        Where the same person, journal, and role appear in both the FT50 release and an ABDC rating, the table shows one row and both badges.
-        The wording comes from the FT50 file. A missing affiliation or country is filled from the ABDC row.
-        A different role, or the same role on another journal, stays a separate row.
-        The same name and role on one journal with two different affiliations is kept as two rows.
-        The role filter groups masthead titles (Editor-in-Chief, Editor, Co-Editor, Senior Editor, Managing Editor, Associate Editor, Guest / Special Issue Editor, Editorial Board, Review Board, Advisory Board, and Other). The Role column is the journal’s own title.
-      </p>
-      <h2>Top 5 and UTD24</h2>
-      <p>
-        Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies.
-        Each of those appointments also carries the FT50 badge.
-        UTD24 is the UT Dallas Naveen Jindal list of 24 business journals.
-        Twenty-three of them are in the FT50 release.
-        INFORMS Journal on Computing, listed by UTD as Journal on Computing, is included from the ABDC A release so the chip covers the full list.
-        Journal of Applied Psychology remains an FT50 appointment and does not carry a UTD24 badge.
-      </p>
-      <h2>AJG grades</h2>
-      <p>
-        AJG chips are grades on the FT50 and ABDC rows. The list chip and the row badge both show one grade:
-        AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1.
-        The grade is <code>rating</code> on the 2024 edition, the latest edition in
-        <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code>.
-        The id join uses <code>abs_ajg_2024.csv</code> and the 2024 rows of <code>journal_id_crosswalk.csv</code>, so a journal whose primary id is a core49 slug still matches the ABDC id on the board file.
-        The Economic Journal is one of those, and its badge is AJG 4.
+        The counts above are every current appointment, not just FT50.
+        The directory downloads FT50 first. Other lists arrive when you select them, or when a journal or institution link needs them.
+        A name opens a faculty profile when the release has one. Emails, phone numbers, and photos are not published.
       </p>
       <p>
-        That edition has 1,823 journals. 1,378 map to a catalog id, and about 1,356 of those sit on a current board and can show a chip here.
-        The 445 unmatched titles have no id and never get a chip. A small set of mapped titles are not on these boards, so they stay off the directory too.
-        Many ABDC board journals have no AJG grade: about 2,400 ABDC board journal ids, against about 1,356 with an AJG hit.
-        Accounting Educators Journal stays an ABDC journal without an AJG badge.
-        Earlier editions, and the AJG titles that never receive a chip, stay on the <a href="rankings.html">Rankings</a> page.
-        ABDC labels are unchanged.
-      </p>
-      <h2>Institution and field</h2>
-      <p>
-        Institution lists the affiliation stored on the row: the matched ROR name when the release has one, otherwise the canonical or masthead affiliation.
-        Choosing an institution keeps appointments with that exact affiliation.
-        The <a href="institutions.html">Institutions</a> page links here with that name.
-        Field is <code>field_for</code> from the 2025 ABDC catalogs, the same subject as the Field filter on <a href="journals.html">Journals</a>.
-        The menu shows the subject name. The code stays on the cell title.
-      </p>
-      <p>
-        Country and continent are the ROR fields on the release. Affiliations prefer the matched institution name.
-        Emails, phone numbers, and photos are not published; contact strings found in a masthead field are removed.
-        Journal names link to the public board page the row was collected from.
-        A name links to a faculty profile when <code>faculty_profile_url</code> is filled.
-        Coverage is partial: higher on FT50 and ABDC A* than on B and C, so a name with no profile stays plain text.
-        The directory does not link <code>faculty_home_page</code>, and it does not invent ORCID, OpenAlex, or RePEc person links.
-      </p>
-      <p>
-        <a href="journals.html">Journals</a> is one row per journal.
-        <a href="institutions.html">Institutions</a> is one row per institution, using the ROR id when the release has one.
-        A journal name opens this directory on that journal. An institution name opens it on that affiliation and country.
-      </p>
-      <p>
-        CNRS and Handelsblatt/VWL grades, the earlier ABS/AJG editions, the 2025 ABDC ratings, and FT50, UTD24, and Top 5 membership lists are on the <a href="rankings.html">Rankings</a> page.
-        Those rows are journal grades, not editorial appointments.
-        The AJG chips on this directory are the 2024 grades that match a current board.
+        The notes on overlap, Top 5, UTD24, and AJG grades are on the <a href="directory.html#about">directory</a>.
+        Full AJG editions stay on <a href="rankings.html">Rankings</a>.
       </p>
       <p class="small">
         Dataset license CC-BY-4.0. Journal mastheads remain the publishers’.
@@ -236,11 +202,11 @@
     <p>
       Geographic Dispersion / econ-journal-dispersion analysis releases.
       <span id="footer-asof">Board year 2026.</span>
+      <a href="directory.html">Editor directory</a>.
       <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">Repository README</a>.
     </p>
   </footer>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="hub.js"></script>
 </body>
 </html>

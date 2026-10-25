@@ -1,44 +1,66 @@
 /* Journal editor directory.
    Project Pages base: /econ-journal-dispersion/
-   Styles, this file, and data.js are loaded with relative URLs from index.html.
-   Do not fetch them from the site root; that host path is the user Pages root,
-   not this project site. */
+   directory.html loads data/shell.js, then this file. List rows are data/<id>.js,
+   fetched when that chip is selected or a journal/institution link needs them.
+   The page opens on FT50. Do not fetch these files from the site root. */
 (function () {
   "use strict";
 
   var PAGES_BASE = "/econ-journal-dispersion/";
-  var DATA = window.EDITOR_DATA;
+  var SHELL = window.EDITOR_SHELL;
   var numberFormat = new Intl.NumberFormat("en-US");
   var collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
   var countEl = document.getElementById("count");
   var rowsEl = document.getElementById("rows");
   var pagerEl = document.getElementById("pager");
+  var directoryEl = document.getElementById("directory");
 
-  if (!DATA || !DATA.rows) {
-    countEl.textContent = "Directory data is not built yet. From the repository root, run python scripts/build_site.py.";
+  if (!SHELL || !SHELL.universes || !SHELL.counts || !SHELL.journals) {
+    if (countEl) {
+      countEl.textContent = "Directory data is not built yet. From the repository root, run python scripts/build_site.py.";
+    }
     return;
   }
 
-  if (DATA.base && DATA.base !== PAGES_BASE) {
-    console.warn("data.js base path does not match this page", DATA.base, PAGES_BASE);
+  if (SHELL.base && SHELL.base !== PAGES_BASE) {
+    console.warn("shell.js base path does not match this page", SHELL.base, PAGES_BASE);
   }
 
-  var rows = DATA.rows;
-  var roles = DATA.roles;
-  var roleFamily = DATA.roleFamily;
-  var families = DATA.families;
-  var journals = DATA.journals;
-  var fields = DATA.fields || [""];
-  var journalField = DATA.journalField || [];
-  var countries = DATA.countries;
-  var continents = DATA.continents;
-  var urls = DATA.urls;
-  var profiles = DATA.profiles || [""];
-  var universes = DATA.universes;
-  var total = rows.length;
-  var hay = new Array(total);
+  var universes = SHELL.universes;
+  var families = SHELL.families;
+  var rows = [];
+  var roleNames = [];
+  var roleFamily = [];
+  var roleLookup = new Map();
+  var journalNames = [];
+  var journalFields = [];
+  var journalLookup = new Map();
+  var countries = new StringTable(true);
+  var continents = new StringTable(true);
+  var urls = new StringTable(true);
+  var profiles = new StringTable(true);
+  var seenRows = new Set();
+  var hay = [];
   var orderCache = new Map();
+  var rowsNameSorted = true;
+  var loadedOnce = false;
+  var loadedChunks = new Set();
+  var inflight = new Map();
+  var institutionIndex = null;
+  var institutionIndexPromise = null;
+  var institutionPack = null;
+  var countryIndex = null;
+  var appliedContinent = null;
+  var generation = 0;
+
+  var journalInfo = new Map();
+  SHELL.journals.forEach(function (name, index) {
+    journalInfo.set(name, {
+      mask: SHELL.journalMask[index] || 0,
+      cover: SHELL.journalCover[index] || 0
+    });
+  });
 
   var qEl = document.getElementById("q");
   var roleEl = document.getElementById("role");
@@ -46,6 +68,7 @@
   var countryEl = document.getElementById("country");
   var journalEl = document.getElementById("journal");
   var institutionEl = document.getElementById("institution");
+  var suggestEl = document.getElementById("institution-list");
   var fieldEl = document.getElementById("field");
   var pageSizeEl = document.getElementById("pagesize");
   var universeRow = document.getElementById("universe-row");
@@ -54,6 +77,26 @@
 
   var state = readUrl();
   var debounce = 0;
+  var suggestItems = [];
+  var suggestIndex = -1;
+
+  function StringTable(emptyFirst) {
+    this.values = [];
+    this.lookup = new Map();
+    if (emptyFirst) {
+      this.values.push("");
+      this.lookup.set("", 0);
+    }
+  }
+
+  StringTable.prototype.add = function (value) {
+    var found = this.lookup.get(value);
+    if (found !== undefined) return found;
+    var index = this.values.length;
+    this.values.push(value);
+    this.lookup.set(value, index);
+    return index;
+  };
 
   function formatNumber(value) {
     return numberFormat.format(value);
@@ -69,14 +112,26 @@
   }
 
   function asOfText() {
-    var year = DATA.year ? "Board year " + DATA.year : "Current boards";
-    if (DATA.collectedMin && DATA.collectedMax) {
-      var range = DATA.collectedMin === DATA.collectedMax
-        ? formatDate(DATA.collectedMin)
-        : formatDate(DATA.collectedMin) + " – " + formatDate(DATA.collectedMax);
+    var year = SHELL.year ? "Board year " + SHELL.year : "Current boards";
+    if (SHELL.collectedMin && SHELL.collectedMax) {
+      var range = SHELL.collectedMin === SHELL.collectedMax
+        ? formatDate(SHELL.collectedMin)
+        : formatDate(SHELL.collectedMin) + " – " + formatDate(SHELL.collectedMax);
       return year + ", collected " + range + ".";
     }
     return year + ".";
+  }
+
+  function universeById(id) {
+    for (var i = 0; i < universes.length; i++) {
+      if (universes[i].id === id) return universes[i];
+    }
+    return null;
+  }
+
+  function universeLabel(id) {
+    var universe = universeById(id);
+    return universe ? universe.label : id;
   }
 
   function universeSelection(raw) {
@@ -92,18 +147,56 @@
     return next;
   }
 
+  function sameSet(a, b) {
+    if (a.size !== b.size) return false;
+    var ok = true;
+    a.forEach(function (id) {
+      if (!b.has(id)) ok = false;
+    });
+    return ok;
+  }
+
+  function syncUniverseMode() {
+    var defaults = new Set(SHELL.defaultUniverses || ["ft50"]);
+    if (!state.universes.size) state.universeMode = "none";
+    else if (sameSet(state.universes, defaults)) state.universeMode = "default";
+    else state.universeMode = "explicit";
+  }
+
   function readUrl() {
     var params = new URLSearchParams(window.location.search);
     var size = Number(params.get("n"));
     var page = Number(params.get("page"));
+    var rawU = params.get("u");
+    var journal = params.get("journal") || "";
+    var aff = params.get("aff") || "";
+    var universesSelected;
+    var universeMode;
+    var noUniverse = SHELL.noUniverse || "-";
+    if (rawU === null) {
+      if (journal || aff) {
+        universesSelected = new Set();
+        universeMode = "none";
+      } else {
+        universesSelected = new Set(SHELL.defaultUniverses || ["ft50"]);
+        universeMode = "default";
+      }
+    } else if (rawU === noUniverse) {
+      universesSelected = new Set();
+      universeMode = "none";
+    } else {
+      universesSelected = new Set(universeSelection(rawU));
+      universeMode = universesSelected.size ? "explicit" : "none";
+    }
     return {
       q: params.get("q") || "",
-      universes: new Set(universeSelection(params.get("u"))),
+      universes: universesSelected,
+      universeMode: universeMode,
       role: params.get("role") || "",
       continent: params.get("continent") || "",
       country: params.get("country") || "",
-      journal: params.get("journal") || "",
-      aff: params.get("aff") || "",
+      journal: journal,
+      aff: aff,
       field: params.get("field") || "",
       sort: params.get("sort") || "name",
       dir: params.get("dir") === "desc" ? "desc" : "asc",
@@ -115,7 +208,10 @@
   function writeUrl() {
     var params = new URLSearchParams();
     if (state.q) params.set("q", state.q);
-    if (state.universes.size) params.set("u", Array.from(state.universes).join(","));
+    if (state.universeMode === "none") params.set("u", SHELL.noUniverse || "-");
+    else if (state.universeMode === "explicit" && state.universes.size) {
+      params.set("u", Array.from(state.universes).join(","));
+    }
     if (state.role) params.set("role", state.role);
     if (state.continent) params.set("continent", state.continent);
     if (state.country) params.set("country", state.country);
@@ -129,9 +225,236 @@
     var query = params.toString();
     var next = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
     var current = window.location.pathname + window.location.search + window.location.hash;
-    if (next !== current) {
-      window.history.replaceState(null, "", next);
+    if (next !== current) history.replaceState(null, "", next);
+  }
+
+  function isCovered(id) {
+    var options = (SHELL.covers && SHELL.covers[id]) || [id];
+    for (var i = 0; i < options.length; i++) {
+      if (loadedChunks.has(options[i])) return true;
     }
+    return false;
+  }
+
+  function chunksFromMask(mask) {
+    var ids = [];
+    if (!mask) return ids;
+    for (var i = 0; i < universes.length; i++) {
+      if (mask & universes[i].bit) ids.push(universes[i].id);
+    }
+    return ids;
+  }
+
+  function needsInstitutionIndex() {
+    return !!(state.aff && state.aff !== "__blank__" && state.universeMode === "none");
+  }
+
+  function chunksToFetch() {
+    var ids = [];
+    function add(id) {
+      if (!id || ids.indexOf(id) !== -1 || isCovered(id)) return;
+      ids.push(id);
+    }
+    if (state.universeMode !== "none") state.universes.forEach(add);
+    if (state.journal) {
+      var info = journalInfo.get(state.journal);
+      if (info) chunksFromMask(info.cover).forEach(add);
+    }
+    if (needsInstitutionIndex() && institutionIndex) {
+      chunksFromMask(institutionIndex[state.aff]).forEach(add);
+    }
+    return ids.filter(function (id) {
+      var options = (SHELL.covers && SHELL.covers[id]) || [id];
+      for (var i = 0; i < options.length; i++) {
+        var other = options[i];
+        if (other !== id && ids.indexOf(other) !== -1) return false;
+      }
+      return true;
+    });
+  }
+
+  function addRole(name, family) {
+    var existing = roleLookup.get(name);
+    if (existing !== undefined) return existing;
+    var index = roleNames.length;
+    roleNames.push(name);
+    roleFamily.push(family);
+    roleLookup.set(name, index);
+    return index;
+  }
+
+  function addJournal(name, field) {
+    var existing = journalLookup.get(name);
+    if (existing !== undefined) {
+      if (!journalFields[existing] && field) journalFields[existing] = field;
+      return existing;
+    }
+    var index = journalNames.length;
+    journalNames.push(name);
+    journalFields.push(field || "");
+    journalLookup.set(name, index);
+    return index;
+  }
+
+  function rowKey(mapped) {
+    return mapped.join("\u0001");
+  }
+
+  function ingest(chunk) {
+    var mapRole = [];
+    var mapJournal = [];
+    var mapCountry = [];
+    var mapContinent = [];
+    var mapUrl = [];
+    var mapProfile = [];
+    var i;
+    for (i = 0; i < chunk.roles.length; i++) mapRole[i] = addRole(chunk.roles[i], chunk.roleFamily[i]);
+    for (i = 0; i < chunk.journals.length; i++) {
+      var field = chunk.fields[chunk.journalField[i]] || "";
+      mapJournal[i] = addJournal(chunk.journals[i], field);
+    }
+    for (i = 0; i < chunk.countries.length; i++) mapCountry[i] = countries.add(chunk.countries[i]);
+    for (i = 0; i < chunk.continents.length; i++) mapContinent[i] = continents.add(chunk.continents[i]);
+    for (i = 0; i < chunk.urls.length; i++) mapUrl[i] = urls.add(chunk.urls[i]);
+    for (i = 0; i < chunk.profiles.length; i++) mapProfile[i] = profiles.add(chunk.profiles[i]);
+    var added = 0;
+    for (i = 0; i < chunk.rows.length; i++) {
+      var row = chunk.rows[i];
+      var mapped = [
+        row[0],
+        mapRole[row[1]],
+        mapJournal[row[2]],
+        row[3],
+        row[4],
+        mapCountry[row[5]],
+        mapContinent[row[6]],
+        mapUrl[row[7]],
+        mapProfile[row[8]]
+      ];
+      var key = rowKey(mapped);
+      if (seenRows.has(key)) continue;
+      seenRows.add(key);
+      rows.push(mapped);
+      added += 1;
+    }
+    if (added && rows.length !== added) rowsNameSorted = false;
+    loadedOnce = true;
+    countryIndex = null;
+    institutionPack = null;
+    orderCache.clear();
+  }
+
+  function loadChunk(id) {
+    if (!/^[a-z0-9_]+$/.test(id)) return Promise.reject(new Error(id));
+    if (loadedChunks.has(id)) return Promise.resolve();
+    if (inflight.has(id)) return inflight.get(id);
+    var promise = new Promise(function (resolve, reject) {
+      var script = document.createElement("script");
+      script.src = "data/" + id + ".js";
+      script.onload = function () {
+        var chunk = window.EDITOR_CHUNKS && window.EDITOR_CHUNKS[id];
+        if (!chunk || !chunk.rows) {
+          inflight.delete(id);
+          reject(new Error(universeLabel(id)));
+          return;
+        }
+        ingest(chunk);
+        loadedChunks.add(id);
+        inflight.delete(id);
+        resolve();
+      };
+      script.onerror = function () {
+        inflight.delete(id);
+        reject(new Error(universeLabel(id)));
+      };
+      document.head.appendChild(script);
+    });
+    inflight.set(id, promise);
+    return promise;
+  }
+
+  function ensureInstitutionIndex() {
+    if (institutionIndex) return Promise.resolve(institutionIndex);
+    if (institutionIndexPromise) return institutionIndexPromise;
+    institutionIndexPromise = new Promise(function (resolve, reject) {
+      var script = document.createElement("script");
+      script.src = "data/institution-index.js";
+      script.onload = function () {
+        institutionIndex = window.EDITOR_INSTITUTION_INDEX || {};
+        resolve(institutionIndex);
+      };
+      script.onerror = function () {
+        institutionIndexPromise = null;
+        reject(new Error("institution index"));
+      };
+      document.head.appendChild(script);
+    });
+    return institutionIndexPromise;
+  }
+
+  function markBusy(ids) {
+    var pending = {};
+    ids.forEach(function (id) { pending[id] = true; });
+    universeRow.querySelectorAll(".chip").forEach(function (chip) {
+      if (pending[chip.dataset.universe]) chip.setAttribute("aria-busy", "true");
+      else chip.removeAttribute("aria-busy");
+    });
+    var busy = ids.length ? "true" : "false";
+    if (directoryEl) directoryEl.setAttribute("aria-busy", busy);
+    countEl.setAttribute("aria-busy", busy);
+  }
+
+  function showPending(text) {
+    countEl.textContent = text;
+    if (rows.length) return;
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
+    td.colSpan = 8;
+    td.className = "empty";
+    td.textContent = text;
+    tr.appendChild(td);
+    rowsEl.replaceChildren(tr);
+    pagerEl.replaceChildren();
+  }
+
+  function schedule() {
+    var gen = ++generation;
+    syncControls();
+    writeUrl();
+    var chain = needsInstitutionIndex() && !institutionIndex ? ensureInstitutionIndex() : Promise.resolve();
+    if (needsInstitutionIndex() && !institutionIndex) showPending("Loading institutions…");
+    chain.then(function () {
+      if (gen !== generation) return null;
+      var ids = chunksToFetch();
+      if (!ids.length) {
+        markBusy([]);
+        render();
+        return null;
+      }
+      markBusy(ids);
+      showPending("Loading " + ids.map(universeLabel).join(", ") + "…");
+      return Promise.allSettled(ids.map(loadChunk)).then(function (results) {
+        var failed = [];
+        results.forEach(function (result) {
+          if (result.status === "rejected") {
+            failed.push(result.reason && result.reason.message ? result.reason.message : "a list");
+          }
+        });
+        return failed;
+      });
+    }).then(function (failed) {
+      if (gen !== generation || failed === null) return;
+      markBusy([]);
+      render();
+      if (failed.length) {
+        countEl.textContent = "Could not load " + failed.join(", ") + ". Showing appointments already loaded.";
+      }
+    }).catch(function (error) {
+      if (gen !== generation) return;
+      markBusy([]);
+      render();
+      countEl.textContent = "Could not load " + (error && error.message ? error.message : "directory data") + ". From the repository root, run python scripts/build_site.py.";
+    });
   }
 
   function haystack(index) {
@@ -140,21 +463,21 @@
     var row = rows[index];
     cached = [
       row[0],
-      roles[row[1]],
+      roleNames[row[1]],
       families[roleFamily[row[1]]],
-      journals[row[2]],
-      fieldText(journalField[row[2]]),
-      fieldLabel(fieldText(journalField[row[2]])),
+      journalNames[row[2]],
+      fieldText(journalFields[row[2]]),
+      fieldLabel(fieldText(journalFields[row[2]])),
       row[4],
-      countries[row[5]],
-      continents[row[6]]
+      countries.values[row[5]],
+      continents.values[row[6]]
     ].join("\n").toLowerCase();
     hay[index] = cached;
     return cached;
   }
 
-  function fieldText(index) {
-    return fields[index] || "";
+  function fieldText(value) {
+    return value || "";
   }
 
   function fieldLabel(field) {
@@ -163,7 +486,7 @@
   }
 
   function fieldOf(row) {
-    return fieldText(journalField[row[2]]);
+    return fieldText(journalFields[row[2]]);
   }
 
   function universeText(mask) {
@@ -181,24 +504,24 @@
   function sortValue(index, sort) {
     var row = rows[index];
     switch (sort) {
-      case "role": return roles[row[1]] || "";
-      case "journal": return journals[row[2]] || "";
+      case "role": return roleNames[row[1]] || "";
+      case "journal": return journalNames[row[2]] || "";
       case "field": return fieldLabel(fieldOf(row));
       case "universe": return universeText(row[3]);
       case "affiliation": return row[4] || "";
-      case "country": return countries[row[5]] || "";
-      case "continent": return continents[row[6]] || "";
+      case "country": return countries.values[row[5]] || "";
+      case "continent": return continents.values[row[6]] || "";
       default: return nameSortKey(row[0]);
     }
   }
 
   function getOrder() {
-    var key = state.sort + ":" + state.dir;
+    var key = state.sort + ":" + state.dir + ":" + rows.length + ":" + (rowsNameSorted ? "1" : "0");
     var cached = orderCache.get(key);
     if (cached) return cached;
-    var order = new Array(total);
-    for (var i = 0; i < total; i++) order[i] = i;
-    if (!(state.sort === "name" && state.dir === "asc")) {
+    var order = new Array(rows.length);
+    for (var i = 0; i < rows.length; i++) order[i] = i;
+    if (!(rowsNameSorted && state.sort === "name" && state.dir === "asc")) {
       var sign = state.dir === "desc" ? -1 : 1;
       var sort = state.sort;
       order.sort(function (a, b) {
@@ -214,11 +537,17 @@
   function selectedMask() {
     var mask = 0;
     state.universes.forEach(function (id) {
-      for (var i = 0; i < universes.length; i++) {
-        if (universes[i].id === id) mask |= universes[i].bit;
-      }
+      var universe = universeById(id);
+      if (universe) mask |= universe.bit;
     });
     return mask;
+  }
+
+  function journalMatchesSelection(name) {
+    if (!state.universes.size) return true;
+    var info = journalInfo.get(name);
+    if (!info || !info.mask) return true;
+    return (info.mask & selectedMask()) !== 0;
   }
 
   function applyFilters() {
@@ -239,11 +568,11 @@
       var index = order[n];
       var row = rows[index];
       if (mask && (row[3] & mask) === 0) continue;
-      if (journal && journals[row[2]] !== journal) continue;
+      if (journal && journalNames[row[2]] !== journal) continue;
       if (!matchesChoice(row[4] || "", aff)) continue;
       if (!matchesChoice(fieldOf(row), field)) continue;
-      if (!matchesChoice(continents[row[6]] || "", continent)) continue;
-      if (!matchesChoice(countries[row[5]] || "", country)) continue;
+      if (!matchesChoice(continents.values[row[6]] || "", continent)) continue;
+      if (!matchesChoice(countries.values[row[5]] || "", country)) continue;
       if (role && families[roleFamily[row[1]]] !== role) continue;
       if (tokens.length) {
         var text = haystack(index);
@@ -270,7 +599,7 @@
   }
 
   function fillHeader() {
-    var counts = DATA.counts;
+    var counts = SHELL.counts;
     placeText("n-appointments", formatNumber(counts.appointments));
     placeText("n-editors", formatNumber(counts.editors));
     placeText("n-journals", formatNumber(counts.journals));
@@ -294,16 +623,15 @@
     return value === selected;
   }
 
-  var countryIndex = null;
-
   function buildCountryIndex() {
+    if (countryIndex && countryIndex.rows === rows.length) return;
     var all = new Set();
     var byContinent = new Map();
     var blankAll = false;
     var blankByContinent = new Set();
-    for (var i = 0; i < total; i++) {
-      var country = countries[rows[i][5]] || "";
-      var continent = continents[rows[i][6]] || "";
+    for (var i = 0; i < rows.length; i++) {
+      var country = countries.values[rows[i][5]] || "";
+      var continent = continents.values[rows[i][6]] || "";
       var key = continent || "__blank__";
       if (!byContinent.has(key)) byContinent.set(key, new Set());
       if (!country) {
@@ -320,6 +648,7 @@
     var lists = new Map();
     byContinent.forEach(function (set, key) { lists.set(key, sorted(set)); });
     countryIndex = {
+      rows: rows.length,
       all: sorted(all),
       lists: lists,
       blankAll: blankAll,
@@ -328,9 +657,8 @@
   }
 
   function countriesForContinent(continent) {
-    if (!continent) {
-      return { list: countryIndex.all, blank: countryIndex.blankAll };
-    }
+    buildCountryIndex();
+    if (!continent) return { list: countryIndex.all, blank: countryIndex.blankAll };
     var key = continent === "__blank__" ? "__blank__" : continent;
     return {
       list: countryIndex.lists.get(key) || [],
@@ -338,108 +666,263 @@
     };
   }
 
+  function keepExtra(select, previous) {
+    if (!previous) return;
+    addOption(select, previous, previous === "__blank__" ? "Unknown" : previous);
+  }
+
+  function refillContinents() {
+    var names = [];
+    var seen = new Set();
+    var blank = false;
+    for (var i = 0; i < rows.length; i++) {
+      var name = continents.values[rows[i][6]] || "";
+      if (!name) {
+        blank = true;
+        continue;
+      }
+      if (seen.has(name)) continue;
+      seen.add(name);
+      names.push(name);
+    }
+    names.sort(function (a, b) { return collator.compare(a, b); });
+    var signature = rows.length + "\n" + names.join("\n") + "\n" + (blank ? "1" : "0");
+    if (continentEl.dataset.signature !== signature) {
+      continentEl.dataset.signature = signature;
+      var previous = state.continent;
+      continentEl.replaceChildren();
+      addOption(continentEl, "", "All continents");
+      names.forEach(function (item) { addOption(continentEl, item, item); });
+      if (blank) addOption(continentEl, "__blank__", "Unknown");
+      var present = !previous || names.indexOf(previous) !== -1 || (previous === "__blank__" && blank);
+      if (!present) keepExtra(continentEl, previous);
+    }
+    continentEl.value = state.continent;
+  }
+
   function refillCountries() {
     var previous = state.country;
     var found = countriesForContinent(state.continent);
-    var signature = state.continent + "\n" + found.list.join("\n") + "\n" + found.blank;
-    if (countryEl.dataset.signature === signature) {
-      countryEl.value = state.country;
-      return;
+    var signature = rows.length + "\n" + state.continent + "\n" + found.list.join("\n") + "\n" + (found.blank ? "1" : "0");
+    if (countryEl.dataset.signature !== signature) {
+      countryEl.dataset.signature = signature;
+      countryEl.replaceChildren();
+      addOption(countryEl, "", "All countries");
+      for (var i = 0; i < found.list.length; i++) addOption(countryEl, found.list[i], found.list[i]);
+      if (found.blank) addOption(countryEl, "__blank__", "Unknown");
+      var stillThere = !previous || found.list.indexOf(previous) !== -1 || (previous === "__blank__" && found.blank);
+      var continentChanged = appliedContinent !== null && appliedContinent !== state.continent;
+      if (!stillThere) {
+        if (continentChanged && loadedOnce) {
+          state.country = "";
+          state.page = 1;
+        } else {
+          keepExtra(countryEl, previous);
+        }
+      }
     }
-    countryEl.dataset.signature = signature;
-    countryEl.replaceChildren();
-    addOption(countryEl, "", "All countries");
-    for (var i = 0; i < found.list.length; i++) {
-      addOption(countryEl, found.list[i], found.list[i]);
-    }
-    if (found.blank) addOption(countryEl, "__blank__", "Unknown");
-    var stillThere = !previous || found.list.indexOf(previous) !== -1 || (previous === "__blank__" && found.blank);
-    if (!stillThere) {
-      state.country = "";
-      state.page = 1;
-    }
+    appliedContinent = state.continent;
     countryEl.value = state.country;
   }
 
+  function refillFields() {
+    var names = [];
+    var seen = new Set();
+    var blank = false;
+    for (var i = 0; i < journalFields.length; i++) {
+      var name = journalFields[i] || "";
+      if (!name) {
+        blank = true;
+        continue;
+      }
+      if (seen.has(name)) continue;
+      seen.add(name);
+      names.push(name);
+    }
+    names.sort(function (a, b) { return collator.compare(fieldLabel(a), fieldLabel(b)); });
+    var signature = rows.length + "\n" + names.join("\n") + "\n" + (blank ? "1" : "0");
+    if (fieldEl.dataset.signature !== signature) {
+      fieldEl.dataset.signature = signature;
+      var previous = state.field;
+      fieldEl.replaceChildren();
+      addOption(fieldEl, "", "All fields");
+      names.forEach(function (item) {
+        var option = document.createElement("option");
+        option.value = item;
+        option.textContent = fieldLabel(item);
+        if (fieldLabel(item) !== item) option.title = item;
+        fieldEl.appendChild(option);
+      });
+      if (blank) addOption(fieldEl, "__blank__", "Unknown");
+      var present = !previous || seen.has(previous) || (previous === "__blank__" && blank);
+      if (!present) {
+        if (previous === "__blank__") addOption(fieldEl, "__blank__", "Unknown");
+        else {
+          var extra = document.createElement("option");
+          extra.value = previous;
+          extra.textContent = fieldLabel(previous);
+          fieldEl.appendChild(extra);
+        }
+      }
+    }
+    fieldEl.value = state.field;
+  }
+
+  function institutionChoices() {
+    if (institutionPack && institutionPack.rows === rows.length) return institutionPack;
+    var seen = new Set();
+    var names = [];
+    var blank = false;
+    for (var i = 0; i < rows.length; i++) {
+      var name = rows[i][4] || "";
+      if (!name) {
+        blank = true;
+        continue;
+      }
+      if (seen.has(name)) continue;
+      seen.add(name);
+      names.push(name);
+    }
+    names.sort(function (a, b) { return collator.compare(a, b); });
+    institutionPack = { rows: rows.length, names: names, blank: blank };
+    return institutionPack;
+  }
+
+  function closeSuggest() {
+    suggestItems = [];
+    suggestIndex = -1;
+    suggestEl.replaceChildren();
+    suggestEl.hidden = true;
+    institutionEl.setAttribute("aria-expanded", "false");
+    institutionEl.removeAttribute("aria-activedescendant");
+  }
+
+  function paintSuggest() {
+    suggestEl.replaceChildren();
+    if (!suggestItems.length) {
+      var empty = document.createElement("li");
+      empty.className = "empty";
+      empty.textContent = "No loaded institutions match.";
+      suggestEl.appendChild(empty);
+    }
+    suggestItems.forEach(function (item, index) {
+      var li = document.createElement("li");
+      li.role = "presentation";
+      var button = document.createElement("button");
+      button.type = "button";
+      button.id = "institution-opt-" + index;
+      button.setAttribute("role", "option");
+      button.setAttribute("aria-selected", index === suggestIndex ? "true" : "false");
+      button.textContent = item.label;
+      button.addEventListener("mousedown", function (event) {
+        event.preventDefault();
+        chooseSuggest(index);
+      });
+      li.appendChild(button);
+      suggestEl.appendChild(li);
+    });
+    suggestEl.hidden = false;
+    institutionEl.setAttribute("aria-expanded", "true");
+    if (suggestIndex >= 0) institutionEl.setAttribute("aria-activedescendant", "institution-opt-" + suggestIndex);
+    else institutionEl.removeAttribute("aria-activedescendant");
+  }
+
+  function openSuggest(query) {
+    var pack = institutionChoices();
+    var q = query.trim().toLowerCase();
+    suggestItems = [];
+    if (!q) {
+      closeSuggest();
+      return;
+    }
+    if (pack.blank && "unknown".indexOf(q) !== -1) {
+      suggestItems.push({ value: "__blank__", label: "Unknown" });
+    }
+    for (var i = 0; i < pack.names.length && suggestItems.length < 12; i++) {
+      if (pack.names[i].toLowerCase().indexOf(q) !== -1) {
+        suggestItems.push({ value: pack.names[i], label: pack.names[i] });
+      }
+    }
+    suggestIndex = suggestItems.length ? 0 : -1;
+    paintSuggest();
+  }
+
+  function moveSuggest(delta) {
+    if (suggestEl.hidden || !suggestItems.length) {
+      openSuggest(institutionEl.value);
+      return;
+    }
+    suggestIndex = (suggestIndex + delta + suggestItems.length) % suggestItems.length;
+    paintSuggest();
+  }
+
+  function chooseSuggest(index) {
+    var item = suggestItems[index];
+    if (!item) return;
+    state.aff = item.value;
+    state.page = 1;
+    institutionEl.value = item.label;
+    closeSuggest();
+    schedule();
+  }
+
+  function displayedAffiliation() {
+    if (state.aff === "__blank__") return "Unknown";
+    return state.aff || "";
+  }
+
+  function applyInstitutionText() {
+    var text = institutionEl.value.trim();
+    if (!text) {
+      state.aff = "";
+      return;
+    }
+    if (text.toLowerCase() === "unknown") {
+      state.aff = "__blank__";
+      return;
+    }
+    var pack = institutionChoices();
+    for (var i = 0; i < pack.names.length; i++) {
+      if (pack.names[i] === text) {
+        state.aff = pack.names[i];
+        return;
+      }
+    }
+    if (state.aff && text === displayedAffiliation()) return;
+    institutionEl.value = displayedAffiliation();
+  }
+
+  function globalAppointments(id) {
+    var counts = SHELL.counts.byUniverse && SHELL.counts.byUniverse[id];
+    return counts ? counts.appointments : 0;
+  }
+
   function initControls() {
-    families.forEach(function (family) {
-      addOption(roleEl, family, family);
-    });
-
-    var continentNames = continents.filter(Boolean).slice().sort(function (a, b) {
-      return collator.compare(a, b);
-    });
-    continentNames.forEach(function (name) { addOption(continentEl, name, name); });
-    buildCountryIndex();
-    if (countryIndex.lists.has("__blank__")) addOption(continentEl, "__blank__", "Unknown");
-
-    var journalNames = journals.slice().sort(function (a, b) { return collator.compare(a, b); });
-    journalNames.forEach(function (name) { addOption(journalEl, name, name); });
-
-    var institutionNames = [];
-    var seenInstitution = new Set();
-    var blankInstitution = false;
-    for (var i = 0; i < total; i++) {
-      var institution = rows[i][4] || "";
-      if (!institution) {
-        blankInstitution = true;
-        continue;
-      }
-      if (seenInstitution.has(institution)) continue;
-      seenInstitution.add(institution);
-      institutionNames.push(institution);
+    families.forEach(function (family) { addOption(roleEl, family, family); });
+    var journalOptions = SHELL.journals.slice().sort(function (a, b) { return collator.compare(a, b); });
+    journalOptions.forEach(function (name) { addOption(journalEl, name, name); });
+    if (state.journal && journalOptions.indexOf(state.journal) === -1) {
+      addOption(journalEl, state.journal, state.journal);
     }
-    institutionNames.sort(function (a, b) { return collator.compare(a, b); });
-    institutionNames.forEach(function (name) { addOption(institutionEl, name, name); });
-    if (blankInstitution) addOption(institutionEl, "__blank__", "Unknown");
-    if (state.aff && state.aff !== "__blank__" && !seenInstitution.has(state.aff)) {
-      addOption(institutionEl, state.aff, state.aff);
-    }
-
-    var fieldNames = [];
-    var seenField = new Set();
-    var blankField = false;
-    for (var j = 0; j < journals.length; j++) {
-      var fieldName = fieldText(journalField[j]);
-      if (!fieldName) {
-        blankField = true;
-        continue;
-      }
-      if (seenField.has(fieldName)) continue;
-      seenField.add(fieldName);
-      fieldNames.push(fieldName);
-    }
-    fieldNames.sort(function (a, b) { return collator.compare(fieldLabel(a), fieldLabel(b)); });
-    fieldNames.forEach(function (name) {
-      var option = document.createElement("option");
-      option.value = name;
-      option.textContent = fieldLabel(name);
-      if (fieldLabel(name) !== name) option.title = name;
-      fieldEl.appendChild(option);
-    });
-    if (blankField) addOption(fieldEl, "__blank__", "Unknown");
-    if (state.field && state.field !== "__blank__" && !seenField.has(state.field)) {
-      addOption(fieldEl, state.field, fieldLabel(state.field));
-    }
-
     universes.forEach(function (universe) {
       var button = document.createElement("button");
       button.type = "button";
       button.className = "chip";
       button.dataset.universe = universe.id;
-      button.setAttribute("aria-pressed", "false");
-      var count = DATA.counts.byUniverse[universe.id];
+      button.dataset.loaded = "false";
+      button.setAttribute("aria-pressed", state.universes.has(universe.id) ? "true" : "false");
       if (universe.title) button.title = universe.title;
       button.appendChild(document.createTextNode(universe.label + " "));
       var countNode = document.createElement("span");
       countNode.className = "c";
-      countNode.textContent = formatNumber(count.appointments);
+      countNode.textContent = formatNumber(globalAppointments(universe.id));
       button.appendChild(countNode);
       button.addEventListener("click", function () {
         if (state.universes.has(universe.id)) state.universes.delete(universe.id);
         else state.universes.add(universe.id);
+        syncUniverseMode();
         state.page = 1;
-        render();
+        schedule();
       });
       universeRow.appendChild(button);
     });
@@ -449,13 +932,12 @@
     if (document.activeElement !== qEl) qEl.value = state.q;
     roleEl.value = state.role;
     journalEl.value = state.journal;
-    institutionEl.value = state.aff;
-    fieldEl.value = state.field;
+    if (document.activeElement !== institutionEl) institutionEl.value = displayedAffiliation();
     pageSizeEl.value = String(state.pageSize);
-    continentEl.value = state.continent;
+    refillContinents();
     refillCountries();
-    var chips = universeRow.querySelectorAll(".chip");
-    chips.forEach(function (chip) {
+    refillFields();
+    universeRow.querySelectorAll(".chip").forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
     });
     document.querySelectorAll("th button").forEach(function (button) {
@@ -504,6 +986,13 @@
     return td;
   }
 
+  function emptyMessage() {
+    if (!rows.length && state.universeMode === "none" && !state.journal && !state.aff) {
+      return "Select a list to load appointments.";
+    }
+    return "No editors match these filters.";
+  }
+
   function renderTable(matched) {
     var start = (state.page - 1) * state.pageSize;
     var slice = matched.slice(start, start + state.pageSize);
@@ -513,21 +1002,21 @@
       var td = document.createElement("td");
       td.colSpan = 8;
       td.className = "empty";
-      td.textContent = "No editors match these filters.";
+      td.textContent = emptyMessage();
       tr.appendChild(td);
       fragment.appendChild(tr);
     }
     slice.forEach(function (index) {
       var row = rows[index];
       var tr = document.createElement("tr");
-      var profileUrl = row.length > 8 ? (profiles[row[8]] || "") : "";
+      var profileUrl = row.length > 8 ? (profiles.values[row[8]] || "") : "";
       tr.appendChild(nameCell(row[0], profileUrl));
-      tr.appendChild(cell(roles[row[1]]));
+      tr.appendChild(cell(roleNames[row[1]]));
 
       var journalCell = document.createElement("td");
       journalCell.className = "journal";
-      var url = urls[row[7]] || "";
-      var journalName = journals[row[2]] || "—";
+      var url = urls.values[row[7]] || "";
+      var journalName = journalNames[row[2]] || "—";
       if (httpUrl(url)) {
         var link = document.createElement("a");
         link.className = "journal";
@@ -562,8 +1051,8 @@
       var affiliation = cell(row[4]);
       affiliation.className = row[4] ? "affiliation" : "muted";
       tr.appendChild(affiliation);
-      tr.appendChild(cell(countries[row[5]]));
-      tr.appendChild(cell(continents[row[6]]));
+      tr.appendChild(cell(countries.values[row[5]]));
+      tr.appendChild(cell(continents.values[row[6]]));
       fragment.appendChild(tr);
     });
     rowsEl.replaceChildren(fragment);
@@ -575,16 +1064,18 @@
     pagerEl.replaceChildren();
     if (matchedCount <= state.pageSize) return;
 
+    function go(delta) {
+      state.page += delta;
+      render();
+      directoryEl.scrollIntoView({ block: "start" });
+    }
+
     var prev = document.createElement("button");
     prev.type = "button";
     prev.className = "btn";
     prev.textContent = "Previous";
     prev.disabled = state.page <= 1;
-    prev.addEventListener("click", function () {
-      state.page -= 1;
-      render();
-      document.getElementById("directory").scrollIntoView({ block: "start" });
-    });
+    prev.addEventListener("click", function () { go(-1); });
 
     var pos = document.createElement("span");
     pos.className = "pos";
@@ -595,18 +1086,23 @@
     next.className = "btn";
     next.textContent = "Next";
     next.disabled = state.page >= pages;
-    next.addEventListener("click", function () {
-      state.page += 1;
-      render();
-      document.getElementById("directory").scrollIntoView({ block: "start" });
-    });
+    next.addEventListener("click", function () { go(1); });
 
     pagerEl.appendChild(prev);
     pagerEl.appendChild(pos);
     pagerEl.appendChild(next);
   }
 
+  function loadedScopeNote() {
+    if (state.universeMode !== "none" || state.journal || state.aff) return "";
+    for (var i = 0; i < universes.length; i++) {
+      if (!isCovered(universes[i].id)) return " Loaded lists only.";
+    }
+    return "";
+  }
+
   function render() {
+    var suggestOpen = !suggestEl.hidden;
     syncControls();
     var result = applyFilters();
     var matched = result.matched;
@@ -614,16 +1110,24 @@
     if (state.page > pages) state.page = pages;
     var start = matched.length ? (state.page - 1) * state.pageSize + 1 : 0;
     var end = Math.min(state.page * state.pageSize, matched.length);
-    countEl.textContent = matched.length
-      ? "Showing " + formatNumber(start) + "–" + formatNumber(end) + " of " + formatNumber(matched.length) + " appointments"
-      : "No appointments match.";
+    if (!matched.length) {
+      countEl.textContent = rows.length ? "No appointments match." : emptyMessage();
+    } else {
+      countEl.textContent = "Showing " + formatNumber(start) + "–" + formatNumber(end) + " of " + formatNumber(matched.length) + " appointments" + loadedScopeNote();
+    }
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
+      var id = chip.dataset.universe;
       var count = chip.querySelector(".c");
-      if (count) count.textContent = formatNumber(result.uniCounts[chip.dataset.universe] || 0);
+      var ready = isCovered(id);
+      chip.dataset.loaded = ready ? "true" : "false";
+      if (count) {
+        count.textContent = formatNumber(ready ? (result.uniCounts[id] || 0) : globalAppointments(id));
+      }
     });
     renderTable(matched);
     renderPager(matched.length);
     writeUrl();
+    if (suggestOpen && document.activeElement === institutionEl) openSuggest(institutionEl.value);
   }
 
   fillHeader();
@@ -642,8 +1146,12 @@
     event.preventDefault();
     window.clearTimeout(debounce);
     state.q = qEl.value.trim();
+    var before = state.aff;
+    applyInstitutionText();
+    closeSuggest();
     state.page = 1;
-    render();
+    if (state.aff !== before || needsInstitutionIndex()) schedule();
+    else render();
   });
 
   roleEl.addEventListener("change", function () {
@@ -654,12 +1162,41 @@
   journalEl.addEventListener("change", function () {
     state.journal = journalEl.value;
     state.page = 1;
-    render();
+    if (state.journal && !journalMatchesSelection(state.journal)) {
+      state.universes = new Set();
+      state.universeMode = "none";
+    }
+    schedule();
   });
-  institutionEl.addEventListener("change", function () {
-    state.aff = institutionEl.value;
-    state.page = 1;
-    render();
+  institutionEl.addEventListener("input", function () {
+    openSuggest(institutionEl.value);
+  });
+  institutionEl.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      moveSuggest(1);
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      moveSuggest(-1);
+    } else if (event.key === "Escape") {
+      closeSuggest();
+      institutionEl.value = displayedAffiliation();
+    } else if (event.key === "Enter" && !suggestEl.hidden && suggestIndex >= 0) {
+      event.preventDefault();
+      chooseSuggest(suggestIndex);
+    }
+  });
+  institutionEl.addEventListener("blur", function () {
+    window.setTimeout(function () {
+      if (document.activeElement === institutionEl) return;
+      var before = state.aff;
+      applyInstitutionText();
+      closeSuggest();
+      if (state.aff !== before) {
+        state.page = 1;
+        schedule();
+      }
+    }, 150);
   });
   fieldEl.addEventListener("change", function () {
     state.field = fieldEl.value;
@@ -684,7 +1221,8 @@
 
   clearBtn.addEventListener("click", function () {
     state.q = "";
-    state.universes = new Set();
+    state.universes = new Set(SHELL.defaultUniverses || ["ft50"]);
+    state.universeMode = "default";
     state.role = "";
     state.continent = "";
     state.country = "";
@@ -695,7 +1233,8 @@
     state.dir = "asc";
     state.page = 1;
     state.pageSize = 50;
-    render();
+    closeSuggest();
+    schedule();
   });
 
   document.querySelectorAll("th button").forEach(function (button) {
@@ -713,15 +1252,17 @@
 
   window.addEventListener("popstate", function () {
     state = readUrl();
-    render();
+    appliedContinent = null;
+    closeSuggest();
+    schedule();
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "/" && document.activeElement !== qEl && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT") {
+    if (event.key === "/" && document.activeElement !== qEl && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT" && document.activeElement.tagName !== "TEXTAREA") {
       event.preventDefault();
       qEl.focus();
     }
   });
 
-  render();
+  schedule();
 })();
