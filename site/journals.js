@@ -132,7 +132,7 @@
   function directoryUrl(name) {
     var params = new URLSearchParams();
     params.set("journal", name);
-    return "index.html?" + params.toString();
+    return "directory.html?" + params.toString();
   }
 
   function fillHay() {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the public editor directory (site/data.js) from current releases.
+"""Build the public editor site from current releases.
 
 The site lists current FT50 and ABDC editorial-board appointments, plus
 AJG-gap boards for journals that are not already in those freezes.
@@ -150,6 +150,35 @@ when the collapsed row has one, otherwise the normalized affiliation
 (whitespace collapsed, Unicode-casefold). The display name is the most common
 affiliation string for that key. Country and continent are the most common
 non-empty values. Appointments with no ROR id and no affiliation are omitted.
+
+Hub, directory, and list chunks
+-------------------------------
+``site/index.html`` is a static hub. It does not load appointment rows.
+``scripts/build_site.py`` writes ``site/meta.json`` (headline counts and
+per-list appointment totals) for that page.
+
+``site/directory.html`` is the searchable directory. It loads
+``site/data/shell.js`` first (list metadata, journal names, and which chips
+cover each journal). Appointment rows are ``site/data/<id>.js``, one file per
+chip id: ``ft50``, ``a_star``, ``a``, ``b``, ``c``, ``top5``, ``utd24``,
+``ajg_4star``, ``ajg_4``, ``ajg_3``, ``ajg_2``, ``ajg_1``. A row is copied into
+every chip whose bit is set. The browser dedupes. Shared strings (roles,
+journals, countries, board URLs, profile URLs) live inside each chunk so an
+unloaded list does not ship its profile URLs.
+
+The directory opens on FT50 (``data/ft50.js``) when the URL does not name a
+list. Top 5 is not a second default download: every Top 5 row also has the
+FT50 bit, so that chip is covered once FT50 is in memory. Top 5 alone would
+be smaller, and it would hide the rest of the FT50 boards this directory is
+built from. ``?u=`` loads those chips. ``u=-`` selects no list.
+``?journal=`` with no ``u`` loads the smallest chip set that contains that
+journal and does not force FT50. ``?aff=`` with no ``u`` loads
+``site/data/institution-index.js`` (affiliation to a cover-chunk bitmask),
+then the chips that contain that affiliation. Other filters search the chips
+already loaded.
+
+``index.html`` with a directory query string, or with ``#directory``,
+redirects to ``directory.html``. ``site/data.js`` is not written.
 """
 
 from __future__ import annotations
@@ -166,9 +195,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
-DATA_JS = SITE_DIR / "data.js"
+DATA_DIR = SITE_DIR / "data"
+META_JSON = SITE_DIR / "meta.json"
+SHELL_JS = DATA_DIR / "shell.js"
+INSTITUTION_INDEX_JS = DATA_DIR / "institution-index.js"
+MONOLITH_JS = SITE_DIR / "data.js"
 JOURNALS_JS = SITE_DIR / "journals-data.js"
 INSTITUTIONS_JS = SITE_DIR / "institutions-data.js"
+# FT50 is the directory's first chunk. Top 5 is a subset of those rows.
+DEFAULT_UNIVERSES = ("ft50",)
 
 # Served at https://kochiuyu.github.io/econ-journal-dispersion/
 PAGES_BASE = "/econ-journal-dispersion/"
@@ -1162,50 +1197,65 @@ def assert_no_contacts(value: str, label: str) -> None:
 
 
 def assert_static_site() -> None:
-    html = (SITE_DIR / "index.html").read_text(encoding="utf-8")
-    if PAGES_BASE not in html or LIVE_URL not in html:
-        raise SystemExit("site/index.html is missing the project Pages URL")
+    index = (SITE_DIR / "index.html").read_text(encoding="utf-8")
+    directory = (SITE_DIR / "directory.html").read_text(encoding="utf-8")
     app = (SITE_DIR / "app.js").read_text(encoding="utf-8")
+    hub = (SITE_DIR / "hub.js").read_text(encoding="utf-8")
+    if PAGES_BASE not in index or LIVE_URL not in index:
+        raise SystemExit("site/index.html is missing the project Pages URL")
+    if PAGES_BASE not in directory or LIVE_URL not in directory:
+        raise SystemExit("site/directory.html is missing the project Pages URL")
     if PAGES_BASE not in app:
         raise SystemExit("site/app.js is missing the project Pages base path")
-    rankings = (SITE_DIR / "rankings.html").read_text(encoding="utf-8")
-    if PAGES_BASE not in rankings or LIVE_URL not in rankings:
-        raise SystemExit("site/rankings.html is missing the project Pages URL")
-    if 'href="rankings.html"' not in html:
-        raise SystemExit("site/index.html is missing the Rankings nav link")
-    if 'id="institution"' not in html or 'id="field"' not in html:
-        raise SystemExit("site/index.html is missing the institution or field filter")
-    if "AJG 4*" not in html or "AJG 1" not in html:
-        raise SystemExit("site/index.html does not name the AJG grades")
-    if "AJG-gap" not in html:
-        raise SystemExit("site/index.html does not name the AJG-gap boards")
-    if "faculty profile" not in html.casefold():
-        raise SystemExit("site/index.html does not say a name opens a faculty profile")
-    if "DATA.profiles" not in app:
-        raise SystemExit("site/app.js does not read faculty profile URLs")
-    if "AJG 2024" in html:
-        raise SystemExit("site/index.html still labels AJG with the edition year")
+    if PAGES_BASE not in hub or "meta.json" not in hub:
+        raise SystemExit("site/hub.js must load meta.json with the project Pages base")
+    if 'href="rankings.html"' not in index or 'href="directory.html"' not in index:
+        raise SystemExit("site/index.html is missing Directory or Rankings nav")
+    if 'id="rows"' in index or 'src="data.js"' in index or "data/ft50.js" in index:
+        raise SystemExit("site/index.html still embeds the directory or appointment rows")
+    if "directory.html" not in index or "#directory" not in index:
+        raise SystemExit("site/index.html does not redirect old directory URLs")
+    if 'id="institution"' not in directory or 'id="field"' not in directory:
+        raise SystemExit("site/directory.html is missing the institution or field filter")
+    if "AJG 4*" not in directory or "AJG 1" not in directory:
+        raise SystemExit("site/directory.html does not name the AJG grades")
+    if "AJG-gap" not in index or "AJG-gap" not in directory:
+        raise SystemExit("Hub or directory does not name the AJG-gap boards")
+    if "faculty profile" not in directory.casefold():
+        raise SystemExit("site/directory.html does not say a name opens a faculty profile")
+    if "EDITOR_SHELL" not in app or "profiles.values[row[8]]" not in app:
+        raise SystemExit("site/app.js does not read the directory shell or faculty profile URLs")
+    if 'src="data.js"' in directory or 'src="data/shell.js"' not in directory:
+        raise SystemExit("site/directory.html must load data/shell.js and not data.js")
+    if "AJG 2024" in index or "AJG 2024" in directory:
+        raise SystemExit("Hub or directory still labels AJG with the edition year")
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
     if PAGES_BASE not in rankings_js:
         raise SystemExit("site/rankings.js is missing the project Pages base path")
-    page_files = ("index.html", "journals.html", "institutions.html", "rankings.html")
+    page_files = ("index.html", "directory.html", "journals.html", "institutions.html", "rankings.html")
     for name in page_files:
         text = (SITE_DIR / name).read_text(encoding="utf-8")
         if PAGES_BASE not in text or LIVE_URL not in text:
             raise SystemExit(f"site/{name} is missing the project Pages URL")
-        for link in ("journals.html", "institutions.html", "rankings.html"):
+        for link in ("directory.html", "journals.html", "institutions.html", "rankings.html"):
             if f'href="{link}"' not in text:
                 raise SystemExit(f"site/{name} is missing the {link} nav link")
+        if 'href="./#directory"' in text:
+            raise SystemExit(f"site/{name} still points Directory at the hub")
         if name != "rankings.html" and "AJG 2024" in text:
             raise SystemExit(f"site/{name} still labels AJG with the edition year")
         if "AJG-gap" not in text:
             raise SystemExit(f"site/{name} does not name the AJG-gap boards")
-    for script in ("journals.js", "institutions.js"):
+    for script in ("journals.js", "institutions.js", "hub.js"):
         text = (SITE_DIR / script).read_text(encoding="utf-8")
         if PAGES_BASE not in text:
             raise SystemExit(f"site/{script} is missing the project Pages base path")
+        if "index.html?" in text:
+            raise SystemExit(f"site/{script} still opens the directory on index.html")
     for name in (
         "index.html",
+        "directory.html",
+        "hub.js",
         "app.js",
         "style.css",
         "rankings.html",
@@ -1347,28 +1397,20 @@ def build_payload(
     }
 
 
-def dump_js(global_name: str, payload: dict, comment: str) -> str:
-    if "*/" in comment:
-        raise SystemExit("Generated JS comment contains */ and would close early")
+def js_object(payload: object) -> str:
     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
-    raw = (
+    return (
         raw.replace("<", "\\u003c")
         .replace(">", "\\u003e")
         .replace("\u2028", "\\u2028")
         .replace("\u2029", "\\u2029")
     )
-    return "/* " + comment + " */\nwindow." + global_name + " = " + raw + ";\n"
 
 
-def js_payload(payload: dict) -> str:
-    return dump_js(
-        "EDITOR_DATA",
-        payload,
-        "Generated by scripts/build_site.py from the current FT50, ABDC, and AJG-gap editor releases.\n"
-        "   Top 5 and UTD24 are subset tags from journals/catalog_top5.csv and journals/catalog_utd24.csv.\n"
-        "   AJG grades 4*, 4, 3, 2, and 1 are the 2024 edition, including crosswalk ids on FT50 and ABDC rows.\n"
-        "   AJG-gap rows take the grade from their panel. fields and journalField are ABDC field_for. Do not edit.",
-    )
+def dump_js(global_name: str, payload: dict, comment: str) -> str:
+    if "*/" in comment:
+        raise SystemExit("Generated JS comment contains */ and would close early")
+    return "/* " + comment + " */\nwindow." + global_name + " = " + js_object(payload) + ";\n"
 
 
 def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int) -> None:
@@ -1397,7 +1439,7 @@ def assert_payload(payload: dict, collapse_stats: dict[str, int], ft50_kept: int
     if collapse_stats["split_keys"] < 5:
         raise SystemExit("Expected same-name appointments with different affiliations to stay split")
     if payload["base"] != PAGES_BASE:
-        raise SystemExit("data.js base path is not the project Pages path")
+        raise SystemExit("directory payload base path is not the project Pages path")
     labels = {item["id"]: item["label"] for item in payload["universes"]}
     expected_labels = {
         "ft50": "FT50",
@@ -2063,6 +2105,417 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     )
 
 
+def universe_preference(payload: dict) -> tuple[str, ...]:
+    """Smaller lists first so a journal deep link fetches the smallest chip that holds it."""
+    return tuple(
+        sorted(
+            UNIVERSE_ORDER,
+            key=lambda uid: (
+                payload["counts"]["byUniverse"][uid]["appointments"],
+                UNIVERSE_ORDER.index(uid),
+            ),
+        )
+    )
+
+
+def cover_mask(masks: set[int], preference: tuple[str, ...]) -> int:
+    """Bitmask of chips whose union contains every row mask. Ties prefer the smaller chip."""
+    remaining = set(masks)
+    chosen = 0
+    while remaining:
+        best_id = ""
+        best_score = 0
+        for uid in preference:
+            bit = BITS[uid]
+            score = sum(1 for mask in remaining if mask & bit)
+            if score > best_score:
+                best_score = score
+                best_id = uid
+        if not best_id:
+            break
+        chosen |= BITS[best_id]
+        bit = BITS[best_id]
+        remaining = {mask for mask in remaining if not (mask & bit)}
+    return chosen
+
+
+def build_covers(payload: dict) -> dict[str, list[str]]:
+    """Chip ids that each contain every appointment of a list. FT50 covers Top 5."""
+    holders: dict[str, set[int]] = {uid: set() for uid in UNIVERSE_ORDER}
+    for row in payload["rows"]:
+        mask = row[3]
+        for uid, bit in BITS.items():
+            if mask & bit:
+                holders[uid].add(mask)
+    covers: dict[str, list[str]] = {}
+    for uid in UNIVERSE_ORDER:
+        masks = holders[uid]
+        ok: list[str] = []
+        for other in UNIVERSE_ORDER:
+            obit = BITS[other]
+            if masks and all(mask & obit for mask in masks):
+                ok.append(other)
+        if uid not in ok:
+            ok.append(uid)
+        covers[uid] = ok
+    return covers
+
+
+def chunk_for_universe(payload: dict, universe_id: str) -> dict:
+    """Rows with this list bit, and only the strings those rows use."""
+    bit = BITS[universe_id]
+    roles = StringIndex()
+    role_family: list[int] = []
+    journals = StringIndex()
+    journal_fields: list[str] = []
+    countries = StringIndex("")
+    continents = StringIndex("")
+    urls = StringIndex("")
+    profiles = StringIndex("")
+    fields = StringIndex("")
+
+    def add_role(role: str, family: int) -> int:
+        index = roles.add(role)
+        if len(role_family) == index:
+            role_family.append(family)
+        return index
+
+    def add_journal(name: str, field_text: str) -> int:
+        index = journals.add(name)
+        if len(journal_fields) == index:
+            journal_fields.append(field_text)
+        return index
+
+    rows: list[list] = []
+    for row in payload["rows"]:
+        if not (row[3] & bit):
+            continue
+        field_text = payload["fields"][payload["journalField"][row[2]]]
+        rows.append(
+            [
+                row[0],
+                add_role(payload["roles"][row[1]], payload["roleFamily"][row[1]]),
+                add_journal(payload["journals"][row[2]], field_text),
+                row[3],
+                row[4],
+                countries.add(payload["countries"][row[5]]),
+                continents.add(payload["continents"][row[6]]),
+                urls.add(payload["urls"][row[7]]),
+                profiles.add(payload["profiles"][row[8]]),
+            ]
+        )
+    return {
+        "id": universe_id,
+        "roles": roles.values,
+        "roleFamily": role_family,
+        "journals": journals.values,
+        "fields": fields.values,
+        "journalField": [fields.add(text) for text in journal_fields],
+        "countries": countries.values,
+        "continents": continents.values,
+        "urls": urls.values,
+        "profiles": profiles.values,
+        "rows": rows,
+    }
+
+
+def build_journal_routes(
+    payload: dict, preference: tuple[str, ...]
+) -> tuple[list[str], list[int], list[int]]:
+    """Parallel arrays: journal name, full list mask, and the chips to fetch for that journal."""
+    masks: dict[str, set[int]] = defaultdict(set)
+    for row in payload["rows"]:
+        name = payload["journals"][row[2]]
+        if name:
+            masks[name].add(row[3])
+    names: list[str] = []
+    full_masks: list[int] = []
+    covers: list[int] = []
+    for name, row_masks in masks.items():
+        full = 0
+        for mask in row_masks:
+            full |= mask
+        cover = cover_mask(row_masks, preference)
+        if not cover:
+            raise SystemExit(f"No chip covers journal {name}")
+        names.append(name)
+        full_masks.append(full)
+        covers.append(cover)
+    return names, full_masks, covers
+
+
+def build_institution_index(payload: dict, preference: tuple[str, ...]) -> dict[str, int]:
+    """Exact affiliation string to the bitmask of chips that contain it."""
+    masks: dict[str, set[int]] = defaultdict(set)
+    for row in payload["rows"]:
+        affiliation = row[4]
+        if affiliation:
+            masks[affiliation].add(row[3])
+    return {name: cover_mask(row_masks, preference) for name, row_masks in masks.items()}
+
+
+def build_shell(
+    payload: dict,
+    covers: dict[str, list[str]],
+    journal_names: list[str],
+    journal_masks: list[int],
+    journal_covers: list[int],
+) -> dict:
+    universes = []
+    for item in UNIVERSE_META:
+        uid = item["id"]
+        info = dict(item)
+        info["file"] = f"data/{uid}.js"
+        info["appointments"] = payload["counts"]["byUniverse"][uid]["appointments"]
+        info["journals"] = payload["counts"]["byUniverse"][uid]["journals"]
+        universes.append(info)
+    return {
+        "base": PAGES_BASE,
+        "liveUrl": LIVE_URL + "directory.html",
+        "repo": REPO_URL,
+        "readme": REPO_URL + "#readme",
+        "year": payload["year"],
+        "collectedMin": payload["collectedMin"],
+        "collectedMax": payload["collectedMax"],
+        "universes": universes,
+        "families": list(FAMILIES),
+        "counts": payload["counts"],
+        "defaultUniverses": list(DEFAULT_UNIVERSES),
+        "noUniverse": "-",
+        "covers": covers,
+        "journals": journal_names,
+        "journalMask": journal_masks,
+        "journalCover": journal_covers,
+    }
+
+
+def build_meta(shell: dict) -> dict:
+    return {
+        "base": PAGES_BASE,
+        "liveUrl": LIVE_URL,
+        "year": shell["year"],
+        "collectedMin": shell["collectedMin"],
+        "collectedMax": shell["collectedMax"],
+        "counts": {
+            "appointments": shell["counts"]["appointments"],
+            "editors": shell["counts"]["editors"],
+            "journals": shell["counts"]["journals"],
+            "countries": shell["counts"]["countries"],
+        },
+        "universes": [
+            {
+                "id": item["id"],
+                "label": item["label"],
+                "bit": item["bit"],
+                "title": item.get("title", ""),
+                "appointments": item["appointments"],
+                "journals": item["journals"],
+                "href": "directory.html?u=" + item["id"],
+            }
+            for item in shell["universes"]
+        ],
+        "defaultUniverses": list(DEFAULT_UNIVERSES),
+        "directory": "directory.html",
+    }
+
+
+def dump_chunk(universe_id: str, payload: dict) -> str:
+    if not re.fullmatch(r"[a-z0-9_]+", universe_id):
+        raise SystemExit(f"Unsafe chunk id {universe_id}")
+    comment = (
+        "Generated by scripts/build_site.py. Appointments with the "
+        + universe_id
+        + " list bit. Do not edit."
+    )
+    if "*/" in comment:
+        raise SystemExit("Generated JS comment contains */ and would close early")
+    return (
+        "/* " + comment + " */\n"
+        "window.EDITOR_CHUNKS = window.EDITOR_CHUNKS || {};\n"
+        "window.EDITOR_CHUNKS[" + json.dumps(universe_id) + "] = " + js_object(payload) + ";\n"
+    )
+
+
+def decode_directory_row(row: list, tables: dict) -> tuple:
+    return (
+        row[0],
+        tables["roles"][row[1]],
+        tables["journals"][row[2]],
+        row[3],
+        row[4],
+        tables["countries"][row[5]],
+        tables["continents"][row[6]],
+        tables["urls"][row[7]],
+        tables["profiles"][row[8]],
+    )
+
+
+def assert_directory_chunks(
+    payload: dict,
+    chunks: dict[str, dict],
+    covers: dict[str, list[str]],
+    journal_names: list[str],
+    journal_masks: list[int],
+    journal_covers: list[int],
+    institution_index: dict[str, int],
+    shell: dict,
+    meta: dict,
+) -> None:
+    if shell["base"] != PAGES_BASE or meta["base"] != PAGES_BASE:
+        raise SystemExit("shell or meta base path is not the project Pages path")
+    if shell["defaultUniverses"] != ["ft50"] or meta["defaultUniverses"] != ["ft50"]:
+        raise SystemExit("directory default list must be FT50")
+    if "ft50" not in covers.get("top5", []):
+        raise SystemExit("FT50 chunk should cover every Top 5 appointment")
+    if "ft50" in covers.get("utd24", []):
+        raise SystemExit("FT50 must not be treated as covering UTD24; INFORMS Journal on Computing is ABDC A")
+    original_counts: Counter[tuple] = Counter(
+        decode_directory_row(row, payload) for row in payload["rows"]
+    )
+    for uid in UNIVERSE_ORDER:
+        chunk = chunks[uid]
+        bit = BITS[uid]
+        if not chunk["rows"]:
+            raise SystemExit(f"Chunk {uid} has no rows")
+        for key in ("profiles", "countries", "continents", "urls"):
+            if not chunk[key] or chunk[key][0] != "":
+                raise SystemExit(f"Chunk {uid} {key} table must start with an empty string")
+        if len(chunk["roleFamily"]) != len(chunk["roles"]):
+            raise SystemExit(f"Chunk {uid} role family table has the wrong length")
+        if len(chunk["journalField"]) != len(chunk["journals"]):
+            raise SystemExit(f"Chunk {uid} journal field table has the wrong length")
+        for url in chunk["profiles"]:
+            if url and ("@" in url or CONTACT_ASSERT_RE.search(url)):
+                raise SystemExit(f"Profile URL in {uid} contains contact text: {url[:180]}")
+        local: Counter[tuple] = Counter()
+        for row in chunk["rows"]:
+            if len(row) != 9 or not (row[3] & bit):
+                raise SystemExit(f"Chunk {uid} row is missing the {uid} bit")
+            local[decode_directory_row(row, chunk)] += 1
+        for decoded, count in original_counts.items():
+            if decoded[3] & bit and local[decoded] != count:
+                raise SystemExit(f"Chunk {uid} dropped or duplicated an appointment")
+        for decoded in local:
+            if decoded not in original_counts:
+                raise SystemExit(f"Chunk {uid} has an appointment that is not in the directory")
+    journal_rows: dict[str, set[int]] = defaultdict(set)
+    for row in payload["rows"]:
+        name = payload["journals"][row[2]]
+        if name:
+            journal_rows[name].add(row[3])
+    if journal_names != list(journal_rows):
+        raise SystemExit("Shell journal list does not match the directory journals")
+    for name, full_mask, cover in zip(journal_names, journal_masks, journal_covers):
+        union = 0
+        for mask in journal_rows[name]:
+            union |= mask
+            if not (mask & cover):
+                raise SystemExit(f"Journal cover for {name} misses a row")
+        if full_mask != union or not cover:
+            raise SystemExit(f"Journal mask for {name} is wrong")
+    aff_rows: dict[str, set[int]] = defaultdict(set)
+    for row in payload["rows"]:
+        if row[4]:
+            aff_rows[row[4]].add(row[3])
+    if set(institution_index) != set(aff_rows):
+        raise SystemExit("Institution index does not match directory affiliations")
+    for name, cover in institution_index.items():
+        for mask in aff_rows[name]:
+            if not (mask & cover):
+                raise SystemExit(f"Institution cover for {name} misses a row")
+    if "Dartmouth College" not in institution_index:
+        raise SystemExit("Institution index is missing Dartmouth College")
+    if meta["counts"]["appointments"] != payload["counts"]["appointments"]:
+        raise SystemExit("meta.json appointment count does not match the directory")
+    for item in meta["universes"]:
+        if item["href"] != "directory.html?u=" + item["id"]:
+            raise SystemExit(f"Hub link for {item['id']} is not a relative directory URL")
+        if item["appointments"] != payload["counts"]["byUniverse"][item["id"]]["appointments"]:
+            raise SystemExit(f"meta.json count for {item['id']} does not match the directory")
+
+
+def write_directory_assets(payload: dict) -> None:
+    preference = universe_preference(payload)
+    covers = build_covers(payload)
+    journal_names, journal_masks, journal_covers = build_journal_routes(payload, preference)
+    institution_index = build_institution_index(payload, preference)
+    chunks = {uid: chunk_for_universe(payload, uid) for uid in UNIVERSE_ORDER}
+    shell = build_shell(payload, covers, journal_names, journal_masks, journal_covers)
+    meta = build_meta(shell)
+    assert_directory_chunks(
+        payload,
+        chunks,
+        covers,
+        journal_names,
+        journal_masks,
+        journal_covers,
+        institution_index,
+        shell,
+        meta,
+    )
+
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    for path in DATA_DIR.glob("*.js"):
+        path.unlink()
+    if MONOLITH_JS.exists():
+        MONOLITH_JS.unlink()
+
+    shell_text = dump_js(
+        "EDITOR_SHELL",
+        shell,
+        "Generated by scripts/build_site.py. Directory shell: counts, journals, and chunk map. Do not edit.",
+    )
+    SHELL_JS.write_text(shell_text, encoding="utf-8")
+    index_text = (
+        "/* Generated by scripts/build_site.py. Affiliation to cover-chunk bitmask. Do not edit. */\n"
+        "window.EDITOR_INSTITUTION_INDEX = " + js_object(institution_index) + ";\n"
+    )
+    INSTITUTION_INDEX_JS.write_text(index_text, encoding="utf-8")
+    META_JSON.write_text(js_object(meta) + "\n", encoding="utf-8")
+
+    written: list[tuple[str, int, int]] = []
+    for uid in UNIVERSE_ORDER:
+        text = dump_chunk(uid, chunks[uid])
+        path = DATA_DIR / f"{uid}.js"
+        path.write_text(text, encoding="utf-8")
+        written.append((uid, len(text), len(chunks[uid]["rows"])))
+    if MONOLITH_JS.exists():
+        raise SystemExit("site/data.js was written; the directory must load list chunks instead")
+
+    meta_bytes = META_JSON.stat().st_size
+    shell_bytes = SHELL_JS.stat().st_size
+    index_bytes = INSTITUTION_INDEX_JS.stat().st_size
+    ft50_bytes = (DATA_DIR / "ft50.js").stat().st_size
+    if meta_bytes > 64_000:
+        raise SystemExit(f"meta.json is {meta_bytes:,} bytes; the hub summary should stay tiny")
+    if shell_bytes > 2_000_000:
+        raise SystemExit(f"shell.js is {shell_bytes:,} bytes")
+    if index_bytes > 4_000_000:
+        raise SystemExit(f"institution-index.js is {index_bytes:,} bytes")
+    if ft50_bytes > 4_000_000:
+        raise SystemExit(
+            f"FT50 chunk is {ft50_bytes:,} bytes. The default directory download is too large."
+        )
+    for name in ("shell.js", "institution-index.js", *(f"{uid}.js" for uid in UNIVERSE_ORDER)):
+        text = (DATA_DIR / name).read_text(encoding="utf-8")
+        if 'src="/' in text or 'href="/' in text:
+            raise SystemExit(f"site/data/{name} contains a root-absolute URL")
+    print(
+        "Wrote "
+        f"{META_JSON.relative_to(ROOT)} ({meta_bytes / 1000:.1f} KB), "
+        f"{SHELL_JS.relative_to(ROOT)} ({shell_bytes / 1000:.1f} KB), "
+        f"{INSTITUTION_INDEX_JS.relative_to(ROOT)} ({index_bytes / 1_000_000:.1f} MB)"
+    )
+    print(
+        "Chunks: "
+        + ", ".join(f"{uid} {size / 1_000_000:.2f} MB ({rows:,} rows)" for uid, size, rows in written)
+    )
+    print(
+        "Default directory chunk is FT50 "
+        f"({ft50_bytes / 1_000_000:.2f} MB). Top 5 rows are included in that file."
+    )
+
+
 def main() -> int:
     assert_static_site()
     membership = load_membership()
@@ -2183,15 +2636,12 @@ def main() -> int:
     assert_subset_lists(payload, membership)
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
-    text = js_payload(payload)
-    DATA_JS.write_text(text, encoding="utf-8")
     counts = payload["counts"]
     family_counts: dict[str, int] = defaultdict(int)
     for row in payload["rows"]:
         family_counts[FAMILIES[payload["roleFamily"][row[1]]]] += 1
     print(
-        "Wrote "
-        f"{DATA_JS.relative_to(ROOT)} ({len(text) / 1_000_000:.1f} MB) — "
+        "Directory: "
         f"{counts['appointments']:,} appointments, "
         f"{counts['editors']:,} editors, "
         f"{counts['journals']:,} journals, "
@@ -2207,6 +2657,7 @@ def main() -> int:
     )
     print("Role groups: " + ", ".join(f"{name} {family_counts[name]:,}" for name in FAMILIES))
     print(f"Collected {payload['collectedMin']} – {payload['collectedMax']}; board year {payload['year']}")
+    write_directory_assets(payload)
 
     journal_payload = build_journal_payload(collapsed, journal_catalog, payload)
     institution_payload = build_institution_payload(collapsed, payload)

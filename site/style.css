@@ -104,7 +104,45 @@ input[type="search"] { flex: 1 1 260px; min-width: 200px; }
 select { max-width: 240px; }
 #field { max-width: 420px; flex: 1 1 240px; }
 select:disabled { opacity: 0.6; cursor: default; }
-#journal, #institution { max-width: 320px; flex: 1 1 220px; }
+#journal { max-width: 320px; flex: 1 1 220px; }
+.combo { position: relative; flex: 1 1 220px; max-width: 320px; }
+.combo input[type="search"] { width: 100%; min-width: 0; }
+.suggest {
+  position: absolute; z-index: 4; left: 0; right: 0; top: calc(100% + 4px);
+  max-height: 240px; overflow: auto; margin: 0; padding: 4px; list-style: none;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.suggest button, .suggest .empty {
+  display: block; width: 100%; text-align: left; background: none; border: 0;
+  border-radius: 6px; padding: 6px 8px; font: inherit; font-size: 14.5px;
+}
+.suggest button { cursor: pointer; color: inherit; }
+.suggest button[aria-selected="true"], .suggest button:hover { background: var(--accent-soft); }
+.suggest .empty { color: var(--muted); }
+.chip[data-loaded="false"] { border-style: dashed; }
+.chip[aria-busy="true"] { cursor: progress; }
+.section-title { font-size: 22px; margin: 26px 0 10px; }
+.universe-grid, .explore {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px;
+}
+.explore { grid-template-columns: repeat(3, 1fr); }
+.universe-card, .explore a {
+  display: flex; flex-direction: column; gap: 2px; min-height: 92px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px; text-decoration: none; color: inherit; box-shadow: var(--shadow);
+}
+.universe-card:hover, .explore a:hover { border-color: var(--accent); }
+.universe-card .label, .explore a .label {
+  font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 700;
+}
+.universe-card .n {
+  font-variant-numeric: tabular-nums; font-size: 24px; font-weight: 700; color: var(--navy); line-height: 1.15;
+}
+.universe-card .sub, .explore a .sub {
+  color: var(--muted); font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px;
+}
+.meta-status { min-height: 1.4em; }
 .btn {
   background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; cursor: pointer;
   font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; color: var(--muted);
@@ -197,8 +235,9 @@ a.person { font-weight: 650; }
 
 @media (max-width: 900px) {
   .stats { grid-template-columns: 1fr 1fr; }
+  .explore { grid-template-columns: 1fr; }
   .t2 { display: none; }
-  select, #journal { max-width: 100%; }
+  select, #journal, .combo { max-width: 100%; }
 }
 @media (max-width: 560px) {
   .stats { grid-template-columns: 1fr; }

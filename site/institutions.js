@@ -128,7 +128,7 @@
     var params = new URLSearchParams();
     params.set("aff", name);
     if (country) params.set("country", country);
-    return "index.html?" + params.toString();
+    return "directory.html?" + params.toString();
   }
 
   function fillHay() {

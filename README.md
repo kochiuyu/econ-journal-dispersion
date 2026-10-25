@@ -54,13 +54,17 @@ data/
 
 ## Website
 
-Searchable directory of **current journal editors** on the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards (journals in the 2024 Academic Journal Guide that are not already in those editor files). Top 5 and UTD24 are extra multi-select filters on the FT50 and ABDC boards. AJG chips are 2024 CABS grades on those boards: joined by catalog id on FT50 and ABDC rows, and taken from the gap panel (4*/4/3, then 2, then 1) on gap rows. The id join does not add a board. The full guide is larger than these boards and stays on Rankings. The directory also filters by institution (the row affiliation) and by ABDC field:
+The site root is a short hub. The searchable directory of **current journal editors** is a separate page. Boards are the FT50 list, the ABDC A*, A, B, and C lists, and AJG-gap boards (journals in the 2024 Academic Journal Guide that are not already in those editor files). Top 5 and UTD24 are extra multi-select filters on the FT50 and ABDC boards. AJG chips are 2024 CABS grades on those boards: joined by catalog id on FT50 and ABDC rows, and taken from the gap panel (4*/4/3, then 2, then 1) on gap rows. The id join does not add a board. The full guide is larger than these boards and stays on Rankings. The directory also filters by institution (the row affiliation) and by ABDC field:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/**
 
+**https://kochiuyu.github.io/econ-journal-dispersion/directory.html**
+
 core49 is not included (it is an older ABDC A* subset, not a separate universe in this directory). Authors are out of scope.
 
-`scripts/build_site.py` reads the current editor releases and writes `site/data.js`. The page is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. A name links to `faculty_profile_url` when that cell is filled. Many rows have no profile, and the page does not substitute a faculty home page or an ORCID, OpenAlex, or RePEc id. Emails, phone numbers, and photos are not published.
+`scripts/build_site.py` reads the current editor releases and writes `site/meta.json` plus `site/data/`. The hub fetches only `meta.json` (counts and per-list totals). The directory loads `site/data/shell.js`, then one file per list chip (`ft50.js`, `a_star.js`, `a.js`, `b.js`, `c.js`, `top5.js`, `utd24.js`, `ajg_4star.js`, `ajg_4.js`, `ajg_3.js`, `ajg_2.js`, `ajg_1.js`). A row is copied into every chip whose bit is set; the browser dedupes. The directory opens on FT50. Top 5 rows are already in that file. Other chips download when selected, or when a journal or institution link needs them. `?u=` names chips. `u=-` selects none. `?journal=` or `?aff=` with no `u` loads the chip set that contains that journal or affiliation. An old root URL with a directory query, or `#directory`, redirects to `directory.html`.
+
+The directory is static HTML, CSS, and JS: a filterable table (name, role, journal, field, list, affiliation, country, continent), header counts, and a short note on the release. Institution is a typeahead over the lists loaded so far, not a menu of every affiliation. A name links to `faculty_profile_url` when that cell is filled. Many rows have no profile, and the page does not substitute a faculty home page or an ORCID, OpenAlex, or RePEc id. Emails, phone numbers, and photos are not published. `site/data.js` is not written.
 
 One row is one person in one role on one journal. The same person on two journals is two rows. Where that same appointment is in both the FT50 release and an ABDC rating, the build keeps a single row and tags it with both lists (for example FT50 and ABDC A*). A Top 5, UTD24, or AJG grade keeps that badge on the same row. Wording comes from `editors_ft50_current_with_ror.csv`; a blank affiliation or country is filled from the ABDC row. The same name and role with two different affiliations stays two rows. The full rule is at the top of `scripts/build_site.py`.
 
@@ -68,7 +72,7 @@ Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Q
 
 AJG list chips and row badges show the grade from the 2024 edition (`journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/abs_ajg_2024.csv`), the latest edition in that freeze: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. The label does not include the year. On FT50 and ABDC rows the join includes 2024 `journal_id_crosswalk.csv` ids, so a board that uses an ABDC id still matches when the freeze's primary id is a core49 slug. That edition has 1,823 journals. 1,378 map to a catalog id. About 1,356 of those sit on an FT50 or ABDC board and show a chip from the id join. The 445 unmatched titles have no catalog id, so that join does not tag them and does not add a board. Many ABDC board journals have no AJG grade (about 2,400 board journal ids, against about 1,356 with a hit). AJG-gap rows (`data/editors/abs_ajg_gap/releases/current/`, freeze `editors_abs_ajg_gap_20261025`) are extra boards for journals not already in those editor files. Their grade is the 2024 title rating, constrained to the file: `prio43` is 4*, 4, or 3 (this freeze is 4 and 3), `ajg2` is 2, and `ajg1` is 1. A gap row carries that grade only. There is no `faculty_profile_url` on these files, so the name stays plain text and the journal links to `source_url` when it is http(s). With those boards the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide still have no board. ABDC chips stay A*, A, B, and C. Full AJG editions stay on Rankings.
 
-The directory Institution menu lists the affiliation on each row (ROR name, otherwise the canonical or masthead affiliation). It uses the same `aff` query the Institutions page already opens. Field is ABDC `field_for`, the same subject string as the Journals page, with the leading code hidden in the menu.
+The directory institution field suggests the affiliation on loaded rows (ROR name, otherwise the canonical or masthead affiliation). It uses the same `aff` query the Institutions page already opens. Field is ABDC `field_for`, the same subject string as the Journals page, with the leading code hidden in the menu.
 
 The same boards are also grouped by journal and by institution:
 
@@ -76,7 +80,7 @@ The same boards are also grouped by journal and by institution:
 
 **https://kochiuyu.github.io/econ-journal-dispersion/institutions.html**
 
-`scripts/build_site.py` writes `site/journals-data.js` (one row per journal: list badges, appointments, distinct editors, countries, ABDC field, board link) and `site/institutions-data.js` (one row per ROR id, or per affiliation name when ROR is missing). A journal name opens the directory with `?journal=`. An institution name opens it with `?aff=` set to that affiliation and `?country=` when the row has a country. Those files are generated and are not committed.
+`scripts/build_site.py` writes `site/journals-data.js` (one row per journal: list badges, appointments, distinct editors, countries, ABDC field, board link) and `site/institutions-data.js` (one row per ROR id, or per affiliation name when ROR is missing). A journal name opens `directory.html?journal=`. An institution name opens `directory.html` with `?aff=` set to that affiliation and `?country=` when the row has a country. Those files, `site/meta.json`, and `site/data/` are generated and are not committed.
 
 Journal grades for every ranking system are also a separate page. The directory’s AJG chips are the 2024 grades on the current FT50, ABDC, and AJG-gap boards:
 
@@ -103,7 +107,7 @@ python scripts/build_site.py
 python -m http.server 8000 -d site
 ```
 
-Open http://127.0.0.1:8000/ . Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. Journals are at http://127.0.0.1:8000/journals.html , institutions at http://127.0.0.1:8000/institutions.html , and rankings at http://127.0.0.1:8000/rankings.html . `site/data.js`, `site/journals-data.js`, `site/institutions-data.js`, and `site/rankings-data.js` are generated and are not committed.
+Open http://127.0.0.1:8000/ for the hub and http://127.0.0.1:8000/directory.html for the editor table. Styles and scripts use relative URLs, so this is the same tree GitHub Pages serves under `/econ-journal-dispersion/` rather than at the user-site root. Journals are at http://127.0.0.1:8000/journals.html , institutions at http://127.0.0.1:8000/institutions.html , and rankings at http://127.0.0.1:8000/rankings.html . `site/meta.json`, `site/data/`, `site/journals-data.js`, `site/institutions-data.js`, and `site/rankings-data.js` are generated and are not committed.
 
 ### Enable GitHub Pages
 
