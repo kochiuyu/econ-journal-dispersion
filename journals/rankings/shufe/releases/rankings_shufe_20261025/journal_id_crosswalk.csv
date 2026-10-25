@@ -1,0 +1,162 @@
+edition_year,journal_title,print_issn,e_issn,rating,catalog,journal_id,match_method,is_primary
+,American Economic Review,,,Top Tier,ft50,aer,title,yes
+,Econometrica,,,Top Tier,ft50,econometrica,title,yes
+,Econometrica,,,Top Tier,core49,econometrica,title,no
+,Econometrica,,,Top Tier,abdc_a_star,econometrica,title,no
+,Journal of Political Economy,,,Top Tier,ft50,jpe,title,yes
+,Journal of Political Economy,,,Top Tier,core49,journal-of-political-economy,title,no
+,Journal of Political Economy,,,Top Tier,abdc_a_star,jpe,title,no
+,Quarterly Journal of Economics,,,Top Tier,ft50,qje,title,yes
+,Quarterly Journal of Economics,,,Top Tier,core49,quarterly-journal-of-economics,title,no
+,Review of Economic Studies,,,Top Tier,ft50,restud,title,yes
+,Review of Economic Studies,,,Top Tier,core49,review-of-economic-studies,title,no
+,Economic Journal,,,First Tier,core49,the-economic-journal,alias+title,yes
+,Economic Journal,,,First Tier,abdc_a_star,ej,alias+title,no
+,Games and Economic Behavior,,,First Tier,core49,games-and-economic-behavior,title,yes
+,Games and Economic Behavior,,,First Tier,abdc_a_star,geb,title,no
+,International Economic Review,,,First Tier,core49,international-economic-review,title,yes
+,International Economic Review,,,First Tier,abdc_a_star,ier,title,no
+,Journal of Development Economics,,,First Tier,core49,journal-of-development-economics,title,yes
+,Journal of Development Economics,,,First Tier,abdc_a_star,jde,title,no
+,Journal of Econometrics,,,First Tier,core49,journal-of-econometrics,title,yes
+,Journal of Econometrics,,,First Tier,abdc_a_star,journal_of_econometrics,title,no
+,Journal of Economic History,,,First Tier,core49,the-journal-of-economic-history,alias+title,yes
+,Journal of Economic History,,,First Tier,abdc_a_star,jeh,alias+title,no
+,Journal of Economic Theory,,,First Tier,core49,journal-of-economic-theory,title,yes
+,Journal of Economic Theory,,,First Tier,abdc_a_star,jet,title,no
+,Journal of International Economics,,,First Tier,core49,journal-of-international-economics,title,yes
+,Journal of International Economics,,,First Tier,abdc_a_star,jie,title,no
+,Journal of Labor Economics,,,First Tier,core49,journal-of-labor-economics,title,yes
+,Journal of Labor Economics,,,First Tier,abdc_a_star,jole,title,no
+,Journal of Monetary Economics,,,First Tier,core49,journal-of-monetary-economics,title,yes
+,Journal of Monetary Economics,,,First Tier,abdc_a_star,jme,title,no
+,Journal of Public Economics,,,First Tier,core49,journal-of-public-economics,title,yes
+,Journal of Public Economics,,,First Tier,abdc_a_star,jpub_econ,title,no
+,Journal of the European Economic Association,,,First Tier,core49,journal-of-the-european-economic-association,title,yes
+,Journal of the European Economic Association,,,First Tier,abdc_a_star,jeea,title,no
+,Quantitative Economics,,,First Tier,core49,quantitative-economics,title,yes
+,Quantitative Economics,,,First Tier,abdc_a_star,quantitative_economics,title,no
+,Rand Journal of Economics,,,First Tier,core49,rand-journal-of-economics,title,yes
+,Rand Journal of Economics,,,First Tier,abdc_a_star,rand,title,no
+,Review of Economics and Statistics,,,First Tier,core49,review-of-economics-and-statistics,title,yes
+,Theoretical Economics,,,First Tier,core49,theoretical-economics,title,yes
+,Theoretical Economics,,,First Tier,abdc_a_star,theoretical_economics,title,no
+,American Economic Journal: Applied Economics,,,First Tier,abdc_a_star,aej_applied,title,yes
+,American Economic Journal: Economic Policy,,,First Tier,abdc_a_star,aej_policy,title,yes
+,American Economic Journal: Macroeconomics,,,First Tier,abdc_a_star,aej_macro,title,yes
+,American Economic Journal: Microeconomics,,,First Tier,abdc_a_star,aej_micro,title,yes
+,Econometric Theory,,,Second Tier,core49,econometric-theory,title,yes
+,Econometric Theory,,,Second Tier,abdc_a_star,econometric_theory,title,no
+,Experimental Economics,,,Second Tier,core49,experimental-economics,title,yes
+,Experimental Economics,,,Second Tier,abdc_a_star,experimental_economics,title,no
+,Journal of Applied Econometrics,,,Second Tier,core49,journal-of-applied-econometrics,title,yes
+,Journal of Applied Econometrics,,,Second Tier,abdc_a_star,journal_of_applied_econometrics,title,no
+,Journal of Business & Economic Statistics,,,Second Tier,core49,journal-of-business-and-economic-statistics,title,yes
+,Journal of Business & Economic Statistics,,,Second Tier,abdc_a_star,jbes,title,no
+,Journal of Economic Growth,,,Second Tier,core49,journal-of-economic-growth,title,yes
+,Journal of Economic Growth,,,Second Tier,abdc_a_star,journal_of_economic_growth,title,no
+,Journal of Environmental Economics and Management,,,Second Tier,core49,journal-of-environmental-economics-and-management,title,yes
+,Journal of Environmental Economics and Management,,,Second Tier,abdc_a_star,jeem,title,no
+,Journal of Health Economics,,,Second Tier,core49,journal-of-health-economics,title,yes
+,Journal of Health Economics,,,Second Tier,abdc_a_star,journal_of_health_economics,title,no
+,Journal of Human Resources,,,Second Tier,core49,journal-of-human-resources,title,yes
+,Journal of Human Resources,,,Second Tier,abdc_a_star,jhr,title,no
+,Journal of Industrial Economics,,,Second Tier,abdc_a_star,journal_industrial_economics,alias+title,yes
+,Journal of Law & Economics,,,Second Tier,core49,journal-of-law-and-economics,title,yes
+,"Journal of Money, Credit and Banking",,,Second Tier,core49,journal-of-money-credit-and-banking,title,yes
+,"Journal of Money, Credit and Banking",,,Second Tier,abdc_a_star,jmcb,title,no
+,Journal of Urban Economics,,,Second Tier,core49,journal-of-urban-economics,title,yes
+,Journal of Urban Economics,,,Second Tier,abdc_a_star,jue,title,no
+,Review of Economic Dynamics,,,Second Tier,core49,review-of-economic-dynamics,title,yes
+,Review of Economic Dynamics,,,Second Tier,abdc_a_star,red,title,no
+,American Journal of Agricultural Economics,,,Second Tier,core49,american-journal-of-agricultural-economics,title,yes
+,American Journal of Agricultural Economics,,,Second Tier,abdc_a_star,ajae,title,no
+,Brookings Papers on Economic Activity,,,Second Tier,abdc_a,brookings_papers_economic_activity,title,yes
+,Canadian Journal of Economics,,,Second Tier,abdc_a,canadian_journal_economics_revue_canadienne_deconomique,alias+title,yes
+,Economic History Review,,,Second Tier,abdc_a_star,economic_history_review_journal_economic_social,alias+title,yes
+,Economic Theory,,,Second Tier,core49,economic-theory,title,yes
+,Economic Theory,,,Second Tier,abdc_a_star,economic_theory,title,no
+,European Economic Review,,,Second Tier,core49,european-economic-review,title,yes
+,European Economic Review,,,Second Tier,abdc_a_star,eer,title,no
+,Explorations in Economic History,,,Second Tier,abdc_a,explorations_economic_history,title,yes
+,Journal of Comparative Economics,,,Second Tier,abdc_a,journal_comparative_economics,title,yes
+,Journal of Economic Behavior & Organization,,,Second Tier,core49,journal-of-economic-behavior-and-organization,title,yes
+,Journal of Economic Behavior & Organization,,,Second Tier,abdc_a_star,jebo,title,no
+,Journal of Economic Dynamics & Control,,,Second Tier,core49,journal-of-economic-dynamics-and-control,title,yes
+,Journal of Economic Dynamics & Control,,,Second Tier,abdc_a_star,jedc,title,no
+,Journal of Economic Education,,,Second Tier,abdc_b,journal_economic_education,alias+title,yes
+,Journal of Economic Literature,,,Second Tier,core49,journal-of-economic-literature,title,yes
+,Journal of Economic Literature,,,Second Tier,abdc_a_star,jel,title,no
+,Journal of Economic Perspectives,,,Second Tier,core49,journal-of-economic-perspectives,title,yes
+,Journal of Economic Perspectives,,,Second Tier,abdc_a_star,jep,title,no
+,Journal of Economics & Management Strategy,,,Second Tier,abdc_a,journal_economics_management_strategy,title,yes
+,Journal of Mathematical Economics,,,Second Tier,abdc_a,journal_mathematical_economics,title,yes
+,Journal of Population Economics,,,Second Tier,abdc_a_star,journal_population_economics,title,yes
+,Journal of Real Estate Finance and Economics,,,Second Tier,abdc_a,journal_real_estate_finance_economics,title,yes
+,Journal of Regulatory Economics,,,Second Tier,abdc_a,journal_regulatory_economics,title,yes
+,Journal of Risk and Uncertainty,,,Second Tier,core49,journal-of-risk-and-uncertainty,title,yes
+,Journal of Risk and Uncertainty,,,Second Tier,abdc_a_star,jru,title,no
+,History of Political Economy,,,Second Tier,abdc_a,history_political_economy,title,yes
+,International Journal of Industrial Organization,,,Second Tier,abdc_a_star,international_journal_industrial_organization,title,yes
+,Macroeconomic Dynamics,,,Second Tier,abdc_a,macroeconomic_dynamics,title,yes
+,Social Choice and Welfare,,,Second Tier,abdc_a,social_choice_welfare,title,yes
+,Applied Economics,,,Third Tier,abdc_a,applied_economics,title,yes
+,Cambridge Journal of Economics,,,Third Tier,abdc_a,cambridge_journal_economics,title,yes
+,China Economic Review,,,Third Tier,abdc_a,china_economic_review,title,yes
+,Contemporary Economic Policy,,,Third Tier,abdc_b,contemporary_economic_policy,title,yes
+,Econometrics Journal,,,Third Tier,abdc_a_star,econometrics_journal,title,yes
+,Econometric Reviews,,,Third Tier,abdc_a,econometric_reviews,title,yes
+,Economics and Philosophy,,,Third Tier,abdc_a,economics_philosophy,title,yes
+,Economic Inquiry,,,Third Tier,abdc_a,economic_inquiry,title,yes
+,Economica,,,Third Tier,abdc_a,economica,title,yes
+,Economic Development and Cultural Change,,,Third Tier,abdc_a,economic_development_cultural_change,title,yes
+,Economic Policy,,,Third Tier,abdc_a,economic_policy_european_forum,alias+title,yes
+,Economic Record,,,Third Tier,abdc_a,economic_record,alias+title,yes
+,Economics Letters,,,Third Tier,abdc_a,economics_letters,title,yes
+,Economic Modelling,,,Third Tier,abdc_a,economic_modelling,title,yes
+,Economics of Education Review,,,Third Tier,abdc_a,economics_education_review,title,yes
+,Economics of Transition,,,Third Tier,abdc_a,economics_transition_institutional_change,alias+title,yes
+,Empirical Economics,,,Third Tier,abdc_a,empirical_economics,title,yes
+,Energy Journal,,,Third Tier,abdc_a,energy_journal,title,yes
+,Environmental and Resource Economics,,,Third Tier,abdc_a,environmental_resource_economics,title,yes
+,Europe-Asia Studies,,,Third Tier,abdc_b,europe_asia_studies,title,yes
+,Frontiers of Economics in China,,,Third Tier,abdc_c,frontiers_economics_china,title,yes
+,Health Economics,,,Third Tier,core49,health-economics,title,yes
+,Health Economics,,,Third Tier,abdc_a_star,health_economics,title,no
+,Industrial and Labor Relations Review,,,Third Tier,abdc_a_star,ilr_review_industrial_labor_relations_review,alias+title,yes
+,Industrial Relations,,,Third Tier,abdc_a_star,industrial_relations_journal_economy_society,alias+title,yes
+,International Journal of Game Theory,,,Third Tier,abdc_a,international_journal_game_theory,title,yes
+,International Monetary Fund Economic Review,,,Third Tier,abdc_a,imf_economic_review,alias+title,yes
+,International Tax and Public Finance,,,Third Tier,abdc_a,international_tax_public_finance,title,yes
+,Journal of Agricultural Economics,,,Third Tier,abdc_a,journal_agricultural_economics,title,yes
+,Journal of Economics,,,Third Tier,abdc_b,journal_economics,title,yes
+,Journal of Institutional and Theoretical Economics,,,Third Tier,abdc_b,journal_institutional_theoretical_economics,title,yes
+,Journal of Law Economics & Organization,,,Third Tier,abdc_a,journal_law_economics_organization,alias+title,yes
+,Journal of Macroeconomics,,,Third Tier,abdc_a,journal_macroeconomics,title,yes
+,Journal of Productivity Analysis,,,Third Tier,abdc_a,journal_productivity_analysis,title,yes
+,Journal of Regional Science,,,Third Tier,abdc_a,journal_regional_science,title,yes
+,Journal of Transport Economics and Policy,,,Third Tier,abdc_b,journal_transport_economics_policy,title,yes
+,Labour Economics,,,Third Tier,abdc_a_star,labour_economics,title,yes
+,Land Economics,,,Third Tier,abdc_a,land_economics,title,yes
+,Mathematical Social Sciences,,,Third Tier,abdc_a,mathematical_social_sciences,title,yes
+,National Tax Journal,,,Third Tier,abdc_a,national_tax_journal,title,yes
+,Regional Science and Urban Economics,,,Third Tier,abdc_a,regional_science_urban_economics,title,yes
+,Oxford Bulletin of Economics and Statistics,,,Third Tier,abdc_a,oxford_bulletin_economics_statistics,title,yes
+,Oxford Economics Papers,,,Third Tier,abdc_a,oxford_economic_papers,alias+title,yes
+,Oxford Review of Economic Policy,,,Third Tier,abdc_a,oxford_review_economic_policy,title,yes
+,Public Choice,,,Third Tier,abdc_a,public_choice,title,yes
+,Resource and Energy Economics,,,Third Tier,abdc_a,resource_energy_economics,title,yes
+,Review of Economic Design,,,Third Tier,abdc_b,review_economic_design,title,yes
+,Review of Income and Wealth,,,Third Tier,abdc_a,review_income_wealth,title,yes
+,Review of Industrial Organization,,,Third Tier,abdc_a,review_industrial_organization,title,yes
+,Review of International Economics,,,Third Tier,abdc_a,review_international_economics,title,yes
+,Scandinavian Journal of Economics,,,Third Tier,abdc_a,scandinavian_journal_economics,title,yes
+,Scottish Journal of Political Economy,,,Third Tier,abdc_a,scottish_journal_political_economy,title,yes
+,Southern Economic Journal,,,Third Tier,abdc_a,southern_economic_journal,title,yes
+,The B.E. Journal of Economic Analysis &Policy,,,Third Tier,abdc_a,be_journal_economic_analysis_policy,alias+title,yes
+,The B.E. Journal of Macroeconomics,,,Third Tier,abdc_a,be_journal_macroeconomics,alias+title,yes
+,The B.E. Journal of Theoretical Economics (Research Articles ),,,Third Tier,abdc_a,be_journal_theoretical_economics,alias+title,yes
+,Theory and Decision,,,Third Tier,abdc_a,theory_decision_international_journal,alias+title,yes
+,World Bank Economic Review,,,Third Tier,abdc_a,world_bank_economic_review,alias+title,yes
+,World Development,,,Third Tier,abdc_a_star,world_development,title,yes
+,World Economy,,,Third Tier,abdc_a,world_economy,alias+title,yes

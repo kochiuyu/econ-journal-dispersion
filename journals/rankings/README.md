@@ -4,7 +4,7 @@ Rating catalogs. These files are not editorial boards and they are not appointme
 
 The editor directory is current FT50 and ABDC A*/A/B/C boards, plus AJG-gap boards in `data/editors/abs_ajg_gap/releases/current/`. Top 5 and UTD24 are tags on the FT50 and ABDC boards. AJG chips are the 2024 `rating` from this freeze, joined on catalog ids including non-primary crosswalk ids, where the journal is already on an FT50 or ABDC board. That join does not add a board. Gap rows take the same 2024 grade from the journal title, and only for journals that are not already in those editor files. The label does not include the year. Titles that still have no board, and the rest of the guide, stay on the Rankings page. This folder is still the ABS/AJG rankings layer. The public grades page is `site/rankings.html`.
 
-That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern, and ShanghaiRanking from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column. UTD24 and Top 5 have no field. FT50 `field` is the McMaster LibGuide subject area (https://libguides.mcmaster.ca/ft-top50), including both subjects when that table prints two. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern department (with the memo heading when the row has one), the Shanghai subject, or that FT50 subject area. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, and Shanghai stay on this page. They are not directory chips.
+That page also lists CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern, ShanghaiRanking, and SHUFE Tenure-Track from the freezes below, and FT50, UTD24, Top 5, and ABDC from the catalogs in `journals/`. Those catalogs are not copied here. ABDC ratings are the catalog file (A*, A, B, C). FT50, UTD24, and Top 5 have no grade column. UTD24, Top 5, and SHUFE have no field. FT50 `field` is the McMaster LibGuide subject area (https://libguides.mcmaster.ca/ft-top50), including both subjects when that table prints two. The Field column is ABS/AJG `field`, the CNRS domain, ABDC `field_for`, the FNEGE domain, the ERIM track, the TISEM very-good group, the Stern department (with the memo heading when the row has one), the Shanghai subject, or that FT50 subject area. Handelsblatt/VWL shows the published weight. Tilburg, FNEGE, ERIM, Stern, Shanghai, and SHUFE stay on this page. They are not directory chips.
 
 ## Pinned release
 
@@ -59,6 +59,10 @@ NYU Stern top-tier journals by department, from the [Top-Tier Journals by Depart
 
 ShanghaiRanking top journals for 2024 and 2026. Subjects are Economics, Business Administration, Finance, and Management. Rating is `Top`. Raw PDFs are not in this repository.
 
+`shufe/releases/rankings_shufe_20261025/`
+
+SUFE Tenure-Track Journal List, from https://econen.sufe.edu.cn/6619/list.htm. Ratings are `Top Tier`, `First Tier`, `Second Tier`, and `Third Tier`. The source page does not print an edition year, so `edition_year` is empty and the public page shows Current. Retrieved 2026-10-25. Raw HTML is not in this repository.
+
 `python scripts/build_site.py` runs `scripts/build_rankings.py`, which reads these freezes and `journals/catalog_ft50.csv`, `catalog_utd24.csv`, `catalog_top5.csv`, and `catalog_abdc_{a_star,a,b,c}.csv`, then writes `site/rankings-data.js`. That file is generated and is not committed. The Pages workflow already runs `scripts/build_site.py`.
 
 | System | Rows |
@@ -75,3 +79,4 @@ ShanghaiRanking top journals for 2024 and 2026. Subjects are Economics, Business
 | ERIM | 283 (Core 2024–2028; 257 matched, 90.8%) |
 | Stern | 233 (2020: 176 journals, 157 matched, 89.2%; 2021 TOpS: 57 journals, 31 matched, 54.4%; 188 matched, 80.7%) |
 | Shanghai | 76 (2024 / 2026; 2026 is 19 journals, 19 matched, 100.0%) |
+| SHUFE | 123 (Top Tier 5, First Tier 20, Second Tier 39, Third Tier 59; 120 matched, 97.6%) |

@@ -1,0 +1,124 @@
+edition_year,rating,rating_raw,journal_title,print_issn,e_issn,field,publisher,journal_id,catalog,match_method,source_file,source_note
+,Top Tier,Top Tier,American Economic Review,,,,,aer,ft50,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Top Tier,Top Tier,Econometrica,,,,,econometrica,ft50,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Top Tier,Top Tier,Journal of Political Economy,,,,,jpe,ft50,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Top Tier,Top Tier,Quarterly Journal of Economics,,,,,qje,ft50,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Top Tier,Top Tier,Review of Economic Studies,,,,,restud,ft50,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Economic Journal,,,,,the-economic-journal,core49,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Games and Economic Behavior,,,,,games-and-economic-behavior,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,International Economic Review,,,,,international-economic-review,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Development Economics,,,,,journal-of-development-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Econometrics,,,,,journal-of-econometrics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Economic History,,,,,the-journal-of-economic-history,core49,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Economic Theory,,,,,journal-of-economic-theory,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of International Economics,,,,,journal-of-international-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Labor Economics,,,,,journal-of-labor-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Monetary Economics,,,,,journal-of-monetary-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of Public Economics,,,,,journal-of-public-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Journal of the European Economic Association,,,,,journal-of-the-european-economic-association,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Quantitative Economics,,,,,quantitative-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Rand Journal of Economics,,,,,rand-journal-of-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Review of Economics and Statistics,,,,,review-of-economics-and-statistics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,Theoretical Economics,,,,,theoretical-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,American Economic Journal: Applied Economics,,,,,aej_applied,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,American Economic Journal: Economic Policy,,,,,aej_policy,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,American Economic Journal: Macroeconomics,,,,,aej_macro,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,First Tier,First Tier,American Economic Journal: Microeconomics,,,,,aej_micro,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Econometric Theory,,,,,econometric-theory,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Experimental Economics,,,,,experimental-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Applied Econometrics,,,,,journal-of-applied-econometrics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Business & Economic Statistics,,,,,journal-of-business-and-economic-statistics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Growth,,,,,journal-of-economic-growth,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Environmental Economics and Management,,,,,journal-of-environmental-economics-and-management,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Health Economics,,,,,journal-of-health-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Human Resources,,,,,journal-of-human-resources,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Industrial Economics,,,,,journal_industrial_economics,abdc_a_star,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Law & Economics,,,,,journal-of-law-and-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,"Journal of Money, Credit and Banking",,,,,journal-of-money-credit-and-banking,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Urban Economics,,,,,journal-of-urban-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Review of Economic Dynamics,,,,,review-of-economic-dynamics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,American Journal of Agricultural Economics,,,,,american-journal-of-agricultural-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,AER Papers and Proceedings,,,,,,,unmatched,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Brookings Papers on Economic Activity,,,,,brookings_papers_economic_activity,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Canadian Journal of Economics,,,,,canadian_journal_economics_revue_canadienne_deconomique,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Economic History Review,,,,,economic_history_review_journal_economic_social,abdc_a_star,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Economic Theory,,,,,economic-theory,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,European Economic Review,,,,,european-economic-review,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Explorations in Economic History,,,,,explorations_economic_history,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Comparative Economics,,,,,journal_comparative_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Behavior & Organization,,,,,journal-of-economic-behavior-and-organization,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Dynamics & Control,,,,,journal-of-economic-dynamics-and-control,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Education,,,,,journal_economic_education,abdc_b,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Literature,,,,,journal-of-economic-literature,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economic Perspectives,,,,,journal-of-economic-perspectives,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Economics & Management Strategy,,,,,journal_economics_management_strategy,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Mathematical Economics,,,,,journal_mathematical_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Population Economics,,,,,journal_population_economics,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Real Estate Finance and Economics,,,,,journal_real_estate_finance_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Regulatory Economics,,,,,journal_regulatory_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Journal of Risk and Uncertainty,,,,,journal-of-risk-and-uncertainty,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,History of Political Economy,,,,,history_political_economy,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,International Journal of Industrial Organization,,,,,international_journal_industrial_organization,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Macroeconomic Dynamics,,,,,macroeconomic_dynamics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Social Choice and Welfare,,,,,social_choice_welfare,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Economic Research Journal,,,,,,,unmatched,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Second Tier,Second Tier,Social Sciences in China,,,,,,,unmatched,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Applied Economics,,,,,applied_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Cambridge Journal of Economics,,,,,cambridge_journal_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,China Economic Review,,,,,china_economic_review,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Contemporary Economic Policy,,,,,contemporary_economic_policy,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Econometrics Journal,,,,,econometrics_journal,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Econometric Reviews,,,,,econometric_reviews,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economics and Philosophy,,,,,economics_philosophy,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economic Inquiry,,,,,economic_inquiry,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economica,,,,,economica,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economic Development and Cultural Change,,,,,economic_development_cultural_change,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economic Policy,,,,,economic_policy_european_forum,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economic Record,,,,,economic_record,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economics Letters,,,,,economics_letters,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economic Modelling,,,,,economic_modelling,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economics of Education Review,,,,,economics_education_review,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Economics of Transition,,,,,economics_transition_institutional_change,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Empirical Economics,,,,,empirical_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Energy Journal,,,,,energy_journal,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Environmental and Resource Economics,,,,,environmental_resource_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Europe-Asia Studies,,,,,europe_asia_studies,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Frontiers of Economics in China,,,,,frontiers_economics_china,abdc_c,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Health Economics,,,,,health-economics,core49,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Industrial and Labor Relations Review,,,,,ilr_review_industrial_labor_relations_review,abdc_a_star,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Industrial Relations,,,,,industrial_relations_journal_economy_society,abdc_a_star,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,International Journal of Game Theory,,,,,international_journal_game_theory,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,International Monetary Fund Economic Review,,,,,imf_economic_review,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,International Tax and Public Finance,,,,,international_tax_public_finance,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Agricultural Economics,,,,,journal_agricultural_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Economics,,,,,journal_economics,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Institutional and Theoretical Economics,,,,,journal_institutional_theoretical_economics,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Law Economics & Organization,,,,,journal_law_economics_organization,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Macroeconomics,,,,,journal_macroeconomics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Productivity Analysis,,,,,journal_productivity_analysis,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Regional Science,,,,,journal_regional_science,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Journal of Transport Economics and Policy,,,,,journal_transport_economics_policy,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Labour Economics,,,,,labour_economics,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Land Economics,,,,,land_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Mathematical Social Sciences,,,,,mathematical_social_sciences,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,National Tax Journal,,,,,national_tax_journal,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Regional Science and Urban Economics,,,,,regional_science_urban_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Oxford Bulletin of Economics and Statistics,,,,,oxford_bulletin_economics_statistics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Oxford Economics Papers,,,,,oxford_economic_papers,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Oxford Review of Economic Policy,,,,,oxford_review_economic_policy,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Public Choice,,,,,public_choice,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Resource and Energy Economics,,,,,resource_energy_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Review of Economic Design,,,,,review_economic_design,abdc_b,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Review of Income and Wealth,,,,,review_income_wealth,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Review of Industrial Organization,,,,,review_industrial_organization,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Review of International Economics,,,,,review_international_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Scandinavian Journal of Economics,,,,,scandinavian_journal_economics,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Scottish Journal of Political Economy,,,,,scottish_journal_political_economy,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Southern Economic Journal,,,,,southern_economic_journal,abdc_a,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,The B.E. Journal of Economic Analysis &Policy,,,,,be_journal_economic_analysis_policy,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,The B.E. Journal of Macroeconomics,,,,,be_journal_macroeconomics,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,The B.E. Journal of Theoretical Economics (Research Articles ),,,,,be_journal_theoretical_economics,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,Theory and Decision,,,,,theory_decision_international_journal,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,World Bank Economic Review,,,,,world_bank_economic_review,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,World Development,,,,,world_development,abdc_a_star,title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25
+,Third Tier,Third Tier,World Economy,,,,,world_economy,abdc_a,alias+title,sufe_tenure_track_list.htm,SHUFE tenure-track list retrieved 2026-10-25

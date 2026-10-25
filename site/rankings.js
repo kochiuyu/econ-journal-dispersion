@@ -21,6 +21,7 @@
   // specialized tier under that. Other notable, Notable review, and Review
   // share the bottom tier. Economics keeps its printed order. A department's
   // top-tier list outranks its notable or specialized list.
+  // SHUFE is Top Tier, then First Tier, then Second Tier, then Third Tier.
   var RATING_RANK = {
     abs_ajg: { "4*": 5, "4": 4, "3": 3, "2": 2, "1": 1 },
     abdc: { "A*": 4, "A": 3, "B": 2, "C": 1 },
@@ -39,7 +40,8 @@
       "Notable review": 1,
       "Review": 1
     },
-    shanghai: { "Top": 1 }
+    shanghai: { "Top": 1 },
+    shufe: { "Top Tier": 4, "First Tier": 3, "Second Tier": 2, "Third Tier": 1 }
   };
   // build_rankings.py joins a Stern department code and memo heading with this.
   var STERN_FIELD_SEP = "\u001f";
@@ -51,7 +53,8 @@
     fnege: "Highest grade",
     erim: "Highest class",
     stern: "Highest tier",
-    shanghai: "Top journals"
+    shanghai: "Top journals",
+    shufe: "Highest tier"
   };
 
   var countEl = document.getElementById("count");
@@ -486,6 +489,7 @@
         ratingCell.title = "NYU Stern " + subjectLabel("stern", sternParts(row[5] || "").dept) + " top journals, " + row[1];
       }
       if (row[4] && state.system === "shanghai") ratingCell.title = "ShanghaiRanking top journals " + row[1];
+      if (row[4] && state.system === "shufe") ratingCell.title = "SHUFE Tenure-Track Journal List";
       tr.appendChild(ratingCell);
       var fieldText = row[5] ? subjectLabel(state.system, row[5]) : "";
       var fieldCell = cell(fieldText || "—", row[5] ? "field" : "muted");

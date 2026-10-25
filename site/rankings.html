@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal rankings</title>
-  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, and Shanghai top-journal grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
+  <meta name="description" content="ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, Shanghai, and SHUFE Tenure-Track grades, the 2025 ABDC list, and FT50, UTD24, and Top 5 membership lists.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:title" content="Journal rankings">
-  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, Shanghai, and ABDC, plus FT50, UTD24, and Top 5.">
+  <meta property="og:description" content="Journal grades from ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg/TISEM, ERIM Core, NYU Stern, Shanghai, SHUFE, and ABDC, plus FT50, UTD24, and Top 5.">
   <meta property="og:url" content="https://kochiuyu.github.io/econ-journal-dispersion/rankings.html">
   <meta property="og:type" content="website">
   <!--
@@ -45,7 +45,7 @@
   <main class="wrap">
     <p class="intro" id="intro">
       Journal grades, weights, and membership lists, not editorial appointments.
-      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, and Shanghai are editions with ratings.
+      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, Shanghai, and SHUFE are editions with ratings.
       Handelsblatt/VWL also shows the published weight.
       ABDC is the 2025 Journal Quality List (A*, A, B, C).
       FT50, UTD24, and Top 5 are lists with no grade tiers.
@@ -54,6 +54,7 @@
       ERIM is the Core list for 2024–2028.
       Stern is NYU Stern top-tier journals by department. Grades differ by department.
       Shanghai is binary membership (Top) for Economics, Business Administration, Finance, and Management.
+      SHUFE is the SUFE Tenure-Track Journal List (Top Tier, First Tier, Second Tier, Third Tier). The page does not name an edition year, so the selector is Current.
       Field is the source subject when the list has one.
       Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
       Every AJG edition stays on this page.
@@ -111,7 +112,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. Hover a Tilburg, FNEGE, ERIM, Stern, or Shanghai grade for the source name. A blank journal id is unmatched in that freeze.</p>
+      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. SHUFE tiers are Top Tier, First Tier, Second Tier, and Third Tier. The source page has no edition year, so the selector is Current, and this list has no field. Hover a Tilburg, FNEGE, ERIM, Stern, Shanghai, or SHUFE grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading rankings…</p>
@@ -252,6 +253,17 @@
         The label on this page is Shanghai.
       </p>
       <p>
+        <strong>SHUFE</strong> is the SUFE Tenure-Track Journal List in freeze
+        <code>rankings_shufe_20261025</code>, from the
+        <a href="https://econen.sufe.edu.cn/6619/list.htm">School of Economics page</a>.
+        The page does not print an edition year, so <code>edition_year</code> stays empty and this list is Current.
+        Tiers are Top Tier (5), First Tier (20), Second Tier (39), and Third Tier (59).
+        120 of 123 journals (97.6%) have a catalog <code>journal_id</code>.
+        Three titles are unmatched: AER Papers and Proceedings, Economic Research Journal, and Social Sciences in China.
+        This list has no field.
+        The label on this page is SHUFE. The grade hover says SHUFE Tenure-Track Journal List.
+      </p>
+      <p>
         <strong>ABDC</strong> is the 2025 ABDC Journal Quality List, one edition, with ratings A*, A, B, and C.
         Those tiers are the catalogs
         <code>journals/catalog_abdc_a_star.csv</code> (219),
@@ -276,10 +288,10 @@
         FNEGE uses its domain code. ERIM uses the Core track. Tilburg very-good rows use the group on the TISEM page.
         Stern uses the department, and adds the memo heading when that row has one. Shanghai uses the subject, and joins two subjects on one row.
         FT50 uses the McMaster subject area. A two-subject cell stays one field, and the filter lists that whole subject area.
-        Handelsblatt/VWL, UTD24, and Top 5 have no field, so those cells stay blank.
+        Handelsblatt/VWL, UTD24, Top 5, and SHUFE have no field, so those cells stay blank.
       </p>
       <p>
-        On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, ERIM, Stern, and Shanghai, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
+        On ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg, FNEGE, ERIM, Stern, Shanghai, and SHUFE, <code>journal_id</code> is the freeze’s primary catalog id. A blank cell is an unmatched title, listed in <code>unmatched_journals.csv</code>.
         On ABDC, FT50, UTD24, and Top 5, <code>journal_id</code> is the catalog id.
       </p>
       <p class="small">

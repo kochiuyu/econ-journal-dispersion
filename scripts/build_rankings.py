@@ -9,13 +9,16 @@ and Top 5 have no grade column and are stored with an empty rating.
 FT50 field is the McMaster LibGuide subject area on catalog_ft50.csv.
 UTD24 and Top 5 leave field empty.
 CNRS, Handelsblatt/VWL, Tilburg/TISEM, FNEGE, ERIM Core, NYU Stern,
-and ShanghaiRanking rows are copied from their pinned freezes.
+ShanghaiRanking, and SHUFE Tenure-Track rows are copied from their pinned
+freezes.
 CNRS keeps the published category and domain. Handelsblatt/VWL keeps the
 published weight and, when the freeze has one, the letter class. Tilburg
 keeps the TISEM tier. FNEGE keeps the published grade. ERIM keeps the Core
 class. Stern keeps the department and the memo tier. The page field is the
 department, plus the memo heading when the row has one. Shanghai keeps
-binary membership and the subject.
+binary membership and the subject. SHUFE keeps the tenure-track tier.
+The source page prints no edition year, so the freeze leaves edition_year
+empty and the page shows Current.
 
 This script does not fetch sources, does not read portal extracts or raw
 PDFs, and does not assign ratings, weights, or ids of its own.
@@ -138,6 +141,7 @@ LIST_COUNTS = {
     "erim": 283,
     "stern": 233,
     "shanghai": 76,
+    "shufe": 123,
 }
 CNRS_RELEASE = ROOT / "journals/rankings/cnrs/releases/rankings_cnrs_20261024"
 CNRS_YEARS = (2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020)
@@ -202,6 +206,7 @@ SYSTEM_ORDER = (
     "erim",
     "stern",
     "shanghai",
+    "shufe",
 )
 TILBURG_RELEASE = ROOT / "journals/rankings/tilburg/releases/rankings_tilburg_20261025"
 TILBURG_RATINGS = ("Top-core", "Top", "Very good")
@@ -446,6 +451,28 @@ SHANGHAI_EXPECTED = {
     2024: {"rows": 57, "mapped": 55, "match_pct": 96.5},
     2026: {"rows": 19, "mapped": 19, "match_pct": 100.0},
 }
+SHUFE_RELEASE = ROOT / "journals/rankings/shufe/releases/rankings_shufe_20261025"
+# Best tier first. site/rankings.js RATING_RANK uses the same order.
+SHUFE_RATINGS = ("Top Tier", "First Tier", "Second Tier", "Third Tier")
+SHUFE_METHODS = frozenset(ALLOWED_METHODS | {"alias+title"})
+SHUFE_SOURCE_FILE = "sufe_tenure_track_list.htm"
+SHUFE_NOTE = "SHUFE tenure-track list retrieved 2026-10-25"
+# The source page prints no edition year. The CSV keeps edition_year empty.
+# The Rankings selector uses Current, the same single-snapshot label as Tilburg.
+# 2026 is the retrieval date in RELEASE_NOTES, not a list vintage.
+SHUFE_PAGE_EDITION = "Current"
+SHUFE_EXPECTED = {"rows": 123, "mapped": 120, "match_pct": 97.6}
+SHUFE_RATING_COUNTS = {
+    "Top Tier": 5,
+    "First Tier": 20,
+    "Second Tier": 39,
+    "Third Tier": 59,
+}
+SHUFE_UNMATCHED = (
+    "AER Papers and Proceedings",
+    "Economic Research Journal",
+    "Social Sciences in China",
+)
 
 # Display names for the field codes stored on the freeze. Not a second rating.
 SUBJECT_LABELS = {
@@ -902,6 +929,7 @@ def load_grade_freeze(
     methods: frozenset[str] | None = None,
     field_for=None,
     source_files: frozenset[str] | None = None,
+    page_edition: str | None = None,
 ) -> list[list]:
     columns = GRADE_COLUMNS if columns is None else columns
     loaded: dict[str, list[dict[str, str]]] = {}
@@ -957,7 +985,7 @@ def load_grade_freeze(
     require_sidecars(release)
     packed: list[list] = []
     for year in years:
-        edition_label = edition_for(year)
+        edition_label = edition_for(year) if page_edition is None else page_edition
         if isinstance(edition_label, str) and edition_label.isdigit():
             edition_label = int(edition_label)
         edition = sorted(
@@ -1302,6 +1330,73 @@ def load_shanghai() -> list[list]:
     return packed
 
 
+def load_shufe() -> list[list]:
+    packed = load_grade_freeze(
+        SHUFE_RELEASE,
+        stem="shufe",
+        years=("current",),
+        ratings=SHUFE_RATINGS,
+        expected={"current": SHUFE_EXPECTED},
+        source_file=SHUFE_SOURCE_FILE,
+        source_note_for=lambda row: SHUFE_NOTE,
+        edition_for=lambda year: "",
+        system="shufe",
+        unmatched_rows=len(SHUFE_UNMATCHED),
+        conflict_rows=0,
+        long_rows_expected=LIST_COUNTS["shufe"],
+        methods=SHUFE_METHODS,
+        page_edition=SHUFE_PAGE_EDITION,
+    )
+    header, raw = read_csv(SHUFE_RELEASE / "shufe_long.csv")
+    del header
+    rating_counts: Counter[str] = Counter()
+    for row in raw:
+        if row["edition_year"] != "":
+            raise SystemExit(
+                f"SHUFE edition_year {row['edition_year']!r} on {row['journal_title']}"
+            )
+        if (
+            row["field"].strip()
+            or row["publisher"].strip()
+            or row["print_issn"].strip()
+            or row["e_issn"].strip()
+        ):
+            raise SystemExit(f"SHUFE row has a field, publisher, or ISSN: {row['journal_title']}")
+        rating_counts[row["rating"]] += 1
+    if dict(rating_counts) != SHUFE_RATING_COUNTS:
+        raise SystemExit(f"SHUFE rating counts {dict(rating_counts)}")
+    for row in packed:
+        if row[1] != SHUFE_PAGE_EDITION:
+            raise SystemExit(f"SHUFE page edition {row[1]!r}")
+        if row[5]:
+            raise SystemExit(f"SHUFE packed field {row[5]!r} on {row[3]}")
+    by_title = {row[3].casefold(): row for row in packed}
+    aer = by_title.get("american economic review")
+    if not aer or aer[4] != "Top Tier" or aer[2] != "aer" or aer[1] != SHUFE_PAGE_EDITION:
+        raise SystemExit(f"SHUFE AER row {aer}")
+    top = {row[2] for row in packed if row[4] == "Top Tier"}
+    if top != {"aer", "econometrica", "jpe", "qje", "restud"}:
+        raise SystemExit(f"SHUFE Top Tier ids {sorted(top)}")
+    economic_journal = by_title.get("economic journal")
+    if (
+        not economic_journal
+        or economic_journal[4] != "First Tier"
+        or economic_journal[2] != "the-economic-journal"
+    ):
+        raise SystemExit(f"SHUFE Economic Journal row {economic_journal}")
+    unmatched = {row[3] for row in packed if not row[2]}
+    if unmatched != set(SHUFE_UNMATCHED):
+        raise SystemExit(f"SHUFE unmatched titles {sorted(unmatched)}")
+    for title in SHUFE_UNMATCHED:
+        row = by_title[title.casefold()]
+        if row[4] != "Second Tier" or row[2]:
+            raise SystemExit(f"SHUFE unmatched row {row}")
+    mapped = sum(1 for row in packed if row[2])
+    if len(packed) != LIST_COUNTS["shufe"] or mapped != SHUFE_EXPECTED["mapped"]:
+        raise SystemExit(f"SHUFE packed {len(packed)} rows / {mapped} mapped")
+    return packed
+
+
 def payload(
     loaded: dict[int, list[dict[str, str]]],
     list_rows: list[list],
@@ -1312,6 +1407,7 @@ def payload(
     erim_rows: list[list],
     stern_rows: list[list],
     shanghai_rows: list[list],
+    shufe_rows: list[list],
     fnege_labels: dict[str, str],
     erim_labels: dict[str, str],
 ) -> dict:
@@ -1340,6 +1436,7 @@ def payload(
     rows.extend(erim_rows)
     rows.extend(stern_rows)
     rows.extend(shanghai_rows)
+    rows.extend(shufe_rows)
     if any(len(row) != 9 for row in rows):
         raise SystemExit("Ranking row width is not 9")
     counts = Counter(row[0] for row in rows)
@@ -1369,6 +1466,7 @@ def payload(
             {"id": "erim", "label": "ERIM"},
             {"id": "stern", "label": "Stern"},
             {"id": "shanghai", "label": "Shanghai"},
+            {"id": "shufe", "label": "SHUFE"},
         ],
         "editions": {
             "abs_ajg": list(EDITIONS),
@@ -1383,6 +1481,7 @@ def payload(
             "erim": [ERIM_EDITION],
             "stern": [2020, 2021],
             "shanghai": list(SHANGHAI_YEARS),
+            "shufe": [SHUFE_PAGE_EDITION],
         },
         "ratings": {
             "abs_ajg": ["4*", "4", "3", "2", "1"],
@@ -1397,6 +1496,7 @@ def payload(
             "erim": list(ERIM_RATINGS),
             "stern": list(STERN_RATINGS),
             "shanghai": list(SHANGHAI_RATINGS),
+            "shufe": list(SHUFE_RATINGS),
         },
         "subjectLabels": SUBJECT_LABELS,
         "fieldLabels": {
@@ -1437,6 +1537,7 @@ def js_payload(body: dict) -> str:
         "journals/rankings/erim/releases/rankings_erim_20261025/, "
         "journals/rankings/stern/releases/rankings_stern_20261025/, "
         "journals/rankings/shanghai/releases/rankings_shanghai_20261025/, "
+        "journals/rankings/shufe/releases/rankings_shufe_20261025/, "
         "and journals/catalog_{ft50,utd24,top5,abdc_*}.csv. Do not edit. */\n"
         "window.RANKINGS_DATA = "
         + raw
@@ -1473,6 +1574,7 @@ def main() -> int:
     erim_rows, erim_labels = load_erim()
     stern_rows = load_stern()
     shanghai_rows = load_shanghai()
+    shufe_rows = load_shufe()
     body = payload(
         loaded,
         list_rows,
@@ -1483,6 +1585,7 @@ def main() -> int:
         erim_rows,
         stern_rows,
         shanghai_rows,
+        shufe_rows,
         fnege_labels,
         erim_labels,
     )
@@ -1528,7 +1631,9 @@ def main() -> int:
         f"Shanghai {LIST_COUNTS['shanghai']} "
         f"(2026 {SHANGHAI_EXPECTED[2026]['rows']} journals, "
         f"{SHANGHAI_EXPECTED[2026]['mapped']} matched, {SHANGHAI_EXPECTED[2026]['match_pct']}%; "
-        f"2024 {SHANGHAI_EXPECTED[2024]['rows']})."
+        f"2024 {SHANGHAI_EXPECTED[2024]['rows']}). "
+        f"SHUFE {LIST_COUNTS['shufe']} "
+        f"({SHUFE_EXPECTED['mapped']} matched, {SHUFE_EXPECTED['match_pct']}%)."
     )
     return 0
 
