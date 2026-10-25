@@ -10,6 +10,12 @@
   var DATA = window.RANKINGS_DATA;
   var numberFormat = new Intl.NumberFormat("en-US");
   var collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+  // Higher number is the better grade. The default order is this rank,
+  // best first, then the journal name A–Z. CNRS 1 / 1e / 1g / 1eg share the
+  // top category. FNEGE EM and NC follow 1* > 1 > 2 > 3 > 4. A blank
+  // Handelsblatt letter sits below F; the same letter then uses weight,
+  // higher first. Shanghai is one Top grade, so that list stays A–Z.
+  // FT50, UTD24, and Top 5 are absent and stay A–Z.
   var RATING_RANK = {
     abs_ajg: { "4*": 5, "4": 4, "3": 3, "2": 2, "1": 1 },
     abdc: { "A*": 4, "A": 3, "B": 2, "C": 1 },
@@ -102,6 +108,33 @@
     return table[rating] || 0;
   }
 
+  function hasGradeTiers(system) {
+    return Object.keys(RATING_RANK[system] || {}).length > 1;
+  }
+
+  function defaultSort(system) {
+    return hasGradeTiers(system) ? "rating" : "name";
+  }
+
+  function defaultDir(sort) {
+    return sort === "rating" || sort === "year" || sort === "weight" ? "desc" : "asc";
+  }
+
+  function compareName(left, right) {
+    return collator.compare(left[3] || "", right[3] || "");
+  }
+
+  function compareWeight(left, right) {
+    var wa = parseFloat(left[8]);
+    var wb = parseFloat(right[8]);
+    var aok = isFinite(wa);
+    var bok = isFinite(wb);
+    if (aok && bok) return wa - wb;
+    if (aok) return 1;
+    if (bok) return -1;
+    return 0;
+  }
+
   function knownSystem(id) {
     var systems = DATA.systems || [];
     for (var i = 0; i < systems.length; i++) {
@@ -138,10 +171,11 @@
     var system = params.get("system") || defaultSystem();
     if (!knownSystem(system)) system = defaultSystem();
     var year = params.get("year") || defaultYear(system);
-    var sort = params.get("sort") || "name";
-    var dir = params.get("dir") === "desc" ? "desc" : "asc";
+    var sort = params.get("sort") || defaultSort(system);
     if (sort === "subject") sort = "field";
-    if (["name", "rating", "field", "year", "id", "weight"].indexOf(sort) === -1) sort = "name";
+    if (["name", "rating", "field", "year", "id", "weight"].indexOf(sort) === -1) sort = defaultSort(system);
+    var dirParam = params.get("dir");
+    var dir = dirParam === "asc" || dirParam === "desc" ? dirParam : defaultDir(sort);
     return {
       q: params.get("q") || "",
       system: system,
@@ -162,8 +196,11 @@
     if (state.year) params.set("year", state.year);
     if (state.rating) params.set("rating", state.rating);
     if (state.field) params.set("field", state.field);
-    if (state.sort !== "name") params.set("sort", state.sort);
-    if (state.dir !== "asc") params.set("dir", state.dir);
+    var sortIsDefault = state.sort === defaultSort(state.system) && state.dir === defaultDir(state.sort);
+    if (!sortIsDefault) {
+      params.set("sort", state.sort);
+      if (state.dir !== defaultDir(state.sort)) params.set("dir", state.dir);
+    }
     if (state.page > 1) params.set("page", String(state.page));
     if (state.pageSize !== 50) params.set("n", String(state.pageSize));
     var query = params.toString();
@@ -306,16 +343,16 @@
       var ra = rows[a];
       var rb = rows[b];
       var cmp = 0;
-      if (state.sort === "rating") cmp = ratingRank(state.system, ra[4]) - ratingRank(state.system, rb[4]);
-      else if (state.sort === "weight") {
-        var wa = parseFloat(ra[8]);
-        var wb = parseFloat(rb[8]);
-        var aok = isFinite(wa);
-        var bok = isFinite(wb);
-        if (aok && bok) cmp = wa - wb;
-        else if (aok) cmp = 1;
-        else if (bok) cmp = -1;
+      if (state.sort === "rating") {
+        cmp = ratingRank(state.system, ra[4]) - ratingRank(state.system, rb[4]);
+        if (cmp !== 0) return cmp * dir;
+        if (showsWeight(state.system)) {
+          cmp = compareWeight(ra, rb);
+          if (cmp !== 0) return -cmp;
+        }
+        return compareName(ra, rb);
       }
+      if (state.sort === "weight") cmp = compareWeight(ra, rb);
       else if (state.sort === "field") cmp = collator.compare(subjectLabel(state.system, ra[5]), subjectLabel(state.system, rb[5]));
       else if (state.sort === "year") {
         var ya = Number(ra[1]);
@@ -323,8 +360,8 @@
         cmp = isFinite(ya) && isFinite(yb) ? ya - yb : collator.compare(String(ra[1]), String(rb[1]));
       }
       else if (state.sort === "id") cmp = collator.compare(ra[2] || "", rb[2] || "");
-      else cmp = collator.compare(ra[3] || "", rb[3] || "");
-      if (cmp === 0) cmp = collator.compare(ra[3] || "", rb[3] || "");
+      else cmp = compareName(ra, rb);
+      if (cmp === 0) cmp = compareName(ra, rb);
       return cmp * dir;
     });
     return matched;
@@ -480,13 +517,16 @@
   });
 
   systemEl.addEventListener("change", function () {
+    var previous = state.system;
+    var wasDefault = state.sort === defaultSort(previous) && state.dir === defaultDir(state.sort);
     state.system = systemEl.value;
     state.year = defaultYear(state.system);
     state.rating = "";
     state.field = "";
-    if (!showsWeight(state.system) && state.sort === "weight") {
-      state.sort = "name";
-      state.dir = "asc";
+    if (!showsWeight(state.system) && state.sort === "weight") wasDefault = true;
+    if (wasDefault) {
+      state.sort = defaultSort(state.system);
+      state.dir = defaultDir(state.sort);
     }
     state.page = 1;
     render();
@@ -518,8 +558,8 @@
     state.year = defaultYear(state.system);
     state.rating = "";
     state.field = "";
-    state.sort = "name";
-    state.dir = "asc";
+    state.sort = defaultSort(state.system);
+    state.dir = defaultDir(state.sort);
     state.page = 1;
     state.pageSize = 50;
     render();
