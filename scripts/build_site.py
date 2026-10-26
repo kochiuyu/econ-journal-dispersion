@@ -93,9 +93,11 @@ is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
 badge. There is no ``faculty_profile_url`` on these files. ROR columns
-are freeze ``editors_abs_ajg_gap_ror_20261025``. ``ror_id`` is filled only
-where the collector recorded high or medium confidence. ``raw_affiliation``
-is unchanged. ``editor_name`` is still freeze
+are freeze ``editors_abs_ajg_gap_ror_20261026_countryfix``. ``ror_id`` is
+filled only where the collector recorded high or medium confidence.
+``raw_affiliation`` is the masthead string. This freeze blanked UN-fragment
+junk and split seven mashed person-plus-institution rows; the build does
+not overwrite it. ``editor_name`` on the other rows is still freeze
 ``editors_display_names_20261025``. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
 still have no board.
@@ -171,6 +173,11 @@ when the collapsed row has one, otherwise the normalized affiliation
 (whitespace collapsed, Unicode-casefold). The display name is the most common
 affiliation string for that key. Country and continent are the most common
 non-empty values. Appointments with no ROR id and no affiliation are omitted.
+An unmatched affiliation that is only a country or territory is omitted too:
+trim, unwrap parentheses, then compare with the ROR country labels on these
+boards and a short alias list (USA, UK, US, Netherlands, Turkey, Korea).
+A row with a ``ror_id`` stays. The build does not invent a name and does not
+rewrite ``raw_affiliation``.
 
 Hub, directory, and list chunks
 -------------------------------
@@ -344,6 +351,22 @@ AJG_GAP_JOURNAL_RATINGS = {
     "ajg2": {"2": 105},
     "ajg1": {"1": 289},
 }
+# Masthead forms of a country that are not the ROR country label
+# ("United States", "The Netherlands", "Türkiye", and the rest come from
+# the rows). Used only to drop unmatched Institutions clusters.
+COUNTRY_ALIASES = (
+    "USA",
+    "US",
+    "U.S.",
+    "U.S.A.",
+    "UK",
+    "U.K.",
+    "Netherlands",
+    "Holland",
+    "Korea",
+    "Turkey",
+    "Czech Republic",
+)
 
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
@@ -1824,9 +1847,29 @@ def build_journal_payload(records: list[Rec], catalog: JournalCatalog, directory
     return payload
 
 
-def institution_key(rec: Rec) -> tuple[str, str] | None:
+def bare_place(text: str) -> str:
+    """Trim and unwrap parentheses, then fold for an exact country compare."""
+    text = " ".join((text or "").replace("\u00a0", " ").split())
+    while len(text) >= 2 and text.startswith("(") and text.endswith(")"):
+        text = text[1:-1].strip()
+    return fold_match(text)
+
+
+def country_places(records: list[Rec]) -> set[str]:
+    """ROR country labels on these boards, plus masthead aliases."""
+    places = {fold_match(alias) for alias in COUNTRY_ALIASES}
+    places.discard("")
+    for rec in records:
+        if rec.country:
+            places.add(fold_match(rec.country))
+    return places
+
+
+def institution_key(rec: Rec, places: set[str]) -> tuple[str, str] | None:
     if rec.ror_id:
         return ("ror", rec.ror_id)
+    if rec.affiliation and bare_place(rec.affiliation) in places:
+        return None
     folded = norm_space(rec.affiliation)
     if folded:
         return ("aff", folded)
@@ -1834,11 +1877,18 @@ def institution_key(rec: Rec) -> tuple[str, str] | None:
 
 
 def build_institution_payload(records: list[Rec], directory: dict) -> dict:
-    """One row per ROR id, else per normalized affiliation."""
+    """One row per ROR id, else per normalized affiliation.
+
+    Unmatched affiliations that are only a country or territory are omitted.
+    """
+    places = country_places(records)
     buckets: dict[tuple[str, str], dict] = {}
+    country_only = 0
     for rec in records:
-        key = institution_key(rec)
+        key = institution_key(rec, places)
         if key is None:
+            if rec.affiliation and not rec.ror_id and bare_place(rec.affiliation) in places:
+                country_only += 1
             continue
         bucket = buckets.get(key)
         if bucket is None:
@@ -1936,6 +1986,10 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
 
     if nameless:
         print(f"Institution keys with no display name: {nameless} appointments")
+    if country_only:
+        print(
+            f"Omitted {country_only:,} appointments whose affiliation is only a country or territory"
+        )
     by_universe = {
         uid: {
             "institutions": institutions_by_universe[uid],
@@ -1962,6 +2016,7 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "institutions": len(rows),
                 "appointments": emitted,
                 "unmatchedAppointments": len(records) - emitted,
+                "countryOnlyAppointments": country_only,
                 "editors": len(editor_keys),
                 "countries": len(country_keys),
                 "withRor": with_ror,
@@ -2150,6 +2205,9 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
 
     if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"]:
         raise SystemExit("Institution appointments plus unmatched rows do not match the directory")
+    country_only = icounts.get("countryOnlyAppointments") or 0
+    if country_only > icounts["unmatchedAppointments"]:
+        raise SystemExit("Country-only appointments exceed unmatched institution rows")
     if not 4_000 <= icounts["institutions"] <= 30_000:
         raise SystemExit(f"Unexpected institution count: {icounts['institutions']}")
     host_institutions = icounts["hostInstitutions"]
@@ -2182,10 +2240,16 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
             assert_no_contacts(text, label)
     # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 (gap rows
     # had no ror_id, so a masthead string sat beside the same ROR name) to 64
-    # after editors_abs_ajg_gap_ror_20261025. The remainder are unmatched
-    # affiliation strings, or two ROR ids that still share a display name.
+    # after editors_abs_ajg_gap_ror_20261025. editors_abs_ajg_gap_ror_20261026_countryfix
+    # drops unmatched country-only clusters; the remainder are still unmatched
+    # affiliation strings, or two ROR ids that share a display name.
     if duplicate_names != 64:
         raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 64")
+    places = {fold_match(name) for name in institutions["countries"] if name}
+    places.update(fold_match(alias) for alias in COUNTRY_ALIASES)
+    bare_countries = [row[0] for row in institutions["rows"] if bare_place(row[0]) in places]
+    if bare_countries:
+        raise SystemExit(f"Country-only institution rows: {bare_countries[:8]}")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
     # The United States ROR row stays one row. A gap affiliation with the same
     # words and no ror_id can still be a second row.
