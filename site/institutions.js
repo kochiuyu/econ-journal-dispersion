@@ -154,11 +154,20 @@
     placeText("about-asof", asOf);
     placeText("footer-asof", asOf);
     var unmatched = counts.unmatchedAppointments || 0;
-    placeText(
-      "about-unmatched",
-      formatNumber(unmatched) + (unmatched === 1 ? " appointment is" : " appointments are") +
-        " omitted because they have no named institution."
-    );
+    var countryOnly = counts.countryOnlyAppointments || 0;
+    var unnamed = unmatched - countryOnly;
+    if (unnamed < 0) unnamed = 0;
+    var unnamedText =
+      formatNumber(unnamed) + (unnamed === 1 ? " appointment is" : " appointments are") +
+      " omitted because they have no named institution.";
+    var countryText = "";
+    if (countryOnly) {
+      countryText =
+        " " + formatNumber(countryOnly) +
+        (countryOnly === 1 ? " appointment is" : " appointments are") +
+        " omitted because the affiliation is only a country or territory.";
+    }
+    placeText("about-unmatched", unnamedText + countryText);
     placeText(
       "about-ror",
       formatNumber(counts.withRor) + " of " + formatNumber(counts.institutions) + " rows are a ROR id."
