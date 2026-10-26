@@ -93,11 +93,11 @@ is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
 badge. There is no ``faculty_profile_url`` on these files. ROR columns
-are freeze ``editors_abs_ajg_gap_ror_20261026_countryfix``. ``ror_id`` is
+are freeze ``editors_abs_ajg_gap_ror_20261026_bracketfix``. ``ror_id`` is
 filled only where the collector recorded high or medium confidence.
-``raw_affiliation`` is the masthead string. This freeze blanked UN-fragment
-junk and split seven mashed person-plus-institution rows; the build does
-not overwrite it. ``editor_name`` on the other rows is still freeze
+``raw_affiliation`` is the masthead string. This freeze blanked bracket-only
+and address-only junk and cleared two bad address-to-ROR matches; the build
+does not overwrite it. ``editor_name`` on the other rows is still freeze
 ``editors_display_names_20261025``. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
 still have no board.
@@ -173,11 +173,12 @@ when the collapsed row has one, otherwise the normalized affiliation
 (whitespace collapsed, Unicode-casefold). The display name is the most common
 affiliation string for that key. Country and continent are the most common
 non-empty values. Appointments with no ROR id and no affiliation are omitted.
-An unmatched affiliation that is only a country or territory is omitted too:
-trim, unwrap parentheses, then compare with the ROR country labels on these
-boards and a short alias list (USA, UK, US, Netherlands, Turkey, Korea).
-A row with a ``ror_id`` stays. The build does not invent a name and does not
-rewrite ``raw_affiliation``.
+An unmatched affiliation is omitted when it is only a country or territory
+(trim, unwrap ``()`` / ``[]``, then compare with the ROR country labels on
+these boards and a short alias list), when the whole string is wrapped in
+``()`` or ``[]``, or when it is a street, PO Box, or postal code with no
+organization token. A row with a ``ror_id`` stays. The build does not invent
+a name and does not rewrite ``raw_affiliation``.
 
 Hub, directory, and list chunks
 -------------------------------
@@ -367,6 +368,27 @@ COUNTRY_ALIASES = (
     "Turkey",
     "Czech Republic",
 )
+# All-caps tokens that are places, not organizations. A longer acronym on an
+# address (INFORMS) still counts as an organization token.
+_NON_ORG_ACRONYM = frozenset({"USA", "UAE", "USSR", "PRC", "ROC"})
+_ORG_TOKEN_RE = re.compile(
+    r"\b(?:universit\w*|college|collegio|institut\w*|school|faculty|facultad|"
+    r"department|dept|academy|hospital|laborator\w*|centre|center|zentrum|"
+    r"company|corporation|bank|ministry|government|council|association|society|"
+    r"foundation|museum|library|polytechnic|hochschule|universidad|universidade|"
+    r"ecole|école|gmbh|plc|llc|inc|ltd|campus|conservatory|clinic|authority|"
+    r"agency|bureau|commission|informs)\b",
+    re.IGNORECASE,
+)
+_ACRONYM_RE = re.compile(r"\b[A-Z]{3,}\b")
+_STREET_RE = re.compile(
+    r"\b(?:p\.?\s*o\.?\s*box|post\s+office\s+box|postbox|postal\s+box|"
+    r"street|avenue|boulevard|lane|drive|road|parkway|highway|circle|crescent)\b",
+    re.IGNORECASE,
+)
+_STATE_ZIP_RE = re.compile(r"^[A-Za-z]{2}\s+\d{4,5}(?:-\d{4})?$")
+_POSTCODE_RE = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$", re.IGNORECASE)
+_DIGITISH_RE = re.compile(r"^[\d\s\-–—/._]+$")
 
 UNIVERSE_META = (
     {"id": "ft50", "label": "FT50", "bit": 1},
@@ -1848,11 +1870,51 @@ def build_journal_payload(records: list[Rec], catalog: JournalCatalog, directory
 
 
 def bare_place(text: str) -> str:
-    """Trim and unwrap parentheses, then fold for an exact country compare."""
+    """Trim and unwrap parentheses or brackets, then fold for a country compare."""
     text = " ".join((text or "").replace("\u00a0", " ").split())
-    while len(text) >= 2 and text.startswith("(") and text.endswith(")"):
+    while len(text) >= 2 and (
+        (text.startswith("(") and text.endswith(")"))
+        or (text.startswith("[") and text.endswith("]"))
+    ):
         text = text[1:-1].strip()
     return fold_match(text)
+
+
+def fully_wrapped(text: str) -> bool:
+    """True when the whole affiliation is enclosed in () or []."""
+    raw = " ".join((text or "").replace("\u00a0", " ").split())
+    if len(raw) < 2 or raw[0] not in "([" :
+        return False
+    inner = raw
+    while len(inner) >= 2 and (
+        (inner.startswith("(") and inner.endswith(")"))
+        or (inner.startswith("[") and inner.endswith("]"))
+    ):
+        inner = inner[1:-1].strip()
+    return bool(inner) and inner != raw
+
+
+def address_only(text: str) -> bool:
+    """Street, PO Box, postal code, or digit/year junk with no organization token.
+
+    A university, school, or other organization word keeps the row. So does an
+    all-caps acronym of three or more letters (INFORMS). City names alone do
+    not. ``St.`` is not a street marker, so ``St. Gallen`` and ``St. Louis``
+    stay.
+    """
+    text = " ".join((text or "").replace("\u00a0", " ").split())
+    if not text:
+        return False
+    if _ORG_TOKEN_RE.search(text):
+        return False
+    for acronym in _ACRONYM_RE.findall(text):
+        if acronym not in _NON_ORG_ACRONYM:
+            return False
+    if _DIGITISH_RE.match(text) and re.search(r"\d", text):
+        return True
+    if _STATE_ZIP_RE.match(text) or _POSTCODE_RE.match(text):
+        return True
+    return bool(_STREET_RE.search(text))
 
 
 def country_places(records: list[Rec]) -> set[str]:
@@ -1865,10 +1927,23 @@ def country_places(records: list[Rec]) -> set[str]:
     return places
 
 
+def exclusion_reason(text: str, places: set[str]) -> str:
+    """Why an unmatched affiliation is left off Institutions, or ''."""
+    if not text:
+        return ""
+    if bare_place(text) in places:
+        return "country"
+    if fully_wrapped(text):
+        return "bracket"
+    if address_only(text):
+        return "address"
+    return ""
+
+
 def institution_key(rec: Rec, places: set[str]) -> tuple[str, str] | None:
     if rec.ror_id:
         return ("ror", rec.ror_id)
-    if rec.affiliation and bare_place(rec.affiliation) in places:
+    if exclusion_reason(rec.affiliation, places):
         return None
     folded = norm_space(rec.affiliation)
     if folded:
@@ -1879,16 +1954,19 @@ def institution_key(rec: Rec, places: set[str]) -> tuple[str, str] | None:
 def build_institution_payload(records: list[Rec], directory: dict) -> dict:
     """One row per ROR id, else per normalized affiliation.
 
-    Unmatched affiliations that are only a country or territory are omitted.
+    Unmatched affiliations that are only a country, a bracketed fragment, or
+    a street / PO Box / postal code are omitted. A filled ``ror_id`` stays.
     """
     places = country_places(records)
     buckets: dict[tuple[str, str], dict] = {}
-    country_only = 0
+    omitted: Counter[str] = Counter()
     for rec in records:
         key = institution_key(rec, places)
         if key is None:
-            if rec.affiliation and not rec.ror_id and bare_place(rec.affiliation) in places:
-                country_only += 1
+            if not rec.ror_id:
+                reason = exclusion_reason(rec.affiliation, places)
+                if reason:
+                    omitted[reason] += 1
             continue
         bucket = buckets.get(key)
         if bucket is None:
@@ -1944,6 +2022,13 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
             }
         )
     prepared.sort(key=lambda item: (item["name"].casefold(), item["country"].casefold(), item["continent"].casefold()))
+    leaked = [
+        item["name"]
+        for item in prepared
+        if not item["ror"] and exclusion_reason(item["name"], places)
+    ]
+    if leaked:
+        raise SystemExit(f"Unmatched junk still grouped as an institution: {leaked[:8]}")
 
     rows: list[list] = []
     editor_keys: set[str] = set()
@@ -1986,9 +2071,17 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
 
     if nameless:
         print(f"Institution keys with no display name: {nameless} appointments")
-    if country_only:
+    if omitted["country"]:
         print(
-            f"Omitted {country_only:,} appointments whose affiliation is only a country or territory"
+            f"Omitted {omitted['country']:,} appointments whose affiliation is only a country or territory"
+        )
+    if omitted["bracket"]:
+        print(
+            f"Omitted {omitted['bracket']:,} appointments whose affiliation is only a bracketed fragment"
+        )
+    if omitted["address"]:
+        print(
+            f"Omitted {omitted['address']:,} appointments whose affiliation is only a street, PO Box, or postal code"
         )
     by_universe = {
         uid: {
@@ -2016,7 +2109,9 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "institutions": len(rows),
                 "appointments": emitted,
                 "unmatchedAppointments": len(records) - emitted,
-                "countryOnlyAppointments": country_only,
+                "countryOnlyAppointments": omitted["country"],
+                "bracketAppointments": omitted["bracket"],
+                "addressAppointments": omitted["address"],
                 "editors": len(editor_keys),
                 "countries": len(country_keys),
                 "withRor": with_ror,
@@ -2206,8 +2301,10 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"]:
         raise SystemExit("Institution appointments plus unmatched rows do not match the directory")
     country_only = icounts.get("countryOnlyAppointments") or 0
-    if country_only > icounts["unmatchedAppointments"]:
-        raise SystemExit("Country-only appointments exceed unmatched institution rows")
+    bracket_only = icounts.get("bracketAppointments") or 0
+    address_only_n = icounts.get("addressAppointments") or 0
+    if country_only + bracket_only + address_only_n > icounts["unmatchedAppointments"]:
+        raise SystemExit("Omitted junk appointments exceed unmatched institution rows")
     if not 4_000 <= icounts["institutions"] <= 30_000:
         raise SystemExit(f"Unexpected institution count: {icounts['institutions']}")
     host_institutions = icounts["hostInstitutions"]
@@ -2240,16 +2337,23 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
             assert_no_contacts(text, label)
     # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 (gap rows
     # had no ror_id, so a masthead string sat beside the same ROR name) to 64
-    # after editors_abs_ajg_gap_ror_20261025. editors_abs_ajg_gap_ror_20261026_countryfix
-    # drops unmatched country-only clusters; the remainder are still unmatched
+    # after editors_abs_ajg_gap_ror_20261025. Later freezes drop unmatched
+    # country, bracket, and address clusters. The remainder are still unmatched
     # affiliation strings, or two ROR ids that share a display name.
     if duplicate_names != 64:
         raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 64")
     places = {fold_match(name) for name in institutions["countries"] if name}
     places.update(fold_match(alias) for alias in COUNTRY_ALIASES)
-    bare_countries = [row[0] for row in institutions["rows"] if bare_place(row[0]) in places]
-    if bare_countries:
-        raise SystemExit(f"Country-only institution rows: {bare_countries[:8]}")
+    # Address-shaped ROR names such as "Jane Street (United States)" stay.
+    # This check is the bare-country and fully-bracketed cases, which are
+    # never a ROR display name on these boards.
+    junk_rows = [
+        row[0]
+        for row in institutions["rows"]
+        if bare_place(row[0]) in places or fully_wrapped(row[0])
+    ]
+    if junk_rows:
+        raise SystemExit(f"Junk institution rows: {junk_rows[:8]}")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
     # The United States ROR row stays one row. A gap affiliation with the same
     # words and no ror_id can still be a second row.
