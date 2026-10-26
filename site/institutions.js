@@ -155,19 +155,28 @@
     placeText("footer-asof", asOf);
     var unmatched = counts.unmatchedAppointments || 0;
     var countryOnly = counts.countryOnlyAppointments || 0;
-    var unnamed = unmatched - countryOnly;
+    var bracketOnly = counts.bracketAppointments || 0;
+    var addressOnly = counts.addressAppointments || 0;
+    var unnamed = unmatched - countryOnly - bracketOnly - addressOnly;
     if (unnamed < 0) unnamed = 0;
     var unnamedText =
       formatNumber(unnamed) + (unnamed === 1 ? " appointment is" : " appointments are") +
       " omitted because they have no named institution.";
-    var countryText = "";
+    var extra = "";
     if (countryOnly) {
-      countryText =
+      extra +=
         " " + formatNumber(countryOnly) +
         (countryOnly === 1 ? " appointment is" : " appointments are") +
         " omitted because the affiliation is only a country or territory.";
     }
-    placeText("about-unmatched", unnamedText + countryText);
+    var junk = bracketOnly + addressOnly;
+    if (junk) {
+      extra +=
+        " " + formatNumber(junk) +
+        (junk === 1 ? " appointment is" : " appointments are") +
+        " omitted because the affiliation is only a bracketed fragment, a street, a PO Box, or a postal code.";
+    }
+    placeText("about-unmatched", unnamedText + extra);
     placeText(
       "about-ror",
       formatNumber(counts.withRor) + " of " + formatNumber(counts.institutions) + " rows are a ROR id."
