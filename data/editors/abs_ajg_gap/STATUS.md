@@ -4,7 +4,7 @@ Updated: 2026-10-28 (Asia/Hong_Kong)
 
 ## Release in this repo
 
-`releases/current/` — freeze `editors_institution_paren_geo_20261028` (2026-10-28 16:39 Asia/Hong_Kong). It supersedes `editors_institution_nonsense_20261028`. Faculty URLs from `editors_ajg_gap_url_aff_20261028` stay on rows this freeze did not replace. African Affairs is still the 2024-04-27 Wayback board (40 rows; live OUP is Cloudflare-blocked). Nature Human Behaviour `Email` and `Biography` rows stay out. The journal set is still `editors_abs_ajg_gap_20261025`. Fourteen drop-quality chrome rows stay out, and the navigation rows the collector put back stay out.
+`releases/current/` — freeze `editors_institution_junk_cleanup_20261028` (2026-10-28 17:48 Asia/Hong_Kong). It supersedes `editors_institution_paren_geo_20261028`. The published gap CSVs are unchanged from that prior freeze. Faculty URLs from `editors_ajg_gap_url_aff_20261028` stay. African Affairs is still the 2024-04-27 Wayback board (40 rows; live OUP is Cloudflare-blocked). Nature Human Behaviour `Email` and `Biography` rows stay out. The journal set is still `editors_abs_ajg_gap_20261025`. Fourteen drop-quality chrome rows stay out, and the navigation rows the collector put back stay out.
 
 Current boards for AJG journals that are not already in the FT50 or ABDC editor freezes:
 
