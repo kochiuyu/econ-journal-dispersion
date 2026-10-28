@@ -103,13 +103,17 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. There is no ``faculty_profile_url`` on these files. Name and ROR
-cells on these boards are freeze ``editors_blank_rescrape_20261028``,
-except Sociology of Health and Illness, which is
-``editors_blank_rescrape_browser_20261028``. That browser freeze supersedes
-the earlier Taylor & Francis-only browser pass. ``ror_id`` is filled only
-where the collector recorded high or medium confidence. ``raw_affiliation`` is the masthead string. The
-build does not overwrite it and does not invent a ROR id. With those boards
+badge. Faculty profile URLs on these boards are freeze
+``editors_ajg_gap_faculty_remiss_20261028``, which supersedes the held
+join/cache pass ``editors_ajg_gap_faculty_url_20261028``. Names are still
+freeze ``editors_blank_rescrape_20261028``, except Sociology of Health and
+Illness, which is ``editors_blank_rescrape_browser_20261028``. That browser
+freeze supersedes the earlier Taylor & Francis-only browser pass. Fourteen
+drop-quality chrome rows stay out of the published files. ``ror_id`` is
+filled only where the collector recorded high or medium confidence.
+``raw_affiliation`` is the masthead string, including a host-map fill from
+this freeze when the collector recorded one. The build does not overwrite it
+and does not invent a ROR id or a faculty URL. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
 still have no board.
 
