@@ -1,35 +1,41 @@
-# editors_institution_dept_country_20261028
+# editors_institution_residual_post35_20261028
 
-Department and country-in-name cleanup of institution strings on the ABDC A*, A, B, and C current boards. Frozen 2026-10-28 22:41 Asia/Hong_Kong. This supersedes `editors_institution_trailing_place_20261028` for Directory Institutions. Row counts are unchanged. Empty `editor_name` is 2 on A*, 2 on A, 0 on B, and 11 on C. No D4 or D5 pass is in this freeze.
+Residual place-in-name, country, and variant cleanup of institution strings on the ABDC A*, A, B, and C current boards. Frozen 2026-10-28 23:40 Asia/Hong_Kong. This supersedes `editors_institution_dept_country_20261028` for Directory Institutions. Row counts are unchanged. Empty `editor_name` is 2 on A*, 2 on A, 0 on B, and 11 on C. No D4 or D5 pass is in this freeze.
 
 `editor_name` is the name the directory shows. Display affiliation is `ror_name`, then `canonical_name`, then `raw_affiliation`. Country is `ror_country`. The build does not invent a name, a ROR id, or a URL. A blank affiliation is not an institution. A bare country is not an institution. A string fully enclosed in brackets is not an institution. A street, PO Box, or postal code with no organization name is not an institution. Faculty URL counts are unchanged.
 
-The collector freeze edits 1,168 editor rows across FT50, ABDC, and the AJG-gap files. Twelve ajg1 navigation rows and two ajg2 navigation rows are not on the published boards and stay out. On these files the collector count is A* 48, A 246, B 393, and C 302. The pinned files change A* 55, A 250, B 397, and C 308 rows against `editors_institution_trailing_place_20261028`. A country string inside the institution display name is stripped. A department or faculty suffix is stripped. A rematch uses only a ROR id already on these boards. Where the ROR name was the parenthesis-laden string and the masthead names a different organization, that id is cleared and the masthead stays. The country already on the row stays. No new ROR id was added.
+The collector freeze touches 711 editor rows across FT50, ABDC, and the AJG-gap files. This publish pins 539. On these files that is A* 13, A 130, B 147, and C 161. A residual place inside the institution name is stripped. A country mismatch is corrected when the affiliation text names that country. Amazon-like variants merge to `Amazon`. Three address-junk rows are blanked. A rematch uses only a ROR id already on these boards. One hundred seventy-two collector rows stay as published in the previous freeze. A stripped ROR name is not copied onto a different masthead. HKUST (Guangzhou) stays distinct from The Hong Kong University of Science and Technology. Universidade de Santiago de Compostela stays Spain. Oxford colleges stay the United Kingdom. No new ROR id was added.
 
-The directory reads `canonical_name` when `ror_name` is empty. Where this freeze blanked `raw_affiliation` and left no `ror_name`, `canonical_name` is clear, so the row does not keep the old display. `canonical_name` values cleared in the previous institution freezes stay clear on rows this freeze did not edit. The collector file had restored them.
+The directory reads `canonical_name` when `ror_name` is empty. Where this publish blanked `raw_affiliation` and left no `ror_name`, `canonical_name` is clear. `canonical_name` values cleared in the previous institution freezes stay clear on rows this publish did not edit.
 
 ## Files
 
 | File | Rows | Empty `editor_name` | `raw_affiliation` | `ror_id` | `faculty_profile_url` | URL, no `ror_id` |
 |---|---:|---:|---:|---:|---:|---:|
 | `editors_abdc_a_star_current.csv` | 25,178 | 2 | 23,806 (94.6%) | 23,599 | 12,523 (49.7%) | 67 |
-| `editors_abdc_a_current.csv` | 45,363 | 2 | 42,776 (94.3%) | 41,937 | 6,237 (13.7%) | 50 |
-| `editors_abdc_b_current.csv` | 42,139 | 0 | 39,777 (94.4%) | 38,724 | 3,509 (8.3%) | 21 |
-| `editors_abdc_c_current.csv` | 26,720 | 11 | 23,846 (89.2%) | 23,008 | 1,379 (5.2%) | 4 |
+| `editors_abdc_a_current.csv` | 45,363 | 2 | 42,776 (94.3%) | 41,935 | 6,237 (13.7%) | 50 |
+| `editors_abdc_b_current.csv` | 42,139 | 0 | 39,775 (94.4%) | 38,722 | 3,509 (8.3%) | 21 |
+| `editors_abdc_c_current.csv` | 26,720 | 11 | 23,845 (89.2%) | 23,005 | 1,379 (5.2%) | 4 |
+
+`ror_id` was 23,599 / 41,937 / 38,724 / 23,008. The cleared ids were place-qualified ROR names whose display string no longer carried that place. Two `K.U.Leuven` rows gained KU Leuven, `https://ror.org/05f950310`, an id already on these boards.
 
 ## Named cases
 
-Luisa Andreu and Joaquín Aldas-Manzano are Universitat de València, `https://ror.org/043nxc105`, an id already on these boards. Keren Kaplan Mintz is Tel-Hai College, country Israel. Decio Coviello is `HEC`. No new ROR was attached. Simona Sacone is University of Genoa, `https://ror.org/0107c5v14`, an id already on these boards. Taşkın Yıldız is `Adana Alparslan Türkeş Science and Technology University`. The mining department is gone. Jordi Ripollés is Universitat Jaume I, `https://ror.org/02ws1xc11`.
+Simon Washington, Advanced Mobility Analytics Group Pty Ltd, is country Australia. The masthead had `Brisbane, Australia` and the country cell was United States. The place is stripped. No ROR was invented.
 
-Martine Cools, Journal of Management Accounting Research, is KU Leuven, `https://ror.org/05f950310`. The masthead had typed `KU Leueven`. That id was already on these boards.
+Amazon spellings that named the United States (`Amazon, USA`, `Amazon, United States`, `Amazon (United States), Seattle, United States`) are `Amazon`. Country on those seats stays United States. Bare `Amazon` seats that already had Germany stay Germany. No Australia ROR was added.
 
-Soumen Ghosh, Decision Sciences, keeps the masthead `Georgia Inst of Technology`. The flagged display was the ROR name `Czech Academy of Sciences, Institute of Ethnology`. That display is now Czech Academy of Sciences, `https://ror.org/053avzc18`, an id already on these boards. The masthead was not overwritten.
+Manfred Kircher is `KADIB Kircher Advice in Bioeconomy`, country Germany. The Frankfurt postal code is gone.
 
-吉田　拓真 keeps the Kagoshima masthead. The flagged display was `Research Institute of Science and Technology, College of Science and Technology, Nihon University`. That display is now Nihon University, `https://ror.org/05jk51a88`, an id already on these boards.
+Three address-junk affiliations are blank. Theodor-W.-Adorno Platz 3 was `60323 Frankfurt am Main, Germany`. Via Garibaldi was `4 (III piano) - 16124 Genova (Italy)`. Marcel Boumans was the date string `(The Netherlands), 2008-2013`, which the previous freeze had replaced with `Thales`.
 
-A stripped wrong ROR name is not copied onto a different affiliation. Bradley Taylor stays `GITR Limited, UK`, not Thales. Philip Marcovici stays `The Offices of Philip Marcovici Limited`. Rahul Garella stays `Strides, Europe`. Bram Ramjiawan stays the St Boniface research centre. Louise Trevaskis stays `FAAA`. Pablo Cardona stays `IESE, Spain`. Andrew Ward and Alexander Lipton keep their mastheads. Suneet Trivedy’s canonical name stays `PwC`.
+Bradley Taylor is `GITR Limited`, country United Kingdom. Bram Ramjiawan is `St Boniface General Hospital Research Centre`, country Canada. Pablo Cardona is `IESE`, country Spain. Those three mastheads had been the wrong ROR name (`Thales` or `General Electric`) after `editors_institution_dept_country_20261028`. The organization string already on `canonical_name` is restored, with the place stripped. No new ROR id was attached.
 
-`Aberdeen University` stays on University of Aberdeen, `https://ror.org/016476m91`, United Kingdom. Hengeler Mueller stays as the firm name. Dunarea de Jos and Tribhuvan Sahkari stay without decorative quotes. `[C]Worthy` stays off David McCarthy.
+Licia Calvi is KU Leuven, `https://ror.org/05f950310`. The masthead had typed `K.U.Leuven`. That id was already on these boards.
+
+Soumen Ghosh, Decision Sciences, keeps the masthead `Georgia Inst of Technology`. The display stays Czech Academy of Sciences. 吉田　拓真 keeps the Kagoshima masthead. The display stays Nihon University. Andrew Ward, Alexander Lipton, Philip Marcovici, Rahul Garella, Suneet Trivedy, and Louise Trevaskis keep the mastheads and canonical names from the previous publish.
+
+`Aberdeen University` stays on University of Aberdeen, `https://ror.org/016476m91`, United Kingdom. Hengeler Mueller stays as the firm name. Dunarea de Jos and Tribhuvan Sahkari stay without decorative quotes. `[C]Worthy` stays off David McCarthy. HKUST (Guangzhou) stays a separate affiliation from The Hong Kong University of Science and Technology.
 
 The same two medium hits withheld on the FT50 file are withheld on the ABDC copy of that seat.
 
@@ -44,4 +50,4 @@ One A* row whose name is `___` stays off the person directory. The A panel’s H
 
 ## Public site
 
-The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments stay 158,624. ABDC chips stay A* 25,172 (219 journals), A 45,350 (626), B 42,124 (836), and C 26,708 (732). Countries stay 175. Institutions are 10,888 rows (8,669 with a ROR id), were 10,726 (9,266). 12,161 appointments have no institution, were 12,141. 628 country-only appointments, 3 bracket-only appointments, and 10 street, PO Box, or postal-code appointments stay off that page.
+The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments stay 158,624. ABDC chips stay A* 25,172 (219 journals), A 45,350 (626), B 42,124 (836), and C 26,708 (732). Countries stay 175. Institutions are 10,835 rows (8,663 with a ROR id), were 10,888 (8,669). 12,164 appointments have no institution, were 12,161. 628 country-only appointments, 3 bracket-only appointments, and 10 street, PO Box, or postal-code appointments stay off that page.
