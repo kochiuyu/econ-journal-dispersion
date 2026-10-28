@@ -28,12 +28,12 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
-rows in this publish are freeze ``editors_institution_problem_list_20261028``.
-That freeze supersedes ``editors_institution_junk_cleanup_20261028``.
-It blanks junk institution names, a country used as the institution name,
-and other non-institutions; strips a trailing place from the masthead
-affiliation when the country was empty; and unifies variant strings onto
-an existing ROR name. It does not invent a name, a ROR id, or a URL.
+rows in this publish are freeze ``editors_institution_residual_junk_20261028``.
+That freeze supersedes ``editors_institution_problem_list_20261028``.
+It strips a leading role or credential, blanks a title or credential used
+as an institution name, strips decorative double quotes, strips a trailing
+country from an unmatched masthead string, and clears one wrong ROR.
+It does not invent a name, a ROR id, or a URL.
 University of Goma stays off University of Maryland, and EAE Business
 School stays off ESADE. Tom P. Moliterno uses the Citadel ROR already on
 these boards. ``11KBW``, UNSW Sydney, and INSEAD stay. African Affairs
@@ -108,8 +108,8 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. These boards are freeze ``editors_institution_problem_list_20261028``,
-which supersedes ``editors_institution_junk_cleanup_20261028``.
+badge. These boards are freeze ``editors_institution_residual_junk_20261028``,
+which supersedes ``editors_institution_problem_list_20261028``.
 Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
 freeze did not replace. African Affairs is the Wayback board (40 rows).
 Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
@@ -346,7 +346,7 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_institution_problem_list_20261028 leaves no empty editor_name on these files.
+# editors_institution_residual_junk_20261028 leaves no empty editor_name on these files.
 # Nature Human Behaviour Email/Biography rows are out of the prio43 file.
 # African Affairs is 40 rows (was 86). Fourteen drop-quality chrome rows stay
 # out, and the nav rows the collector put back on ajg1 and ajg2 stay out too.
@@ -2469,7 +2469,9 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # name with a different key (67). editors_institution_junk_cleanup_20261028
     # leaves that count at 67. editors_institution_problem_list_20261028 unifies
     # variant strings onto an existing ROR name, so two of those shared names
-    # collapse and the count is 65.
+    # collapse and the count is 65. editors_institution_residual_junk_20261028
+    # strips decorative quotes and blanks title-as-name rows. Shared display
+    # names stay 65.
     if duplicate_names != 65:
         raise SystemExit(
             f"Institutions that share a display name: {duplicate_names}, expected 65. "
