@@ -28,9 +28,9 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. Freeze
-``editors_name_swap_abdc_ajg_20261028`` supersedes
-``editors_name_swap_20261028`` on the FT50, ABDC A*/A/B/C, and AJG-gap panels
-published here. ``editor_name_raw`` keeps the pre-clean spelling when
+``editors_blank_rescrape_20261028`` supersedes the blank-name leftovers of
+``editors_name_swap_abdc_ajg_20261028`` on the FT50, ABDC A*/A/B/C, and
+AJG-gap panels published here. ``editor_name_raw`` keeps the pre-clean spelling when
 that cell changed, and is blank when it did not. The directory displays
 ``editor_name``. It does not invent a name, and it does not display
 ``editor_name_raw``. A row whose ``editor_name`` is empty is not a person:
@@ -98,8 +98,8 @@ is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
 badge. There is no ``faculty_profile_url`` on these files. Name and ROR
-cells on these boards are freeze ``editors_name_swap_abdc_ajg_20261028``,
-which supersedes ``editors_name_swap_20261028``. ``ror_id`` is filled only
+cells on these boards are freeze ``editors_blank_rescrape_20261028``,
+which supersedes ``editors_name_swap_abdc_ajg_20261028``. ``ror_id`` is filled only
 where the collector recorded high or medium confidence. ``raw_affiliation`` is the masthead string. The
 build does not overwrite it and does not invent a ROR id. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
@@ -330,30 +330,30 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_name_swap_abdc_ajg_20261028 parks residual empty names. prio43 also
-# still drops the eight Nature Human Behaviour rows whose name is Email.
+# editors_blank_rescrape_20261028 leaves no empty editor_name on these files.
+# prio43 still drops the eight Nature Human Behaviour rows whose name is Email.
 # Row counts are after the fourteen drop-quality chrome rows stay out.
 AJG_GAP_FILES = (
     (
         "prio43",
         AJG_GAP_DIR / "editors_abs_ajg_gap_prio43_current.csv",
         frozenset({"4*", "4", "3"}),
-        3445,
-        24,
+        3405,
+        8,
     ),
     (
         "ajg2",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
         frozenset({"2"}),
-        4984,
-        1,
+        4983,
+        0,
     ),
     (
         "ajg1",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
-        11226,
-        1,
+        11218,
+        0,
     ),
 )
 # Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
@@ -1682,7 +1682,7 @@ def assert_cleaned_display_names(payload: dict) -> None:
 
 
 def assert_name_swap(payload: dict) -> None:
-    """Freeze editors_name_swap_abdc_ajg_20261028: no institution string is a person name."""
+    """Freeze editors_blank_rescrape_20261028: no institution string is a person name."""
     journals = payload["journals"]
     names = {row[0] for row in payload["rows"]}
     for banned in ("CEMFI", "Sciences Po"):
