@@ -27,11 +27,16 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 (the ABDC panels were seeded from FT50 where the journals overlap). That is
 one seat, not two.
 
-The key is the cleaned ``editor_name`` from freeze
-``editors_display_names_20261025``. ``editor_name_raw`` keeps the pre-clean
-spelling when that cell changed, and is blank when it did not. The directory
-displays ``editor_name``. It does not invent a name, and it does not display
-``editor_name_raw``.
+The key is the cleaned ``editor_name``. Freeze
+``editors_name_swap_20261028`` supersedes the name fields of
+``editors_display_names_20261025`` on the FT50, ABDC A*, ABDC A, and AJG-gap
+panels published here. ``editor_name_raw`` keeps the pre-clean spelling when
+that cell changed, and is blank when it did not. The directory displays
+``editor_name``. It does not invent a name, and it does not display
+``editor_name_raw``. A row whose ``editor_name`` is empty is not a person:
+those parked org-as-name blanks stay out of the directory. When that row has
+a ``ror_id``, Institutions still counts the appointment and does not count an
+editor.
 
 A faculty URL on the FT50 file can expand a bare initial when the ABDC copy
 of that same masthead line still has the pre-clean name. Those ABDC rows are
@@ -92,13 +97,12 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. There is no ``faculty_profile_url`` on these files. ROR columns
-are freeze ``editors_abs_ajg_gap_ror_20261026_bracketfix``. ``ror_id`` is
-filled only where the collector recorded high or medium confidence.
-``raw_affiliation`` is the masthead string. This freeze blanked bracket-only
-and address-only junk and cleared two bad address-to-ROR matches; the build
-does not overwrite it. ``editor_name`` on the other rows is still freeze
-``editors_display_names_20261025``. With those boards
+badge. There is no ``faculty_profile_url`` on these files. Name and ROR
+cells on these boards are freeze ``editors_name_swap_20261028``, which
+supersedes ``editors_abs_ajg_gap_ror_20261026_bracketfix`` for the fields
+that freeze changed. ``ror_id`` is filled only where the collector recorded
+high or medium confidence. ``raw_affiliation`` is the masthead string. The
+build does not overwrite it and does not invent a ROR id. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
 still have no board.
 
@@ -135,7 +139,8 @@ written to the site. A profile URL that contains an email address is
 dropped, so a person slug like ``name@university`` is not published.
 
 Emails and phone numbers are removed from displayed text. A row whose name
-is only a phone number or an email address is dropped. ORCID, OpenAlex,
+is only a phone number or an email address is dropped. An empty
+``editor_name`` is dropped from the person directory. ORCID, OpenAlex,
 RePEc, coordinates, and photos are not written to the site. The directory
 does not invent those ids as person links.
 
@@ -173,6 +178,9 @@ when the collapsed row has one, otherwise the normalized affiliation
 (whitespace collapsed, Unicode-casefold). The display name is the most common
 affiliation string for that key. Country and continent are the most common
 non-empty values. Appointments with no ROR id and no affiliation are omitted.
+A parked row with an empty ``editor_name`` and a filled ``ror_id`` is an
+appointment on that institution and is not an editor. An empty name with no
+``ror_id`` stays out of both pages.
 An unmatched affiliation is omitted when it is only a country or territory
 (trim, unwrap ``()`` / ``[]``, then compare with the ROR country labels on
 these boards and a short alias list), when the whole string is wrapped in
@@ -323,27 +331,29 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
+# editors_name_swap_20261028 blanks parked org-as-name rows. prio43 also still
+# drops the eight Nature Human Behaviour rows whose name is Email.
 AJG_GAP_FILES = (
     (
         "prio43",
         AJG_GAP_DIR / "editors_abs_ajg_gap_prio43_current.csv",
         frozenset({"4*", "4", "3"}),
         3490,
-        8,
+        30,
     ),
     (
         "ajg2",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
         frozenset({"2"}),
         5030,
-        0,
+        41,
     ),
     (
         "ajg1",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
         11276,
-        0,
+        24,
     ),
 )
 # Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
@@ -1059,8 +1069,14 @@ def row_to_rec(
     ajg_grades: dict[str, str],
     gap_rating: str | None = None,
 ) -> Rec | None:
-    name = usable_name(row.get("editor_name") or "")
-    if not name:
+    raw_editor = row.get("editor_name") or ""
+    blank_editor = not raw_editor.strip()
+    name = usable_name(raw_editor)
+    ror_id = (row.get("ror_id") or "").strip()
+    # Empty editor_name is a parked org-as-name blank, not a person. Keep it
+    # for Institutions only when the collector recorded a ror_id. "Email" and
+    # other non-names stay dropped.
+    if not name and not (blank_editor and ror_id):
         return None
     journal = journal_name(row, catalogs)
     if not journal:
@@ -1098,7 +1114,7 @@ def row_to_rec(
             rating = ajg_grades.get(journal_id)
             if rating:
                 universes.add(AJG_RATING_TO_ID[rating])
-    name_key = norm_name(name)
+    name_key = norm_name(name) if name else ""
     return Rec(
         name=name,
         name_key=name_key,
@@ -1112,11 +1128,11 @@ def row_to_rec(
         country=scrub(row.get("ror_country") or ""),
         continent=scrub(row.get("continent") or ""),
         url=clean_url(row.get("source_url") or ""),
-        profile_url=profile_url(row),
-        ror_id=(row.get("ror_id") or "").strip(),
+        profile_url=profile_url(row) if name else "",
+        ror_id=ror_id,
         confidence=(row.get("ror_confidence") or "").strip(),
         journal_id=journal_id,
-        alias_key=raw_name_key(row.get("editor_name_raw") or "", name_key),
+        alias_key=raw_name_key(row.get("editor_name_raw") or "", name_key) if name else "",
     )
 
 
@@ -1134,8 +1150,9 @@ def read_release(
     ajg_titles: dict[str, str] | None = None,
     gap_journals: dict[str, tuple[str, str]] | None = None,
     gap_panel_id: str = "",
-) -> tuple[list[Rec], int, int]:
+) -> tuple[list[Rec], list[Rec], int, int]:
     records: list[Rec] = []
+    institution_only: list[Rec] = []
     dropped = 0
     raw = 0
     with path.open(newline="", encoding="utf-8-sig") as handle:
@@ -1176,11 +1193,14 @@ def read_release(
                 ajg_grades,
                 gap_rating=gap_rating,
             )
-            if rec is None:
+            if rec is None or not rec.name:
+                # Empty names with a ror_id are institution appointments, not people.
                 dropped += 1
+                if rec is not None:
+                    institution_only.append(rec)
                 continue
             records.append(rec)
-    return records, dropped, raw
+    return records, institution_only, dropped, raw
 
 
 def cluster_rows(rows: list[Rec]) -> tuple[dict[tuple[str, str], Rec], list[Rec]]:
@@ -1658,6 +1678,41 @@ def assert_cleaned_display_names(payload: dict) -> None:
     url = profiles[seat[8]]
     if "sustainablesystems.gatech.edu/people/suvrat-dhanorkar" not in url:
         raise SystemExit(f"Suvrat Dhanorkar faculty profile changed: {url[:180]}")
+    assert_name_swap(payload)
+
+
+def assert_name_swap(payload: dict) -> None:
+    """Freeze editors_name_swap_20261028: no institution string is a person name."""
+    journals = payload["journals"]
+    names = {row[0] for row in payload["rows"]}
+    for banned in ("CEMFI", "Sciences Po"):
+        if banned in names:
+            raise SystemExit(f"{banned} is still a directory name")
+    if any(not (row[0] or "").strip() for row in payload["rows"]):
+        raise SystemExit("Directory row has an empty editor name")
+    mitman = [
+        row
+        for row in payload["rows"]
+        if row[0] == "Kurt Mitman" and journals[row[2]] == "Review of Economic Studies"
+    ]
+    if len(mitman) != 1:
+        raise SystemExit(f"Expected one Kurt Mitman row on Review of Economic Studies, found {len(mitman)}")
+    if "Centro de Estudios Monetarios y Financieros" not in mitman[0][4]:
+        raise SystemExit(f"Kurt Mitman affiliation is {mitman[0][4]!r}")
+    schoar = [
+        row
+        for row in payload["rows"]
+        if row[0] == "Antoinette Schoar" and journals[row[2]] == "Journal of Finance"
+    ]
+    if len(schoar) != 1:
+        raise SystemExit(f"Expected one Antoinette Schoar row on Journal of Finance, found {len(schoar)}")
+    mashed = [
+        row[0]
+        for row in payload["rows"]
+        if journals[row[2]] == "Journal of Finance" and "Massachusetts Institute of Technology" in row[0]
+    ]
+    if mashed:
+        raise SystemExit(f"Journal of Finance still has a mashed name: {mashed[:3]}")
 
 
 def assert_subset_lists(payload: dict, membership: Membership) -> None:
@@ -1951,16 +2006,24 @@ def institution_key(rec: Rec, places: set[str]) -> tuple[str, str] | None:
     return None
 
 
-def build_institution_payload(records: list[Rec], directory: dict) -> dict:
+def build_institution_payload(
+    records: list[Rec],
+    directory: dict,
+    institution_only: list[Rec] | None = None,
+) -> dict:
     """One row per ROR id, else per normalized affiliation.
 
     Unmatched affiliations that are only a country, a bracketed fragment, or
     a street / PO Box / postal code are omitted. A filled ``ror_id`` stays.
+    ``institution_only`` is parked rows with an empty ``editor_name`` and a
+    ``ror_id``. They add appointments and do not add editors.
     """
-    places = country_places(records)
+    institution_only = list(institution_only or [])
+    combined = list(records) + institution_only
+    places = country_places(combined)
     buckets: dict[tuple[str, str], dict] = {}
     omitted: Counter[str] = Counter()
-    for rec in records:
+    for rec in combined:
         key = institution_key(rec, places)
         if key is None:
             if not rec.ror_id:
@@ -1976,6 +2039,7 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "countries": Counter(),
                 "continents": Counter(),
                 "editors": set(),
+                "named": 0,
                 "journals": set(),
                 "appointments": 0,
                 "mask": 0,
@@ -1988,7 +2052,9 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
             bucket["countries"][rec.country] += 1
         if rec.continent:
             bucket["continents"][rec.continent] += 1
-        bucket["editors"].add(rec.name_key)
+        if rec.name_key:
+            bucket["editors"].add(rec.name_key)
+            bucket["named"] += 1
         bucket["journals"].add(rec.journal)
         bucket["appointments"] += 1
         mask = rec.mask()
@@ -2012,6 +2078,7 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "country": mode_text(bucket["countries"]),
                 "continent": mode_text(bucket["continents"]),
                 "editors": len(bucket["editors"]),
+                "named": bucket["named"],
                 "appointments": bucket["appointments"],
                 "journals": len(bucket["journals"]),
                 "mask": bucket["mask"],
@@ -2029,6 +2096,15 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
     ]
     if leaked:
         raise SystemExit(f"Unmatched junk still grouped as an institution: {leaked[:8]}")
+
+    parked_only = 0
+    for item in prepared:
+        if item["editors"] < 1 and item["named"] > 0:
+            raise SystemExit(f"Institution {item['name']!r} lost its editors")
+        if item["editors"] < 1:
+            parked_only += 1
+    if parked_only:
+        print(f"Institutions whose appointments are only parked blank-name rows: {parked_only}")
 
     rows: list[list] = []
     editor_keys: set[str] = set()
@@ -2090,6 +2166,12 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
         }
         for uid in UNIVERSE_ORDER
     }
+    institution_only_by_universe = {uid: 0 for uid in BITS}
+    for rec in institution_only:
+        mask = rec.mask()
+        for universe, bit in BITS.items():
+            if mask & bit:
+                institution_only_by_universe[universe] += 1
     payload = shared_meta(directory, "institutions.html")
     payload.update(
         {
@@ -2108,7 +2190,7 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
             "counts": {
                 "institutions": len(rows),
                 "appointments": emitted,
-                "unmatchedAppointments": len(records) - emitted,
+                "unmatchedAppointments": len(combined) - emitted,
                 "countryOnlyAppointments": omitted["country"],
                 "bracketAppointments": omitted["bracket"],
                 "addressAppointments": omitted["address"],
@@ -2117,8 +2199,16 @@ def build_institution_payload(records: list[Rec], directory: dict) -> dict:
                 "withRor": with_ror,
                 "hostInstitutions": host_institutions,
                 "hostWithRor": host_with_ror,
+                "institutionOnly": len(institution_only),
+                "institutionOnlyByUniverse": {
+                    uid: institution_only_by_universe[uid] for uid in UNIVERSE_ORDER
+                },
                 "byUniverse": by_universe,
             },
+            # Popped before the institutions file is written. Not a public field.
+            "_parkedAffiliations": sorted(
+                {rec.affiliation for rec in institution_only if rec.affiliation}
+            ),
         }
     )
     return payload
@@ -2298,8 +2388,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
                 f"directory {dcounts['byUniverse'][uid]['journals']}"
             )
 
-    if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"]:
-        raise SystemExit("Institution appointments plus unmatched rows do not match the directory")
+    institution_only_n = icounts.get("institutionOnly") or 0
+    if icounts["appointments"] + icounts["unmatchedAppointments"] != dcounts["appointments"] + institution_only_n:
+        raise SystemExit(
+            "Institution appointments plus unmatched rows do not match the directory "
+            "plus parked blank-name rows"
+        )
     country_only = icounts.get("countryOnlyAppointments") or 0
     bracket_only = icounts.get("bracketAppointments") or 0
     address_only_n = icounts.get("addressAppointments") or 0
@@ -2320,17 +2414,20 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
             f"Institution editors {icounts['editors']} are far from directory {dcounts['editors']}"
         )
     directory_affs = {row[4] for row in directory["rows"] if row[4]}
+    parked_affs = set(institutions.pop("_parkedAffiliations", []))
     seen_names: set[str] = set()
     duplicate_names = 0
     for row in institutions["rows"]:
         name, country_i, continent_i, editors, appointments, journals, mask = row
-        if name not in directory_affs:
+        if name not in directory_affs and name not in parked_affs:
             raise SystemExit(f"Institution {name!r} is not a directory affiliation")
         if name in seen_names:
             duplicate_names += 1
         seen_names.add(name)
-        if appointments < 1 or editors < 1 or journals < 1 or mask < 1:
+        if appointments < 1 or journals < 1 or mask < 1:
             raise SystemExit(f"Empty institution aggregate: {name!r}")
+        if editors < 1 and name not in parked_affs:
+            raise SystemExit(f"Institution {name!r} has appointments and no editors")
         country = institutions["countries"][country_i]
         continent = institutions["continents"][continent_i]
         for label, text in (("institution", name), ("country", country), ("continent", continent)):
@@ -2368,9 +2465,10 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         raise SystemExit(
             f"Expected one Dartmouth College ROR row in the United States, found {len(dartmouth)} name rows"
         )
+    parked_by_universe = icounts.get("institutionOnlyByUniverse") or {}
     for uid in ("ft50", "top5", "utd24", *AJG_IDS, "a_star", "a", "b", "c"):
         got = icounts["byUniverse"][uid]["appointments"]
-        cap = dcounts["byUniverse"][uid]["appointments"]
+        cap = dcounts["byUniverse"][uid]["appointments"] + (parked_by_universe.get(uid) or 0)
         if got <= 0 or got > cap:
             raise SystemExit(f"Institution {uid} appointments {got} are outside 1..{cap}")
     print(
@@ -2808,7 +2906,8 @@ def main() -> int:
     dropped = 0
 
     seen_membership_ids: set[str] = set()
-    ft50_records, ft50_dropped, _ft50_raw = read_release(
+    institution_only: list[Rec] = []
+    ft50_records, ft50_institution_only, ft50_dropped, _ft50_raw = read_release(
         ft50_path,
         "ft50",
         catalogs,
@@ -2819,6 +2918,7 @@ def main() -> int:
         journal_catalog,
         ajg_grades,
     )
+    institution_only.extend(ft50_institution_only)
     dropped += ft50_dropped
     sources.append(ft50_path.relative_to(ROOT).as_posix())
     print(f"FT50  {ft50_path.name}: {len(ft50_records):,} kept, {ft50_dropped:,} dropped")
@@ -2826,7 +2926,7 @@ def main() -> int:
     for origin, path in ABDC_FILES:
         if not path.exists():
             raise SystemExit(f"Missing ABDC release: {path.relative_to(ROOT)}")
-        records, n_dropped, _raw = read_release(
+        records, parked, n_dropped, _raw = read_release(
             path,
             origin,
             catalogs,
@@ -2837,6 +2937,7 @@ def main() -> int:
             journal_catalog,
             ajg_grades,
         )
+        institution_only.extend(parked)
         dropped += n_dropped
         sources.append(path.relative_to(ROOT).as_posix())
         print(f"ABDC {origin:6} {path.name}: {len(records):,} kept, {n_dropped:,} dropped")
@@ -2852,7 +2953,7 @@ def main() -> int:
     for panel_id, path, allowed, expected_rows, expected_dropped in AJG_GAP_FILES:
         if not path.exists():
             raise SystemExit(f"Missing AJG-gap release: {path.relative_to(ROOT)}")
-        records, n_dropped, raw = read_release(
+        records, parked, n_dropped, raw = read_release(
             path,
             "ajg_gap",
             catalogs,
@@ -2879,13 +2980,15 @@ def main() -> int:
             f"AJG  {panel_id:6} {path.name}: {len(records):,} kept, "
             f"{n_dropped:,} dropped, {raw:,} rows"
         )
-        for rec in records:
+        for rec in records + parked:
             if rec.journal_key in host_journal_keys:
                 raise SystemExit(
                     f"AJG-gap journal {rec.journal!r} is already on an FT50 or ABDC board"
                 )
             if rec.origin != "ajg_gap" or rec.mask() & HOST_BOARD_MASK:
                 raise SystemExit(f"AJG-gap row picked up a host board: {rec.name} / {rec.journal}")
+        institution_only.extend(parked)
+        for rec in records:
             grouped[(rec.name_key, rec.journal_key, rec.role_key)].append(rec)
 
     for rec in ft50_records:
@@ -2942,7 +3045,11 @@ def main() -> int:
     write_directory_assets(payload)
 
     journal_payload = build_journal_payload(collapsed, journal_catalog, payload)
-    institution_payload = build_institution_payload(collapsed, payload)
+    print(
+        f"Parked blank editor_name rows with a ROR id, counted on Institutions only: "
+        f"{len(institution_only):,}"
+    )
+    institution_payload = build_institution_payload(collapsed, payload, institution_only)
     assert_aggregates(payload, journal_payload, institution_payload)
     assert_gap_boards(journal_payload, gap_journals)
     journal_text = dump_js(
