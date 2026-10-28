@@ -28,10 +28,10 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
-rows in this publish are freeze ``editors_institution_residual_post35_20261028``.
-That freeze supersedes ``editors_institution_dept_country_20261028``.
-It strips a residual place inside an institution display name, corrects a
-country mismatch, blanks address junk, and merges Amazon-like variants.
+rows in this publish are freeze ``editors_institution_country_place_20261029``.
+That freeze supersedes ``editors_institution_residual_post35_20261028``.
+It strips a place suffix on an institution display name and corrects a
+country mismatch when the affiliation text names that country.
 It rematches only to a ROR id already on these boards.
 It does not invent a name, a ROR id, or a URL.
 University of Goma stays off University of Maryland, and EAE Business
@@ -108,8 +108,8 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. These boards are freeze ``editors_institution_residual_post35_20261028``,
-which supersedes ``editors_institution_dept_country_20261028``.
+badge. These boards are freeze ``editors_institution_country_place_20261029``,
+which supersedes ``editors_institution_residual_post35_20261028``.
 Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
 freeze did not replace. African Affairs is the Wayback board (40 rows).
 Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
@@ -346,8 +346,8 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_institution_residual_post35_20261028 strips a residual place
-# inside the institution name and corrects a country mismatch. prio43 still
+# editors_institution_country_place_20261029 strips a place suffix and
+# corrects a country mismatch. prio43 still
 # drops 3 empty names and ajg1 drops 19. ajg2 still drops 0. Nature Human
 # Behaviour Email/Biography rows are out of the prio43 file. African Affairs
 # is 40 rows (was 86). Fourteen drop-quality chrome rows stay out, and the
@@ -2489,9 +2489,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_institution_residual_post35_20261028 strips a residual place,
     # fixes a country mismatch, blanks address junk, and merges Amazon-like
     # variants onto the organization string. Shared display names stay 58.
-    if duplicate_names != 58:
+    # editors_institution_country_place_20261029 strips a place suffix.
+    # Applied Research Associates loses the Albuquerque place and now shares
+    # that display name with another key. Shared display names are 59.
+    if duplicate_names != 59:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 58. "
+            f"Institutions that share a display name: {duplicate_names}, expected 59. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}
