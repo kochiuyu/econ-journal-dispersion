@@ -103,9 +103,9 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. Faculty profile URLs on these boards are freeze
-``editors_ajg_gap_faculty_remiss_20261028``, which supersedes the held
-join/cache pass ``editors_ajg_gap_faculty_url_20261028``. Names are still
+badge. Faculty profile URLs and host-map affiliations on these boards are
+freeze ``editors_ajg_gap_url_aff_20261028``, which supersedes
+``editors_ajg_gap_faculty_remiss_20261028``. Names are still
 freeze ``editors_blank_rescrape_20261028``, except Sociology of Health and
 Illness, which is ``editors_blank_rescrape_browser_20261028``. That browser
 freeze supersedes the earlier Taylor & Francis-only browser pass. Fourteen
