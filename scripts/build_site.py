@@ -27,15 +27,15 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 (the ABDC panels were seeded from FT50 where the journals overlap). That is
 one seat, not two.
 
-The key is the cleaned ``editor_name``. FT50 rows in this publish are freeze
-``editors_ft50_url_aff_20261028``. ABDC A*, A, B, and C rows are freeze
-``editors_nonft50_url_aff_20261028``. Each freeze fills university and ROR
-where a faculty profile URL already identified the institution. The ABDC
-freeze also applies unused high/medium faculty-cache URLs keyed by name and
-ROR. It does not replace the FT50 or AJG-gap panels. Freeze
-``editors_blank_rescrape_20261028`` still supersedes the blank-name leftovers
-of ``editors_name_swap_abdc_ajg_20261028`` on the AJG-gap panels published
-here. ``editor_name_raw``
+The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
+rows in this publish are freeze ``editors_institution_nonsense_20261028``.
+That freeze clears citation and navigation names, univish ROR mismatches,
+email and URL affiliations, and country-only affiliations. It replaces the
+African Affairs board from the 2024-04-27 Wayback snapshot. It does not
+invent a name, a ROR id, or a URL. Faculty URLs filled by
+``editors_ft50_url_aff_20261028``, ``editors_nonft50_url_aff_20261028``, and
+``editors_ajg_gap_url_aff_20261028`` stay on rows this freeze did not replace.
+``editor_name_raw``
 keeps the pre-clean spelling when that cell changed, and is blank when it did
 not. The directory displays
 ``editor_name``. It does not invent a name, and it does not display
@@ -103,19 +103,16 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. Faculty profile URLs and host-map affiliations on these boards are
-freeze ``editors_ajg_gap_url_aff_20261028``, which supersedes
-``editors_ajg_gap_faculty_remiss_20261028``. Names are still
-freeze ``editors_blank_rescrape_20261028``, except Sociology of Health and
-Illness, which is ``editors_blank_rescrape_browser_20261028``. That browser
-freeze supersedes the earlier Taylor & Francis-only browser pass. Fourteen
-drop-quality chrome rows stay out of the published files. ``ror_id`` is
-filled only where the collector recorded high or medium confidence.
-``raw_affiliation`` is the masthead string, including a host-map fill from
-this freeze when the collector recorded one. The build does not overwrite it
-and does not invent a ROR id or a faculty URL. With those boards
-the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
-still have no board.
+badge. These boards are freeze ``editors_institution_nonsense_20261028``.
+Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
+freeze did not replace. African Affairs is the Wayback board (40 rows).
+Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
+Fourteen drop-quality chrome rows stay out, as do the navigation rows this
+freeze put back on ajg1 and ajg2. ``ror_id`` on the gap files is high or
+medium confidence only. ``raw_affiliation`` is the masthead string. The
+build does not overwrite it and does not invent a ROR id or a faculty URL.
+With those boards the directory shows a chip on 1,796 journals. 27 titles
+in the 2024 guide still have no board.
 
 Each tagged journal gets one grade, labeled ``AJG 4*``, ``AJG 4``, ``AJG 3``,
 ``AJG 2``, or ``AJG 1`` on both the list chip and the row badge. The label
@@ -342,30 +339,30 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_blank_rescrape_20261028 leaves no empty editor_name on these files.
-# prio43 still drops the eight Nature Human Behaviour rows whose name is Email.
-# prio43 row count is after editors_blank_rescrape_browser_20261028 replaced
-# Sociology of Health and Illness. The fourteen drop-quality chrome rows stay out.
+# editors_institution_nonsense_20261028 leaves no empty editor_name on these files.
+# Nature Human Behaviour Email/Biography rows are out of the prio43 file.
+# African Affairs is 40 rows (was 86). Fourteen drop-quality chrome rows stay
+# out, and the nav rows this freeze put back on ajg1 and ajg2 stay out too.
 AJG_GAP_FILES = (
     (
         "prio43",
         AJG_GAP_DIR / "editors_abs_ajg_gap_prio43_current.csv",
         frozenset({"4*", "4", "3"}),
-        3166,
-        8,
+        3104,
+        0,
     ),
     (
         "ajg2",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
         frozenset({"2"}),
-        4983,
+        4982,
         0,
     ),
     (
         "ajg1",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
-        11218,
+        11217,
         0,
     ),
 )
@@ -1712,6 +1709,8 @@ def assert_name_swap(payload: dict) -> None:
         raise SystemExit(f"Expected one Kurt Mitman row on Review of Economic Studies, found {len(mitman)}")
     if "Centro de Estudios Monetarios y Financieros" not in mitman[0][4]:
         raise SystemExit(f"Kurt Mitman affiliation is {mitman[0][4]!r}")
+    if "Kevin Dunn" in names:
+        raise SystemExit("Kevin Dunn is still a directory name")
     schoar = [
         row
         for row in payload["rows"]
@@ -2250,8 +2249,13 @@ def assert_gap_boards(journals: dict, gap_journals: dict[str, tuple[str, str]]) 
             raise SystemExit(f"{panel_id} journal ratings {got} != {expected}")
     urls = journals["urls"]
     affairs = by_name.get("African Affairs")
-    if affairs is None or urls[affairs[6]]:
-        raise SystemExit("African Affairs should stay in the directory with no public board URL")
+    # Live OUP board is Cloudflare-blocked. The freeze still records that URL;
+    # the rows themselves come from the 2024-04-27 Wayback snapshot.
+    if affairs is None or urls[affairs[6]] != "https://academic.oup.com/afraf/pages/Editorial_Board":
+        raise SystemExit(
+            "African Affairs should link to the OUP editorial board, "
+            f"found {None if affairs is None else urls[affairs[6]]!r}"
+        )
     politics = by_name.get("Journal of Politics")
     if politics is None or not urls[politics[6]].startswith("https://"):
         raise SystemExit("Journal of Politics is missing its public board URL")
@@ -2467,6 +2471,8 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     ]
     if junk_rows:
         raise SystemExit(f"Junk institution rows: {junk_rows[:8]}")
+    if not any(row[0] == "11KBW" for row in institutions["rows"]):
+        raise SystemExit("11KBW is missing from Institutions")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
     # The United States ROR row stays one row. A gap affiliation with the same
     # words and no ror_id can still be a second row.
