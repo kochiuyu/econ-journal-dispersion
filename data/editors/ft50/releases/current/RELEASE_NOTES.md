@@ -10,4 +10,4 @@ No person name was invented. Emails, phone numbers, and photos are not written t
 
 ## Public site
 
-Directory appointments are 159,093 (were 159,104 on `editors_name_swap_abdc_ajg_20261028`). FT50 seats stay 10,045 across 50 journals. Top 5 appointments stay 363. Faculty profile links on the directory are 21,652.
+Directory appointments are 158,716 (were 159,093 before `editors_blank_rescrape_browser_20261028`). FT50 seats stay 10,045 across 50 journals. Top 5 appointments stay 363. Faculty profile links on the directory are 21,652.

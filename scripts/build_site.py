@@ -99,7 +99,9 @@ file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
 badge. There is no ``faculty_profile_url`` on these files. Name and ROR
 cells on these boards are freeze ``editors_blank_rescrape_20261028``,
-which supersedes ``editors_name_swap_abdc_ajg_20261028``. ``ror_id`` is filled only
+except Sociology of Health and Illness, which is
+``editors_blank_rescrape_browser_20261028``. That browser freeze supersedes
+the earlier Taylor & Francis-only browser pass. ``ror_id`` is filled only
 where the collector recorded high or medium confidence. ``raw_affiliation`` is the masthead string. The
 build does not overwrite it and does not invent a ROR id. With those boards
 the directory shows a chip on 1,796 journals. 27 titles in the 2024 guide
@@ -332,13 +334,14 @@ AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
 # editors_blank_rescrape_20261028 leaves no empty editor_name on these files.
 # prio43 still drops the eight Nature Human Behaviour rows whose name is Email.
-# Row counts are after the fourteen drop-quality chrome rows stay out.
+# prio43 row count is after editors_blank_rescrape_browser_20261028 replaced
+# Sociology of Health and Illness. The fourteen drop-quality chrome rows stay out.
 AJG_GAP_FILES = (
     (
         "prio43",
         AJG_GAP_DIR / "editors_abs_ajg_gap_prio43_current.csv",
         frozenset({"4*", "4", "3"}),
-        3405,
+        3166,
         8,
     ),
     (
@@ -2416,6 +2419,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     directory_affs = {row[4] for row in directory["rows"] if row[4]}
     parked_affs = set(institutions.pop("_parkedAffiliations", []))
     seen_names: set[str] = set()
+    duplicate_name_list: list[str] = []
     duplicate_names = 0
     for row in institutions["rows"]:
         name, country_i, continent_i, editors, appointments, journals, mask = row
@@ -2423,6 +2427,7 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
             raise SystemExit(f"Institution {name!r} is not a directory affiliation")
         if name in seen_names:
             duplicate_names += 1
+            duplicate_name_list.append(name)
         seen_names.add(name)
         if appointments < 1 or journals < 1 or mask < 1:
             raise SystemExit(f"Empty institution aggregate: {name!r}")
@@ -2432,13 +2437,14 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
         continent = institutions["continents"][continent_i]
         for label, text in (("institution", name), ("country", country), ("continent", continent)):
             assert_no_contacts(text, label)
-    # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 (gap rows
-    # had no ror_id, so a masthead string sat beside the same ROR name) to 64
-    # after editors_abs_ajg_gap_ror_20261025. Later freezes drop unmatched
-    # country, bracket, and address clusters. The remainder are still unmatched
-    # affiliation strings, or two ROR ids that share a display name.
-    if duplicate_names != 64:
-        raise SystemExit(f"Institutions that share a display name: {duplicate_names}, expected 64")
+    # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 to 64
+    # after the ROR fill. editors_blank_rescrape_browser_20261028 adds a third
+    # Ministry of Health key, so one more row shares that display name.
+    if duplicate_names != 65:
+        raise SystemExit(
+            f"Institutions that share a display name: {duplicate_names}, expected 65. "
+            f"Shared: {duplicate_name_list}"
+        )
     places = {fold_match(name) for name in institutions["countries"] if name}
     places.update(fold_match(alias) for alias in COUNTRY_ALIASES)
     # Address-shaped ROR names such as "Jane Street (United States)" stay.

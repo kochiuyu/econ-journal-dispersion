@@ -1,21 +1,19 @@
-# editors_blank_rescrape_20261028
+# editors_blank_rescrape_browser_20261028
 
-Blank `editor_name` rows on the ABDC boards, frozen 2026-10-28 Asia/Hong_Kong. This supersedes the parked blanks in `editors_name_swap_abdc_ajg_20261028`. FT50 notes are in [`../../../ft50/releases/current/RELEASE_NOTES.md`](../../../ft50/releases/current/RELEASE_NOTES.md). AJG-gap notes are in [`../../../abs_ajg_gap/releases/current/RELEASE_NOTES.md`](../../../abs_ajg_gap/releases/current/RELEASE_NOTES.md).
+Browser restore for Taylor & Francis, World Scientific, and Wiley boards, frozen 2026-10-28 10:17 Asia/Hong_Kong. This supersedes the Taylor & Francis-only browser pass and replaces the boards that `editors_blank_rescrape_20261028` had left for a later scrape. ABDC A and B are unchanged from that earlier freeze.
 
-`editor_name` is the name the directory shows. Empty `editor_name` is 0 on all four files. The standing rule still drops an empty name from the person directory. The build does not invent a name or a ROR id. A bare country is not an institution.
+`editor_name` is the name the directory shows. Empty `editor_name` is 0. The build does not invent a name or a ROR id. A bare country is not an institution. Junk and non-person rows from the scrapes were dropped.
 
 ## Files
 
-| File | Rows | Empty `editor_name` | `ror_id` filled | `faculty_profile_url` |
-|---|---:|---:|---:|---:|
-| `editors_abdc_a_star_current.csv` | 25,182 | 0 | 23,834 | 8,467 |
-| `editors_abdc_a_current.csv` | 45,363 | 0 | 43,343 | 5,202 |
-| `editors_abdc_b_current.csv` | 42,139 | 0 | 39,993 | 3,123 |
-| `editors_abdc_c_current.csv` | 26,858 | 0 | 24,106 | 1,228 |
+| File | Rows | What changed |
+|---|---:|---|
+| `editors_abdc_a_star_current.csv` | 25,178 | Business History 86→85. Regional Studies 63→60. `ror_id` on 23,822 rows. `faculty_profile_url` on 8,467. |
+| `editors_abdc_a_current.csv` | 45,363 | Unchanged. Empty `editor_name` is 0. |
+| `editors_abdc_b_current.csv` | 42,139 | Unchanged. Empty `editor_name` is 0. |
+| `editors_abdc_c_current.csv` | 26,720 | Climate Policy 58→56. Journal of Arts Management Law and Society 63→37. International Journal of Healthcare Management 30→35. Journal of Biopharmaceutical Statistics 96→87. International Journal of Financial Engineering 174→93. Journal of Financial Management, Markets and Institutions 46→21. `ror_id` on 24,213 rows. `faculty_profile_url` on 1,228. |
 
-Restored from cached or live HTTP, replacing the old board: Negotiation Journal 52, Labour 20, International Journal of Urban and Regional Research 78, Global Business and Organizational Excellence 33, Higher Education Quarterly 46, South African Journal of Economic and Management Sciences 27. Business and Society Review kept its named rows and dropped the empty one (79 rows).
-
-Residual Taylor & Francis and World Scientific orphans with no recoverable person were dropped, not given a name: Business History and Regional Studies on A*, and on C the empty rows at Climate Policy, Journal of Arts Management Law and Society, International Journal of Healthcare Management, Journal of Biopharmaceutical Statistics, International Journal of Financial Engineering, and Journal of Financial Management, Markets and Institutions. Those titles are on a needs-browser queue outside this repository.
+Tong Fu is one row, role `Managing Editor; Associate Editors`, with the longer Guizhou affiliation. Newcastle upon Tyne rows match Newcastle University (United Kingdom). Tim Huijts keeps the ROA affiliation; the false ELTE Hungary ROR was cleared and no Maastricht id was invented.
 
 ## Public site
 
