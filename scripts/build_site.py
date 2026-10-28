@@ -28,11 +28,12 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
-rows in this publish are freeze ``editors_institution_nonsense_20261028``.
-That freeze clears citation and navigation names, univish ROR mismatches,
-email and URL affiliations, and country-only affiliations. It replaces the
-African Affairs board from the 2024-04-27 Wayback snapshot. It does not
-invent a name, a ROR id, or a URL. Faculty URLs filled by
+rows in this publish are freeze ``editors_institution_paren_geo_20261028``.
+That freeze supersedes ``editors_institution_nonsense_20261028``.
+It clears residual bad ROR matches, blanks junk parenthetical affiliations,
+and backfills ROR country and continent. It does not invent a name, a ROR
+id, or a URL. African Affairs stays the 2024-04-27 Wayback board from the
+prior freeze. Faculty URLs filled by
 ``editors_ft50_url_aff_20261028``, ``editors_nonft50_url_aff_20261028``, and
 ``editors_ajg_gap_url_aff_20261028`` stay on rows this freeze did not replace.
 ``editor_name_raw``
@@ -103,7 +104,8 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. These boards are freeze ``editors_institution_nonsense_20261028``.
+badge. These boards are freeze ``editors_institution_paren_geo_20261028``,
+which supersedes ``editors_institution_nonsense_20261028``.
 Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
 freeze did not replace. African Affairs is the Wayback board (40 rows).
 Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
@@ -339,7 +341,7 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_institution_nonsense_20261028 leaves no empty editor_name on these files.
+# editors_institution_paren_geo_20261028 leaves no empty editor_name on these files.
 # Nature Human Behaviour Email/Biography rows are out of the prio43 file.
 # African Affairs is 40 rows (was 86). Fourteen drop-quality chrome rows stay
 # out, and the nav rows this freeze put back on ajg1 and ajg2 stay out too.
@@ -2422,7 +2424,10 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     host_with_ror = icounts["hostWithRor"]
     if not 4_000 <= host_institutions <= 15_000:
         raise SystemExit(f"Unexpected FT50/ABDC institution count: {host_institutions}")
-    if host_with_ror < host_institutions * 0.9:
+    # editors_institution_paren_geo_20261028 cleared bad ROR matches and left
+    # the misses as separate unmatched affiliation strings, so the share of
+    # FT50/ABDC institutions with a ROR id is lower than the earlier 90% floor.
+    if host_with_ror < host_institutions * 0.8:
         raise SystemExit(
             f"Only {host_with_ror} of {host_institutions} FT50/ABDC institutions have a ROR id"
         )
@@ -2453,8 +2458,10 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
             assert_no_contacts(text, label)
     # Shared display names fell from 512 in editors_abs_ajg_gap_20261025 to 64
     # after the ROR fill. editors_blank_rescrape_browser_20261028 adds a third
-    # Ministry of Health key, so one more row shares that display name.
-    if duplicate_names != 65:
+    # Ministry of Health key (65). editors_institution_paren_geo_20261028
+    # clears bad ROR matches, so two more affiliation strings share a display
+    # name with a different key (67).
+    if duplicate_names != 67:
         raise SystemExit(
             f"Institutions that share a display name: {duplicate_names}, expected 65. "
             f"Shared: {duplicate_name_list}"
@@ -2471,8 +2478,9 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     ]
     if junk_rows:
         raise SystemExit(f"Junk institution rows: {junk_rows[:8]}")
-    if not any(row[0] == "11KBW" for row in institutions["rows"]):
-        raise SystemExit("11KBW is missing from Institutions")
+    for required in ("11KBW", "UNSW Sydney", "INSEAD"):
+        if not any(row[0] == required for row in institutions["rows"]):
+            raise SystemExit(f"{required} is missing from Institutions")
     dartmouth = [row for row in institutions["rows"] if row[0] == "Dartmouth College"]
     # The United States ROR row stays one row. A gap affiliation with the same
     # words and no ror_id can still be a second row.
