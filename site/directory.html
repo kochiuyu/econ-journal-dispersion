@@ -157,7 +157,7 @@
           </select>
         </div>
       </form>
-      <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap names stay plain text.</p>
+      <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap profiles are partial, so a gap name with no URL stays plain text.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite">Loading directory…</p>
@@ -193,9 +193,11 @@
         AJG-gap is the current boards in <code>data/editors/abs_ajg_gap/releases/current/</code>:
         journals in the 2024 guide that are not already in the FT50 or ABDC editor files.
         Names and affiliations on FT50 come from freeze <code>editors_ft50_url_aff_20261028</code>.
-        Names on ABDC A and B, and AJG-gap ajg1 and ajg2, are <code>editor_name</code>
+        Names and affiliations on ABDC A*, A, B, and C come from freeze <code>editors_nonft50_url_aff_20261028</code>.
+        Faculty URLs and host-map affiliations on AJG-gap are freeze <code>editors_ajg_gap_url_aff_20261028</code>.
+        Names on AJG-gap ajg1 and ajg2 are <code>editor_name</code>
         from freeze <code>editors_blank_rescrape_20261028</code>.
-        ABDC A*, ABDC C, and Sociology of Health and Illness are freeze <code>editors_blank_rescrape_browser_20261028</code>.
+        Sociology of Health and Illness is freeze <code>editors_blank_rescrape_browser_20261028</code>.
         A blank <code>editor_name</code> is not listed.
         Top 5 and UTD24 are tags on the FT50 and ABDC releases, read from <code>journals/catalog_top5.csv</code> and <code>journals/catalog_utd24.csv</code>.
         AJG grades on those releases are read from the 2024 edition in <code>journals/rankings/abs_ajg/releases/rankings_abs_ajg_20261024/</code> and its crosswalk.
@@ -274,7 +276,7 @@
         Journal names link to the public board page when <code>source_url</code> is an http(s) URL.
         Some AJG-gap journals in this freeze have no public board URL, so the name stays plain text.
         A name links to a faculty profile when <code>faculty_profile_url</code> is filled.
-        The AJG-gap files have no faculty profile URL, so those names stay plain text.
+        AJG-gap coverage is partial (1,104 of 19,367 rows), so a gap name with no profile stays plain text.
         Coverage on the other releases is partial: higher on FT50 and ABDC A* than on B and C, so a name with no profile stays plain text.
         The directory does not link <code>faculty_home_page</code>, and it does not invent ORCID, OpenAlex, or RePEc person links.
       </p>
