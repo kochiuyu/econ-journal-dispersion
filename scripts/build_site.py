@@ -27,11 +27,14 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 (the ABDC panels were seeded from FT50 where the journals overlap). That is
 one seat, not two.
 
-The key is the cleaned ``editor_name``. Freeze
-``editors_blank_rescrape_20261028`` supersedes the blank-name leftovers of
-``editors_name_swap_abdc_ajg_20261028`` on the FT50, ABDC A*/A/B/C, and
-AJG-gap panels published here. ``editor_name_raw`` keeps the pre-clean spelling when
-that cell changed, and is blank when it did not. The directory displays
+The key is the cleaned ``editor_name``. FT50 rows in this publish are freeze
+``editors_ft50_url_aff_20261028``. That freeze fills university and ROR where
+a faculty profile URL already identified the institution. It does not replace
+ABDC or AJG-gap panels. Freeze ``editors_blank_rescrape_20261028`` still
+supersedes the blank-name leftovers of ``editors_name_swap_abdc_ajg_20261028``
+on the ABDC A*/A/B/C and AJG-gap panels published here. ``editor_name_raw``
+keeps the pre-clean spelling when that cell changed, and is blank when it did
+not. The directory displays
 ``editor_name``. It does not invent a name, and it does not display
 ``editor_name_raw``. A row whose ``editor_name`` is empty is not a person:
 those parked org-as-name blanks stay out of the directory. When that row has
