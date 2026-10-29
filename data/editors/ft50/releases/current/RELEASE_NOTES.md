@@ -1,16 +1,14 @@
-# editors_institution_country_place_20261029
+# editors_apjiht_board_fix_20261029
 
-Place-suffix and country cleanup of institution strings on the current boards. Frozen 2026-10-29 00:37 Asia/Hong_Kong. This supersedes `editors_institution_residual_post35_20261028` for Directory Institutions. Both FT50 files stay 10,046 rows and are unchanged in this publish. Empty `editor_name` is 1. No D4 or D5 pass is in this freeze.
+Non-person footer and team rows replaced with rescraped editors on the ABDC A, ABDC C, and AJG 1 boards. Frozen 2026-10-29 22:28 Asia/Taipei. This supersedes `editors_institution_country_place_20261029`. Both FT50 files stay 10,046 rows and are unchanged in this publish. Empty `editor_name` is 1. No D4 or D5 pass is in this freeze.
 
 `scripts/build_site.py` reads `editors_ft50_current_with_ror.csv` when it is present. The directory shows `editor_name`. Display affiliation is `ror_name`, then `canonical_name`, then `raw_affiliation`. Country is `ror_country`. The build does not invent a name, a ROR id, or a URL. A blank affiliation is not an institution. A bare country is not an institution. A string fully enclosed in brackets is not an institution. A street, PO Box, or postal code with no organization name is not an institution.
 
 ## What this publish changed
 
-The collector freeze touches 161 editor rows: place-suffix variants 116 and country mismatches 45. This publish pins 159 of those rows on the ABDC and AJG-gap boards. By panel that is A* 5, A 36, B 60, C 46, prio43 8, ajg2 2, and ajg1 2. The FT50 files are unchanged. A place suffix is stripped. A country is corrected when the affiliation text names that country. Nine rows clear a wrong Office of Science & Technology Austria ROR and keep the masthead. A rematch uses only a ROR id already on these boards. No new ROR id was added.
+The collector freeze replaces footer and team rows on eight journals. This publish pins those journals on the ABDC A, ABDC C, and AJG 1 files. By panel that is A 26 rows to 31, C 2 rows to 91, and ajg1 7 rows to 34. The FT50 files, ABDC A*, ABDC B, prio43, and ajg2 are unchanged. A rematch on a new row uses only a ROR id already on these boards. No new ROR id was added.
 
-The collector’s FT50 touches stay off this file. They would have copied `Italian Cultural Institute` onto University of Tokyo mastheads, attached University of Goma to Rebecca Ratner, and cleared Jaap Paauwe’s `editor_name_raw`. Those rows stay as published. Universidade de Santiago de Compostela stays Spain. HKUST (Guangzhou) stays distinct. `The Netherlands` stays the country label. A masthead that says US is not moved to Sweden. Twelve ajg1 navigation rows and two ajg2 navigation rows stay out, including Vincent Pan on Advances in Decision Sciences. `11KBW`, UNSW Sydney, and INSEAD stay.
-
-`IBM - UK` keeps that string so the seat does not collapse into the United States `IBM` row. The country on that seat is the United Kingdom. Philip Marcovici, Suneet Trivedy, Rahul Garella, and Louise Trevaskis keep the canonical names from the previous publish.
+Other rows stay as published in `editors_institution_country_place_20261029`. The collector CSV also rewrote institution strings outside those eight journals. Those rows stay as published, including Tokyo mastheads that the collector would have replaced with `Italian Cultural Institute`. Twelve ajg1 navigation rows stay out, including Vincent Pan on Advances in Decision Sciences. `11KBW`, UNSW Sydney, and INSEAD stay.
 
 The slim file still has no ROR columns.
 
@@ -38,4 +36,4 @@ Jaap Paauwe’s display name stays `Jaap Paauwe`. `editor_name_raw` stays `Jaap 
 
 ## Public site
 
-Directory appointments stay 158,624. Editors stay 110,326. Journals stay 2,853. Countries stay 175. FT50 seats stay 10,044 across 50 journals. Top 5 stays 362. UTD24 stays 5,178 across 24 journals. Faculty profile links stay 24,817. Institutions are 10,782 rows (8,662 with a ROR id), were 10,835 (8,663). 12,164 appointments have no institution. 628 appointments are omitted because the affiliation is only a country or territory. Three are omitted because the affiliation is only a bracketed fragment. Ten are omitted because the affiliation is only a street, PO Box, or postal code. No institution row is a bare country.
+Directory appointments are 158,747, were 158,624. Editors are 110,424, were 110,326. Journals stay 2,853. Countries stay 175. FT50 seats stay 10,044 across 50 journals. Top 5 stays 362. UTD24 stays 5,178 across 24 journals. Faculty profile links stay 24,817. Institutions are 10,824 rows (8,662 with a ROR id), were 10,782 (8,662). 12,162 appointments have no institution. 633 appointments are omitted because the affiliation is only a country or territory. Three are omitted because the affiliation is only a bracketed fragment. Ten are omitted because the affiliation is only a street, PO Box, or postal code. No institution row is a bare country.
