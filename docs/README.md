@@ -10,3 +10,14 @@ Stable join keys used across universes and streams:
 | `doi` | Article DOI when available (affiliations / author panels) |
 
 Full variable dictionary will land here as releases freeze. Until then, see column headers in each `releases/` CSV and the stream `STATUS.md` files.
+
+## Editor-panel columns added in `editors_single_editor_20261029`
+
+Every current editor CSV under `data/editors/*/releases/current/` ends with two columns. `scripts/build_site.py` selects columns by name and does not write either one to the site. `source_url` stays the primary board link.
+
+| Column | Meaning |
+|--------|---------|
+| `board_urls` | Public board-page URLs, separated by `\|`. Filled only when that journal's board spans more than one page: IEEE Transactions on Intelligent Transportation Systems, Acta Turistica, Management: Journal of Contemporary Management Issues, and PASOS Journal of Tourism and Cultural Heritage. Blank on every other row |
+| `board_url_count` | Number of URLs in `board_urls`. Blank when `board_urls` is blank |
+
+The cells are page URLs only. They do not contain an email address, a phone number, or a photo.
