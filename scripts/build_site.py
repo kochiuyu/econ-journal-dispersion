@@ -28,12 +28,15 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
-rows in this publish are freeze ``editors_apjiht_board_fix_20261029``.
-That freeze supersedes ``editors_institution_country_place_20261029``.
-It replaces non-person footer and team rows with rescraped editors on
-eight journals. Other rows stay as published in that freeze, including
-the place-suffix and country corrections.
-It rematches only to a ROR id already on these boards.
+rows in this publish are freeze ``editors_single_editor_20261029``.
+That freeze supersedes ``editors_browser_boards_20261029``.
+It replaces heading and navigation rows on five journals and expands
+fifteen journals that had a single editor row. Other rows stay as
+published in ``editors_apjiht_board_fix_20261029``, including the
+eight-journal board fix and the place-suffix and country corrections.
+It reuses a ROR id already on these boards, or an exact crosswalk hit.
+Panel CSVs end with ``board_urls`` and ``board_url_count``. Readers select
+columns by name. Those two columns are not written to the site.
 It does not invent a name, a ROR id, or a URL.
 University of Goma stays off University of Maryland, and EAE Business
 School stays off ESADE. Tom P. Moliterno uses the Citadel ROR already on
@@ -109,8 +112,8 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. These boards are freeze ``editors_apjiht_board_fix_20261029``,
-which supersedes ``editors_institution_country_place_20261029``.
+badge. These boards are freeze ``editors_single_editor_20261029``,
+which supersedes ``editors_browser_boards_20261029``.
 Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
 freeze did not replace. African Affairs is the Wayback board (40 rows).
 Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
@@ -347,13 +350,15 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
-# editors_apjiht_board_fix_20261029 replaces non-person footer rows on
-# eight journals. prio43 still
-# drops 3 empty names and ajg1 drops 18. ajg2 still drops 0. Nature Human
-# Behaviour Email/Biography rows are out of the prio43 file. African Affairs
-# is 40 rows (was 86). Fourteen drop-quality chrome rows stay out, and the
-# nav rows the collector put back on ajg1 and ajg2 stay out too. Row counts
-# are 3,104 / 4,982 / 11,244.
+# editors_single_editor_20261029 supersedes editors_browser_boards_20261029.
+# It keeps those five browser boards and expands fifteen single-editor
+# journals. prio43 still drops 3 empty names and ajg1 drops 16. ajg2 still
+# drops 0. Nature Human Behaviour Email/Biography rows are out of the prio43
+# file. African Affairs is 40 rows. Fourteen drop-quality chrome rows stay
+# out, and the nav rows the collector put back on ajg1 and ajg2 stay out
+# too. Row counts are 3,104 / 4,982 / 11,544.
+# Panel CSVs end with board_urls and board_url_count. Readers select columns
+# by name. Those two columns are not written to the site.
 AJG_GAP_FILES = (
     (
         "prio43",
@@ -373,8 +378,8 @@ AJG_GAP_FILES = (
         "ajg1",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
-        11244,
-        18,
+        11544,
+        16,
     ),
 )
 # Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
@@ -1155,6 +1160,55 @@ def row_to_rec(
         journal_id=journal_id,
         alias_key=raw_name_key(row.get("editor_name_raw") or "", name_key) if name else "",
     )
+
+
+# Multi-page boards in editors_single_editor_20261029. Every other row leaves
+# board_urls and board_url_count blank. IEEE's journal cell is blank; the id
+# is the key. The other three use the journal name.
+BOARD_URL_KEYS = frozenset({
+    "ieee_transactions_intelligent_transportation_systems",
+    "acta_turistica",
+    "management_journal_contemporary_management_issues",
+    "PASOS Journal of Tourism and Cultural Heritage",
+})
+
+
+def assert_trailing_board_columns(path: Path) -> None:
+    """Panel CSVs end with board_urls, board_url_count. Select by name.
+
+    board_urls is a pipe-separated list of public board-page URLs, filled
+    only when that journal's board spans more than one page. It is not
+    written to the site. source_url stays the primary board link.
+    """
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        fields = list(reader.fieldnames or [])
+        if fields[-2:] != ["board_urls", "board_url_count"]:
+            raise SystemExit(f"{path.name} must end with board_urls, board_url_count")
+        filled = 0
+        for row in reader:
+            urls = (row.get("board_urls") or "").strip()
+            count = (row.get("board_url_count") or "").strip()
+            key = (row.get("abdc_journal_id") or "").strip() or (row.get("journal") or "").strip()
+            if not urls and not count:
+                continue
+            if key not in BOARD_URL_KEYS:
+                raise SystemExit(f"{path.name} has board_urls on {key!r}")
+            parts = [part.strip() for part in urls.split("|") if part.strip()]
+            if not count.isdigit() or int(count) != len(parts) or len(parts) < 2:
+                raise SystemExit(f"{path.name} board_url_count {count!r} != {len(parts)} on {key}")
+            for part in parts:
+                if not (part.startswith("http://") or part.startswith("https://")) or "@" in part:
+                    raise SystemExit(f"{path.name} board URL is not a public page: {part[:180]}")
+                if CONTACT_ASSERT_RE.search(part):
+                    raise SystemExit(f"{path.name} board URL contains contact text: {part[:180]}")
+            filled += 1
+        if filled and path.name not in {
+            "editors_abdc_a_current.csv",
+            "editors_abdc_c_current.csv",
+            "editors_abs_ajg_gap_ajg1_current.csv",
+        }:
+            raise SystemExit(f"{path.name} should not carry multi-page board URLs")
 
 
 def read_release(
@@ -2436,7 +2490,9 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_institution_paren_geo_20261028 cleared bad ROR matches and left
     # the misses as separate unmatched affiliation strings, so the share of
     # FT50/ABDC institutions with a ROR id is lower than the earlier 90% floor.
-    if host_with_ror < host_institutions * 0.8:
+    # editors_single_editor_20261029 adds masthead strings that had no ROR id
+    # on these boards, so that share is 7,975 of 10,085.
+    if host_with_ror < host_institutions * 0.79:
         raise SystemExit(
             f"Only {host_with_ror} of {host_institutions} FT50/ABDC institutions have a ROR id"
         )
@@ -2496,9 +2552,19 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_apjiht_board_fix_20261029 adds rescraped editors on eight
     # journals. New ROR hits join an id already on these boards, so shared
     # display names stay 59.
-    if duplicate_names != 59:
+    # editors_browser_boards_20261029 replaces heading and navigation rows
+    # on five journals. Esther Nolton on New Directions for Evaluation is
+    # left on the masthead string Patient-Centered Outcomes Research
+    # Institute, with no ROR id. That string is already the display name of
+    # the ROR row on American Journal of Evaluation, so the two keys share
+    # a display name.
+    # editors_single_editor_20261029 leaves Xingwang Li on the masthead
+    # string Henan Polytechnic University, with no ROR id. That string is
+    # already the display name of a ROR row, so the two keys share a
+    # display name. Shared display names are 61.
+    if duplicate_names != 61:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 59. "
+            f"Institutions that share a display name: {duplicate_names}, expected 61. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}
@@ -2959,6 +3025,13 @@ def write_directory_assets(payload: dict) -> None:
 
 def main() -> int:
     assert_static_site()
+    for path in (
+        ROOT / "data/editors/ft50/releases/current/editors_ft50_current.csv",
+        *FT50_CANDIDATES,
+        *(path for _, path in ABDC_FILES),
+        *(item[1] for item in AJG_GAP_FILES),
+    ):
+        assert_trailing_board_columns(path)
     membership = load_membership()
     ajg_grades = load_ajg_grades()
     catalogs = load_catalog_names()

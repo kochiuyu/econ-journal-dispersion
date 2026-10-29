@@ -1,28 +1,61 @@
-# editors_apjiht_board_fix_20261029
+# editors_single_editor_20261029
 
-Non-person footer and team rows replaced with rescraped editors on the ABDC A and C current boards. Frozen 2026-10-29 22:28 Asia/Taipei. This supersedes `editors_institution_country_place_20261029`. A* and B row counts are unchanged. Empty `editor_name` is 2 on A*, 1 on A, 0 on B, and 11 on C. No D4 or D5 pass is in this freeze.
+Fuller boards for journals that had one editor row, plus the five browser-board replacements carried in this freeze. Frozen 2026-10-29 23:18 Asia/Taipei. This supersedes `editors_browser_boards_20261029`. A* row count is unchanged. Empty `editor_name` is 2 on A*, 1 on A, 0 on B, and 11 on C. No D4 or D5 pass is in this freeze.
 
-`editor_name` is the name the directory shows. Display affiliation is `ror_name`, then `canonical_name`, then `raw_affiliation`. Country is `ror_country`. The build does not invent a name, a ROR id, or a URL. A blank affiliation is not an institution. A bare country is not an institution. A string fully enclosed in brackets is not an institution. A street, PO Box, or postal code with no organization name is not an institution. Faculty URL counts are unchanged.
+`editor_name` is the name the directory shows. Display affiliation is `ror_name`, then `canonical_name`, then `raw_affiliation`. Country is `ror_country`. The build does not invent a name, a ROR id, or a URL. A blank affiliation is not an institution. A bare country is not an institution. A string fully enclosed in brackets is not an institution. A street, PO Box, or postal code with no organization name is not an institution.
 
-This publish replaces the rows of five journals on these files. Other rows stay as published in `editors_institution_country_place_20261029`, including the place-suffix and country corrections from that freeze. The collector CSV also rewrote institution strings on other journals, including `Italian Cultural Institute` on Tokyo mastheads and `National Law University` on other mastheads. Those rows stay as published. A rematch on a new row uses only a ROR id already on these boards. No new ROR id was added.
+Every current editor CSV ends with `board_urls` and `board_url_count`. `board_urls` is a pipe-separated list of public board-page URLs, filled only when that board spans more than one page. `board_url_count` is the number of those URLs. Both cells are blank on every other row. `source_url` stays the primary board link. `scripts/build_site.py` selects columns by name and does not write `board_urls` to the site.
+
+This publish replaces the rows of fourteen journals on these files. Other rows stay as published in `editors_apjiht_board_fix_20261029`, including the eight-journal board fix and the place-suffix and country corrections from earlier freezes. The collector CSV also rewrote institution strings on other journals, including `Italian Cultural Institute` on Tokyo mastheads. Those rows stay as published. A rematch on a new row uses a ROR id already on these boards, or one exact crosswalk hit. No ROR id was invented.
 
 ## Boards
 
-The old rows were footer and team labels (`Publishing Ethics`, `SEARCH Editorial Team`, `Journal Home`, and the same kind of chrome). The new rows are people. Raw affiliation is the masthead text.
+Heading and navigation rows on three journals are replaced with the people on those boards. Eleven journals that had a single editor row now have the fuller board. Defense Transportation Journal stays one row: the junk line is replaced by the named managing editor. Raw affiliation is the masthead text.
 
 | Journal | Rating | Was | Now |
 |---|---|---:|---:|
-| Asia-Pacific Journal of Innovation in Hospitality and Tourism | C | 2 | 91 |
-| The BE Journal of Economic Analysis and Policy | A | 6 | 12 |
-| The BE Journal of Macroeconomics | A | 6 | 8 |
-| The BE Journal of Theoretical Economics | A | 6 | 6 |
-| Scandinavian Journal of Information Systems | A | 8 | 5 |
+| IEEE Transactions on Intelligent Transportation Systems | A | 1 | 299 |
+| Academy of Management Perspectives | A | 1 | 112 |
+| Naval Research Logistics | B | 8 | 119 |
+| Journal of Personnel Psychology | B | 1 | 65 |
+| New Directions for Evaluation | B | 4 | 35 |
+| Journal of Eastern Asia Society for Transportation Studies | C | 1 | 90 |
+| Acta Turistica | C | 1 | 51 |
+| Management: Journal of Contemporary Management Issues | C | 1 | 51 |
+| Journal of International Technology and Information Management | C | 1 | 34 |
+| Economic Affairs | C | 4 | 32 |
+| Agricultural Economics Review | C | 1 | 20 |
+| Applied Econometrics | C | 1 | 19 |
+| Electronic Journal of Knowledge Management | C | 1 | 11 |
+| Defense Transportation Journal | C | 1 | 1 |
 
-Asia-Pacific Journal of Innovation in Hospitality and Tourism is 91 people: Editor-in-Chief 1, Co-Editor 1, Associate Editor 2, Managing Editor 1, Technical Editor 1, Advisory Board 17, Editorial Review Board 68. Source `https://fslmjournals.taylors.edu.my/apjiht/`. ROR ids already on these boards are attached on 68 of 91 (67 high, 1 medium). The medium hit is Vineetha Sinha, National University of Singapore, an id already on these boards.
+IEEE Transactions on Intelligent Transportation Systems is 299 people. The `journal` cell stays blank, as on the old row; the id is `ieee_transactions_intelligent_transportation_systems`. Source `https://ieee-itss.org/pub/t-its/board/`. `board_urls` is `https://ieee-itss.org/pub/t-its/|https://ieee-itss.org/pub/t-its/board/` (`board_url_count` 2) on all 299 rows. ROR ids are attached on 107 of 299 (102 high, 5 medium). One of those ids was not already on the published panels: Sachin Kumar, Galgotias College of Engineering & Technology, `https://ror.org/04a85ht85`, an exact crosswalk hit. Xingwang Li stays on the masthead string Henan Polytechnic University, with no ROR id.
 
-The three BE journals list names only on the De Gruyter journal header, so the affiliation stays blank (26 people). Sources are `https://www.degruyter.com/journal/key/bejeap/html`, `https://www.degruyter.com/journal/key/bejm/html`, and `https://www.degruyter.com/journal/key/bejte/html`. No ROR was attached.
+Academy of Management Perspectives is 112 people. Source `https://www.aom.org/publications/journals/perspectives/perspectives-editorial-team/`. ROR ids already on these boards are attached on 24 of 112 (23 high, 1 medium).
 
-Scandinavian Journal of Information Systems lists a country and no organization: Sweden, Denmark, Finland, Norway, Denmark. Source `https://aisel.aisnet.org/sjis/editorialboard.html`. Those five affiliations stay off the Institutions page. No ROR was attached.
+Naval Research Logistics is 119 people. The department stays in the role text. Source `https://onlinelibrary.wiley.com/page/journal/15206750/homepage/editorialboard.html`. ROR ids already on these boards are attached on 94 of 119.
+
+Journal of Personnel Psychology is 65 people. Source `https://www.hogrefe.com/us/journal/journal-of-personnel-psychology`. ROR ids already on these boards are attached on 49 of 65, all high.
+
+New Directions for Evaluation is 35 people. Source `https://onlinelibrary.wiley.com/page/journal/1534875x/homepage/editorialboard.html`. ROR ids already on these boards are attached on 21 of 35.
+
+Journal of the Eastern Asia Society for Transportation Studies is 90 people. Source `https://www.jstage.jst.go.jp/browse/easts/_pubinfo/-char/en`. The old row was the association address. ROR ids already on these boards are attached on 60 of 90 (59 high, 1 medium).
+
+Acta Turistica is 51 people. `board_urls` lists the Srce editorial team and the faculty editorial board (`board_url_count` 2). ROR ids already on these boards are attached on 37 of 51, all high.
+
+Management: Journal of Contemporary Management Issues is 51 people. `board_urls` lists the Srce editorial team and the about page (`board_url_count` 2). No ROR id is attached.
+
+Journal of International Technology and Information Management is 34 people. Source `https://iima.org/wp/jitim/`. ROR ids already on these boards are attached on 19 of 34, all high.
+
+Economic Affairs is 32 people, including four Previous Editors with `is_current` false and a blank affiliation. Source `https://onlinelibrary.wiley.com/page/journal/14680270/homepage/editorialboard.html`. ROR ids already on these boards are attached on 11 of 32, all high.
+
+Agricultural Economics Review is 20 people. The original Antonios REZITIS row stays Managing Editor. The page's Antony Rezitis spelling is not a second row. One further ROR id already on these boards is attached.
+
+Applied Econometrics is 19 people. The original editor row stays, including its low-confidence ROR id. The new rows add no ROR id.
+
+Electronic Journal of Knowledge Management is 11 people. The old row was the `One moment, please...` interstitial. Reviewers are not on this board. No ROR id is attached.
+
+Defense Transportation Journal stays one row. Barbara Parus, Managing Editor, replaces the interstitial. No ROR id is attached.
 
 The new rows contain no email address, phone number, or photo.
 
@@ -31,11 +64,11 @@ The new rows contain no email address, phone number, or photo.
 | File | Rows | Empty `editor_name` | `raw_affiliation` | `ror_id` | `faculty_profile_url` | URL, no `ror_id` |
 |---|---:|---:|---:|---:|---:|---:|
 | `editors_abdc_a_star_current.csv` | 25,178 | 2 | 23,806 (94.6%) | 23,600 | 12,523 (49.7%) | 67 |
-| `editors_abdc_a_current.csv` | 45,368 | 1 | 42,781 (94.3%) | 41,935 | 6,237 (13.7%) | 50 |
-| `editors_abdc_b_current.csv` | 42,139 | 0 | 39,775 (94.4%) | 38,720 | 3,509 (8.3%) | 21 |
-| `editors_abdc_c_current.csv` | 26,809 | 11 | 23,936 (89.3%) | 23,069 | 1,379 (5.1%) | 4 |
+| `editors_abdc_a_current.csv` | 45,777 | 1 | 43,060 (94.1%) | 42,065 | 6,237 (13.6%) | 50 |
+| `editors_abdc_b_current.csv` | 42,345 | 0 | 39,985 (94.4%) | 38,876 | 3,509 (8.3%) | 21 |
+| `editors_abdc_c_current.csv` | 27,106 | 11 | 24,206 (89.3%) | 23,189 | 1,379 (5.1%) | 4 |
 
-`ror_id` was 23,600 / 41,935 / 38,720 / 23,001. The C increase is 68 ids already on these boards. A, A*, and B `ror_id` counts stay. Empty `editor_name` on A was 2. The row this publish removed was a blank Scandinavian Journal of Information Systems chrome row. One empty name remains, on AIS Transactions on Human-Computer Interaction.
+`ror_id` was 23,600 / 41,935 / 38,720 / 23,069. The increases are A 130, B 156, and C 120. All but one of those ids were already on these boards. The exception is `https://ror.org/04a85ht85`. A* `ror_id` stays 23,600. Empty `editor_name` stays 2 / 1 / 0 / 11. Faculty URL counts stay A* 12,523, A 6,237, B 3,509, and C 1,379. A faculty URL with no `ror_id` stays 67 on A*, 50 on A, 21 on B, and 4 on C.
 
 ## Holds carried forward
 
@@ -50,4 +83,4 @@ One A* row whose name is `___` stays off the person directory. The A panel’s H
 
 ## Public site
 
-The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments are 158,747, were 158,624. Editors are 110,424, were 110,326. Journals stay 2,853. ABDC chips are A* 25,172 (219 journals), A 45,356 (626), B 42,124 (836), and C 26,797 (732). Countries stay 175. Institutions are 10,824 rows (8,662 with a ROR id), were 10,782 (8,662). 12,162 appointments have no institution. 633 country-only appointments, 3 bracket-only appointments, and 10 street, PO Box, or postal-code appointments stay off that page.
+The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments are 159,961, were 158,747. Editors are 111,154, were 110,424. Journals stay 2,853. ABDC chips are A* 25,172 (219 journals), A 45,765 (626), B 42,330 (836), and C 27,094 (732). Countries stay 175. Institutions are 11,276 rows (8,663 with a ROR id), were 10,824 (8,662). 12,309 appointments have no institution. 641 country-only appointments, were 633, plus 3 bracket-only appointments and 10 street, PO Box, or postal-code appointments, stay off that page.
