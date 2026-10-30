@@ -28,8 +28,10 @@ Every current FT50 appointment is also in the ABDC A* or ABDC A release
 one seat, not two.
 
 The key is the cleaned ``editor_name``. FT50, ABDC A*/A/B/C, and AJG-gap
-rows in this publish are freeze ``editors_single_editor_20261029``.
-That freeze supersedes ``editors_browser_boards_20261029``.
+rows in this publish are freeze ``editors_browser_single_20261029``.
+That freeze supersedes ``editors_single_editor_20261029`` and adds fuller boards on Journal of
+Derivatives, Journal of Portfolio Management, and Arts and the Market.
+``editors_single_editor_20261029`` superseded ``editors_browser_boards_20261029``.
 It replaces heading and navigation rows on five journals and expands
 fifteen journals that had a single editor row. Other rows stay as
 published in ``editors_apjiht_board_fix_20261029``, including the
@@ -112,8 +114,9 @@ Those journals are not already in the FT50 or ABDC editor files. The grade
 is the 2024 title rating, and it has to sit in the panel that supplied the
 file: ``prio43`` is 4*, 4, or 3; ``ajg2`` is 2; ``ajg1`` is 1. A gap row
 carries that grade only. It does not receive an FT50, ABDC, Top 5, or UTD24
-badge. These boards are freeze ``editors_single_editor_20261029``,
-which supersedes ``editors_browser_boards_20261029``.
+badge. These boards are freeze ``editors_browser_single_20261029``
+(unchanged from ``editors_single_editor_20261029``, which superseded
+``editors_browser_boards_20261029``).
 Faculty URLs from ``editors_ajg_gap_url_aff_20261028`` stay on rows this
 freeze did not replace. African Affairs is the Wayback board (40 rows).
 Nature Human Behaviour no longer has ``Email`` or ``Biography`` rows.
@@ -350,6 +353,7 @@ AJG_IDS = tuple(item["id"] for item in AJG_GRADE_META)
 # Same releases/current/ layout as those freezes. Freeze id is in RELEASE_NOTES.
 AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # panel id, path, ratings allowed on that file, raw rows, rows the name filter drops.
+# editors_browser_single_20261029 supersedes editors_single_editor_20261029; the AJG-gap files are unchanged.
 # editors_single_editor_20261029 supersedes editors_browser_boards_20261029.
 # It keeps those five browser boards and expands fifteen single-editor
 # journals. prio43 still drops 3 empty names and ajg1 drops 16. ajg2 still
@@ -413,7 +417,11 @@ _ORG_TOKEN_RE = re.compile(
     r"company|corporation|bank|ministry|government|council|association|society|"
     r"foundation|museum|library|polytechnic|hochschule|universidad|universidade|"
     r"ecole|école|gmbh|plc|llc|inc|ltd|campus|conservatory|clinic|authority|"
-    r"agency|bureau|commission|informs)\b",
+    r"agency|bureau|commission|informs|"
+    # editors_browser_single_20261029: State Street Global Advisors and
+    # State Street Associates are firms on Journal of Portfolio Management,
+    # not street addresses.
+    r"advisors|associates)\b",
     re.IGNORECASE,
 )
 _ACRONYM_RE = re.compile(r"\b[A-Z]{3,}\b")
@@ -1162,7 +1170,8 @@ def row_to_rec(
     )
 
 
-# Multi-page boards in editors_single_editor_20261029. Every other row leaves
+# Multi-page boards in editors_single_editor_20261029 and
+# editors_browser_single_20261029. Every other row leaves
 # board_urls and board_url_count blank. IEEE's journal cell is blank; the id
 # is the key. The other three use the journal name.
 BOARD_URL_KEYS = frozenset({
@@ -1170,6 +1179,10 @@ BOARD_URL_KEYS = frozenset({
     "acta_turistica",
     "management_journal_contemporary_management_issues",
     "PASOS Journal of Tourism and Cultural Heritage",
+    # editors_browser_single_20261029: the pm-research editor and
+    # editorial-board tabs.
+    "journal_derivatives",
+    "journal_portfolio_management",
 })
 
 
@@ -2492,7 +2505,10 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # FT50/ABDC institutions with a ROR id is lower than the earlier 90% floor.
     # editors_single_editor_20261029 adds masthead strings that had no ROR id
     # on these boards, so that share is 7,975 of 10,085.
-    if host_with_ror < host_institutions * 0.79:
+    # editors_browser_single_20261029 adds Journal of Portfolio Management
+    # and Arts and the Market mastheads whose firms and schools had no ROR id
+    # on these boards (no id invented), so that share is 7,977 of 10,150.
+    if host_with_ror < host_institutions * 0.78:
         raise SystemExit(
             f"Only {host_with_ror} of {host_institutions} FT50/ABDC institutions have a ROR id"
         )
@@ -2562,9 +2578,14 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # string Henan Polytechnic University, with no ROR id. That string is
     # already the display name of a ROR row, so the two keys share a
     # display name. Shared display names are 61.
-    if duplicate_names != 61:
+    # editors_browser_single_20261029 leaves Jang Ho Kim on Journal of
+    # Portfolio Management on the masthead string Korea University, with no
+    # ROR id (the crosswalk hit was a different, Japan-based school and was
+    # rejected). That string is already the display name of a ROR row, so
+    # shared display names are 62.
+    if duplicate_names != 62:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 61. "
+            f"Institutions that share a display name: {duplicate_names}, expected 62. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}

@@ -17,7 +17,7 @@ Every current editor CSV under `data/editors/*/releases/current/` ends with two 
 
 | Column | Meaning |
 |--------|---------|
-| `board_urls` | Public board-page URLs, separated by `\|`. Filled only when that journal's board spans more than one page: IEEE Transactions on Intelligent Transportation Systems, Acta Turistica, Management: Journal of Contemporary Management Issues, and PASOS Journal of Tourism and Cultural Heritage. Blank on every other row |
+| `board_urls` | Public board-page URLs, separated by `\|`. Filled only when that journal's board spans more than one page: IEEE Transactions on Intelligent Transportation Systems, Acta Turistica, Management: Journal of Contemporary Management Issues, and PASOS Journal of Tourism and Cultural Heritage; and, from `editors_browser_single_20261029`, Journal of Derivatives and Journal of Portfolio Management. Blank on every other row |
 | `board_url_count` | Number of URLs in `board_urls`. Blank when `board_urls` is blank |
 
 The cells are page URLs only. They do not contain an email address, a phone number, or a photo.

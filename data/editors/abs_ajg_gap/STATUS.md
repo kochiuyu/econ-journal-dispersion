@@ -4,7 +4,7 @@ Updated: 2026-10-29 (Asia/Hong_Kong)
 
 ## Release in this repo
 
-`releases/current/` — freeze `editors_single_editor_20261029` (2026-10-29 23:18 Asia/Taipei). It supersedes `editors_browser_boards_20261029`. Faculty URLs from `editors_ajg_gap_url_aff_20261028` stay. African Affairs is still the 2024-04-27 Wayback board (40 rows; live OUP is Cloudflare-blocked). Nature Human Behaviour `Email` and `Biography` rows stay out. The journal set is still `editors_abs_ajg_gap_20261025`. Fourteen drop-quality chrome rows stay out, and the navigation rows the collector put back stay out. Small Business International Review stays parked. Every file ends with `board_urls` and `board_url_count`.
+`releases/current/` — freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. These three files are unchanged in `editors_browser_single_20261029`; its board changes are on ABDC A and C. Faculty URLs from `editors_ajg_gap_url_aff_20261028` stay. African Affairs is still the 2024-04-27 Wayback board (40 rows; live OUP is Cloudflare-blocked). Nature Human Behaviour `Email` and `Biography` rows stay out. The journal set is still `editors_abs_ajg_gap_20261025`. Fourteen drop-quality chrome rows stay out, and the navigation rows the collector put back stay out. Small Business International Review stays parked. Every file ends with `board_urls` and `board_url_count`.
 
 Current boards for AJG journals that are not already in the FT50 or ABDC editor freezes:
 

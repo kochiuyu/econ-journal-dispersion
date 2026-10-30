@@ -1,4 +1,10 @@
-# editors_single_editor_20261029
+# editors_browser_single_20261029
+
+Frozen 2026-10-30 07:09 Asia/Taipei. This supersedes `editors_single_editor_20261029` (Directory PR #39). The collector added browser-captured boards on three ABDC journals: Journal of Derivatives (A, 1 to 18), Journal of Portfolio Management (A, 1 to 73), and Arts and the Market (C, 1 to 55). Both FT50 files are unchanged in this publish. The collector copies are byte-identical to `editors_single_editor_20261029`. See `data/editors/abdc/releases/current/RELEASE_NOTES.md`.
+
+Directory appointments are 160,104, were 159,961. Editors are 111,229, were 111,154. Journals stay 2,853. Institutions are 11,344 rows (8,665 with a ROR id), were 11,276 (8,663). 12,307 appointments have no institution. 642 country-only, 3 bracket-only, and 5 street, PO Box, or postal-code appointments stay off that page. `11KBW`, UNSW Sydney, and INSEAD stay. Twelve ajg1 navigation rows stay out, including Vincent Pan on Advances in Decision Sciences.
+
+## Previous freeze: editors_single_editor_20261029
 
 Fuller boards on ABDC A, ABDC B, ABDC C, and AJG 1, including the five browser-board replacements carried in this freeze. Frozen 2026-10-29 23:18 Asia/Taipei. This supersedes `editors_browser_boards_20261029`. Both FT50 files stay 10,046 rows. The only change on these two files is two trailing columns, `board_urls` and `board_url_count`, and both are blank on every FT50 row. Empty `editor_name` is 1. No D4 or D5 pass is in this freeze.
 

@@ -1,4 +1,26 @@
-# editors_single_editor_20261029
+# editors_browser_single_20261029
+
+Browser-captured fuller boards for three journals that had one editor row. Frozen 2026-10-30 07:09 Asia/Taipei. This supersedes `editors_single_editor_20261029` (published in Directory PR #39). Only `editors_abdc_a_current.csv` and `editors_abdc_c_current.csv` change. A* and B are unchanged. Headers are unchanged, including the trailing `board_urls` and `board_url_count`.
+
+## What this publish changed
+
+| Journal | Rating | Was | Now | New rows with a ROR id |
+|---|---|---:|---:|---:|
+| Journal of Derivatives | A | 1 | 18 | 13 of 17 |
+| Journal of Portfolio Management | A | 1 | 73 | 10 of 72 |
+| Arts and the Market (formerly Arts Marketing) | C | 1 | 55 | 37 of 54 |
+
+That is 143 new rows: A 45,777 to 45,866 and C 27,106 to 27,160. The original editor row on each journal stays (Thomas Ho, Frank Fabozzi, Ben Walmsley). Duplicate listings of the same person on a second tab or section are not a second row. Peter L. Bernstein (Founding Editor) and Amit Partani have no affiliation. Arts and the Market's commissioning editor, editorial office, and supplier project manager are publisher staff and are not on this board. Their contact e-mails are not in the release.
+
+`board_urls` is filled on Journal of Derivatives and Journal of Portfolio Management: the pm-research editor and editorial-board tabs (`board_url_count` 2) on every row of those two journals, including the original editor row. Arts and the Market is one page, so both cells stay blank.
+
+ROR ids on the new rows are reused only from these panels and the crosswalk, with a country and name check. 60 of 143 new rows have one. No ROR id was invented. Rejected hits stay blank with the reason in `ror_notes`: Korea University (the crosswalk record is a different, Japan-based school), ESCP Business School - UK (ROR record in France), Kingston University - UK, Queens University Belfast, and York University - Canada (records in other countries).
+
+Every other row is as published in `editors_single_editor_20261029`. The seven other collector panels are byte-identical to the prior freeze, and the published copies of those files are unchanged in this publish. The collector rows that were held back in earlier publishes stay held back.
+
+The new rows contain no email address, phone number, or photo.
+
+## Previous freeze: editors_single_editor_20261029
 
 Fuller boards for journals that had one editor row, plus the five browser-board replacements carried in this freeze. Frozen 2026-10-29 23:18 Asia/Taipei. This supersedes `editors_browser_boards_20261029`. A* row count is unchanged. Empty `editor_name` is 2 on A*, 1 on A, 0 on B, and 11 on C. No D4 or D5 pass is in this freeze.
 
@@ -64,11 +86,11 @@ The new rows contain no email address, phone number, or photo.
 | File | Rows | Empty `editor_name` | `raw_affiliation` | `ror_id` | `faculty_profile_url` | URL, no `ror_id` |
 |---|---:|---:|---:|---:|---:|---:|
 | `editors_abdc_a_star_current.csv` | 25,178 | 2 | 23,806 (94.6%) | 23,600 | 12,523 (49.7%) | 67 |
-| `editors_abdc_a_current.csv` | 45,777 | 1 | 43,060 (94.1%) | 42,065 | 6,237 (13.6%) | 50 |
+| `editors_abdc_a_current.csv` | 45,866 | 1 | 43,147 (94.1%) | 42,088 | 6,237 (13.6%) | 50 |
 | `editors_abdc_b_current.csv` | 42,345 | 0 | 39,985 (94.4%) | 38,876 | 3,509 (8.3%) | 21 |
-| `editors_abdc_c_current.csv` | 27,106 | 11 | 24,206 (89.3%) | 23,189 | 1,379 (5.1%) | 4 |
+| `editors_abdc_c_current.csv` | 27,160 | 11 | 24,260 (89.3%) | 23,226 | 1,379 (5.1%) | 4 |
 
-`ror_id` was 23,600 / 41,935 / 38,720 / 23,069. The increases are A 130, B 156, and C 120. All but one of those ids were already on these boards. The exception is `https://ror.org/04a85ht85`. A* `ror_id` stays 23,600. Empty `editor_name` stays 2 / 1 / 0 / 11. Faculty URL counts stay A* 12,523, A 6,237, B 3,509, and C 1,379. A faculty URL with no `ror_id` stays 67 on A*, 50 on A, 21 on B, and 4 on C.
+The table is this publish. In `editors_browser_single_20261029`, `ror_id` on A goes 42,065 to 42,088 and on C 23,189 to 23,226. In `editors_single_editor_20261029`, `ror_id` was 23,600 / 41,935 / 38,720 / 23,069 before, and the increases were A 130, B 156, and C 120. All but one of those ids were already on these boards. The exception is `https://ror.org/04a85ht85`. A* `ror_id` stays 23,600. Empty `editor_name` stays 2 / 1 / 0 / 11. Faculty URL counts stay A* 12,523, A 6,237, B 3,509, and C 1,379. A faculty URL with no `ror_id` stays 67 on A*, 50 on A, 21 on B, and 4 on C.
 
 ## Holds carried forward
 
@@ -83,4 +105,4 @@ One A* row whose name is `___` stays off the person directory. The A panel’s H
 
 ## Public site
 
-The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments are 159,961, were 158,747. Editors are 111,154, were 110,424. Journals stay 2,853. ABDC chips are A* 25,172 (219 journals), A 45,765 (626), B 42,330 (836), and C 27,094 (732). Countries stay 175. Institutions are 11,276 rows (8,663 with a ROR id), were 10,824 (8,662). 12,309 appointments have no institution. 641 country-only appointments, were 633, plus 3 bracket-only appointments and 10 street, PO Box, or postal-code appointments, stay off that page.
+The directory lists no blank name. Where an FT50 appointment is also on an ABDC board, display fields come from `editors_ft50_current_with_ror.csv`. Emails, phone numbers, and photos are not written to the site. Directory appointments are 160,104, were 159,961. Editors are 111,229, were 111,154. Journals stay 2,853. ABDC chips are A* 25,172 (219 journals), A 45,854 (626), B 42,330 (836), and C 27,148 (732). Countries stay 175. Institutions are 11,344 rows (8,665 with a ROR id), were 11,276 (8,663). 12,307 appointments have no institution, were 12,309. 642 country-only appointments, were 641, plus 3 bracket-only appointments and 5 street, PO Box, or postal-code appointments, were 10, stay off that page. State Street Global Advisors and State Street Associates are firms, not street addresses, so their 8 appointments (5 already published, 3 new on Journal of Portfolio Management) are now on Institutions.
