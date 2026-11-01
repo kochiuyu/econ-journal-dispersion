@@ -1,0 +1,95 @@
+{
+  "status": "HELD",
+  "published": false,
+  "built_at": "2026-11-01T18:45:00+08:00",
+  "tag": "ror_prepublish_fix_20261101",
+  "source": "releases/editors_ror_consistency3_20261101",
+  "source_md5": {
+    "editor_affiliations.csv": "36774676d259b2a62c8195b116972f09",
+    "editors_abdc_a_current.csv": "c8d95e4a1bd64b2020f75d1e87e1d00a",
+    "editors_abdc_a_current_with_profile_pilot.csv": "34c9ae6b36a75f4cddca5a84b2ed85d7",
+    "editors_abdc_a_star_current.csv": "20300f0d5d414aa01203cd845b069903",
+    "editors_abdc_b_current.csv": "0cd93fdd8684487bc84bd43e662599ff",
+    "editors_abdc_b_current_with_profile_pilot.csv": "324370577bbf08283d50fc1298706c75",
+    "editors_abdc_c_current.csv": "369a3c83c57aa2067c6856f9f94f6b90",
+    "editors_abs_ajg_gap_ajg1_current.csv": "6b798e9657402b7dfcf86e8ba12657f9",
+    "editors_abs_ajg_gap_ajg2_current.csv": "a3e41c0f07e14e4c1c37aed50b07c4fa",
+    "editors_abs_ajg_gap_prio43_current.csv": "94e6745721e9c9edf60786d65894e874",
+    "editors_ft50_current.csv": "fd32a3fbd60df184f5435ba7872a9253",
+    "editors_ft50_current_with_ror.csv": "82c9d2eebab3fcf0130f63006376478a"
+  },
+  "changes": {
+    "long:sync_is_panel_ror": 17,
+    "panel:ror_id_aff_rank_or_notes": 17,
+    "heidelberg_2971": "kept_ohio_printed",
+    "alos_accent": "no_change"
+  },
+  "rows_changed_by_file": {
+    "editor_affiliations.csv": 17,
+    "editors_ft50_current_with_ror.csv": 3,
+    "editors_abdc_a_star_current.csv": 5,
+    "editors_abdc_a_current.csv": 1,
+    "editors_abdc_a_current_with_profile_pilot.csv": 1,
+    "editors_abdc_b_current.csv": 1,
+    "editors_abdc_b_current_with_profile_pilot.csv": 1,
+    "editors_abdc_c_current.csv": 4,
+    "editors_abs_ajg_gap_prio43_current.csv": 1
+  },
+  "header_changes": "none",
+  "new_values": {
+    "ror_match_kind": [
+      "consistency3b_sync"
+    ]
+  },
+  "verification": {
+    "panel_long_is_panel_ror_mismatches": 0,
+    "heidelberg_2971_ror": "https://ror.org/04rcqnp59",
+    "heidelberg_2971_raw_has_ohio": true
+  },
+  "out_md5": {
+    "README.md": "819e4259a978fa85346aa404ba67677e",
+    "ROR_PREPUBLISH_FIX_changes_20261101.csv": "f62f5a01227ddbef18d0ffcb8e368037",
+    "editor_affiliations.csv": "2753b9b241a47f2e926e3f577293654f",
+    "editors_abdc_a_current.csv": "d880f58fa9eafbb1f107a83ee71c1ed3",
+    "editors_abdc_a_current_with_profile_pilot.csv": "b4dab72361a181fab6154abed663db65",
+    "editors_abdc_a_star_current.csv": "88a4251b220aa36ae4c03178c1553727",
+    "editors_abdc_b_current.csv": "044e82ea546cd0603a1e44bd6617f2ef",
+    "editors_abdc_b_current_with_profile_pilot.csv": "e588b78e551bb64c64d453d4ef39964f",
+    "editors_abdc_c_current.csv": "05908778ffdf331a0ca1ee5578808ba6",
+    "editors_abs_ajg_gap_ajg1_current.csv": "6b798e9657402b7dfcf86e8ba12657f9",
+    "editors_abs_ajg_gap_ajg2_current.csv": "a3e41c0f07e14e4c1c37aed50b07c4fa",
+    "editors_abs_ajg_gap_prio43_current.csv": "68508d1e84dfea56e5283ee07addfc89",
+    "editors_ft50_current.csv": "fd32a3fbd60df184f5435ba7872a9253",
+    "editors_ft50_current_with_ror.csv": "72044b452ad0490ab2555757f25caddf"
+  },
+  "web_publish": {
+    "status": "PUBLISHED",
+    "published": true,
+    "published_at": "2026-11-01 (Asia/Hong_Kong)",
+    "repo": "kochiuyu/econ-journal-dispersion",
+    "branch": "web/editors-final-ror3b-backfill-20261101",
+    "note": "Top-level status/published fields are the collector state at hand-off. Directory copy: 9 panels in data/editors/*/releases/current/; long table gzipped; with_profile_pilot panels not published; see README for guardrail restores and contact scrub.",
+    "panel_rows": {
+      "editors_abdc_a_current.csv": 45889,
+      "editors_abdc_a_star_current.csv": 25596,
+      "editors_abdc_b_current.csv": 42558,
+      "editors_abdc_c_current.csv": 27719,
+      "editors_abs_ajg_gap_ajg1_current.csv": 12316,
+      "editors_abs_ajg_gap_ajg2_current.csv": 5462,
+      "editors_abs_ajg_gap_prio43_current.csv": 3104,
+      "editors_ft50_current.csv": 10047,
+      "editors_ft50_current_with_ror.csv": 10047
+    },
+    "not_published": [
+      "editors_abdc_a_current_with_profile_pilot.csv",
+      "editors_abdc_b_current_with_profile_pilot.csv",
+      "editor_affiliations.csv (uncompressed; published as editor_affiliations.csv.gz)"
+    ],
+    "long_table": {
+      "file": "editor_affiliations.csv.gz",
+      "rows": 181443,
+      "bytes_uncompressed": 63229263,
+      "md5_gz": "87bcf23f68a965ba90c79864f882da34"
+    }
+  }
+}
