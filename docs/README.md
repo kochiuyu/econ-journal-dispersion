@@ -13,11 +13,32 @@ Full variable dictionary will land here as releases freeze. Until then, see colu
 
 ## Editor-panel columns added in `editors_single_editor_20261029`
 
-Every current editor CSV under `data/editors/*/releases/current/` ends with two columns. `scripts/build_site.py` selects columns by name and does not write either one to the site. `source_url` stays the primary board link.
+Every current editor CSV under `data/editors/*/releases/current/` has these two columns next to each other (they were the last two columns until `editors_ror_consistency3b_20261101`). `scripts/build_site.py` selects columns by name and does not write either one to the site. `source_url` stays the primary board link.
 
 | Column | Meaning |
 |--------|---------|
-| `board_urls` | Public board-page URLs, separated by `\|`. Filled only when that journal's board spans more than one page: IEEE Transactions on Intelligent Transportation Systems, Acta Turistica, Management: Journal of Contemporary Management Issues, and PASOS Journal of Tourism and Cultural Heritage; and, from `editors_browser_single_20261029`, Journal of Derivatives and Journal of Portfolio Management. Blank on every other row |
+| `board_urls` | Public board-page URLs, separated by `\|`. A single URL may be filled on any journal (from `editors_ror_consistency3b_20261101`). A multi-URL list is filled only when that journal's board spans more than one page: IEEE Transactions on Intelligent Transportation Systems, Acta Turistica, Management: Journal of Contemporary Management Issues, and PASOS Journal of Tourism and Cultural Heritage; and, from `editors_browser_single_20261029`, Journal of Derivatives and Journal of Portfolio Management; and, from `editors_ror_consistency3b_20261101`, German Economic Review, British Journal of Management, International Journal of Management Reviews, Sydney Law Review, Journal of Korea Trade, International Journal of Small and Medium Enterprises, and BFuP Betriebswirtschaftliche Forschung und Praxis. Blank elsewhere |
 | `board_url_count` | Number of URLs in `board_urls`. Blank when `board_urls` is blank |
 
 The cells are page URLs only. They do not contain an email address, a phone number, or a photo.
+
+## Editor-panel columns added in `editors_ror_consistency3b_20261101`
+
+Freeze `editors_ror_consistency3b_20261101` (published 2026-11-01) adds these columns after `board_url_count` on all nine current panels. The slim `editors_ft50_current.csv` also gains `ror_id`, `ror_name`, `ror_country`, and `continent`.
+
+| Column | Meaning |
+|--------|---------|
+| `board_status` | Collector board status for the row's journal |
+| `tenure_start_year`, `tenure_end_year` | Printed tenure years when the masthead gives them; blank otherwise |
+| `snapshot_date`, `snapshot_source`, `board_year` | When and from what the board was captured, and the board year |
+| `editor_row_key` | Stable row key; joins to `editor_affiliations.csv.gz` |
+| `affiliation_count` | Number of affiliation parts parsed from `raw_affiliation` |
+| `ror_id_aff_rank`, `primary_aff_basis` | Which affiliation part supplies the panel `ror_id`, and why |
+| `former_flag` | Masthead marks the affiliation as former |
+| `other_ror_ids` | `;`-separated ROR ids of the other affiliation parts |
+
+Long table: `data/editors/releases/editors_ror_consistency3b_20261101/editor_affiliations.csv.gz`, one row per affiliation part (181,443 rows), keyed by `editor_row_key`.
+
+## Pinned core49 backfill
+
+`data/editors/core49/releases/editors_backfill_scale_ror_20261031/` holds the multi-year core49 panel (15,446 rows) with its long table, matched/unmatched audits, gaps, inventory, row-key crosswalk, and spot check. The crosswalk maps keys that shifted after a parse fix. Reports for both freezes are in `docs/reports/`.

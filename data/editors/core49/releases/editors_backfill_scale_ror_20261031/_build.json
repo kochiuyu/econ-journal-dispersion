@@ -1,0 +1,132 @@
+{
+  "status": "HELD",
+  "built_at": "2026-11-01T02:05:10+08:00",
+  "src": "releases/editors_backfill_scale_20261101",
+  "src_md5": {
+    "README.md": "bd9a6200079f4af7fb4b01289600984f",
+    "_build.json": "e791ac1a76f0c708575a5e53431fbb64",
+    "editor_affiliations.csv": "57579c4e882e51c3a07a7f3a1349d6cb",
+    "editors_backfill_scale_gaps.csv": "90949c22392a11ec437b2f470f0db4a8",
+    "editors_backfill_scale_inventory.csv": "7b757b5d6d634179c56cee8046b902c9",
+    "editors_backfill_scale_panel.csv": "cce7539a48af1f1b3165d9375fdb3f8e",
+    "editors_backfill_scale_row_key_crosswalk.csv": "1a5cca8adb20a4914e624835143d73d0",
+    "editors_backfill_scale_spotcheck.csv": "7a958526247ee8f32582d54ecb542c2b"
+  },
+  "ror_dump": "ROR v2.15 (local)",
+  "conventions": [
+    "releases/editors_backfill_pilot_ror_20261031",
+    "editors_ror_multiaff_20261031",
+    "ror_fix_post15_20261031 blanks kept"
+  ],
+  "newcols": {
+    "inserted_before_ror_match_status": [
+      "institution",
+      "other_affiliations",
+      "canonical_name",
+      "ror_id",
+      "ror_name",
+      "ror_country",
+      "continent",
+      "lat",
+      "lon",
+      "ror_match_method",
+      "ror_match_score",
+      "ror_confidence",
+      "ror_notes"
+    ],
+    "appended": [
+      "ror_id_aff_rank",
+      "primary_aff_basis",
+      "former_flag",
+      "other_ror_ids"
+    ],
+    "changed_existing": {
+      "ror_match_status": "all rows; new value staff_excluded",
+      "affiliation_count": "222 rows recomputed"
+    }
+  },
+  "counts": {
+    "panel_rows": 15446,
+    "panel_rows_previous_build": 15436,
+    "rows_added": 10,
+    "long_rows": 11661,
+    "matched": 11021,
+    "unmatched": 360,
+    "no_affiliation": 4017,
+    "staff_excluded": 48,
+    "nonstaff_rows": 15224,
+    "nonstaff_with_aff": 11373,
+    "nonstaff_matched": 11013,
+    "nonstaff_match_rate": 0.9683,
+    "high": 8704,
+    "medium": 2244,
+    "low": 65,
+    "staff_rows": 222,
+    "distinct_ror": 474,
+    "audit_rows": 370,
+    "audit_errors": 0,
+    "unmatched_strings": 91,
+    "unmatched_string_long_rows": 379,
+    "crosscheck_nonagree_strings": 49,
+    "affiliation_count_changes": 212
+  },
+  "out_md5": {
+    "BACKFILL_SCALE_ROR_affiliation_count_changes_20261031.csv": "656ef59c26e6937cc84c994de0af4326",
+    "BACKFILL_SCALE_ROR_crosscheck_20261031.csv": "c6c679926479156cf0ff704964c788c0",
+    "BACKFILL_SCALE_ROR_curated_log_20261031.csv": "5d29eafc1d62b2e559854dcfb9a4108c",
+    "BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv": "c2ff2e53a7c24af1e734e6c8e51f97a0",
+    "BACKFILL_SCALE_ROR_ri_decisions_20261031.csv": "aed037a9208d9e1d819420319399af14",
+    "BACKFILL_SCALE_ROR_spotcheck_20261031.csv": "7a78faf4f841d820862ea29d86f9c618",
+    "BACKFILL_SCALE_ROR_staff_rows_20261031.csv": "643cb9d64832e74dcb8a886c216b9820",
+    "BACKFILL_SCALE_ROR_unmatched_strings_20261031.csv": "e2c4ac100b301fd75fd9b8714b59d993",
+    "editor_affiliations.csv": "9594100ce59ecb7d3ee0e0cccce68d93",
+    "editors_backfill_scale_gaps.csv": "8ffa0fe5ac421839b5a145bc14a50c24",
+    "editors_backfill_scale_inventory.csv": "7b757b5d6d634179c56cee8046b902c9",
+    "editors_backfill_scale_ror_matched.csv": "3c9dbee86d9fba2ecf12d247fe8f9c5d",
+    "editors_backfill_scale_ror_panel.csv": "784f6d634169a7f1b4016730526120cf",
+    "editors_backfill_scale_ror_unmatched.csv": "82665fabbd54115a5152a10a34f56c83",
+    "editors_backfill_scale_row_key_crosswalk.csv": "1a5cca8adb20a4914e624835143d73d0",
+    "editors_backfill_scale_spotcheck.csv": "7a958526247ee8f32582d54ecb542c2b"
+  },
+  "docs_md5": {
+    "README.md": "86525a5c7ac7dafed80cd8f40e5e34e4",
+    "reports/BACKFILL_scale_ror_20261031.md": "b5665bac3cffbefcb3d644cad81dec02"
+  },
+  "published": false,
+  "decisions_20261101": {
+    "system_records_blanked": {
+      "0238rvs44": 7,
+      "01mtkd993": 4,
+      "03tzaeb71": 1
+    },
+    "kept_blank": [
+      "22 system_no_campus strings",
+      "11 post15 strings",
+      "American",
+      "Western",
+      "ENS",
+      "Heidelberg",
+      "Korea"
+    ],
+    "essec": "02dga6j42 unless Singapore printed (04be2h179)",
+    "ceu": "02zx40v98"
+  },
+  "newfiles_20261101": [
+    "editors_backfill_scale_row_key_crosswalk.csv"
+  ],
+  "web_publish": {
+    "status": "PUBLISHED",
+    "published": true,
+    "published_at": "2026-11-01 (Asia/Hong_Kong)",
+    "repo_path": "data/editors/core49/releases/editors_backfill_scale_ror_20261031/",
+    "branch": "web/editors-final-ror3b-backfill-20261101",
+    "note": "Top-level status fields are the collector state at hand-off. All files byte-identical except editors_backfill_scale_spotcheck.csv (phone/fax snippets removed from reverse_residue_examples). No raw_html.",
+    "scrubbed_files": {
+      "editors_backfill_scale_spotcheck.csv": {
+        "cells": 30,
+        "fragments_removed": 55,
+        "md5": "da6059469d1eee4d841cc9f2a58626f3"
+      }
+    }
+  }
+}

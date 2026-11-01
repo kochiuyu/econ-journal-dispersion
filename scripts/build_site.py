@@ -361,6 +361,8 @@ AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # file. African Affairs is 40 rows. Fourteen drop-quality chrome rows stay
 # out, and the nav rows the collector put back on ajg1 and ajg2 stay out
 # too. Row counts are 3,104 / 4,982 / 11,544.
+# editors_ror_consistency3b_20261101 (Directory copy) rescrapes ajg1 and ajg2:
+# 3,104 / 5,462 / 12,316 rows, with the same nav rows kept out.
 # Panel CSVs end with board_urls and board_url_count. Readers select columns
 # by name. Those two columns are not written to the site.
 AJG_GAP_FILES = (
@@ -375,15 +377,15 @@ AJG_GAP_FILES = (
         "ajg2",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
         frozenset({"2"}),
-        4982,
+        5462,
         0,
     ),
     (
         "ajg1",
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
-        11544,
-        16,
+        12316,
+        15,
     ),
 )
 # Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
@@ -1183,11 +1185,20 @@ BOARD_URL_KEYS = frozenset({
     # editorial-board tabs.
     "journal_derivatives",
     "journal_portfolio_management",
+    # editors_ror_consistency3b_20261101: multi-page boards added by the
+    # collector's t39 board fixes and rescrapes.
+    "geb",
+    "british_journal_management",
+    "international_journal_management_reviews",
+    "sydney_law_review",
+    "journal_korea_trade",
+    "international_journal_small_medium_enterprises",
+    "bfup_betriebswirtschaftliche_forschung_und_praxis",
 })
 
 
 def assert_trailing_board_columns(path: Path) -> None:
-    """Panel CSVs end with board_urls, board_url_count. Select by name.
+    """Panel CSVs carry board_urls, board_url_count (adjacent). Select by name.
 
     board_urls is a pipe-separated list of public board-page URLs, filled
     only when that journal's board spans more than one page. It is not
@@ -1196,8 +1207,11 @@ def assert_trailing_board_columns(path: Path) -> None:
     with path.open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         fields = list(reader.fieldnames or [])
-        if fields[-2:] != ["board_urls", "board_url_count"]:
-            raise SystemExit(f"{path.name} must end with board_urls, board_url_count")
+        # Freeze editors_ror_consistency3b_20261101 appends board_status, tenure,
+        # snapshot, editor_row_key and multi-affiliation ROR columns after the
+        # board-link pair. Require the pair to be present and adjacent.
+        if "board_urls" not in fields or fields[fields.index("board_urls") + 1 : fields.index("board_urls") + 2] != ["board_url_count"]:
+            raise SystemExit(f"{path.name} must carry board_urls, board_url_count")
         filled = 0
         for row in reader:
             urls = (row.get("board_urls") or "").strip()
@@ -1205,11 +1219,13 @@ def assert_trailing_board_columns(path: Path) -> None:
             key = (row.get("abdc_journal_id") or "").strip() or (row.get("journal") or "").strip()
             if not urls and not count:
                 continue
-            if key not in BOARD_URL_KEYS:
-                raise SystemExit(f"{path.name} has board_urls on {key!r}")
             parts = [part.strip() for part in urls.split("|") if part.strip()]
-            if not count.isdigit() or int(count) != len(parts) or len(parts) < 2:
+            if not count.isdigit() or int(count) != len(parts) or not parts:
                 raise SystemExit(f"{path.name} board_url_count {count!r} != {len(parts)} on {key}")
+            # A single board-page link (count 1) is allowed on any journal since
+            # editors_ror_consistency3b_20261101. Multi-page lists stay allowlisted.
+            if len(parts) >= 2 and key not in BOARD_URL_KEYS:
+                raise SystemExit(f"{path.name} has board_urls on {key!r}")
             for part in parts:
                 if not (part.startswith("http://") or part.startswith("https://")) or "@" in part:
                     raise SystemExit(f"{path.name} board URL is not a public page: {part[:180]}")
@@ -1218,6 +1234,7 @@ def assert_trailing_board_columns(path: Path) -> None:
             filled += 1
         if filled and path.name not in {
             "editors_abdc_a_current.csv",
+            "editors_abdc_a_star_current.csv",
             "editors_abdc_c_current.csv",
             "editors_abs_ajg_gap_ajg1_current.csv",
         }:
@@ -2508,7 +2525,11 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_browser_single_20261029 adds Journal of Portfolio Management
     # and Arts and the Market mastheads whose firms and schools had no ROR id
     # on these boards (no id invented), so that share is 7,977 of 10,150.
-    if host_with_ror < host_institutions * 0.78:
+    # editors_ror_consistency3b_20261101 carries the collector's strict ROR
+    # pass (post15, campus2, consistency, consistency3 blanks: a blank ROR is
+    # better than a wrong one), so unmatched strings become their own rows.
+    # That share is 5,889 of 14,096.
+    if host_with_ror < host_institutions * 0.40:
         raise SystemExit(
             f"Only {host_with_ror} of {host_institutions} FT50/ABDC institutions have a ROR id"
         )
@@ -2583,9 +2604,14 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # ROR id (the crosswalk hit was a different, Japan-based school and was
     # rejected). That string is already the display name of a ROR row, so
     # shared display names are 62.
-    if duplicate_names != 62:
+    # editors_ror_consistency3b_20261101 blanks foreign-namesake, campus and
+    # ambiguous ROR ids (post15, campus2, consistency, consistency3). Those
+    # seats keep the printed organization string, which is often already the
+    # display name of a ROR row (e.g. a blanked 'Concordia University' next
+    # to the matched one), so shared display names are 125.
+    if duplicate_names != 125:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 62. "
+            f"Institutions that share a display name: {duplicate_names}, expected 125. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}

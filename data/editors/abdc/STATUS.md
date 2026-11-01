@@ -1,17 +1,19 @@
 # Editors — ABDC
 
-Updated: 2026-10-29 (Asia/Hong_Kong)
+Updated: 2026-11-01 (Asia/Hong_Kong)
 
 ## Release in this repo
 
-`releases/current/` — current boards by ABDC rating. Freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. Faculty URLs from `editors_nonft50_url_aff_20261028` stay. Every file ends with `board_urls` and `board_url_count`.
+`releases/current/` — current boards by ABDC rating. Freeze `editors_ror_consistency3b_20261101` (published 2026-11-01) is the current board. It supersedes `editors_browser_single_20261029` and retires the unpublished collector packs in between (consistency2, consistency, multiaff, campus2, campus, post15, pilot, the scale-parse packs, and the t39 / institution-fix freezes). Twelve columns follow `board_urls` and `board_url_count` (see `docs/README.md`), so the board columns are no longer last. The collector blanks ambiguous ROR ids, so `ror_id` coverage is lower. Emails and phone numbers left in text cells were removed. Long table and audit logs: `data/editors/releases/editors_ror_consistency3b_20261101/`. Reports: `docs/reports/`. Details: `releases/current/RELEASE_NOTES.md`. The history below describes earlier freezes.
 
-| File | Rating | Rows | Empty `editor_name` | `faculty_profile_url` | `raw_affiliation` |
-|------|--------|-----:|--------------------:|----------------------:|------------------:|
-| `editors_abdc_a_star_current.csv` | A* | 25,178 | 2 | 12,523 (49.7%) | 23,806 (94.6%) |
-| `editors_abdc_a_current.csv` | A | 45,866 | 1 | 6,237 (13.6%) | 43,147 (94.1%) |
-| `editors_abdc_b_current.csv` | B | 42,345 | 0 | 3,509 (8.3%) | 39,985 (94.4%) |
-| `editors_abdc_c_current.csv` | C | 27,160 | 11 | 1,379 (5.1%) | 24,260 (89.3%) |
+Previous: freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. Faculty URLs from `editors_nonft50_url_aff_20261028` stay. 
+
+| File | Rating | Rows | Empty `editor_name` | `faculty_profile_url` | `raw_affiliation` | `ror_id` |
+|------|--------|-----:|--------------------:|----------------------:|------------------:|---------:|
+| `editors_abdc_a_star_current.csv` | A* | 25,596 | 1 | 12,522 (48.9%) | 24,210 (94.6%) | 23,285 |
+| `editors_abdc_a_current.csv` | A | 45,889 | 1 | 6,236 (13.6%) | 43,164 (94.1%) | 40,410 |
+| `editors_abdc_b_current.csv` | B | 42,558 | 11 | 3,509 (8.2%) | 40,194 (94.4%) | 36,765 |
+| `editors_abdc_c_current.csv` | C | 27,719 | 6 | 1,379 (5.0%) | 24,906 (89.9%) | 21,237 |
 
 Excluded: `*.before_ror.csv`, `*.before_url_aff_nonft50_20261028`, `abdc/raw/`, scrape queues, `journals_abdc_b_product03.csv`, and the collector audit CSVs.
 

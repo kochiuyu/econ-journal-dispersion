@@ -1,0 +1,40 @@
+journal_id,journal,rows_non_staff,no_affiliation,with_affiliation,matched,unmatched,match_rate,high,medium,low,staff_rows_excluded
+S42893225,AEJ: Applied Economics,256,211,45,45,0,1.0,36,9,0,19
+S158011328,AEJ: Economic Policy,310,261,49,49,0,1.0,31,18,0,19
+S170166683,AEJ: Macroeconomics,139,110,29,26,3,0.8966,21,5,0,18
+S96919139,AEJ: Microeconomics,171,142,29,29,0,1.0,29,0,0,20
+S23254222,AER,609,609,0,0,0,,0,0,0,19
+S4210174288,AER: Insights,154,154,0,0,0,,0,0,0,9
+S91754907,American Journal of Agricultural Economics,297,0,297,269,28,0.9057,208,60,1,0
+S49389958,Econometric Theory,490,0,490,464,26,0.9469,383,81,0,0
+S579031,Economic Theory,692,8,684,679,5,0.9927,595,80,4,0
+S94499970,Energy Economics,317,0,317,309,8,0.9748,242,67,0,0
+S69338747,European Economic Review,648,0,648,631,17,0.9738,508,118,5,0
+S181493553,Experimental Economics,470,0,470,466,4,0.9915,340,123,3,1
+S94044085,Games and Economic Behavior,262,0,262,254,8,0.9695,201,53,0,4
+S145200904,Health Economics,391,8,383,380,3,0.9922,217,163,0,8
+S85739584,Journal of Applied Econometrics,550,0,550,535,15,0.9727,372,160,3,19
+S18095783,Journal of Business and Economic Statistics,432,88,344,320,24,0.9302,262,58,0,4
+S101209419,Journal of Development Economics,646,6,640,639,1,0.9984,499,140,0,0
+S127742747,Journal of Econometrics,568,83,485,480,5,0.9897,408,72,0,6
+S62201805,Journal of Economic Behavior and Organization,662,67,595,566,29,0.9513,412,131,23,1
+S44585919,Journal of Economic Dynamics and Control,573,4,569,555,14,0.9754,449,102,4,0
+S181171746,Journal of Economic Growth,281,0,281,273,8,0.9715,217,56,0,0
+S127708089,Journal of Economic Literature,239,223,16,16,0,1.0,16,0,0,17
+S200872515,Journal of Environmental Economics and Management,564,0,564,494,70,0.8759,441,52,1,0
+S207154782,Journal of Financial Econometrics,447,0,447,425,22,0.9508,335,84,6,8
+S166621295,Journal of Health Economics,363,0,363,356,7,0.9807,281,75,0,0
+S198098467,Journal of International Economics,540,0,540,538,2,0.9963,416,120,2,0
+S8557221,Journal of Labor Economics,195,195,0,0,0,,0,0,0,0
+S998097505,Journal of Law and Economics,55,55,0,0,0,,0,0,0,0
+S6711363,Journal of Monetary Economics,451,27,424,414,10,0.9764,370,44,0,0
+S2058785,"Journal of Money, Credit and Banking",638,512,126,126,0,1.0,126,0,0,0
+S95323914,Journal of Political Economy,238,238,0,0,0,,0,0,0,0
+S106686155,Journal of Risk and Uncertainty,271,0,271,260,11,0.9594,192,68,0,7
+S147692640,Journal of Urban Economics,355,0,355,354,1,0.9972,268,86,0,4
+S165087003,Journal of the European Economic Association,589,529,60,60,0,1.0,34,26,0,2
+S203860005,Quarterly Journal of Economics,275,275,0,0,0,,0,0,0,8
+S34139249,RAND Journal of Economics,282,0,282,260,22,0.922,198,49,13,8
+S163499366,Review of Economic Dynamics,107,0,107,107,0,1.0,70,37,0,0
+S180061323,Review of Economics and Statistics,307,46,261,254,7,0.9732,220,34,0,8
+S45992627,The Economic Journal,390,0,390,380,10,0.9744,307,73,0,13
