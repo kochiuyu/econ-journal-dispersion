@@ -234,10 +234,13 @@ a.person { font-weight: 650; }
 .empty { text-align: center; color: var(--muted); padding: 28px 12px; }
 
 @media (max-width: 900px) {
+  .nav { flex-wrap: wrap; }
   .stats { grid-template-columns: 1fr 1fr; }
   .explore { grid-template-columns: 1fr; }
   .t2 { display: none; }
   select, #journal, .combo { max-width: 100%; }
+  #field { max-width: 100%; min-width: 0; }
+  .prose code { overflow-wrap: anywhere; }
 }
 @media (max-width: 560px) {
   .stats { grid-template-columns: 1fr; }
