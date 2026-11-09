@@ -2128,6 +2128,8 @@ INSTITUTION_ICONS = {
     "0384j8v12": "assets/institutions/sydney.png",
     "027m9bs27": "assets/institutions/manchester.png",
     "00jmfr291": "assets/institutions/michigan.png",
+    "052gg0110": "assets/institutions/oxford.png",
+    "01ej9dk98": "assets/institutions/melbourne.png",
 }
 
 
