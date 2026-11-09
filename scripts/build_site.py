@@ -251,7 +251,6 @@ import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
@@ -2114,131 +2113,25 @@ def institution_key(rec: Rec, places: set[str]) -> tuple[str, str] | None:
     return None
 
 
-# Official site icons, stored locally and keyed by verified ROR identifiers.
-INSTITUTION_ICONS = {
-    "00f54p054": "assets/institutions/stanford.png",
-    "00hx57361": "assets/institutions/princeton.png",
-    "03vek6s52": "assets/institutions/harvard.png",
-    "042nb2s44": "assets/institutions/mit.png",
-    "04p491231": "assets/institutions/penn-state.png",
-    "0030zas98": "assets/institutions/polyu.png",
-    "03r8z3t63": "assets/institutions/unsw.png",
-    "01tgyzw49": "assets/institutions/nus.png",
-    "03efmqc40": "assets/institutions/asu.png",
-    "0090zs177": "assets/institutions/lse.png",
-    "0384j8v12": "assets/institutions/sydney.png",
-    "027m9bs27": "assets/institutions/manchester.png",
-    "00jmfr291": "assets/institutions/michigan.png",
-    "052gg0110": "assets/institutions/oxford.png",
-    "01ej9dk98": "assets/institutions/melbourne.png",
-    "0190ak572": "assets/institutions/nyu.png",
-    "00b30xv10": "assets/institutions/upenn.png",
-    "03dbr7087": "assets/institutions/toronto.png",
-    "05bnh6r87": "assets/institutions/cornell.png",
-    "02jx3x895": "assets/institutions/ucl.png",
-    "00rqy9422": "assets/institutions/queensland.png",
-    "00rs6vg23": "assets/institutions/ohio-state.png",
-    "017zqws13": "assets/institutions/minnesota.png",
-    "01y2jtd41": "assets/institutions/wisconsin.png",
-    "03taz7m60": "assets/institutions/usc.png",
-    "00vtgdb53": "assets/institutions/glasgow.png",
-    "02y3ad647": "assets/institutions/florida.png",
-    "03cve4549": "assets/institutions/tsinghua.png",
-    "057w15z03": "assets/institutions/erasmus.png",
-    "00hj54h04": "assets/institutions/utexas.png",
-    "00t33hh48": "assets/institutions/cuhk.png",
-    "01a77tt86": "assets/institutions/warwick.png",
-    "00py81415": "assets/institutions/duke.png",
-    "04dkp9463": "assets/institutions/amsterdam.png",
-    "03angcq70": "assets/institutions/birmingham.png",
-    "046rm7j60": "assets/institutions/ucla.png",
-    "03rmrcq20": "assets/institutions/ubc.png",
-    "000e0be47": "assets/institutions/northwestern.png",
-    "00cvxb145": "assets/institutions/washington.png",
-    "0220mzb33": "assets/institutions/kcl.png",
-    "02dqehb95": "assets/institutions/purdue.png",
-    "036nfer12": "assets/institutions/ucf.png",
-    "02b6qw903": "assets/institutions/south-carolina.png",
-    "02v51f717": "assets/institutions/peking.png",
-    "03b94tp07": "assets/institutions/auckland.png",
-    "05vt9qd57": "assets/institutions/rutgers.png",
-    "02bfwt286": "assets/institutions/monash.png",
-    "047426m28": "assets/institutions/illinois.png",
-    "00hj8s172": "assets/institutions/columbia.png",
-    "01f5ytq51": "assets/institutions/tamu.png",
-    "01an7q238": "assets/institutions/berkeley.png",
-    "013meh722": "assets/institutions/cambridge.png",
-    "02zhqgq86": "assets/institutions/hku.png",
-    "04sppb023": "assets/institutions/cbs.png",
-    "019wvm592": "assets/institutions/anu.png",
-    "024mw5h28": "assets/institutions/uchicago.png",
-    "024mrxd33": "assets/institutions/leeds.png",
-    "01kg8sb98": "assets/institutions/indiana.png",
-    "01nrxwf90": "assets/institutions/edinburgh.png",
-    "02smfhw86": "assets/institutions/virginia-tech.png",
-    "02jqj7156": "assets/institutions/george-mason.png",
-    "03kk7td41": "assets/institutions/cardiff.png",
-    "01v29qb04": "assets/institutions/durham.png",
-    "02e7b5302": "assets/institutions/ntu.png",
-    "020f3ap87": "assets/institutions/tennessee.png",
-    "05g3dte14": "assets/institutions/fsu.png",
-    "01ee9ar58": "assets/institutions/nottingham.png",
-    "0130frc33": "assets/institutions/unc.png",
-    "05crjpb27": "assets/institutions/bocconi.png",
-    "012p63287": "assets/institutions/groningen.png",
-    "03v76x132": "assets/institutions/yale.png",
-    "047s2c258": "assets/institutions/maryland.png",
-    "01ryk1543": "assets/institutions/southampton.png",
-    "05qwgg493": "assets/institutions/boston-u.png",
-    "03f0f6041": "assets/institutions/uts.png",
-    "01111rn36": "assets/institutions/bologna.png",
-    "04f2nsd36": "assets/institutions/lancaster.png",
-    "05f950310": "assets/institutions/ku-leuven.png",
-    "00ks66431": "assets/institutions/surrey.png",
-    "0524sp257": "assets/institutions/bristol.png",
-    "032db5x82": "assets/institutions/usf.png",
-    "048sx0r50": "assets/institutions/houston.png",
-    "008xxew50": "assets/institutions/vu-amsterdam.png",
-    "05ww3wq27": "assets/institutions/hec-montreal.png",
-    "03m2x1q45": "assets/institutions/arizona.png",
-    "0040r6f76": "assets/institutions/wellington.png",
-    "01aff2v68": "assets/institutions/waterloo.png",
-    "03yn8s215": "assets/institutions/wu-vienna.png",
-    "02gz6gg07": "assets/institutions/fiu.png",
-    "00ayhx656": "assets/institutions/sussex.png",
-    "04m01e293": "assets/institutions/university-york.png",
-    "01pxwe438": "assets/institutions/mcgill.png",
-    "02der9h97": "assets/institutions/uconn.png",
-    "00q4vv597": "assets/institutions/hkust.png",
-    "01yc7t268": "assets/institutions/washu.png",
-}
+def load_institution_icon_manifest() -> dict[str, str]:
+    """Read the ROR mapping from the directory containing the tracked PNGs."""
+    folder = SITE_DIR / "assets" / "institutions"
+    records = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    icons: dict[str, str] = {}
+    filenames: set[str] = set()
+    for record in records:
+        ror_id = record["id"]
+        name = record["file"]
+        if not re.fullmatch(r"0[a-z0-9]{8}", ror_id) or ror_id in icons:
+            raise SystemExit(f"Invalid or duplicate institution icon ROR ID: {ror_id}")
+        if not re.fullmatch(r"[a-z0-9-]+\.png", name) or name in filenames or not (folder / name).is_file():
+            raise SystemExit(f"Invalid, duplicate, or missing institution PNG: {name}")
+        icons[ror_id] = f"assets/institutions/{name}"
+        filenames.add(name)
+    return icons
 
 
-def unpack_institution_icon_packs() -> None:
-    """Stage the checked-in icon batches as individual files for GitHub Pages."""
-    packs = ROOT / "assets" / "institution-icon-packs"
-    if not packs.is_dir():
-        return
-    target = SITE_DIR / "assets" / "institutions"
-    target.mkdir(parents=True, exist_ok=True)
-    for path in sorted(packs.glob("batch-*.zip")):
-        with ZipFile(path) as pack:
-            records = json.loads(pack.read("sources.json"))
-            ids = [record["id"] for record in records]
-            if len(ids) != 50 or len(set(ids)) != 50:
-                raise SystemExit(f"{path.name} must contain 50 distinct institution icons")
-            for ror_id in ids:
-                if not re.fullmatch(r"0[a-z0-9]{8}", ror_id) or ror_id in INSTITUTION_ICONS:
-                    raise SystemExit(f"Invalid or duplicate icon ROR ID in {path.name}: {ror_id}")
-                name = f"{ror_id}.png"
-                info = pack.getinfo(name)
-                if not 8 < info.file_size <= 32768:
-                    raise SystemExit(f"Invalid icon size in {path.name}: {name}")
-                image = pack.read(info)
-                if not image.startswith(b"\x89PNG\r\n\x1a\n"):
-                    raise SystemExit(f"Invalid PNG in {path.name}: {name}")
-                (target / name).write_bytes(image)
-                INSTITUTION_ICONS[ror_id] = f"assets/institutions/{name}"
+INSTITUTION_ICONS = load_institution_icon_manifest()
 
 
 def build_institution_icons(records: list[Rec]) -> dict:
@@ -3374,7 +3267,6 @@ def main() -> int:
     print("Role groups: " + ", ".join(f"{name} {family_counts[name]:,}" for name in FAMILIES))
     print(f"Collected {payload['collectedMin']} – {payload['collectedMax']}; board year {payload['year']}")
     write_directory_assets(payload)
-    unpack_institution_icon_packs()
     icons_text = dump_js(
         "INSTITUTION_ICONS",
         build_institution_icons(collapsed),
