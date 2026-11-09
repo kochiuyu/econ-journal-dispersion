@@ -1,0 +1,46 @@
+name: Stage verified institution icon files
+on:
+  push:
+    branches: [codex/stage-verified-institution-icons]
+    paths: [assets/icon-import-staging/*.zip]
+permissions:
+  contents: write
+concurrency:
+  group: stage-verified-institution-icons
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.ref == 'refs/heads/codex/stage-verified-institution-icons'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Stage verified PNGs only on the staging branch
+        run: |
+          python - <<'PY'
+          import json, pathlib, re, zipfile
+          src = pathlib.Path("assets/icon-import-staging")
+          dest = pathlib.Path("site/assets/institutions")
+          for pack in sorted(src.glob("batch-*.zip")):
+              with zipfile.ZipFile(pack) as archive:
+                  rows = json.loads(archive.read("sources.json"))
+                  names = [row["file"] for row in rows]
+                  assert len(names) == len(set(names)) == 50
+                  for name in names:
+                      assert re.fullmatch(r"0[a-z0-9]{8}\.png", name)
+                      info = archive.getinfo(name)
+                      assert 8 < info.file_size <= 32768
+                      data = archive.read(info)
+                      assert data.startswith(b"\x89PNG\r\n\x1a\n")
+                      target = dest / name
+                      if target.exists():
+                          assert target.read_bytes() == data
+                      else:
+                          target.write_bytes(data)
+          PY
+          git add -- site/assets/institutions/*.png
+          git diff --cached --quiet && exit 0
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -m "Stage verified institution PNGs"
+          git push origin HEAD:refs/heads/codex/stage-verified-institution-icons
