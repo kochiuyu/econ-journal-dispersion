@@ -2119,6 +2119,15 @@ INSTITUTION_ICONS = {
     "00hx57361": "assets/institutions/princeton.png",
     "03vek6s52": "assets/institutions/harvard.png",
     "042nb2s44": "assets/institutions/mit.png",
+    "04p491231": "assets/institutions/penn-state.png",
+    "0030zas98": "assets/institutions/polyu.png",
+    "03r8z3t63": "assets/institutions/unsw.png",
+    "01tgyzw49": "assets/institutions/nus.png",
+    "03efmqc40": "assets/institutions/asu.png",
+    "0090zs177": "assets/institutions/lse.png",
+    "0384j8v12": "assets/institutions/sydney.png",
+    "027m9bs27": "assets/institutions/manchester.png",
+    "00jmfr291": "assets/institutions/michigan.png",
 }
 
 
