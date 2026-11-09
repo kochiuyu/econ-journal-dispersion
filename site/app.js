@@ -1070,6 +1070,7 @@
 
       var affiliation = cell(row[4]);
       affiliation.className = row[4] ? "affiliation" : "muted";
+      window.prependInstitutionIcon(affiliation, row[4], countries.values[row[5]]);
       tr.appendChild(affiliation);
       var countryCell = cell(countries.values[row[5]]);
       window.updateCountryFlag(countryCell, countries.values[row[5]]);

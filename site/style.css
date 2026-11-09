@@ -247,7 +247,8 @@ a.person { font-weight: 650; }
   .stat .n { font-size: 24px; }
 }
 
-.country-flag {
+.country-flag,
+.institution-icon {
   margin-inline-end: 0.4em;
   object-fit: contain;
   vertical-align: -0.08em;

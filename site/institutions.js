@@ -414,6 +414,7 @@
       link.href = directoryUrl(row[0], countryName(row));
       link.textContent = row[0];
       nameCell.appendChild(link);
+      window.prependInstitutionIcon(nameCell, row[0], countryName(row));
       tr.appendChild(nameCell);
       var countryCell = textCell(countryName(row));
       window.updateCountryFlag(countryCell, countryName(row));
