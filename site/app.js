@@ -79,6 +79,8 @@
   var universeRow = document.getElementById("universe-row");
   var form = document.getElementById("filters");
   var clearBtn = document.getElementById("clear");
+  var activeFiltersEl = document.getElementById("active-filters");
+  var clearEmptyBtn = document.getElementById("clear-empty");
 
   var state = readUrl();
   var debounce = 0;
@@ -410,6 +412,7 @@
   }
 
   function showPending(text) {
+    clearEmptyBtn.hidden = true;
     countEl.textContent = text;
     if (rows.length) return;
     var tr = document.createElement("tr");
@@ -937,17 +940,75 @@
       countNode.textContent = formatNumber(globalAppointments(universe.id));
       button.appendChild(countNode);
       button.addEventListener("click", function () {
-        if (state.universes.has(universe.id)) state.universes.delete(universe.id);
-        else state.universes.add(universe.id);
-        syncUniverseMode();
-        if (state.journal && !journalMatchesSelection(state.journal, selectedMask())) {
-          state.journal = "";
-        }
-        state.page = 1;
-        schedule();
+        toggleUniverse(universe.id);
       });
       universeRow.appendChild(button);
     });
+  }
+
+  function toggleUniverse(id) {
+    if (state.universes.has(id)) state.universes.delete(id);
+    else state.universes.add(id);
+    syncUniverseMode();
+    if (state.journal && !journalMatchesSelection(state.journal, selectedMask())) {
+      state.journal = "";
+    }
+    state.page = 1;
+    schedule();
+  }
+
+  function activeFilters() {
+    return [
+      ["q", "Search", state.q],
+      ["role", "Role", state.role],
+      ["journal", "Journal", state.journal],
+      ["continent", "Continent", state.continent],
+      ["country", "Country", state.country],
+      ["aff", "Institution", displayedAffiliation()],
+      ["field", "Field", fieldLabel(state.field)]
+    ].filter(function (filter) { return filter[2]; });
+  }
+
+  function renderActiveFilters() {
+    var filters = Array.from(state.universes, function (id) {
+      return [id, "List", universeLabel(id), true];
+    }).concat(activeFilters());
+    var signature = JSON.stringify(filters);
+    if (activeFiltersEl.dataset.signature === signature) return;
+    activeFiltersEl.dataset.signature = signature;
+    activeFiltersEl.hidden = !filters.length;
+    activeFiltersEl.replaceChildren();
+    filters.forEach(function (filter) {
+      var key = filter[0];
+      var label = filter[1];
+      var value = filter[2] === "__blank__" ? "Unknown" : filter[2];
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "chip";
+      button.textContent = (label === "List" ? value : label + ": " + value) + " ×";
+      button.setAttribute("aria-label", "Remove " + label.toLowerCase() + " filter: " + value);
+      button.addEventListener("click", function () {
+        var hadFocus = document.activeElement === button;
+        if (filter[3]) {
+          toggleUniverse(key);
+        } else {
+          if (key === "q") window.clearTimeout(debounce);
+          state[key] = "";
+          state.page = 1;
+          closeSuggest();
+          schedule();
+        }
+        if (hadFocus) qEl.focus();
+      });
+      activeFiltersEl.appendChild(button);
+    });
+  }
+
+  function resetSearchFilters() {
+    window.clearTimeout(debounce);
+    activeFilters().forEach(function (filter) { state[filter[0]] = ""; });
+    state.page = 1;
+    closeSuggest();
   }
 
   function syncControls() {
@@ -959,6 +1020,7 @@
     refillContinents();
     refillCountries();
     refillFields();
+    renderActiveFilters();
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
     });
@@ -1133,6 +1195,7 @@
     syncControls();
     var result = applyFilters();
     var matched = result.matched;
+    clearEmptyBtn.hidden = !!matched.length || !activeFilters().length;
     var pages = Math.max(1, Math.ceil(matched.length / state.pageSize) || 1);
     if (state.page > pages) state.page = pages;
     var start = matched.length ? (state.page - 1) * state.pageSize + 1 : 0;
@@ -1243,21 +1306,20 @@
   });
 
   clearBtn.addEventListener("click", function () {
-    state.q = "";
+    resetSearchFilters();
     state.universes = new Set(SHELL.defaultUniverses || ["ft50"]);
     state.universeMode = "default";
-    state.role = "";
-    state.continent = "";
-    state.country = "";
-    state.journal = "";
-    state.aff = "";
-    state.field = "";
     state.sort = "name";
     state.dir = "asc";
-    state.page = 1;
     state.pageSize = 50;
-    closeSuggest();
     schedule();
+  });
+
+  clearEmptyBtn.addEventListener("click", function () {
+    resetSearchFilters();
+    clearEmptyBtn.hidden = true;
+    schedule();
+    qEl.focus();
   });
 
   document.querySelectorAll("th button").forEach(function (button) {

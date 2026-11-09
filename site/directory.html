@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=continent-icons">
+  <link rel="stylesheet" href="style.css?v=directory-filters">
   <script>
     /* Start the shell, and the FT50 chunk unless the URL names another scope. */
     (function () {
@@ -123,44 +123,54 @@
         <div class="row" id="universe-row">
           <span class="lbl" id="universe-label">List</span>
         </div>
-        <div class="row">
-          <label class="lbl" for="role">Role</label>
-          <select id="role" name="role">
-            <option value="">All roles</option>
-          </select>
-          <label class="lbl" for="continent">Continent</label>
-          <select id="continent" name="continent">
-            <option value="">All continents</option>
-          </select>
-          <label class="lbl" for="country">Country</label>
-          <select id="country" name="country">
-            <option value="">All countries</option>
-          </select>
-          <label class="lbl" for="institution">Institution</label>
-          <div class="combo">
-            <input id="institution" type="search" name="aff" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="institution-list" placeholder="All institutions" autocomplete="off" spellcheck="false">
-            <ul id="institution-list" class="suggest" role="listbox" hidden></ul>
+        <details class="directory-more">
+          <summary>More filters</summary>
+          <div class="row">
+            <label class="lbl" for="role">Role</label>
+            <select id="role" name="role">
+              <option value="">All roles</option>
+            </select>
+            <label class="lbl" for="continent">Continent</label>
+            <select id="continent" name="continent">
+              <option value="">All continents</option>
+            </select>
+            <label class="lbl" for="country">Country</label>
+            <select id="country" name="country">
+              <option value="">All countries</option>
+            </select>
+            <label class="lbl" for="institution">Institution</label>
+            <div class="combo">
+              <input id="institution" type="search" name="aff" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="institution-list" placeholder="All institutions" autocomplete="off" spellcheck="false">
+              <ul id="institution-list" class="suggest" role="listbox" hidden></ul>
+            </div>
+            <label class="lbl" for="field">Field</label>
+            <select id="field" name="field">
+              <option value="">All fields</option>
+            </select>
+            <label class="lbl" for="journal">Journal</label>
+            <select id="journal" name="journal">
+              <option value="">All journals</option>
+            </select>
+            <label class="lbl" for="pagesize">Rows</label>
+            <select id="pagesize" name="n">
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="200">200</option>
+            </select>
           </div>
-          <label class="lbl" for="field">Field</label>
-          <select id="field" name="field">
-            <option value="">All fields</option>
-          </select>
-          <label class="lbl" for="journal">Journal</label>
-          <select id="journal" name="journal">
-            <option value="">All journals</option>
-          </select>
-          <label class="lbl" for="pagesize">Rows</label>
-          <select id="pagesize" name="n">
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
-          </select>
-        </div>
+        </details>
       </form>
-      <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap profiles are partial, so a gap name with no URL stays plain text.</p>
+      <div class="directory-active row" id="active-filters" role="group" aria-label="Active filters" hidden></div>
+      <details class="directory-help">
+        <summary>How filters work</summary>
+        <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap profiles are partial, so a gap name with no URL stays plain text.</p>
+      </details>
     </section>
 
-    <p class="count" id="count" aria-live="polite">Loading directory…</p>
+    <div class="directory-results">
+      <p class="count" id="count" aria-live="polite">Loading directory…</p>
+      <button class="btn" type="button" id="clear-empty" hidden>Clear filters</button>
+    </div>
 
     <div class="tbl-wrap">
       <table>
@@ -312,6 +322,6 @@
   <script src="data/institution-icons.js"></script>
   <script src="institution-icons.js"></script>
   <script src="continent-icons.js"></script>
-  <script src="app.js?v=continent-icons"></script>
+  <script src="app.js?v=directory-filters"></script>
 </body>
 </html>

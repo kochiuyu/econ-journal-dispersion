@@ -259,3 +259,40 @@ a.person { font-weight: 650; }
   margin-inline-end: 0.4em;
   vertical-align: -0.2em;
 }
+
+.directory-more,
+.directory-help,
+.directory-active {
+  margin-top: 10px;
+}
+.directory-more summary,
+.directory-help summary {
+  width: fit-content;
+  color: var(--accent);
+  cursor: pointer;
+  font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 4px 0;
+}
+.directory-more .row {
+  margin-top: 8px;
+}
+.directory-active[hidden] {
+  display: none;
+}
+.directory-active .chip {
+  color: var(--accent);
+  background: var(--accent-soft);
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  text-align: left;
+}
+.directory-active .chip:hover {
+  border-color: var(--accent);
+}
+.directory-results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
