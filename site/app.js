@@ -29,6 +29,9 @@
 
   var universes = SHELL.universes;
   var families = SHELL.families;
+  var journalOptions = SHELL.journals.slice().sort(function (a, b) {
+    return collator.compare(a, b);
+  });
   var rows = [];
   var roleNames = [];
   var roleFamily = [];
@@ -543,11 +546,28 @@
     return mask;
   }
 
-  function journalMatchesSelection(name) {
-    if (!state.universes.size) return true;
+  function journalMatchesSelection(name, mask) {
     var info = journalInfo.get(name);
-    if (!info || !info.mask) return true;
-    return (info.mask & selectedMask()) !== 0;
+    return !mask || !!(info && (info.mask & mask));
+  }
+
+  function refillJournals() {
+    var mask = selectedMask();
+    // Keep an explicit journal from a shared URL visible, even outside its list.
+    var extra = state.journal && (
+      !journalInfo.has(state.journal) || !journalMatchesSelection(state.journal, mask)
+    ) ? state.journal : "";
+    var signature = mask + "\n" + extra;
+    if (journalEl.dataset.signature !== signature) {
+      journalEl.dataset.signature = signature;
+      journalEl.replaceChildren();
+      addOption(journalEl, "", "All journals");
+      journalOptions.forEach(function (name) {
+        if (journalMatchesSelection(name, mask)) addOption(journalEl, name, name);
+      });
+      if (extra) addOption(journalEl, extra, extra);
+    }
+    journalEl.value = state.journal;
   }
 
   function applyFilters() {
@@ -899,11 +919,6 @@
 
   function initControls() {
     families.forEach(function (family) { addOption(roleEl, family, family); });
-    var journalOptions = SHELL.journals.slice().sort(function (a, b) { return collator.compare(a, b); });
-    journalOptions.forEach(function (name) { addOption(journalEl, name, name); });
-    if (state.journal && journalOptions.indexOf(state.journal) === -1) {
-      addOption(journalEl, state.journal, state.journal);
-    }
     universes.forEach(function (universe) {
       var button = document.createElement("button");
       button.type = "button";
@@ -921,6 +936,9 @@
         if (state.universes.has(universe.id)) state.universes.delete(universe.id);
         else state.universes.add(universe.id);
         syncUniverseMode();
+        if (state.journal && !journalMatchesSelection(state.journal, selectedMask())) {
+          state.journal = "";
+        }
         state.page = 1;
         schedule();
       });
@@ -931,7 +949,7 @@
   function syncControls() {
     if (document.activeElement !== qEl) qEl.value = state.q;
     roleEl.value = state.role;
-    journalEl.value = state.journal;
+    refillJournals();
     if (document.activeElement !== institutionEl) institutionEl.value = displayedAffiliation();
     pageSizeEl.value = String(state.pageSize);
     refillContinents();
@@ -1162,10 +1180,6 @@
   journalEl.addEventListener("change", function () {
     state.journal = journalEl.value;
     state.page = 1;
-    if (state.journal && !journalMatchesSelection(state.journal)) {
-      state.universes = new Set();
-      state.universeMode = "none";
-    }
     schedule();
   });
   institutionEl.addEventListener("input", function () {
