@@ -69,6 +69,7 @@
   var roleEl = document.getElementById("role");
   var continentEl = document.getElementById("continent");
   var countryEl = document.getElementById("country");
+  var countryLabel = document.querySelector('label[for="country"]');
   var journalEl = document.getElementById("journal");
   var institutionEl = document.getElementById("institution");
   var suggestEl = document.getElementById("institution-list");
@@ -743,6 +744,7 @@
     }
     appliedContinent = state.continent;
     countryEl.value = state.country;
+    window.updateCountryFlag(countryLabel, countryEl.value);
   }
 
   function refillFields() {
@@ -1069,7 +1071,9 @@
       var affiliation = cell(row[4]);
       affiliation.className = row[4] ? "affiliation" : "muted";
       tr.appendChild(affiliation);
-      tr.appendChild(cell(countries.values[row[5]]));
+      var countryCell = cell(countries.values[row[5]]);
+      window.updateCountryFlag(countryCell, countries.values[row[5]]);
+      tr.appendChild(countryCell);
       tr.appendChild(cell(continents.values[row[6]]));
       fragment.appendChild(tr);
     });

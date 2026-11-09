@@ -36,6 +36,7 @@
   var qEl = document.getElementById("q");
   var continentEl = document.getElementById("continent");
   var countryEl = document.getElementById("country");
+  var countryLabel = document.querySelector('label[for="country"]');
   var pageSizeEl = document.getElementById("pagesize");
   var universeRow = document.getElementById("universe-row");
   var form = document.getElementById("filters");
@@ -242,6 +243,7 @@
     var signature = state.continent + "\n" + found.list.join("\n") + "\n" + found.blank;
     if (countryEl.dataset.signature === signature) {
       countryEl.value = state.country;
+      window.updateCountryFlag(countryLabel, countryEl.value);
       return;
     }
     countryEl.dataset.signature = signature;
@@ -255,6 +257,7 @@
       state.page = 1;
     }
     countryEl.value = state.country;
+    window.updateCountryFlag(countryLabel, countryEl.value);
   }
 
   function initControls() {
@@ -412,7 +415,9 @@
       link.textContent = row[0];
       nameCell.appendChild(link);
       tr.appendChild(nameCell);
-      tr.appendChild(textCell(countryName(row)));
+      var countryCell = textCell(countryName(row));
+      window.updateCountryFlag(countryCell, countryName(row));
+      tr.appendChild(countryCell);
       tr.appendChild(textCell(continentName(row)));
       tr.appendChild(numCell(row[3]));
       tr.appendChild(numCell(row[4]));

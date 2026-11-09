@@ -246,3 +246,9 @@ a.person { font-weight: 650; }
   .stats { grid-template-columns: 1fr; }
   .stat .n { font-size: 24px; }
 }
+
+.country-flag {
+  margin-inline-end: 0.4em;
+  object-fit: contain;
+  vertical-align: -0.08em;
+}
