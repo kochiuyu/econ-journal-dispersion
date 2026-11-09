@@ -253,3 +253,9 @@ a.person { font-weight: 650; }
   object-fit: contain;
   vertical-align: -0.08em;
 }
+
+.continent-icon {
+  color: var(--accent);
+  margin-inline-end: 0.4em;
+  vertical-align: -0.2em;
+}

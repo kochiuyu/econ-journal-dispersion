@@ -68,6 +68,7 @@
   var qEl = document.getElementById("q");
   var roleEl = document.getElementById("role");
   var continentEl = document.getElementById("continent");
+  var continentLabel = document.querySelector('label[for="continent"]');
   var countryEl = document.getElementById("country");
   var countryLabel = document.querySelector('label[for="country"]');
   var journalEl = document.getElementById("journal");
@@ -719,6 +720,7 @@
       if (!present) keepExtra(continentEl, previous);
     }
     continentEl.value = state.continent;
+    window.updateContinentIcon(continentLabel, continentEl.value);
   }
 
   function refillCountries() {
@@ -1075,7 +1077,9 @@
       var countryCell = cell(countries.values[row[5]]);
       window.updateCountryFlag(countryCell, countries.values[row[5]]);
       tr.appendChild(countryCell);
-      tr.appendChild(cell(continents.values[row[6]]));
+      var continentCell = cell(continents.values[row[6]]);
+      window.updateContinentIcon(continentCell, continents.values[row[6]]);
+      tr.appendChild(continentCell);
       fragment.appendChild(tr);
     });
     rowsEl.replaceChildren(fragment);

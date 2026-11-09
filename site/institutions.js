@@ -35,6 +35,7 @@
 
   var qEl = document.getElementById("q");
   var continentEl = document.getElementById("continent");
+  var continentLabel = document.querySelector('label[for="continent"]');
   var countryEl = document.getElementById("country");
   var countryLabel = document.querySelector('label[for="country"]');
   var pageSizeEl = document.getElementById("pagesize");
@@ -363,6 +364,7 @@
   function syncControls() {
     if (document.activeElement !== qEl) qEl.value = state.q;
     continentEl.value = state.continent;
+    window.updateContinentIcon(continentLabel, continentEl.value);
     pageSizeEl.value = String(state.pageSize);
     refillCountries();
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
@@ -419,7 +421,9 @@
       var countryCell = textCell(countryName(row));
       window.updateCountryFlag(countryCell, countryName(row));
       tr.appendChild(countryCell);
-      tr.appendChild(textCell(continentName(row)));
+      var continentCell = textCell(continentName(row));
+      window.updateContinentIcon(continentCell, continentName(row));
+      tr.appendChild(continentCell);
       tr.appendChild(numCell(row[3]));
       tr.appendChild(numCell(row[4]));
       tr.appendChild(numCell(row[5]));
