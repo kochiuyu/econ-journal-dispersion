@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=directory-filters">
+  <link rel="stylesheet" href="style.css?v=table-usability">
   <script>
     /* Start the shell, and the FT50 chunk unless the URL names another scope. */
     (function () {
@@ -151,12 +151,6 @@
             <select id="journal" name="journal">
               <option value="">All journals</option>
             </select>
-            <label class="lbl" for="pagesize">Rows</label>
-            <select id="pagesize" name="n">
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="200">200</option>
-            </select>
           </div>
         </details>
       </form>
@@ -168,12 +162,17 @@
     </section>
 
     <div class="directory-results">
-      <p class="count" id="count" aria-live="polite">Loading directory…</p>
+      <p class="count" id="count" aria-live="polite" tabindex="-1">Loading directory…</p>
       <button class="btn" type="button" id="clear-empty" hidden>Clear filters</button>
     </div>
 
+    <div class="directory-mobile-sort">
+      <label class="lbl" for="mobile-sort">Sort by</label>
+      <select id="mobile-sort"></select>
+      <button class="btn" type="button" id="mobile-sort-direction">Ascending ↑</button>
+    </div>
     <div class="tbl-wrap">
-      <table>
+      <table class="directory-table">
         <caption class="sr-only">Current FT50, ABDC, and AJG-gap journal editors</caption>
         <thead>
           <tr>
@@ -190,7 +189,19 @@
         <tbody id="rows"></tbody>
       </table>
     </div>
-    <div class="pager" id="pager"></div>
+    <div class="pager" id="pager" role="group" aria-label="Pagination" hidden>
+      <button class="btn" type="button" id="page-prev" disabled>Previous</button>
+      <span class="pos" id="page-position"></span>
+      <button class="btn" type="button" id="page-next" disabled>Next</button>
+      <div class="pager-size">
+        <label class="lbl" for="pagesize">Rows per page</label>
+        <select id="pagesize" name="n">
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </div>
+    </div>
 
     <section class="prose" id="about">
       <h2>About this directory</h2>
@@ -319,9 +330,10 @@
 
   <script src="data/shell.js"></script>
   <script src="country-flags.js"></script>
-  <script src="data/institution-icons.js"></script>
-  <script src="institution-icons.js"></script>
+  <script src="data/institution-icons.js?v=local-icons"></script>
+  <script src="institution-icons.js?v=local-icons"></script>
   <script src="continent-icons.js"></script>
-  <script src="app.js?v=directory-filters"></script>
+  <script src="table-controls.js"></script>
+  <script src="app.js?v=table-usability"></script>
 </body>
 </html>

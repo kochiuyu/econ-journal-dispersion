@@ -4,9 +4,12 @@
 
   var icons = window.INSTITUTION_ICONS || {};
 
-  window.prependInstitutionIcon = function (container, name, country) {
-    if (!Object.prototype.hasOwnProperty.call(icons, name)) return;
-    var url = icons[name][country || ""];
+  function forAffiliation(name, country) {
+    if (Object.prototype.hasOwnProperty.call(icons, name)) return icons[name][country || ""];
+    return "";
+  }
+
+  function prepend(container, url) {
     if (!url) return;
 
     var icon = document.createElement("img");
@@ -15,9 +18,10 @@
     icon.width = 18;
     icon.height = 18;
     icon.loading = "lazy";
-    icon.referrerPolicy = "no-referrer";
     icon.addEventListener("error", function () { icon.remove(); });
     icon.src = url;
     container.prepend(icon);
-  };
+  }
+
+  window.institutionIcons = { forAffiliation: forAffiliation, prepend: prepend };
 })();

@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=continent-icons">
+  <link rel="stylesheet" href="style.css?v=table-usability">
 </head>
 <body>
   <a class="skip" href="#institutions">Skip to institutions</a>
@@ -93,18 +93,12 @@
           <select id="country" name="country">
             <option value="">All countries</option>
           </select>
-          <label class="lbl" for="pagesize">Rows</label>
-          <select id="pagesize" name="n">
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
-          </select>
         </div>
       </form>
       <p class="hint">Selecting more than one list shows institutions with an appointment on any of them. An AJG chip is the 2024 CABS grade on a journal in this directory, including AJG-gap boards. Many ABDC journals have no grade. Titles with no board stay on Rankings. Country follows the continent you pick. Appointments with no affiliation are left out. So are unmatched affiliations that are only a country or territory, fully enclosed in brackets, or a street, PO Box, or postal code with no organization name.</p>
     </section>
 
-    <p class="count" id="count" aria-live="polite">Loading institutions…</p>
+    <p class="count" id="count" aria-live="polite" tabindex="-1">Loading institutions…</p>
 
     <div class="tbl-wrap">
       <table>
@@ -122,7 +116,19 @@
         <tbody id="rows"></tbody>
       </table>
     </div>
-    <div class="pager" id="pager"></div>
+    <div class="pager" id="pager" role="group" aria-label="Pagination" hidden>
+      <button class="btn" type="button" id="page-prev" disabled>Previous</button>
+      <span class="pos" id="page-position"></span>
+      <button class="btn" type="button" id="page-next" disabled>Next</button>
+      <div class="pager-size">
+        <label class="lbl" for="pagesize">Rows per page</label>
+        <select id="pagesize" name="n">
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </div>
+    </div>
 
     <section class="prose" id="about">
       <h2>About this institution list</h2>
@@ -166,11 +172,11 @@
     </p>
   </footer>
 
-  <script src="institutions-data.js"></script>
+  <script src="institutions-data.js?v=local-icons"></script>
   <script src="country-flags.js"></script>
-  <script src="data/institution-icons.js"></script>
-  <script src="institution-icons.js"></script>
+  <script src="institution-icons.js?v=local-icons"></script>
   <script src="continent-icons.js"></script>
-  <script src="institutions.js?v=continent-icons"></script>
+  <script src="table-controls.js"></script>
+  <script src="institutions.js?v=table-usability"></script>
 </body>
 </html>

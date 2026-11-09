@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=table-usability">
 </head>
 <body>
   <a class="skip" href="#rankings">Skip to rankings</a>
@@ -104,18 +104,12 @@
           <select id="field" name="field">
             <option value="">All fields</option>
           </select>
-          <label class="lbl" for="pagesize">Rows</label>
-          <select id="pagesize" name="n">
-            <option value="50">50</option>
-            <option value="100">100</option>
-            <option value="200">200</option>
-          </select>
         </div>
       </form>
       <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. SHUFE tiers are Top Tier, First Tier, Second Tier, and Third Tier. The source page has no edition year, so the selector is Current, and this list has no field. Hover a Tilburg, FNEGE, ERIM, Stern, Shanghai, or SHUFE grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
-    <p class="count" id="count" aria-live="polite">Loading rankings…</p>
+    <p class="count" id="count" aria-live="polite" tabindex="-1">Loading rankings…</p>
 
     <div class="tbl-wrap">
       <table>
@@ -133,7 +127,19 @@
         <tbody id="rows"></tbody>
       </table>
     </div>
-    <div class="pager" id="pager"></div>
+    <div class="pager" id="pager" role="group" aria-label="Pagination" hidden>
+      <button class="btn" type="button" id="page-prev" disabled>Previous</button>
+      <span class="pos" id="page-position"></span>
+      <button class="btn" type="button" id="page-next" disabled>Next</button>
+      <div class="pager-size">
+        <label class="lbl" for="pagesize">Rows per page</label>
+        <select id="pagesize" name="n">
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </div>
+    </div>
 
     <section class="prose" id="about">
       <h2>About these rankings</h2>
@@ -312,6 +318,7 @@
   </footer>
 
   <script src="rankings-data.js"></script>
-  <script src="rankings.js"></script>
+  <script src="table-controls.js"></script>
+  <script src="rankings.js?v=table-usability"></script>
 </body>
 </html>

@@ -15,7 +15,6 @@
 
   var countEl = document.getElementById("count");
   var rowsEl = document.getElementById("rows");
-  var pagerEl = document.getElementById("pager");
 
   if (!DATA || !DATA.rows) {
     countEl.textContent = "Journal data is not built yet. From the repository root, run python scripts/build_site.py.";
@@ -293,13 +292,7 @@
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
     });
-    document.querySelectorAll("th button").forEach(function (button) {
-      if (button.dataset.sort === state.sort) {
-        button.setAttribute("aria-sort", state.dir === "desc" ? "descending" : "ascending");
-      } else {
-        button.removeAttribute("aria-sort");
-      }
-    });
+    window.tableControls.sort(state.sort, state.dir);
   }
 
   function badge(universe) {
@@ -386,30 +379,10 @@
 
   function renderPager(matchedCount) {
     var pages = Math.max(1, Math.ceil(matchedCount / state.pageSize));
-    if (state.page > pages) state.page = pages;
-    pagerEl.replaceChildren();
-    if (matchedCount <= state.pageSize) return;
-
-    function button(label, disabled, delta) {
-      var el = document.createElement("button");
-      el.type = "button";
-      el.className = "btn";
-      el.textContent = label;
-      el.disabled = disabled;
-      el.addEventListener("click", function () {
-        state.page += delta;
-        render();
-        document.getElementById("journals").scrollIntoView({ block: "start" });
-      });
-      return el;
-    }
-
-    var pos = document.createElement("span");
-    pos.className = "pos";
-    pos.textContent = "Page " + formatNumber(state.page) + " of " + formatNumber(pages);
-    pagerEl.appendChild(button("Previous", state.page <= 1, -1));
-    pagerEl.appendChild(pos);
-    pagerEl.appendChild(button("Next", state.page >= pages, 1));
+    window.tableControls.page(state.page, pages, function (page) {
+      state.page = page;
+      render();
+    });
   }
 
   function render() {

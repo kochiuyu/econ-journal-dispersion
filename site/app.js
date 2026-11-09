@@ -76,6 +76,8 @@
   var suggestEl = document.getElementById("institution-list");
   var fieldEl = document.getElementById("field");
   var pageSizeEl = document.getElementById("pagesize");
+  var mobileSortEl = document.getElementById("mobile-sort");
+  var mobileDirectionEl = document.getElementById("mobile-sort-direction");
   var universeRow = document.getElementById("universe-row");
   var form = document.getElementById("filters");
   var clearBtn = document.getElementById("clear");
@@ -422,7 +424,7 @@
     td.textContent = text;
     tr.appendChild(td);
     rowsEl.replaceChildren(tr);
-    pagerEl.replaceChildren();
+    pagerEl.hidden = true;
   }
 
   function schedule() {
@@ -1024,13 +1026,9 @@
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
     });
-    document.querySelectorAll("th button").forEach(function (button) {
-      if (button.dataset.sort === state.sort) {
-        button.setAttribute("aria-sort", state.dir === "desc" ? "descending" : "ascending");
-      } else {
-        button.removeAttribute("aria-sort");
-      }
-    });
+    window.tableControls.sort(state.sort, state.dir);
+    mobileSortEl.value = state.sort;
+    mobileDirectionEl.textContent = state.dir === "desc" ? "Descending ↓" : "Ascending ↑";
   }
 
   function badge(universe) {
@@ -1094,7 +1092,8 @@
       var row = rows[index];
       var tr = document.createElement("tr");
       var profileUrl = row.length > 8 ? (profiles.values[row[8]] || "") : "";
-      tr.appendChild(nameCell(row[0], profileUrl));
+      var person = nameCell(row[0], profileUrl);
+      tr.appendChild(person);
       tr.appendChild(cell(roleNames[row[1]]));
 
       var journalCell = document.createElement("td");
@@ -1134,7 +1133,8 @@
 
       var affiliation = cell(row[4]);
       affiliation.className = row[4] ? "affiliation" : "muted";
-      window.prependInstitutionIcon(affiliation, row[4], countries.values[row[5]]);
+      window.institutionIcons.prepend(affiliation,
+        window.institutionIcons.forAffiliation(row[4], countries.values[row[5]]));
       tr.appendChild(affiliation);
       var countryCell = cell(countries.values[row[5]]);
       window.updateCountryFlag(countryCell, countries.values[row[5]]);
@@ -1143,43 +1143,66 @@
       window.updateContinentIcon(continentCell, continents.values[row[6]]);
       tr.appendChild(continentCell);
       fragment.appendChild(tr);
+      appendMobileDetails(fragment, person, row[0], index, [
+        ["Affiliation", affiliation],
+        ["Country", countryCell],
+        ["Continent", continentCell],
+        ["Field", fieldCell],
+        ["List", listCell]
+      ]);
     });
     rowsEl.replaceChildren(fragment);
   }
 
+  function appendMobileDetails(fragment, person, name, index, fields) {
+    var detailRow = document.createElement("tr");
+    detailRow.className = "directory-detail-row";
+    detailRow.id = "editor-details-" + index;
+    detailRow.hidden = true;
+
+    var detailCell = document.createElement("td");
+    detailCell.colSpan = 3;
+    detailRow.appendChild(detailCell);
+    fragment.appendChild(detailRow);
+
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "btn directory-detail-toggle";
+    toggle.textContent = "Details";
+    toggle.setAttribute("aria-label", "Details for " + name);
+    toggle.setAttribute("aria-controls", detailRow.id);
+    toggle.setAttribute("aria-expanded", "false");
+    person.appendChild(toggle);
+    toggle.addEventListener("click", function () {
+      if (!detailCell.firstChild) {
+        var details = document.createElement("dl");
+        fields.forEach(function (field) {
+          var label = document.createElement("dt");
+          label.textContent = field[0];
+          var value = document.createElement("dd");
+          field[1].childNodes.forEach(function (node) {
+            value.appendChild(node.cloneNode(true));
+          });
+          // Cloned images need their own fallback handlers.
+          value.querySelectorAll("img").forEach(function (image) {
+            image.addEventListener("error", function () { image.remove(); });
+          });
+          details.appendChild(label);
+          details.appendChild(value);
+        });
+        detailCell.appendChild(details);
+      }
+      detailRow.hidden = !detailRow.hidden;
+      toggle.setAttribute("aria-expanded", String(!detailRow.hidden));
+    });
+  }
+
   function renderPager(matchedCount) {
     var pages = Math.max(1, Math.ceil(matchedCount / state.pageSize));
-    if (state.page > pages) state.page = pages;
-    pagerEl.replaceChildren();
-    if (matchedCount <= state.pageSize) return;
-
-    function go(delta) {
-      state.page += delta;
+    window.tableControls.page(state.page, pages, function (page) {
+      state.page = page;
       render();
-      directoryEl.scrollIntoView({ block: "start" });
-    }
-
-    var prev = document.createElement("button");
-    prev.type = "button";
-    prev.className = "btn";
-    prev.textContent = "Previous";
-    prev.disabled = state.page <= 1;
-    prev.addEventListener("click", function () { go(-1); });
-
-    var pos = document.createElement("span");
-    pos.className = "pos";
-    pos.textContent = "Page " + formatNumber(state.page) + " of " + formatNumber(pages);
-
-    var next = document.createElement("button");
-    next.type = "button";
-    next.className = "btn";
-    next.textContent = "Next";
-    next.disabled = state.page >= pages;
-    next.addEventListener("click", function () { go(1); });
-
-    pagerEl.appendChild(prev);
-    pagerEl.appendChild(pos);
-    pagerEl.appendChild(next);
+    });
   }
 
   function loadedScopeNote() {
@@ -1322,7 +1345,20 @@
     qEl.focus();
   });
 
-  document.querySelectorAll("th button").forEach(function (button) {
+  mobileSortEl.addEventListener("change", function () {
+    state.sort = mobileSortEl.value;
+    state.dir = "asc";
+    state.page = 1;
+    render();
+  });
+  mobileDirectionEl.addEventListener("click", function () {
+    state.dir = state.dir === "asc" ? "desc" : "asc";
+    state.page = 1;
+    render();
+  });
+
+  document.querySelectorAll("th button[data-sort]").forEach(function (button) {
+    addOption(mobileSortEl, button.dataset.sort, button.textContent);
     button.addEventListener("click", function () {
       var sort = button.dataset.sort;
       if (state.sort === sort) state.dir = state.dir === "asc" ? "desc" : "asc";

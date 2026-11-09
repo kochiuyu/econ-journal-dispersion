@@ -173,7 +173,9 @@ th button {
   background: none; border: 0; padding: 0; cursor: pointer; color: var(--muted);
   font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
 }
-th button:hover, th button[aria-sort] { color: var(--ink); }
+th button:hover, th[aria-sort] button { color: var(--ink); }
+th[aria-sort="ascending"] button::after { content: " ↑" / ""; }
+th[aria-sort="descending"] button::after { content: " ↓" / ""; }
 td.affiliation, td.journal, td.field { max-width: 280px; }
 td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 tbody tr:hover td { background: var(--accent-soft); }
@@ -295,4 +297,69 @@ a.person { font-weight: 650; }
   flex-wrap: wrap;
   align-items: baseline;
   gap: 8px;
+}
+
+.pager[hidden],
+.directory-mobile-sort,
+.directory-detail-toggle,
+.directory-detail-row {
+  display: none;
+}
+.pager-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.count[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.home-action {
+  margin: 0 0 20px;
+}
+.home-action a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--panel);
+  font: 700 16px "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.home-action a:hover { text-decoration-thickness: 2px; }
+
+@media (max-width: 640px) {
+  .directory-mobile-sort {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px;
+  }
+  .directory-table {
+    table-layout: fixed;
+  }
+  .directory-table th,
+  .directory-table td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+  }
+  .directory-table th:nth-child(n+4),
+  .directory-table td:nth-child(n+4) {
+    display: none;
+  }
+  .directory-table .empty { display: table-cell; }
+  .directory-detail-toggle {
+    display: block;
+    margin-top: 4px;
+    padding: 4px 8px;
+  }
+  .directory-detail-row:not([hidden]) { display: table-row; }
+  .directory-detail-row dl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 6px 12px;
+    margin: 0;
+  }
+  .directory-detail-row dt { font-weight: 700; }
+  .directory-detail-row dd { margin: 0; }
 }
