@@ -251,6 +251,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
+from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DIR = ROOT / "site"
@@ -2213,6 +2214,33 @@ INSTITUTION_ICONS = {
 }
 
 
+def unpack_institution_icon_packs() -> None:
+    """Stage the checked-in icon batches as individual files for GitHub Pages."""
+    packs = ROOT / "assets" / "institution-icon-packs"
+    if not packs.is_dir():
+        return
+    target = SITE_DIR / "assets" / "institutions"
+    target.mkdir(parents=True, exist_ok=True)
+    for path in sorted(packs.glob("batch-*.zip")):
+        with ZipFile(path) as pack:
+            records = json.loads(pack.read("sources.json"))
+            ids = [record["id"] for record in records]
+            if len(ids) != 50 or len(set(ids)) != 50:
+                raise SystemExit(f"{path.name} must contain 50 distinct institution icons")
+            for ror_id in ids:
+                if not re.fullmatch(r"0[a-z0-9]{8}", ror_id) or ror_id in INSTITUTION_ICONS:
+                    raise SystemExit(f"Invalid or duplicate icon ROR ID in {path.name}: {ror_id}")
+                name = f"{ror_id}.png"
+                info = pack.getinfo(name)
+                if not 8 < info.file_size <= 32768:
+                    raise SystemExit(f"Invalid icon size in {path.name}: {name}")
+                image = pack.read(info)
+                if not image.startswith(b"\x89PNG\r\n\x1a\n"):
+                    raise SystemExit(f"Invalid PNG in {path.name}: {name}")
+                (target / name).write_bytes(image)
+                INSTITUTION_ICONS[ror_id] = f"assets/institutions/{name}"
+
+
 def build_institution_icons(records: list[Rec]) -> dict:
     """Match published name/country pairs to icons using the release's ROR IDs."""
     matches: dict[tuple[str, str], set[str]] = defaultdict(set)
@@ -3346,6 +3374,7 @@ def main() -> int:
     print("Role groups: " + ", ".join(f"{name} {family_counts[name]:,}" for name in FAMILIES))
     print(f"Collected {payload['collectedMin']} – {payload['collectedMax']}; board year {payload['year']}")
     write_directory_assets(payload)
+    unpack_institution_icon_packs()
     icons_text = dump_js(
         "INSTITUTION_ICONS",
         build_institution_icons(collapsed),
