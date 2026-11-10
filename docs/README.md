@@ -37,7 +37,7 @@ Freeze `editors_ror_consistency3b_20261101` (published 2026-11-01) adds these co
 | `former_flag` | Masthead marks the affiliation as former |
 | `other_ror_ids` | `;`-separated ROR ids of the other affiliation parts |
 
-Long table: `data/editors/releases/editors_inst_punct_split_20261110/editor_affiliations.csv.gz`, one row per affiliation part (181,443 rows), keyed by `editor_row_key`. The previous drop/rematch, non-Latin, and consistency3b long tables stay under `data/editors/releases/editors_inst_drop_rematch_20261110/`, `data/editors/releases/editors_nonlatin_inst_20261110/`, and `data/editors/releases/editors_ror_consistency3b_20261101/`.
+Long table: `data/editors/releases/editors_tokyo_gatech_fix_20261110/editor_affiliations.csv.gz`, one row per affiliation part (181,443 rows), keyed by `editor_row_key`. The previous punctuation/split table stays under `data/editors/releases/editors_inst_punct_split_20261110/`. The earlier drop/rematch, non-Latin, and consistency3b long tables stay under `data/editors/releases/editors_inst_drop_rematch_20261110/`, `data/editors/releases/editors_nonlatin_inst_20261110/`, and `data/editors/releases/editors_ror_consistency3b_20261101/`.
 
 ## Pinned core49 backfill
 

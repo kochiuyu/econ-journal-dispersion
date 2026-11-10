@@ -4,16 +4,16 @@ Updated: 2026-11-10 (Asia/Taipei)
 
 ## Release in this repo
 
-`releases/current/` — current boards by ABDC rating. Freeze `editors_inst_punct_split_20261110` (published 2026-11-10) is the current board. It supersedes `editors_inst_drop_rematch_20261110`. A*, A, B, and C are patched for punctuation + split affiliation cleanup (punctuation-start junk blanked on B and C; high-confidence splits rematched onto existing panel ROR twins; three name-only unifies with blank ROR; printed `raw_affiliation` kept). No site filter. Twelve columns follow `board_urls` and `board_url_count` (see `docs/README.md`). Emails and phone numbers left in text cells were already removed in the consistency3b Directory copy; those restorations stay. Long table and the change log: `data/editors/releases/editors_inst_punct_split_20261110/`. Reports: `docs/reports/`. Details: `releases/current/RELEASE_NOTES.md`. The history below describes earlier freezes.
+`releases/current/` — current boards by ABDC rating. Freeze `editors_tokyo_gatech_fix_20261110` (published 2026-11-10) is the current board. It supersedes `editors_inst_punct_split_20261110`. A*, A, B, and C are patched for a keyed fix: University of Tokyo seats rematched to `057zh3y96` (A* 4, A 5, B 5, C 3) and the Decision Sciences `Georgia Inst of Technology` seat rematched to `01zkghx44` (A*); printed `raw_affiliation` kept. No site filter. Twelve columns follow `board_urls` and `board_url_count` (see `docs/README.md`). Emails and phone numbers left in text cells were already removed in the consistency3b Directory copy; those restorations stay. Long table and the change log: `data/editors/releases/editors_tokyo_gatech_fix_20261110/`. Reports: `docs/reports/`. Details: `releases/current/RELEASE_NOTES.md`. The history below describes earlier freezes.
 
 Previous: freeze `editors_ror_consistency3b_20261101` (published 2026-11-01). Then: freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. Faculty URLs from `editors_nonft50_url_aff_20261028` stay. 
 
 | File | Rating | Rows | Empty `editor_name` | `faculty_profile_url` | `raw_affiliation` | `ror_id` |
 |------|--------|-----:|--------------------:|----------------------:|------------------:|---------:|
-| `editors_abdc_a_star_current.csv` | A* | 25,596 | 1 | 12,522 (48.9%) | 24,202 (94.6%) | 23,394 |
-| `editors_abdc_a_current.csv` | A | 45,889 | 1 | 6,236 (13.6%) | 43,159 (94.0%) | 40,569 |
-| `editors_abdc_b_current.csv` | B | 42,558 | 11 | 3,509 (8.2%) | 40,187 (94.4%) | 36,930 |
-| `editors_abdc_c_current.csv` | C | 27,719 | 6 | 1,379 (5.0%) | 24,845 (89.6%) | 21,537 |
+| `editors_abdc_a_star_current.csv` | A* | 25,596 | 1 | 12,522 (48.9%) | 24,202 (94.6%) | 23,399 |
+| `editors_abdc_a_current.csv` | A | 45,889 | 1 | 6,236 (13.6%) | 43,159 (94.0%) | 40,574 |
+| `editors_abdc_b_current.csv` | B | 42,558 | 11 | 3,509 (8.2%) | 40,187 (94.4%) | 36,935 |
+| `editors_abdc_c_current.csv` | C | 27,719 | 6 | 1,379 (5.0%) | 24,845 (89.6%) | 21,540 |
 
 Excluded: `*.before_ror.csv`, `*.before_url_aff_nonft50_20261028`, `abdc/raw/`, scrape queues, `journals_abdc_b_product03.csv`, and the collector audit CSVs.
 
