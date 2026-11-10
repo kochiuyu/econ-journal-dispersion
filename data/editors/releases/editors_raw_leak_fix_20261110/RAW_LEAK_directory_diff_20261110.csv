@@ -1,0 +1,342 @@
+file,editor_row_key,field,directory_value,new_value
+editors_ft50_current.csv,editors_ft50_current#635,raw_affiliation,The University of Osaka,Osaka University
+editors_ft50_current.csv,editors_ft50_current#3690,raw_affiliation,Newcastle University,"Newcastle, UK"
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#635,raw_affiliation,The University of Osaka,Osaka University
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#3559,raw_affiliation,HEC Liege,"HEC Liege, Belgium"
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#3690,raw_affiliation,Newcastle University,"Newcastle, UK"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#2089,raw_affiliation,HEC Liege,"HEC Liege, Belgium"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#2232,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#2414,raw_affiliation,Newcastle University,"Newcastle, UK"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#11094,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13410,raw_affiliation,KU Leuven,"KU Leueven, Department of Accountancy and Taxation, Antwerp, Belgium"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#16688,raw_affiliation,Universitat Rovira i Virgili,"Rovira i Virgili University, Department of Geography, Tarragona, Catalonia, Spain"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,raw_affiliation,Nottingham Trent University,"Nottingham University Ningbo, China"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,canonical_name,Nottingham,University of Nottingham Ningbo China
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,ror_id,https://ror.org/04xyxjd90,https://ror.org/03y4dt428
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,ror_name,Nottingham Trent University,University of Nottingham Ningbo China
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,ror_country,United Kingdom,China
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,continent,Europe,Asia
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,lat,,29.87819
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#22876,lon,,121.54945
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#23684,raw_affiliation,UNSW Sydney,"Regional Editor (Southeast Asia & Pacific), UNSW, Australia"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25101,raw_affiliation,AM Publications,"SAGE Publications, UK"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25101,canonical_name,AM Publications,SAGE Publications
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25101,ror_country,India,United Kingdom
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25101,continent,Asia,Europe
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25456,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25485,raw_affiliation,Universita Ca'Foscari Venezia,"Universita Ca'Foscari Venezia, Italy"
+editors_abdc_a_current.csv,editors_abdc_a_current#3334,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,raw_affiliation,Nottingham Trent University,"Nottingham University-Ningbo, China"
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,canonical_name,Nottingham,University of Nottingham Ningbo China
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,ror_id,https://ror.org/04xyxjd90,https://ror.org/03y4dt428
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,ror_name,Nottingham Trent University,University of Nottingham Ningbo China
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,ror_country,United Kingdom,China
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,continent,Europe,Asia
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,lat,,29.87819
+editors_abdc_a_current.csv,editors_abdc_a_current#7050,lon,,121.54945
+editors_abdc_a_current.csv,editors_abdc_a_current#8279,raw_affiliation,Universitat de València,"University of Valencia, Faculty of Economics, Valencia, Spain"
+editors_abdc_a_current.csv,editors_abdc_a_current#8783,raw_affiliation,Universitat de València,"University of Valencia, Department of Marketing, Valencia, Spain"
+editors_abdc_a_current.csv,editors_abdc_a_current#14215,raw_affiliation,AM Publications,"Lyn Beamesderfer Director, Publications"
+editors_abdc_a_current.csv,editors_abdc_a_current#14215,canonical_name,AM Publications,
+editors_abdc_a_current.csv,editors_abdc_a_current#14215,ror_country,India,
+editors_abdc_a_current.csv,editors_abdc_a_current#14215,continent,Asia,
+editors_abdc_a_current.csv,editors_abdc_a_current#14216,raw_affiliation,AM Publications,"Director, Publications"
+editors_abdc_a_current.csv,editors_abdc_a_current#14216,canonical_name,AM Publications,
+editors_abdc_a_current.csv,editors_abdc_a_current#14216,ror_country,India,
+editors_abdc_a_current.csv,editors_abdc_a_current#14216,continent,Asia,
+editors_abdc_a_current.csv,editors_abdc_a_current#14217,raw_affiliation,AM Publications,"Associate, Publications"
+editors_abdc_a_current.csv,editors_abdc_a_current#14217,canonical_name,AM Publications,
+editors_abdc_a_current.csv,editors_abdc_a_current#14217,ror_country,India,
+editors_abdc_a_current.csv,editors_abdc_a_current#14217,continent,Asia,
+editors_abdc_a_current.csv,editors_abdc_a_current#14218,raw_affiliation,AM Publications,"Manager, Publications"
+editors_abdc_a_current.csv,editors_abdc_a_current#14218,canonical_name,AM Publications,
+editors_abdc_a_current.csv,editors_abdc_a_current#14218,ror_country,India,
+editors_abdc_a_current.csv,editors_abdc_a_current#14218,continent,Asia,
+editors_abdc_a_current.csv,editors_abdc_a_current#14508,raw_affiliation,National Institute for Sports,"The National Institute for Working Life, Sweden"
+editors_abdc_a_current.csv,editors_abdc_a_current#14508,canonical_name,National Institute for Sports,National Institute for Working Life
+editors_abdc_a_current.csv,editors_abdc_a_current#14508,ror_country,Nigeria,Sweden
+editors_abdc_a_current.csv,editors_abdc_a_current#14508,continent,Africa,Europe
+editors_abdc_a_current.csv,editors_abdc_a_current#15602,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_a_current.csv,editors_abdc_a_current#16537,raw_affiliation,University of Genoa,"EIC, Transactions on ITS Dept. of Computer Science, Bioengineering, Robotics and Systems Engineering, University of Genova, Italy"
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,raw_affiliation,Nottingham Trent University,"Nottingham University Ningbo, China"
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,canonical_name,Nottingham,University of Nottingham Ningbo China
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,ror_id,https://ror.org/04xyxjd90,https://ror.org/03y4dt428
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,ror_name,Nottingham Trent University,University of Nottingham Ningbo China
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,ror_country,United Kingdom,China
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,continent,Europe,Asia
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,lat,,29.87819
+editors_abdc_a_current.csv,editors_abdc_a_current#17596,lon,,121.54945
+editors_abdc_a_current.csv,editors_abdc_a_current#18187,raw_affiliation,University of St.Gallen,Universität St-Gallen
+editors_abdc_a_current.csv,editors_abdc_a_current#18190,raw_affiliation,University of St.Gallen,Universität St-Gallen
+editors_abdc_a_current.csv,editors_abdc_a_current#18299,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_a_current.csv,editors_abdc_a_current#18360,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_a_current.csv,editors_abdc_a_current#19037,raw_affiliation,Bangor University,"Bangor Business School, Bangor, UK"
+editors_abdc_a_current.csv,editors_abdc_a_current#19040,raw_affiliation,Bangor University,"Bangor Business School, Bangor, UK"
+editors_abdc_a_current.csv,editors_abdc_a_current#19571,raw_affiliation,St. Andrews University,"St. Andrew's University, UK"
+editors_abdc_a_current.csv,editors_abdc_a_current#21232,raw_affiliation,Beihang University,"Beijing University of Aeronautics and Astronautics, China"
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,raw_affiliation,Temple University,"Waheda University, Japan"
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,canonical_name,Temple University,Waseda University
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,ror_id,https://ror.org/00kx1jb78,https://ror.org/00ntfnx83
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,ror_name,Temple University,Waseda University
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,ror_country,United States,Japan
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,continent,North America,Asia
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,lat,39.95238,35.6895
+editors_abdc_a_current.csv,editors_abdc_a_current#21641,lon,-75.16362,139.69171
+editors_abdc_a_current.csv,editors_abdc_a_current#24420,raw_affiliation,Bangor University,"Bangor Business School, UK"
+editors_abdc_a_current.csv,editors_abdc_a_current#24483,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_a_current.csv,editors_abdc_a_current#24868,raw_affiliation,GITR Limited,"GITR Limited, UK"
+editors_abdc_a_current.csv,editors_abdc_a_current#25894,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_a_current.csv,editors_abdc_a_current#26798,raw_affiliation,University of Wisconsin–Eau Claire,"UW-Eau Claire, College of Business"
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,raw_affiliation,AM Publications,"SAGE Publications, USA"
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,canonical_name,AM Publications,SAGE Publishing (United States)
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,ror_id,,https://ror.org/05534qc24
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,ror_name,,SAGE Publishing (United States)
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,ror_country,India,United States
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,continent,Asia,North America
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,lat,,34.17056
+editors_abdc_a_current.csv,editors_abdc_a_current#28483,lon,,-118.83759
+editors_abdc_a_current.csv,editors_abdc_a_current#33277,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_a_current.csv,editors_abdc_a_current#44962,raw_affiliation,KU Leuven,"Department of Mechanical Engineering, University of Leuven, Belgium"
+editors_abdc_a_current.csv,editors_abdc_a_current#45346,raw_affiliation,AM Publications,"Publications and Membership Officer, AAIS"
+editors_abdc_a_current.csv,editors_abdc_a_current#45346,canonical_name,AM Publications,AAIS
+editors_abdc_a_current.csv,editors_abdc_a_current#45346,ror_country,India,
+editors_abdc_a_current.csv,editors_abdc_a_current#45346,continent,Asia,
+editors_abdc_a_current.csv,editors_abdc_a_current#45656,raw_affiliation,Newcastle University,UNIVERSITY OF NEWCASTLE UPON TYNE
+editors_abdc_b_current.csv,editors_abdc_b_current#130,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_b_current.csv,editors_abdc_b_current#158,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_b_current.csv,editors_abdc_b_current#166,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_b_current.csv,editors_abdc_b_current#988,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_b_current.csv,editors_abdc_b_current#2785,raw_affiliation,Ca' Foscari University of Venice,"Department of Economics Office Universita’ Ca Foscari San Giobbe, Venezia, Italy"
+editors_abdc_b_current.csv,editors_abdc_b_current#4571,raw_affiliation,Universitat Rovira i Virgili,"Rovira i Virgili University, Department of Geography, Tarragona, Catalonia, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#4576,raw_affiliation,Universitat Rovira i Virgili,"Rovira i Virgili University, Department of Geography, Tarragona, Catalonia, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#4945,raw_affiliation,UNESCO,"United Nations Educational Scientific and Cultural Organization, France"
+editors_abdc_b_current.csv,editors_abdc_b_current#8076,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,raw_affiliation,Hellriegel Institut,"Professor; Faculty of Law and Chair, Department of Labour Studies, Tel Aviv University)"
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,canonical_name,Hellriegel Institut,Tel Aviv University
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,ror_id,,https://ror.org/04mhzgx49
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,ror_name,,Tel Aviv University
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,ror_country,Germany,Israel
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,continent,Europe,Asia
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,lat,,32.08088
+editors_abdc_b_current.csv,editors_abdc_b_current#9304,lon,,34.78057
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,raw_affiliation,National Institute of Oceanography,"Center of Islamic Finance, COMSATS University (CUI) - Pakistan"
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,canonical_name,National Institute of Oceanography,COMSATS University Islamabad
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,ror_id,,https://ror.org/00nqqvk19
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,ror_name,,COMSATS University Islamabad
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,lat,,33.72148
+editors_abdc_b_current.csv,editors_abdc_b_current#9508,lon,,73.04329
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,raw_affiliation,National Institute of Oceanography,Visiting Faculty at IoBM Karachi - Pakistan
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,canonical_name,National Institute of Oceanography,Institute of Business Management
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,ror_id,,https://ror.org/048w4c951
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,ror_name,,Institute of Business Management
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,lat,,24.8608
+editors_abdc_b_current.csv,editors_abdc_b_current#12844,lon,,67.0104
+editors_abdc_b_current.csv,editors_abdc_b_current#13813,raw_affiliation,University of Turin,"Department of Management, University of Torino, Italy"
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,raw_affiliation,Temple University,"Otaru University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,canonical_name,Temple University,Otaru University of Commerce
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,ror_id,https://ror.org/00kx1jb78,https://ror.org/00pbv8y11
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,ror_name,Temple University,Otaru University of Commerce
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,ror_country,United States,Japan
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,continent,North America,Asia
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,lat,39.95238,43.18944
+editors_abdc_b_current.csv,editors_abdc_b_current#14383,lon,-75.16362,141.00222
+editors_abdc_b_current.csv,editors_abdc_b_current#15996,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#16313,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#18405,raw_affiliation,Universitat Jaume I,University Jaume I - Spain
+editors_abdc_b_current.csv,editors_abdc_b_current#18413,raw_affiliation,Universitat de València,"Department of Marketing and Market Research, University of Valencia - Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#18440,raw_affiliation,University of the Basque Country,"Department of Financial Economy, University of Paıs Vasco - Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#18746,raw_affiliation,AM Publications,SAGE Publications
+editors_abdc_b_current.csv,editors_abdc_b_current#18746,canonical_name,AM Publications,SAGE Publications
+editors_abdc_b_current.csv,editors_abdc_b_current#18746,ror_country,India,
+editors_abdc_b_current.csv,editors_abdc_b_current#18746,continent,Asia,
+editors_abdc_b_current.csv,editors_abdc_b_current#19061,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#19725,raw_affiliation,Universitat Rovira i Virgili,University Rovira i Virgili - Spain
+editors_abdc_b_current.csv,editors_abdc_b_current#19813,raw_affiliation,"Emeritus, RICS School of Built Environment - India","Dean Emeritus, RICS School of Built Environment - India"
+editors_abdc_b_current.csv,editors_abdc_b_current#20799,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#21360,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#21851,raw_affiliation,Universitat Jaume I,"Universidad Jaume I, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,raw_affiliation,Temple University,"Wadesa University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,canonical_name,Temple University,Waseda University
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,ror_id,https://ror.org/00kx1jb78,https://ror.org/00ntfnx83
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,ror_name,Temple University,Waseda University
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,ror_country,United States,Japan
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,continent,North America,Asia
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,lat,39.95238,35.6895
+editors_abdc_b_current.csv,editors_abdc_b_current#22277,lon,-75.16362,139.69171
+editors_abdc_b_current.csv,editors_abdc_b_current#23217,raw_affiliation,Edinburgh Napier University,"Edinburgh Nappier University, UK"
+editors_abdc_b_current.csv,editors_abdc_b_current#28616,raw_affiliation,Beihang University,"Beijing University of Aeronautics and Astronautics, China"
+editors_abdc_b_current.csv,editors_abdc_b_current#29344,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#29369,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_b_current.csv,editors_abdc_b_current#30264,raw_affiliation,The University of Osaka,University of Osaka - Japan
+editors_abdc_b_current.csv,editors_abdc_b_current#30516,raw_affiliation,Università Ca’Foscari Venezia,"Università Ca Foscari, Venezia - Italy"
+editors_abdc_b_current.csv,editors_abdc_b_current#30628,raw_affiliation,Tampere University,"Department of Information Studies, University of Tampere - Finland"
+editors_abdc_b_current.csv,editors_abdc_b_current#30631,raw_affiliation,Tampere University,"Department of Information Studies, University of Tampere - Finland"
+editors_abdc_b_current.csv,editors_abdc_b_current#30798,raw_affiliation,National Institute of Oceanography,Government Girls College - Pakistan
+editors_abdc_b_current.csv,editors_abdc_b_current#30798,canonical_name,National Institute of Oceanography,Government Girls College
+editors_abdc_b_current.csv,editors_abdc_b_current#31863,raw_affiliation,Università Ca’Foscari Venezia,"Università Ca Foscari, Venezia - Italy"
+editors_abdc_b_current.csv,editors_abdc_b_current#32220,raw_affiliation,Università Ca’Foscari Venezia,"Università Ca Foscari, Venezia - Italy"
+editors_abdc_b_current.csv,editors_abdc_b_current#33518,raw_affiliation,Beihang University,"Beijing University, China"
+editors_abdc_b_current.csv,editors_abdc_b_current#34253,raw_affiliation,Universitat de València,"Department of Marketing and Marketing Research, University of Valencia, Spain"
+editors_abdc_b_current.csv,editors_abdc_b_current#35171,raw_affiliation,The University of Osaka,Osaka University
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,raw_affiliation,"Post Graduate Institute of Medicine, University of Colombo",PGIM
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,canonical_name,University of Colombo,PGIM
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,ror_id,https://ror.org/02phn5242,
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,ror_name,University of Colombo,
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,ror_country,Sri Lanka,
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,continent,Asia,
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,lat,6.93548,
+editors_abdc_b_current.csv,editors_abdc_b_current#36164,lon,79.84868,
+editors_abdc_b_current.csv,editors_abdc_b_current#37043,raw_affiliation,Beihang University,"Beihang Univ, China"
+editors_abdc_b_current.csv,editors_abdc_b_current#37405,raw_affiliation,Newcastle University,"Newcastle Unversity, United Kingdom"
+editors_abdc_b_current.csv,editors_abdc_b_current#38350,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_c_current.csv,editors_abdc_c_current#1775,raw_affiliation,The University of Osaka,"University of Osaka, Osaka, Japan"
+editors_abdc_c_current.csv,editors_abdc_c_current#4788,raw_affiliation,Beihang University,"Beijing University of Aeronautics and Astronautics, China"
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,raw_affiliation,Temple University,"Hiroshimashudo University, Japan"
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,canonical_name,Temple University,Hiroshima Shudo University
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,ror_id,https://ror.org/00kx1jb78,https://ror.org/05n757p35
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,ror_name,Temple University,Hiroshima Shudo University
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,ror_country,United States,Japan
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,continent,North America,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,lat,39.95238,34.4
+editors_abdc_c_current.csv,editors_abdc_c_current#5528,lon,-75.16362,132.45
+editors_abdc_c_current.csv,editors_abdc_c_current#5651,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#6657,raw_affiliation,KU Leuven,"K.U.Leuven, Belgium"
+editors_abdc_c_current.csv,editors_abdc_c_current#6862,raw_affiliation,The Energy Conservation Center,"Energy Conservation Center, Japan"
+editors_abdc_c_current.csv,editors_abdc_c_current#7630,raw_affiliation,AM Publications,Peter Honey Publications - UK
+editors_abdc_c_current.csv,editors_abdc_c_current#7630,canonical_name,AM Publications,Peter Honey Publications
+editors_abdc_c_current.csv,editors_abdc_c_current#7630,ror_country,India,United Kingdom
+editors_abdc_c_current.csv,editors_abdc_c_current#7630,continent,Asia,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#8867,raw_affiliation,Universitat Rovira i Virgili,University Rovira I Virgili - Spain
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,raw_affiliation,Nottingham Trent University,Nottingham University Ningbo (People's Republic of China)
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,canonical_name,Nottingham,University of Nottingham Ningbo China
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,ror_id,https://ror.org/04xyxjd90,https://ror.org/03y4dt428
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,ror_name,Nottingham Trent University,University of Nottingham Ningbo China
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,ror_country,United Kingdom,China
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,continent,Europe,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,lat,,29.87819
+editors_abdc_c_current.csv,editors_abdc_c_current#9605,lon,,121.54945
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,raw_affiliation,Nottingham Trent University,Nottingham University Business School China - People's Republic of China
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,canonical_name,Nottingham,University of Nottingham Ningbo China
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,ror_id,https://ror.org/04xyxjd90,https://ror.org/03y4dt428
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,ror_name,Nottingham Trent University,University of Nottingham Ningbo China
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,ror_country,United Kingdom,China
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,continent,Europe,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,lat,,29.87819
+editors_abdc_c_current.csv,editors_abdc_c_current#9699,lon,,121.54945
+editors_abdc_c_current.csv,editors_abdc_c_current#9831,raw_affiliation,National Institute of Oceanography,"ex. Senator, Islamic Republic of Pakistan, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#9831,canonical_name,National Institute of Oceanography,
+editors_abdc_c_current.csv,editors_abdc_c_current#10641,raw_affiliation,Universitat Jaume I,"University Jaume I, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#11773,raw_affiliation,Universitat Jaume I,"Jaume I University, Department of Economics, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#11830,raw_affiliation,St Boniface General Hospital Research Centre,"St Boniface General Hospital Research Centre, Winnipeg, MB, Canada"
+editors_abdc_c_current.csv,editors_abdc_c_current#11870,raw_affiliation,Università Ca’Foscari Venezia,"Università Ca’Foscari Venezia, Italy"
+editors_abdc_c_current.csv,editors_abdc_c_current#12708,raw_affiliation,National Institute of Oceanography,"Muslim Youth University, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#12708,canonical_name,National Institute of Oceanography,Muslim Youth University
+editors_abdc_c_current.csv,editors_abdc_c_current#14191,raw_affiliation,CentraleSupelec,"CentraleSupelec, France"
+editors_abdc_c_current.csv,editors_abdc_c_current#14288,raw_affiliation,Universitat Oberta de Catalunya,"Universidad Oberta de Catalunya, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#16208,raw_affiliation,IESE,"IESE, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,raw_affiliation,Monash University,"Galuh University, Indonesia"
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,canonical_name,Monash University,Universitas Galuh
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,ror_id,https://ror.org/02bfwt286,https://ror.org/03m7qjm52
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,ror_name,Monash University,Universitas Galuh
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,ror_country,Australia,Indonesia
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,continent,Oceania,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,lat,-37.814,-7.3257
+editors_abdc_c_current.csv,editors_abdc_c_current#16430,lon,144.96332,108.3534
+editors_abdc_c_current.csv,editors_abdc_c_current#17453,raw_affiliation,National Institute for Sports,"National Institute for Smart Government, India"
+editors_abdc_c_current.csv,editors_abdc_c_current#17453,canonical_name,National Institute for Sports,National Institute for Smart Government
+editors_abdc_c_current.csv,editors_abdc_c_current#17453,ror_country,Nigeria,India
+editors_abdc_c_current.csv,editors_abdc_c_current#17453,continent,Africa,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#18202,raw_affiliation,Universitat Jaume I,"Univ. Jaume I, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#18432,raw_affiliation,The University of Osaka,"Osaka University, Japan; Professor, Division of Electronic and Information Engineering"
+editors_abdc_c_current.csv,editors_abdc_c_current#19360,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abdc_c_current.csv,editors_abdc_c_current#19527,raw_affiliation,National Institute of Oceanography,"President, Center of Sustainability Research and Consultancy Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#19527,canonical_name,National Institute of Oceanography,Center of Sustainability Research and Consultancy
+editors_abdc_c_current.csv,editors_abdc_c_current#21199,raw_affiliation,National Institute of Oceanography,"HEC Distinguished National Professor, Islamabad, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21199,canonical_name,National Institute of Oceanography,
+editors_abdc_c_current.csv,editors_abdc_c_current#21211,raw_affiliation,National Institute of Oceanography,"State Bank of Pakistan, Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21211,canonical_name,National Institute of Oceanography,State Bank of Pakistan
+editors_abdc_c_current.csv,editors_abdc_c_current#21214,raw_affiliation,National Institute of Oceanography,"State Bank of Pakistan, Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21214,canonical_name,National Institute of Oceanography,State Bank of Pakistan
+editors_abdc_c_current.csv,editors_abdc_c_current#21215,raw_affiliation,National Institute of Oceanography,"Pakistan Fisher Folk Forum, Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21215,canonical_name,National Institute of Oceanography,Pakistan Fisher Folk Forum
+editors_abdc_c_current.csv,editors_abdc_c_current#21218,raw_affiliation,National Institute of Oceanography,"State Bank of Pakistan, Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21218,canonical_name,National Institute of Oceanography,State Bank of Pakistan
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,raw_affiliation,National Institute of Oceanography,"School of Social Sciences & Humanities NUST, Islamabad, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,canonical_name,National Institute of Oceanography,National University of Sciences and Technology
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,ror_id,,https://ror.org/03w2j5y17
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,ror_name,,National University of Sciences and Technology
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,lat,,33.72148
+editors_abdc_c_current.csv,editors_abdc_c_current#21222,lon,,73.04329
+editors_abdc_c_current.csv,editors_abdc_c_current#21350,raw_affiliation,Universitat Rovira i Virgili,"University Rovira i Virgili, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#21352,raw_affiliation,Universitat Rovira i Virgili,"University Rovira i Virgili, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#21359,raw_affiliation,Universitat Rovira i Virgili,"University Rovira i Virgili, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#21364,raw_affiliation,Universitat Rovira i Virgili,"University Rovira i Virgili, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#21375,raw_affiliation,Universitat Rovira i Virgili,"University Rovira i Virgili, Spain"
+editors_abdc_c_current.csv,editors_abdc_c_current#22128,raw_affiliation,University of Wales,"“A.I. Cuza” University of Iaşi, Romania"
+editors_abdc_c_current.csv,editors_abdc_c_current#22205,raw_affiliation,AM Publications,Delta Hedge Publications
+editors_abdc_c_current.csv,editors_abdc_c_current#22205,canonical_name,AM Publications,Delta Hedge Publications
+editors_abdc_c_current.csv,editors_abdc_c_current#22205,ror_country,India,
+editors_abdc_c_current.csv,editors_abdc_c_current#22205,continent,Asia,
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,raw_affiliation,National Institute of Oceanography,"Department of Management Sciences, COMSATS University, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,canonical_name,National Institute of Oceanography,COMSATS University Islamabad
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,ror_id,,https://ror.org/00nqqvk19
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,ror_name,,COMSATS University Islamabad
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,lat,,33.72148
+editors_abdc_c_current.csv,editors_abdc_c_current#22679,lon,,73.04329
+editors_abdc_c_current.csv,editors_abdc_c_current#24689,raw_affiliation,National Institute of Oceanography,"Vice Chancellor of Akhuwat University, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#24689,canonical_name,National Institute of Oceanography,Akhuwat University
+editors_abdc_c_current.csv,editors_abdc_c_current#24720,raw_affiliation,National Institute of Oceanography,"Former Auditor General of Pakistan, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#24720,canonical_name,National Institute of Oceanography,
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,raw_affiliation,National Institute of Oceanography,"CEIF, IBA-Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,canonical_name,National Institute of Oceanography,Institute of Business Administration Karachi
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,ror_id,,https://ror.org/03egfpm06
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,ror_name,,Institute of Business Administration Karachi
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,lat,,24.8608
+editors_abdc_c_current.csv,editors_abdc_c_current#24728,lon,,67.0104
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,raw_affiliation,National Institute of Oceanography,"CEIF, IBA-Karachi, Pakistan"
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,canonical_name,National Institute of Oceanography,Institute of Business Administration Karachi
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,ror_id,,https://ror.org/03egfpm06
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,ror_name,,Institute of Business Administration Karachi
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,lat,,24.8608
+editors_abdc_c_current.csv,editors_abdc_c_current#24729,lon,,67.0104
+editors_abdc_c_current.csv,editors_abdc_c_current#24928,raw_affiliation,Newcastle University,"University of Newcastle upon Tyne, United Kingdom"
+editors_abdc_c_current.csv,editors_abdc_c_current#26586,raw_affiliation,Newcastle University,"University of Newcastle, Newcastle, UK"
+editors_abdc_c_current.csv,editors_abdc_c_current#26587,raw_affiliation,Newcastle University,"University of Newcastle, Newcastle, UK"
+editors_abdc_c_current.csv,editors_abdc_c_current#26590,raw_affiliation,Newcastle University,"University of Newcastle, Newcastle, UK"
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,raw_affiliation,Newcastle University,"The University of Newcastle, Newcastle, New South Wales, Australia"
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,canonical_name,"The University of Newcastle, Newcastle, New South Wales, Australia",University of Newcastle Australia
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,ror_id,https://ror.org/01kj2bm70,https://ror.org/00eae9z71
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,ror_name,Newcastle University,University of Newcastle Australia
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,ror_country,United Kingdom,Australia
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,continent,Europe,Oceania
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,lat,,-32.92953
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1334,lon,,151.7801
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#3008,raw_affiliation,Newcastle University,"Sociology, University of Newcastle, Rm 4.102, Henry Daysh Building, Newcastle upon Tyne NE1 7RU, UK"
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#3010,raw_affiliation,Newcastle University,"Sociology, University of Newcastle, Newcastle upon Tyne NE1 7RU, UK"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#266,raw_affiliation,CentraleSupélec,"CentraleSupélec, Gif sur Yvette, France"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,raw_affiliation,Beihang University,"Beijing University, China"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,canonical_name,"Beijing University, China",Peking University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,ror_id,https://ror.org/00wk2mp56,https://ror.org/02v51f717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,ror_name,Beihang University,Peking University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,lat,,39.9075
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2222,lon,,116.39723
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#3803,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4369,raw_affiliation,Philipps University of Marburg,"Marburg University, Department of Psychology, Germany"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4812,raw_affiliation,Düzce University,"Düzce University, Turkey"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5193,raw_affiliation,Adelaide University,"University of Adelaide, Faculty of Health and Medical Sciences, School of Psychology, Australia"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#760,raw_affiliation,Universitat Jaume I,"Universidad Jaume I, Spain"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#765,raw_affiliation,Universitat Jaume I,"Universidad Jaume I, Spain"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1300,raw_affiliation,Newcastle University,"University of Newcastle upon Tyne, UK"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1386,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2735,raw_affiliation,The University of Osaka,"Osaka University, Japan"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2783,raw_affiliation,Canadian Business Success Centre (CBSC),"Canadian Business Success Centre (CBSC), Canada"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4225,raw_affiliation,AM Publications,"SAGE Publications, UK"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4225,canonical_name,AM Publications,SAGE Publications
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4225,ror_country,India,United Kingdom
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4225,continent,Asia,Europe
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4523,raw_affiliation,with The Registry - USA,consultant with The Registry - USA
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#5751,raw_affiliation,The Rovira i Virgili University,"The Rovira i Virgili University, Spain"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#5857,raw_affiliation,The University of Osaka,Osaka University - Japan
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#5982,raw_affiliation,The University of Osaka,University of Osaka
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#6004,raw_affiliation,The University of Osaka,University of Osaka
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#10109,raw_affiliation,KU Leuven,"K.U. Leuven, Netherlands"
