@@ -1,0 +1,17 @@
+editor_row_key,editor_name,panel,action,field,old,new,source,note
+editors_abdc_c_current#12391,David R. Hancox,editors_abdc_c_current.csv,SET_COUNTRY,ror_country,,United States,user-approved (named in request),New York State Comptroller
+editors_abdc_c_current#12391,David R. Hancox,editors_abdc_c_current.csv,SET_COUNTRY,continent,,North America,user-approved (named in request),New York State Comptroller
+editors_abdc_c_current#12402,Norman D. Marks,editors_abdc_c_current.csv,BLANK_RAW_BIO,raw_affiliation,"(CPA, CRMA) - Author, Speaker, Thought Leader, OCEG Fellow, Honorary Fellow of the Institute of Risk Management",,user-approved,bio kept as trace in ror_notes and long ror_match_note
+editors_abdc_c_current#12412,N.G. Shankar,editors_abdc_c_current.csv,SET_COUNTRY,ror_country,,India,user-approved (named in request),Aditya Birla Group
+editors_abdc_c_current#12412,N.G. Shankar,editors_abdc_c_current.csv,SET_COUNTRY,continent,,Asia,user-approved (named in request),Aditya Birla Group
+editors_abdc_c_current#12387,Chris Dunn,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12390,Ulrich Hahn,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12391,David R. Hancox,editor_affiliations.csv,SET_COUNTRY,ror_country,,United States,user-approved,New York State Comptroller
+editors_abdc_c_current#12392,Peter Hillier,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12393,Gary Hinson,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12398,Jim Kaplan,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12402,Norman D. Marks,editor_affiliations.csv,BLANK_RAW_BIO,raw_aff_part,"(CPA, CRMA) - Author, Speaker, Thought Leader, OCEG Fellow, Honorary Fellow of the Institute of Risk Management",,user-approved,trace in ror_match_note
+editors_abdc_c_current#12405,Sridhar Ramamoorti,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12411,George Spafford,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,
+editors_abdc_c_current#12412,N.G. Shankar,editor_affiliations.csv,SET_COUNTRY,ror_country,,India,user-approved,Aditya Birla Group
+editors_abdc_c_current#12412,N.G. Shankar,editor_affiliations.csv,FIX_LONG_NO,raw_aff_part,no,,panel raw_affiliation blank,

@@ -1,4 +1,18 @@
-# editors_paren_num_leftover_fix_20261110
+# editors_edpacs_marks_country_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_paren_num_leftover_fix_20261110` (Directory PR #50) for the Directory current panels. It is a keyed, user-approved follow-up on three ABDC C EDPACS seats. No ROR ids change and there is no site filter. The long table and change log are in `data/editors/releases/editors_edpacs_marks_country_fix_20261110/`. Report: `docs/reports/EDPACS_MARKS_COUNTRY_FIX_20261110.md`.
+
+| Seat | Change |
+|---|---|
+| C #12402 Norman D. Marks | printed `raw_affiliation` (bio `(CPA, CRMA) - Author, Speaker, …`) blanked; the original text is kept in `ror_notes` (and the long `ror_match_note`) |
+| C #12412 N.G. Shankar, Aditya Birla Group | `ror_country` India, `continent` Asia (no ROR) |
+| C #12391 David R. Hancox, New York State Comptroller | `ror_country` United States, `continent` North America (no ROR) |
+
+AuditNet LLC, Pepperweed, IsecT Ltd. and auditline keep a blank country. In the long table, eight EDPACS parts (#12387, #12390, #12392, #12393, #12398, #12405, #12411, #12412) with `raw_aff_part` `no` are blanked to match their blank panel `raw_affiliation`. A*, A and B are unchanged. C `raw_affiliation` 24,844 (was 24,845).
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,434 (6,387 with a ROR id), were 15,435 / 6,387. Countries stay 159. 12,067 appointments have no institution (was 12,066: Marks' seat no longer falls back to his printed bio). Shared display names stay 69. The only parenthesis- and number-start Institutions left are the 14 kept numbered organisations.
+
+## Previous freeze: editors_paren_num_leftover_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_other_inst_fix_20261110` (Directory PR #49) for the Directory current panels. It is a keyed, user-approved fix for the parenthesis- and number-start Institutions left as REVIEW. Only institution fields are changed, the printed `raw_affiliation` is kept, and the guardrail and history notes stay in `ror_notes` with a `paren_num_leftover_fix_20261110:` token appended. No new ROR ids and no site filter. The long table and change log are in `data/editors/releases/editors_paren_num_leftover_fix_20261110/`. Report: `docs/reports/PAREN_NUM_LEFTOVER_FIX_20261110.md`.
 
