@@ -1,0 +1,480 @@
+file,editor_row_key,editor_name,item,action,field,old,new,note
+editor_affiliations.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current#2805,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,long sync
+editor_affiliations.csv,editors_ft50_current#2805,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,long sync
+editor_affiliations.csv,editors_ft50_current#2805,Thomas Roulet,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#45775,Diccon Loxton,item1,SET_COUNTRY,ror_country,Germany,Australia,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,long sync
+editor_affiliations.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,long sync
+editor_affiliations.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,long sync
+editor_affiliations.csv,editors_abdc_a_current#16190,Jason Hsu,item1,RENAME,ror_country,,United States,long sync
+editor_affiliations.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_id,,https://ror.org/0305fyb87,long sync
+editor_affiliations.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_name,,Woxsen School of Business,long sync
+editor_affiliations.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_country,,India,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_id,,https://ror.org/03rc6as71,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_name,,Tongji University,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_country,,China,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7121,Ricardo Vinicius Jordão,item1,RENAME,ror_country,Portugal,Switzerland,long sync
+editor_affiliations.csv,editors_abdc_c_current#9584,Ricardo Vinícius Dias Jordão,item1,RENAME,ror_country,Portugal,Switzerland,long sync
+editor_affiliations.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_id,,https://ror.org/001gpfp45,long sync
+editor_affiliations.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_name,,California Polytechnic State University,long sync
+editor_affiliations.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_country,Italy,United States,long sync
+editor_affiliations.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,ror_id,,https://ror.org/04je6yw13,long sync
+editor_affiliations.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,ror_name,,Cheikh Anta Diop University,long sync
+editor_affiliations.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#35189,Cara Jackson,item1,RENAME,ror_country,,United States,long sync
+editor_affiliations.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_id,,https://ror.org/014zxe029,long sync
+editor_affiliations.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_name,,Centro de Investigación y Docencia Económicas,long sync
+editor_affiliations.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_country,,Mexico,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,ror_id,,https://ror.org/03r8z3t63,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,ror_name,,UNSW Sydney,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,ror_country,,Australia,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_id,,https://ror.org/052w4zt36,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_name,,American University,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_country,,United States,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,ror_id,,https://ror.org/04b8v1s79,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,ror_name,,Tilburg University,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_id,,https://ror.org/024rfjv05,long sync
+editor_affiliations.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_name,,Centre for Studies in Social Sciences Calcutta,long sync
+editor_affiliations.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_country,Germany,India,long sync
+editor_affiliations.csv,editors_abdc_a_current#26839,Amit Singh,item2,SET_COUNTRY,ror_country,,India,long sync
+editor_affiliations.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#18788,Nikolay Gertchev,item2,SET_COUNTRY,ror_country,,France,long sync
+editor_affiliations.csv,editors_abdc_c_current#23978,Pascal Salin,item2,SET_COUNTRY,ror_country,,France,long sync
+editor_affiliations.csv,editors_abdc_a_current#15266,Cuong Le Van,item2,SET_COUNTRY,ror_country,,France,long sync
+editor_affiliations.csv,editors_abdc_c_current#15597,Armin Steinbach,item2,SET_COUNTRY,ror_country,,Germany,long sync
+editor_affiliations.csv,editors_abdc_a_current#15855,Sigrid Quack,item2,SET_COUNTRY,ror_country,,Germany,long sync
+editor_affiliations.csv,editors_abdc_a_current#23055,Sebastian Kohl,item2,MERGE,ror_country,,Germany,long sync
+editor_affiliations.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_id,,https://ror.org/00afp2z80,long sync
+editor_affiliations.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_name,,University of Liège,long sync
+editor_affiliations.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_country,,Belgium,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,ror_id,,https://ror.org/02wdjwg88,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,ror_name,,Facultad Latinoamericana de Ciencias Sociales Sede Académica México,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_id,,https://ror.org/05hs6h993,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_name,,Michigan State University,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_country,,United States,long sync
+editor_affiliations.csv,editors_abdc_c_current#23725,Гришин Виктор Иванович,item2,SET_COUNTRY,ror_country,,Russia,long sync
+editor_affiliations.csv,editors_abdc_c_current#23732,Рогов Сергей Михайлович,item2,SET_COUNTRY,ror_country,,Russia,long sync
+editor_affiliations.csv,editors_abdc_c_current#23733,Эскиндаров Михаил Абдурахманович,item2,SET_COUNTRY,ror_country,,Russia,long sync
+editor_affiliations.csv,editors_abdc_b_current#1581,Lones Smith,item2,SPLIT_WHERE_EVIDENCED,ror_id,https://ror.org/03ydkyb10,https://ror.org/01y2jtd41,long sync
+editor_affiliations.csv,editors_abdc_b_current#1581,Lones Smith,item2,SPLIT_WHERE_EVIDENCED,ror_name,University of Wisconsin System,University of Wisconsin–Madison,long sync
+editor_affiliations.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,ror_id,,https://ror.org/039k72y49,long sync
+editor_affiliations.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,ror_name,,Assumption University,long sync
+editor_affiliations.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,ror_id,,https://ror.org/04ch3q361,long sync
+editor_affiliations.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,ror_name,,Centre for Economic and Social Studies,long sync
+editor_affiliations.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,ror_id,,https://ror.org/05bqa2z43,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,ror_name,,Better Being Co. (United States),long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,ror_id,,https://ror.org/052vhkx86,long sync
+editor_affiliations.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,ror_name,,University of Africa Toru-Orua,long sync
+editor_affiliations.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_id,,https://ror.org/05309tf52,long sync
+editor_affiliations.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_name,,Niagara University,long sync
+editor_affiliations.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_country,United States,Canada,long sync
+editor_affiliations.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,ror_id,,https://ror.org/01bc76c69,long sync
+editor_affiliations.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,ror_name,,University of Applied Sciences Emden Leer,long sync
+editor_affiliations.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,ror_id,,https://ror.org/047988g19,long sync
+editor_affiliations.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,ror_name,,West Ukrainian National University,long sync
+editor_affiliations.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_id,,https://ror.org/04ewct822,long sync
+editor_affiliations.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_name,,Southwestern University of Finance and Economics,long sync
+editor_affiliations.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_country,,China,long sync
+editor_affiliations.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,ror_id,,https://ror.org/021e5n641,long sync
+editor_affiliations.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,ror_name,,Creative Capital Foundation,long sync
+editor_affiliations.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,ror_id,,https://ror.org/056am2717,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,ror_name,,Brock University,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_id,,https://ror.org/01e6qks80,long sync
+editor_affiliations.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_name,,Dalhousie University,long sync
+editor_affiliations.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_country,,Canada,long sync
+editor_affiliations.csv,editors_abdc_c_current#18673,Reyvi Mariñas,item7,SET_COUNTRY,ror_country,,Australia,long sync
+editor_affiliations.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_id,,https://ror.org/042bbge36,long sync
+editor_affiliations.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_name,,Nova Southeastern University,long sync
+editor_affiliations.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_country,Belgium,United States,long sync
+editor_affiliations.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,ror_id,https://ror.org/00nm3xj95,https://ror.org/02c9qn167,long sync
+editor_affiliations.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,ror_name,Junior Achievement,Guangxi University,long sync
+editor_affiliations.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,ror_id,https://ror.org/055gkcy74,https://ror.org/03wnrsb51,long sync
+editor_affiliations.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,ror_name,Union Hospital,Shandong Provincial QianFoShan Hospital,long sync
+editor_affiliations.csv,editors_abdc_c_current#26986,Kelly Pan,item9,SET_ROR,ror_id,https://ror.org/020yc1y85,https://ror.org/04vx9dd09,long sync
+editor_affiliations.csv,editors_abdc_c_current#26986,Kelly Pan,item9,SET_ROR,ror_name,The LEGO Foundation,Lego (Denmark),long sync
+editor_affiliations.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,ror_id,,https://ror.org/03gvhpa76,long sync
+editor_affiliations.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,ror_name,,Centro Internacional de Mejoramiento de Maíz Y Trigo,long sync
+editor_affiliations.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_id,,https://ror.org/00nx0vn86,long sync
+editor_affiliations.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_name,,Macao University of Tourism,long sync
+editor_affiliations.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_country,China,Macao,long sync
+editor_affiliations.csv,editors_abdc_b_current#33133,Patrick McNutt,item9,FIX_COUNTRY,ror_country,United Kingdom,Ireland,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_id,,https://ror.org/05vt9qd57,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_name,,"Rutgers, The State University of New Jersey",long sync
+editor_affiliations.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_country,Canada,United States,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1194,Oliver Schütze,item9,SET_COUNTRY,ror_country,,Mexico,long sync
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,ror_id,,https://ror.org/03gvhpa76,open item 9 SET_ROR -> Centro Internacional de Mejoramiento de Maíz Y Trigo https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,ror_name,,Centro Internacional de Mejoramiento de Maíz Y Trigo,open item 9 SET_ROR -> Centro Internacional de Mejoramiento de Maíz Y Trigo https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,lat,,19.51194,open item 9 SET_ROR -> Centro Internacional de Mejoramiento de Maíz Y Trigo https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,lon,,-98.88293,open item 9 SET_ROR -> Centro Internacional de Mejoramiento de Maíz Y Trigo https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,Khondoker A. Mottaleb,item9,SET_ROR,canonical_name,International Maize and Wheat Improvement Center,Centro Internacional de Mejoramiento de Maíz Y Trigo,open item 9 SET_ROR -> Centro Internacional de Mejoramiento de Maíz Y Trigo https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#15266,Cuong Le Van,item2,SET_COUNTRY,ror_country,,France,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_a_current.csv,editors_abdc_a_current#15266,Cuong Le Van,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_a_current.csv,editors_abdc_a_current#15855,Sigrid Quack,item2,SET_COUNTRY,ror_country,,Germany,kept as printed; country per open-items file (The specific institute is not printed. Do not collapse to the Max Planck Society. Steinbach is likely the MPI for Tax La)
+editors_abdc_a_current.csv,editors_abdc_a_current#15855,Sigrid Quack,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (The specific institute is not printed. Do not collapse to the Max Planck Society. Steinbach is likely the MPI for Tax La)
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,Jason Hsu,item1,RENAME,canonical_name,"Rayliant Global Advisor, UCLA Anderson",Rayliant Global Advisors,open item 1 RENAME -> Rayliant Global Advisors (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,Jason Hsu,item1,RENAME,ror_country,,United States,open item 1 RENAME -> Rayliant Global Advisors (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,Jason Hsu,item1,RENAME,continent,,North America,open item 1 RENAME -> Rayliant Global Advisors (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_id,,https://ror.org/00afp2z80,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_name,,University of Liège,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,ror_country,,Belgium,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,continent,,Europe,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,lat,,50.63373,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,lon,,5.56749,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,Georges Hübner,item2,RENAME,canonical_name,HEC Liège – Liège University and Belfius Asset Management,University of Liège,open item 2 RENAME -> University of Liège https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,Sebastian Kohl,item2,MERGE,canonical_name,Max Planck Institute Germany,"Max Planck Institute, Germany","open item 2 MERGE -> Max Planck Institute, Germany (no ROR)"
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,Sebastian Kohl,item2,MERGE,ror_country,,Germany,"open item 2 MERGE -> Max Planck Institute, Germany (no ROR)"
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,Sebastian Kohl,item2,MERGE,continent,,Europe,"open item 2 MERGE -> Max Planck Institute, Germany (no ROR)"
+editors_abdc_a_current.csv,editors_abdc_a_current#26839,Amit Singh,item2,SET_COUNTRY,ror_country,,India,kept as printed; country per open-items file (Generic; the campus is not printed. Do not map to IIT BHU. A per-editor campus lookup (17 rows) is a separate task.)
+editors_abdc_a_current.csv,editors_abdc_a_current#26839,Amit Singh,item2,SET_COUNTRY,continent,,Asia,kept as printed; country per open-items file (Generic; the campus is not printed. Do not map to IIT BHU. A per-editor campus lookup (17 rows) is a separate task.)
+editors_abdc_a_current.csv,editors_abdc_a_current#30668,Tal Simons,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,Cara Jackson,item1,RENAME,canonical_name,Center for Outcomes Based Contracting and American University,Center for Outcomes Based Contracting,open item 1 RENAME -> Center for Outcomes Based Contracting (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,Cara Jackson,item1,RENAME,ror_country,,United States,open item 1 RENAME -> Center for Outcomes Based Contracting (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,Cara Jackson,item1,RENAME,continent,,North America,open item 1 RENAME -> Center for Outcomes Based Contracting (no ROR)
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_id,,https://ror.org/05309tf52,open item 4 SET_ROR -> Niagara University https://ror.org/05309tf52; country Canada (approved override of ROR country)
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_name,,Niagara University,open item 4 SET_ROR -> Niagara University https://ror.org/05309tf52; country Canada (approved override of ROR country)
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,ror_country,United States,Canada,open item 4 SET_ROR -> Niagara University https://ror.org/05309tf52; country Canada (approved override of ROR country)
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,lat,,43.17256,open item 4 SET_ROR -> Niagara University https://ror.org/05309tf52; country Canada (approved override of ROR country)
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,Galina Boiarintseva,item4,SET_ROR,lon,,-79.03588,open item 4 SET_ROR -> Niagara University https://ror.org/05309tf52; country Canada (approved override of ROR country)
+editors_abdc_a_current.csv,editors_abdc_a_current#45775,Diccon Loxton,item1,SET_COUNTRY,ror_country,Germany,Australia,"kept as printed; country per open-items file (Single law firm (Allens, Australia). Fix the country on #45775 (Germany -> Australia); both rows are the same journal (J)"
+editors_abdc_a_current.csv,editors_abdc_a_current#45775,Diccon Loxton,item1,SET_COUNTRY,continent,Europe,Oceania,"kept as printed; country per open-items file (Single law firm (Allens, Australia). Fix the country on #45775 (Germany -> Australia); both rows are the same journal (J)"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,ror_id,,https://ror.org/03r8z3t63,open item 1 RENAME -> UNSW Sydney https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,ror_name,,UNSW Sydney,open item 1 RENAME -> UNSW Sydney https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,lat,,-33.86785,open item 1 RENAME -> UNSW Sydney https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,lon,,151.20732,open item 1 RENAME -> UNSW Sydney https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,Kathleen Bentley-Goode,item1,RENAME,canonical_name,Chapman,UNSW Sydney,open item 1 RENAME -> UNSW Sydney https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,ror_id,,https://ror.org/04b8v1s79,open item 1 RENAME -> Tilburg University https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,ror_name,,Tilburg University,open item 1 RENAME -> Tilburg University https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,lat,,51.55551,open item 1 RENAME -> Tilburg University https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,lon,,5.0913,open item 1 RENAME -> Tilburg University https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,Marnik Dekimpe,item1,RENAME,canonical_name,Catholic University of Tilburg/Leuven University,Tilburg University,open item 1 RENAME -> Tilburg University https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21433,Steffan Giessner,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_id,,https://ror.org/05vt9qd57,"open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_name,,"Rutgers, The State University of New Jersey","open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,ror_country,Canada,United States,"open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,lat,,40.48622,"open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,lon,,-74.45182,"open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,Gandalf Nicolas,item9,SET_ROR,canonical_name,Rutgers University-New Brunswick,"Rutgers, The State University of New Jersey","open item 9 SET_ROR -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24284,Emilio Marti,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,lat,,52.2,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,lon,,0.11667,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,Thomas Roulet,item1,RENAME,canonical_name,Judge Business School & King's College,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24294,Tal Simons,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,lat,,3.1412,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,lon,,101.68653,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,Michael Frese,item1,RENAME,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,lat,,3.1412,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,lon,,101.68653,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,Michael Frese,item1,RENAME,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,lat,,52.2,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,lon,,0.11667,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,Thomas Roulet,item1,RENAME,canonical_name,Judge Business School & King's College,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6405,Joep Cornelissen,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6419,Justin Jansen,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,ror_id,,https://ror.org/04ch3q361,open item 2 SET_ROR -> Centre for Economic and Social Studies https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,ror_name,,Centre for Economic and Social Studies,open item 2 SET_ROR -> Centre for Economic and Social Studies https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,lat,,17.38405,open item 2 SET_ROR -> Centre for Economic and Social Studies https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,lon,,78.45636,open item 2 SET_ROR -> Centre for Economic and Social Studies https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,R Radhakrishna,item2,SET_ROR,canonical_name,Centre for Social and Economic Studies,Centre for Economic and Social Studies,open item 2 SET_ROR -> Centre for Economic and Social Studies https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_id,,https://ror.org/001gpfp45,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_name,,California Polytechnic State University,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,ror_country,Italy,United States,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,continent,Europe,North America,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,lat,,35.28275,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,lon,,-120.65962,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,Abraham B. (Rami) Shani,item1,RENAME,canonical_name,California Polytechnic State University and Politecnico di Milano,California Polytechnic State University,open item 1 RENAME -> California Polytechnic State University https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,Lones Smith,item2,SPLIT_WHERE_EVIDENCED,ror_id,https://ror.org/03ydkyb10,https://ror.org/01y2jtd41,open item 2 SPLIT_WHERE_EVIDENCED -> University of Wisconsin–Madison https://ror.org/01y2jtd41
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,Lones Smith,item2,SPLIT_WHERE_EVIDENCED,ror_name,University of Wisconsin System,University of Wisconsin–Madison,open item 2 SPLIT_WHERE_EVIDENCED -> University of Wisconsin–Madison https://ror.org/01y2jtd41
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,Lones Smith,item2,SPLIT_WHERE_EVIDENCED,canonical_name,"University of Wisconsin System, Madison, Wisconsin, United States of America (the)",University of Wisconsin–Madison,open item 2 SPLIT_WHERE_EVIDENCED -> University of Wisconsin–Madison https://ror.org/01y2jtd41
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,lat,,40.48622,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,lon,,-74.45182,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,Aaron Shenhar,item2,SPLIT,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_id,,https://ror.org/0305fyb87,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_name,,Woxsen School of Business,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,ror_country,,India,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,continent,,Asia,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,lat,,17.38405,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,lon,,78.45636,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,Christiane Prange,item1,RENAME,canonical_name,Woxsen University / Zhejiang University International Business School - India / People's Republic of China,Woxsen University,open item 1 RENAME -> Woxsen University https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#23428,Bernd Marin,item1,RENAME,canonical_name,"European Bureau for Policy Consulting and Social Research, and Institut für die Wissenschaften /IWM, Vienna",European Bureau for Policy Consulting and Social Research,open item 1 RENAME -> European Bureau for Policy Consulting and Social Research (no ROR)
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,lat,,40.48622,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,lon,,-74.45182,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,Vivien (Wen Li) Anthony,item2,SPLIT,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_b_current.csv,editors_abdc_b_current#33133,Patrick McNutt,item9,FIX_COUNTRY,ror_country,United Kingdom,Ireland,"country -> Ireland (Country was set to United Kingdom (from the second organisation, University of Wales); Dublin is in Ireland.)"
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,ror_id,,https://ror.org/01bc76c69,open item 4 SET_ROR -> University of Applied Sciences Emden Leer https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,ror_name,,University of Applied Sciences Emden Leer,open item 4 SET_ROR -> University of Applied Sciences Emden Leer https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,lat,,53.36745,open item 4 SET_ROR -> University of Applied Sciences Emden Leer https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,lon,,7.20778,open item 4 SET_ROR -> University of Applied Sciences Emden Leer https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,Jutta Lindert,item4,SET_ROR,canonical_name,University of Applied Sciences Emden/Leer,University of Applied Sciences Emden Leer,open item 4 SET_ROR -> University of Applied Sciences Emden Leer https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_id,,https://ror.org/014zxe029,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_name,,Centro de Investigación y Docencia Económicas,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,ror_country,,Mexico,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,continent,,North America,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,lat,,19.42847,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,lon,,-99.12766,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,Juan Rosellon,item1,RENAME,canonical_name,CIDE/Mexico City and DIW Berlin,Centro de Investigación y Docencia Económicas,open item 1 RENAME -> Centro de Investigación y Docencia Económicas https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,ror_id,,https://ror.org/039k72y49,open item 2 SET_ROR -> Assumption University https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,ror_name,,Assumption University,open item 2 SET_ROR -> Assumption University https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,lat,,42.26259,open item 2 SET_ROR -> Assumption University https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,lon,,-71.80229,open item 2 SET_ROR -> Assumption University https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,Daniel Jones,item2,SET_ROR,canonical_name,Assumption College,Assumption University,open item 2 SET_ROR -> Assumption University https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_id,,https://ror.org/042bbge36,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_name,,Nova Southeastern University,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,ror_country,Belgium,United States,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,continent,Europe,North America,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,lat,,26.12231,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,lon,,-80.14338,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,Tyrone Savage,item7,RENAME,canonical_name,"Ph.D. Nova Southeastern University, Fort Lauderdale, Florida KU Leuven, Leuven",Nova Southeastern University,open item 7 RENAME -> Nova Southeastern University https://ror.org/042bbge36
+editors_abdc_c_current.csv,editors_abdc_c_current#15597,Armin Steinbach,item2,SET_COUNTRY,ror_country,,Germany,kept as printed; country per open-items file (The specific institute is not printed. Do not collapse to the Max Planck Society. Steinbach is likely the MPI for Tax La)
+editors_abdc_c_current.csv,editors_abdc_c_current#15597,Armin Steinbach,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (The specific institute is not printed. Do not collapse to the Max Planck Society. Steinbach is likely the MPI for Tax La)
+editors_abdc_c_current.csv,editors_abdc_c_current#18673,Reyvi Mariñas,item7,SET_COUNTRY,ror_country,,Australia,kept as printed; country per open-items file (A real Melbourne non-profit (welfaremissionformigrants.org.au; she is vice chair). Set country Australia. Alternative: T)
+editors_abdc_c_current.csv,editors_abdc_c_current#18673,Reyvi Mariñas,item7,SET_COUNTRY,continent,,Oceania,kept as printed; country per open-items file (A real Melbourne non-profit (welfaremissionformigrants.org.au; she is vice chair). Set country Australia. Alternative: T)
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_id,,https://ror.org/01e6qks80,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_name,,Dalhousie University,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,ror_country,,Canada,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,continent,,North America,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,lat,,44.64269,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,lon,,-63.57688,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,Jocelyn Downie,item7,RENAME,canonical_name,- Professor of Law,Dalhousie University,open item 7 RENAME -> Dalhousie University https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18788,Nikolay Gertchev,item2,SET_COUNTRY,ror_country,,France,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_c_current.csv,editors_abdc_c_current#18788,Nikolay Gertchev,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,ror_id,,https://ror.org/047988g19,open item 4 SET_ROR -> West Ukrainian National University https://ror.org/047988g19
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,ror_name,,West Ukrainian National University,open item 4 SET_ROR -> West Ukrainian National University https://ror.org/047988g19
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,lat,,49.55404,open item 4 SET_ROR -> West Ukrainian National University https://ror.org/047988g19
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,Oleksandr Dluhopolskyi,item4,SET_ROR,lon,,25.59067,open item 4 SET_ROR -> West Ukrainian National University https://ror.org/047988g19
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_id,,https://ror.org/00nx0vn86,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_name,,Macao University of Tourism,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,ror_country,China,Macao,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,lat,,22.20056,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,lon,,113.54611,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,Christy Ng Yen Nee,item9,SET_ROR,canonical_name,Macao Institute for Tourism Studies,Macao University of Tourism,open item 9 SET_ROR -> Macao University of Tourism https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,lat,,40.48622,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,lon,,-74.45182,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,Michael Alles,item2,SPLIT,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,ror_id,,https://ror.org/052vhkx86,open item 3 SET_ROR -> University of Africa Toru-Orua https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,ror_name,,University of Africa Toru-Orua,open item 3 SET_ROR -> University of Africa Toru-Orua https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,lat,,5.09985,open item 3 SET_ROR -> University of Africa Toru-Orua https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,lon,,6.0644,open item 3 SET_ROR -> University of Africa Toru-Orua https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,Vanessa G.B. Gowreesunkar,item3,SET_ROR,canonical_name,University of Africa,University of Africa Toru-Orua,open item 3 SET_ROR -> University of Africa Toru-Orua https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_c_current.csv,editors_abdc_c_current#23725,Гришин Виктор Иванович,item2,SET_COUNTRY,ror_country,,Russia,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23725,Гришин Виктор Иванович,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23732,Рогов Сергей Михайлович,item2,SET_COUNTRY,ror_country,,Russia,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23732,Рогов Сергей Михайлович,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23733,Эскиндаров Михаил Абдурахманович,item2,SET_COUNTRY,ror_country,,Russia,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23733,Эскиндаров Михаил Абдурахманович,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Non-Latin printed name kept (standing rule). Optional: set country Russia where blank.)
+editors_abdc_c_current.csv,editors_abdc_c_current#23978,Pascal Salin,item2,SET_COUNTRY,ror_country,,France,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_c_current.csv,editors_abdc_c_current#23978,Pascal Salin,item2,SET_COUNTRY,continent,,Europe,kept as printed; country per open-items file (Pre-1971 umbrella name; the successor universities cannot be told apart from the printed text. Do not map to Université )
+editors_abdc_c_current.csv,editors_abdc_c_current#24104,Radha Vyas,item1,RENAME,canonical_name,"D R Patel & R B Patel Commerce College and Bhaniben C Patel BBA College, Surat, Gujarat",D R Patel & R B Patel Commerce College,open item 1 RENAME -> D R Patel & R B Patel Commerce College (no ROR)
+editors_abdc_c_current.csv,editors_abdc_c_current#25149,Ilan Oshri,item2,MERGE,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University","open item 2 MERGE -> Rotterdam School of Management, Erasmus University (no ROR)"
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,ror_id,,https://ror.org/04je6yw13,open item 1 RENAME -> Cheikh Anta Diop University https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,ror_name,,Cheikh Anta Diop University,open item 1 RENAME -> Cheikh Anta Diop University https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,lat,,14.6937,open item 1 RENAME -> Cheikh Anta Diop University https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,lon,,-17.44406,open item 1 RENAME -> Cheikh Anta Diop University https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,Balla DOUCOURE,item1,RENAME,canonical_name,CEDIMES Institute USA & University Cheikh Anta Diop,Cheikh Anta Diop University,open item 1 RENAME -> Cheikh Anta Diop University https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,Kelly Pan,item9,SET_ROR,ror_id,https://ror.org/020yc1y85,https://ror.org/04vx9dd09,open item 9 SET_ROR -> Lego (Denmark) https://ror.org/04vx9dd09
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,Kelly Pan,item9,SET_ROR,ror_name,The LEGO Foundation,Lego (Denmark),open item 9 SET_ROR -> Lego (Denmark) https://ror.org/04vx9dd09
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,Kelly Pan,item9,SET_ROR,canonical_name,The LEGO Foundation,Lego (Denmark),open item 9 SET_ROR -> Lego (Denmark) https://ror.org/04vx9dd09
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,ror_id,,https://ror.org/021e5n641,open item 5 RENAME -> Creative Capital Foundation https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,ror_name,,Creative Capital Foundation,open item 5 RENAME -> Creative Capital Foundation https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,lat,,40.71427,open item 5 RENAME -> Creative Capital Foundation https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,lon,,-74.00597,open item 5 RENAME -> Creative Capital Foundation https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,Ruby Lerner,item5,RENAME,canonical_name,Creative New Zealand,Creative Capital Foundation,open item 5 RENAME -> Creative Capital Foundation https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,ror_id,https://ror.org/055gkcy74,https://ror.org/03wnrsb51,open item 9 RENAME -> Shandong Provincial QianFoShan Hospital https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,ror_name,Union Hospital,Shandong Provincial QianFoShan Hospital,open item 9 RENAME -> Shandong Provincial QianFoShan Hospital https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,lat,26.06139,36.66833,open item 9 RENAME -> Shandong Provincial QianFoShan Hospital https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,lon,119.30611,116.99722,open item 9 RENAME -> Shandong Provincial QianFoShan Hospital https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,Paulo Moreira,item9,RENAME,canonical_name,Union Hospital,Shandong Provincial QianFoShan Hospital,open item 9 RENAME -> Shandong Provincial QianFoShan Hospital https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,ror_id,https://ror.org/00nm3xj95,https://ror.org/02c9qn167,open item 9 RENAME -> Guangxi University https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,ror_name,Junior Achievement,Guangxi University,open item 9 RENAME -> Guangxi University https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,lat,39.9075,22.81667,open item 9 RENAME -> Guangxi University https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,lon,116.39723,108.31667,open item 9 RENAME -> Guangxi University https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,Zuojun Fan,item9,RENAME,canonical_name,Junior Achievement,Guangxi University,open item 9 RENAME -> Guangxi University https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_id,,https://ror.org/04ewct822,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_name,,Southwestern University of Finance and Economics,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,ror_country,,China,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,continent,,Asia,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,lat,,30.66667,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,lon,,104.06667,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,Xisheng Yu,item4,RENAME,canonical_name,University of Finance and Economics,Southwestern University of Finance and Economics,open item 4 RENAME -> Southwestern University of Finance and Economics https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_id,,https://ror.org/024rfjv05,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_name,,Centre for Studies in Social Sciences Calcutta,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,ror_country,Germany,India,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,lat,,22.56263,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,lon,,88.36304,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,Saibal Kar,item1,RENAME,canonical_name,"Centre for Studies in Social Sciences, Calcutta, India and IZA, Bonn",Centre for Studies in Social Sciences Calcutta,open item 1 RENAME -> Centre for Studies in Social Sciences Calcutta https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#9584,Ricardo Vinícius Dias Jordão,item1,RENAME,canonical_name,"Swiss Management Center (Switzerland) and The Center for Advanced Studies in Management and Economics, CEFAGE-UE",Swiss Management Center,open item 1 RENAME -> Swiss Management Center (no ROR)
+editors_abdc_c_current.csv,editors_abdc_c_current#9584,Ricardo Vinícius Dias Jordão,item1,RENAME,ror_country,Portugal,Switzerland,open item 1 RENAME -> Swiss Management Center (no ROR)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_id,,https://ror.org/05hs6h993,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_name,,Michigan State University,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,ror_country,,United States,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,continent,,North America,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,lat,,42.73698,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,lon,,-84.48387,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,Richard Baillie,item2,RENAME,canonical_name,"Michigan State University, USA; Queen Mary, University of London",Michigan State University,open item 2 RENAME -> Michigan State University https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,lat,,40.48622,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,lon,,-74.45182,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,Xiye Yang,item2,SPLIT,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_id,,https://ror.org/03rc6as71,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_name,,Tongji University,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,ror_country,,China,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,continent,,Asia,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,lat,,31.22222,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,lon,,121.45806,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,Michael Lissack,item1,RENAME,canonical_name,"Second Order Science Foundation, Salem, Massachusetts; Tongji University, College of Design and Innovation - USA; People's Republic of China",Tongji University,open item 1 RENAME -> Tongji University https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,ror_id,,https://ror.org/05bqa2z43,open item 3 SET_ROR -> Better Being Co. (United States) https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,ror_name,,Better Being Co. (United States),open item 3 SET_ROR -> Better Being Co. (United States) https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,lat,,40.76078,open item 3 SET_ROR -> Better Being Co. (United States) https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,lon,,-111.89105,open item 3 SET_ROR -> Better Being Co. (United States) https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,Ji Li,item3,SET_ROR,canonical_name,Nutraceutical Corporation,Better Being Co. (United States),open item 3 SET_ROR -> Better Being Co. (United States) https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#6526,Gian Luigi Albano,item1,RENAME,canonical_name,"Consip Spa and University LUISS ""G. Carli""",Consip,open item 1 RENAME -> Consip (no ROR)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7121,Ricardo Vinicius Jordão,item1,RENAME,canonical_name,"Swiss Management Center, Zug, Switzerland and The Center for Advanced Studies in Management and Economics, CEFAGE-EU, Faro",Swiss Management Center,open item 1 RENAME -> Swiss Management Center (no ROR)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7121,Ricardo Vinicius Jordão,item1,RENAME,ror_country,Portugal,Switzerland,open item 1 RENAME -> Swiss Management Center (no ROR)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,ror_id,,https://ror.org/05vt9qd57,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,ror_name,,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,lat,,40.48622,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,lon,,-74.45182,"open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,Lian Qi,item2,SPLIT,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey","open item 2 SPLIT -> Rutgers, The State University of New Jersey https://ror.org/05vt9qd57"
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,ror_id,,https://ror.org/02wdjwg88,open item 2 MERGE -> Facultad Latinoamericana de Ciencias Sociales Sede Académica México https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,ror_name,,Facultad Latinoamericana de Ciencias Sociales Sede Académica México,open item 2 MERGE -> Facultad Latinoamericana de Ciencias Sociales Sede Académica México https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,lat,,19.29513,open item 2 MERGE -> Facultad Latinoamericana de Ciencias Sociales Sede Académica México https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,lon,,-99.16206,open item 2 MERGE -> Facultad Latinoamericana de Ciencias Sociales Sede Académica México https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,Raul Pacheco-Vega,item2,MERGE,canonical_name,Facultad Latinoamericana de Ciencias Sociales (FLASCO),Facultad Latinoamericana de Ciencias Sociales Sede Académica México,open item 2 MERGE -> Facultad Latinoamericana de Ciencias Sociales Sede Académica México https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,ror_id,,https://ror.org/056am2717,open item 6 RENAME -> Brock University https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,ror_name,,Brock University,open item 6 RENAME -> Brock University https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,lat,,43.17126,open item 6 RENAME -> Brock University https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,lon,,-79.24267,open item 6 RENAME -> Brock University https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,Michael Ashton,item6,RENAME,canonical_name,St. Catharine's,Brock University,open item 6 RENAME -> Brock University https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_id,,https://ror.org/052w4zt36,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_name,,American University,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,ror_country,,United States,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,continent,,North America,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,lat,,38.89511,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,lon,,-77.03637,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,Kenneth J. Meier American,item1,RENAME,canonical_name,"Cardiff & Leiden Universities, USA/UK/Netherlands",American University,open item 1 RENAME -> American University https://ror.org/052w4zt36
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1194,Oliver Schütze,item9,SET_COUNTRY,ror_country,,Mexico,country -> Mexico (prio43#1194 lost its country in this freeze (was Mexico); CINVESTAV is Mexican (ROR 009eqmr18 exists as a separate entry)
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1194,Oliver Schütze,item9,SET_COUNTRY,continent,,North America,country -> Mexico (prio43#1194 lost its country in this freeze (was Mexico); CINVESTAV is Mexican (ROR 009eqmr18 exists as a separate entry)
+editors_ft50_current.csv,editors_ft50_current#2805,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current.csv,editors_ft50_current#2805,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current.csv,editors_ft50_current#4634,X. Zhao,item8,CLEAR_PROFILE_URL,faculty_profile_url,https://www.ceibs.edu/zhao-xiande,,CEIBS profile URL + person key belong to X. Zhao #4501 (match was by initials); cleared
+editors_ft50_current.csv,editors_ft50_current#4634,X. Zhao,item8,CLEAR_PROFILE_URL,faculty_person_key,web:fb7566c575c5,,CEIBS profile URL + person key belong to X. Zhao #4501 (match was by initials); cleared
+editors_ft50_current.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6180,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6512,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,ror_id,,https://ror.org/013meh722,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,ror_name,,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,lat,,52.2,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,lon,,0.11667,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,Thomas Roulet,item1,RENAME,canonical_name,Judge Business School & King's College,University of Cambridge,open item 1 RENAME -> University of Cambridge https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,X. Zhao,item8,CLEAR_PROFILE_URL,faculty_profile_url,https://www.ceibs.edu/zhao-xiande,,CEIBS profile URL + person key belong to X. Zhao #4501 (match was by initials); cleared
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,X. Zhao,item8,CLEAR_PROFILE_URL,faculty_person_key,web:fb7566c575c5,,CEIBS profile URL + person key belong to X. Zhao #4501 (match was by initials); cleared
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,lat,,3.1412,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,lon,,101.68653,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,Michael Frese,item1,RENAME,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_id,,https://ror.org/037hqgd69,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_name,,Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,ror_country,Germany,Malaysia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,continent,Europe,Asia,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,lat,,3.1412,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,lon,,101.68653,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,Michael Frese,item1,RENAME,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business,open item 1 RENAME -> Asia School of Business https://ror.org/037hqgd69

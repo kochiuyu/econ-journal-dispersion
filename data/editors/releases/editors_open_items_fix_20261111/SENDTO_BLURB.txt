@@ -1,0 +1,1 @@
+editors_open_items_fix_20261111: open items 1-9 applied per file + approved specifics (0 differences); 33 RORs API-verified (8 new); #39063 drop skipped (UNSW protected); Directory 11,213/6,692/6,692/169/44 -> 11,185/6,697/6,697/169/43 (shared-name guard 44->43). QC ok. Unpublished.
