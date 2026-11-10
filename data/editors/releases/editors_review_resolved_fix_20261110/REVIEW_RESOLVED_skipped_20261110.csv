@@ -1,0 +1,58 @@
+item,level,action,name,file,editor_row_key,reason
+item1-rowlevel,row,REMATCH,University of Georgia,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#1553,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#9018,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#1446,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#9397,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#17101,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_abdc_b_current.csv,editors_abdc_b_current#1870,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1-rowlevel,row,REMATCH,University of Georgia,editors_abdc_b_current.csv,editors_abdc_b_current#21255,already on https://ror.org/00te3t702 (applied by editors_weird_inst_fix UGA fix); no change
+item1,row,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20063,protected organisation on row (11KBW/UNSW/INSEAD)
+item1,row,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20071,protected organisation on row (11KBW/UNSW/INSEAD)
+item1,row,DROP,"BDS (Otago), MHA (Georgia State), PhD (UNSW), FCHSM CHE",editors_abdc_c_current.csv,editors_abdc_c_current#20081,protected organisation on row (11KBW/UNSW/INSEAD)
+item1,decision,STRIP,"PhD – Assistant Research Professor, Campus de Ker Lann, ENSAI, Bruz, France",,,no row with this display in base freeze
+item1,row,REMATCH,"PhD, Associate Professor, Research Fellow of Institute of Labour Economics",editors_abdc_c_current.csv,editors_abdc_c_current#18879,row country Germany != decision country Italy
+item1,row,REMATCH,HEC,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#852,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#1728,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#649,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#11163,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19511,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24606,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_current.csv,editors_abdc_a_current#14376,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abdc_a_current.csv,editors_abdc_a_current#28446,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4688,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,HEC,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7958,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,IAE,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4001,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,IAE,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4073,row already has a decision from item1-rowlevel (REMATCH); not applied twice
+item1,row,REMATCH,IMD,editors_abdc_a_current.csv,editors_abdc_a_current#1091,target ROR country Switzerland != decision country Singapore
+item1,row,REMATCH,IMD,editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#980,target ROR country Switzerland != decision country Singapore
+item1,decision,REMATCH,University of Louisiana Lafayette,,,no row with this display in base freeze
+item1,decision,REMATCH,"University of Louisiana, Lafayette",,,no row with this display in base freeze
+item1,decision,COINFLIP,"University of Science and Technology, China",,,COINFLIP decision handled by item 2 (Zhichen Chen)
+item1,decision,REMATCH,University of Witwatersrand,,,no row with this display in base freeze
+item1,decision,REMATCH,York University,,,no row changed (rows already on target or carry another ROR)
+item1,row,REMATCH,Applied Research Associates,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#938,"target 'Applied Research Associates': exact ROR twin https://ror.org/04gmfhf08 is in New Zealand, row in United States"
+item1,row,REMATCH,Applied Research Associates,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#953,"target 'Applied Research Associates': exact ROR twin https://ror.org/04gmfhf08 is in New Zealand, row in United States"
+item1,row,REMATCH,"Department of Strategic and International Management, St. Petersburg State University, Russia; Leonard De Vinci Pole Univ, EMLV Business Sch, Res Ctr, Paris",editors_abdc_c_current.csv,editors_abdc_c_current#20618,row country France != decision country Russia
+item1,row,REMATCH,"Instituto de Investigaciones Economicas y Sociales del Sur (IIESS) Universidad Nacional del Sur & CONICET, Argentina and Oxford Poverty and Human Development Initiative",editors_abdc_b_current.csv,editors_abdc_b_current#25663,row country United Kingdom != decision country Argentina
+item1,row,REMATCH,"Instituto de Investigaciones Economicas y Sociales del Sur (IIESS) Universidad Nacional del Sur & CONICET, Argentina and Oxford Poverty and Human Development Initiative",editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#25530,row country United Kingdom != decision country Argentina
+item1,row,STRIP,"National Institute for Research in Computer Science and Control, France Hans-P. Schwefel, Dortmund University of Technology",editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#934,row country Germany != decision country France
+item1,row,STRIP,"Swiss Management Center, Zug, Switzerland and The Center for Advanced Studies in Management and Economics, CEFAGE-EU, Faro",editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7121,row country Portugal != decision country Switzerland
+item1,decision,-,Korea University,,,1 row(s): row carries a different ROR; not moved
+item1,decision,-,Saint Louis University,,,4 row(s): row carries a different ROR; not moved
+item1,decision,-,National Institute of Education,,,19 row(s): row carries a different ROR; not moved
+item1,decision,-,York University,,,12 row(s): row carries a different ROR; not moved
+item1,decision,-,Heidelberg University,,,1 row(s): row carries a different ROR; not moved
+item1,decision,-,University of Georgia,,,2 row(s): row carries a different ROR; not moved
+item1,decision,-,Ministry of Health,,,5 row(s): row carries a different ROR; not moved
+item1,decision,-,Queen's University,,,262 row(s): row carries a different ROR; not moved
+item1,decision,-,Saint Francis University,,,2 row(s): row carries a different ROR; not moved
+item1,decision,-,University of Technology and Applied Sciences,,,7 row(s): row carries a different ROR; not moved
+item1,decision,-,University of Wales,,,20 row(s): row carries a different ROR; not moved
+item3,row,RENAME,Birmingham City University,editors_abdc_b_current.csv,editors_abdc_b_current#8033,"printed 'Birmingham City University, USA' contradicts the UK university; not renamed"
+item3,row,RENAME,Birmingham City University,editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#7979,"printed 'Birmingham City University, USA' contradicts the UK university; not renamed"
+item3,row,RENAME,"Maastricht University, Netherlands & Federal Institute for Vocational Education and Training (BIBB)",editors_abdc_c_current.csv,editors_abdc_c_current#4542,printed country Germany != ROR country The Netherlands
+item3,row,RENAME,T-Mobile,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9989,canonical is already 'T-Mobile'; the Directory shows 'T' only because Web's phone scrub eats 'Mobile' (item 4 build_site.py patch)
+item4,row,RESTORE_TEL,"Manlio Del Giudice, PhD Pegaso ematic University, Naples",editors_abdc_a_current.csv,editors_abdc_a_current#13638,superseded by item1 REMATCH ('Pegaso University')
+item4,row,RESTORE_TEL,"Manlio Del Giudice, PhD Pegaso ematic University, Naples",editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#13521,superseded by item1 REMATCH ('Pegaso University')
+item4,row,RESTORE_TEL,"Department of Electrical and ecommunications, University of Ain Témouchent, Ain Témouchent",editors_abdc_c_current.csv,editors_abdc_c_current#3227,superseded by item1 RENAME ('University of Ain Témouchent')
+item4,row,RESTORE_TEL,"IUL ematic University, Department of Human Sciences, Florence",editors_abdc_c_current.csv,editors_abdc_c_current#5178,superseded by item1 RENAME ('IUL Telematic University')

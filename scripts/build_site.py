@@ -485,11 +485,11 @@ EMAIL_RE = re.compile(r"[A-Z0-9._%+\-]+@[A-Z0-9.\-]+\.[A-Z]{2,}", re.IGNORECASE)
 INTL_PHONE_RE = re.compile(r"\+\d{1,3}(?:[\s()./\-]*\d){2,}")
 NANP_RE = re.compile(r"\b\d{3}[.\-\s]\d{3}[.\-\s]\d{4}\b")
 LABELED_PHONE_RE = re.compile(
-    r"\b(?:telephone|phone|mobile|fax|tel)\s*[:.]?\s*\+?(?:\d[\d\s()./\-]{5,})",
+    r"\b(?:telephone|phone|mobile|fax|tel)\b\s*[:.]?\s*\+?(?:\d[\d\s()./\-]{5,})",
     re.IGNORECASE,
 )
 LEFTOVER_LABEL_RE = re.compile(
-    r"\b(?:e-?mail|telephone|phone|mobile|fax|tel)\s*[:.]?",
+    r"\b(?:e-?mail|telephone|phone|mobile|fax|tel)\b\s*(?:[:.]|(?=\s*\+?\d))",
     re.IGNORECASE,
 )
 MAILTO_RE = re.compile(r"\bmailto:\s*", re.IGNORECASE)
@@ -2652,10 +2652,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # printed name next to the ROR row of the same name) onto that existing
     # ROR twin, so 56 of those shared names collapse. The ambiguous ones
     # (Queen's, American, Northeastern, Concordia, ...) were left for review.
-    # Shared display names are 69.
-    if duplicate_names != 69:
+    # editors_review_resolved_fix_20261110 resolves the reviewed same-name
+    # splits (American, Northeastern, Concordia, York, HEC, ...), so 20 more
+    # shared names collapse. Shared display names are 49.
+    if duplicate_names != 49:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 69. "
+            f"Institutions that share a display name: {duplicate_names}, expected 49. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}
