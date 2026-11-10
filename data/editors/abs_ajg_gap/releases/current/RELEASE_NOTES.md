@@ -1,4 +1,12 @@
-# editors_paren_num_leftover_fix_20261110
+# editors_edpacs_marks_country_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_paren_num_leftover_fix_20261110` (Directory PR #50) for the Directory current panels. It is a keyed, user-approved follow-up on three ABDC C EDPACS seats. No ROR ids change and there is no site filter. The long table and change log are in `data/editors/releases/editors_edpacs_marks_country_fix_20261110/`. Report: `docs/reports/EDPACS_MARKS_COUNTRY_FIX_20261110.md`.
+
+The three AJG-gap files are unchanged.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,434 (6,387 with a ROR id), were 15,435 / 6,387. Countries stay 159. 12,067 appointments have no institution (was 12,066: Marks' seat no longer falls back to his printed bio). Shared display names stay 69. The only parenthesis- and number-start Institutions left are the 14 kept numbered organisations.
+
+## Previous freeze: editors_paren_num_leftover_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_other_inst_fix_20261110` (Directory PR #49) for the Directory current panels. It is a keyed, user-approved fix for the parenthesis- and number-start Institutions left as REVIEW. Only institution fields are changed, the printed `raw_affiliation` is kept, and the guardrail and history notes stay in `ror_notes` with a `paren_num_leftover_fix_20261110:` token appended. No new ROR ids and no site filter. The long table and change log are in `data/editors/releases/editors_paren_num_leftover_fix_20261110/`. Report: `docs/reports/PAREN_NUM_LEFTOVER_FIX_20261110.md`.
 
