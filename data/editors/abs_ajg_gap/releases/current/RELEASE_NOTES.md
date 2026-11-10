@@ -1,4 +1,12 @@
-# editors_edpacs_marks_country_fix_20261110
+# editors_raw_aff_part_no_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_edpacs_marks_country_fix_20261110` (Directory PR #51) for the Directory current panels. It is a long-table-only fix: `raw_aff_part` `no` → blank on 9,695 parts of `data/editors/releases/editors_raw_aff_part_no_fix_20261110/editor_affiliations.csv.gz`. The panel CSVs are unchanged. Report: `docs/reports/RAW_AFF_PART_NO_FIX_20261110.md`.
+
+AJG-gap long parts blanked: prio43 358 / ajg2 236 / ajg1 2,317.
+
+**Directory.** Unchanged: appointments 162,575, editors 112,718, journals 2,853, Institutions 15,434 (6,387 with a ROR id), countries 159, 12,067 appointments without an institution, shared display names 69.
+
+## Previous freeze: editors_edpacs_marks_country_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_paren_num_leftover_fix_20261110` (Directory PR #50) for the Directory current panels. It is a keyed, user-approved follow-up on three ABDC C EDPACS seats. No ROR ids change and there is no site filter. The long table and change log are in `data/editors/releases/editors_edpacs_marks_country_fix_20261110/`. Report: `docs/reports/EDPACS_MARKS_COUNTRY_FIX_20261110.md`.
 
