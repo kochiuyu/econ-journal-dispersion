@@ -1,4 +1,12 @@
-# editors_raw_aff_part_no_fix_20261110
+# editors_trailing_country_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_raw_aff_part_no_fix_20261110` (Directory PR #52) for the Directory current panels. It is a keyed, user-approved fix for Institution names that ended in a printed country. 6,036 publish-panel rows get the country stripped from `canonical_name` and `ror_country` / `continent` set from it (137 Institutions are rematched to an existing panel twin, reusing that twin's ROR id where it has one; no ROR id is invented). The printed `raw_affiliation` is unchanged. The audit's REVIEW and KEEP names are untouched, and 11 rows whose stripped name would end in a dangling `and` / `&` (e.g. `Court of Appeal of England and`) are held back. No site filter. The long table, change log and skip list are in `data/editors/releases/editors_trailing_country_fix_20261110/`. Report: `docs/reports/TRAILING_COUNTRY_FIX_20261110.md`.
+
+Rows changed: with_ror 84 (name + country), slim 81 (country only).
+
+**Directory.** Institutions 15,166 (was 15,434), 6,387 with a ROR id (unchanged). Countries 162 (was 159: Guinea, Haiti, Timor-Leste). 12,068 appointments have no institution (was 12,067: a printed `…, Haiti` row now falls to the country-only filter). Appointments 162,575, editors 112,718, journals 2,853. Shared display names stay 69.
+
+## Previous freeze: editors_raw_aff_part_no_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_edpacs_marks_country_fix_20261110` (Directory PR #51) for the Directory current panels. It is a long-table-only fix: `raw_aff_part` `no` → blank on 9,695 parts of `data/editors/releases/editors_raw_aff_part_no_fix_20261110/editor_affiliations.csv.gz`. The panel CSVs are unchanged. Report: `docs/reports/RAW_AFF_PART_NO_FIX_20261110.md`.
 
