@@ -1,0 +1,9 @@
+editors_post_review_fix_20261110 (on review_resolved): 399-name post-review audit applied.
+- Trailing place codes, role prefixes and dept prefixes stripped to the org (existing RORs only).
+- Place, role and credential-only text dropped Marks-style.
+- True near-duplicates merged; La Salle and the near-miss pairs were not.
+- Fragments resolved; the 'Subscribe…' row was dropped.
+- 3 of the 4 long bios resolved from profiles.
+- STIE/CUNY/Abt wrong RORs fixed.
+- Comma-malformed e-mail on abdc_b #13 and 20 phone strings scrubbed.
+Directory 14,440 → 14,195 Institutions; 6,379 with ROR; 162 countries; 49 shared names. QC all pass.

@@ -1,0 +1,71 @@
+item,level,action,name,file,editor_row_key,reason
+item5,decision,SKIP,WorkingKnowledge.com,,,company name
+item5,decision,SKIP,WorldTradeLaw.Net,,,company name
+item5,decision,SKIP,"Herzog, Fox & Neeman, Tel Aviv",,,leave alone (instruction: Herzog Fox false positive)
+item5,decision,SKIP,Tel-Hai College,,,leave alone (Tel-Hai false positive)
+item5,decision,SKIP,Tel-Hai University of Kiryat Shmona in the Galilee,,,leave alone (Tel-Hai false positive)
+item5,decision,SKIP,"Tel-Hai University of Kiryat Shmona in the Galilee (THU), Upper Galilee",,,leave alone (Tel-Hai false positive)
+item5,decision,SKIP,"Tel-Hai University of Kiryat Shmona in the Galilee, Upper Galilee Regional Council",,,leave alone (Tel-Hai false positive)
+item2,decision,SKIP,"Associate Professor, Adelaide Law School, University of Adelaide",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item2,decision,SKIP,"Associate Professor, University of Newcastle",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item2,decision,SKIP,"Professor of Anglo-American private law, University of Leiden",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item2,decision,SKIP,"Professor of Law and Prichard Wilson Chair in Law and Public Policy, Faculty of Law, University of Toronto",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item2,decision,SKIP,"Professor of Tax Law, University of Tilburg and University of Leiden",,,two universities printed; row country (India) contradicts both
+item5,row,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20063,protected organisation on row (11KBW/UNSW/INSEAD)
+item5,row,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20071,protected organisation on row (11KBW/UNSW/INSEAD)
+item5,row,DROP,"BDS (Otago), MHA (Georgia State), PhD (UNSW), FCHSM CHE",editors_abdc_c_current.csv,editors_abdc_c_current#20081,protected organisation on row (11KBW/UNSW/INSEAD)
+item5,decision,SKIP,Chambers of Lord Grabiner QC,,,real organisation (barristers chambers); not a person
+item5,decision,SKIP,"Dr K.C Baghel Govt. P.G College, Bhilai-3",,,real college named after a person
+item5,decision,SKIP,Dr Sandy Bond Consulting LLC,,,real company named after a person
+item5,decision,SKIP,Dr. Babasaheb Ambedkar Open University,,,real university named after a person
+item5,decision,SKIP,"PhD – Assistant Research Professor, Campus de Ker Lann, ENSAI, Bruz, France",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item5,row,RENAME,"PhD, Associate Professor, Research Fellow of Institute of Labour Economics",editors_abdc_c_current.csv,editors_abdc_c_current#18879,printed country Italy != ROR country Germany
+item5,decision,SKIP,IBM,,,short company/organisation name; leave alone
+item5,decision,SKIP,LSE,,,short company/organisation name; leave alone
+item5,decision,SKIP,SAP,,,short company/organisation name; leave alone
+item5,decision,SKIP,AIG,,,short company/organisation name; leave alone
+item5,decision,SKIP,AT&T,,,short company/organisation name; leave alone
+item5,decision,SKIP,BDO,,,short company/organisation name; leave alone
+item5,decision,SKIP,BMW,,,short company/organisation name; leave alone
+item5,decision,SKIP,BSR,,,short company/organisation name; leave alone
+item5,decision,SKIP,DWS,,,short company/organisation name; leave alone
+item5,decision,SKIP,GSK,,,short company/organisation name; leave alone
+item5,decision,SKIP,IMD,,,short company/organisation name; leave alone
+item5,decision,SKIP,KCG,,,short company/organisation name; leave alone
+item5,decision,SKIP,RPC,,,short company/organisation name; leave alone
+item5,decision,SKIP,SCS,,,short company/organisation name; leave alone
+item5,decision,SKIP,SHL,,,short company/organisation name; leave alone
+item5,decision,SKIP,UBS,,,short company/organisation name; leave alone
+item5,decision,SKIP,Vox,,,short company/organisation name; leave alone
+item5,decision,SKIP,WSP,,,short company/organisation name; leave alone
+item5,decision,SKIP,WTT,,,short company/organisation name; leave alone
+item3,decision,SKIP,"International Business School, Department of Organizational Behavior and Human Resource Management, Shanghai",,,unnamed 'International Business School' in Shanghai; twin 00xcb0s16 is in Bulgaria
+item3,decision,SKIP,"University Islamabad Pakistan, Department of Management Sciences, Islamabad",,,university name not printed (several Islamabad universities)
+item1,decision,SKIP,Andante-Tools for Thinking AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,Bestmile SA,,,company suffix 'SA'
+item1,decision,SKIP,Central Bank of the UAE,,,name already correct; country UAE already set
+item1,decision,SKIP,"Concordia U., CA",,,ambiguous: 'CA' = Canada or California (Concordia University Irvine)
+item1,decision,SKIP,EDO NSW,,,organisation name includes 'NSW'
+item1,decision,SKIP,EFFORT Consulting AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,Ergolab AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,"Food, Farming & Countryside Commission, The RSA",,,organisation name (RSA commission)
+item1,decision,SKIP,Fredrikson & Byron PA,,,law-firm suffix 'P.A.'
+item1,decision,SKIP,Gunnebo AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,Ibisoft AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,Mad Women Academy/UKnight AB,,,company names; country not evidenced
+item1,decision,SKIP,Mahvie Minerals AB,,,"Swedish company suffix 'AB', not a country code"
+item1,decision,SKIP,Therapeutic Solutions of NC,,,organisation name includes 'NC'
+item1,decision,SKIP,Transport for NSW,,,organisation name includes 'NSW'
+item1,decision,SKIP,"University of LaVerne, USA",,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item1,decision,SKIP,University of Law - UK,,,"no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence, e.g. our 'National Law University' rewrite); not touched"
+item1,decision,SKIP,Volvo Trucks AB,,,"Swedish company suffix 'AB', not a country code"
+item4,decision,SKIP,La Salle University,,,never merge La Salle with De La Salle
+item4,decision,SKIP,The International Business School,,,London (Ming-Ai) vs Bulgaria twin; different orgs
+item4,decision,SKIP,University of Louisiana Lafayette,,,no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence); not touched
+item4,decision,SKIP,"University of Louisiana, Lafayette",,,no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence); not touched
+item4,decision,SKIP,University of the West,,,US University of the West vs Swedish University West; different orgs
+item4,decision,SKIP,University of Witwatersrand,,,no row with this display in our freeze: the Directory copy shows printed text that differs from our raw/canonical on these rows (pre-existing divergence); not touched
+item6,decision,SKIP,"Swiss Management Center, Zug, Switzerland and The Center for Advanced Studies in Management and Economics, CEFAGE-EU, Faro",,,profile shows both Swiss Management Center (CH) and CEFAGE-UE Évora (PT) as current; primary not clear
+item7,row,REMATCH,"The Graduate Center, CUNY -> City University of New York",editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#689,pilot counterpart editors_abdc_a_current_with_profile_pilot#689 already on https://ror.org/00453a208; pilot not changed
+item7,row,REMATCH,"The Graduate Center, CUNY -> City University of New York",editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#20809,pilot counterpart editors_abdc_a_current_with_profile_pilot#20809 already on https://ror.org/00453a208; pilot not changed
+item7,row,REMATCH,"The Graduate Center, CUNY -> City University of New York",editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#20813,pilot counterpart editors_abdc_a_current_with_profile_pilot#20813 already on https://ror.org/00453a208; pilot not changed
