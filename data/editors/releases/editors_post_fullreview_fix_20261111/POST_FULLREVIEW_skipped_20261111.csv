@@ -1,0 +1,413 @@
+item,action,institution,file,editor_row_key,reason
+WRONG_ROR,SUCCESSOR,University of South Australia,editors_abdc_a_current_with_profile_pilot.csv,,100 pilot rows keep https://ror.org/01p93h210 (pilots untouched)
+WRONG_ROR,SUCCESSOR,University of South Australia,editors_abdc_b_current_with_profile_pilot.csv,,57 pilot rows keep https://ror.org/01p93h210 (pilots untouched)
+WRONG_ROR,SUCCESSOR,The University of Adelaide,editors_abdc_a_current_with_profile_pilot.csv,,50 pilot rows keep https://ror.org/00892tw58 (pilots untouched)
+WRONG_ROR,SUCCESSOR,The University of Adelaide,editors_abdc_b_current_with_profile_pilot.csv,,43 pilot rows keep https://ror.org/00892tw58 (pilots untouched)
+WRONG_ROR,SUCCESSOR,Université Pierre-et-Marie-Curie,editors_abdc_b_current_with_profile_pilot.csv,,2 pilot rows keep https://ror.org/01yvrd251 (pilots untouched)
+NEAR_DUPLICATE,MERGE,Indian Institute of Technology,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,Rutgers University,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,University of Paris,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,Rotterdam School of Management,,,target of another near-duplicate merge (cycle); not merged back
+NEAR_DUPLICATE,MERGE,"Max Planck Institute, Germany",,,would collapse to the Max Planck Society
+NEAR_DUPLICATE,MERGE,Monash University in China,,,Monash China is not Monash (Australia); fixed by WRONG_COUNTRY instead
+NEAR_DUPLICATE,MERGE,University of Illinois,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,California State University,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,National Institute of Technology,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,"Indian Institute of Information Technology, Raichur",,,IIIT Raichur stays a distinct campus
+NEAR_DUPLICATE,MERGE,"Universidad del Pacifico, Engineering",,,coin-flip Peru/Chile (held)
+NEAR_DUPLICATE,MERGE,"Swedish School of Economics, Finland and EM Lyon",,,two-organisation string stays as printed
+NEAR_DUPLICATE,MERGE,HEC Liège – Liège University and Belfius Asset Management,,,two-organisation string stays as printed
+NEAR_DUPLICATE,MERGE,"University of Naples, Naples",,,which Naples university is unclear (held coin-flip)
+NEAR_DUPLICATE,MERGE,"Concordia U., CA",,,coin-flip Canada/California (held)
+NEAR_DUPLICATE,MERGE,CNRS – École Polytechnique and London School of Economics,,,multi-org string; would collapse to CNRS only
+NEAR_DUPLICATE,MERGE,Facultad Latinoamericana de Ciencias Sociales (FLASCO),,,which national FLACSO is not evidenced
+NEAR_DUPLICATE,MERGE,"Michigan State University, USA; Queen Mary, University of London",,,two-organisation string stays as printed
+NEAR_DUPLICATE,MERGE,CNRS - CEPREMA P and EHESS Paris,,,multi-org string; would collapse to CNRS only
+NEAR_DUPLICATE,MERGE,Max Planck Institute Germany,,,would collapse to the Max Planck Society
+NEAR_DUPLICATE,MERGE,Max Planck Institute,,,would collapse to the Max Planck Society
+NEAR_DUPLICATE,MERGE,"Linklaters, London",,,target 'LINKLATERS' sits in Portugal; London office must not inherit it
+NEAR_DUPLICATE,MERGE,"The University of Texas, United States",,,university system; no campus evidenced
+NEAR_DUPLICATE,MERGE,Российский экономический университет им. Г.В.Плеханова,,,non-Latin printed name kept
+NEAR_DUPLICATE,MERGE,Экономическая экспертная группа,,,non-Latin printed name kept
+NEAR_DUPLICATE,MERGE,Институт Соединенных Штатов Америки и Канады РАН,,,non-Latin printed name kept
+NEAR_DUPLICATE,MERGE,Финансовый университет при Правительстве РФ,,,non-Latin printed name kept
+NEAR_DUPLICATE,MERGE,University of Wisconsin System,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,Assumption College,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,University of Bolton,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,China University of Petroleum,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,Czech Technical University in Prague,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5061,row already changed by C in this freeze; not changed twice
+NEAR_DUPLICATE,MERGE,Facultad Latinoamericana de Ciencias Sociales (FLASCO),,,which national FLACSO is not evidenced
+NEAR_DUPLICATE,MERGE,CY Cergy Paris Université,editors_abdc_b_current.csv,editors_abdc_b_current#34077,row already changed by C in this freeze; not changed twice
+NEAR_DUPLICATE,MERGE,King’s College,,,low-confidence generic name -> one campus/other org; not merged
+NEAR_DUPLICATE,MERGE,Mercer University,editors_abdc_c_current.csv,editors_abdc_c_current#18301,row already changed by C in this freeze; not changed twice
+NEAR_DUPLICATE,MERGE,Centre for Social and Economic Studies,,,low-confidence generic name -> one campus/other org; not merged
+MISSING_ROR,SET_ROR,Korn Ferry,editors_abdc_b_current.csv,editors_abdc_b_current#13585,printed country United Kingdom != ROR country United States
+MISSING_ROR,SET_ROR,SRH Berlin University of Applied Sciences,,,optional low-confidence generic match SRH University of Applied Sciences Heidelberg (https://ror.org/00g07sz63) not clearly the printed organisation; left
+MISSING_ROR,SET_ROR,Procter & Gamble,editors_abdc_c_current.csv,editors_abdc_c_current#2125,printed country Switzerland != ROR country Belgium
+MISSING_ROR,SET_ROR,AstraZeneca,editors_abdc_c_current.csv,editors_abdc_c_current#27593,printed country United States != ROR country United Kingdom
+MISSING_ROR,SET_ROR,International Maize and Wheat Improvement Center,editors_abdc_a_current.csv,editors_abdc_a_current#10607,printed country Mexico != ROR country Kenya
+MISSING_ROR,SET_ROR,Niagara University,editors_abdc_a_current.csv,editors_abdc_a_current#36407,printed country Canada != ROR country United States
+MISSING_ROR,SET_ROR,Nutraceutical Corporation,,,optional low-confidence generic match Better Being Co. (United States) (https://ror.org/05bqa2z43) not clearly the printed organisation; left
+MISSING_ROR,SET_ROR,University of Applied Sciences Emden/Leer,editors_abdc_b_current.csv,editors_abdc_b_current#33364,printed country Poland != ROR country Germany
+MISSING_ROR,SET_ROR,West Ukrainian National University,editors_abdc_c_current.csv,editors_abdc_c_current#18900,printed country Poland != ROR country Ukraine
+MISSING_ROR,SET_ROR,Bank of the West,,,optional low-confidence generic match BMO (United States) (https://ror.org/04ggy2f63) not clearly the printed organisation; left
+MISSING_ROR,SET_ROR,University of Africa,,,optional low-confidence generic match Obong University (https://ror.org/02crmer26) not clearly the printed organisation; left
+MISSING_ROR,SET_ROR,University of Finance and Economics,editors_abdc_c_current.csv,editors_abdc_c_current#27684,printed country China != ROR country Mongolia
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Publishing,editors_abdc_c_current.csv,editors_abdc_c_current#7335,multi-office organisation; printed office country United States kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Publishing,editors_abdc_c_current.csv,editors_abdc_c_current#9671,multi-office organisation; printed office country United States kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Publishing,editors_abdc_b_current.csv,editors_abdc_b_current#10293,multi-office organisation; printed office country India kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Publishing,editors_abdc_b_current.csv,editors_abdc_b_current#10387,multi-office organisation; printed office country India kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Publishing,editors_abdc_b_current.csv,editors_abdc_b_current#12702,multi-office organisation; printed office country India kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Group Publishing,editors_abdc_c_current.csv,editors_abdc_c_current#8532,multi-office organisation; printed office country United States kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Group Publishing,editors_abdc_b_current.csv,editors_abdc_b_current#19624,multi-office organisation; printed office country Australia kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,Emerald Group Publishing,editors_abdc_b_current.csv,editors_abdc_b_current#19815,multi-office organisation; printed office country Australia kept (not HQ United Kingdom)
+WRONG_COUNTRY,FIX_COUNTRY,IFPRI,editors_abdc_a_current.csv,editors_abdc_a_current#14800,multi-office organisation; printed office country Egypt kept (not HQ United States)
+WRONG_COUNTRY,FIX_COUNTRY,Putnam,editors_abdc_c_current.csv,editors_abdc_c_current#12160,multi-office organisation; printed office country France kept (not HQ United States)
+WRONG_COUNTRY,FIX_COUNTRY,IMD,editors_abdc_a_current.csv,editors_abdc_a_current#1091,multi-office organisation; printed office country Singapore kept (not HQ Switzerland)
+WRONG_COUNTRY,FIX_COUNTRY,St. Catharine's,,,coin-flip: St Catharine's College (UK) vs St. Catharines (Canada); printed text gives no evidence
+WRONG_COUNTRY,FIX_COUNTRY,Creative New Zealand,,,"printed text is 'Creative Capital, New York' - institution name is wrong, not the country; needs a rename"
+NON_INSTITUTION,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40031,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40064,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40097,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20063,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+NON_INSTITUTION,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20071,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+NON_INSTITUTION,DROP,Leicester,editors_abdc_c_current.csv,editors_abdc_c_current#20519,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Leicester,editors_abdc_a_current.csv,editors_abdc_a_current#38676,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Information Sciences & Technology,editors_abdc_b_current.csv,editors_abdc_b_current#40049,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Andrew H. and Ann R. Tisch Professor,editors_abdc_a_current.csv,editors_abdc_a_current#37232,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Assistant Professor of Cybersecurity,editors_abdc_b_current.csv,editors_abdc_b_current#40169,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,"PhD, Associate Professor, Research Fellow of Institute of Labour Economics",editors_abdc_c_current.csv,editors_abdc_c_current#18879,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,independent consultant in environmental law and policy,editors_abdc_b_current.csv,editors_abdc_b_current#39063,printed raw itself names an organisation (university); not dropped - needs a decision
+NON_INSTITUTION,DROP,Professor of Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40133,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_abdc_a_current.csv,editors_abdc_a_current#110,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8265,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_ft50_current.csv,editors_ft50_current#8265,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Senior Fellow,editors_abdc_b_current.csv,editors_abdc_b_current#40348,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,"Doctor of Sciences (Economics), Full Professor",editors_abdc_c_current.csv,editors_abdc_c_current#18931,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Philosophy,editors_abdc_b_current.csv,editors_abdc_b_current#40357,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Law,editors_abdc_c_current.csv,editors_abdc_c_current#18771,printed raw itself names an organisation (centre); not dropped - needs a decision
+NON_INSTITUTION,DROP,Associate Professor of Accounting and Business Administration,editors_abdc_c_current.csv,editors_abdc_c_current#18940,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Lecturer in Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40147,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,"BDS (Otago), MHA (Georgia State), PhD (UNSW), FCHSM CHE",editors_abdc_c_current.csv,editors_abdc_c_current#20081,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+NON_INSTITUTION,DROP,Senior Lecturer in Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40124,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Clinical Professor,editors_abdc_a_current.csv,editors_abdc_a_current#96,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Clinical Professor,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8251,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Clinical Professor,editors_ft50_current.csv,editors_ft50_current#8251,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#2613,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#9738,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_ft50_current.csv,editors_ft50_current#9738,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Professor of Business Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40032,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Associate Professor of Software Engineering,editors_abdc_b_current.csv,editors_abdc_b_current#40241,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Elisha Gray II Professor of Engineering Systems,editors_abdc_a_current.csv,editors_abdc_a_current#115,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Elisha Gray II Professor of Engineering Systems,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8270,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Elisha Gray II Professor of Engineering Systems,editors_ft50_current.csv,editors_ft50_current#8270,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Docent in Mixed Reality in Science Education,editors_abdc_b_current.csv,editors_abdc_b_current#40074,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,"Ph.D. Nova Southeastern University, Fort Lauderdale, Florida KU Leuven, Leuven",editors_abdc_b_current.csv,editors_abdc_b_current#9281,printed raw itself names an organisation (university); not dropped - needs a decision
+NON_INSTITUTION,DROP,Brescia,editors_abdc_a_current.csv,editors_abdc_a_current#21555,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Nanchang,editors_abdc_b_current.csv,editors_abdc_b_current#8238,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Kobe,editors_abdc_b_current.csv,editors_abdc_b_current#22220,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Kiel,editors_abdc_a_current.csv,editors_abdc_a_current#14589,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Xiamen,editors_abdc_b_current.csv,editors_abdc_b_current#21591,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Department of Finance,editors_abdc_c_current.csv,editors_abdc_c_current#27386,row already fixed by answer B (RENAME) in this freeze; not dropped
+NON_INSTITUTION,DROP,Welfare Mission for Migrants,editors_abdc_c_current.csv,editors_abdc_c_current#18673,printed raw itself names an organisation (centre); not dropped - needs a decision
+NON_INSTITUTION,DROP,Team Leader and Coordinator of Labor Market and Social Policy in Europe,editors_abdc_b_current.csv,editors_abdc_b_current#9300,row already fixed by answer B (RENAME) in this freeze; not dropped
+MISSING_COUNTRY,SET_COUNTRY,Northeastern University,editors_abdc_a_current.csv,editors_abdc_a_current#16126,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Northeastern University,editors_abdc_a_current.csv,editors_abdc_a_current#28807,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,St. Mary’s University School of Law,editors_abdc_c_current.csv,editors_abdc_c_current#23317,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,St. Mary’s University School of Law,editors_abdc_c_current.csv,editors_abdc_c_current#23318,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,St. Mary’s University School of Law,editors_abdc_b_current.csv,editors_abdc_b_current#22405,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University of the West Indies at St. Augustine,editors_abdc_c_current.csv,editors_abdc_c_current#23674,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University of the West Indies at St. Augustine,editors_abdc_c_current.csv,editors_abdc_c_current#23676,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University of the West Indies at St. Augustine,editors_abdc_c_current.csv,editors_abdc_c_current#23678,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Xavier University,editors_abdc_b_current.csv,editors_abdc_b_current#39944,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Xavier University,editors_abdc_a_current.csv,editors_abdc_a_current#26885,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Xavier University,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#10160,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Osgoode Hall Law School,editors_abdc_a_current.csv,editors_abdc_a_current#45438,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Osgoode Hall Law School,editors_abdc_a_current.csv,editors_abdc_a_current#45440,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Osgoode Hall Law School,editors_abdc_a_current.csv,editors_abdc_a_current#45443,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Center for Investment Research,editors_abdc_c_current.csv,editors_abdc_c_current#24620,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Center for Investment Research,editors_abdc_c_current.csv,editors_abdc_c_current#24621,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Center for Investment Research,editors_abdc_b_current.csv,editors_abdc_b_current#36112,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Schulich School of Law,editors_abdc_a_current.csv,editors_abdc_a_current#44538,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Schulich School of Law,editors_abdc_a_current.csv,editors_abdc_a_current#44540,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Schulich School of Law,editors_abdc_a_current.csv,editors_abdc_a_current#44543,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,11KBW,editors_abdc_a_current.csv,editors_abdc_a_current#45842,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,11KBW,editors_abdc_a_current.csv,editors_abdc_a_current#45852,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,McMillan LLP,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25247,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,McMillan LLP,editors_abdc_b_current.csv,editors_abdc_b_current#40992,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,LIUC – Università Carlo Cattaneo,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7095,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,LIUC – Università Carlo Cattaneo,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#12036,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Kingston University,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2786,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Kingston University,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#5165,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BakerHostetler,editors_abdc_b_current.csv,editors_abdc_b_current#39057,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BakerHostetler,editors_abdc_a_current.csv,editors_abdc_a_current#42999,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,McCarthy Tétrault LLP,editors_abdc_c_current.csv,editors_abdc_c_current#26062,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,McCarthy Tétrault LLP,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25245,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Hillcrest Asset Management,editors_abdc_c_current.csv,editors_abdc_c_current#24619,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Hillcrest Asset Management,editors_abdc_a_current.csv,editors_abdc_a_current#18026,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Plesner,editors_abdc_c_current.csv,editors_abdc_c_current#26064,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Plesner,editors_abdc_a_current.csv,editors_abdc_a_current#45713,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The International Institute for Strategic Studies,editors_abdc_b_current.csv,editors_abdc_b_current#28366,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The International Institute for Strategic Studies,editors_abdc_b_current.csv,editors_abdc_b_current#28367,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,White & Case LLP,editors_abdc_b_current.csv,editors_abdc_b_current#33785,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,White & Case LLP,editors_abdc_a_current.csv,editors_abdc_a_current#45705,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,DLA Piper (Canada) LLP,editors_abdc_b_current.csv,editors_abdc_b_current#40995,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,DLA Piper (Canada) LLP,editors_abdc_a_current.csv,editors_abdc_a_current#45711,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Shri Ram Centre for Industrial Relations & Human Resources,editors_abdc_c_current.csv,editors_abdc_c_current#21135,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Shri Ram Centre for Industrial Relations & Human Resources,editors_abdc_c_current.csv,editors_abdc_c_current#21137,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,CoARA Universität,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#8774,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,CoARA Universität,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#8776,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Shanghai Advanced Institute of Finance (SAIF),editors_abdc_a_current.csv,editors_abdc_a_current#17878,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Shanghai Advanced Institute of Finance (SAIF),editors_abdc_a_current.csv,editors_abdc_a_current#17884,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#9968,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#11183,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#872,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_ft50_current.csv,editors_ft50_current#872,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4749,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Olin Business School,editors_ft50_current.csv,editors_ft50_current#4749,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,International Swaps & Derivatives Association,editors_abdc_a_current.csv,editors_abdc_a_current#34055,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,International Swaps & Derivatives Association,editors_abdc_a_current.csv,editors_abdc_a_current#34060,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Economikr Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#17492,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Economikr Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#17560,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Supreme Court of New Zealand,editors_abdc_c_current.csv,editors_abdc_c_current#23246,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Supreme Court of New Zealand,editors_abdc_c_current.csv,editors_abdc_c_current#23257,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BasisTech,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4559,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BasisTech,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4679,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Center for the Study of College Student Retention,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#572,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,International Institute for Research and Education,editors_abdc_c_current.csv,editors_abdc_c_current#20976,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Talik and Co.,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4675,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Maestro Consulting,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24796,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,INNP Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#39884,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Banco Santander, S.A.",editors_abdc_a_current.csv,editors_abdc_a_current#34047,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,ICE Futures Europe,editors_abdc_c_current.csv,editors_abdc_c_current#24188,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Middle Temple,editors_abdc_b_current.csv,editors_abdc_b_current#12369,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Anna Rappaport Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#36190,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,EMLE,editors_abdc_c_current.csv,editors_abdc_c_current#16341,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,RSM Advisory,editors_abdc_c_current.csv,editors_abdc_c_current#23227,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Institute for the Geographies of Justice,editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#84,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Collaborative Data Solutions,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7648,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Yong Pung How School of Law,editors_abdc_a_current.csv,editors_abdc_a_current#45600,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Arctos Partners,editors_abdc_c_current.csv,editors_abdc_c_current#24601,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Global Deloitte AI Institute,editors_abdc_a_current.csv,editors_abdc_a_current#94,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Global Deloitte AI Institute,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8249,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Global Deloitte AI Institute,editors_ft50_current.csv,editors_ft50_current#8249,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University College Oxford,editors_abdc_b_current.csv,editors_abdc_b_current#9384,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Arthur D. Little,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4976,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Entertainment Software Association,editors_abdc_b_current.csv,editors_abdc_b_current#41102,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,ValueBridge Advisors,editors_abdc_c_current.csv,editors_abdc_c_current#12378,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Annex Wealth Management,editors_abdc_a_current.csv,editors_abdc_a_current#16192,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Crest Business Development, Ltd.",editors_abdc_b_current.csv,editors_abdc_b_current#36817,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Faison Center,editors_abdc_b_current.csv,editors_abdc_b_current#26359,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Tenth Floor St James' Hall,editors_abdc_a_current.csv,editors_abdc_a_current#45580,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Smedmor & Associates,editors_abdc_b_current.csv,editors_abdc_b_current#40003,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Principle Quest Foundation,editors_abdc_b_current.csv,editors_abdc_b_current#41458,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Writtle University College,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#8364,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Mad Women Academy/UKnight AB,editors_abdc_c_current.csv,editors_abdc_c_current#18309,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,TFO Phoenix,editors_abdc_b_current.csv,editors_abdc_b_current#41469,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,S&P Dow Jones Indices,editors_abdc_c_current.csv,editors_abdc_c_current#24162,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Third Degree,editors_abdc_c_current.csv,editors_abdc_c_current#11516,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Cornell Law School,editors_abdc_b_current.csv,editors_abdc_b_current#33745,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,DGA Security,editors_abdc_a_current.csv,editors_abdc_a_current#42075,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,EY Law LLP,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25232,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,INSOL International,editors_abdc_b_current.csv,editors_abdc_b_current#12323,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,CoalHart Associates,editors_abdc_c_current.csv,editors_abdc_c_current#18318,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Mount Ararat Financial Services LLC,editors_abdc_b_current.csv,editors_abdc_b_current#19319,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Da-Yeh University,editors_abdc_c_current.csv,editors_abdc_c_current#16415,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Macon State College,editors_abdc_a_current.csv,editors_abdc_a_current#26623,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BanyanGlobal Family Business Advisors,editors_abdc_b_current.csv,editors_abdc_b_current#41476,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,South East Asian Central Banks Research and Training Centre,editors_abdc_b_current.csv,editors_abdc_b_current#35282,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SDF Global,editors_abdc_b_current.csv,editors_abdc_b_current#8474,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Eastman Chemical Company,editors_abdc_b_current.csv,editors_abdc_b_current#26356,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Dan Swanson & Associates,editors_abdc_c_current.csv,editors_abdc_c_current#12376,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Sandberg Phoenix,editors_abdc_b_current.csv,editors_abdc_b_current#40690,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,TPG Capital and Conservation Lands Foundation,editors_abdc_a_current.csv,editors_abdc_a_current#44608,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Cambridge & Counties Bank,editors_abdc_c_current.csv,editors_abdc_c_current#19144,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Ekay Economic Consultants,editors_abdc_b_current.csv,editors_abdc_b_current#40339,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SKUFCA LAW FIRM,editors_abdc_a_current.csv,editors_abdc_a_current#45687,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Research Group of Environment and Human Studies,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#8934,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Western University Faculty of Law,editors_abdc_b_current.csv,editors_abdc_b_current#33289,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,S&P Global Ratings,editors_abdc_c_current.csv,editors_abdc_c_current#25405,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Cornell ILR School,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5352,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Kedge Capital,editors_abdc_a_current.csv,editors_abdc_a_current#16203,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Directional Advisors,editors_abdc_b_current.csv,editors_abdc_b_current#41482,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Fonds pour la recherche en éthique économique,editors_abdc_c_current.csv,editors_abdc_c_current#26748,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Fred Cohen & Associates,editors_abdc_c_current.csv,editors_abdc_c_current#12386,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Stein Brothers, London and Stockholm",editors_abdc_c_current.csv,editors_abdc_c_current#71,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Fulcrum Asset Management,editors_abdc_b_current.csv,editors_abdc_b_current#40834,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,BHP,editors_abdc_a_current.csv,editors_abdc_a_current#42128,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Pepperweed,editors_abdc_c_current.csv,editors_abdc_c_current#12411,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Heritage Research Group,editors_abdc_b_current.csv,editors_abdc_b_current#17306,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Italian Banking Association,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#12040,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Deloitte Legal,editors_abdc_b_current.csv,editors_abdc_b_current#41705,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Weil, Gotshal & Manges LLP",editors_abdc_a_current.csv,editors_abdc_a_current#43000,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Blanke Arbitration LLC,editors_abdc_a_current.csv,editors_abdc_a_current#45657,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Pan African Federation of Accountants,editors_abdc_c_current.csv,editors_abdc_c_current#12475,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Auckland Hospital,editors_abdc_b_current.csv,editors_abdc_b_current#7718,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Revelation Investment Research,editors_abdc_a_current.csv,editors_abdc_a_current#18032,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Freestyle Consulting,editors_abdc_c_current.csv,editors_abdc_c_current#25421,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University of Texas School of Law,editors_abdc_a_current.csv,editors_abdc_a_current#34048,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,HUBERT HSU & ASSOCIATES,editors_abdc_c_current.csv,editors_abdc_c_current#26094,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IFIC Bank,editors_abdc_c_current.csv,editors_abdc_c_current#24669,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,PCGI Consulting Services,editors_abdc_c_current.csv,editors_abdc_c_current#12414,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Government of Maldives,editors_abdc_c_current.csv,editors_abdc_c_current#11158,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Alphidence Capital,editors_abdc_a_current.csv,editors_abdc_a_current#16229,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Millbank LLP,editors_abdc_a_current.csv,editors_abdc_a_current#42998,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Office of Elisabeth Opie,editors_abdc_c_current.csv,editors_abdc_c_current#19253,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,COBALT,editors_abdc_a_current.csv,editors_abdc_a_current#45678,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Court of Appeal of Alberta,editors_abdc_b_current.csv,editors_abdc_b_current#38755,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Public Health Informatics Foundation (PHIF),editors_abdc_c_current.csv,editors_abdc_c_current#3249,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Wise Counsel Research,editors_abdc_b_current.csv,editors_abdc_b_current#41461,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,ECONOMIC INSIGHT,editors_abdc_a_current.csv,editors_abdc_a_current#45660,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Google Store APAC,editors_abdc_c_current.csv,editors_abdc_c_current#25409,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Lavan Legal,editors_abdc_a_current.csv,editors_abdc_a_current#45435,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,North-West University Business School,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#8580,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,jdcPARTNERSHIPS,editors_abdc_b_current.csv,editors_abdc_b_current#8465,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,McDonough School of Business,editors_abdc_a_current.csv,editors_abdc_a_current#30774,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,CommerceNet,editors_abdc_a_current.csv,editors_abdc_a_current#24572,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Koris International,editors_abdc_c_current.csv,editors_abdc_c_current#24627,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Clear Horizon,editors_abdc_b_current.csv,editors_abdc_b_current#8464,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Pension Policy Center,editors_abdc_b_current.csv,editors_abdc_b_current#36200,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Upper Tribunal (Tax and Chancery Chamber),editors_abdc_a_star_current.csv,editors_abdc_a_star_current#25224,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Delta Hedge Publications,editors_abdc_c_current.csv,editors_abdc_c_current#22205,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Dartmouth Geisel School of Medicine,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#10799,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,PDQ Research & Consulting,editors_abdc_a_current.csv,editors_abdc_a_current#29299,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Consilium Partners,editors_abdc_b_current.csv,editors_abdc_b_current#40634,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Swedish Labour Court,editors_abdc_a_current.csv,editors_abdc_a_current#44524,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IIES,editors_abdc_a_current.csv,editors_abdc_a_current#14626,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,PatientPoint,editors_abdc_c_current.csv,editors_abdc_c_current#25416,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Rosenblatt Securities,editors_abdc_c_current.csv,editors_abdc_c_current#24626,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Autonomous Investment Technologies,editors_abdc_a_current.csv,editors_abdc_a_current#16219,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Wunderman Thompson,editors_abdc_c_current.csv,editors_abdc_c_current#18347,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,EJG Aviation,editors_abdc_b_current.csv,editors_abdc_b_current#17551,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Leibniz Institute for Media Research,editors_abdc_a_current.csv,editors_abdc_a_current#30835,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Supreme Court of Canada,editors_abdc_a_current.csv,editors_abdc_a_current#45442,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Federal Court of Canada,editors_abdc_a_current.csv,editors_abdc_a_current#45441,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Madras High Court,editors_abdc_c_current.csv,editors_abdc_c_current#27022,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Institut für Mathematik,editors_abdc_b_current.csv,editors_abdc_b_current#29241,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Eversheds,editors_abdc_a_current.csv,editors_abdc_a_current#45804,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Ctr. for Economic & Infrastructure Development, Policy Research Institute",editors_abdc_b_current.csv,editors_abdc_b_current#20856,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Academy of European Law,editors_abdc_b_current.csv,editors_abdc_b_current#12343,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Foundation for Open Access Statistics,editors_abdc_a_current.csv,editors_abdc_a_current#45473,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Culverhouse School of Accountancy,editors_abdc_a_current.csv,editors_abdc_a_current#17850,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Search Technology Inc,editors_abdc_a_current.csv,editors_abdc_a_current#13600,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Frontier Market Asset Management,editors_abdc_b_current.csv,editors_abdc_b_current#36153,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Synergy Solution Consulting,editors_abdc_c_current.csv,editors_abdc_c_current#20309,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,55 Capital Partners,editors_abdc_c_current.csv,editors_abdc_c_current#24161,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Bridges-Karr Consultancy,editors_abdc_a_current.csv,editors_abdc_a_current#32589,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,MinterEllison,editors_abdc_a_current.csv,editors_abdc_a_current#45786,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IETI,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2722,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Eutelsat,editors_abdc_b_current.csv,editors_abdc_b_current#41689,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Performance Ally,editors_abdc_b_current.csv,editors_abdc_b_current#26406,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,CIAD,editors_abdc_b_current.csv,editors_abdc_b_current#34050,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Efficient Capital Management,editors_abdc_a_current.csv,editors_abdc_a_current#16208,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Agora Global Consultants,editors_abdc_c_current.csv,editors_abdc_c_current#24631,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Institute for Design, Art & Creative Practices",editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4545,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,International Organization for Migration,editors_abdc_a_current.csv,editors_abdc_a_current#25347,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Sky,editors_abdc_b_current.csv,editors_abdc_b_current#39060,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IPvocate and IPvocate Africa,editors_abdc_b_current.csv,editors_abdc_b_current#33784,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Commonfund,editors_abdc_a_current.csv,editors_abdc_a_current#16172,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,W. P. Carey School of Business,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#9627,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,W. P. Carey School of Business,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#9248,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,W. P. Carey School of Business,editors_ft50_current.csv,editors_ft50_current#9248,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Creative Insight Community Development,editors_abdc_b_current.csv,editors_abdc_b_current#36820,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,King & Wood Mallesons,editors_abdc_a_current.csv,editors_abdc_a_current#45801,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Randstad Enterprise,editors_abdc_a_current.csv,editors_abdc_a_current#116,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Randstad Enterprise,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8271,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Randstad Enterprise,editors_ft50_current.csv,editors_ft50_current#8271,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Terceiro Legal Consulting,editors_abdc_a_current.csv,editors_abdc_a_current#45350,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Lumen Asset Management,editors_abdc_c_current.csv,editors_abdc_c_current#24647,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Goce Delčev University of Štip,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9273,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Fortium Partners,editors_abdc_a_current.csv,editors_abdc_a_current#28661,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Orkestra-Basque Institute of Competitiveness,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4686,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Bush School of Government & Public Service,editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#2892,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,WRMG Law,editors_abdc_b_current.csv,editors_abdc_b_current#40972,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Potter Anderson & Corroon,editors_abdc_a_current.csv,editors_abdc_a_current#43003,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,National Productivity Council,editors_abdc_c_current.csv,editors_abdc_c_current#21129,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,University of the West Indies at Cave Hill,editors_abdc_b_current.csv,editors_abdc_b_current#8478,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Aurora Cannabis Inc.,editors_abdc_b_current.csv,editors_abdc_b_current#40985,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SkyeView Hospitality Group,editors_abdc_a_current.csv,editors_abdc_a_current#20511,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Bancaria,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#12035,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Haidar Capital,editors_abdc_a_current.csv,editors_abdc_a_current#16171,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Global Alliance for the Future of Food,editors_abdc_b_current.csv,editors_abdc_b_current#8484,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Adelaide Law School,editors_abdc_b_current.csv,editors_abdc_b_current#41200,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Gatton College of Business and Economics,editors_abdc_c_current.csv,editors_abdc_c_current#18096,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Sheridan Gold LLP,editors_abdc_b_current.csv,editors_abdc_b_current#41676,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Tepper School of Business,editors_abdc_a_current.csv,editors_abdc_a_current#41146,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Population Council,editors_abdc_a_current.csv,editors_abdc_a_current#30906,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Trinity College,editors_abdc_a_current.csv,editors_abdc_a_current#31134,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Center for Professional Studies,editors_abdc_c_current.csv,editors_abdc_c_current#22790,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Amrut Mody School of Management,editors_abdc_c_current.csv,editors_abdc_c_current#18814,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Comvest Group,editors_abdc_a_current.csv,editors_abdc_a_current#24539,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IFSR,editors_abdc_a_current.csv,editors_abdc_a_current#33055,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Centro de Investigaciones y Estudios Turísticos,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9551,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,COPPEAD Graduate School of Business,editors_abdc_c_current.csv,editors_abdc_c_current#26821,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Burnell Chambers,editors_abdc_a_current.csv,editors_abdc_a_current#45860,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Market Psychology Consulting,editors_abdc_a_current.csv,editors_abdc_a_current#18048,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Rutter Associates,editors_abdc_a_current.csv,editors_abdc_a_current#34064,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Khaitan & Co,editors_abdc_c_current.csv,editors_abdc_c_current#26987,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Turquoise,editors_abdc_c_current.csv,editors_abdc_c_current#24623,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Yale Law School,editors_abdc_b_current.csv,editors_abdc_b_current#33763,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Kogod School of Business,editors_abdc_a_current.csv,editors_abdc_a_current#42599,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SR Benton and Associates,editors_abdc_a_current.csv,editors_abdc_a_current#35708,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,UniRitter,editors_abdc_c_current.csv,editors_abdc_c_current#26770,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Bixa,editors_abdc_c_current.csv,editors_abdc_c_current#25420,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Government of Bermuda,editors_abdc_c_current.csv,editors_abdc_c_current#9798,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SixFlex Training and Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#26394,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Government of Rio Grande do Sul,editors_abdc_c_current.csv,editors_abdc_c_current#15789,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SureCare Medical and Health Network,editors_abdc_c_current.csv,editors_abdc_c_current#20073,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Agos Ducato,editors_abdc_c_current.csv,editors_abdc_c_current#25415,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Australian Red Cross,editors_abdc_c_current.csv,editors_abdc_c_current#20077,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SB Research Consulting,editors_abdc_b_current.csv,editors_abdc_b_current#19258,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Northeastern University School of Law,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5314,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SEG Consulting Group,editors_abdc_c_current.csv,editors_abdc_c_current#3097,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,MV Index Solutions,editors_abdc_c_current.csv,editors_abdc_c_current#24174,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,New Growth International,editors_abdc_b_current.csv,editors_abdc_b_current#450,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Rawls College of Business,editors_abdc_a_current.csv,editors_abdc_a_current#16660,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,RISEBA University,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#5346,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Quality Safety Edge,editors_abdc_b_current.csv,editors_abdc_b_current#26414,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,PERC,editors_abdc_b_current.csv,editors_abdc_b_current#33945,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Investigatory Powers Tribunal,editors_abdc_a_current.csv,editors_abdc_a_current#45869,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Legis Finance,editors_abdc_a_current.csv,editors_abdc_a_current#34051,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,UCLA Fielding School of Public Health,editors_abdc_b_current.csv,editors_abdc_b_current#9356,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"Thomas Ho Company, Ltd",editors_abdc_c_current.csv,editors_abdc_c_current#24276,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Yes Wealth Management,editors_abdc_b_current.csv,editors_abdc_b_current#35918,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,"SECOR Asset Management, LP",editors_abdc_c_current.csv,editors_abdc_c_current#24256,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Global Connective Center,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#498,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,IFE Group,editors_abdc_c_current.csv,editors_abdc_c_current#25023,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,auditline,editors_abdc_c_current.csv,editors_abdc_c_current#12390,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Analytica Social and Economic Research,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#10034,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Hartman Firm,editors_abdc_b_current.csv,editors_abdc_b_current#39930,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Tata Research Development and Design Centre,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#4610,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,SAS Institute,editors_abdc_c_current.csv,editors_abdc_c_current#19122,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,School of International Economics and International Relations,editors_abdc_b_current.csv,editors_abdc_b_current#21260,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Noble Panacea,editors_abdc_c_current.csv,editors_abdc_c_current#25414,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Maverecon LLC,editors_abdc_b_current.csv,editors_abdc_b_current#34083,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,HKU Business School,editors_abdc_c_current.csv,editors_abdc_c_current#12060,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,The Global Executive Learning Network,editors_abdc_c_current.csv,editors_abdc_c_current#12522,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Georgetown University Law Center,editors_abdc_a_current.csv,editors_abdc_a_current#33989,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Marxe School of Public and International Affairs,editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#3090,no country in printed text or ROR record; left blank
+MISSING_COUNTRY,SET_COUNTRY,Southern Illinois University School of Law,editors_abdc_b_current.csv,editors_abdc_b_current#41099,no country in printed text or ROR record; left blank
+BIO_OR_MULTI_ORG,REVIEW,International Centre for Technology and Management,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,Virscend University,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)",Judge Business School & King's College,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,Allens,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,"Universidad de las Hespérides, Canary Islands",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","Rayliant Global Advisor, UCLA Anderson",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","European Bureau for Policy Consulting and Social Research, and Institut für die Wissenschaften /IWM, Vienna",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)",Woxsen University / Zhejiang University International Business School - India / People's Republic of China,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","Second Order Science Foundation, Salem, Massachusetts; Tongji University, College of Design and Innovation - USA; People's Republic of China",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","Swiss Management Center, Zug, Switzerland and The Center for Advanced Studies in Management and Economics, CEFAGE-EU, Faro",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","Swiss Management Center (Switzerland) and The Center for Advanced Studies in Management and Economics, CEFAGE-UE",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)",CIVICO Europa Cosmocène and GRASPE (Groupe de Réflexion sur l’avenir du Service Public Européen),,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,"REVIEW (two-place, left as printed)","D R Patel & R B Patel Commerce College and Bhaniben C Patel BBA College, Surat, Gujarat",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,California Polytechnic State University and Politecnico di Milano,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,CEDIMES Institute USA & University Cheikh Anta Diop,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,Center for Outcomes Based Contracting and American University,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,"Consip Spa and University LUISS ""G. Carli""",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,CIDE/Mexico City and DIW Berlin,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,Chapman,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,"Cardiff & Leiden Universities, USA/UK/Netherlands",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,Catholic University of Tilburg/Leuven University,,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,"Centre for Studies in Social Sciences, Calcutta, India and IZA, Bonn",,,no target in the residual file (REVIEW / two-place); left as printed
+BIO_OR_MULTI_ORG,REVIEW,CIVICO Europa Cosmocène and GRASPE (Groupe de Réflexion sur l’avenir du Service Public Européen),,,no target in the residual file (REVIEW / two-place); left as printed
