@@ -1,0 +1,23 @@
+item,action,institution,file,editor_row_key,reason
+R,SET_COUNTRY,International Centre for Technology and Management,,,no-op: rows already at target
+R,SET_COUNTRY,Virscend University,,,no-op: rows already at target
+R,SET_COUNTRY,11KBW,editors_abdc_a_current.csv,editors_abdc_a_current#45842,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+R,SET_COUNTRY,11KBW,editors_abdc_a_current.csv,editors_abdc_a_current#45852,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+R,SET_COUNTRY,CNRS - CEPREMA P and EHESS Paris,,,no-op: rows already at target
+R,MERGE,Cergy Paris Université / THEMA,,,target ROR https://ror.org/047t3d518 not found in ROR API (404); ROR left blank (row still renamed/country set)
+R,SET_COUNTRY,Facultad Latinoamericana de Ciencias Sociales (FLASCO),,,no-op: rows already at target
+R,MERGE,"Fakulta dopravní, ČVUT v Praze",,,target ROR https://ror.org/03jbxjb94 not found in ROR API (404); ROR left blank (row still renamed/country set)
+R,SET_COUNTRY,"Harvard Business School, Accounting and Management Unit",,,no-op: rows already at target
+R,MERGE,Mercer School of Law,,,target ROR https://ror.org/028zh6278 not found in ROR API (404); ROR left blank (row still renamed/country set)
+R,MERGE,University of Wisconsin Extended Campus,,,university-system ROR https://ror.org/03ydkyb10 refused (row still renamed/country set)
+R,SET_COUNTRY,"Università Bocconi, CESPRI and CRORA, Milan",,,no-op: rows already at target
+S,SPLIT,"University of Illinois, USA",editors_ft50_current.csv,editors_ft50_current#2729,no-op: row already at target
+S,SPLIT,Northeastern University,editors_ft50_current.csv,editors_ft50_current#5038,no-op: row already at target
+S,SPLIT,Northeastern University,editors_ft50_current.csv,editors_ft50_current#5849,no-op: row already at target
+S,SPLIT,Northeastern University,editors_ft50_current.csv,editors_ft50_current#9236,no-op: row already at target
+S,SPLIT,Northeastern University,editors_ft50_current.csv,editors_ft50_current#9324,no-op: row already at target
+S,SPLIT,University of North Carolina,editors_ft50_current.csv,editors_ft50_current#9978,no-op: row already at target
+S,SPLIT,Indian Institute of Management,editors_ft50_current.csv,editors_ft50_current#5564,no-op: row already at target
+S,SPLIT,Concordia University,editors_ft50_current.csv,editors_ft50_current#1459,no-op: row already at target
+S,SPLIT,Concordia University,editors_ft50_current.csv,editors_ft50_current#5140,no-op: row already at target
+S,SPLIT,Universidad de Los Andes,editors_ft50_current.csv,editors_ft50_current#2344,no-op: row already at target

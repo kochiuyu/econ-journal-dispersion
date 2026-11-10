@@ -2655,9 +2655,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_review_resolved_fix_20261110 resolves the reviewed same-name
     # splits (American, Northeastern, Concordia, York, HEC, ...), so 20 more
     # shared names collapse. Shared display names are 49.
-    if duplicate_names != 49:
+    # editors_full_review_fix_20261111 merges spelling variants and drops
+    # non-institution strings (45). editors_full_review_resolved_fix_20261111
+    # splits shared-name buckets by editor, so the count is 46.
+    if duplicate_names != 46:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 49. "
+            f"Institutions that share a display name: {duplicate_names}, expected 46. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}
