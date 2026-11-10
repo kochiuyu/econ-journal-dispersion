@@ -1,0 +1,12 @@
+file,editor_row_key,display_name,reason
+,,Emerald / EDHEC UK / Vlerick South Africa / Freshfields US / ESCP / Mayer Brown / IFoA / Global University for Lifelong Learning,LEFT AS IS: multi-site org: printed country may be a real campus/office (per brief)
+,,University of Puerto Rico,LEFT AS IS: university system; no campus evidenced
+,,L'Université Paris-Dauphine Tunisia,LEFT AS IS: Dauphine has a Tunis campus; printed country plausible
+,,Hong Kong vs China labels,"LEFT AS IS: label convention, not a misprint"
+,,"Independent Consultant, Vienna","LEFT AS IS: could be Vienna, VA"
+,,Georgia / New Mexico / Jamaica NY / Dublin OH / Wellington Management,LEFT AS IS: place-name false positives in scan
+,,Embassy of Mexico (South Africa) / Paris Lodron (Austria) / Central Bank of the Republic of China (Taiwan),LEFT AS IS: current country is correct
+,,Multi-affiliation strings with several countries,LEFT AS IS: no single real country
+,,ETH (abdc_b #33650),LEFT AS IS: country fixed only; not rematched to ETH Zurich ROR (bare 'ETH' is not a normalized ROR-name twin) — optional follow-up
+,,"University of the North, Barranquilla","LEFT AS IS: twin has no ROR, so no ROR copied; Universidad del Norte ROR 031e6xm45 exists on other panel rows — optional rematch follow-up"
+,,Queens University Belfast,LEFT AS IS: country fixed; not rematched (no exact normalized ROR-name twin; Queen's University Belfast ROR would need approval)

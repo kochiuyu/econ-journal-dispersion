@@ -1,0 +1,16 @@
+--- a/scripts/build_site.py
++++ b/scripts/build_site.py
+@@ -485,11 +485,11 @@
+ INTL_PHONE_RE = re.compile(r"\+\d{1,3}(?:[\s()./\-]*\d){2,}")
+ NANP_RE = re.compile(r"\b\d{3}[.\-\s]\d{3}[.\-\s]\d{4}\b")
+ LABELED_PHONE_RE = re.compile(
+-    r"\b(?:telephone|phone|mobile|fax|tel)\s*[:.]?\s*\+?(?:\d[\d\s()./\-]{5,})",
++    r"\b(?:telephone|phone|mobile|fax|tel)\b\s*[:.]?\s*\+?(?:\d[\d\s()./\-]{5,})",
+     re.IGNORECASE,
+ )
+ LEFTOVER_LABEL_RE = re.compile(
+-    r"\b(?:e-?mail|telephone|phone|mobile|fax|tel)\s*[:.]?",
++    r"\b(?:e-?mail|telephone|phone|mobile|fax|tel)\b\s*(?:[:.]|(?=\s*\+?\d))",
+     re.IGNORECASE,
+ )
+ MAILTO_RE = re.compile(r"\bmailto:\s*", re.IGNORECASE)

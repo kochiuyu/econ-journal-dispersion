@@ -1,0 +1,182 @@
+file,editor_row_key,editor_name,fix,source,institution,field,old,new,publish_set,note
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#17148,Maha Shaikh,1,web,ESADE Business School,ror_country,United Kingdom,Spain,yes,
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19736,Thomas O'Toole,1,web,Waterford Institute of Technology,ror_country,United Kingdom,Ireland,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#5650,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",ror_country,United States,United Kingdom,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#5650,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",continent,North America,Europe,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#14319,Alberto Feduzi,2,web,Italy &,canonical_name,Italy &,,yes,"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#14319,Alberto Feduzi,2,web,Italy &,ror_country,United Kingdom,,yes,"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#14319,Alberto Feduzi,2,web,Italy &,continent,Europe,,yes,"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#21826,Olga Epitropaki,2,web,Greece and,canonical_name,Greece and,,yes,"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#21826,Olga Epitropaki,2,web,Greece and,ror_country,United Kingdom,,yes,"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#21826,Olga Epitropaki,2,web,Greece and,continent,Europe,,yes,"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current.csv,editors_abdc_a_current#22532,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,ror_country,Germany,Canada,yes,"printed '..., Germany'; Ivey is in London, Ontario"
+editors_abdc_a_current.csv,editors_abdc_a_current#22532,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,continent,Europe,North America,yes,"printed '..., Germany'; Ivey is in London, Ontario"
+editors_abdc_a_current.csv,editors_abdc_a_current#24027,John Cadogan,1,web,University of Leicester School of Business,ror_country,United States,United Kingdom,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#24027,John Cadogan,1,web,University of Leicester School of Business,continent,North America,Europe,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#24484,Sean Sands,1,web,Swinburne Business School,ror_country,United Kingdom,Australia,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#24484,Sean Sands,1,web,Swinburne Business School,continent,Europe,Oceania,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#27061,Raffaele Filieri,1,web,Audencia,ror_country,Italy,France,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#31965,Neil Lee,2,web,SE,canonical_name,SE,,yes,"raw 'SE, UK' — no org; printed country UK kept"
+editors_abdc_a_current.csv,editors_abdc_a_current#32274,Jennifer Feitosa,1,web,Claremont McKenna University,ror_country,Canada,United States,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#33326,H. Wagner,1,web,Johannes Kepler Universität Linz,ror_country,Germany,Austria,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#37765,Dermot Breslin,1,web,Queens University Belfast,ror_country,France,United Kingdom,yes,
+editors_abdc_a_current.csv,editors_abdc_a_current#43808,Lord Snowden of Redcar,2,web,"Justice of the Supreme Court, England and",canonical_name,"Justice of the Supreme Court, England and",Supreme Court of the United Kingdom,yes,"raw 'Justice of the Supreme Court, England and Wales'"
+editors_abdc_a_current.csv,editors_abdc_a_current#45566,Rupert Jackson,2,web,"Lord Justice of Appeal, Court of Appeal of England and",canonical_name,"Lord Justice of Appeal, Court of Appeal of England and",Court of Appeal of England and Wales,yes,"raw 'Lord Justice of Appeal, Court of Appeal of England and Wales'"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#5530,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",ror_country,United States,United Kingdom,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#5530,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",continent,North America,Europe,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#14202,Alberto Feduzi,2,web,Italy &,canonical_name,Italy &,,no (pilot),"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#14202,Alberto Feduzi,2,web,Italy &,ror_country,United Kingdom,,no (pilot),"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#14202,Alberto Feduzi,2,web,Italy &,continent,Europe,,no (pilot),"raw 'Italy & UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#21307,Olga Epitropaki,2,web,Greece and,canonical_name,Greece and,,no (pilot),"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#21307,Olga Epitropaki,2,web,Greece and,ror_country,United Kingdom,,no (pilot),"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#21307,Olga Epitropaki,2,web,Greece and,continent,Europe,,no (pilot),"raw 'Greece and UK' — two countries, no org"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#22013,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,ror_country,Germany,Canada,no (pilot),"printed '..., Germany'; Ivey is in London, Ontario"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#22013,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,continent,Europe,North America,no (pilot),"printed '..., Germany'; Ivey is in London, Ontario"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#23508,John Cadogan,1,web,University of Leicester School of Business,ror_country,United States,United Kingdom,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#23508,John Cadogan,1,web,University of Leicester School of Business,continent,North America,Europe,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#23965,Sean Sands,1,web,Swinburne Business School,ror_country,United Kingdom,Australia,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#23965,Sean Sands,1,web,Swinburne Business School,continent,Europe,Oceania,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#26542,Raffaele Filieri,1,web,Audencia,ror_country,Italy,France,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#31446,Neil Lee,2,web,SE,canonical_name,SE,,no (pilot),"raw 'SE, UK' — no org; printed country UK kept"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#31755,Jennifer Feitosa,1,web,Claremont McKenna University,ror_country,Canada,United States,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#32807,H. Wagner,1,web,Johannes Kepler Universität Linz,ror_country,Germany,Austria,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#37246,Dermot Breslin,1,web,Queens University Belfast,ror_country,France,United Kingdom,no (pilot),
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#43281,Lord Snowden of Redcar,2,web,"Justice of the Supreme Court, England and",canonical_name,"Justice of the Supreme Court, England and",Supreme Court of the United Kingdom,no (pilot),"raw 'Justice of the Supreme Court, England and Wales'"
+editors_abdc_a_current_with_profile_pilot.csv,editors_abdc_a_current_with_profile_pilot#45040,Sir Rupert Jackson,2,web,"Lord Justice of Appeal, Court of Appeal of England and",canonical_name,"Lord Justice of Appeal, Court of Appeal of England and",Court of Appeal of England and Wales,no (pilot),"raw 'Lord Justice of Appeal, Court of Appeal of England and Wales'"
+editors_abdc_b_current.csv,editors_abdc_b_current#12729,Neda Kardooni,2,scan,Independent Scholar - Iran &,canonical_name,Independent Scholar - Iran &,Independent Scholar,yes,raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current.csv,editors_abdc_b_current#12729,Neda Kardooni,2,scan,Independent Scholar - Iran &,ror_country,United Arab Emirates,,yes,raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current.csv,editors_abdc_b_current#12729,Neda Kardooni,2,scan,Independent Scholar - Iran &,continent,Asia,,yes,raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current.csv,editors_abdc_b_current#15034,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,ror_country,Colombia,United States,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#15034,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,continent,South America,North America,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#15922,Bernard Miège,1,web,University of Grenoble III,ror_country,Switzerland,France,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#17419,Karim El-Basyouny,1,web,"University or Alberta - Edmonton, CA",ror_country,United States,Canada,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#19489,Andreas A. Jobst,1,web,Central Bank of the UAE,ror_country,United States,United Arab Emirates,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#19489,Andreas A. Jobst,1,web,Central Bank of the UAE,continent,North America,Asia,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#25855,Kristof Coussement,1,web,IESEG School of Management,ror_country,United States,France,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#25855,Kristof Coussement,1,web,IESEG School of Management,continent,North America,Europe,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#26907,Chyi Lin Lee,1,web,University of New South Wales,ror_country,,Australia,yes,"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_b_current.csv,editors_abdc_b_current#26907,Chyi Lin Lee,1,web,University of New South Wales,continent,,Oceania,yes,"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_b_current.csv,editors_abdc_b_current#27585,Jonathan Winterton,1,web,Curtin Sarawak,ror_country,Singapore,Malaysia,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#33650,Gudela Grote,1,web,ETH,ror_country,United Kingdom,Switzerland,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#33770,Lord Justice Richard Arnold,2,web,Court of Appeal of England and,canonical_name,Court of Appeal of England and,Court of Appeal of England and Wales,yes,raw 'Court of Appeal of England and Wales'
+editors_abdc_b_current.csv,editors_abdc_b_current#36022,Susan P. Briggs,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",ror_country,United States,Australia,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#36022,Susan P. Briggs,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",continent,North America,Oceania,yes,
+editors_abdc_b_current.csv,editors_abdc_b_current#39658,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,yes,"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current.csv,editors_abdc_b_current#39658,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",continent,Europe,Asia,yes,"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current.csv,editors_abdc_b_current#39666,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,yes,"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current.csv,editors_abdc_b_current#39666,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",continent,Europe,Asia,yes,"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current.csv,editors_abdc_b_current#41936,Rt Hon Lord Justice Arnold,2,web,"Court of Appeal, England and",canonical_name,"Court of Appeal, England and",Court of Appeal of England and Wales,yes,"raw 'Court of Appeal, England and Wales'"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#12596,Dr. Neda Kardooni,2,scan,Independent Scholar - Iran &,canonical_name,Independent Scholar - Iran &,Independent Scholar,no (pilot),raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#12596,Dr. Neda Kardooni,2,scan,Independent Scholar - Iran &,ror_country,United Arab Emirates,,no (pilot),raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#12596,Dr. Neda Kardooni,2,scan,Independent Scholar - Iran &,continent,Asia,,no (pilot),raw 'Independent Scholar - Iran & UAE' — two countries (scan extra)
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#14901,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,ror_country,Colombia,United States,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#14901,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,continent,South America,North America,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#15789,Bernard Miège,1,web,University of Grenoble III,ror_country,Switzerland,France,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#17286,Karim El-Basyouny,1,web,"University or Alberta - Edmonton, CA",ror_country,United States,Canada,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#19357,Andreas A. Jobst,1,web,Central Bank of the UAE,ror_country,United States,United Arab Emirates,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#19357,Andreas A. Jobst,1,web,Central Bank of the UAE,continent,North America,Asia,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#25722,Kristof Coussement,1,web,IESEG School of Management,ror_country,United States,France,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#25722,Kristof Coussement,1,web,IESEG School of Management,continent,North America,Europe,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#26774,Chyi Lin Lee,1,web,University of New South Wales,ror_country,,Australia,no (pilot),"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#26774,Chyi Lin Lee,1,web,University of New South Wales,continent,,Oceania,no (pilot),"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#27452,Jonathan Winterton,1,web,Curtin Sarawak,ror_country,Singapore,Malaysia,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#33517,Gudela Grote,1,web,ETH,ror_country,United Kingdom,Switzerland,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#33637,Lord Justice Richard Arnold,2,web,Court of Appeal of England and,canonical_name,Court of Appeal of England and,Court of Appeal of England and Wales,no (pilot),raw 'Court of Appeal of England and Wales'
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#35891,SUSAN P. BRIGGS,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",ror_country,United States,Australia,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#35891,SUSAN P. BRIGGS,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",continent,North America,Oceania,no (pilot),
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#39461,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,no (pilot),"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#39461,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",continent,Europe,Asia,no (pilot),"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#39469,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,no (pilot),"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#39469,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",continent,Europe,Asia,no (pilot),"printed '..., China-UK'; XJTLU is in Suzhou"
+editors_abdc_b_current_with_profile_pilot.csv,editors_abdc_b_current_with_profile_pilot#41721,Rt Hon Lord Justice Arnold,2,web,"Court of Appeal, England and",canonical_name,"Court of Appeal, England and",Court of Appeal of England and Wales,no (pilot),"raw 'Court of Appeal, England and Wales'"
+editors_abdc_c_current.csv,editors_abdc_c_current#5115,Gina Galindo,3,web,"University of the North, Barranquilla, .",canonical_name,"University of the North, Barranquilla, .","University of the North, Barranquilla",yes,"twin 'University of the North, Barranquilla' (abdc_c #5152) has no ROR; name only"
+editors_abdc_c_current.csv,editors_abdc_c_current#7536,Eldon Li,1,web,National Cheng Chi University,ror_country,China,Taiwan,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#16358,Christian Byrge,1,web,Vilnius University Business School,ror_country,Denmark,Lithuania,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17506,Seng Hansun,1,web,University of New South Wales,ror_country,Indonesia,Australia,yes,"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_c_current.csv,editors_abdc_c_current#17506,Seng Hansun,1,web,University of New South Wales,continent,Asia,Oceania,yes,"ROR left blank (no UNSW ROR on this unmatched name); blank-country twin row printed ', UK' added by scan"
+editors_abdc_c_current.csv,editors_abdc_c_current#17511,Abba Elgujja,1,web,King Saud University Medical City,ror_country,United Kingdom,Saudi Arabia,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17511,Abba Elgujja,1,web,King Saud University Medical City,continent,Europe,Asia,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17628,Abba Elgujja,1,web,King Saud University Medical City,ror_country,United Kingdom,Saudi Arabia,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17628,Abba Elgujja,1,web,King Saud University Medical City,continent,Europe,Asia,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_id,,https://ror.org/041kmwe10,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_name,,Imperial College London,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_country,Türkiye,United Kingdom,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,continent,Asia,Europe,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,lat,,51.50853,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,lon,,-0.12574,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,canonical_name,Imperial College of London,Imperial College London,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#22055,Anton Joseph,2,web,"Solicitor, Australia, New Zealand and",canonical_name,"Solicitor, Australia, New Zealand and",,yes,"raw is roles + 3 countries, no org"
+editors_abdc_c_current.csv,editors_abdc_c_current#22055,Anton Joseph,2,web,"Solicitor, Australia, New Zealand and",ror_country,United Kingdom,,yes,"raw is roles + 3 countries, no org"
+editors_abdc_c_current.csv,editors_abdc_c_current#22055,Anton Joseph,2,web,"Solicitor, Australia, New Zealand and",continent,Europe,,yes,"raw is roles + 3 countries, no org"
+editors_abdc_c_current.csv,editors_abdc_c_current#24985,agan Marinkovic,1,web,TU Berlin,ror_country,Serbia,Germany,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#25005,Raghavendra Chunduri,1,web,VIT University,ror_country,United States,India,yes,
+editors_abdc_c_current.csv,editors_abdc_c_current#25005,Raghavendra Chunduri,1,web,VIT University,continent,North America,Asia,yes,
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1838,Josef Bleicher,2,web,"Independent Scholar, UK and",canonical_name,"Independent Scholar, UK and",Independent Scholar,yes,"raw 'Independent Scholar, UK and Germany' — two countries"
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1838,Josef Bleicher,2,web,"Independent Scholar, UK and",ror_country,Germany,,yes,"raw 'Independent Scholar, UK and Germany' — two countries"
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1838,Josef Bleicher,2,web,"Independent Scholar, UK and",continent,Europe,,yes,"raw 'Independent Scholar, UK and Germany' — two countries"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1758,Theano Lianidou,1,scan,Richmond American University London,ror_country,United States,United Kingdom,yes,"printed 'Richmond American University London, USA'; single London campus"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1758,Theano Lianidou,1,scan,Richmond American University London,continent,North America,Europe,yes,"printed 'Richmond American University London, USA'; single London campus"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4733,Marja-Liisa Swantz,2,web,Finland and,canonical_name,Finland and,,yes,"raw 'Finland and Tanzania' — two countries, no org"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4733,Marja-Liisa Swantz,2,web,Finland and,ror_country,Tanzania,,yes,"raw 'Finland and Tanzania' — two countries, no org"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4733,Marja-Liisa Swantz,2,web,Finland and,continent,Africa,,yes,"raw 'Finland and Tanzania' — two countries, no org"
+editor_affiliations.csv,editors_abdc_a_star_current#17148,Maha Shaikh,1,web,ESADE Business School,ror_country,United Kingdom,Spain,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_star_current#19736,Thomas O'Toole,1,web,Waterford Institute of Technology,ror_country,United Kingdom,Ireland,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#5650,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",ror_country,United States,United Kingdom,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#14319,Alberto Feduzi,2,web,Italy &,ror_country,United Kingdom,,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#21826,Olga Epitropaki,2,web,Greece and,ror_country,United Kingdom,,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#22532,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,ror_country,Germany,Canada,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#24027,John Cadogan,1,web,University of Leicester School of Business,ror_country,United States,United Kingdom,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#24484,Sean Sands,1,web,Swinburne Business School,ror_country,United Kingdom,Australia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#27061,Raffaele Filieri,1,web,Audencia,ror_country,Italy,France,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#32274,Jennifer Feitosa,1,web,Claremont McKenna University,ror_country,Canada,United States,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#33326,H. Wagner,1,web,Johannes Kepler Universität Linz,ror_country,Germany,Austria,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current#37765,Dermot Breslin,1,web,Queens University Belfast,ror_country,France,United Kingdom,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#5530,Giandomenico Di Domenico,1,web,"Cardiff Business School, Cardiff",ror_country,United States,United Kingdom,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#14202,Alberto Feduzi,2,web,Italy &,ror_country,United Kingdom,,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#21307,Olga Epitropaki,2,web,Greece and,ror_country,United Kingdom,,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#22013,Andreas Schotter,1,scan,The Ivey Business School at Western University Canada,ror_country,Germany,Canada,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#23508,John Cadogan,1,web,University of Leicester School of Business,ror_country,United States,United Kingdom,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#23965,Sean Sands,1,web,Swinburne Business School,ror_country,United Kingdom,Australia,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#26542,Raffaele Filieri,1,web,Audencia,ror_country,Italy,France,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#31755,Jennifer Feitosa,1,web,Claremont McKenna University,ror_country,Canada,United States,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#32807,H. Wagner,1,web,Johannes Kepler Universität Linz,ror_country,Germany,Austria,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_a_current_with_profile_pilot#37246,Dermot Breslin,1,web,Queens University Belfast,ror_country,France,United Kingdom,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#12729,Neda Kardooni,2,scan,Independent Scholar - Iran &,ror_country,United Arab Emirates,,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#15034,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,ror_country,Colombia,United States,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#15922,Bernard Miège,1,web,University of Grenoble III,ror_country,Switzerland,France,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#17419,Karim El-Basyouny,1,web,"University or Alberta - Edmonton, CA",ror_country,United States,Canada,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#19489,Andreas A. Jobst,1,web,Central Bank of the UAE,ror_country,United States,United Arab Emirates,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#25855,Kristof Coussement,1,web,IESEG School of Management,ror_country,United States,France,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#26907,Chyi Lin Lee,1,web,University of New South Wales,ror_country,,Australia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#27585,Jonathan Winterton,1,web,Curtin Sarawak,ror_country,Singapore,Malaysia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#33650,Gudela Grote,1,web,ETH,ror_country,United Kingdom,Switzerland,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#36022,Susan P. Briggs,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",ror_country,United States,Australia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#39658,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current#39666,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#12596,Dr. Neda Kardooni,2,scan,Independent Scholar - Iran &,ror_country,United Arab Emirates,,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#14901,Ricardo Bello-Gomez,1,web,Rutgers University–Newark,ror_country,Colombia,United States,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#15789,Bernard Miège,1,web,University of Grenoble III,ror_country,Switzerland,France,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#17286,Karim El-Basyouny,1,web,"University or Alberta - Edmonton, CA",ror_country,United States,Canada,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#19357,Andreas A. Jobst,1,web,Central Bank of the UAE,ror_country,United States,United Arab Emirates,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#25722,Kristof Coussement,1,web,IESEG School of Management,ror_country,United States,France,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#26774,Chyi Lin Lee,1,web,University of New South Wales,ror_country,,Australia,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#27452,Jonathan Winterton,1,web,Curtin Sarawak,ror_country,Singapore,Malaysia,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#33517,Gudela Grote,1,web,ETH,ror_country,United Kingdom,Switzerland,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#35891,SUSAN P. BRIGGS,1,web,"University of South Australia, School of Commerce, Adelaide, South Australia",ror_country,United States,Australia,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#39461,King Yoong Lim,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_b_current_with_profile_pilot#39469,Ansgar Wohlschlegel,1,scan,"Xian Jiaotong-Liverpool University, China",ror_country,United Kingdom,China,no (pilot),aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#7536,Eldon Li,1,web,National Cheng Chi University,ror_country,China,Taiwan,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#16358,Christian Byrge,1,web,Vilnius University Business School,ror_country,Denmark,Lithuania,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17506,Seng Hansun,1,web,University of New South Wales,ror_country,Indonesia,Australia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17511,Abba Elgujja,1,web,King Saud University Medical City,ror_country,United Kingdom,Saudi Arabia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17628,Abba Elgujja,1,web,King Saud University Medical City,ror_country,United Kingdom,Saudi Arabia,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_country,Türkiye,United Kingdom,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_id,,https://ror.org/041kmwe10,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,ror_name,,Imperial College London,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#17649,Ferda Özdemir Sönmez,1,web,Imperial College of London,is_panel_ror,0,1,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#22055,Anton Joseph,2,web,"Solicitor, Australia, New Zealand and",ror_country,United Kingdom,,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#24985,agan Marinkovic,1,web,TU Berlin,ror_country,Serbia,Germany,yes,aff_rank 1
+editor_affiliations.csv,editors_abdc_c_current#25005,Raghavendra Chunduri,1,web,VIT University,ror_country,United States,India,yes,aff_rank 1
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1838,Josef Bleicher,2,web,"Independent Scholar, UK and",ror_country,Germany,,yes,aff_rank 1
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1758,Theano Lianidou,1,scan,Richmond American University London,ror_country,United States,United Kingdom,yes,aff_rank 1
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4733,Marja-Liisa Swantz,2,web,Finland and,ror_country,Tanzania,,yes,aff_rank 1

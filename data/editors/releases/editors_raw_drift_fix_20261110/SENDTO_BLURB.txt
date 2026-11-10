@@ -1,0 +1,7 @@
+Freeze editors_raw_drift_fix_20261110 (base editors_post_review_fix_20261110), QC ok, not published.
+- 37 rows: printed raw restored and Institution fixed (21 'National Law University' rows now on their real RORs with no India country; 11 HKUST (Guangzhou) rows on 050h0vm43; Kagoshima, MIT Connection Science, Gradient, Springer Nature Shanghai, ENSAI).
+- Tiffany Trzebiatowski set to Colorado State University (03k1gpj17).
+- 3 Top-5 seats added as #10046-#10048, copied from the Directory.
+- 1 skip: ajg1 #10149. The live source prints 'IZZI Inc'; the Directory's 'Rosalind Franklin' is wrong.
+Directory counts: 14,195 / 6,379 / 6,379 / 162 / 49 -> 14,176 / 6,384 / 6,384 / 162 / 49.
+Raw drift left: 3 rows (Tiffany x2, #10149). 29 rows differ on ROR/country because we set real RORs the Directory lacks.
