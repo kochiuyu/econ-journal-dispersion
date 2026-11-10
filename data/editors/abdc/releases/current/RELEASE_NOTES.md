@@ -1,4 +1,20 @@
-# editors_tokyo_other_inst_fix_20261110
+# editors_paren_num_leftover_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_other_inst_fix_20261110` (Directory PR #49) for the Directory current panels. It is a keyed, user-approved fix for the parenthesis- and number-start Institutions left as REVIEW. Only institution fields are changed, the printed `raw_affiliation` is kept, and the guardrail and history notes stay in `ror_notes` with a `paren_num_leftover_fix_20261110:` token appended. No new ROR ids and no site filter. The long table and change log are in `data/editors/releases/editors_paren_num_leftover_fix_20261110/`. Report: `docs/reports/PAREN_NUM_LEFTOVER_FIX_20261110.md`.
+
+| Seat | Change |
+|---|---|
+| A #34068 Hendrik Haag | `(Partner, retired), Hengeler Mueller, Germany` → `Hengeler Mueller` (no ROR) |
+| C #12387 / #12390 / #12391 / #12392 / #12393 / #12398 / #12405 / #12411 / #12412 (EDPACS) | credential blurb → C.H. Dunn Consulting, auditline, New York State Comptroller, CMA Holdings Inc., IsecT Ltd., AuditNet LLC, Grant Thornton, Pepperweed, Aditya Birla Group (no ROR) |
+| C #12402 Norman D. Marks (EDPACS) | DROP: `canonical_name`, ROR and geo blank; printed bio kept in `raw_affiliation` |
+| C #16656 Balázs Égert (Economies) | numbered list → OECD `https://ror.org/0438wbg98` (already on 34 panel rows) |
+| 12 Tokyo Institute of Technology / Kojima seats (A* 1, A 3, B 3, C 5) | note only; `ror_country` Japan was already kept by the Directory |
+
+`ror_id` on C is 21,550 (was 21,549); A*, A, and B are unchanged. Row counts are unchanged.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,435 (6,387 with a ROR id), were 15,438 / 6,387. Countries stay 159. 12,066 appointments have no institution (unchanged). Shared display names stay 69. The remaining parenthesis- and number-start Institutions are the 14 kept numbered organisations, plus Norman Marks' printed bio, which still shows through the printed-text fallback.
+
+## Previous freeze: editors_tokyo_other_inst_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_gatech_fix_20261110` (Directory PR #48) for the Directory current panels. It is a keyed ABDC-only fix for the 35 seats whose `canonical_name` was the bare `Tokyo` with a blank ROR. The collector's copies of those seats had the place-strip rewrite `Italian Cultural Institute`, and the Directory guardrail had already restored the printed text. There is no site filter. The long table and change log are in `data/editors/releases/editors_tokyo_other_inst_fix_20261110/`. Report: `docs/reports/TOKYO_OTHER_INST_FIX_20261110.md`.
 

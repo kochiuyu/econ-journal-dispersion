@@ -1,4 +1,12 @@
-# editors_tokyo_other_inst_fix_20261110
+# editors_paren_num_leftover_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_other_inst_fix_20261110` (Directory PR #49) for the Directory current panels. It is a keyed, user-approved fix for the parenthesis- and number-start Institutions left as REVIEW. Only institution fields are changed, the printed `raw_affiliation` is kept, and the guardrail and history notes stay in `ror_notes` with a `paren_num_leftover_fix_20261110:` token appended. No new ROR ids and no site filter. The long table and change log are in `data/editors/releases/editors_paren_num_leftover_fix_20261110/`. Report: `docs/reports/PAREN_NUM_LEFTOVER_FIX_20261110.md`.
+
+`editors_abs_ajg_gap_ajg1_current#7504` (Neha Gangwar, `(GGSIPU) Periyar Management and Computer College, India`) is rematched to Guru Gobind Singh Indraprastha University `https://ror.org/034q1za58`, which was already on 3 panel rows. ajg1 `ror_id` 8,698 (was 8,697). ajg1 stays 12,316 rows: the collector file's ten extra navigation keys stay out. prio43 and ajg2 are unchanged.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,435 (6,387 with a ROR id), were 15,438 / 6,387. Countries stay 159. 12,066 appointments have no institution (unchanged). Shared display names stay 69. The remaining parenthesis- and number-start Institutions are the 14 kept numbered organisations, plus Norman Marks' printed bio, which still shows through the printed-text fallback.
+
+## Previous freeze: editors_tokyo_other_inst_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_tokyo_gatech_fix_20261110` (Directory PR #48) for the Directory current panels. It is a keyed ABDC-only fix for the 35 seats whose `canonical_name` was the bare `Tokyo` with a blank ROR. The collector's copies of those seats had the place-strip rewrite `Italian Cultural Institute`, and the Directory guardrail had already restored the printed text. The three AJG-gap files are unchanged. There is no site filter. The long table and change log are in `data/editors/releases/editors_tokyo_other_inst_fix_20261110/`. Report: `docs/reports/TOKYO_OTHER_INST_FIX_20261110.md`.
 
