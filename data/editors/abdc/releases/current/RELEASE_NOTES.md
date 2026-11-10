@@ -1,4 +1,19 @@
-# editors_inst_punct_split_20261110
+# editors_tokyo_gatech_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_inst_punct_split_20261110` (Directory PR #47) for the Directory current panels. It is a keyed panel-only fix on ABDC A*, A, B, and C. It rematches University of Tokyo seats whose ROR the Directory guardrail (`directory_guardrail_restore_20261101`) had left blank to The University of Tokyo `https://ror.org/057zh3y96`, and rematches the Decision Sciences `Georgia Inst of Technology` seat to `https://ror.org/01zkghx44`. The printed `raw_affiliation` is kept, and the Directory guardrail note stays in `ror_notes` with the fix token appended. There is no site filter. The long table and change log are in `data/editors/releases/editors_tokyo_gatech_fix_20261110/`. Report: `docs/reports/TOKYO_GATECH_FIX_20261110.md`.
+
+| File | Rows | Rows patched | `ror_id` (was) |
+|---|---:|---:|---:|
+| `editors_abdc_a_star_current.csv` | 25,596 | 5 (4 Tokyo + 1 Georgia Tech) | 23,399 (23,394) |
+| `editors_abdc_a_current.csv` | 45,889 | 5 | 40,574 (40,569) |
+| `editors_abdc_b_current.csv` | 42,558 | 5 | 36,935 (36,930) |
+| `editors_abdc_c_current.csv` | 27,719 | 3 | 21,540 (21,537) |
+
+`raw_affiliation` counts and `faculty_profile_url` are unchanged. Invented ROR ids: 0. The 35 other Tokyo-institution seats that the collector still has as `Italian Cultural Institute` keep their Directory printed text and the bare `Tokyo` canonical name. They are not touched here.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,432 (6,381 with a ROR id), were 15,434 / 6,381. Countries stay 159. 12,066 appointments have no institution (unchanged). Shared display names stay 69. The University of Tokyo is one Institutions row (`057zh3y96`, 173 appointments); `Georgia Inst of Technology` is no longer a separate unmatched row.
+
+## Previous freeze: editors_inst_punct_split_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_inst_drop_rematch_20261110` (Directory PR #46) for the Directory current panels. It is a panel-only Institutions cleanup on ABDC A*, A, B, and C: leftover punctuation-start junk is blanked (DROP), high-confidence name splits are rematched onto existing panel ROR twins (REMATCH; printed `raw_affiliation` kept; `canonical_name` set to the twin `ror_name`), and three name-only variants are unified with a blank ROR (UNIFY). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_punct_split_20261110/`. Report: `docs/reports/INST_PUNCT_SPLIT_20261110.md`.
 
