@@ -1,4 +1,12 @@
-# editors_trailing_country_fix_20261110
+# editors_country_misprint_fix_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_trailing_country_fix_20261110` (Directory PR #53) for the Directory current panels. It is a keyed, user-approved fix on top of `editors_trailing_country_fix_20261110` (PR #53): 30 publish rows get the real country for 27 Institutions whose printed country was wrong (e.g. ESADE Business School → Spain, TU Berlin → Germany, Queens University Belfast → United Kingdom); Imperial College of London (C #17649) is rematched to the existing panel ROR `041kmwe10` Imperial College London. 11 fragment rows (the 11 held back in PR #53) get a clean `canonical_name` or a blank one: the Court of Appeal / Supreme Court rows become `Court of Appeal of England and Wales` / `Supreme Court of the United Kingdom` (UK), the two Independent Scholar rows become `Independent Scholar`, and `Greece and`, `Italy &`, `Finland and`, `SE` and the Solicitor row are blanked, so the Directory falls back to the printed text (e.g. `Greece and UK`). `University of the North, Barranquilla, .` loses its trailing `, .` and merges with its twin. The printed `raw_affiliation` is unchanged; no ROR id is invented. The long table, change log and skip list are in `data/editors/releases/editors_country_misprint_fix_20261110/`. Report: `docs/reports/COUNTRY_MISPRINT_FIX_20261110.md`.
+
+Rows changed: A* 2, A 13, B 14, C 10 rows; C `ror_id` 21,552 (was 21,551).
+
+**Directory.** Institutions 15,160 (was 15,166), 6,387 with a ROR id (unchanged). Countries 162 (unchanged). 12,068 appointments have no institution (unchanged). Appointments 162,575, editors 112,718, journals 2,853. Shared display names stay 69.
+
+## Previous freeze: editors_trailing_country_fix_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_raw_aff_part_no_fix_20261110` (Directory PR #52) for the Directory current panels. It is a keyed, user-approved fix for Institution names that ended in a printed country. 6,036 publish-panel rows get the country stripped from `canonical_name` and `ror_country` / `continent` set from it (137 Institutions are rematched to an existing panel twin, reusing that twin's ROR id where it has one; no ROR id is invented). The printed `raw_affiliation` is unchanged. The audit's REVIEW and KEEP names are untouched, and 11 rows whose stripped name would end in a dangling `and` / `&` (e.g. `Court of Appeal of England and`) are held back. No site filter. The long table, change log and skip list are in `data/editors/releases/editors_trailing_country_fix_20261110/`. Report: `docs/reports/TRAILING_COUNTRY_FIX_20261110.md`.
 

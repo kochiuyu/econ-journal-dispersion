@@ -1,0 +1,29 @@
+Collector freeze `editors_country_misprint_fix_20261110` is ready. It builds on `editors_trailing_country_fix_20261110` (PR #53).
+
+Fix 1 — misprinted countries:
+- 24 of your Institutions plus 3 extras (Richmond American University London → UK, Ivey/Western → Canada, XJTLU → China).
+- Rows changed: 30 publish, 19 pilot, 49 long.
+- Imperial College of London is rematched to the existing panel ROR 041kmwe10.
+- UNSW is set to Australia with its ROR left blank. Its blank-country twin row is set to Australia too.
+
+Fix 2 — fragment canonicals:
+- 11 Institutions (10 of yours plus 'Independent Scholar - Iran &').
+- Court of Appeal variants → 'Court of Appeal of England and Wales'.
+- Supreme Court → 'Supreme Court of the United Kingdom'.
+- Independent Scholar variants → 'Independent Scholar'.
+- Greece/Italy/Finland/Solicitor/SE → canonical blank.
+- The blanked ones now show their printed raw (e.g. 'Italy & UK') in the Directory, which needs a Web rule for multi-country-only strings or an approved DROP.
+
+Fix 3 — 'University of the North, Barranquilla, .' now merges with its twin. The twin has no ROR, so none was copied.
+
+Directory: Institutions 15,165 → 15,159. With-ROR Institutions and distinct RORs stay at 6,387 → 6,387. Countries stay at 162 → 162.
+
+QC:
+- No ROR invented; no existing ROR changed.
+- Protected orgs intact.
+- raw_affiliation and raw_aff_part untouched.
+- Panel↔long desync 0.
+- Headers, line endings and row counts unchanged (AJG1 12,326 with 10 nav rows untouched; AJG2 5,462).
+
+Path: /workspace/econ-journal-editors/releases/editors_country_misprint_fix_20261110
+Do NOT publish *_with_profile_pilot.csv.
