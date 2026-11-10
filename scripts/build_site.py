@@ -2661,9 +2661,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_post_fullreview_fix_20261111 merges near-duplicate variants and
     # attaches API-verified RORs to exact-name matches, so two more shared
     # names collapse. Shared display names are 44.
-    if duplicate_names != 44:
+    # editors_open_items_fix_20261111 applies the Collector's open items
+    # (retargets, the CIMMYT Mexico ROR, one-way merges), so one more shared
+    # name collapses. Shared display names are 43.
+    if duplicate_names != 43:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 44. "
+            f"Institutions that share a display name: {duplicate_names}, expected 43. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}

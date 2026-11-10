@@ -1,0 +1,307 @@
+file,editor_row_key,field,directory_value,new_value
+editors_ft50_current.csv,editors_ft50_current#2805,ror_id,,https://ror.org/013meh722
+editors_ft50_current.csv,editors_ft50_current#2805,ror_name,,University of Cambridge
+editors_ft50_current.csv,editors_ft50_current#4634,faculty_profile_url,https://www.ceibs.edu/zhao-xiande,
+editors_ft50_current.csv,editors_ft50_current#4634,faculty_person_key,web:fb7566c575c5,
+editors_ft50_current.csv,editors_ft50_current#6180,ror_id,,https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6180,ror_name,,Asia School of Business
+editors_ft50_current.csv,editors_ft50_current#6180,ror_country,Germany,Malaysia
+editors_ft50_current.csv,editors_ft50_current#6180,continent,Europe,Asia
+editors_ft50_current.csv,editors_ft50_current#6512,ror_id,,https://ror.org/037hqgd69
+editors_ft50_current.csv,editors_ft50_current#6512,ror_name,,Asia School of Business
+editors_ft50_current.csv,editors_ft50_current#6512,ror_country,Germany,Malaysia
+editors_ft50_current.csv,editors_ft50_current#6512,continent,Europe,Asia
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,canonical_name,Judge Business School & King's College,University of Cambridge
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,ror_id,,https://ror.org/013meh722
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,ror_name,,University of Cambridge
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,lat,,52.2
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#2805,lon,,0.11667
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,faculty_profile_url,https://www.ceibs.edu/zhao-xiande,
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,faculty_person_key,web:fb7566c575c5,
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,ror_id,,https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,ror_name,,Asia School of Business
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,ror_country,Germany,Malaysia
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,continent,Europe,Asia
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,lat,,3.1412
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6180,lon,,101.68653
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,ror_id,,https://ror.org/037hqgd69
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,ror_name,,Asia School of Business
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,ror_country,Germany,Malaysia
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,continent,Europe,Asia
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,lat,,3.1412
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#6512,lon,,101.68653
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,ror_id,,https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,ror_name,,Asia School of Business
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,ror_country,Germany,Malaysia
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,continent,Europe,Asia
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,lat,,3.1412
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3080,lon,,101.68653
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,canonical_name,"Asia School of Management, Kuala Lumpur, Malaysia and Leuphana University, Lüneburg",Asia School of Business
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,ror_id,,https://ror.org/037hqgd69
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,ror_name,,Asia School of Business
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,ror_country,Germany,Malaysia
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,continent,Europe,Asia
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,lat,,3.1412
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#3412,lon,,101.68653
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,canonical_name,Judge Business School & King's College,University of Cambridge
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,ror_id,,https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,ror_name,,University of Cambridge
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,lat,,52.2
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6158,lon,,0.11667
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6405,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#6419,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,canonical_name,Chapman,UNSW Sydney
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,ror_id,,https://ror.org/03r8z3t63
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,ror_name,,UNSW Sydney
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,lat,,-33.86785
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#13168,lon,,151.20732
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,canonical_name,Catholic University of Tilburg/Leuven University,Tilburg University
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,ror_id,,https://ror.org/04b8v1s79
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,ror_name,,Tilburg University
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,lat,,51.55551
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19632,lon,,5.0913
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21433,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,canonical_name,Rutgers University-New Brunswick,"Rutgers, The State University of New Jersey"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,ror_id,,https://ror.org/05vt9qd57
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,ror_country,Canada,United States
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,lat,,40.48622
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#21570,lon,,-74.45182
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24284,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,canonical_name,Judge Business School & King's College,University of Cambridge
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,ror_id,,https://ror.org/013meh722
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,ror_name,,University of Cambridge
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,lat,,52.2
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24293,lon,,0.11667
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24294,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,canonical_name,International Maize and Wheat Improvement Center,Centro Internacional de Mejoramiento de Maíz Y Trigo
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,ror_id,,https://ror.org/03gvhpa76
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,ror_name,,Centro Internacional de Mejoramiento de Maíz Y Trigo
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,lat,,19.51194
+editors_abdc_a_current.csv,editors_abdc_a_current#10607,lon,,-98.88293
+editors_abdc_a_current.csv,editors_abdc_a_current#15266,ror_country,,France
+editors_abdc_a_current.csv,editors_abdc_a_current#15266,continent,,Europe
+editors_abdc_a_current.csv,editors_abdc_a_current#15855,ror_country,,Germany
+editors_abdc_a_current.csv,editors_abdc_a_current#15855,continent,,Europe
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,canonical_name,"Rayliant Global Advisor, UCLA Anderson",Rayliant Global Advisors
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,ror_country,,United States
+editors_abdc_a_current.csv,editors_abdc_a_current#16190,continent,,North America
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,canonical_name,HEC Liège – Liège University and Belfius Asset Management,University of Liège
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,ror_id,,https://ror.org/00afp2z80
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,ror_name,,University of Liège
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,ror_country,,Belgium
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,continent,,Europe
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,lat,,50.63373
+editors_abdc_a_current.csv,editors_abdc_a_current#16191,lon,,5.56749
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,canonical_name,Max Planck Institute Germany,"Max Planck Institute, Germany"
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,ror_country,,Germany
+editors_abdc_a_current.csv,editors_abdc_a_current#23055,continent,,Europe
+editors_abdc_a_current.csv,editors_abdc_a_current#26839,ror_country,,India
+editors_abdc_a_current.csv,editors_abdc_a_current#26839,continent,,Asia
+editors_abdc_a_current.csv,editors_abdc_a_current#30668,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,canonical_name,Center for Outcomes Based Contracting and American University,Center for Outcomes Based Contracting
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,ror_country,,United States
+editors_abdc_a_current.csv,editors_abdc_a_current#35189,continent,,North America
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,ror_id,,https://ror.org/05309tf52
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,ror_name,,Niagara University
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,ror_country,United States,Canada
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,lat,,43.17256
+editors_abdc_a_current.csv,editors_abdc_a_current#36407,lon,,-79.03588
+editors_abdc_a_current.csv,editors_abdc_a_current#45775,ror_country,Germany,Australia
+editors_abdc_a_current.csv,editors_abdc_a_current#45775,continent,Europe,Oceania
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,canonical_name,"University of Wisconsin System, Madison, Wisconsin, United States of America (the)",University of Wisconsin–Madison
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,ror_id,https://ror.org/03ydkyb10,https://ror.org/01y2jtd41
+editors_abdc_b_current.csv,editors_abdc_b_current#1581,ror_name,University of Wisconsin System,University of Wisconsin–Madison
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,canonical_name,"Ph.D. Nova Southeastern University, Fort Lauderdale, Florida KU Leuven, Leuven",Nova Southeastern University
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,ror_id,,https://ror.org/042bbge36
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,ror_name,,Nova Southeastern University
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,ror_country,Belgium,United States
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,continent,Europe,North America
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,lat,,26.12231
+editors_abdc_b_current.csv,editors_abdc_b_current#9281,lon,,-80.14338
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,canonical_name,Centre for Social and Economic Studies,Centre for Economic and Social Studies
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,ror_id,,https://ror.org/04ch3q361
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,ror_name,,Centre for Economic and Social Studies
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,lat,,17.38405
+editors_abdc_b_current.csv,editors_abdc_b_current#13803,lon,,78.45636
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,canonical_name,California Polytechnic State University and Politecnico di Milano,California Polytechnic State University
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,ror_id,,https://ror.org/001gpfp45
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,ror_name,,California Polytechnic State University
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,ror_country,Italy,United States
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,continent,Europe,North America
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,lat,,35.28275
+editors_abdc_b_current.csv,editors_abdc_b_current#15314,lon,,-120.65962
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,ror_id,,https://ror.org/05vt9qd57
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,lat,,40.48622
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,lon,,-74.45182
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,canonical_name,Woxsen University / Zhejiang University International Business School - India / People's Republic of China,Woxsen University
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,ror_id,,https://ror.org/0305fyb87
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,ror_name,,Woxsen School of Business
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,ror_country,,India
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,continent,,Asia
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,lat,,17.38405
+editors_abdc_b_current.csv,editors_abdc_b_current#19524,lon,,78.45636
+editors_abdc_b_current.csv,editors_abdc_b_current#23428,canonical_name,"European Bureau for Policy Consulting and Social Research, and Institut für die Wissenschaften /IWM, Vienna",European Bureau for Policy Consulting and Social Research
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,ror_id,,https://ror.org/05vt9qd57
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,lat,,40.48622
+editors_abdc_b_current.csv,editors_abdc_b_current#23463,lon,,-74.45182
+editors_abdc_b_current.csv,editors_abdc_b_current#33133,ror_country,United Kingdom,Ireland
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,canonical_name,University of Applied Sciences Emden/Leer,University of Applied Sciences Emden Leer
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,ror_id,,https://ror.org/01bc76c69
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,ror_name,,University of Applied Sciences Emden Leer
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,lat,,53.36745
+editors_abdc_b_current.csv,editors_abdc_b_current#33364,lon,,7.20778
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,canonical_name,CIDE/Mexico City and DIW Berlin,Centro de Investigación y Docencia Económicas
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,ror_id,,https://ror.org/014zxe029
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,ror_name,,Centro de Investigación y Docencia Económicas
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,ror_country,,Mexico
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,continent,,North America
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,lat,,19.42847
+editors_abdc_b_current.csv,editors_abdc_b_current#35187,lon,,-99.12766
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,canonical_name,Assumption College,Assumption University
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,ror_id,,https://ror.org/039k72y49
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,ror_name,,Assumption University
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,lat,,42.26259
+editors_abdc_b_current.csv,editors_abdc_b_current#35507,lon,,-71.80229
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,canonical_name,"Centre for Studies in Social Sciences, Calcutta, India and IZA, Bonn",Centre for Studies in Social Sciences Calcutta
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,ror_id,,https://ror.org/024rfjv05
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,ror_name,,Centre for Studies in Social Sciences Calcutta
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,ror_country,Germany,India
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,continent,Europe,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,lat,,22.56263
+editors_abdc_c_current.csv,editors_abdc_c_current#3950,lon,,88.36304
+editors_abdc_c_current.csv,editors_abdc_c_current#9584,canonical_name,"Swiss Management Center (Switzerland) and The Center for Advanced Studies in Management and Economics, CEFAGE-UE",Swiss Management Center
+editors_abdc_c_current.csv,editors_abdc_c_current#9584,ror_country,Portugal,Switzerland
+editors_abdc_c_current.csv,editors_abdc_c_current#15597,ror_country,,Germany
+editors_abdc_c_current.csv,editors_abdc_c_current#15597,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#18673,ror_country,,Australia
+editors_abdc_c_current.csv,editors_abdc_c_current#18673,continent,,Oceania
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,canonical_name,- Professor of Law,Dalhousie University
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,ror_id,,https://ror.org/01e6qks80
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,ror_name,,Dalhousie University
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,ror_country,,Canada
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,continent,,North America
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,lat,,44.64269
+editors_abdc_c_current.csv,editors_abdc_c_current#18771,lon,,-63.57688
+editors_abdc_c_current.csv,editors_abdc_c_current#18788,ror_country,,France
+editors_abdc_c_current.csv,editors_abdc_c_current#18788,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,ror_id,,https://ror.org/047988g19
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,ror_name,,West Ukrainian National University
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,lat,,49.55404
+editors_abdc_c_current.csv,editors_abdc_c_current#18900,lon,,25.59067
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,canonical_name,Macao Institute for Tourism Studies,Macao University of Tourism
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,ror_id,,https://ror.org/00nx0vn86
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,ror_name,,Macao University of Tourism
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,ror_country,China,Macao
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,lat,,22.20056
+editors_abdc_c_current.csv,editors_abdc_c_current#20171,lon,,113.54611
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,ror_id,,https://ror.org/05vt9qd57
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,lat,,40.48622
+editors_abdc_c_current.csv,editors_abdc_c_current#20890,lon,,-74.45182
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,canonical_name,University of Africa,University of Africa Toru-Orua
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,ror_id,,https://ror.org/052vhkx86
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,ror_name,,University of Africa Toru-Orua
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,lat,,5.09985
+editors_abdc_c_current.csv,editors_abdc_c_current#22898,lon,,6.0644
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_c_current.csv,editors_abdc_c_current#23725,ror_country,,Russia
+editors_abdc_c_current.csv,editors_abdc_c_current#23725,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#23732,ror_country,,Russia
+editors_abdc_c_current.csv,editors_abdc_c_current#23732,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#23733,ror_country,,Russia
+editors_abdc_c_current.csv,editors_abdc_c_current#23733,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#23978,ror_country,,France
+editors_abdc_c_current.csv,editors_abdc_c_current#23978,continent,,Europe
+editors_abdc_c_current.csv,editors_abdc_c_current#24104,canonical_name,"D R Patel & R B Patel Commerce College and Bhaniben C Patel BBA College, Surat, Gujarat",D R Patel & R B Patel Commerce College
+editors_abdc_c_current.csv,editors_abdc_c_current#25149,canonical_name,Rotterdam School of Management,"Rotterdam School of Management, Erasmus University"
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,canonical_name,CEDIMES Institute USA & University Cheikh Anta Diop,Cheikh Anta Diop University
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,ror_id,,https://ror.org/04je6yw13
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,ror_name,,Cheikh Anta Diop University
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,lat,,14.6937
+editors_abdc_c_current.csv,editors_abdc_c_current#25295,lon,,-17.44406
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,canonical_name,The LEGO Foundation,Lego (Denmark)
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,ror_id,https://ror.org/020yc1y85,https://ror.org/04vx9dd09
+editors_abdc_c_current.csv,editors_abdc_c_current#26986,ror_name,The LEGO Foundation,Lego (Denmark)
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,canonical_name,Creative New Zealand,Creative Capital Foundation
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,ror_id,,https://ror.org/021e5n641
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,ror_name,,Creative Capital Foundation
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,lat,,40.71427
+editors_abdc_c_current.csv,editors_abdc_c_current#27472,lon,,-74.00597
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,canonical_name,Union Hospital,Shandong Provincial QianFoShan Hospital
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,ror_id,https://ror.org/055gkcy74,https://ror.org/03wnrsb51
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,ror_name,Union Hospital,Shandong Provincial QianFoShan Hospital
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,lat,26.06139,36.66833
+editors_abdc_c_current.csv,editors_abdc_c_current#27484,lon,119.30611,116.99722
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,canonical_name,Junior Achievement,Guangxi University
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,ror_id,https://ror.org/00nm3xj95,https://ror.org/02c9qn167
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,ror_name,Junior Achievement,Guangxi University
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,lat,39.9075,22.81667
+editors_abdc_c_current.csv,editors_abdc_c_current#27627,lon,116.39723,108.31667
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,canonical_name,University of Finance and Economics,Southwestern University of Finance and Economics
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,ror_id,,https://ror.org/04ewct822
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,ror_name,,Southwestern University of Finance and Economics
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,ror_country,,China
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,continent,,Asia
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,lat,,30.66667
+editors_abdc_c_current.csv,editors_abdc_c_current#27684,lon,,104.06667
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1194,ror_country,,Mexico
+editors_abs_ajg_gap_prio43_current.csv,editors_abs_ajg_gap_prio43_current#1194,continent,,North America
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,canonical_name,Facultad Latinoamericana de Ciencias Sociales (FLASCO),Facultad Latinoamericana de Ciencias Sociales Sede Académica México
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,ror_id,,https://ror.org/02wdjwg88
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,ror_name,,Facultad Latinoamericana de Ciencias Sociales Sede Académica México
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,lat,,19.29513
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1435,lon,,-99.16206
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,canonical_name,St. Catharine's,Brock University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,ror_id,,https://ror.org/056am2717
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,ror_name,,Brock University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,lat,,43.17126
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#1791,lon,,-79.24267
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,canonical_name,"Cardiff & Leiden Universities, USA/UK/Netherlands",American University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,ror_id,,https://ror.org/052w4zt36
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,ror_name,,American University
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,ror_country,,United States
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,continent,,North America
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,lat,,38.89511
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#2034,lon,,-77.03637
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,canonical_name,"Second Order Science Foundation, Salem, Massachusetts; Tongji University, College of Design and Innovation - USA; People's Republic of China",Tongji University
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,ror_id,,https://ror.org/03rc6as71
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,ror_name,,Tongji University
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,ror_country,,China
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,continent,,Asia
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,lat,,31.22222
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4462,lon,,121.45806
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,canonical_name,Nutraceutical Corporation,Better Being Co. (United States)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,ror_id,,https://ror.org/05bqa2z43
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,ror_name,,Better Being Co. (United States)
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,lat,,40.76078
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#4547,lon,,-111.89105
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#6526,canonical_name,"Consip Spa and University LUISS ""G. Carli""",Consip
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7121,canonical_name,"Swiss Management Center, Zug, Switzerland and The Center for Advanced Studies in Management and Economics, CEFAGE-EU, Faro",Swiss Management Center
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#7121,ror_country,Portugal,Switzerland
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,ror_id,,https://ror.org/05vt9qd57
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,lat,,40.48622
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9637,lon,,-74.45182
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,canonical_name,"Michigan State University, USA; Queen Mary, University of London",Michigan State University
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,ror_id,,https://ror.org/05hs6h993
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,ror_name,,Michigan State University
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,ror_country,,United States
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,continent,,North America
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,lat,,42.73698
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11604,lon,,-84.48387
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,canonical_name,Rutgers University,"Rutgers, The State University of New Jersey"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,ror_id,,https://ror.org/05vt9qd57
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,ror_name,,"Rutgers, The State University of New Jersey"
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,lat,,40.48622
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#11671,lon,,-74.45182

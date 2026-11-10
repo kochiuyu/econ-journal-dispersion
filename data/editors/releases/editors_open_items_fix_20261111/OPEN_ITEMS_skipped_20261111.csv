@@ -1,0 +1,7 @@
+item,action,institution,file,editor_row_key,reason
+item2,HOLD,"Universidad del Pacifico, Engineering",editors_abdc_a_current.csv,editors_abdc_a_current#26625,hold: left as printed (approved)
+item2,HOLD,"University of Naples, Naples",editors_abdc_a_current.csv,editors_abdc_a_current#33759,hold: left as printed (approved)
+item2,HOLD,"Concordia U., CA",editors_abdc_c_current.csv,editors_abdc_c_current#26820,hold: left as printed (approved)
+item2,KEEP_AS_PRINTED,"The University of Texas, United States",editors_abdc_b_current.csv,editors_abdc_b_current#24781,hold: left as printed (approved)
+item7,DROP,independent consultant in environmental law and policy,editors_abdc_b_current.csv,editors_abdc_b_current#39063,protected organisation on row (11KBW/UNSW/INSEAD/1 Decembrie 1918)
+item9,REVIEW,Nielsen (United States),editors_abdc_a_current.csv,editors_abdc_a_current#42676,file recommends REVIEW with no target (former-employer ROR: Nielsen; GM ajg1#4303 and SEARCA abdc_c#15559 named in evidence) - left unchanged
