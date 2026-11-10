@@ -1,0 +1,2 @@
+item,file,editor_row_key,editor_name,our_raw,directory_raw,reason
+item1,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#10149,Lawrence Sweet,IZZI Inc,Rosalind Franklin University of Medicine,"NOT restored: the live source page (risk.net JFMI editorial board, fetched 2026-11-10) prints 'Lawrence Sweet - IZZI Inc'; the Directory text 'Rosalind Franklin University of Medicine' came from the ajg_gap faculty-search remiss (another Lawrence Sweet). Our raw 'IZZI Inc' matches the source; the Directory should take ours."
