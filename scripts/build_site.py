@@ -2658,9 +2658,12 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # editors_full_review_fix_20261111 merges spelling variants and drops
     # non-institution strings (45). editors_full_review_resolved_fix_20261111
     # splits shared-name buckets by editor, so the count is 46.
-    if duplicate_names != 46:
+    # editors_post_fullreview_fix_20261111 merges near-duplicate variants and
+    # attaches API-verified RORs to exact-name matches, so two more shared
+    # names collapse. Shared display names are 44.
+    if duplicate_names != 44:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 46. "
+            f"Institutions that share a display name: {duplicate_names}, expected 44. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}
