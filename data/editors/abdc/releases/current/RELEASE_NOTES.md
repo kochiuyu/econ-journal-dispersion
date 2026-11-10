@@ -1,4 +1,25 @@
-# editors_ror_consistency3b_20261101
+# editors_nonlatin_inst_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_ror_consistency3b_20261101` (Directory PR #41) for the Directory current panels. It is a panel-only Institutions fix for non-Latin-start names on ABDC C. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_nonlatin_inst_20261110/`. Report: `docs/reports/NONLATIN_INST_20261110.md`.
+
+**What changed.** Only `editors_abdc_c_current.csv` is patched, and only by the collector delta (79 appointments) applied onto the published Directory copy of consistency3b. Directory guardrail restores, contact scrub, held-out AJG1 navigation rows, and the FT50 Top 5 alignment stay. The other eight current panels are unchanged; the collector copies of those files were not overlaid, because they predate those Directory-only edits.
+
+| Action | Count |
+|---|---:|
+| DROP bio/CV blurbs (blank `raw_affiliation` and `canonical_name`; no ROR) | 19 |
+| REMATCH to an existing Latin ROR twin already on these panels (printed non-Latin names kept) | 60 |
+| GAP, no Latin twin on these panels (printed name kept, ROR left blank; no panel-field change) | 8 |
+| Stale flag not on the consistency3b panel | 1 |
+| Appointments touched | 87 |
+| Invented ROR ids | 0 |
+
+Boards: Journal of the New Economic Association, Applied Econometrics, Academia Economic Papers, and Journal of the Japan Statistical Society. `11KBW`, UNSW Sydney, and INSEAD stay.
+
+ABDC C stays 27,719 rows. `ror_id` is 21,297 (was 21,237). `raw_affiliation` is 24,887 (was 24,906). Empty `editor_name` stays 6; `faculty_profile_url` stays 1,379.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 16,234 (6,381 with a ROR id), were 16,283 / 6,381. Countries stay 159. 11,991 appointments have no institution (were 11,972): the 19 dropped blurbs are now blank affiliations.
+
+## Previous freeze: editors_ror_consistency3b_20261101
 
 Published 2026-11-01 (Asia/Hong_Kong) with user approval. This supersedes `editors_browser_single_20261029` (Directory PR #40). The collector packs between the two (`editors_ror_consistency2`, `editors_ror_consistency`, `editors_ror_multiaff`, `editors_ror_campus2`, `editors_ror_campus`, `post15`, the profile `pilot`, the scale-parse packs, and the t39 / institution-fix freezes) were never published and are retired. The long table and audit logs are in `data/editors/releases/editors_ror_consistency3b_20261101/`; reports in `docs/reports/` (`PREPUBLISH_CHECK_20261101.md`, `ROR_PREPUBLISH_FIX_20261101.md`, `ROR_CONSISTENCY3_20261101.md`). The core49 backfill `editors_backfill_scale_ror_20261031` is pinned at the same time under `data/editors/core49/releases/`.
 

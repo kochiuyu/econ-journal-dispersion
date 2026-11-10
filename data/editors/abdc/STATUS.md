@@ -1,19 +1,19 @@
 # Editors — ABDC
 
-Updated: 2026-11-01 (Asia/Hong_Kong)
+Updated: 2026-11-10 (Asia/Taipei)
 
 ## Release in this repo
 
-`releases/current/` — current boards by ABDC rating. Freeze `editors_ror_consistency3b_20261101` (published 2026-11-01) is the current board. It supersedes `editors_browser_single_20261029` and retires the unpublished collector packs in between (consistency2, consistency, multiaff, campus2, campus, post15, pilot, the scale-parse packs, and the t39 / institution-fix freezes). Twelve columns follow `board_urls` and `board_url_count` (see `docs/README.md`), so the board columns are no longer last. The collector blanks ambiguous ROR ids, so `ror_id` coverage is lower. Emails and phone numbers left in text cells were removed. Long table and audit logs: `data/editors/releases/editors_ror_consistency3b_20261101/`. Reports: `docs/reports/`. Details: `releases/current/RELEASE_NOTES.md`. The history below describes earlier freezes.
+`releases/current/` — current boards by ABDC rating. Freeze `editors_nonlatin_inst_20261110` (published 2026-11-10) is the current board. It supersedes `editors_ror_consistency3b_20261101`. Only the C panel is patched: 19 bio/CV blurbs are blanked and 60 local-script affiliations are rematched onto existing Latin ROR twins (printed non-Latin names kept). A*, A, and B are unchanged. No site filter. Twelve columns follow `board_urls` and `board_url_count` (see `docs/README.md`). Emails and phone numbers left in text cells were already removed in the consistency3b Directory copy; those restorations stay. Long table and the change log: `data/editors/releases/editors_nonlatin_inst_20261110/`. Reports: `docs/reports/`. Details: `releases/current/RELEASE_NOTES.md`. The history below describes earlier freezes.
 
-Previous: freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. Faculty URLs from `editors_nonft50_url_aff_20261028` stay. 
+Previous: freeze `editors_ror_consistency3b_20261101` (published 2026-11-01). Then: freeze `editors_browser_single_20261029` (2026-10-30 07:09 Asia/Taipei). It supersedes `editors_single_editor_20261029`, which superseded `editors_browser_boards_20261029`. Faculty URLs from `editors_nonft50_url_aff_20261028` stay. 
 
 | File | Rating | Rows | Empty `editor_name` | `faculty_profile_url` | `raw_affiliation` | `ror_id` |
 |------|--------|-----:|--------------------:|----------------------:|------------------:|---------:|
 | `editors_abdc_a_star_current.csv` | A* | 25,596 | 1 | 12,522 (48.9%) | 24,210 (94.6%) | 23,285 |
 | `editors_abdc_a_current.csv` | A | 45,889 | 1 | 6,236 (13.6%) | 43,164 (94.1%) | 40,410 |
 | `editors_abdc_b_current.csv` | B | 42,558 | 11 | 3,509 (8.2%) | 40,194 (94.4%) | 36,765 |
-| `editors_abdc_c_current.csv` | C | 27,719 | 6 | 1,379 (5.0%) | 24,906 (89.9%) | 21,237 |
+| `editors_abdc_c_current.csv` | C | 27,719 | 6 | 1,379 (5.0%) | 24,887 (89.8%) | 21,297 |
 
 Excluded: `*.before_ror.csv`, `*.before_url_aff_nonft50_20261028`, `abdc/raw/`, scrape queues, `journals_abdc_b_product03.csv`, and the collector audit CSVs.
 
