@@ -1,0 +1,173 @@
+item,action,institution,file,editor_row_key,reason
+L2,DROP,Professor of Information Sciences & Technology,editors_abdc_b_current.csv,editors_abdc_b_current#40049,printed raw names an organisation not in the dropped text (university); not dropped
+L3,RENAME,Studio Legale Tamos Piana & Partners (of counsel),,,no-op: every matched row already at the target value
+L1,MERGE,IEDC Bled School of Management,,,no-op: every matched row already at the target value
+L2,DROP,Andrew H. and Ann R. Tisch Professor,editors_abdc_a_current.csv,editors_abdc_a_current#37232,printed raw names an organisation not in the dropped text (institute); not dropped
+L1,MERGE,Nicmar University,,,no-op: every matched row already at the target value
+L1,MERGE,CASTRÉN & SNELLMAN ATTORNEYS LTD,,,no-op: every matched row already at the target value
+L1,MERGE,"Instituto Universitario da Maia (ISMAI, Portugal)",,,no-op: every matched row already at the target value
+L1,MERGE,The SMERU Research Institute,,,no-op: every matched row already at the target value
+L2,DROP,Docent in Mixed Reality in Science Education,editors_abdc_b_current.csv,editors_abdc_b_current#40074,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,University College Oxford,,,no-op: every matched row already at the target value
+L1,MERGE,The Boston Consulting Group,,,no-op: every matched row already at the target value
+L2,DROP,Assistant Professor of Cybersecurity,editors_abdc_b_current.csv,editors_abdc_b_current#40169,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,The Fuqua School of Business,,,no-op: every matched row already at the target value
+L1,MERGE,St. Mary’s University School of Law,,,no-op: every matched row already at the target value
+L1,MERGE,University of New South Wales,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#5452,protected organisation on row (11KBW/UNSW/INSEAD)
+L2,DROP,"PhD, Associate Professor, Research Fellow of Institute of Labour Economics",editors_abdc_c_current.csv,editors_abdc_c_current#18879,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,The International Institute for Strategic Studies,,,no-op: every matched row already at the target value
+L1,MERGE,ESCP Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14062,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#16204,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#19749,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#23709,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#2589,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#2873,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#3125,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#3181,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#3185,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#3229,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#3934,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#4574,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#5682,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#7172,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#7952,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#8097,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#10682,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#24373,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#24735,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#27882,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#27903,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#30493,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_a_current.csv,editors_abdc_a_current#45335,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#2832,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#6367,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#8715,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#11082,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#14715,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#16758,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#24269,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#24295,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_b_current.csv,editors_abdc_b_current#24749,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_c_current.csv,editors_abdc_c_current#1556,row already carries a different ROR https://ror.org/018d9zk51; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_c_current.csv,editors_abdc_c_current#10046,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_c_current.csv,editors_abdc_c_current#16348,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abdc_c_current.csv,editors_abdc_c_current#22637,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5173,row already carries a different ROR https://ror.org/01r8xsy94; not rematched to https://ror.org/040hhjv66
+L1,MERGE,ESCP Business School,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1767,row already carries a different ROR https://ror.org/036d5c397; not rematched to https://ror.org/040hhjv66
+L2,DROP,Professor of Law,editors_abdc_c_current.csv,editors_abdc_c_current#18771,printed raw names an organisation not in the dropped text (centre); not dropped
+L1,MERGE,"Indian Institute of Management, Nagpur",,,no-op: every matched row already at the target value
+L2,DROP,Department of Finance,editors_abdc_c_current.csv,editors_abdc_c_current#27386,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,"Universidad del Pacifico, Engineering",,,target Universidad del Pacífico is a hold-file COIN_FLIP (Peru vs Chile); raw names no country; not merged
+L2,DROP,Brescia,editors_abdc_a_current.csv,editors_abdc_a_current#21555,"printed raw names an organisation not in the dropped text (college, university); not dropped"
+L1,MERGE,IRCRES-CNR,,,no-op: every matched row already at the target value
+L1,MERGE,TECNALIA Research and Innovation,,,no-op: every matched row already at the target value
+L2,DROP,Leicester,editors_abdc_c_current.csv,editors_abdc_c_current#20519,printed raw names an organisation not in the dropped text (college); not dropped
+L2,DROP,Leicester,editors_abdc_a_current.csv,editors_abdc_a_current#38676,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Nanchang,editors_abdc_b_current.csv,editors_abdc_b_current#8238,printed raw names an organisation not in the dropped text (institute); not dropped
+L1,MERGE,University of Palermo,editors_abdc_a_current.csv,editors_abdc_a_current#8817,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_a_current.csv,editors_abdc_a_current#25176,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_a_current.csv,editors_abdc_a_current#41772,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_a_current.csv,editors_abdc_a_current#42347,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_b_current.csv,editors_abdc_b_current#4592,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_b_current.csv,editors_abdc_b_current#22146,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_c_current.csv,editors_abdc_c_current#7948,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_c_current.csv,editors_abdc_c_current#22829,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,University of Palermo,editors_abdc_c_current.csv,editors_abdc_c_current#23194,row already carries a different ROR https://ror.org/04fz79c74; not rematched to https://ror.org/044k9ta02
+L1,MERGE,CREST (Paris),,,no-op: every matched row already at the target value
+L1,MERGE,Université d'Evry,,,no-op: every matched row already at the target value
+L1,MERGE,Rutgers University-New Brunswick,,,no-op: every matched row already at the target value
+L2,DROP,independent consultant in environmental law and policy,editors_abdc_b_current.csv,editors_abdc_b_current#39063,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,The Electric Reliability Council of Texas (ERCOT),,,no-op: every matched row already at the target value
+L2,DROP,Professor of Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40133,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_abdc_a_current.csv,editors_abdc_a_current#110,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8265,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Professor & Head of the Artificial Intelligence Innovation Network,editors_ft50_current.csv,editors_ft50_current#8265,printed raw names an organisation not in the dropped text (school); not dropped
+L1,MERGE,I-CATS University College,,,no-op: every matched row already at the target value
+L2,DROP,Senior Fellow,editors_abdc_b_current.csv,editors_abdc_b_current#40348,printed raw names an organisation not in the dropped text (center); not dropped
+L1,MERGE,The University of Haripur,,,no-op: every matched row already at the target value
+L2,DROP,"Doctor of Sciences (Economics), Full Professor",editors_abdc_c_current.csv,editors_abdc_c_current#18931,"printed raw names an organisation not in the dropped text (ministry, university); not dropped"
+L2,DROP,Professor of Philosophy,editors_abdc_b_current.csv,editors_abdc_b_current#40357,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,"Morgan, Lewis and Bockius LLP",,,no-op: every matched row already at the target value
+L1,MERGE,Shanghai Advanced Institute of Finance (SAIF),,,no-op: every matched row already at the target value
+L1,MERGE,Ifo Institute,,,no-op: every matched row already at the target value
+L2,DROP,Kobe,editors_abdc_b_current.csv,editors_abdc_b_current#22220,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40031,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40064,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Professor of Management,editors_abdc_b_current.csv,editors_abdc_b_current#40097,printed raw names an organisation not in the dropped text (university); not dropped
+L1,MERGE,IESEG School of Management,,,no-op: every matched row already at the target value
+L1,MERGE,"Concordia U., CA",,,coin-flip: 'CA' is Canada vs California; target Concordia University is in the hold file (US ROR on some rows); not merged
+L1,MERGE,"Institute for Advanced Studies, Vienna",,,no-op: every matched row already at the target value
+L2,DROP,Xiamen,editors_abdc_b_current.csv,editors_abdc_b_current#21591,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Associate Professor of Accounting and Business Administration,editors_abdc_c_current.csv,editors_abdc_c_current#18940,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20063,protected organisation on row (11KBW/UNSW/INSEAD)
+L2,DROP,"PhD (Griffith), MBus(Res) (QUT), GAICD (AICD), BHA (UNSW), FCHSM CHE AICD FIML",editors_abdc_c_current.csv,editors_abdc_c_current#20071,protected organisation on row (11KBW/UNSW/INSEAD)
+L1,MERGE,Orkestra-Basque Institute of Competitiveness,,,no-op: every matched row already at the target value
+L2,DROP,Kiel,editors_abdc_a_current.csv,editors_abdc_a_current#14589,"printed raw names an organisation not in the dropped text (institute, university); not dropped"
+L1,MERGE,The Bush School of Government & Public Service,,,no-op: every matched row already at the target value
+L2,DROP,Lecturer in Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40147,printed raw names an organisation not in the dropped text (college); not dropped
+L1,MERGE,National University of San Martin,,,no-op: every matched row already at the target value
+L3,RENAME,COTA Australia (Chair),,,no-op: every matched row already at the target value
+L1,MERGE,International Swaps & Derivatives Association,,,no-op: every matched row already at the target value
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#4644,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#19036,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#19462,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#22218,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#22264,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#25259,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_a_current.csv,editors_abdc_a_current#44020,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#14841,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#16572,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#18279,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#23841,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#25397,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#28332,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#29788,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#34125,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_b_current.csv,editors_abdc_b_current#40788,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#6024,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#7315,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#8048,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#9743,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#11144,row already carries a different ROR https://ror.org/05p4f7w60; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#21917,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abdc_c_current.csv,editors_abdc_c_current#23673,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#933,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#3242,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9077,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L1,MERGE,University of the West Indies,editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#9084,row already carries a different ROR https://ror.org/003kgv736; not rematched to https://ror.org/03fkc8c64
+L2,DROP,Welfare Mission for Migrants,editors_abdc_c_current.csv,editors_abdc_c_current#18673,printed raw names an organisation not in the dropped text (centre); not dropped
+L1,MERGE,"Public Management Research Association (PMRA) (City University, Hong Kong)",,,no-op: every matched row already at the target value
+L2,DROP,"BDS (Otago), MHA (Georgia State), PhD (UNSW), FCHSM CHE",editors_abdc_c_current.csv,editors_abdc_c_current#20081,protected organisation on row (11KBW/UNSW/INSEAD)
+L2,DROP,Senior Lecturer in Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40124,printed raw names an organisation not in the dropped text (college); not dropped
+L1,MERGE,University and State Library of Munster,,,no-op: every matched row already at the target value
+L1,MERGE,Amity University,editors_abdc_c_current.csv,editors_abdc_c_current#9203,row already carries a different ROR https://ror.org/02exxtn84; not rematched to https://ror.org/02n9z0v62
+L1,MERGE,Amity University,editors_abdc_c_current.csv,editors_abdc_c_current#15440,row already carries a different ROR https://ror.org/02exxtn84; not rematched to https://ror.org/02n9z0v62
+L2,DROP,Clinical Professor,editors_abdc_a_current.csv,editors_abdc_a_current#96,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Clinical Professor,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8251,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Clinical Professor,editors_ft50_current.csv,editors_ft50_current#8251,printed raw names an organisation not in the dropped text (school); not dropped
+L2,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_abdc_a_star_current.csv,editors_abdc_a_star_current#2613,"printed raw names an organisation not in the dropped text (school, university); not dropped"
+L2,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#9738,"printed raw names an organisation not in the dropped text (school, university); not dropped"
+L2,DROP,Rolls-Royce Commonwealth Commerce Professor,editors_ft50_current.csv,editors_ft50_current#9738,"printed raw names an organisation not in the dropped text (school, university); not dropped"
+L2,DROP,Professor of Business Information Systems,editors_abdc_b_current.csv,editors_abdc_b_current#40032,printed raw names an organisation not in the dropped text (university); not dropped
+L2,DROP,Associate Professor of Software Engineering,editors_abdc_b_current.csv,editors_abdc_b_current#40241,printed raw names an organisation not in the dropped text (college); not dropped
+L1,MERGE,Jönköping International Business School (JIBS),,,no-op: every matched row already at the target value
+L1,MERGE,CISET- International Center of Studies on Tourism Economics,,,no-op: every matched row already at the target value
+L1,MERGE,Sao Paulo State University (UNESP),,,no-op: every matched row already at the target value
+L2,DROP,Team Leader and Coordinator of Labor Market and Social Policy in Europe,editors_abdc_b_current.csv,editors_abdc_b_current#9300,"printed raw names an organisation not in the dropped text (institute, university); not dropped"
+L1,MERGE,W.L. Gore and Associates,,,no-op: every matched row already at the target value
+L1,MERGE,China Europe Intl. Bus. School (CEIBS),editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,row already carries a different ROR https://ror.org/017zhmm22; not rematched to https://ror.org/00c3bg218
+L2,DROP,Elisha Gray II Professor of Engineering Systems,editors_abdc_a_current.csv,editors_abdc_a_current#115,printed raw names an organisation not in the dropped text (center); not dropped
+L2,DROP,Elisha Gray II Professor of Engineering Systems,editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#8270,printed raw names an organisation not in the dropped text (center); not dropped
+L2,DROP,Elisha Gray II Professor of Engineering Systems,editors_ft50_current.csv,editors_ft50_current#8270,printed raw names an organisation not in the dropped text (center); not dropped
+L1,MERGE,"Public Policy Association of Japan (Keio University of Tokyo, Japan)",,,no-op: every matched row already at the target value
+L1,MERGE,Presidency University Kolkata,,,no-op: every matched row already at the target value
+L1,MERGE,Российский экономический университет им. Г.В.Плеханова,editors_abdc_c_current.csv,editors_abdc_c_current#23725,non-Latin printed name kept as-is (not translated by MERGE/RENAME)
+L1,MERGE,Экономическая экспертная группа,editors_abdc_c_current.csv,editors_abdc_c_current#23689,non-Latin printed name kept as-is (not translated by MERGE/RENAME)
+L1,MERGE,Институт Соединенных Штатов Америки и Канады РАН,editors_abdc_c_current.csv,editors_abdc_c_current#23732,non-Latin printed name kept as-is (not translated by MERGE/RENAME)
+L1,MERGE,Финансовый университет при Правительстве РФ,editors_abdc_c_current.csv,editors_abdc_c_current#23733,non-Latin printed name kept as-is (not translated by MERGE/RENAME)
+L4,SET_COUNTRY,Republic Bank Limited,,,no-op: every matched row already at the target value
+L4,SET_COUNTRY,Putnam,,,no-op: every matched row already at the target value
+L4,SET_COUNTRY,Emerald Group Publishing,,,no-op: every matched row already at the target value
+L4,SET_COUNTRY,IMD,,,no-op: every matched row already at the target value
+L4,SET_COUNTRY,Emerald Publishing,,,no-op: every matched row already at the target value
+L4,SET_COUNTRY,CITY/Sheffield,,,no-op: every matched row already at the target value
