@@ -2648,9 +2648,14 @@ def assert_aggregates(directory: dict, journals: dict, institutions: dict) -> No
     # seats keep the printed organization string, which is often already the
     # display name of a ROR row (e.g. a blanked 'Concordia University' next
     # to the matched one), so shared display names are 125.
-    if duplicate_names != 125:
+    # editors_inst_punct_split_20261110 rematches exact-name splits (a blank-ROR
+    # printed name next to the ROR row of the same name) onto that existing
+    # ROR twin, so 56 of those shared names collapse. The ambiguous ones
+    # (Queen's, American, Northeastern, Concordia, ...) were left for review.
+    # Shared display names are 69.
+    if duplicate_names != 69:
         raise SystemExit(
-            f"Institutions that share a display name: {duplicate_names}, expected 125. "
+            f"Institutions that share a display name: {duplicate_names}, expected 69. "
             f"Shared: {duplicate_name_list}"
         )
     places = {fold_match(name) for name in institutions["countries"] if name}

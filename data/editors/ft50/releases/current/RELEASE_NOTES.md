@@ -1,4 +1,19 @@
-# editors_inst_drop_rematch_20261110
+# editors_inst_punct_split_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_inst_drop_rematch_20261110` (Directory PR #46) for the Directory current panels. It is a panel-only Institutions cleanup on FT50: leftover punctuation-start junk is blanked (DROP), high-confidence name splits are rematched onto existing panel ROR twins (REMATCH; printed `raw_affiliation` kept; `canonical_name` set to the twin `ror_name`), and three name-only variants are unified with a blank ROR (UNIFY). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_punct_split_20261110/`. Report: `docs/reports/INST_PUNCT_SPLIT_20261110.md`.
+
+**What changed.** Both FT50 files are patched by the collector delta applied onto the published Directory copy of `editors_inst_drop_rematch_20261110` (13 slim + 20 with_ror REMATCH rows; no DROP or UNIFY). The collector copies were not overlaid. Directory guardrail restores, contact scrub, and the FT50 Top 5 alignment stay. `*_with_profile_pilot.csv` is not published.
+
+| File | Rows | `ror_id` (was) | `raw_affiliation` |
+|---|---:|---:|---:|
+| `editors_ft50_current.csv` | 10,047 | 9,620 (9,607) | 9,936 |
+| `editors_ft50_current_with_ror.csv` | 10,047 | 9,699 (9,679) | 9,941 |
+
+`11KBW`, UNSW Sydney, and INSEAD stay, with INSEAD France `00ghzk478` and Singapore `05ynf4333` separate. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,434 (6,381 with a ROR id), were 15,612 / 6,381. Countries stay 159. 12,066 appointments have no institution (were 12,052). Shared display names 69 (were 125).
+
+## Previous freeze: editors_inst_drop_rematch_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. Long table: `data/editors/releases/editors_inst_drop_rematch_20261110/editor_affiliations.csv.gz`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
 

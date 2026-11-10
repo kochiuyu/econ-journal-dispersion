@@ -1,4 +1,21 @@
-# editors_inst_drop_rematch_20261110
+# editors_inst_punct_split_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_inst_drop_rematch_20261110` (Directory PR #46) for the Directory current panels. It is a panel-only Institutions cleanup on ABDC A*, A, B, and C: leftover punctuation-start junk is blanked (DROP), high-confidence name splits are rematched onto existing panel ROR twins (REMATCH; printed `raw_affiliation` kept; `canonical_name` set to the twin `ror_name`), and three name-only variants are unified with a blank ROR (UNIFY). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_punct_split_20261110/`. Report: `docs/reports/INST_PUNCT_SPLIT_20261110.md`.
+
+**What changed.** All four ABDC current panels are patched by the collector delta applied onto the published Directory copy of `editors_inst_drop_rematch_20261110`: A* 88 REMATCH; A 89 REMATCH; B 7 DROP + 88 REMATCH + 2 UNIFY (`39 Essex Chambers`); C 7 DROP + 79 REMATCH + 2 UNIFY (`Izmir Bakircay University`; `Global Labor Organization (GLO), Essen, Germany`). The collector copies were not overlaid. Directory guardrail restores and contact scrub stay. `*_with_profile_pilot.csv` is not published.
+
+| File | Rows | `ror_id` (was) | `raw_affiliation` (was) | Empty `editor_name` |
+|---|---:|---:|---:|---:|
+| `editors_abdc_a_star_current.csv` | 25,596 | 23,394 (23,306) | 24,202 (24,202) | 1 |
+| `editors_abdc_a_current.csv` | 45,889 | 40,569 (40,480) | 43,159 (43,159) | 1 |
+| `editors_abdc_b_current.csv` | 42,558 | 36,930 (36,842) | 40,187 (40,190) | 11 |
+| `editors_abdc_c_current.csv` | 27,719 | 21,537 (21,458) | 24,845 (24,851) | 6 |
+
+`faculty_profile_url` stays 12,522 / 6,236 / 3,509 / 1,379. `11KBW`, UNSW Sydney, and INSEAD stay. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,434 (6,381 with a ROR id), were 15,612 / 6,381. Countries stay 159. 12,066 appointments have no institution (were 12,052). Shared display names 69 (were 125).
+
+## Previous freeze: editors_inst_drop_rematch_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup on ABDC A*, A, B, and C (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_drop_rematch_20261110/`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
 

@@ -1,4 +1,20 @@
-# editors_inst_drop_rematch_20261110
+# editors_inst_punct_split_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_inst_drop_rematch_20261110` (Directory PR #46) for the Directory current panels. It is a panel-only Institutions cleanup on the AJG-gap files: leftover punctuation-start junk is blanked (DROP), high-confidence name splits are rematched onto existing panel ROR twins (REMATCH; printed `raw_affiliation` kept; `canonical_name` set to the twin `ror_name`), and three name-only variants are unified with a blank ROR (UNIFY). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_punct_split_20261110/`. Report: `docs/reports/INST_PUNCT_SPLIT_20261110.md`.
+
+**What changed.** All three AJG-gap current panels are patched by the collector delta applied onto the published Directory copy of `editors_inst_drop_rematch_20261110` (prio43 9, ajg2 14, ajg1 51 REMATCH rows; no DROP or UNIFY). The twelve ajg1 navigation rows (including Vincent Pan) and the two ajg2 Policy Design and Practice navigation rows stay out; the collector ajg1 file still has ten of those extra keys, which were not added. Published ajg1 remains 12,316 and ajg2 remains 5,462.
+
+| File | Rows | `ror_id` (was) | Nonempty `raw_affiliation` | Empty `editor_name` |
+|---|---:|---:|---:|---:|
+| `editors_abs_ajg_gap_prio43_current.csv` | 3,104 | 2,545 (2,536) | 2,723 | 3 |
+| `editors_abs_ajg_gap_ajg2_current.csv` | 5,462 | 4,744 (4,730) | 5,224 | 0 |
+| `editors_abs_ajg_gap_ajg1_current.csv` | 12,316 | 8,694 (8,643) | 9,997 | 15 |
+
+`faculty_profile_url` stays prio43 82, ajg2 386, ajg1 615. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,434 (6,381 with a ROR id), were 15,612 / 6,381. Countries stay 159. 12,066 appointments have no institution (were 12,052). Shared display names 69 (were 125).
+
+## Previous freeze: editors_inst_drop_rematch_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup on the AJG-gap files (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_drop_rematch_20261110/`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
 
