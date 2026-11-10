@@ -1,4 +1,19 @@
-# editors_nonlatin_inst_20261110
+# editors_inst_drop_rematch_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. Long table: `data/editors/releases/editors_inst_drop_rematch_20261110/editor_affiliations.csv.gz`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
+
+**What changed.** Both FT50 files are patched by the collector delta applied onto the published Directory copy of `editors_nonlatin_inst_20261110`. Directory guardrail restores, contact scrub, held-out AJG1 navigation rows, and the FT50 Top 5 alignment stay. The collector copies were not overlaid, because they predate those Directory-only edits. Slim `editors_ft50_current.csv` also blanks Tiffany Trzebiatowski's Journal of Management Studies CV (the collector only patched the with_ror copy of that row). Elizabeth M. Lee's slim rematch to Saint Joseph's University is not copied onto with_ror (that file already blanks the id as PA vs NY ambiguous).
+
+| File | Rows | `ror_id` (was) | `raw_affiliation` (was) |
+|---|---:|---:|---:|
+| `editors_ft50_current.csv` | 10,047 | 9,607 (9,600) | 9,936 (9,941) |
+| `editors_ft50_current_with_ror.csv` | 10,047 | 9,679 (9,673) | 9,941 (9,946) |
+
+`11KBW`, UNSW Sydney, and INSEAD stay, with INSEAD France `00ghzk478` and Singapore `05ynf4333` separate. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,612 (6,381 with a ROR id), were 16,234 / 6,381. Countries stay 159. 12,052 appointments have no institution (were 11,991).
+
+## Previous freeze: editors_nonlatin_inst_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_ror_consistency3b_20261101` (Directory PR #41) for the Directory current panels. The files in this folder are unchanged. The only panel edit is on ABDC C (19 bio/CV blurbs blanked, 60 rematches onto existing Latin ROR twins, printed non-Latin names kept). Long table: `data/editors/releases/editors_nonlatin_inst_20261110/editor_affiliations.csv.gz`. Report: `docs/reports/NONLATIN_INST_20261110.md`.
 

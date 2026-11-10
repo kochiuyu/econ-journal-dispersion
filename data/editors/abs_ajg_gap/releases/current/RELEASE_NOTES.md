@@ -1,4 +1,20 @@
-# editors_nonlatin_inst_20261110
+# editors_inst_drop_rematch_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup on the AJG-gap files (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_drop_rematch_20261110/`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
+
+**What changed.** All three AJG-gap current panels are patched by the collector delta applied onto the published Directory copy of `editors_nonlatin_inst_20261110`. The twelve ajg1 navigation rows (including Vincent Pan) and the two ajg2 Policy Design and Practice navigation rows stay out; the collector ajg1 file still has ten of those extra keys, which were not added. Directory guardrail restores and contact scrub stay. Published ajg1 remains 12,316 and ajg2 remains 5,462. One GAP row, `The Universidad Nacional Experimental Politécnica`, keeps its printed name and a blank ROR.
+
+| File | Rows | `ror_id` (was) | Nonempty `raw_affiliation` (was) | Empty `editor_name` |
+|---|---:|---:|---:|---:|
+| `editors_abs_ajg_gap_prio43_current.csv` | 3,104 | 2,536 (2,534) | 2,723 (2,723) | 3 |
+| `editors_abs_ajg_gap_ajg2_current.csv` | 5,462 | 4,730 (4,686) | 5,224 (5,224) | 0 |
+| `editors_abs_ajg_gap_ajg1_current.csv` | 12,316 | 8,643 (8,454) | 9,997 (9,998) | 15 |
+
+`faculty_profile_url` stays prio43 82, ajg2 386, ajg1 615. `11KBW`, UNSW Sydney, and INSEAD stay. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,612 (6,381 with a ROR id), were 16,234 / 6,381. Countries stay 159. 12,052 appointments have no institution (were 11,991).
+
+## Previous freeze: editors_nonlatin_inst_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_ror_consistency3b_20261101` (Directory PR #41) for the Directory current panels. The files in this folder are unchanged. The only panel edit is on ABDC C (19 bio/CV blurbs blanked, 60 rematches onto existing Latin ROR twins, printed non-Latin names kept). Long table: `data/editors/releases/editors_nonlatin_inst_20261110/editor_affiliations.csv.gz`. Report: `docs/reports/NONLATIN_INST_20261110.md`.
 
