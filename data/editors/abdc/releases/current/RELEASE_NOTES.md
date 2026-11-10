@@ -1,4 +1,21 @@
-# editors_nonlatin_inst_20261110
+# editors_inst_drop_rematch_20261110
+
+Published 2026-11-10 (Asia/Taipei). This supersedes `editors_nonlatin_inst_20261110` (Directory PR #45) for the Directory current panels. It is a panel-only Institutions cleanup on ABDC A*, A, B, and C (DROP junk bios and address lines; REMATCH singleton variants onto existing panel ROR twins; printed `raw_affiliation` kept). REVIEW and KEEP flags were excluded. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_inst_drop_rematch_20261110/`. Report: `docs/reports/INST_DROP_REMATCH_20261110.md`.
+
+**What changed.** All four ABDC current panels are patched by the collector delta applied onto the published Directory copy of `editors_nonlatin_inst_20261110`. Directory guardrail restores, contact scrub, and held-out AJG1 navigation rows stay. The collector copies were not overlaid, because they predate those Directory-only edits. `*_with_profile_pilot.csv` is not published.
+
+| File | Rows | `ror_id` (was) | `raw_affiliation` (was) | Empty `editor_name` |
+|---|---:|---:|---:|---:|
+| `editors_abdc_a_star_current.csv` | 25,596 | 23,306 (23,285) | 24,202 (24,210) | 1 |
+| `editors_abdc_a_current.csv` | 45,889 | 40,480 (40,410) | 43,159 (43,164) | 1 |
+| `editors_abdc_b_current.csv` | 42,558 | 36,842 (36,765) | 40,190 (40,194) | 11 |
+| `editors_abdc_c_current.csv` | 27,719 | 21,458 (21,297) | 24,851 (24,887) | 6 |
+
+`faculty_profile_url` stays 12,522 / 6,236 / 3,509 / 1,379. `11KBW`, UNSW Sydney, and INSEAD stay. Invented ROR ids: 0.
+
+**Directory.** Appointments 162,575. Editors 112,718. Journals 2,853. Institutions 15,612 (6,381 with a ROR id), were 16,234 / 6,381. Countries stay 159. 12,052 appointments have no institution (were 11,991).
+
+## Previous freeze: editors_nonlatin_inst_20261110
 
 Published 2026-11-10 (Asia/Taipei). This supersedes `editors_ror_consistency3b_20261101` (Directory PR #41) for the Directory current panels. It is a panel-only Institutions fix for non-Latin-start names on ABDC C. There is no site filter in `scripts/build_site.py`. The long table and change log are in `data/editors/releases/editors_nonlatin_inst_20261110/`. Report: `docs/reports/NONLATIN_INST_20261110.md`.
 
