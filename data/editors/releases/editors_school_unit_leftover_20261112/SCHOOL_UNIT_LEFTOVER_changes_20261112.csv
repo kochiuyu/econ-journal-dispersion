@@ -1,0 +1,105 @@
+file,editor_row_key,editor_name,item,action,field,old,new,note
+editor_affiliations.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,long sync
+editor_affiliations.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,long sync
+editor_affiliations.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editors_abdc_a_current.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_current.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_current.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_current.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_current.csv,editors_abdc_a_current#40739,Patia McGrath,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_current.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,lat,,29.87819,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,lon,,121.54945,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#4924,Patrick Chau,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,lat,,29.87819,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,lon,,121.54945,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_current.csv,editors_abdc_a_current#5221,Y. Ye,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,school-unit leftover rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#14113,Daan van Knippenberg,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#24564,Joep Cornelissen,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#18143,Arjen Slangen,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,ror_name,,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,lat,,51.45625,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,lon,,-0.97113,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30182,Yipeng Liu,REMATCH,SET_CAMPUS,canonical_name,Henley Business School,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,ror_name,,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,lat,,51.45625,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,lon,,-0.97113,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#30664,Yipeng Liu,REMATCH,SET_CAMPUS,canonical_name,Henley Business School,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/05v62cm79,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,ror_name,,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,lat,,51.45625,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,lon,,-0.97113,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#31832,Abby Ghobadian,REMATCH,SET_CAMPUS,canonical_name,Henley Business School,University of Reading,school-unit leftover rematch -> University of Reading https://ror.org/05v62cm79 (United Kingdom)
+editors_abdc_b_current.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#32487,Arjen Slangen,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_b_current.csv,editors_abdc_b_current#39125,Abe de Jong,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#20763,Yvonne van Everdingen,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/057w15z03,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,ror_name,,Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,lat,,51.9225,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,lon,,4.47917,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
+editors_abdc_c_current.csv,editors_abdc_c_current#22989,René de Koster,REMATCH,SET_CAMPUS,canonical_name,"Rotterdam School of Management, Erasmus University",Erasmus University Rotterdam,school-unit leftover rematch -> Erasmus University Rotterdam https://ror.org/057w15z03 (Netherlands)
