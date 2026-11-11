@@ -1,0 +1,1 @@
+editors_theory_decision_title_20261112: 72/72 Theory and Decision display titles shortened to "Theory and Decision" on editors_abdc_a_current; journal_name_abdc left as the long ABDC string; long-table journal synced on 77 rows; 0 skips. Directory 11,077/6,698/6,698/169/43 unchanged (shared-name guard stays 43). QC ok. Unpublished. catalog_abdc_a.csv not edited.
