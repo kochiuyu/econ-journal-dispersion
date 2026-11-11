@@ -1,4 +1,14 @@
-# editors_campus_conflict_fix_20261111
+# editors_theory_decision_title_20261112
+
+Published 2026-11-12 (Asia/Taipei). This supersedes `editors_campus_conflict_fix_20261111` (PR #64) for the Directory current panels. It is a keyed, user-approved Collector freeze of the Theory and Decision display-title rename, taken through its `THEORY_DECISION_TITLE_directory_diff_20261112.csv` (keyed on `editor_row_key`; 72 cells, 0 missing keys, 0 old-value mismatches). All 72 of 72 recommendation rows were applied, all on `editors_abdc_a_current` for `theory_decision_international_journal`. The display field `journal` is shortened from “Theory and Decision: an international journal for multidisciplinary advances in decision sciences” to “Theory and Decision”. `journal_name_abdc` is left as the long ABDC listed string. No affiliation, ROR, name, or role edits. Other subtitled ABDC titles were not in the file and were not renamed. The ABDC A catalog `journal_name` is shortened to match. No pilot files are published or changed. No emails or phones.
+
+Rows changed: A 72; `ror_id` 23,886 / 41,650 / 38,201 / 22,633 unchanged. Row counts unchanged (25,596 / 45,889 / 42,558 / 27,719). FT50 and AJG-gap panels are unchanged.
+
+**Directory.** Institutions 11,077 (unchanged), 6,698 with a ROR id (unchanged; distinct 6,698). Countries 169 (unchanged). 13,415 appointments have no institution (unchanged). Shared display names 43 (unchanged; the build guard stays 43). Appointments 162,575, editors 112,719, journals 2,853 (unchanged).
+
+## Previous freeze
+
+### editors_campus_conflict_fix_20261111
 
 Published 2026-11-11 (Asia/Taipei). This supersedes `editors_school_unit_rematch_20261111` (PR #63) for the Directory current panels. It is a keyed, user-approved Collector freeze of the seven campus-conflict rematches skipped in that freeze, taken through its `CAMPUS_CONFLICT_directory_diff_20261111.csv` (keyed on `editor_row_key`; 35 cells, 0 missing keys, 0 old-value mismatches). No raw-text edits. All 7 of 7 recommendation rows were applied. Four NUBS China/Ningbo/Zhejiang rows (`#18543` Kingsley Dogah, `#20062` Jie Wang, `#803` Frithjof Arp, `#3138` Bruno Deschamps) go to University of Nottingham Ningbo China `03y4dt428`. Three Newcastle Business School Australia rows (`#18450` Marianna Sigala, `#27171` Alison Dean, `#24283` Mojtaba Barari) go to University of Newcastle Australia `00eae9z71`. UK Nottingham `01ee9ar58` and Northumbria `049e6bc10` were not assigned. Both target RORs were API-verified and already on the published panels; no new ROR. `raw_affiliation` is left as the printed masthead. Two other unmatched NUBS China rows (`#4924` Patrick Chau, `#5221` Y. Ye) were not in the file and were left as printed, so the “Nottingham University Business School China” display name remains. Held campus and two-place rows stay as printed. No pilot files are published or changed. No emails or phones.
 
