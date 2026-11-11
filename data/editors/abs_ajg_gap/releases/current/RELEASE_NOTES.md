@@ -1,4 +1,14 @@
-# editors_open_items_followup_20261111
+# editors_nielsen_searca_drop_20261111
+
+Published 2026-11-11 (Asia/Taipei). This supersedes `editors_open_items_followup_20261111` (PR #57) for the Directory current panels. It is a keyed, user-approved Collector freeze of two Marks-style DROPs, taken through its `NIELSEN_SEARCA_DROP_directory_diff_20261111.csv` (keyed on `editor_row_key`; 2 cells, 0 missing keys, 0 old-value mismatches), plus `ror_notes` carried from the freeze on those two rows. abdc_a#42676 (Nielsen) and abdc_c#15559 (SEARCA consultant) have their printed raw affiliation blanked; the original text is kept in `ror_notes` / long-table `ror_match_note`. Nielsen keeps country United States and continent North America; the SEARCA consultant row has no country or continent. Institution names and RORs were already blank. abdc_c#15558 still carries SEARCA `04qf4zf50`. Diamond Leadership Institute (abdc_b#16107) is unchanged. The abdc_a pilot twin is not published and was not changed. No emails or phones.
+
+Rows changed: prio43 0, ajg2 0, ajg1 0; `ror_id` 2,627 / 4,936 / 9,206 (unchanged). Row counts unchanged (ajg1 12,316, ajg2 5,462).
+
+**Directory.** Institutions 11,184 (was 11,186), 6,696 with a ROR id (unchanged; distinct 6,696). Countries 169 (unchanged). 13,415 appointments have no institution (was 13,413). Shared display names 43 (unchanged; the build guard stays 43). Appointments 162,575, editors 112,719, journals 2,853 (unchanged).
+
+Long table and change logs: `data/editors/releases/editors_nielsen_searca_drop_20261111/` (`editor_affiliations.csv.gz`, 181,449 rows; 2 parts changed, `raw_aff_part` blanked and the printed text traced in `ror_match_note`). Report: `docs/reports/NIELSEN_SEARCA_DROP_20261111.md`.
+
+## Previous freeze: editors_open_items_followup_20261111
 
 Published 2026-11-11 (Asia/Taipei). This supersedes `editors_open_items_fix_20261111` (PR #56) for the Directory current panels. It is a keyed, user-approved Collector freeze of the four open-items follow-ups, taken through its `OPEN_ITEMS_FOLLOWUP_directory_diff_20261111.csv` (keyed on `editor_row_key`; 30 cells, 0 missing keys, 0 old-value mismatches). No raw-text edits. abdc_b#16107 (Shenhar) moves from Rutgers `05vt9qd57` to Diamond Leadership Institute, Israel, with no ROR. abdc_b#39063 (Bates) is set to The University of Sydney `0384j8v12`, Australia, with UNSW `03r8z3t63` kept as the second affiliation; the UNSW master entry is unchanged. Both FT50 #4634 rows have `faculty_match_method` and `faculty_match_confidence` cleared; #4501 is untouched. Nielsen abdc_a#42676 has its institution and ROR blanked, with country United States kept. GM ajg1#4303 stays on `05addee68`. SEARCA abdc_c#15559 has its institution, ROR and country blanked; #15558 is unchanged. No pilot files are published or changed. No emails or phones.
 
