@@ -79,6 +79,7 @@
   var mobileSortEl = document.getElementById("mobile-sort");
   var mobileDirectionEl = document.getElementById("mobile-sort-direction");
   var universeRow = document.getElementById("universe-row");
+  var journalChipRow = document.getElementById("journal-chip-row");
   var form = document.getElementById("filters");
   var clearBtn = document.getElementById("clear");
   var activeFiltersEl = document.getElementById("active-filters");
@@ -178,6 +179,15 @@
     var page = Number(params.get("page"));
     var rawU = params.get("u");
     var journal = params.get("journal") || "";
+    var journalsSubset = null;
+    // journal= (Journals-page and older shared links) wins over journals=.
+    if (!journal && params.has("journals")) {
+      journalsSubset = new Set(
+        (params.get("journals") || "").split(",").map(function (name) {
+          return name.trim();
+        }).filter(Boolean)
+      );
+    }
     var aff = params.get("aff") || "";
     var universesSelected;
     var universeMode;
@@ -205,6 +215,7 @@
       continent: params.get("continent") || "",
       country: params.get("country") || "",
       journal: journal,
+      journals: journalsSubset,
       aff: aff,
       field: params.get("field") || "",
       sort: params.get("sort") || "name",
@@ -225,6 +236,12 @@
     if (state.continent) params.set("continent", state.continent);
     if (state.country) params.set("country", state.country);
     if (state.journal) params.set("journal", state.journal);
+    else if (state.journals) {
+      var journalNamesParam = Array.from(state.journals).sort(function (a, b) {
+        return collator.compare(a, b);
+      });
+      params.set("journals", journalNamesParam.join(","));
+    }
     if (state.aff) params.set("aff", state.aff);
     if (state.field) params.set("field", state.field);
     if (state.sort !== "name") params.set("sort", state.sort);
@@ -558,6 +575,120 @@
     return !mask || !!(info && (info.mask & mask));
   }
 
+  var JOURNAL_CHIP_LIMIT = 24;
+
+  function journalsInSelection(mask) {
+    if (!mask) return [];
+    var names = [];
+    SHELL.journals.forEach(function (name, index) {
+      if ((SHELL.journalMask[index] || 0) & mask) names.push(name);
+    });
+    names.sort(function (a, b) { return collator.compare(a, b); });
+    return names;
+  }
+
+  function journalChipMembers() {
+    if (state.universeMode === "none" || !state.universes.size) return [];
+    var members = journalsInSelection(selectedMask());
+    if (!members.length || members.length > JOURNAL_CHIP_LIMIT) return [];
+    return members;
+  }
+
+  function pruneJournalFilter() {
+    var mask = selectedMask();
+    if (state.journal && !journalMatchesSelection(state.journal, mask)) {
+      state.journal = "";
+    }
+    var members = journalChipMembers();
+    if (!members.length) {
+      state.journals = null;
+      return;
+    }
+    if (state.journal) {
+      if (members.indexOf(state.journal) === -1) state.journal = "";
+      state.journals = null;
+      return;
+    }
+    if (!state.journals) return;
+    // An empty set is the intentional all-off state and stays while chips still apply.
+    if (!state.journals.size) return;
+    var kept = [];
+    state.journals.forEach(function (name) {
+      if (members.indexOf(name) !== -1) kept.push(name);
+    });
+    if (kept.length === members.length) state.journals = null;
+    else if (!kept.length) state.journals = null;
+    else state.journals = new Set(kept);
+  }
+
+  function pressedJournals(members) {
+    if (state.journal) return new Set([state.journal]);
+    if (state.journals) return state.journals;
+    return new Set(members);
+  }
+
+  function toggleJournalChip(name) {
+    var members = journalChipMembers();
+    if (members.indexOf(name) === -1) return;
+    var selected = new Set(pressedJournals(members));
+    if (selected.has(name)) selected.delete(name);
+    else selected.add(name);
+    state.journal = "";
+    if (selected.size === members.length) {
+      state.journals = null;
+    } else if (selected.size === 1) {
+      state.journal = Array.from(selected)[0];
+      state.journals = null;
+    } else {
+      state.journals = selected;
+    }
+    state.page = 1;
+    schedule();
+  }
+
+  function renderJournalChips() {
+    if (!journalChipRow) return;
+    var members = journalChipMembers();
+    var label = document.getElementById("journal-chip-label");
+    if (!members.length) {
+      journalChipRow.hidden = true;
+      journalChipRow.querySelectorAll("button.chip").forEach(function (chip) { chip.remove(); });
+      journalChipRow.dataset.signature = "";
+      return;
+    }
+    journalChipRow.hidden = false;
+    var signature = members.join("\n");
+    if (journalChipRow.dataset.signature !== signature) {
+      journalChipRow.dataset.signature = signature;
+      journalChipRow.querySelectorAll("button.chip").forEach(function (chip) { chip.remove(); });
+      members.forEach(function (name) {
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = "chip";
+        button.dataset.journal = name;
+        button.textContent = name;
+        button.addEventListener("click", function () {
+          toggleJournalChip(name);
+        });
+        journalChipRow.appendChild(button);
+      });
+    }
+    var pressed = pressedJournals(members);
+    journalChipRow.querySelectorAll("button.chip").forEach(function (chip) {
+      var on = pressed.has(chip.dataset.journal);
+      chip.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    if (label) {
+      var nOn = pressed.size;
+      journalChipRow.setAttribute(
+        "aria-label",
+        nOn === members.length
+          ? "Journals in the selected lists, all selected"
+          : (nOn ? nOn + " of " + members.length + " journals selected" : "No journals selected")
+      );
+    }
+  }
+
   function refillJournals() {
     var mask = selectedMask();
     // Keep an explicit journal from a shared URL visible, even outside its list.
@@ -585,6 +716,7 @@
     var continent = state.continent;
     var country = state.country;
     var journal = state.journal;
+    var journalSet = (!journal && state.journals) ? state.journals : null;
     var aff = state.aff;
     var field = state.field;
     var matched = [];
@@ -596,6 +728,7 @@
       var row = rows[index];
       if (mask && (row[3] & mask) === 0) continue;
       if (journal && journalNames[row[2]] !== journal) continue;
+      if (journalSet && !journalSet.has(journalNames[row[2]])) continue;
       if (!matchesChoice(row[4] || "", aff)) continue;
       if (!matchesChoice(fieldOf(row), field)) continue;
       if (!matchesChoice(continents.values[row[6]] || "", continent)) continue;
@@ -952,23 +1085,34 @@
     if (state.universes.has(id)) state.universes.delete(id);
     else state.universes.add(id);
     syncUniverseMode();
-    if (state.journal && !journalMatchesSelection(state.journal, selectedMask())) {
-      state.journal = "";
-    }
+    pruneJournalFilter();
     state.page = 1;
     schedule();
   }
 
   function activeFilters() {
-    return [
+    var filters = [
       ["q", "Search", state.q],
-      ["role", "Role", state.role],
-      ["journal", "Journal", state.journal],
+      ["role", "Role", state.role]
+    ];
+    if (state.journal) {
+      filters.push(["journal", "Journal", state.journal]);
+    } else if (state.journals) {
+      var names = Array.from(state.journals).sort(function (a, b) {
+        return collator.compare(a, b);
+      });
+      if (!names.length) filters.push(["journals", "Journal", "None"]);
+      else names.forEach(function (name) {
+        filters.push(["journals", "Journal", name]);
+      });
+    }
+    filters = filters.concat([
       ["continent", "Continent", state.continent],
       ["country", "Country", state.country],
       ["aff", "Institution", displayedAffiliation()],
       ["field", "Field", fieldLabel(state.field)]
-    ].filter(function (filter) { return filter[2]; });
+    ]);
+    return filters.filter(function (filter) { return filter[2]; });
   }
 
   function renderActiveFilters() {
@@ -993,6 +1137,19 @@
         var hadFocus = document.activeElement === button;
         if (filter[3]) {
           toggleUniverse(key);
+        } else if (key === "journals") {
+          if (value === "None" || !state.journals) {
+            state.journals = null;
+          } else if (state.journals) {
+            state.journals.delete(filter[2]);
+            if (!state.journals.size) state.journals = null;
+            else if (state.journals.size === 1) {
+              state.journal = Array.from(state.journals)[0];
+              state.journals = null;
+            }
+          }
+          state.page = 1;
+          schedule();
         } else {
           if (key === "q") window.clearTimeout(debounce);
           state[key] = "";
@@ -1008,7 +1165,10 @@
 
   function resetSearchFilters() {
     window.clearTimeout(debounce);
-    activeFilters().forEach(function (filter) { state[filter[0]] = ""; });
+    activeFilters().forEach(function (filter) {
+      if (filter[0] !== "journals") state[filter[0]] = "";
+    });
+    state.journals = null;
     state.page = 1;
     closeSuggest();
   }
@@ -1016,7 +1176,9 @@
   function syncControls() {
     if (document.activeElement !== qEl) qEl.value = state.q;
     roleEl.value = state.role;
+    pruneJournalFilter();
     refillJournals();
+    renderJournalChips();
     if (document.activeElement !== institutionEl) institutionEl.value = displayedAffiliation();
     pageSizeEl.value = String(state.pageSize);
     refillContinents();
@@ -1069,7 +1231,7 @@
   }
 
   function emptyMessage() {
-    if (!rows.length && state.universeMode === "none" && !state.journal && !state.aff) {
+    if (!rows.length && state.universeMode === "none" && !state.journal && !state.journals && !state.aff) {
       return "Select a list to load appointments.";
     }
     return "No editors match these filters.";
@@ -1206,7 +1368,7 @@
   }
 
   function loadedScopeNote() {
-    if (state.universeMode !== "none" || state.journal || state.aff) return "";
+    if (state.universeMode !== "none" || state.journal || state.journals || state.aff) return "";
     for (var i = 0; i < universes.length; i++) {
       if (!isCovered(universes[i].id)) return " Loaded lists only.";
     }
@@ -1274,6 +1436,7 @@
   });
   journalEl.addEventListener("change", function () {
     state.journal = journalEl.value;
+    state.journals = null;
     state.page = 1;
     schedule();
   });
