@@ -1,4 +1,21 @@
-# editors_campus_conflict_fix_20261111
+# editors_leftover_fixes_20261112
+
+Published 2026-11-12 (Asia/Taipei). This supersedes `editors_school_unit_leftover_20261112` (PR #68) for the Directory current panels; `editors_school_unit_leftover_20261112` and `editors_theory_decision_title_20261112` (PR #67) did not change the AJG-gap files. It is a keyed, user-approved Collector freeze, taken through its `LEFTOVER_FIXES_directory_diff_20261112.csv` (keyed on `editor_row_key`; 24 cells, 0 missing keys, 0 old-value mismatches) and applied cell by cell from its change log on published keys.
+
+- Three AJG1 UK Henley rows (#1185, #2555 Abby Ghobadian; #2583 Marc Day) → University of Reading `05v62cm79`, United Kingdom. `raw_affiliation` stays “Henley Management College, UK”. Henley Africa (ABDC B #18374) is untouched.
+- AJG2 #5449 Sônia Miriam Draibe (JLAS) → Universidade Estadual de Campinas (UNICAMP) `04wffgt70`, Brazil; `affiliation_count` 0 → 1. `raw_affiliation` is left blank (not invented); the printed text is in `ror_notes`.
+- AJG2 #5450, the JLAS phantom whose `editor_name` was “Universidade Estadual de Campinas, Brazil”, is blanked Marks-style and kept as a row; the text is in `ror_notes`. The site build drops blank-name rows with no ROR, so `AJG_GAP_FILES` `ajg2` `expected_dropped` in `scripts/build_site.py` is now 1 (was 0).
+- Neither AJG2 key has a long-table part; none was added. JLAS neighbours #5448 and #5451 are unchanged.
+
+Both target RORs were API-verified and already on the panels; no new ROR. No pilot files are published or changed. No emails or phones.
+
+Rows changed: prio43 0, ajg2 2, ajg1 3; `ror_id` 2,627 / 4,950 / 9,255 (was 2,627 / 4,949 / 9,252). Row counts unchanged (3,104 / 5,462 / 12,316); empty `editor_name` 3 / 1 / 15 (ajg2 was 0).
+
+**Directory.** Institutions 11,074 (was 11,075), 6,698 with a ROR id (unchanged; distinct 6,698). Countries 169 (unchanged). 13,413 appointments have no institution (was 13,415). Shared display names 43 (unchanged; the build guard stays 43). Appointments 162,574 (was 162,575), editors 112,718 (was 112,719), journals 2,853 (unchanged). The drop of one institution, appointment and editor is the blanked JLAS phantom #5450.
+
+Long table and change logs: `data/editors/releases/editors_leftover_fixes_20261112/` (`editor_affiliations.csv.gz`, 181,449 rows; 877 parts changed: `ror_country` synced from the panel on 874 (panel–long mismatches now 0), `ror_id` / `ror_name` / `is_panel_ror` / `ror_match_note` on the 3 Henley parts; no `raw_aff_part` edits). Report: `docs/reports/LEFTOVER_FIXES_20261112.md`.
+
+## Previous freeze: editors_campus_conflict_fix_20261111
 
 Published 2026-11-11 (Asia/Taipei). This supersedes `editors_school_unit_rematch_20261111` (PR #63) for the Directory current panels. It is a keyed, user-approved Collector freeze of the seven campus-conflict rematches skipped in that freeze, taken through its `CAMPUS_CONFLICT_directory_diff_20261111.csv` (keyed on `editor_row_key`; 35 cells, 0 missing keys, 0 old-value mismatches). No raw-text edits. All 7 of 7 recommendation rows were applied. Four NUBS China/Ningbo/Zhejiang rows (`#18543` Kingsley Dogah, `#20062` Jie Wang, `#803` Frithjof Arp, `#3138` Bruno Deschamps) go to University of Nottingham Ningbo China `03y4dt428`. Three Newcastle Business School Australia rows (`#18450` Marianna Sigala, `#27171` Alison Dean, `#24283` Mojtaba Barari) go to University of Newcastle Australia `00eae9z71`. UK Nottingham `01ee9ar58` and Northumbria `049e6bc10` were not assigned. Both target RORs were API-verified and already on the published panels; no new ROR. `raw_affiliation` is left as the printed masthead. Two other unmatched NUBS China rows (`#4924` Patrick Chau, `#5221` Y. Ye) were not in the file and were left as printed, so the “Nottingham University Business School China” display name remains. Held campus and two-place rows stay as printed. No pilot files are published or changed. No emails or phones.
 
