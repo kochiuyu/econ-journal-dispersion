@@ -141,6 +141,14 @@
         Country and continent are the most common ROR values on those appointments.
       </p>
       <p>
+        The Institutions table follows ROR.
+        A school, faculty, or center is its own row when ROR gives it its own id (for example IESE Business School or Ivey Business School).
+        If ROR has no record for that unit, the appointment is assigned to the parent university (for example Harvard Business School to Harvard University).
+        Standalone schools that are themselves the institution, such as Copenhagen Business School or INSEAD, stay as their own rows.
+        Distinct campuses stay distinct (for example the three INSEAD campuses, or University of Nottingham Ningbo China).
+        Two-place affiliations are left as printed.
+      </p>
+      <p>
         <span id="about-unmatched">Appointments with no named institution are omitted.</span>
         <span id="about-ror"></span>
         Opening a name filters the directory to that affiliation and, when the row has one, that country.
