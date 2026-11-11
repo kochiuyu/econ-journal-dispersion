@@ -1,0 +1,1 @@
+editors_coinflip_holds_fix_20261111: 158/187 coin-flip hold placements applied (29 already at target); 30 RORs API-verified (1 new: Concordia Irvine 0028kf729); NIT Hamirpur not in file and not applied; Saint Mary's left on Halifax. Directory 11,184/6,696/6,696/169/43 -> 11,175/6,698/6,698/169/43 (shared-name guard stays 43). QC ok. Unpublished.
