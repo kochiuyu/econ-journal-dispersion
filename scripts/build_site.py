@@ -3,7 +3,7 @@
 
 The site lists current FT50 and ABDC editorial-board appointments, plus
 AJG-gap boards for journals that are not already in those freezes.
-core49 is not a source. Authors are not included.
+core49 is not a source.
 
 Identity
 --------

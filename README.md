@@ -1,6 +1,6 @@
 # econ-journal-dispersion
 
-Public research data for **Geographic Dispersion** work on economics (and related) journals.
+Public research data on editorial boards, journal catalogs, and rankings for economics (and related) journals.
 
 **Repository:** https://github.com/kochiuyu/econ-journal-dispersion
 
@@ -8,13 +8,13 @@ Public research data for **Geographic Dispersion** work on economics (and relate
 
 ## What this repo is
 
-Analysis-friendly **catalogs + release panels** only. Use the files under `data/*/releases/` for papers and coauthor analysis. Scrapes, HTML caches, RePEc dumps, and collector scripts stay in separate workspaces and are **not** versioned here.
+Analysis-friendly **catalogs + release panels** only. Use the files under `data/*/releases/` for papers and analysis. Scrapes, HTML caches, RePEc dumps, and collector scripts stay in separate workspaces and are **not** versioned here.
 
 ## Journal universes
 
 | Catalog | Path | Role |
 |---------|------|------|
-| **core49** | `journals/catalog_core49.csv` | Geographic Dispersion core economics journals |
+| **core49** | `journals/catalog_core49.csv` | Core economics journals in this catalog |
 | **FT50** | `journals/catalog_ft50.csv` | Financial Times Research rank journals |
 | **ABDC** | `journals/catalog_abdc_{a_star,a,b,c}.csv` | 2025 ABDC Journal Quality List by rating |
 | **Top 5** | `journals/catalog_top5.csv` | AER, Econometrica, JPE, QJE, and ReStud. Subset tag on the FT50 current release |
@@ -41,7 +41,7 @@ data/
     ft50/releases/current/
     abdc/releases/current/
     abs_ajg_gap/releases/current/   # AJG journals not already in the FT50/ABDC board freezes
-  authors/           # STATUS only — stream still in progress (no 1GB caches here)
+  authors/           # leftover STATUS only; not part of this site
   affiliations/
     releases/canonical/   # TOC-first articles / affiliations / issues
 ```
@@ -85,7 +85,7 @@ Every current editor CSV keeps `board_urls` and `board_url_count` next to each o
 | Editors — AJG gap | Current-board panels in `releases/current/` — freeze `editors_campus_conflict_fix_20261111` (campus-conflict rematches, no AJG-gap panel rows changed; `ror_id` 2,627 / 4,949 / 9,252 unchanged); before it, `editors_school_unit_rematch_20261111` (school-unit rematches on prio43 1, ajg2 13, ajg1 44 rows; `ror_id` 2,627 / 4,949 / 9,252 (was 2,627 / 4,938 / 9,211)); before it, `editors_coinflip_holds_fix_20261111` (coin-flip hold placements on prio43 0, ajg2 2, ajg1 6 rows; `ror_id` 2,627 / 4,938 / 9,211 (was 2,627 / 4,936 / 9,206)); before it, `editors_nielsen_searca_drop_20261111` (Nielsen/SEARCA Marks DROP, no AJG-gap panel rows changed; `ror_id` 2,627 / 4,936 / 9,206 unchanged); before it, `editors_open_items_followup_20261111` (open-items follow-up, no AJG-gap panel rows changed; `ror_id` 2,627 / 4,936 / 9,206 unchanged); before it, `editors_open_items_fix_20261111` (open-items fix on prio43 1, ajg2 3, ajg1 7 rows; `ror_id` 2,627 / 4,936 / 9,206); before it, `editors_post_fullreview_fix_20261111` (post-full-review fix on prio43 22, ajg2 41, ajg1 114 rows; `ror_id` 2,627 / 4,933 / 9,201); before it, `editors_full_review_resolved_fix_20261111` (with `editors_full_review_fix_20261111`: full-review fix (prio43 160, ajg2 407, ajg1 812 rows; `ror_id` 2,610 / 4,898 / 9,113); before it, `editors_raw_leak_fix_20261110`: raw-leak fix on prio43 3, ajg2 6, ajg1 13 rows; `ror_id` 2,553 / 4,777 / 8,750; before it, `editors_raw_drift_fix_20261110`: raw-drift fix on prio43 2, ajg2 1, ajg1 1 rows; `ror_id` 2,553 / 4,777 / 8,750; before it, `editors_post_review_fix_20261110`: post-review fix on prio43 1, ajg2 16, ajg1 17 rows; `ror_id` 2,551 / 4,776 / 8,750; before it, `editors_review_resolved_fix_20261110`: review-resolved fix on prio43 9, ajg2 23, ajg1 56 rows; `ror_id` 2,550 / 4,770 / 8,745; before it, weird-name fix on prio43 22, ajg2 54, ajg1 81 rows; `ror_id` 2,547 / 4,750 / 8,708; before it, country-misprint fix on prio43 1, ajg1 2 rows; before it, trailing-country fix on prio43 52, ajg2 198, ajg1 842 rows; ajg1 `ror_id` 8,700; prio43 and ajg2 unchanged from `editors_tokyo_gatech_fix_20261110`; prio43 3,104, ajg2 5,462, ajg1 12,316 rows; `faculty_profile_url` prio43 82, ajg2 386, ajg1 615; empty `editor_name` is 3 / 0 / 15; `ror_id` 2,546 / 4,746 / 8,698; ajg1 was 8,697). The twelve ajg1 navigation rows (including Vincent Pan) and the two ajg2 Policy Design and Practice navigation rows stay out, as do the fourteen drop-quality chrome rows |
 | Editors — core49 | Pinned release `releases/editors_backfill_scale_ror_20261031/` (15,446 rows, 39 journals, 301 journal-years). Not read by the site. See `data/editors/core49/STATUS.md` for coverage gaps |
 | Affiliations (core49 TOC spine) | Canonical articles / affiliations / issues under `releases/canonical/` |
-| Authors (core49) | **In progress** — see `data/authors/STATUS.md`; no analysis dump yet |
+| Authors (core49) | Leftover status note in `data/authors/STATUS.md`; not part of this site |
 
 ## Website
 
