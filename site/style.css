@@ -121,6 +121,8 @@ select:disabled { opacity: 0.6; cursor: default; }
 .suggest button[aria-selected="true"], .suggest button:hover { background: var(--accent-soft); }
 .suggest .empty { color: var(--muted); }
 .chip[data-loaded="false"] { border-style: dashed; }
+#journal-chip-row { align-items: flex-start; }
+#journal-chip-row .chip { white-space: normal; text-align: left; }
 .chip[aria-busy="true"] { cursor: progress; }
 .section-title { font-size: 22px; margin: 26px 0 10px; }
 .universe-grid, .explore {
