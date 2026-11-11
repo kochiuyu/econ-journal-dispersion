@@ -1,0 +1,11 @@
+editors_school_unit_leftover_20261112 is frozen, unpublished, and built on PR #67 (27e1a716).
+
+It rematches 13 school-unit rows. raw_affiliation is unchanged on all of them:
+- 2 NUBS China rows → Nottingham Ningbo 03y4dt428
+- 3 UK Henley rows → Reading 05v62cm79
+- 8 RSM rows → Erasmus 057w15z03
+
+Results:
+- 0 skips; QC ok.
+- Directory: 11,077 → 11,075 institutions; 6,698/6,698/169; 43 shared names, so keep the guard at 43.
+- Path: /workspace/econ-journal-editors/releases/editors_school_unit_leftover_20261112/

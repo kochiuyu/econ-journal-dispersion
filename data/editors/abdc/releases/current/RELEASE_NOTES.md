@@ -1,4 +1,20 @@
-# editors_theory_decision_title_20261112
+# editors_school_unit_leftover_20261112
+
+Published 2026-11-12 (Asia/Taipei). This supersedes `editors_theory_decision_title_20261112` (PR #67) for the Directory current panels. It is a keyed, user-approved Collector freeze of 13 school-unit leftover rematches, taken through its `SCHOOL_UNIT_LEFTOVER_directory_diff_20261112.csv` (keyed on `editor_row_key`; 65 cells, 0 missing keys, 0 old-value mismatches). All 13 of 13 were applied, 0 skips. Only `canonical_name`, `ror_id`, `ror_name`, `lat` and `lon` changed (`ror_country` was already correct). `raw_affiliation` is left as printed on all 13 rows.
+
+- NUBS China, 2 rows (A #4924 Patrick Chau, #5221 Y. Ye) → University of Nottingham Ningbo China `03y4dt428`, China. UK Nottingham `01ee9ar58` was not used.
+- UK Henley Management School/College, 3 rows (B #30182, #30664 Yipeng Liu; #31832 Abby Ghobadian) → University of Reading `05v62cm79`, United Kingdom. Henley Africa #18374 is untouched.
+- RSM Erasmus, 8 rows (A* #14113, #24564; A #40739; B #18143, #32487, #39125; C #20763, #22989) → Erasmus University Rotterdam `057w15z03`, Netherlands.
+
+All three target RORs were re-checked in the ROR API (active) and were already on the published panels; no new ROR. Six name-field DROPs (FT50 REStud #577/#578 and with_ror twins; AJG2 #5449/#5450) were not approved and are unchanged. Three AJG1 rows printed “Henley Management College, UK” (#1185, #2555 Abby Ghobadian; #2583 Marc Day) were not in this freeze and are still as printed. No pilot files are published or changed. No emails or phones.
+
+Rows changed: A* 2, A 3, B 6, C 2; `ror_id` 23,888 / 41,653 / 38,207 / 22,635 (was 23,886 / 41,650 / 38,201 / 22,633). Row counts unchanged (25,596 / 45,889 / 42,558 / 27,719). FT50 and AJG-gap panels are unchanged. The long table syncs `ror_id` / `ror_name` / `is_panel_ror` on 13 parts; no `raw_aff_part` edits.
+
+**Directory.** Institutions 11,075 (was 11,077): the blank-ROR names “Nottingham University Business School China” and “Rotterdam School of Management, Erasmus University” fold into existing ROR entries. 6,698 with a ROR id (unchanged; distinct 6,698). Countries 169 (unchanged). Shared display names 43 (unchanged; the build guard stays 43).
+
+Sidecars: `data/editors/releases/editors_school_unit_leftover_20261112/`.
+
+## Previous freeze: editors_theory_decision_title_20261112
 
 Published 2026-11-12 (Asia/Taipei). This supersedes `editors_campus_conflict_fix_20261111` (PR #64) for the Directory current panels. It is a keyed, user-approved Collector freeze of the Theory and Decision display-title rename, taken through its `THEORY_DECISION_TITLE_directory_diff_20261112.csv` (keyed on `editor_row_key`; 72 cells, 0 missing keys, 0 old-value mismatches). All 72 of 72 recommendation rows were applied, all on `editors_abdc_a_current` for `theory_decision_international_journal`. The display field `journal` is shortened from “Theory and Decision: an international journal for multidisciplinary advances in decision sciences” to “Theory and Decision”. `journal_name_abdc` is left as the long ABDC listed string. No affiliation, ROR, name, or role edits. Other subtitled ABDC titles were not in the file and were not renamed. The ABDC A catalog `journal_name` is shortened to match. No pilot files are published or changed. No emails or phones.
 
