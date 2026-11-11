@@ -1,0 +1,57 @@
+file,editor_row_key,editor_name,item,action,field,old,new,note
+editor_affiliations.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,long sync
+editor_affiliations.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,long sync
+editor_affiliations.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,long sync
+editor_affiliations.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,long sync
+editor_affiliations.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,long sync
+editor_affiliations.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,long sync
+editor_affiliations.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,long sync
+editor_affiliations.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,long sync
+editor_affiliations.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,is_panel_ror,0,1,long sync
+editors_abdc_a_current.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_a_current.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_a_current.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,lat,,-32.92953,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_a_current.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,lon,,151.7801,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_a_current.csv,editors_abdc_a_current#24283,Mojtaba Barari,REMATCH,SET_CAMPUS,canonical_name,"Newcastle Business School, University of Newcastle",University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,lat,,29.87819,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,lon,,121.54945,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_a_star_current.csv,editors_abdc_a_star_current#20062,Jie Wang,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_b_current.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_b_current.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_b_current.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,lat,,-32.92953,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_b_current.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,lon,,151.7801,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_b_current.csv,editors_abdc_b_current#18450,Marianna Sigala,REMATCH,SET_CAMPUS,canonical_name,"Newcastle Business School, University of Newcastle",University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_b_current.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_b_current.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_b_current.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,lat,,29.87819,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_b_current.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,lon,,121.54945,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_b_current.csv,editors_abdc_b_current#3138,Bruno Deschamps,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,lat,,29.87819,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,lon,,121.54945,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#18543,Kingsley Dogah,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/00eae9z71,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_c_current.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,ror_name,,University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_c_current.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,lat,,-32.92953,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_c_current.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,lon,,151.7801,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_c_current.csv,editors_abdc_c_current#27171,Alison Dean,REMATCH,SET_CAMPUS,canonical_name,"Newcastle Business School, University of Newcastle",University of Newcastle Australia,campus-conflict rematch -> University of Newcastle Australia https://ror.org/00eae9z71 (Australia)
+editors_abdc_c_current.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,ror_id,,https://ror.org/03y4dt428,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,ror_name,,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,lat,,29.87819,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,lon,,121.54945,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
+editors_abdc_c_current.csv,editors_abdc_c_current#803,Frithjof Arp,REMATCH,SET_CAMPUS,canonical_name,Nottingham University Business School China,University of Nottingham Ningbo China,campus-conflict rematch -> University of Nottingham Ningbo China https://ror.org/03y4dt428 (China)
