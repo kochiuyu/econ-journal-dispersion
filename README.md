@@ -163,6 +163,6 @@ If Pages is still set to “Deploy from a branch”, switch it to GitHub Actions
 
 ## License / citation
 
-Dataset intended as **CC-BY-4.0**. See `CITATION.cff`.
+Dataset licensed under **CC-BY-4.0** (full legal code in [`LICENSE`](LICENSE)). See `CITATION.cff` for citation.
 
 Underlying board lists and TOCs are public journal mastheads / publisher pages; enrichment (ROR, OpenAlex) follows each provider’s terms.
