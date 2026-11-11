@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "Economics Journal Geographic Dispersion — catalogs and analysis panels"
+title: "Economics Journal Editor Directory — catalogs and analysis panels"
 type: dataset
 authors:
   - family-names: "Yu"
@@ -8,18 +8,17 @@ authors:
     alias: "kochiuyu"
     affiliation: "The Chinese University of Hong Kong"
 abstract: >
-  Public research data for Geographic Dispersion work on economics
-  (and related) journals: journal catalogs (core49, FT50, ABDC),
+  Public research data on editorial boards, journal catalogs, and rankings
+  for economics (and related) journals: journal catalogs (core49, FT50, ABDC),
   journal-ranking freezes (ABS/AJG, CNRS, Handelsblatt/VWL, Tilburg/TISEM,
-  FNEGE, ERIM Core, NYU Stern Economics, ShanghaiRanking), and analysis-ready editor / author-affiliation
-  release panels. Scrapes and caches live in separate collector
+  FNEGE, ERIM Core, NYU Stern Economics, ShanghaiRanking), and analysis-ready
+  editor release panels. Scrapes and caches live in separate collector
   workspaces and are not part of this repository.
 keywords:
   - economics
   - journals
   - editors
   - affiliations
-  - geographic dispersion
   - FT50
   - ABDC
   - Tilburg
