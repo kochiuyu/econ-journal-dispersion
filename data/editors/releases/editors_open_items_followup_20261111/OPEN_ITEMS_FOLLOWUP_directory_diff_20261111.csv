@@ -1,0 +1,31 @@
+file,editor_row_key,field,directory_value,new_value
+editors_ft50_current.csv,editors_ft50_current#4634,faculty_match_method,masthead_href,
+editors_ft50_current.csv,editors_ft50_current#4634,faculty_match_confidence,high,
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,faculty_match_method,masthead_href,
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#4634,faculty_match_confidence,high,
+editors_abdc_a_current.csv,editors_abdc_a_current#42676,canonical_name,Nielsen (United States),
+editors_abdc_a_current.csv,editors_abdc_a_current#42676,ror_id,https://ror.org/016x3qj75,
+editors_abdc_a_current.csv,editors_abdc_a_current#42676,ror_name,Nielsen (United States),
+editors_abdc_a_current.csv,editors_abdc_a_current#42676,lat,40.71427,
+editors_abdc_a_current.csv,editors_abdc_a_current#42676,lon,-74.00597,
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,canonical_name,"Rutgers, The State University of New Jersey",Diamond Leadership Institute
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,ror_id,https://ror.org/05vt9qd57,
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,ror_name,"Rutgers, The State University of New Jersey",
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,ror_country,United States,Israel
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,continent,North America,Asia
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,lat,40.48622,
+editors_abdc_b_current.csv,editors_abdc_b_current#16107,lon,-74.45182,
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,canonical_name,independent consultant in environmental law and policy,The University of Sydney
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,ror_id,,https://ror.org/0384j8v12
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,ror_name,,The University of Sydney
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,ror_country,,Australia
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,continent,,Oceania
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,lat,,-33.86785
+editors_abdc_b_current.csv,editors_abdc_b_current#39063,lon,,151.20732
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,canonical_name,Southeast Asian Regional Center for Graduate Study and Research in Agriculture,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,ror_id,https://ror.org/04qf4zf50,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,ror_name,Southeast Asian Regional Center for Graduate Study and Research in Agriculture,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,ror_country,Philippines,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,continent,Asia,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,lat,14.17025,
+editors_abdc_c_current.csv,editors_abdc_c_current#15559,lon,121.24181,
