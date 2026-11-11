@@ -1469,7 +1469,18 @@ def assert_static_site() -> None:
     rankings_js = (SITE_DIR / "rankings.js").read_text(encoding="utf-8")
     if PAGES_BASE not in rankings_js:
         raise SystemExit("site/rankings.js is missing the project Pages base path")
-    page_files = ("index.html", "directory.html", "journals.html", "institutions.html", "rankings.html")
+    credits = (SITE_DIR / "credits.html").read_text(encoding="utf-8")
+    # Icon credits live once on credits.html (CC BY-SA attribution stays public);
+    # Directory and Institutions keep only a collapsed note that links there.
+    if credits.count("<li><a href=\"https://commons.wikimedia.org/wiki/File:") < 1:
+        raise SystemExit("site/credits.html is missing the Wikimedia Commons icon credits")
+    for name in ("directory.html", "institutions.html"):
+        text = (SITE_DIR / name).read_text(encoding="utf-8")
+        if 'href="credits.html"' not in text:
+            raise SystemExit(f"site/{name} does not link to the icon credits page")
+        if "commons.wikimedia.org/wiki/File:" in text:
+            raise SystemExit(f"site/{name} still embeds the icon credit list; add credits to site/credits.html")
+    page_files = ("index.html", "directory.html", "journals.html", "institutions.html", "rankings.html", "credits.html")
     for name in page_files:
         text = (SITE_DIR / name).read_text(encoding="utf-8")
         if PAGES_BASE not in text or LIVE_URL not in text:
@@ -1501,6 +1512,7 @@ def assert_static_site() -> None:
         "journals.js",
         "institutions.html",
         "institutions.js",
+        "credits.html",
     ):
         text = (SITE_DIR / name).read_text(encoding="utf-8")
         match = ROOT_ABSOLUTE_RE.search(text)
