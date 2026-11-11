@@ -1,0 +1,9 @@
+editors_leftover_fixes_20261112 is frozen and unpublished, on top of editors_school_unit_leftover_20261112 (web 4e00305). QC ok.
+
+- 3 UK Henley rows → Reading 05v62cm79.
+- 4 REStud "Universitat Pompeu Fabra" phantoms dropped (Marks-style).
+- Draibe #5449 → Unicamp 04wffgt70, and phantom #5450 dropped.
+- 874 long-table ror_country syncs; panel–long mismatches 0.
+- Directory: 11,075 → 11,074 institutions; 6,698/6,698/169; 43 shared names.
+- Needed in build_site.py: AJG_GAP_FILES ajg2 expected_dropped 0 → 1.
+- Path: /workspace/econ-journal-editors/releases/editors_leftover_fixes_20261112/

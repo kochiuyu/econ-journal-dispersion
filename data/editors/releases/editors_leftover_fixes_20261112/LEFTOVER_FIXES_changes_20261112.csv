@@ -1,0 +1,965 @@
+file,editor_row_key,editor_name,item,action,field,old,new,note
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_match_note,panel primary blank (panel ror_id empty); part not re-resolved,panel primary blank (panel ror_id empty); part not re-resolved; leftover_fixes_20261112: UK Henley -> Reading,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_match_note,panel primary blank (panel ror_id empty); part not re-resolved,panel primary blank (panel ror_id empty); part not re-resolved; leftover_fixes_20261112: UK Henley -> Reading,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_name,,University of Reading,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,is_panel_ror,0,1,long sync
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_match_note,panel primary blank (panel ror_id empty); part not re-resolved,panel primary blank (panel ror_id empty); part not re-resolved; leftover_fixes_20261112: UK Henley -> Reading,long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_match_note,ror_consistency2_20261031: A_ft50_fill: same normalised string has the single ROR https://ror.org/02k09n368 in other panels [evidence cross_panel_string: 1 donor rows; same-index ft50_current_with_ror row has this ROR] (was blank ) [single part],"ror_consistency2_20261031: A_ft50_fill: same normalised string has the single ROR https://ror.org/02k09n368 in other panels [evidence cross_panel_string: 1 donor rows; same-index ft50_current_with_ror row has this ROR] (was blank ) [single part]; leftover_fixes_20261112: user-approved DROP (Marks); printed editor_name 'Universitat Pompeu Fabra', printed raw 'Barcelona School of Economics'",long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,raw_aff_part,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,long sync
+editor_affiliations.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,long sync
+editor_affiliations.csv,editors_ft50_current#577,,B1_REStud,DROP,is_panel_ror,1,0,long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_match_note,ror_consistency2_20261031: A_ft50_fill: same normalised string has the single ROR https://ror.org/02k09n368 in other panels [evidence cross_panel_string: 1 donor rows; same-index ft50_current_with_ror row differs: blank] (was blank ) [single part],"ror_consistency2_20261031: A_ft50_fill: same normalised string has the single ROR https://ror.org/02k09n368 in other panels [evidence cross_panel_string: 1 donor rows; same-index ft50_current_with_ror row differs: blank] (was blank ) [single part]; leftover_fixes_20261112: user-approved DROP (Marks); printed editor_name 'Universitat Pompeu Fabra', printed raw 'Barcelona School of Economics'",long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,raw_aff_part,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,long sync
+editor_affiliations.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,long sync
+editor_affiliations.csv,editors_ft50_current#578,,B1_REStud,DROP,is_panel_ror,1,0,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_match_note,panel ror_id (ror_match_method=ror_fix_post15_20261031),"panel ror_id (ror_match_method=ror_fix_post15_20261031); leftover_fixes_20261112: user-approved DROP (Marks); printed editor_name 'Universitat Pompeu Fabra', printed raw 'Barcelona School of Economics'",long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,raw_aff_part,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#577,,B1_REStud,DROP,is_panel_ror,1,0,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_match_note,panel primary blank (panel ror_id empty); part not re-resolved,panel primary blank (panel ror_id empty); part not re-resolved; leftover_fixes_20261112: user-approved DROP (Marks); printed editor_name 'Universitat Pompeu Fabra',long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#578,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,long sync
+editor_affiliations.csv,editors_ft50_current_with_ror#2115,Henry Sauermann,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#3220,Vijay Pereira,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#5216,Sechan Oh,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#5770,Hugo Mercier,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#8477,Nicolas Stier-Moses,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#8892,Christoph Werner,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_ft50_current_with_ror#9685,Nicolas Stier-Moses,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#2882,Ana Galvão,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#6647,Vijay Pereira,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#8213,Nicolas Stier-Moses,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#8628,Christoph Werner,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#9219,Nicolas Stier-Moses,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#10435,Sechan Oh,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#10656,Hugo Mercier,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#11564,Henry Sauermann,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#11666,Geri Mattson,C_country_sync,SYNC,ror_country,,Hungary,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#12888,Bibin Thomas,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#14395,Anders Bengtsson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#14564,Destan Kandemir,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#15062,Gerrit Koch,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#16556,Jeremy Broughton,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#16572,Paul Hewson,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#16617,Simon Washington,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#16658,Ksenia Kirillova,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#16910,Paulina Bohdanowicz,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#20350,John L. Turner,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#21387,Nigel Guenole,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#21785,Ryne A. Sherman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#21924,Janine Goetschy,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#22886,Kerstin Alfes,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#23016,Richard Locke,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#23089,Haoda Fu,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#24604,Charles E. Lance,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#24605,Ronald S. Landis,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#24610,Joseph Luchman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#24794,Tamara Ansons,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#25187,Anant Maringanti,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_star_current#25571,Gernot Grabher,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#447,Cameron Peers,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#448,Sarang Mahajan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#826,Mahesh Sooriyabandara,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#985,Nan Wang,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#1335,Gérard Richter,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#1337,Bernd Welz,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#1839,Luce Brotcorne,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#1888,Sven Spieckermann,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#2643,Regis Cabral,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#2702,Montijn van de Ven,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#2714,Werner Dorfmeister,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#3519,"John Castura, Dr. Philos.",C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#3532,Carlos Gomez-Corona,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#3539,Kevin Kantono,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#3570,Thierry Worch,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#4186,Bernardo Huberman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#4193,Jane L. Snowdon,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#4196,Claire Vishik,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#4626,Jean-Charles Hourcade,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#4814,S. Kolassa,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5341,Prateeksha Maurya,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5348,Luis Gustavo de Paula,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5356,Shweta Sharma,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5414,Jane Gravelle,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5452,David Haigh,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5472,Peter Shaw,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5576,Sandrine Blanc,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#5578,Adrian Keevil,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#6010,Ute-Christine Klehe,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#6210,Carl Thoresen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#6245,Chase Winterberg,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#6900,Roger Guesnerie,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#6965,George Tavlas,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#7581,Michael M. Pompian,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#8914,Anthony Shorrocks,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#9095,Keren Kaplan Mintz,C_country_sync,SYNC,ror_country,,Israel,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#9144,Aurore Grandin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#10045,Hung-Po Chao,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#10182,Michel Hery,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#10233,Z. Peng,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11177,Nathan Browne,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11199,Sean Newman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11394,"Chris Carswell MSc, Pharm",C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11395,"Tim Wrightson BSc, PGDipSci",C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11401,Joseph B. Babigumira MBChB,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11405,Jacoline Bouvy,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11407,Anita J. Brogan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11419,Elisabeth A. Fenwick,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11424,"Paul E. Greenberg MS, MA, AB",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11615,Roberta Herzberg,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11679,Brian Hoey,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11764,Dave Andrae,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11777,Anna Kieszkowska-Grudny,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11781,Andrew Lloyd,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#11922,G. Levitin,C_country_sync,SYNC,ror_country,,Israel,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12511,Sebastian Festag,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12526,Steven Gwynne,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12610,Jonathan Adams,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12620,Juan M. Campanario,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12658,Francis Narin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#12935,John Watson,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#13837,Neil Paulley,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#14022,Jinghui Wang,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#14198,Rita Faria,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#14522,Jacques Freyssinet,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#14660,Sushanta K. Chatterjee,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#14668,Manuel Frondel,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#15619,Cuong V. Levan,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#15641,Stuart Whitten,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#15721,Karen Pittel,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17733,Daniel Giamouridis,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17747,Maria Vassalou,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17752,"David Blanchett, CFA",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17758,Vitali Kalesnik,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17760,Feifei Li,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#17767,Margaret Stumpp,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#18043,Donald MacGregor,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#18303,Peter Jäckel,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#18319,Ilia Bouchouev,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19308,Roberto Legaspi,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19367,Tomas Berns,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19440,Masiar Babazadeh,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19520,Jan Cieciuch,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19665,Jing He,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19733,Frédéric Dufays,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#19865,Glen Whelan,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#20517,Bill Carroll,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#20776,Nell Minow,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#20777,Robert Monks,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#20781,Anne Simpson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#21150,Sandra Johnson,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#21190,Keith Popplewell,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#21307,Renaud Redien-Collot,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#21942,Wladimir Andreff,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#21952,Anna Gerke,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#22053,Hai-Long Duong,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#22122,Christina Constantinidis,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#22651,Matthew Farrell,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#23137,Abigail Sellen,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#23404,Russell D. Meller,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#23590,Aline Conchon,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#23761,danah boyd,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24820,Philly Desai,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24823,Markus Eberl,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24824,Laurent Florès,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24849,Graham Mytton,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24869,Luke Taylor,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#24970,Mark Spearman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#25044,Jeffrey M. Cucina,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#25086,Charles Handler,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#25147,Philip Walmsley,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#26015,Donald MacGregor,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#26033,Caterina Primi,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#26872,Luo Wang,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#26880,Xingshen Wei,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#27094,Cindy Lombart,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#27166,O.C. Ferrell,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#27468,Nuno Gustavo,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#28658,"Tushar Sachdev, Chief Technology Officer",C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#28664,Cristopher Kopplin,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#28666,Suparna Dhar,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#28817,Christian Geiser,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#29479,Ksenia Kirillova,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#29712,José Viedma Martí,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#29725,JinHyo Joseph Yun,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#29879,Li Ding,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#30186,Aditya Chakraborrty,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#30223,Juliet Webster,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#31352,Sara Khatoon,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#31707,Lord Bichard,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#31710,Mike Bennett,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#32160,Tamara Kneese,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#32489,Claude Martin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33074,Per Olaf-Brett,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33094,Luke Lloyd-Jones,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33095,Julyan Arbel,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33183,Alessandro Gasparini,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33265,Ricardo Fraiman,C_country_sync,SYNC,ror_country,,Uruguay,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33364,R. Rambharat,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#33793,Lu Zhang,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34041,Akber Datoo,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34044,Simon Firth,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34056,Edana Richardson,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34065,Inigo Gomez Jordana,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34070,Thomas Werlen,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34084,The Rt. Hon. Lord Patrick Hodge,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34204,C. Ian Kyer,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34205,Marc Lauritsen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34291,Marco Scutari,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34471,Julyan Arbel,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34791,Simon Lester,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34818,Yas Banifatemi,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#34851,Isabelle van Damme,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35006,Léa Deleris,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35007,Mehmet Ertem,C_country_sync,SYNC,ror_country,,Türkiye,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35046,Don N. Kleinmuntz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35276,Claire Lemercier,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35349,Joseph Luchman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#35996,Ann Williamson,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#36409,Jane Clark-Ambrosini (Practitioner),C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#39450,Prasad Kaipa,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#39559,Laurence Dessart,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#39757,Li Ding,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#40085,Panayotis Mertikopoulos,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#40959,Gord Graham,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#41320,Jacky Akoka,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#41337,Ladjel Bellatreche,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#41473,Kumod Kumar,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42686,Kate Sirkin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42695,Dean Adams,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42727,Frank Cotignola,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42815,Brandon Paris,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42840,Gilles Santini,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#42865,Mark Truss,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#43002,Andrew Kaplan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#44048,Narendran Kumarakulasingam,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45667,Melanie Gassler-Tischlinger,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45674,Anna Kuusniemi-Laine,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45676,Ingo Klauß,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45677,Vincent Power,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45682,Nuno Ruiz,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45683,Catarina Pinto Correia,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45691,Kaeleigh Kuzma,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_a_current#45696,Anthony Badaracco,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#24,Bernard Thiry,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#50,Caroline Schreiber,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#881,Cuong Le Van,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#1178,Catherine Kyrtsou,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#1190,George Tavlas,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#1631,Lavinia Poruschi,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#2035,Stuart Mackintosh,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#2042,Robert A. Eisenbeis,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#2051,James F. Smith,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#2639,George S. Tavlas,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#2960,Atul Sarma,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3111,Heather Gibson,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3127,Lorenzo Bini Smaghi,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3128,George S. Tavlas,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3163,Elisavet Bosdelekidou,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3164,Christina Tsochatzi,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3319,Marianna Anyfanti,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3337,René Dahms,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3338,Christoph Möhr,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3491,Rolf Banz,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3503,Thomas Stucki,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3579,Alan Brown,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3605,Jarrod Wilcox,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3694,Alix Munier,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3902,Miguel Santos Neves,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#3990,Tommaso Colombino,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4529,Simon Washington,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4563,Ksenia Kirillova,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4594,Henri Kuokkanen,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4867,Xuning Tang,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4925,Marco Laumanns,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#4973,Christopher Jones,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#5049,Géraud Sénizergues,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#5233,Andrey A. Vinokurov,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#5314,Mohamed Yacine Haddoud,C_country_sync,SYNC,ror_country,,United Arab Emirates,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#5515,Bart Henssen,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#5663,W. Ji,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#6284,Julie Ragatz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#6588,Patrick van Eecke,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#6616,Gönenç Gürkaynak,C_country_sync,SYNC,ror_country,,Türkiye,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#6623,David Wright,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#7487,Dariusz Stańko,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#7549,Annika Sundén,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8009,Betty Ann M Turpin,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8050,Luce Brotcorne,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8068,Bernard Fortz,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8245,Maurizio Bragagni,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8312,James Martin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8313,Deependra Moitra,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8320,Hubert Saint-Onge,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8322,Patricia Seemann,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8637,Michael Kianfar,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8708,Sudio Sudarsan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8709,Anthony van der Hoek,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8897,Jinsung Kim,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8913,Ji-Won Oh,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#8944,Se H. Oh,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#9431,Natalie Jackson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#9861,Ahmad Usman Shahid,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#9993,Jay Chatzkel,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#10574,David Maluf,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#10710,Hervé Panetto,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#10929,Warren H. Lieberman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#10934,Paul Rose,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#10937,Ben Vinod,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11023,Yuko Nakanishi,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11032,Irv Varkonyi,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11298,Onora O’Neill,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11362,Simon Anholt,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11639,Nicholas Fisher,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#11662,Nathan Lally,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12015,Miltiadis Athanasiou,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12046,Alexander Kolovos,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12190,Sara Stolberg Berkowitz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12466,John C. Howes,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12468,Jeff W. Johnson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12469,Tracy Kantrowitz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12482,Shonna Waters,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12619,David Birchall,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12653,Andrea Shemberg,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#12656,Mark Wielga,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#13713,James F. Hettinger,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#13971,Sally Wallace,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14192,Jean-Luc Bernaud,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14217,Valérie Cohen-Scali,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14328,Dong Wang,C_country_sync,SYNC,ror_country,,Hungary,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14552,Thomas Delahais,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14554,Kim Forss,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14567,Patricia Rogers,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14632,Christina Constantinidis,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#14815,Rohit Singh,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#15048,Isabelle Fortier,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#15116,Jane Shannon,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#15505,Tawnya Means,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#15591,Tawnya Means,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16132,Serghei Floricel,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16164,Yvan Petit,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16521,Jasmin Mahadevan,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16545,Philippe d'Iribarne,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16763,Rebecca S. Ayers,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#16951,Peter Hedström,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17040,S Irfan Habib,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17064,Lynne Doner,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17094,Mike Newton-Ward,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17107,Dave Ward,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17108,Jennifer Wayman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17110,Nedra Kline Weinreich,C_country_sync,SYNC,ror_country,,Israel,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17119,Lynne Doner,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17149,Mike Newton-Ward,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17162,Dave Ward,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17163,Jennifer Wayman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17165,Nedra Kline Weinreich,C_country_sync,SYNC,ror_country,,Israel,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17311,Anjan Ramesh Babu,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17312,David Ballard,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17402,David Byers,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17405,Sam Cardoso,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17416,Nemanja Dobrota,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17475,Ronald Medlock,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17491,Gonzalo Rada,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17532,Erica Wygonik,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17827,Ted P. Tatos,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#17830,David Boies,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#20431,Sezer Bozkus Kahyaoglu,C_country_sync,SYNC,ror_country,,Türkiye,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#20509,Rebecca Fitchett,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#20818,Max Hogeforster,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#20938,Rick Ducey,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21295,Sebastien Lechevalier,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21311,Kaoru Sugihara,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21532,Shouhua Zhou,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21613,Guoqiang Liu,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21614,Rixin Liang,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21853,Cristina Grande Herrera,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#21946,José Luis Lizcano,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#22143,Li Ding,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#22574,Craig Gent,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#22699,Felicitas Macgilchrist,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#23365,D. Sherman,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#23410,Angela Jain,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#23678,Pietro Evangelista,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#23875,Nick Moon,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#24449,Wolfgang Georg Arlt,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#24595,Eduardo Grin,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#25304,Kokil Jain,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#25305,Sakshi Kathuria,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#25339,Rituparna Basu,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#25484,Ce Qu,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26035,Josip Stjepandic,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26130,Ian Ryder,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26139,Aileen Torrance,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26362,John Austin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26411,Nicholas Matey,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26431,Nicholas L. Weatherly,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26524,Dave Gelders,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26540,James Humphreys,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#26668,Ashish Gupta,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27038,Supriya Biswas,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27136,Steve Jones,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27144,Amr Abdel-Latif,C_country_sync,SYNC,ror_country,,Egypt,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27236,Jean-Pierre Segers,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27658,Gerado Bielons,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27668,Kevin Harris,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27681,Rory Magrath,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27774,Ian Garner,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27932,Johanna Dwyer,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27934,Anthony Granville,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27935,Andrea Kates,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#27944,Roger D. Smith,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29271,Konstantin Avrachenkov,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29292,Nicolas Gast,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29335,Philippe Robert,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29600,Arthur Kroeber,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29669,J. Michael Woolley,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29737,Roberto Frenkel,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29797,Peter Kelly,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#29910,Dinah Bennett,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30024,Jeffrey Phillips,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30119,Paul Augustine,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30154,Bernd Britzelmaier,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30528,Matt Symonds,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30529,Robert J. Thomas,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#30807,Paul W. Long,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#31262,Mohamed Geraldez,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#32000,Marece Wenhold,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#32104,Geoff Sheard,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33152,Chris Duquette,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33183,Xuan (Shelly) Shen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33299,Thor Sletten,C_country_sync,SYNC,ror_country,,Uruguay,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33345,Wonbong Jang,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33824,Jeromee Johnson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#33827,Dmitry Rakhlin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#34635,T. Mitrakos,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35751,Owen Bailitz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35758,Lawrence Burke,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35759,Ciro Buttacavoli,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35762,Sean Conroy,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35763,James D’Arcangelo,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35764,Steven J. Davis,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35769,Adam Hallemeyer,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35774,Stacy Lamontagne,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35778,Russell Moore,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35779,Jason Plourde,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35911,"M. Jane Buchan, CAIA",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35926,Roni Israelov,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35929,"Gueorgui S. Konstantinov, CAIA",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35931,George A. Martin,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#35933,Mark S. Rzepczynski,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36068,Suneet Trivedy,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36115,Robert D. Arnott,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36138,Nick Mencher,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36148,John Rekenthaler,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36168,Richard K. Fullmer,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36196,Jason S. Scott,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36430,Kuldej Sinthawanarong,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36442,Ashok Kumar Chandra,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#36531,Bruno Tuffin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37039,Nicky Bleiel,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37040,Stan Doherty,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37081,Nitish Umang,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37123,Niloy Biswas,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37134,Ali Zubaidi,C_country_sync,SYNC,ror_country,,Iraq,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37139,Grzegorz Majewski,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37156,Rupesh Ghosh,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37301,Etienne Davignon,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37303,Robert Eaton,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37309,Rupert Myers,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37324,Georges Douin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37329,S.G. Larsen,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37339,U. Seiffert,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37346,Martin Winterkorn,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37625,Sean Rafter,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#37985,P Bansal,C_country_sync,SYNC,ror_country,,Singapore,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#38041,Mazyar Abaee,C_country_sync,SYNC,ror_country,,Iran,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#38193,Ben Isitt,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#38531,Pascal A. Diethelm,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#38616,Kwan R. Lee,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#38617,Rahul Dhanda,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#39465,Mia Mikic,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#39616,Kim Hawtrey,C_country_sync,SYNC,ror_country,,Uruguay,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#39699,Andreas Ehrenmann,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#39935,David Hoffman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40009,Suneet Trivedy,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40341,Stephanie Rizzardi,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40343,Kristine Slocum,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40345,William Rogers,C_country_sync,SYNC,ror_country,,Uruguay,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40563,Christophe Guilmoto,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40681,Matthew Schaefer,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40811,Peter E. Tarlow,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40829,Theodore Pelagidis,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#40891,Atul Shah,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41120,Paul Fairall,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41217,Mark Allen,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41324,"eveton, Benjamin",C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41330,"Deville, Aude",C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41364,Labardin Pierre,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41379,Méric Jérôme,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41383,Negre Emmanuelle,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41389,Rocher Sébastien,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41395,Villesèque-Dubus Fabienne,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41459,"Gordon B. Fowler, Jr.",C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41460,James P. Garland,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41466,Chad Armstrong,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41486,Nathan Sosner,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#41891,Haithem AWIJEN,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#42097,Takatoshi Takamoto,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#42333,N. Campbell,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_b_current#42545,Edmond Preteceille,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#463,Peter Schumacher,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#618,Darrel Reeve,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#640,Johannes Fresner,C_country_sync,SYNC,ror_country,,Austria,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#675,"Tim Wrightson BSc, PGDipSci.",C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#676,Chris Carswell MSc Pharm,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#687,Dalia Dawoud,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#688,Alex Diamantopoulos,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#697,Sergio Iannazzo,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#704,Clara Mukuria,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#713,Jordana Schmier,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#717,Gemma Shields,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#728,"Jennifer A. Whitty BPharm, GradDipClinPharm",C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#730,Jipan Xie,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#925,Julien Hambuckers,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#964,Qiang Zhang,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#981,Marija Bogataj,C_country_sync,SYNC,ror_country,,Slovenia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1130,Jasmin Gröschl,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1201,Robert N. Coats,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1213,Kwang-Seuk Jeong,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1672,Andrew Cornford,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1954,Panos Ketikidis,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#1957,Jai Menon,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2287,Aris Gkoulalas-Divanis,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2443,Anton Löf,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2448,Anton Löf,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2462,Yusheng Li,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2469,Per Storm,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2470,Chuangrong Su,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2611,Sanjay Kumar Prasad,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2690,Thomas Minkus,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2886,Ralph Renger,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2891,Liya Aklilu,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2907,Andrew Jaciw,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#2931,Gina Vanegas,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3077,Kelly Finnell,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3246,"Saravanan Krishnan, M.E",C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3308,Rui Santana,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3344,Rui Santana,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3489,Henry Etzkowitz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3495,Christiane Gebhardt,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3496,Thomas Gering,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3497,Keith Gilchrist,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3510,Harry Matlay,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3540,Alan B. Cain,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3556,Ramons Reba,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3559,K. Viswanathan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3596,Vinod Sood,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3598,Fathi Tlatli,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3601,Scott M Broetzmann,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3605,Joseph Haldane,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3611,Michael Lowenstein,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3619,Bob Thompson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3622,Nestor Farias Bouvier,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3623,Tanya Dubash,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3633,Brian Tempest,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3634,Ranjit Barshikar,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3635,Paul Braier,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3636,Nicholas Cappuccino,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3638,Dolores Cullen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3640,Marcel Daniels,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3641,Debashis Dasgupta,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3643,Eric B. Fastiff,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3648,Gordon Johnston,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3649,Fabiana Jorge,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3654,Richard Milchior,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3656,Sandeep K. Rathod,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3658,Paolo Romangnoli,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3714,Alan Waters,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3724,Erik Pages,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3770,Gillian Sullivan Mort,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3866,M. Govinda Rao,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3936,Monique De Saint Martin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3939,Benoit Godin,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#3989,Torsten Müller,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#4172,Sébastien Lecocq,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#4184,Allen Shoup,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#4283,Judith Irek,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#4579,Maurizio Atzeni,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#4785,Josip Stjepandic,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5668,Jean-Guy Degos,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5673,Henrique Formigoni,C_country_sync,SYNC,ror_country,,Ghana,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5748,Michael Salmony,C_country_sync,SYNC,ror_country,,Türkiye,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5911,Agnes Bricard,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5916,Jean-Guy Degos,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5927,Jerome Haas,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5969,Agnes Bricard,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5975,Jean-Guy Degos,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#5978,Henrique Formigoni,C_country_sync,SYNC,ror_country,,Ghana,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6078,Rachanee Tripipatkul,C_country_sync,SYNC,ror_country,,Thailand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6096,Tee L. Guidotti,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6341,Pravin U. Singare,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6365,Mitsugi Kamiya,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6401,Vivekanand Kochikar,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6489,Robert K. Dixon,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6490,Mohammed T. El-Ashry,C_country_sync,SYNC,ror_country,,Sweden,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6493,Dirk Forrister,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6509,J. Ravetz,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6700,Stéphanie Minel,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6730,Jongbae Kim,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6807,Alejandro (Alex) Jaimes,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6845,Niels E. Busch,C_country_sync,SYNC,ror_country,,Denmark,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6860,André Maïsseu,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6863,Harald Norvik,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#6870,Wolfgang Strassburg,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#7338,David DeMuro,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#7353,Mark Passacantando,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#7361,Jedd H Wider,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#7828,Hazel Henderson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#7843,Oliver Sparrow,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8040,Christopher Barlow,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8421,Tim Caiger,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8423,John DeMarco,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8516,John Black,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8519,Kathleen Geraghty,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#8665,Prasad Kaipa,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9077,Rebecca Dobrinski,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9090,Amber Ravenscroft,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9587,Ewerton Alex Avelar,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9608,Marc Teerlink,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9623,Paul Laughlin,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#9908,Usman Khalid,C_country_sync,SYNC,ror_country,,United Arab Emirates,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10306,Darrell Rigby,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10323,B Joseph Pine II,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10457,Anthony S. Courakis,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10547,Anthony S. Courakis,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10670,Björn Becker,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10676,Rensi Chen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10682,Michael Frank,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10687,Puneet Handa,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10707,Raimund Schwendner,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10817,John Gordon,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10829,Denise Lee,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10832,Bashar H. Malkawi,C_country_sync,SYNC,ror_country,,United Arab Emirates,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10864,Yukika Awazu,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#10981,Bob Mark,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11446,Henri Kuokkanen,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11589,Michele Connolly,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11591,Jean-Michel Durr,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11629,P. G. Chengappa,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11644,Carol Engle,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11745,Georgios Trachanas,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11805,Mitch DeKoven,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11811,Corneel Coens,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11819,Zeba Khan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11824,Michael Minshall,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11825,Brenda Motheral,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#11827,Mira Pavlovic-Ganascia,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#12504,John Edmonstone,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#12559,Catherine Neveu,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#12866,Stephanie Wilson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#13035,James R. Lewis,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#13048,GMartin Schrepp,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14316,Xavier Tort-Martorell,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14498,Gerwin van Gerven,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14505,Cristina Caffarra,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14733,Leonie van Drooge,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14848,Jackie F. Steele,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14900,Bojana Bellamy,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14905,Michelle Dennedy,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#14916,Pablo Palazzi,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15046,Sarah Camilleri,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15221,Alison Caplan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15223,Judith Drouilles,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15226,Cliff Lipscomb,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15426,Keerthan Raj,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15439,Prithvi Yadav,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#15909,Evsey T. Gurvich,C_country_sync,SYNC,ror_country,,Russia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#16672,Manfred Kircher,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17255,Ronak Ravjibhai Pansara,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17300,Jaspreet Kaur,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17339,Chih Tan,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17489,Robin Nunkoo,C_country_sync,SYNC,ror_country,,Mauritius,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17505,Ranjit Barua,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17513,Ali Zubaidi,C_country_sync,SYNC,ror_country,,Iraq,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17520,Fardin Quazi,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17523,Harikrishnan Muthukrishnan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17543,Sairam Durgaraju,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17580,Ahmed Abbas,C_country_sync,SYNC,ror_country,,Egypt,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17624,Wei Cai,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17640,Ben van Lier,C_country_sync,SYNC,ror_country,,Netherlands,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17739,Naveen Chandra Kukkala,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17751,Samir Yerpude,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17781,Navin Kumar,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17790,Baris Kazar,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17830,Ali Zubaidi,C_country_sync,SYNC,ror_country,,Iraq,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17835,Ashish Anil Pawar,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17851,Jai Ganesh,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17857,Kulbir Singh,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17866,Rajesh Jagadeesan Ravikumar,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17872,Sai Madhur Potturu,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17874,Saswati Mukherjee,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17894,Selem Charfi,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17916,Damian Drzyzga,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17962,Saravanan Krishnan,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17967,Susana Bernardino,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#17984,Nick Rushby,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18005,Grzegorz Majewski,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18034,Ronak Ravjibhai Pansara,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18209,Henry ETZKOWITZ,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18317,Bill Imada,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18493,Raghavendra Kumar Chunduri,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#18500,Sanjiv Varma,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#19119,Mohan Bhatia,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#19199,Commercial Arbitrator,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#19356,Michael Tse,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#20204,Renato A. Villano,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#20522,Adam Piechowski,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#20782,Gregory Sullivan,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21185,Humayon DAR,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21191,Mohsin S. KHAN,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21606,Martina Bozzola,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21627,Sara Savastano,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21755,Giuseppe Catenazzo,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#21761,Li Ding,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22054,Paul Carman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22058,Flavio Rubinstein,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22091,Pramod Kumar,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22099,Veerinderjeet Singh,C_country_sync,SYNC,ror_country,,Malaysia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22248,Yulia A. Antokhina,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22611,Ruiming Tang,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#22756,Gry Espedal,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23207,Jefferson VanderWolk,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23210,Wilson Cheng,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23217,Patrick Ho,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23221,Patrick Kwong,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23223,Stephen Lee,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23432,Mark P. Howe,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23434,Theodore L. Press,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23644,Afees Salisu,C_country_sync,SYNC,ror_country,,Nigeria,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#23689,Гурвич Евсей Томович,C_country_sync,SYNC,ror_country,,Russia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24071,Magdi El-Bannany,C_country_sync,SYNC,ror_country,,United Arab Emirates,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24101,Gobinda Deka,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24146,Peng Chen,C_country_sync,SYNC,ror_country,,New Zealand,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24166,Dominic Maister,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24172,John Rekenthaler,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24258,Cliff Asness,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24608,Daniel J. Murphy,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24609,Joe Milam,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24610,Paisley Nardini,C_country_sync,SYNC,ror_country,,Czechia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24613,Koye Somefun,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24614,Rüdiger R. Stucke,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24630,Robert Hegarty,C_country_sync,SYNC,ror_country,,Hungary,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24640,Max Palmer,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24686,Akram Laldin (Malaysia),C_country_sync,SYNC,ror_country,,Malaysia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24687,Abdullah Turkistani (Saudi Arabia),C_country_sync,SYNC,ror_country,,Saudi Arabia,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24816,Babu Rao Kodali,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24836,Progress Q. T. Mtshali,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24846,Moninder Singh,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24905,Jen-Yao Chung,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24915,Hanns-Christian Hanebeck,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24968,Adewale Adeboye,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#24979,Bidyut Sarkar,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25085,Joseph Williams,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25487,Luis Filipe Reis,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25497,Carlos Bremer,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25504,Joerg Schulte,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25524,Eberhard Bessey,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25568,Eduard KHAKIMOV,C_country_sync,SYNC,ror_country,,Finland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25656,Alejandro Jiménez-Montecinos,C_country_sync,SYNC,ror_country,,Chile,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25833,Leonardo Aureliano Silva,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25892,Sónia Moreira Cabeça,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#25923,William G. Feighey,C_country_sync,SYNC,ror_country,,Switzerland,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#26239,Johan SWINNEN,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#26602,Madeleine Richer (+),C_country_sync,SYNC,ror_country,,Venezuela,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#26788,Robert A.Haugen,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#26789,Harry Markowitz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27282,Ricardo André Galendi Júnior,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27356,Joyce Aguiar,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27414,Samuel Fankhauser,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27523,Stan Altan,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27551,Vladimir Dragalin,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abdc_c_current#27565,Xiaoyun Nicole Li,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1128,Sherry E. Mead,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1178,Joshua D. Knowles,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1257,Les Firbank,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1603,Jamie Horder,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#1604,Yushi Jiang,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2054,Chris Wickens,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2250,Margaret Mills,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2256,Warish Ahmed,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2260,Astrid Avellan,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2264,"Yunzhou ""Joe"" Chai",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2269,Win Cowger,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2281,Jianhua Guo,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_prio43_current#2386,Jason Magnuson,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#252,Ruslan Sadykov,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#296,Marc Bron,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#624,madeleine kennedy-macfoy,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#746,Cynthia O. Dominguez,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#752,Gavan Lintern,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#754,Laura Militello,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#934,Romaric Marcilly,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1173,Céline Comte,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1183,Matthieu Jonckheere,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1850,"H. Koziolek, Dr.-Ing.",C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1879,T. Bryksin,C_country_sync,SYNC,ror_country,,Czechia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1884,M. Ciolkowski,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1891,C. Ebert,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1897,M. Harman,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#1909,T. Sharma,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2530,Theodor Leiber,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2827,Harry Matlay,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2978,James G. Speight,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#2992,Sudhanya Banerjee,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3117,Marshall Bern,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3570,Greg Norris,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3571,Jooyoung Park,C_country_sync,SYNC,ror_country,,South Korea,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3606,Wataru Sato,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3692,Magnus Broundal,C_country_sync,SYNC,ror_country,,Denmark,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3711,Peter Klaas,C_country_sync,SYNC,ror_country,,Denmark,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3849,Victoria Dickenson,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#3855,Bernice L. Murphy,C_country_sync,SYNC,ror_country,,Australia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#4681,Marie Laperdrix,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#4802,"Röder, Axel",C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg2_current#4811,"Schuster, Christoph",C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1,Terrill L. Frantz,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#780,Josip Stjepandic,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#784,Alain Biahmou,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#830,Georges Buzaglo,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1048,Subhash Sharma,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1139,Mozart Menezes,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1253,M. Rajmohan,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1316,Jing Zeng,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1320,Sheng He,C_country_sync,SYNC,ror_country,,China,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1332,David Bonyuet,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1357,Trung T. Pham,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1417,Arif Khan K,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1459,Petros Theodorou,C_country_sync,SYNC,ror_country,,Greece,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1595,Tsuneo Nakahara,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1675,Mario Albornoz,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1803,Masuaki Nobukawa,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1919,Xavier Boucher,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1951,Eddy Siong-Choy Chong,C_country_sync,SYNC,ror_country,,Malaysia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1956,Thomas R. Gulledge,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#1985,Julian Blohmke,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2000,Milan Jezic von Gesseneck,C_country_sync,SYNC,ror_country,,Belgium,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2122,Roshni Kumari,C_country_sync,SYNC,ror_country,,Pakistan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2406,Kai Mertins,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2474,Frédéric Roupin,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2505,Amit Garg,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2509,Aliza Heching,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2622,Fred Sollish,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2658,Akihiko Ohtaka,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#2776,Ramesh Nyathani,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#3053,Claudio Frischtak,C_country_sync,SYNC,ror_country,,Brazil,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#3160,Thomas A. Kappel,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#3269,Ernest Vlacic,C_country_sync,SYNC,ror_country,,Croatia,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#3443,Bernd Britzelmaier,C_country_sync,SYNC,ror_country,,Germany,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#3460,Calin Gurau,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4040,Aurélie HEMONNET,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4051,Rémi MENCARELLI,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4138,Saurabh Mittal,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4152,Mehran Ebrahimi,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4190,Andreas Tolk,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4247,Linda Rush,C_country_sync,SYNC,ror_country,,United Arab Emirates,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4702,Olav Eikeland,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4708,Bjorn Gustavsen,C_country_sync,SYNC,ror_country,,Norway,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#4862,Pun-arj Chairatana,C_country_sync,SYNC,ror_country,,Thailand,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5249,Ramana Acharyulu,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5260,Rebecca Beeman Geffner,C_country_sync,SYNC,ror_country,,Morocco,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5619,Antoaneta Serguieva,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5666,Angel Millan,C_country_sync,SYNC,ror_country,,Japan,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5668,Christopher D. Wickens,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5774,Zofia Pawłowska,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5787,Agnieszka Wolska,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#5809,Magdalena Żemojtel-Piotrowska,C_country_sync,SYNC,ror_country,,Poland,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#6141,Gloria Cabrejos,C_country_sync,SYNC,ror_country,,Peru,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#6281,Robin Simmons,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#6324,Carina Fiedeldey-Van Dijk,C_country_sync,SYNC,ror_country,,Canada,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#6602,Mariela Campuzano,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7363,Anna Valtonen,C_country_sync,SYNC,ror_country,,Finland,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7370,Marva Griffin Wilshire,C_country_sync,SYNC,ror_country,,Italy,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7421,"Tamika Daniel, Msw, Lcswa",C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7728,Imthiyas Yakuban,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7733,Jaspreet Kaur,C_country_sync,SYNC,ror_country,,India,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7740,Mariana Marques,C_country_sync,SYNC,ror_country,,Portugal,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7790,Richard Sandor,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7820,Valeria LEONI,C_country_sync,SYNC,ror_country,,Argentina,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7953,Xavier Ragot,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#7987,Holly Tam Bui,C_country_sync,SYNC,ror_country,,United Kingdom,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#8891,Anil Sood,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#8894,Leo Zucker,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#8895,Jack T Boorman,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9943,Arnaud Stimec,C_country_sync,SYNC,ror_country,,France,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9956,Jeff Bruno,C_country_sync,SYNC,ror_country,,United States,long primary ror_country from panel
+editor_affiliations.csv,editors_abs_ajg_gap_ajg1_current#9988,Raquel Martinez,C_country_sync,SYNC,ror_country,,Spain,long primary ror_country from panel
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,canonical_name,Henley Business School,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_name,,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,lat,,51.45625,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,lon,,-0.97113,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#1185,Abby Ghobadian,A_Henley,REMATCH,ror_notes,query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College),"query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College); leftover_fixes_20261112: user-approved rematch UK Henley Management College -> University of Reading 05v62cm79 (API active, United Kingdom); raw left as printed",UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,canonical_name,Henley Business School,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_name,,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,lat,,51.45625,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,lon,,-0.97113,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2555,Abby Ghobadian,A_Henley,REMATCH,ror_notes,query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College),"query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College); leftover_fixes_20261112: user-approved rematch UK Henley Management College -> University of Reading 05v62cm79 (API active, United Kingdom); raw left as printed",UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,canonical_name,Henley Business School,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_id,,https://ror.org/05v62cm79,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_name,,University of Reading,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,lat,,51.45625,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,lon,,-0.97113,UK Henley -> Reading
+editors_abs_ajg_gap_ajg1_current.csv,editors_abs_ajg_gap_ajg1_current#2583,Marc Day,A_Henley,REMATCH,ror_notes,query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College),"query raw affiliation; not marked chosen by ROR; ajg_gap_20261025; ror_fix_post15_20261031: no record covers the institution tokens; strict: no active ror.org record whose name/alias equals an institution string in the text (candidates: ['Henley Management College']) (was https://ror.org/00dcsjn06 UK Management College); leftover_fixes_20261112: user-approved rematch UK Henley Management College -> University of Reading 05v62cm79 (API active, United Kingdom); raw left as printed",UK Henley -> Reading
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,canonical_name,,Universidade Estadual de Campinas (UNICAMP),Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,ror_id,,https://ror.org/04wffgt70,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,ror_name,,Universidade Estadual de Campinas (UNICAMP),Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,ror_country,,Brazil,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,continent,,South America,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,lat,,-22.90556,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,lon,,-47.06083,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,affiliation_count,0,1,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,primary_aff_basis,none,single,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,ror_id_aff_rank,,1,Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5449,Sônia Miriam Draibe,B2_JLAS,MOVE,ror_notes,,"leftover_fixes_20261112: user-approved MOVE; board prints 'Universidade Estadual de Campinas, Brazil' under this editor (it was scraped into the next row #5450 as an editor name); raw_affiliation left blank, not invented; ROR 04wffgt70 API active, Brazil",Unicamp moved from phantom #5450 onto Draibe
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5450,"Universidade Estadual de Campinas, Brazil",B2_JLAS,DROP,editor_name,"Universidade Estadual de Campinas, Brazil",,Marks-style DROP of phantom row
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5450,"Universidade Estadual de Campinas, Brazil",B2_JLAS,DROP,editor_name_raw,"Universidade Estadual de Campinas, Brazil",,Marks-style DROP of phantom row
+editors_abs_ajg_gap_ajg2_current.csv,editors_abs_ajg_gap_ajg2_current#5450,"Universidade Estadual de Campinas, Brazil",B2_JLAS,DROP,ror_notes,,"leftover_fixes_20261112: user-approved DROP (Marks); phantom row, printed editor_name 'Universidade Estadual de Campinas, Brazil' (affiliation of #5449 Sônia Miriam Draibe)",Marks-style DROP of phantom row
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,raw_affiliation,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,continent,Europe,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#577,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,raw_affiliation,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,continent,Europe,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current.csv,editors_ft50_current#578,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,raw_affiliation,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_id,https://ror.org/02k09n368,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_name,Barcelona School of Economics,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_country,Spain,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,continent,Europe,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,lat,41.38879,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,lon,2.15899,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#577,Universitat Pompeu Fabra,B1_REStud,DROP,ror_notes,name_swap_abdc_ajg_20261028 rematch; ror_fix_post15_20261031: 'Barcelona School of Economics' = ror.org name 'Barcelona School of Economics' of 02k09n368; only active record with that name (was https://ror.org/05qc8r157 Portic Barcelona),"name_swap_abdc_ajg_20261028 rematch; ror_fix_post15_20261031: 'Barcelona School of Economics' = ror.org name 'Barcelona School of Economics' of 02k09n368; only active record with that name (was https://ror.org/05qc8r157 Portic Barcelona); leftover_fixes_20261112: user-approved DROP (Marks); phantom row, printed editor_name 'Universitat Pompeu Fabra', printed raw 'Barcelona School of Economics', was ROR https://ror.org/02k09n368; real editors are #640 Enikolopov, #608 Penta, #627 Vanasco",Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#578,Universitat Pompeu Fabra,B1_REStud,DROP,editor_name,Universitat Pompeu Fabra,,Marks-style DROP of phantom row (no real appointment; country/continent blanked)
+editors_ft50_current_with_ror.csv,editors_ft50_current_with_ror#578,Universitat Pompeu Fabra,B1_REStud,DROP,ror_notes,empty affiliation; left blank,"empty affiliation; left blank; leftover_fixes_20261112: user-approved DROP (Marks); phantom row, printed editor_name 'Universitat Pompeu Fabra'; real editors are #640 Enikolopov, #608 Penta, #627 Vanasco",Marks-style DROP of phantom row (no real appointment; country/continent blanked)

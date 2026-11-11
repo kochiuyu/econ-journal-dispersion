@@ -1,0 +1,168 @@
+{
+ "status": "HELD (unpublished; ready for Journal-Editor-Web)",
+ "built_at": "2026-11-12T07:50:00+08:00",
+ "base": "releases/editors_backfill_scale_ror_20261031 (published in web repo data/editors/core49/releases/, PR #41; web copy byte-identical to local base)",
+ "content_from": "releases/editors_ra_ta_merge_20261106 (held 2026-11-06)",
+ "user_approval": "publish onto public backfill approved 2026-11-12 (Collector chat 'yes fix them')",
+ "mechanical_fixes": [
+  "CRLF restored on 6 files the held pack wrote as LF (panel, long, gaps, inventory, staff_rows, match_rates)",
+  "inventory AER: Insights 2018 cell 'n/a' restored (held pack blanked it; not part of the merge)"
+ ],
+ "counts": {
+  "panel_rows": 15578,
+  "panel_rows_base": 15446,
+  "new_rows": 132,
+  "red_2021": 45,
+  "jbes_2018": 87,
+  "changed_rows": 20,
+  "long_rows": 11810,
+  "long_rows_base": 11661,
+  "long_inserted": 149,
+  "long_updated": 3
+ },
+ "qc": {
+  "ror_api_checked_distinct": 83,
+  "ror_rows_checked": 142,
+  "ror_problems": 0,
+  "dup_panel_keys": 0,
+  "base_key_order_preserved": true,
+  "panel_long_ror_desync": 0,
+  "emails": 0,
+  "phones": 0,
+  "headers_identical": true,
+  "crlf_all": true,
+  "value_diff_vs_held": "inventory n/a cell only"
+ },
+ "carried_from_held": {
+  "method": "ra_ta_20261106",
+  "fix_retry_method": "ra_fix_retry_20261106",
+  "ta_worksheet": "attachments/c6b64b16ce29d67b673cecdc2d6aabf9cd8b3e431749bdf36a604329dab06fd7.xlsx",
+  "recheck": "reports/RA_TA_recheck_20261106.md",
+  "fix_retry": {
+   "panel_rows_changed": 3,
+   "long_rows_inserted": 2,
+   "long_rows_updated": 1,
+   "included": [
+    "S11",
+    "S14",
+    "S20"
+   ],
+   "excluded": [
+    "S22",
+    "S23"
+   ],
+   "red_2021_resolved": true
+  },
+  "fix_merge": "reports/RA_FIX_merge_20261106.md",
+  "included_ra_ids": [
+   "S01",
+   "S02",
+   "S03",
+   "S04",
+   "S05",
+   "S06",
+   "S07",
+   "S08",
+   "S09",
+   "S10",
+   "S11",
+   "S12",
+   "S13",
+   "S14",
+   "S15",
+   "S16",
+   "S17",
+   "S18",
+   "S19",
+   "S20"
+  ],
+  "excluded_ra_ids": [
+   "S22",
+   "S23"
+  ],
+  "panel_rows_changed": 20,
+  "long_rows_inserted": 17,
+  "long_rows_updated": 3,
+  "ror_set_from_crosswalk": 18,
+  "ror_left_blank": 2,
+  "red_2021_method": "red_2021_board_20261106",
+  "red_2021": {
+   "panel_rows_inserted": 45,
+   "long_rows_inserted": 45,
+   "source_url": "https://www.sciencedirect.com/science/article/pii/S1094202520301198",
+   "doi": "10.1016/s1094-2025(20)30119-8",
+   "issue": "Vol 39 (2021-01)",
+   "excluded_society_officers": [
+    "Ellen McGrattan",
+    "Erwan Quintin",
+    "Marina Azzimonti"
+   ],
+   "name_expansions_from_red_prior": [
+    "J. Heathcote→Jonathan Heathcote",
+    "V. Quadrini→Vincenzo Quadrini",
+    "T.F. Cooley→Thomas F. Cooley",
+    "B. Jovanovic→Boyan Jovanovic",
+    "E.C. Prescott→Edward C. Prescott",
+    "T.J. Sargent→Thomas J. Sargent"
+   ],
+   "ror_blank": 0,
+   "report": "reports/RED_2021_board_20261106.md"
+  },
+  "jbes_2018_method": "jbes_2018_board_20261106",
+  "jbes_2018": {
+   "panel_rows_inserted": 87,
+   "long_rows_inserted": 87,
+   "source_url": "https://www.jstor.org/stable/44867911",
+   "issue": "Vol 36 No. 1 (January 2018) Front Matter",
+   "included_roles": [
+    "Joint Editors",
+    "Associate Editors",
+    "Editorial Coordinator",
+    "Honorary Advisory Board",
+    "Founding Editor"
+   ],
+   "excluded_asa_committee_on_publications": 23,
+   "ror_matched": 79,
+   "ror_unmatched": 5,
+   "ror_no_affiliation": 3,
+   "report": "reports/JBES_2018_board_20261106.md"
+  }
+ },
+ "out_md5": {
+  "BACKFILL_SCALE_ROR_affiliation_count_changes_20261031.csv": "656ef59c26e6937cc84c994de0af4326",
+  "BACKFILL_SCALE_ROR_crosscheck_20261031.csv": "c6c679926479156cf0ff704964c788c0",
+  "BACKFILL_SCALE_ROR_curated_log_20261031.csv": "5d29eafc1d62b2e559854dcfb9a4108c",
+  "BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv": "f07b99ae8b2ffd8c3dd25b72c4c0b646",
+  "BACKFILL_SCALE_ROR_ri_decisions_20261031.csv": "aed037a9208d9e1d819420319399af14",
+  "BACKFILL_SCALE_ROR_spotcheck_20261031.csv": "7a78faf4f841d820862ea29d86f9c618",
+  "BACKFILL_SCALE_ROR_staff_rows_20261031.csv": "e33ad4ca9fc7e752c48b9d546ba694d7",
+  "BACKFILL_SCALE_ROR_unmatched_strings_20261031.csv": "e2c4ac100b301fd75fd9b8714b59d993",
+  "JBES_2018_board_changes_20261106.csv": "586c6bce11eeba0055634b676dda0069",
+  "RA_FIX_retry_changes_20261106.csv": "d39e6510b976e19f59679d66309d7d40",
+  "RA_TA_merge_changes_20261106.csv": "717e0615daf297b42aa217e134f951e2",
+  "RED_2021_board_changes_20261106.csv": "ea6608ba16d8ab476993e0ce46ff31db",
+  "editor_affiliations.csv": "fbbb6a4dfae610fb1876fa2b551bf693",
+  "editors_backfill_scale_gaps.csv": "b198094dce5ad0f94592eac07cc3a4a0",
+  "editors_backfill_scale_inventory.csv": "84dbb1b2c33306c4d6e7bcc2f5ad9019",
+  "editors_backfill_scale_ror_matched.csv": "3c9dbee86d9fba2ecf12d247fe8f9c5d",
+  "editors_backfill_scale_ror_panel.csv": "bee8ebd8d148a6abd4638d6b03fac486",
+  "editors_backfill_scale_ror_unmatched.csv": "82665fabbd54115a5152a10a34f56c83",
+  "editors_backfill_scale_row_key_crosswalk.csv": "1a5cca8adb20a4914e624835143d73d0",
+  "editors_backfill_scale_spotcheck.csv": "7a958526247ee8f32582d54ecb542c2b"
+ },
+ "web_publish": {
+  "status": "PUBLISHED (pending PR merge)",
+  "published_at": "2026-11-12 (Asia/Taipei)",
+  "repo_path": "data/editors/core49/releases/editors_ra_ta_merge_rebuild_20261112/",
+  "branch": "publish-editors-leftover-fixes-20261112",
+  "replaces_current_backfill": "editors_backfill_scale_ror_20261031",
+  "note": "Top-level status fields are the collector state at hand-off. All files byte-identical to the collector pack except editors_backfill_scale_spotcheck.csv, which keeps the phone/fax-scrubbed web copy from editors_backfill_scale_ror_20261031.",
+  "scrubbed_files": {
+   "editors_backfill_scale_spotcheck.csv": {
+    "cells": 30,
+    "fragments_removed": 55,
+    "md5": "da6059469d1eee4d841cc9f2a58626f3"
+   }
+  }
+ }
+}

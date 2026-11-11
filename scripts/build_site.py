@@ -363,6 +363,8 @@ AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # too. Row counts are 3,104 / 4,982 / 11,544.
 # editors_ror_consistency3b_20261101 (Directory copy) rescrapes ajg1 and ajg2:
 # 3,104 / 5,462 / 12,316 rows, with the same nav rows kept out.
+# editors_leftover_fixes_20261112 blanks the JLAS phantom name #5450 (Marks
+# style), so ajg2 drops 1 blank-name row (was 0).
 # Panel CSVs end with board_urls and board_url_count. Readers select columns
 # by name. Those two columns are not written to the site.
 AJG_GAP_FILES = (
@@ -378,7 +380,7 @@ AJG_GAP_FILES = (
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg2_current.csv",
         frozenset({"2"}),
         5462,
-        0,
+        1,  # editors_leftover_fixes_20261112: JLAS phantom #5450 blanked
     ),
     (
         "ajg1",
