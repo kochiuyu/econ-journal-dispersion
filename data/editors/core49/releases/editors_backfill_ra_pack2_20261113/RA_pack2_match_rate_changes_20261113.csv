@@ -1,0 +1,8 @@
+journal,rows_non_staff_before,no_affiliation_before,with_affiliation_before,matched_before,unmatched_before,match_rate_before,high_before,medium_before,low_before,staff_rows_excluded_before,rows_non_staff_after,no_affiliation_after,with_affiliation_after,matched_after,unmatched_after,match_rate_after,high_after,medium_after,low_after,staff_rows_excluded_after
+AER,609,609,0,0,0,,0,0,0,19,609,599,10,10,0,1.0000,10,0,0,19
+AER: Insights,154,154,0,0,0,,0,0,0,9,154,150,4,4,0,1.0000,4,0,0,9
+Econometric Theory,490,0,490,464,26,0.9469,383,81,0,0,490,0,490,465,25,0.9490,383,82,0,0
+Journal of Labor Economics,195,195,0,0,0,,0,0,0,0,195,189,6,6,0,1.0000,6,0,0,0
+Journal of Law and Economics,55,55,0,0,0,,0,0,0,0,55,51,4,4,0,1.0000,4,0,0,0
+Journal of Political Economy,238,238,0,0,0,,0,0,0,0,238,232,6,6,0,1.0000,6,0,0,0
+Quarterly Journal of Economics,275,275,0,0,0,,0,0,0,8,275,270,5,5,0,1.0000,5,0,0,8

@@ -1,0 +1,82 @@
+{
+ "status": "HELD (unpublished; not handed to Journal-Editor-Web)",
+ "published": false,
+ "built_at": "2026-11-13T01:50:00+08:00",
+ "tag": "backfill_ra_pack2_20261113",
+ "base": "exact copy of live releases/editors_backfill_red_jbes_20261113 (PR #71, ceea925); base rows byte-identical incl. scrubbed spotcheck",
+ "script": "build_ra_pack2_20261113.py",
+ "qc": "qc_ra_pack2_20261113.py (see qc_ra_pack2_20261113.log)",
+ "work_folder": "releases/RA_pack2_collector_work_20261113 (results.csv, proposed_panel_updates.csv, evidence DO NOT PUBLISH)",
+ "authorization": "user t242u 2026-11-13: handle RA pack 2 items ourselves",
+ "changes": {
+  "panel_rows_updated": 19,
+  "panel_rows_added": 0,
+  "long_rows_added": 18,
+  "long_rows_updated": 1,
+  "keys": [
+   "#999",
+   "#1055",
+   "#1089",
+   "#1205",
+   "#1260",
+   "#1630",
+   "#1662",
+   "#12660",
+   "#12694",
+   "#12737",
+   "#11338",
+   "#11356",
+   "#11368",
+   "#11452",
+   "#11461",
+   "#14135",
+   "#14157",
+   "#14206",
+   "#2046"
+  ],
+  "match_rates_rows_changed": [
+   "AER",
+   "AER: Insights",
+   "Journal of Political Economy",
+   "Journal of Labor Economics",
+   "Journal of Law and Economics",
+   "Quarterly Journal of Economics",
+   "Econometric Theory"
+  ],
+  "inventory_rows_changed": [],
+  "gaps_rows_changed": []
+ },
+ "totals": {
+  "panel": 15873,
+  "long": 12120
+ },
+ "unchanged_decisions": {
+  "#3864": "S19 CEPR Montreal, ROR blank",
+  "#5947": "S21 European U. Institute, ROR blank (no 0031wrj91)"
+ },
+ "whole_board_gaps_unchanged": {
+  "JRU 2023": "no_snapshot 0/0 (EIC-only 2023 Springer captures)",
+  "RED 2024": "queued 0/0 (ScienceDirect PDF bot wall)",
+  "JBES 2025": "no_snapshot 0/0 (JSTOR ends Vol 38 No 4 2020; T&F TOC no front matter)"
+ },
+ "ror_api_recheck": "2026-11-13, 15 ids active, name+country match; responses in work folder evidence/ror_api_recheck_freeze/",
+ "directory_change": false,
+ "build_site_change": false,
+ "web_publish": {
+  "status": "PUBLISHED (pending PR merge)",
+  "published_at": "2026-11-13 (Asia/Taipei)",
+  "repo_path": "data/editors/core49/releases/editors_backfill_ra_pack2_20261113/",
+  "branch": "publish-editors-backfill-ra-pack2-20261113",
+  "replaces_current_backfill": "editors_backfill_red_jbes_20261113",
+  "excluded_files": [
+   "JBES_2019_editorial_board.pdf",
+   "JBES_2020_editorial_board.pdf",
+   "RED_2025_editorial_board.pdf",
+   "_live_manifest_sha256.txt"
+  ],
+  "renamed_files": {
+   "RELEASE_NOTES.md": "COLLECTOR_RELEASE_NOTES.md"
+  },
+  "note": "Top-level status fields are the collector state at hand-off. Data files are byte-identical to the collector pack; the inherited source PDFs are not published (staff contact data); _live_manifest_sha256.txt (checksums of the collector's own live folder) is not published; editors_backfill_scale_spotcheck.csv is byte-identical to the phone/fax-scrubbed web copy."
+ }
+}

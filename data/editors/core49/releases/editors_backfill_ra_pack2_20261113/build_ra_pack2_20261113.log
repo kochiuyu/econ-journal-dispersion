@@ -1,0 +1,8 @@
+match_rates AER: with_aff 0->10, matched 0->10, unmatched 0->0, rate n/a->1.0000
+match_rates AER: Insights: with_aff 0->4, matched 0->4, unmatched 0->0, rate n/a->1.0000
+match_rates Econometric Theory: with_aff 490->490, matched 464->465, unmatched 26->25, rate 0.9469->0.9490
+match_rates Journal of Labor Economics: with_aff 0->6, matched 0->6, unmatched 0->0, rate n/a->1.0000
+match_rates Journal of Law and Economics: with_aff 0->4, matched 0->4, unmatched 0->0, rate n/a->1.0000
+match_rates Journal of Political Economy: with_aff 0->6, matched 0->6, unmatched 0->0, rate n/a->1.0000
+match_rates Quarterly Journal of Economics: with_aff 0->5, matched 0->5, unmatched 0->0, rate n/a->1.0000
+panel rows 15873; long rows 12120; panel keys changed 19; long rows appended 18; long rows updated 1
