@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=continent-colors">
+  <link rel="stylesheet" href="style.css?v=search-first-20261113">
   <script>
     /* Start the shell, and the FT50 chunk unless the URL names another scope. */
     (function () {
@@ -78,39 +78,9 @@
   </header>
 
   <main class="wrap">
-    <p class="intro" id="intro">
-      Current editorial boards on the Financial Times FT50 list, the 2025 ABDC Journal Quality List
-      (A*, A, B, and C), and AJG-gap journals that are not already on those boards.
-      The table opens on FT50. Other lists load when you select them.
-      Top 5 and UTD24 are extra filters on the FT50 and ABDC boards.
-      AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) on the boards in this directory.
-      <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
-      Full AJG editions are on <a href="rankings.html">Rankings</a>.
-      <span id="asof">Board year 2026.</span>
-    </p>
+    <h1 class="page-title">Editor directory</h1>
+    <p class="intro" id="intro">Search current journal editors by name, journal, institution, or subject. Start with FT50, or combine lists below. <span id="asof">Board year 2026.</span></p>
 
-    <section class="stats" id="stats" aria-label="Directory totals">
-      <div class="stat">
-        <div class="n" id="n-appointments">…</div>
-        <div class="l">Appointments</div>
-        <div class="sub">All lists</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-editors">…</div>
-        <div class="l">Editors</div>
-        <div class="sub">Distinct names</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-journals">…</div>
-        <div class="l">Journals</div>
-        <div class="sub">FT50, ABDC, and AJG-gap</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-countries">…</div>
-        <div class="l">Countries</div>
-        <div class="sub">Matched affiliation</div>
-      </div>
-    </section>
 
     <section class="controls" id="directory" aria-label="Filter editors">
       <form id="filters" role="search">
@@ -118,16 +88,17 @@
           <label class="sr-only" for="q">Search editors</label>
           <input id="q" type="search" name="q" placeholder="Search name, journal, affiliation, field, or role" autocomplete="off" spellcheck="false">
           <button class="btn" type="submit">Search</button>
-          <button class="btn" type="button" id="clear">Clear</button>
+          <button class="btn" type="button" id="clear">Clear filters</button>
+          <button class="btn" type="button" id="reset-default">Reset to FT50</button>
         </div>
         <div class="row" id="universe-row">
-          <span class="lbl" id="universe-label">List</span>
+          <span class="sr-only" id="universe-label">List</span>
         </div>
         <div class="row" id="journal-chip-row" hidden role="group" aria-labelledby="journal-chip-label">
           <span class="lbl" id="journal-chip-label">Journal</span>
         </div>
         <details class="directory-more">
-          <summary>More filters</summary>
+          <summary>Refine results</summary>
           <div class="row">
             <label class="lbl" for="role">Role</label>
             <select id="role" name="role">
@@ -158,10 +129,31 @@
         </details>
       </form>
       <div class="directory-active row" id="active-filters" role="group" aria-label="Active filters" hidden></div>
-      <details class="directory-help">
-        <summary>How filters work</summary>
-        <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. When the selected lists together have at most 24 journals (Top 5, or UTD24 on its own), journal chips appear under the list chips. Every member journal starts selected; click a chip to turn that journal off or back on. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap profiles are partial, so a gap name with no URL stays plain text.</p>
-      </details>
+<p class="hint">Selected lists combine; other filters narrow the results. Clear filters keeps your selected lists.</p>
+    </section>
+
+    <section class="stats stats-compact" id="stats" aria-label="Directory totals">
+      <p class="stats-scope">Coverage across all lists</p>
+      <div class="stat">
+        <div class="n" id="n-appointments">…</div>
+        <div class="l">Appointments</div>
+        <div class="sub">All lists</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editors">…</div>
+        <div class="l">Editors</div>
+        <div class="sub">Distinct names</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-journals">…</div>
+        <div class="l">Journals</div>
+        <div class="sub">FT50, ABDC, and AJG-gap</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-countries">…</div>
+        <div class="l">Countries</div>
+        <div class="sub">Matched affiliation</div>
+      </div>
     </section>
 
     <div class="directory-results">
@@ -206,7 +198,10 @@
       </div>
     </div>
 
-    <section class="prose" id="about">
+    <section class="prose" id="about"><details class="about-data">
+        <summary>About this data</summary>
+        <div class="about-data-body">
+
       <h2>About this directory</h2>
       <p>
         This is the public editor list for
@@ -319,6 +314,23 @@
         The project site is
         <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
       </p>
+    
+<h2>Coverage and scope</h2><p>
+      Current editorial boards on the Financial Times FT50 list, the 2025 ABDC Journal Quality List
+      (A*, A, B, and C), and AJG-gap journals that are not already on those boards.
+      The table opens on FT50. Other lists load when you select them.
+      Top 5 and UTD24 are extra filters on the FT50 and ABDC boards.
+      AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) on the boards in this directory.
+      <a href="journals.html">Journals</a> and <a href="institutions.html">Institutions</a> group the same appointments.
+      Full AJG editions are on <a href="rankings.html">Rankings</a>.
+      
+    </p>
+      
+        <h2>How filters work</h2>
+        <p class="hint">The page opens on FT50. A dashed list chip is not loaded yet; selecting it downloads that list. When the selected lists together have at most 24 journals (Top 5, or UTD24 on its own), journal chips appear under the list chips. Every member journal starts selected; click a chip to turn that journal off or back on. With no list selected, results are the appointments loaded so far. Selecting more than one list shows appointments on any of them. An FT50 journal that is also on an ABDC list is one row with both badges. Top 5 adds a badge on the five general-interest journals inside FT50, and those rows are already in the FT50 download. UTD24 adds a badge on that list, including INFORMS Journal on Computing from ABDC A. An AJG chip is one 2024 CABS grade: AJG 4*, AJG 4, AJG 3, AJG 2, or AJG 1. FT50 and ABDC rows take it from the rankings join. AJG-gap rows take it from their panel and carry that grade on its own. Institution suggests affiliations from the lists loaded so far and keeps that exact name. Field is the 2025 ABDC subject on the loaded journals, shown without the leading code. AJG-gap journals often have no ABDC field. The same person on another journal is a separate row. A name opens a faculty profile when the release has one. AJG-gap profiles are partial, so a gap name with no URL stays plain text.</p>
+      
+        </div>
+      </details>
     </section>
     <section class="prose icon-credits-note" aria-labelledby="icon-credits">
       <details>
@@ -343,7 +355,9 @@
   <script src="data/institution-icons.js?v=institution-icons-6666"></script>
   <script src="institution-icons.js?v=local-icons"></script>
   <script src="continent-icons.js"></script>
+  <script src="filter-controls.js?v=search-first-20261113"></script>
   <script src="table-controls.js"></script>
-  <script src="app.js?v=table-usability"></script>
+  <script src="app.js?v=search-first-20261113"></script>
 </body>
 </html>
+

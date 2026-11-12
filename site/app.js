@@ -1124,6 +1124,10 @@
     activeFiltersEl.dataset.signature = signature;
     activeFiltersEl.hidden = !filters.length;
     activeFiltersEl.replaceChildren();
+    var caption = document.createElement("span");
+    caption.className = "filter-caption";
+    caption.textContent = "Active filters";
+    activeFiltersEl.appendChild(caption);
     filters.forEach(function (filter) {
       var key = filter[0];
       var label = filter[1];
@@ -1131,6 +1135,8 @@
       var button = document.createElement("button");
       button.type = "button";
       button.className = "chip";
+      button.classList.add("filter-remove");
+      button.dataset.filter = filter[3] ? "universe" : key;
       button.textContent = (label === "List" ? value : label + ": " + value) + " ×";
       button.setAttribute("aria-label", "Remove " + label.toLowerCase() + " filter: " + value);
       button.addEventListener("click", function () {
@@ -1151,7 +1157,7 @@
           state.page = 1;
           schedule();
         } else {
-          if (key === "q") window.clearTimeout(debounce);
+          if (key === "q") { window.clearTimeout(debounce); qEl.value = ""; }
           state[key] = "";
           state.page = 1;
           closeSuggest();
@@ -1169,6 +1175,7 @@
       if (filter[0] !== "journals") state[filter[0]] = "";
     });
     state.journals = null;
+    qEl.value = "";
     state.page = 1;
     closeSuggest();
   }
@@ -1407,6 +1414,7 @@
 
   fillHeader();
   initControls();
+  window.filterControls.groupLists(universeRow);
 
   qEl.addEventListener("input", function () {
     window.clearTimeout(debounce);
@@ -1493,6 +1501,12 @@
 
   clearBtn.addEventListener("click", function () {
     resetSearchFilters();
+    schedule();
+    qEl.focus();
+  });
+
+  document.getElementById("reset-default").addEventListener("click", function () {
+    resetSearchFilters();
     state.universes = new Set(SHELL.defaultUniverses || ["ft50"]);
     state.universeMode = "default";
     state.sort = "name";
@@ -1535,7 +1549,10 @@
   });
 
   window.addEventListener("popstate", function () {
+    window.clearTimeout(debounce);
     state = readUrl();
+    qEl.value = state.q;
+    institutionEl.value = displayedAffiliation();
     appliedContinent = null;
     closeSuggest();
     schedule();
@@ -1550,3 +1567,4 @@
 
   schedule();
 })();
+

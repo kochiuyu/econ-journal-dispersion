@@ -38,6 +38,7 @@
   var universeRow = document.getElementById("universe-row");
   var form = document.getElementById("filters");
   var clearBtn = document.getElementById("clear");
+  var activeFiltersEl = document.getElementById("active-filters");
 
   var state = readUrl();
   var debounce = 0;
@@ -285,6 +286,25 @@
     return { matched: matched, uniCounts: uniCounts };
   }
 
+
+  function renderActiveFilters() {
+    var filters = [];
+    state.universes.forEach(function (id) {
+      var universe = universes.find(function (item) { return item.id === id; });
+      if (universe) filters.push({key: "universe", label: "List", value: id, display: universe.label});
+    });
+    if (state.q) filters.push({key: "q", label: "Search", value: state.q});
+    if (state.field) filters.push({key: "field", label: "Field", value: state.field, display: fieldLabel(state.field)});
+    window.filterControls.renderActive(activeFiltersEl, filters, function (filter) {
+      window.clearTimeout(debounce);
+      if (filter.key === "universe") state.universes.delete(filter.value);
+      else state[filter.key] = "";
+      qEl.value = state.q;
+      state.page = 1;
+      render();
+    }, qEl);
+  }
+
   function syncControls() {
     if (document.activeElement !== qEl) qEl.value = state.q;
     fieldEl.value = state.field;
@@ -292,6 +312,7 @@
     universeRow.querySelectorAll(".chip").forEach(function (chip) {
       chip.setAttribute("aria-pressed", state.universes.has(chip.dataset.universe) ? "true" : "false");
     });
+    renderActiveFilters();
     window.tableControls.sort(state.sort, state.dir);
   }
 
@@ -408,6 +429,7 @@
   fillHay();
   fillHeader();
   initControls();
+  window.filterControls.groupLists(universeRow);
 
   qEl.addEventListener("input", function () {
     window.clearTimeout(debounce);
@@ -438,14 +460,13 @@
   });
 
   clearBtn.addEventListener("click", function () {
+    window.clearTimeout(debounce);
     state.q = "";
-    state.universes = new Set();
     state.field = "";
-    state.sort = "name";
-    state.dir = "asc";
+    qEl.value = "";
     state.page = 1;
-    state.pageSize = 50;
     render();
+    qEl.focus();
   });
 
   document.querySelectorAll("th button").forEach(function (button) {
@@ -462,7 +483,9 @@
   });
 
   window.addEventListener("popstate", function () {
+    window.clearTimeout(debounce);
     state = readUrl();
+    qEl.value = state.q;
     render();
   });
 
@@ -475,3 +498,4 @@
 
   render();
 })();
+

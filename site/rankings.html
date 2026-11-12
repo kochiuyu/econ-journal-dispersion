@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=table-usability">
+  <link rel="stylesheet" href="style.css?v=search-first-20261113">
 </head>
 <body>
   <a class="skip" href="#rankings">Skip to rankings</a>
@@ -43,24 +43,39 @@
   </header>
 
   <main class="wrap">
-    <p class="intro" id="intro">
-      Journal grades, weights, and membership lists, not editorial appointments.
-      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, Shanghai, and SHUFE are editions with ratings.
-      Handelsblatt/VWL also shows the published weight.
-      ABDC is the 2025 Journal Quality List (A*, A, B, C).
-      FT50, UTD24, and Top 5 are lists with no grade tiers.
-      Tilburg is the TISEM top-journal list (Top-core, Top, Very good).
-      FNEGE grades are 1*, 1, 2, 3, and 4.
-      ERIM is the Core list for 2024–2028.
-      Stern is NYU Stern top-tier journals by department. Grades differ by department.
-      Shanghai is binary membership (Top) for Economics, Business Administration, Finance, and Management.
-      SHUFE is the SUFE Tenure-Track Journal List (Top Tier, First Tier, Second Tier, Third Tier). The page does not name an edition year, so the selector is Current.
-      Field is the source subject when the list has one.
-      Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
-      Every AJG edition stays on this page.
-    </p>
+    <h1 class="page-title">Journal rankings</h1>
+    <p class="intro" id="intro">Find journals across ranking systems and editions. Choose a ranking and edition to compare its published ratings.</p>
 
-    <section class="stats" id="stats" aria-label="Edition totals">
+
+    <section class="controls" id="rankings" aria-label="Filter rankings">
+      <form id="filters" role="search">
+        <div class="row">
+          <label class="sr-only" for="q">Search journals</label>
+          <input id="q" type="search" name="q" placeholder="Search journal title" autocomplete="off" spellcheck="false">
+          <button class="btn" type="submit">Search</button>
+          <button class="btn" type="button" id="clear">Clear filters</button>
+        </div>
+        <div class="row">
+          <label class="lbl" for="system">Ranking</label>
+          <select id="system" name="system"></select>
+          <label class="lbl" for="year">Edition</label>
+          <select id="year" name="year"></select>
+          <label class="lbl" for="rating">Rating</label>
+          <select id="rating" name="rating">
+            <option value="">All ratings</option>
+          </select>
+          <label class="lbl" for="field">Field</label>
+          <select id="field" name="field">
+            <option value="">All fields</option>
+          </select>
+        </div>
+      </form>
+      <div class="active-filters row" id="active-filters" role="group" aria-label="Active filters" hidden></div>
+<p class="hint">Clear filters keeps the selected ranking and edition.</p>
+    </section>
+
+    <section class="stats stats-compact" id="stats" aria-label="Edition totals">
+      <p class="stats-scope">Coverage for the selected edition</p>
       <div class="stat">
         <div class="n" id="n-journals">…</div>
         <div class="l">Journals</div>
@@ -81,32 +96,6 @@
         <div class="l">Editions</div>
         <div class="sub" id="s-editions">Editions on file</div>
       </div>
-    </section>
-
-    <section class="controls" id="rankings" aria-label="Filter rankings">
-      <form id="filters" role="search">
-        <div class="row">
-          <label class="sr-only" for="q">Search journals</label>
-          <input id="q" type="search" name="q" placeholder="Search journal title" autocomplete="off" spellcheck="false">
-          <button class="btn" type="submit">Search</button>
-          <button class="btn" type="button" id="clear">Clear</button>
-        </div>
-        <div class="row">
-          <label class="lbl" for="system">Ranking</label>
-          <select id="system" name="system"></select>
-          <label class="lbl" for="year">Edition</label>
-          <select id="year" name="year"></select>
-          <label class="lbl" for="rating">Rating</label>
-          <select id="rating" name="rating">
-            <option value="">All ratings</option>
-          </select>
-          <label class="lbl" for="field">Field</label>
-          <select id="field" name="field">
-            <option value="">All fields</option>
-          </select>
-        </div>
-      </form>
-      <p class="hint">The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. SHUFE tiers are Top Tier, First Tier, Second Tier, and Third Tier. The source page has no edition year, so the selector is Current, and this list has no field. Hover a Tilburg, FNEGE, ERIM, Stern, Shanghai, or SHUFE grade for the source name. A blank journal id is unmatched in that freeze.</p>
     </section>
 
     <p class="count" id="count" aria-live="polite" tabindex="-1">Loading rankings…</p>
@@ -141,7 +130,10 @@
       </div>
     </div>
 
-    <section class="prose" id="about">
+    <section class="prose" id="about"><details class="about-data">
+        <summary>About this data</summary>
+        <div class="about-data-body">
+
       <h2>About these rankings</h2>
       <p>
         This page lists journal grades and membership lists. It is separate from the
@@ -305,6 +297,26 @@
         The project site is
         <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
       </p>
+    
+<h2>Coverage and scope</h2><p>
+      Journal grades, weights, and membership lists, not editorial appointments.
+      ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, Shanghai, and SHUFE are editions with ratings.
+      Handelsblatt/VWL also shows the published weight.
+      ABDC is the 2025 Journal Quality List (A*, A, B, C).
+      FT50, UTD24, and Top 5 are lists with no grade tiers.
+      Tilburg is the TISEM top-journal list (Top-core, Top, Very good).
+      FNEGE grades are 1*, 1, 2, 3, and 4.
+      ERIM is the Core list for 2024–2028.
+      Stern is NYU Stern top-tier journals by department. Grades differ by department.
+      Shanghai is binary membership (Top) for Economics, Business Administration, Finance, and Management.
+      SHUFE is the SUFE Tenure-Track Journal List (Top Tier, First Tier, Second Tier, Third Tier). The page does not name an edition year, so the selector is Current.
+      Field is the source subject when the list has one.
+      Directory AJG chips are the 2024 grades on current FT50, ABDC, and AJG-gap boards.
+      Every AJG edition stays on this page.
+    </p>
+<h2>Using the filters</h2><p>The table opens on the best grade, then A–Z inside that grade. Handelsblatt/VWL orders letter classes A+ through F, and a higher weight comes first inside one class. FT50, UTD24, Top 5, and Shanghai open A–Z. Search matches the journal title. A journal id, field, ISSN, or weight matches too. Field lists the subjects on this edition. Handelsblatt/VWL shows weight, and a blank letter rating means that row has no class. FT50, UTD24, and Top 5 have no rating. UTD24 and Top 5 have no field. FT50 field is the McMaster subject area. Tilburg tiers are Top-core, Top, and Very good. FNEGE also keeps EM and NC where the table prints them. ERIM uses the Core class, including STAR, P, and PA. On Stern, Field is the department. 2020 is Accounting, Economics, Finance, Management, and Marketing. 2021 is Technology, Operations &amp; Statistics. The cell adds the memo heading when the row has one. Stern grades sort Top 5, Really excellent, Top-tier, then Field and Specialized high-impact, then Other notable, Notable review, and Review. The rating menu lists the grades on that edition. Shanghai is Top on every row, and Field is the subject. SHUFE tiers are Top Tier, First Tier, Second Tier, and Third Tier. The source page has no edition year, so the selector is Current, and this list has no field. Hover a Tilburg, FNEGE, ERIM, Stern, Shanghai, or SHUFE grade for the source name. A blank journal id is unmatched in that freeze.</p>
+        </div>
+      </details>
     </section>
   </main>
 
@@ -319,7 +331,9 @@
   </footer>
 
   <script src="rankings-data.js"></script>
+  <script src="filter-controls.js?v=search-first-20261113"></script>
   <script src="table-controls.js"></script>
-  <script src="rankings.js?v=table-usability"></script>
+  <script src="rankings.js?v=search-first-20261113"></script>
 </body>
 </html>
+

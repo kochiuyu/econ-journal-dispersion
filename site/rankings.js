@@ -82,6 +82,7 @@
   var pageSizeEl = document.getElementById("pagesize");
   var form = document.getElementById("filters");
   var clearBtn = document.getElementById("clear");
+  var activeFiltersEl = document.getElementById("active-filters");
   var nJournals = document.getElementById("n-journals");
   var nTop = document.getElementById("n-top");
   var nMapped = document.getElementById("n-mapped");
@@ -346,6 +347,21 @@
     if (current && fields.indexOf(current) === -1) state.field = "";
   }
 
+
+  function renderActiveFilters() {
+    var filters = [];
+    if (state.q) filters.push({key: "q", label: "Search", value: state.q});
+    if (state.rating) filters.push({key: "rating", label: "Rating", value: state.rating});
+    if (state.field) filters.push({key: "field", label: "Field", value: state.field});
+    window.filterControls.renderActive(activeFiltersEl, filters, function (filter) {
+      window.clearTimeout(debounce);
+      state[filter.key] = "";
+      qEl.value = state.q;
+      state.page = 1;
+      render();
+    }, qEl);
+  }
+
   function syncControls() {
     qEl.value = state.q;
     systemEl.value = state.system;
@@ -353,6 +369,7 @@
     ratingEl.value = state.rating;
     fieldEl.value = state.field;
     pageSizeEl.value = String(state.pageSize);
+    renderActiveFilters();
     window.tableControls.sort(state.sort, state.dir);
   }
 
@@ -586,16 +603,14 @@
   });
 
   clearBtn.addEventListener("click", function () {
+    window.clearTimeout(debounce);
     state.q = "";
-    state.system = defaultSystem();
-    state.year = defaultYear(state.system);
     state.rating = "";
     state.field = "";
-    state.sort = defaultSort(state.system);
-    state.dir = defaultDir(state.sort);
+    qEl.value = "";
     state.page = 1;
-    state.pageSize = 50;
     render();
+    qEl.focus();
   });
 
   document.querySelectorAll("th button").forEach(function (button) {
@@ -612,7 +627,9 @@
   });
 
   window.addEventListener("popstate", function () {
+    window.clearTimeout(debounce);
     state = readUrl();
+    qEl.value = state.q;
     render();
   });
 
@@ -625,3 +642,4 @@
 
   render();
 })();
+
