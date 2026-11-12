@@ -7,6 +7,13 @@
   --navy: #16303c;
   --accent: #1d4e63;
   --accent-soft: #e5eef2;
+  --continent-africa: #946200;
+  --continent-antarctica: #457a86;
+  --continent-asia: #b03a65;
+  --continent-europe: #2663b0;
+  --continent-north-america: #167b53;
+  --continent-south-america: #c04b26;
+  --continent-oceania: #7753a5;
   --chip: #f7f3eb;
   --shadow: 0 10px 28px rgba(22, 48, 60, 0.06);
   --radius: 12px;
@@ -24,6 +31,13 @@
     --navy: #d5e4ec;
     --accent: #8ec5d6;
     --accent-soft: #24343b;
+    --continent-africa: #e2b85c;
+    --continent-antarctica: #8fc4cf;
+    --continent-asia: #ed95ba;
+    --continent-europe: #83b3fa;
+    --continent-north-america: #7dcba5;
+    --continent-south-america: #f39d7e;
+    --continent-oceania: #c0a2e9;
     --chip: #2a2622;
     --shadow: none;
     color-scheme: dark;
@@ -266,6 +280,14 @@ a.person { font-weight: 650; }
   margin-inline-end: 0.4em;
   vertical-align: -0.2em;
 }
+
+.continent-icon[data-continent="Africa"] { color: var(--continent-africa); }
+.continent-icon[data-continent="Antarctica"] { color: var(--continent-antarctica); }
+.continent-icon[data-continent="Asia"] { color: var(--continent-asia); }
+.continent-icon[data-continent="Europe"] { color: var(--continent-europe); }
+.continent-icon[data-continent="North America"] { color: var(--continent-north-america); }
+.continent-icon[data-continent="South America"] { color: var(--continent-south-america); }
+.continent-icon[data-continent="Oceania"] { color: var(--continent-oceania); }
 
 .directory-more,
 .directory-help,
