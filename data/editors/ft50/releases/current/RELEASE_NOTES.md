@@ -1,4 +1,19 @@
-# editors_campus_conflict_fix_20261111
+# editors_current_leftovers_20261112
+
+Published 2026-11-12 (Asia/Taipei). This supersedes `editors_leftover_fixes_20261112` (PR #69) for the Directory current panels. It is a keyed Collector freeze of evidenced current-board leftovers (user: “Yes, unless you think only RA can fix, you can fix those?”), taken through its `CURRENT_LEFTOVERS_directory_diff_20261112.csv` (keyed on `editor_row_key`; 341 cells, 0 missing keys, 0 old-value mismatches) and applied cell by cell from its change log on published keys (121 rows across all panels: 7 attaches, 19 Marks-style DROPs, 27 school-unit rematches, 68 country fills).
+
+- FT50: 2 printed-country fills on `editors_ft50_current_with_ror.csv` (#6124 and #6472, Min Z. Carter, Journal of Applied Psychology; `ror_country` / `continent`, no ROR). The slim `editors_ft50_current.csv` is unchanged (the Directory does not read it; the slim vs with_ror divergence is held by the Collector).
+- REStud #577/#578 stay out of the published panels (10,047 rows each; Collector 10,049).
+
+`ror_id` 9,870 / 9,795 unchanged. The FT50 files were not changed by the freezes since `editors_campus_conflict_fix_20261111`; the previous FT50 notes follow.
+
+No new ROR (all targets API-active and already on the panels). `raw_affiliation` is left as printed on every row. No pilot files are published or changed. No emails or phones. Untouched: Henley Africa #18374, the 40 held campus rows, two-place rows, HKU deferred, unplaced editors, and the Collector's held items (JMID rest of board, European Transport blank-affiliation fills Di Matteo #15763 and Bonera #15767, the E and F skips listed in `COLLECTOR_RELEASE_NOTES.md`).
+
+**Directory.** Institutions 11,065 (was 11,074), 6,698 with a ROR id (unchanged; distinct 6,698), countries 169 (unchanged), shared display names 43 (unchanged; the build guard stays 43); appointments 162,555 (was 162,574), editors 112,699 (was 112,718), journals 2,853, appointments without an institution 13,387 (was 13,413).
+
+Long table and change logs: `data/editors/releases/editors_current_leftovers_20261112/` (`editor_affiliations.csv.gz`, 181,449 rows; the long table changes 117 parts on 117 keys (`ror_country` 76, `ror_id` / `ror_name` / `is_panel_ror` 32, `ror_match_note` 49, `editor_name` blanked on 17 JMID phantom/non-person parts); no `raw_aff_part` edits; the 4 European Transport keys have no long-table part and none was invented). Report: `docs/reports/CURRENT_LEFTOVERS_20261112.md`.
+
+## Previous freeze: editors_campus_conflict_fix_20261111
 
 Published 2026-11-11 (Asia/Taipei). This supersedes `editors_school_unit_rematch_20261111` (PR #63) for the Directory current panels. It is a keyed, user-approved Collector freeze of the seven campus-conflict rematches skipped in that freeze, taken through its `CAMPUS_CONFLICT_directory_diff_20261111.csv` (keyed on `editor_row_key`; 35 cells, 0 missing keys, 0 old-value mismatches). No raw-text edits. All 7 of 7 recommendation rows were applied. Four NUBS China/Ningbo/Zhejiang rows (`#18543` Kingsley Dogah, `#20062` Jie Wang, `#803` Frithjof Arp, `#3138` Bruno Deschamps) go to University of Nottingham Ningbo China `03y4dt428`. Three Newcastle Business School Australia rows (`#18450` Marianna Sigala, `#27171` Alison Dean, `#24283` Mojtaba Barari) go to University of Newcastle Australia `00eae9z71`. UK Nottingham `01ee9ar58` and Northumbria `049e6bc10` were not assigned. Both target RORs were API-verified and already on the published panels; no new ROR. `raw_affiliation` is left as the printed masthead. Two other unmatched NUBS China rows (`#4924` Patrick Chau, `#5221` Y. Ye) were not in the file and were left as printed, so the “Nottingham University Business School China” display name remains. Held campus and two-place rows stay as printed. No pilot files are published or changed. No emails or phones.
 

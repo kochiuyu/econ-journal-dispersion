@@ -1,0 +1,347 @@
+2026-11-12T23:29:38+0800 backfill_red_gap_20261112 build summary
+{
+ "api": {
+  "0190ak572": {
+   "status": "active",
+   "name": "New York University",
+   "country": "United States"
+  },
+  "02jx3x895": {
+   "status": "active",
+   "name": "University College London",
+   "country": "United Kingdom"
+  },
+  "02gsb6172": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Philadelphia",
+   "country": "United States"
+  },
+  "00rs6vg23": {
+   "status": "active",
+   "name": "The Ohio State University",
+   "country": "United States"
+  },
+  "04cvxnb49": {
+   "status": "active",
+   "name": "Goethe University Frankfurt",
+   "country": "Germany"
+  },
+  "01an3r305": {
+   "status": "active",
+   "name": "University of Pittsburgh",
+   "country": "United States"
+  },
+  "00py81415": {
+   "status": "active",
+   "name": "Duke University",
+   "country": "United States"
+  },
+  "03efmqc40": {
+   "status": "active",
+   "name": "Arizona State University",
+   "country": "United States"
+  },
+  "00v448643": {
+   "status": "active",
+   "name": "Federal Reserve Board of Governors",
+   "country": "United States"
+  },
+  "017zqws13": {
+   "status": "active",
+   "name": "University of Minnesota",
+   "country": "United States"
+  },
+  "026zzn846": {
+   "status": "active",
+   "name": "Queen Mary University of London",
+   "country": "United Kingdom"
+  },
+  "046rm7j60": {
+   "status": "active",
+   "name": "University of California, Los Angeles",
+   "country": "United States"
+  },
+  "05hwvzg47": {
+   "status": "active",
+   "name": "Federal Reserve Bank of New York",
+   "country": "United States"
+  },
+  "03v76x132": {
+   "status": "active",
+   "name": "Yale University",
+   "country": "United States"
+  },
+  "00b30xv10": {
+   "status": "active",
+   "name": "University of Pennsylvania",
+   "country": "United States"
+  },
+  "01y2jtd41": {
+   "status": "active",
+   "name": "University of Wisconsin–Madison",
+   "country": "United States"
+  },
+  "02grkyz14": {
+   "status": "active",
+   "name": "Western University",
+   "country": "Canada"
+  },
+  "05abbep66": {
+   "status": "active",
+   "name": "Brandeis University",
+   "country": "United States"
+  },
+  "04e874t64": {
+   "status": "active",
+   "name": "Einaudi Institute for Economics and Finance",
+   "country": "Italy"
+  },
+  "0168r3w48": {
+   "status": "active",
+   "name": "University of California San Diego",
+   "country": "United States"
+  },
+  "022kthw22": {
+   "status": "active",
+   "name": "University of Rochester",
+   "country": "United States"
+  },
+  "02skhjj30": {
+   "status": "active",
+   "name": "Federal Reserve Bank of St. Louis",
+   "country": "United States"
+  },
+  "03dbr7087": {
+   "status": "active",
+   "name": "University of Toronto",
+   "country": "Canada"
+  },
+  "0241avf06": {
+   "status": "active",
+   "name": "Centre de Recerca en Economia Internacional",
+   "country": "Spain"
+  },
+  "00hx57361": {
+   "status": "active",
+   "name": "Princeton University",
+   "country": "United States"
+  },
+  "00hj8s172": {
+   "status": "active",
+   "name": "Columbia University",
+   "country": "United States"
+  },
+  "0380n5h16": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Minneapolis",
+   "country": "United States"
+  },
+  "05x2bcf33": {
+   "status": "active",
+   "name": "Carnegie Mellon University",
+   "country": "United States"
+  },
+  "000e0be47": {
+   "status": "active",
+   "name": "Northwestern University",
+   "country": "United States"
+  },
+  "00f54p054": {
+   "status": "active",
+   "name": "Stanford University",
+   "country": "United States"
+  },
+  "05qghxh33": {
+   "status": "active",
+   "name": "Stony Brook University",
+   "country": "United States"
+  }
+ },
+ "new_rows": 86,
+ "new_long": 86,
+ "by_year": {
+  "2022": 43,
+  "2023": 43
+ },
+ "unmatched": [
+  [
+   "editors_backfill_scale_panel#15638",
+   "Anmol Bhandari",
+   "Economics, Minneapolis, MN 55455"
+  ]
+ ],
+ "inv_changes": [
+  [
+   "2021",
+   {
+    "rows_parsed": [
+     "0",
+     "45"
+    ],
+    "rows_with_affiliation": [
+     "0",
+     "45"
+    ],
+    "parser": [
+     "",
+     "red_2021_board_20261106"
+    ],
+    "status": [
+     "blocked",
+     "ok_issue_front_matter"
+    ],
+    "note": [
+     "ScienceDirect download limit modal (capture blocked); not parsed",
+     "RED 2021 board from ScienceDirect Vol 39 (2021-01) Editorial Board front matter (free PDF verified 2026-11-06); 45 rows on panel #15446-#15490; SED officers excluded (gaps); status fixed red_gap_20261112"
+    ]
+   }
+  ],
+  [
+   "2022",
+   {
+    "source_type": [
+     "",
+     "wayback"
+    ],
+    "capture_route": [
+     "",
+     "wayback_snapshot"
+    ],
+    "source_file": [
+     "",
+     "tmp/red_gap_20261112/ed_20220219234913.html"
+    ],
+    "source_url": [
+     "https://www.sciencedirect.com/science/article/pii/S1094202521000831",
+     "https://www.economicdynamics.org/editors/"
+    ],
+    "archive_url": [
+     "",
+     "https://web.archive.org/web/20220219234913/https://www.economicdynamics.org/editors/"
+    ],
+    "snapshot_timestamp": [
+     "",
+     "20220219234913"
+    ],
+    "snapshot_year_offset": [
+     "",
+     "0"
+    ],
+    "capture_date": [
+     "",
+     "2026-11-12"
+    ],
+    "name_style": [
+     "",
+     "full"
+    ],
+    "affiliations_present": [
+     "",
+     "yes"
+    ],
+    "rows_parsed": [
+     "0",
+     "43"
+    ],
+    "rows_with_affiliation": [
+     "0",
+     "43"
+    ],
+    "parser": [
+     "",
+     "tmp/red_gap_20261112/parse_sed.py (red_gap_20261112)"
+    ],
+    "status": [
+     "blocked",
+     "ok_wayback"
+    ],
+    "note": [
+     "ScienceDirect download limit modal (capture blocked); not parsed",
+     "SED 'Our Editors' page version modified 2021-04-14, live in Wayback captures 20220219234913, 20220629190402; issue front matter blocked from collector (ScienceDirect 403); 43 rows editors_backfill_scale_panel#15578-editors_backfill_scale_panel#15620; red_gap_20261112"
+    ]
+   }
+  ],
+  [
+   "2023",
+   {
+    "source_type": [
+     "",
+     "wayback"
+    ],
+    "capture_route": [
+     "",
+     "wayback_snapshot"
+    ],
+    "source_file": [
+     "",
+     "tmp/red_gap_20261112/ed_20230324123429.html"
+    ],
+    "source_url": [
+     "https://www.sciencedirect.com/science/article/pii/S1094202522000692",
+     "https://www.economicdynamics.org/editors/"
+    ],
+    "archive_url": [
+     "",
+     "https://web.archive.org/web/20230324123429/https://www.economicdynamics.org/editors/"
+    ],
+    "snapshot_timestamp": [
+     "",
+     "20230324123429"
+    ],
+    "snapshot_year_offset": [
+     "",
+     "0"
+    ],
+    "capture_date": [
+     "",
+     "2026-11-12"
+    ],
+    "name_style": [
+     "",
+     "full"
+    ],
+    "affiliations_present": [
+     "",
+     "yes"
+    ],
+    "rows_parsed": [
+     "0",
+     "43"
+    ],
+    "rows_with_affiliation": [
+     "0",
+     "43"
+    ],
+    "parser": [
+     "",
+     "tmp/red_gap_20261112/parse_sed.py (red_gap_20261112)"
+    ],
+    "status": [
+     "blocked",
+     "ok_wayback"
+    ],
+    "note": [
+     "ScienceDirect download limit modal (capture blocked); not parsed",
+     "SED 'Our Editors' page version modified 2023-02-21, live in Wayback captures 20230324123429, 20231211221936; issue front matter blocked from collector (ScienceDirect 403); 43 rows editors_backfill_scale_panel#15621-editors_backfill_scale_panel#15663; red_gap_20261112"
+    ]
+   }
+  ]
+ ],
+ "gap_changes": [
+  [
+   "2021",
+   "blocked",
+   "ScienceDirect download limit modal (capture blocked); not parsed; resolved red_gap_20261112: issue front matter merged 2026-11-06 (45 rows)"
+  ],
+  [
+   "2022",
+   "blocked",
+   "ScienceDirect download limit modal (capture blocked); not parsed; resolved red_gap_20261112: SED editors page via Wayback merged"
+  ],
+  [
+   "2023",
+   "blocked",
+   "ScienceDirect download limit modal (capture blocked); not parsed; resolved red_gap_20261112: SED editors page via Wayback merged"
+  ]
+ ]
+}

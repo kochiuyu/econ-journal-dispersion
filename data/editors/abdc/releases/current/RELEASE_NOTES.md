@@ -1,4 +1,20 @@
-# editors_school_unit_leftover_20261112
+# editors_current_leftovers_20261112
+
+Published 2026-11-12 (Asia/Taipei). This supersedes `editors_leftover_fixes_20261112` (PR #69) for the Directory current panels. It is a keyed Collector freeze of evidenced current-board leftovers (user: “Yes, unless you think only RA can fix, you can fix those?”), taken through its `CURRENT_LEFTOVERS_directory_diff_20261112.csv` (keyed on `editor_row_key`; 341 cells, 0 missing keys, 0 old-value mismatches) and applied cell by cell from its change log on published keys (121 rows across all panels: 7 attaches, 19 Marks-style DROPs, 27 school-unit rematches, 68 country fills).
+
+- European Transport (C): Angela Carboni #15764 → Politecnico di Torino `00bgk9508`; Medeghini #15760 → Brescia Mobilità (no ROR, Italy). Their phantom rows #15765 and #15761 (the institution scraped into the next row's name) are blanked Marks-style and kept. None of the four keys has a long-table part; none was added.
+- School-unit rematches: A 7, B 12, C 1 (IESEG `04jqeag92`, EDHEC `05q7a8a02`, AMSE `02ek9wp67`, Sant'Anna `025602r80`, Budapest Business School `00r3jwh90`, GWU `00y4zzh67`, Nord `030mwrt98`, Queen's (Canada) `02y72wh86`, Temple `00kx1jb78`, UCSD `0168r3w48`, Edinburgh `01nrxwf90`, Utrecht `04pp8hn57`).
+- Printed-country fills: A* 14, A 15, B 16, C 11.
+
+Rows changed: A* 14, A 22, B 28, C 16; `ror_id` 23,888 / 41,660 / 38,219 / 22,637 (was 23,888 / 41,653 / 38,207 / 22,635). Row counts unchanged; C empty `editor_name` 8 (was 6). The ABDC files were not changed by `editors_leftover_fixes_20261112` (PR #69); the previous ABDC notes follow.
+
+No new ROR (all targets API-active and already on the panels). `raw_affiliation` is left as printed on every row. No pilot files are published or changed. No emails or phones. Untouched: Henley Africa #18374, the 40 held campus rows, two-place rows, HKU deferred, unplaced editors, and the Collector's held items (JMID rest of board, European Transport blank-affiliation fills Di Matteo #15763 and Bonera #15767, the E and F skips listed in `COLLECTOR_RELEASE_NOTES.md`).
+
+**Directory.** Institutions 11,065 (was 11,074), 6,698 with a ROR id (unchanged; distinct 6,698), countries 169 (unchanged), shared display names 43 (unchanged; the build guard stays 43); appointments 162,555 (was 162,574), editors 112,699 (was 112,718), journals 2,853, appointments without an institution 13,387 (was 13,413).
+
+Long table and change logs: `data/editors/releases/editors_current_leftovers_20261112/` (`editor_affiliations.csv.gz`, 181,449 rows; the long table changes 117 parts on 117 keys (`ror_country` 76, `ror_id` / `ror_name` / `is_panel_ror` 32, `ror_match_note` 49, `editor_name` blanked on 17 JMID phantom/non-person parts); no `raw_aff_part` edits; the 4 European Transport keys have no long-table part and none was invented). Report: `docs/reports/CURRENT_LEFTOVERS_20261112.md`.
+
+## Previous freeze: editors_school_unit_leftover_20261112
 
 Published 2026-11-12 (Asia/Taipei). This supersedes `editors_theory_decision_title_20261112` (PR #67) for the Directory current panels. It is a keyed, user-approved Collector freeze of 13 school-unit leftover rematches, taken through its `SCHOOL_UNIT_LEFTOVER_directory_diff_20261112.csv` (keyed on `editor_row_key`; 65 cells, 0 missing keys, 0 old-value mismatches). All 13 of 13 were applied, 0 skips. Only `canonical_name`, `ror_id`, `ror_name`, `lat` and `lon` changed (`ror_country` was already correct). `raw_affiliation` is left as printed on all 13 rows.
 

@@ -365,6 +365,8 @@ AJG_GAP_DIR = ROOT / "data/editors/abs_ajg_gap/releases/current"
 # 3,104 / 5,462 / 12,316 rows, with the same nav rows kept out.
 # editors_leftover_fixes_20261112 blanks the JLAS phantom name #5450 (Marks
 # style), so ajg2 drops 1 blank-name row (was 0).
+# editors_current_leftovers_20261112 blanks 17 JMID non-person/phantom names on
+# ajg1 (Marks style), so ajg1 drops 32 blank-name rows (was 15).
 # Panel CSVs end with board_urls and board_url_count. Readers select columns
 # by name. Those two columns are not written to the site.
 AJG_GAP_FILES = (
@@ -387,7 +389,7 @@ AJG_GAP_FILES = (
         AJG_GAP_DIR / "editors_abs_ajg_gap_ajg1_current.csv",
         frozenset({"1"}),
         12316,
-        15,
+        32,  # editors_current_leftovers_20261112: 17 JMID drops blanked (was 15)
     ),
 )
 # Journal counts in this freeze, by 2024 rating. prio43 has no 4* titles left.
