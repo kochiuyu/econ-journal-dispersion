@@ -453,3 +453,36 @@ a.person { font-weight: 650; }
   .home-lists .universe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-lists .universe-card { padding: 12px; min-width: 0; }
 }
+
+
+
+/* Mobile result tables retain key columns; secondary fields stay in row details. */
+.results-mobile-sort, .results-detail-toggle, .results-detail-row { display: none; }
+.column-mobile-label { display: none; }
+@media (max-width: 640px) {
+  .column-full-label { display: none; }
+  .column-mobile-label { display: inline; text-decoration: none; }
+  .results-mobile-sort { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+  .results-mobile-sort select { flex: 1 1 110px; min-width: 0; }
+  .results-mobile-sort select, .results-mobile-sort .btn, .directory-mobile-sort select, .directory-mobile-sort .btn { min-height: 44px; }
+  .mobile-results { table-layout: fixed; }
+  .mobile-results th, .mobile-results td { padding: 10px 8px; overflow-wrap: anywhere; }
+  .mobile-results th button { font-size: 11px; letter-spacing: 0; overflow-wrap: normal; }
+  .mobile-results .mobile-secondary { display: none; }
+  .mobile-results th:first-child { width: 50%; }
+  .mobile-results[data-mobile-table="rankings"] th:first-child { width: 70%; }
+  .mobile-results td.journal { max-width: none; }
+  .mobile-results td.num { white-space: normal; }
+  .results-detail-toggle { display: block; margin-top: 6px; min-height: 44px; padding: 8px 10px; }
+  .results-detail-row:not([hidden]) { display: table-row; }
+  .results-detail-row dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 8px 12px; margin: 0; }
+  .results-detail-row dt { font-weight: 700; }
+  .results-detail-row dd { margin: 0; min-width: 0; }
+  .results-detail-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .directory-detail-toggle { min-height: 44px; padding: 8px 10px; }
+  .directory-table th:first-child { width: 38%; }
+  .directory-table th:nth-child(2) { width: 27%; }
+  .directory-table th:nth-child(3) { width: 35%; }
+  .pager .btn, .pager select { min-height: 44px; }
+  .pager-size { justify-content: center; flex-basis: 100%; }
+}

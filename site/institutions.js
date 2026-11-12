@@ -445,6 +445,7 @@
       fragment.appendChild(tr);
     });
     rowsEl.replaceChildren(fragment);
+    window.tableControls.mobileRows();
   }
 
   function renderPager(matchedCount) {
@@ -553,4 +554,5 @@
 
   render();
 })();
+
 
