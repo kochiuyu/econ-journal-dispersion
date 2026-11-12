@@ -1,0 +1,126 @@
+JBES Vol 37 No. 1 (January 2019) Front Matter, page 3 - board as printed (transcribed 2026-11-13; visually verified).
+Source: https://www.jstor.org/stable/45181150 (issue page https://www.jstor.org/stable/i40222888).
+Contact lines (email/phone) not transcribed.
+
+
+JOINT EDITORS
+Todd Clark, Federal Reserve Bank of Cleveland
+Rajeev Dehejia, New York University
+
+EDITORIAL COORDINATOR
+Jamie Hutchens
+
+ASSOCIATE EDITORS
+Elena Andreou, UCY, Cyprus
+Alexander Aue, U. California, Davis
+Pierluigi Balduzzi, Boston College
+Federico Bandi, Johns Hopkins University
+Luc Bauwens, UC Louvain
+Alexandre Belloni, Duke University
+Debopam Bhattacharya, University of Oxford
+Joerg Breitung, University of Cologne
+Zongwu Cai, University of Kansas
+Mehmet Caner, North Carolina State University
+Ngai Hang Chan, The Chinese University of Hong Kong
+Cathy W.S. Chen, Feng Chia University
+Song Xi Chen, Iowa State University
+Tim Conley, University of Western Ontario
+Drew Dennis Creal, University of Chicago
+Rainer Dahlhaus, Institute of Applied Mathematics
+Marco Del Negro, Federal Reserve Bank of New York
+Graham Elliott, University of California, San Diego
+Juan Carlos Escanciano, Indiana University
+Ivan Fernandez-Val, Boston University
+Sergio Firpo, FGV
+Alfonso Flores-Lagunes, Syracuse University
+Duncan K. Fong, Pennsylvania State University
+Markus Frölich, University of Mannheim and IZA Bonn
+Raffaella Giacomini, University College London
+Domenico Giannone, Federal Reserve Bank of New York
+Silvia Goncalves, University of Montreal
+Gautam Gowrisankaran, University of Arizona
+William Green, New York University
+Christian Hafner, U. Catholique de Louvain
+James Hamilton, University of California, San Diego
+Matthew Harding, University of California, Irvine
+Nikolaus Hautsch, University of Vienna
+William Horrace, Syracuse University
+Martin Huber, Universite de Fribourg
+Kosuke Imai, Princeton University
+Atsushi Inoue, Vanderbilt University
+Bing-Yi Jing, Hong Kong University of Science and Technology
+Koen Jochmans, University of Cambridge
+Christopher Jones, University of Southern California
+Oscar Jorda, University of California, Davis
+Yuichi Kitamura, Yale University
+Gary Koop, University of Strathclyde
+Siem Jan Koopman, VU University Amsterdam
+Christopher Lamoureux, University of Arizona
+Sébastian Laurent, Aix-Marseille University
+Martin Lettau, University of California, Berkeley
+Michael Levine, Purdue University
+Jia Li, Duke University
+Yuan Liao, Rutgers University
+Hedibert F. Lopes, INSPER
+Asger Lunde, Aarhus University
+Aprajit Mahajan, University of California, Berkeley
+Loriano Mancini, U. of Lugano
+Massimiliano Marcellino, European U. Institute
+Konrad Menzel, New York University
+Anna Mikusheva, MIT
+James Mitchell, University of Warwick
+Francesca Molinari, Cornell University
+Alan Montgomery, Carnegie Mellon University
+James Morley, University of New South Wales
+Salvador Navarro, University of Western Ontario
+Andriy Norets, Brown University
+Taisuke Otsu, Yale University
+Michael Owyang, St. Louis Fed
+Andrew Patton, Duke University
+Gert Peersman, Ghent University
+Krishna Pendakur, Simon Fraser University
+Davide Pettenuzzo, Brandeis University
+Jeroen Rombouts, ESSEC Business School
+Jeremy Rudd, Federal Res. Board
+Olivier Scaillet, University of Geneva and Swiss Finance Institute
+Kevin Sheppard, University of Oxford
+Paolo Surico, London Business School
+Norman Swanson, Rutgers University
+Alessandro Tarozzi, University Pompeu Fabra and Barcelona GSE
+Allan Timmermann, University of California, San Diego
+Shaun Vahey, Warwick University
+Clara Vega, Federal Reserve Board
+Hansheng Wang, Peking University
+Matt Wiswall, Arizona State University
+Zhengjun Zhang, University of Wisconsin
+
+HONORARY ADVISORY BOARD
+Margaret E. Martin
+
+FOUNDING EDITOR
+Arnold Zellner
+
+COMMITTEE ON PUBLICATIONS (excluded from panel)
+Steve Snapinn, Chair
+Dulal K. Bhaumik, Member-at-Large
+Richard A. Levine, Member-at-Large
+Jay Breidt
+Frank Bretz
+Li Cai
+Hugh Chipman
+Todd Clark
+Michael Cohen
+Rajeev Dehejia
+Scott Evans
+Monserrat Fuentes
+David Higdon
+Jennifer A. Hoeting
+Daniel R. Jeske
+Jia Li
+Roderick Little
+Wendy L. Martinez
+Daniel McCaffrey
+Steve Rigdon
+Soma Roy
+Jun Shao
+Hadley Wickham

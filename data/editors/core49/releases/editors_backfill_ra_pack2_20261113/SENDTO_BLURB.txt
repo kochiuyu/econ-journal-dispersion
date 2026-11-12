@@ -1,0 +1,11 @@
+HELD — do not send yet. When approved: core49 backfill freeze editors_backfill_ra_pack2_20261113 is ready to replace live editors_backfill_red_jbes_20261113 (PR #71).
+
+It applies 19 RA pack 2 person-row updates and adds no whole-board years:
+- 18 names-only rows filled from year-specific CVs or faculty pages (AER 2018–22, AER: Insights 2021–22, JPE 2021–23, JOLE 2021–23, JLE 2020–21, QJE 2020–22), each with one new long row;
+- the campus ROR University of Maryland, College Park (047s2c258) on Econometric Theory 2018 G. Kuersteiner. The printed raw is kept.
+
+Panel 15,873 (unchanged); long 12,120 (+18). Match-rate rows were recomputed for the 7 touched journals only (Econometric Theory 0.9469 → 0.9490). Gaps, inventory and the scrubbed spotcheck are byte-identical. JRU 2023, RED 2024 and JBES 2025 remain coverage gaps.
+
+Do not publish the two inherited JBES source PDFs (staff contacts). No Directory or build_site.py change. Headers and CRLF line endings are unchanged.
+
+Path: /workspace/econ-journal-editors/releases/editors_backfill_ra_pack2_20261113/

@@ -1,0 +1,64 @@
+# Web re-run 2026-11-13 (Asia/Taipei): collector qc_ra_pack2_20261113.py with LIVE/OUT pointed at the edj-web folders (live = editors_backfill_red_jbes_20261113, out = this folder); the file-set lists also allow COLLECTOR_RELEASE_NOTES.md and publish_ra_pack2_20261113.py. The _live_manifest_sha256.txt check is skipped because that file is not published (60 checks vs 61).
+PASS no unexpected new files []
+PASS every live file present (docs rewritten) []
+PASS 34 other live files byte-identical (incl. gaps, inventory, spotcheck, matched/unmatched, crosswalk, PDFs) []
+PASS editors_backfill_scale_gaps.csv byte-identical to live
+PASS editors_backfill_scale_inventory.csv byte-identical to live
+PASS editors_backfill_scale_spotcheck.csv byte-identical to live
+PASS BACKFILL_SCALE_ROR_staff_rows_20261031.csv byte-identical to live
+PASS RA_pack2_match_rate_changes_20261113.csv: CRLF throughout
+PASS RA_pack2_changes_20261113.csv: CRLF throughout
+PASS editor_affiliations.csv: CRLF throughout
+PASS BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv: CRLF throughout
+PASS editors_backfill_scale_ror_panel.csv: CRLF throughout
+PASS BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv: header unchanged
+PASS editors_backfill_scale_ror_panel.csv: header unchanged
+PASS editor_affiliations.csv: header unchanged
+PASS panel rows 15873 (live 15873)
+PASS panel key order identical to live (no new keys)
+PASS panel keys unique
+PASS exactly the 19 intended panel keys differ (19)
+PASS panel: 19 lines differ at byte level, all others byte-identical
+PASS names, roles, board source_url/board_urls and provenance unchanged on the 19 keys
+PASS names-only fills: only affiliation/ROR fields changed
+PASS all 18 were names-only (no_affiliation, empty raw) on live
+PASS fills: matched, imputed=yes, flag ra_pack2_filled_20261113, live source_note kept as prefix
+PASS S20 #2046: printed raw and institution "University of Maryland" kept; only ROR fields changed
+PASS S20 ROR 047s2c258 with College Park CV evidence in ror_notes
+PASS each fill carries the reviewed ROR id
+PASS S15 raw UNSW Business School / institution UNSW Sydney
+PASS #3864 unchanged (do-not-change / non-substitute)
+PASS #5947 unchanged (do-not-change / non-substitute)
+PASS #11665 unchanged (do-not-change / non-substitute)
+PASS #14899 unchanged (do-not-change / non-substitute)
+PASS #6483 unchanged (do-not-change / non-substitute)
+PASS #433 unchanged (do-not-change / non-substitute)
+PASS #14257 unchanged (do-not-change / non-substitute)
+PASS #15446 unchanged (do-not-change / non-substitute)
+PASS S19 CEPR Montreal and S21 EUI stay ROR-blank
+PASS no EUI / UW-system / CEPR-UK id on changed rows
+PASS 15 distinct RORs API-active (re-checked 2026-11-13)
+PASS ror_name/ror_country = API display name/country
+PASS no ROR new to the backfill (all ids already used on live rows)
+PASS geo fields copied from existing rows with the same ROR
+PASS long rows 12120 = 12102 + 18
+PASS long: live rows byte-identical except the one #2046 row ([456])
+PASS long: 18 rows appended, one per names-only fill, in item order
+PASS appended long rows follow the RA-fix pattern (rank 1, sole, single, is_panel_ror=1, row_index=key)
+PASS none of the 18 had a long row on live
+PASS every long key exists in panel
+PASS each of the 19 keys has exactly one long row
+PASS panel/long agree on ROR id, name and note for all 19 keys
+PASS global rank-1 long ROR vs panel ROR: same 2 pre-existing live exceptions only (['editors_backfill_scale_panel#5078', 'editors_backfill_scale_panel#5126']; is_panel_ror=0), none on changed keys
+PASS every panel row with raw affiliation has a long row
+PASS match_rates: only the 7 touched journals changed
+PASS touched match_rates rows equal a recount of the panel
+   inventory: {('Journal of Business and Economic Statistics', '2025'): 'no_snapshot', ('Journal of Risk and Uncertainty', '2023'): 'no_snapshot', ('Review of Economic Dynamics', '2024'): 'queued'}
+PASS no JRU 2023 / RED 2024 / JBES 2025 board rows added
+PASS no email addresses in non-PDF files []
+PASS no phone numbers in files written by this freeze []
+PASS no phone numbers in changed panel rows
+PASS reserved pack 2 SHA256SUMS all OK (original/ untouched)
+PASS shipped RA pack zip checksum unchanged
+
+60 PASS / 0 FAIL
