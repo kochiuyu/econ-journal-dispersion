@@ -1,0 +1,508 @@
+{
+ "new_rows": 165,
+ "new_long": 162,
+ "by_year": {
+  "2019": 87,
+  "2020": 78
+ },
+ "long_by_year": {
+  "2019": 87,
+  "2020": 75
+ },
+ "keys": {
+  "2019": [
+   "editors_backfill_scale_panel#15708",
+   "editors_backfill_scale_panel#15794"
+  ],
+  "2020": [
+   "editors_backfill_scale_panel#15795",
+   "editors_backfill_scale_panel#15872"
+  ]
+ },
+ "status_by_year": {
+  "2019": {
+   "matched": 79,
+   "no_affiliation": 3,
+   "unmatched": 5
+  },
+  "2020": {
+   "matched": 68,
+   "no_affiliation": 3,
+   "unmatched": 7
+  }
+ },
+ "inv_changes": [
+  "JBES 2019: no_snapshot 0/0 -> ok_issue_front_matter 87/84",
+  "JBES 2020: no_snapshot 0/0 -> ok_issue_front_matter 78/75"
+ ],
+ "gaps_added": [
+  [
+   "2019",
+   "excluded_asa_committee_on_publications",
+   23
+  ],
+  [
+   "2020",
+   "excluded_asa_committee_on_publications",
+   20
+  ],
+  [
+   "2019",
+   "no_affiliation_printed",
+   3
+  ],
+  [
+   "2020",
+   "no_affiliation_printed",
+   3
+  ]
+ ],
+ "staff_rows_added": 2,
+ "match_rates": {
+  "before": {
+   "journal_id": "S18095783",
+   "journal": "Journal of Business and Economic Statistics",
+   "rows_non_staff": "518",
+   "no_affiliation": "90",
+   "with_affiliation": "428",
+   "matched": "399",
+   "unmatched": "29",
+   "match_rate": "0.9322",
+   "high": "327",
+   "medium": "72",
+   "low": "0",
+   "staff_rows_excluded": "5"
+  },
+  "after": {
+   "journal_id": "S18095783",
+   "journal": "Journal of Business and Economic Statistics",
+   "rows_non_staff": "681",
+   "no_affiliation": "94",
+   "with_affiliation": "587",
+   "matched": "546",
+   "unmatched": "41",
+   "match_rate": "0.9302",
+   "high": "450",
+   "medium": "96",
+   "low": "0",
+   "staff_rows_excluded": "7"
+  }
+ },
+ "api": {
+  "01wxdvj03": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Cleveland",
+   "country": "United States"
+  },
+  "0190ak572": {
+   "status": "active",
+   "name": "New York University",
+   "country": "United States"
+  },
+  "02qjrjx09": {
+   "status": "active",
+   "name": "University of Cyprus",
+   "country": "Cyprus"
+  },
+  "05rrcem69": {
+   "status": "active",
+   "name": "University of California, Davis",
+   "country": "United States"
+  },
+  "02n2fzt79": {
+   "status": "active",
+   "name": "Boston College",
+   "country": "United States"
+  },
+  "00za53h95": {
+   "status": "active",
+   "name": "Johns Hopkins University",
+   "country": "United States"
+  },
+  "02495e989": {
+   "status": "active",
+   "name": "UCLouvain",
+   "country": "Belgium"
+  },
+  "00py81415": {
+   "status": "active",
+   "name": "Duke University",
+   "country": "United States"
+  },
+  "052gg0110": {
+   "status": "active",
+   "name": "University of Oxford",
+   "country": "United Kingdom"
+  },
+  "00rcxh774": {
+   "status": "active",
+   "name": "University of Cologne",
+   "country": "Germany"
+  },
+  "001tmjg57": {
+   "status": "active",
+   "name": "University of Kansas",
+   "country": "United States"
+  },
+  "04tj63d06": {
+   "status": "active",
+   "name": "North Carolina State University",
+   "country": "United States"
+  },
+  "00t33hh48": {
+   "status": "active",
+   "name": "Chinese University of Hong Kong",
+   "country": "Hong Kong"
+  },
+  "04rswrd78": {
+   "status": "active",
+   "name": "Iowa State University",
+   "country": "United States"
+  },
+  "02grkyz14": {
+   "status": "active",
+   "name": "Western University",
+   "country": "Canada"
+  },
+  "024mw5h28": {
+   "status": "active",
+   "name": "University of Chicago",
+   "country": "United States"
+  },
+  "05hwvzg47": {
+   "status": "active",
+   "name": "Federal Reserve Bank of New York",
+   "country": "United States"
+  },
+  "0168r3w48": {
+   "status": "active",
+   "name": "University of California San Diego",
+   "country": "United States"
+  },
+  "01kg8sb98": {
+   "status": "active",
+   "name": "Indiana University",
+   "country": "United States"
+  },
+  "05qwgg493": {
+   "status": "active",
+   "name": "Boston University",
+   "country": "United States"
+  },
+  "01evzkn27": {
+   "status": "active",
+   "name": "Fundação Getulio Vargas",
+   "country": "Brazil"
+  },
+  "025r5qe02": {
+   "status": "active",
+   "name": "Syracuse University",
+   "country": "United States"
+  },
+  "04p491231": {
+   "status": "active",
+   "name": "Pennsylvania State University",
+   "country": "United States"
+  },
+  "031bsb921": {
+   "status": "active",
+   "name": "University of Mannheim",
+   "country": "Germany"
+  },
+  "02jx3x895": {
+   "status": "active",
+   "name": "University College London",
+   "country": "United Kingdom"
+  },
+  "0161xgx34": {
+   "status": "active",
+   "name": "Université de Montréal",
+   "country": "Canada"
+  },
+  "03m2x1q45": {
+   "status": "active",
+   "name": "University of Arizona",
+   "country": "United States"
+  },
+  "04gyf1771": {
+   "status": "active",
+   "name": "University of California, Irvine",
+   "country": "United States"
+  },
+  "03prydq77": {
+   "status": "active",
+   "name": "University of Vienna",
+   "country": "Austria"
+  },
+  "00hx57361": {
+   "status": "active",
+   "name": "Princeton University",
+   "country": "United States"
+  },
+  "02vm5rt34": {
+   "status": "active",
+   "name": "Vanderbilt University",
+   "country": "United States"
+  },
+  "00q4vv597": {
+   "status": "active",
+   "name": "Hong Kong University of Science and Technology",
+   "country": "Hong Kong"
+  },
+  "013meh722": {
+   "status": "active",
+   "name": "University of Cambridge",
+   "country": "United Kingdom"
+  },
+  "03taz7m60": {
+   "status": "active",
+   "name": "University of Southern California",
+   "country": "United States"
+  },
+  "03v76x132": {
+   "status": "active",
+   "name": "Yale University",
+   "country": "United States"
+  },
+  "00n3w3b69": {
+   "status": "active",
+   "name": "University of Strathclyde",
+   "country": "United Kingdom"
+  },
+  "008xxew50": {
+   "status": "active",
+   "name": "Vrije Universiteit Amsterdam",
+   "country": "The Netherlands"
+  },
+  "035xkbk20": {
+   "status": "active",
+   "name": "Aix-Marseille Université",
+   "country": "France"
+  },
+  "01an7q238": {
+   "status": "active",
+   "name": "University of California, Berkeley",
+   "country": "United States"
+  },
+  "02dqehb95": {
+   "status": "active",
+   "name": "Purdue University West Lafayette",
+   "country": "United States"
+  },
+  "05vt9qd57": {
+   "status": "active",
+   "name": "Rutgers, The State University of New Jersey",
+   "country": "United States"
+  },
+  "02nmavx05": {
+   "status": "active",
+   "name": "Insper",
+   "country": "Brazil"
+  },
+  "01aj84f44": {
+   "status": "active",
+   "name": "Aarhus University",
+   "country": "Denmark"
+  },
+  "03c4atk17": {
+   "status": "active",
+   "name": "Università della Svizzera italiana",
+   "country": "Switzerland"
+  },
+  "042nb2s44": {
+   "status": "active",
+   "name": "Massachusetts Institute of Technology",
+   "country": "United States"
+  },
+  "01a77tt86": {
+   "status": "active",
+   "name": "University of Warwick",
+   "country": "United Kingdom"
+  },
+  "05bnh6r87": {
+   "status": "active",
+   "name": "Cornell University",
+   "country": "United States"
+  },
+  "05x2bcf33": {
+   "status": "active",
+   "name": "Carnegie Mellon University",
+   "country": "United States"
+  },
+  "03r8z3t63": {
+   "status": "active",
+   "name": "UNSW Sydney",
+   "country": "Australia"
+  },
+  "05gq02987": {
+   "status": "active",
+   "name": "Brown University",
+   "country": "United States"
+  },
+  "02skhjj30": {
+   "status": "active",
+   "name": "Federal Reserve Bank of St. Louis",
+   "country": "United States"
+  },
+  "00cv9y106": {
+   "status": "active",
+   "name": "Ghent University",
+   "country": "Belgium"
+  },
+  "0213rcc28": {
+   "status": "active",
+   "name": "Simon Fraser University",
+   "country": "Canada"
+  },
+  "05abbep66": {
+   "status": "active",
+   "name": "Brandeis University",
+   "country": "United States"
+  },
+  "02dga6j42": {
+   "status": "active",
+   "name": "École Supérieure des Sciences Économiques et Commerciales",
+   "country": "France"
+  },
+  "00v448643": {
+   "status": "active",
+   "name": "Federal Reserve Board of Governors",
+   "country": "United States"
+  },
+  "01swzsf04": {
+   "status": "active",
+   "name": "University of Geneva",
+   "country": "Switzerland"
+  },
+  "02cgn2a44": {
+   "status": "active",
+   "name": "Swiss Finance Institute",
+   "country": "Switzerland"
+  },
+  "001c2sn75": {
+   "status": "active",
+   "name": "London Business School",
+   "country": "United Kingdom"
+  },
+  "04n0g0b29": {
+   "status": "active",
+   "name": "Universitat Pompeu Fabra",
+   "country": "Spain"
+  },
+  "02k09n368": {
+   "status": "active",
+   "name": "Barcelona School of Economics",
+   "country": "Spain"
+  },
+  "02v51f717": {
+   "status": "active",
+   "name": "Peking University",
+   "country": "China"
+  },
+  "03efmqc40": {
+   "status": "active",
+   "name": "Arizona State University",
+   "country": "United States"
+  },
+  "000e0be47": {
+   "status": "active",
+   "name": "Northwestern University",
+   "country": "United States"
+  },
+  "04ewct822": {
+   "status": "active",
+   "name": "Southwestern University of Finance and Economics",
+   "country": "China"
+  },
+  "00b30xv10": {
+   "status": "active",
+   "name": "University of Pennsylvania",
+   "country": "United States"
+  },
+  "00mkhxb43": {
+   "status": "active",
+   "name": "University of Notre Dame",
+   "country": "United States"
+  },
+  "03ths8210": {
+   "status": "active",
+   "name": "Universidad Carlos III de Madrid",
+   "country": "Spain"
+  },
+  "00hj8s172": {
+   "status": "active",
+   "name": "Columbia University",
+   "country": "United States"
+  },
+  "0090zs177": {
+   "status": "active",
+   "name": "London School of Economics and Political Science",
+   "country": "United Kingdom"
+  },
+  "02bfwt286": {
+   "status": "active",
+   "name": "Monash University",
+   "country": "Australia"
+  },
+  "01r9htc13": {
+   "status": "active",
+   "name": "Université Libre de Bruxelles",
+   "country": "Belgium"
+  },
+  "03vek6s52": {
+   "status": "active",
+   "name": "Harvard University",
+   "country": "United States"
+  },
+  "01r5sf951": {
+   "status": "active",
+   "name": "Capital University of Economics and Business",
+   "country": "China"
+  },
+  "03nawhv43": {
+   "status": "active",
+   "name": "University of California, Riverside",
+   "country": "United States"
+  },
+  "017zqws13": {
+   "status": "active",
+   "name": "University of Minnesota",
+   "country": "United States"
+  },
+  "050qmg959": {
+   "status": "active",
+   "name": "Singapore Management University",
+   "country": "Singapore"
+  },
+  "00kx1jb78": {
+   "status": "active",
+   "name": "Temple University",
+   "country": "United States"
+  },
+  "03zga2b32": {
+   "status": "active",
+   "name": "University of Bergen",
+   "country": "Norway"
+  },
+  "01y2jtd41": {
+   "status": "active",
+   "name": "University of Wisconsin–Madison",
+   "country": "United States"
+  },
+  "01e3m7079": {
+   "status": "active",
+   "name": "University of Cincinnati",
+   "country": "United States"
+  },
+  "04m01e293": {
+   "status": "active",
+   "name": "University of York",
+   "country": "United Kingdom"
+  },
+  "02jkmyk67": {
+   "status": "active",
+   "name": "Academy of Mathematics and Systems Science",
+   "country": "China"
+  }
+ }
+}

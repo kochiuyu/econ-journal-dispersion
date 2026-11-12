@@ -1,0 +1,101 @@
+{
+ "status": "HELD (unpublished; for Journal-Editor-Web)",
+ "published": false,
+ "built_at": "2026-11-13T01:30:00+08:00",
+ "tag": "backfill_red_jbes_20261113",
+ "base": "core49 editors_backfill_red_gap_20261112 as on edj-web main 21df6bd (PR #70); base rows byte-identical to that web copy, incl. scrubbed spotcheck",
+ "layers": {
+  "red_2025": "re-used verbatim from releases/editors_backfill_red_2025_20261113 (44 rows #15664-#15707; inventory, gaps incl. 3 society-officer exclusions, match_rates as built there); intermediate folder not modified",
+  "jbes_2019_2020": "new in this freeze"
+ },
+ "script": "abs_ajg/scripts/backfill_red_jbes_20261113.py",
+ "qc": "qc_red_jbes_20261113.py (51 PASS / 0 FAIL)",
+ "sources": {
+  "2019": {
+   "issue": "Vol 37 No. 1 (January 2019) Front Matter, p.3",
+   "url": "https://www.jstor.org/stable/45181150",
+   "issue_page": "https://www.jstor.org/stable/i40222888",
+   "pdf": "JBES_2019_editorial_board.pdf"
+  },
+  "2020": {
+   "issue": "Vol 38 No. 1 (January 2020) Front Matter, p.3",
+   "url": "https://www.jstor.org/stable/45282197",
+   "issue_page": "https://www.jstor.org/stable/i40228730",
+   "pdf": "JBES_2020_editorial_board.pdf"
+  },
+  "access": "JSTOR via CUHK Easy Access; names visually verified against page-3 renders"
+ },
+ "changes": {
+  "panel_rows_added": {
+   "red_2025 (from intermediate)": 44,
+   "jbes_2019": 87,
+   "jbes_2020": 78
+  },
+  "long_rows_added": {
+   "red_2025 (from intermediate)": 44,
+   "jbes_2019": 87,
+   "jbes_2020": 75
+  },
+  "keys": {
+   "red_2025": "#15664-#15707",
+   "jbes_2019": "#15708-#15794",
+   "jbes_2020": "#15795-#15872"
+  },
+  "inventory_rows_changed": [
+   "JBES 2019: no_snapshot 0/0 -> ok_issue_front_matter 87/84",
+   "JBES 2020: no_snapshot 0/0 -> ok_issue_front_matter 78/75",
+   "RED 2025 queued -> ok_issue_front_matter 44/44 (from intermediate)"
+  ],
+  "gaps_rows_added": [
+   "JBES 2019: 23 excluded_asa_committee_on_publications + 3 no_affiliation_printed (Hutchens/Martin/Zellner)",
+   "JBES 2020: 20 excluded_asa_committee_on_publications + 3 no_affiliation_printed",
+   "RED 2025 (intermediate): 3 society-officer exclusions; RED 2025 queued -> resolved"
+  ],
+  "gaps_rows_kept": "JBES 2019/2020 no_snapshot rows kept (Wayback statement still true), exactly as JBES 2018 kept its row",
+  "staff_rows_added": "Jamie Hutchens 2019, 2020 (as 2018)",
+  "match_rates_rows_changed": [
+   "JBES: 518 -> 681 non-staff rows; matched 399 -> 546; unmatched 29 -> 41; rate 0.9322 -> 0.9302; staff excluded 5 -> 7",
+   "RED: 282 rows, 281 matched, 0.9965 (from intermediate)"
+  ]
+ },
+ "rows": {
+  "panel": [
+   15664,
+   15873
+  ],
+  "long": [
+   11896,
+   12102
+  ]
+ },
+ "ror": {
+  "distinct_on_new_jbes_rows": 83,
+  "api_active": true,
+  "new_to_backfill": [
+   "https://ror.org/02jkmyk67 (AMSS, CAS; exact name)"
+  ],
+  "invented": 0
+ },
+ "not_touched": [
+  "RA pack 2 (FIX06 JRU 2023, S01-S23 incl. S21 EUI, S22 RED 2024, S23 JBES 2025)",
+  "pilots",
+  "user-decision items",
+  "Directory / build_site.py"
+ ],
+ "web_publish": {
+  "status": "PUBLISHED (pending PR merge)",
+  "published_at": "2026-11-13 (Asia/Taipei)",
+  "repo_path": "data/editors/core49/releases/editors_backfill_red_jbes_20261113/",
+  "branch": "publish-editors-backfill-red-jbes-20261113",
+  "replaces_current_backfill": "editors_backfill_red_gap_20261112",
+  "excluded_files": [
+   "JBES_2019_editorial_board.pdf",
+   "JBES_2020_editorial_board.pdf",
+   "RED_2025_editorial_board.pdf"
+  ],
+  "renamed_files": {
+   "RELEASE_NOTES.md": "COLLECTOR_RELEASE_NOTES.md"
+  },
+  "note": "Top-level status fields are the collector state at hand-off. Data files are byte-identical to the collector pack; the source PDFs are not published (staff contact data); editors_backfill_scale_spotcheck.csv is byte-identical to the phone/fax-scrubbed web copy."
+ }
+}
