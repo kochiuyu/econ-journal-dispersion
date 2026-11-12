@@ -66,7 +66,8 @@
   }).catch(function () {
     var status = document.getElementById("meta-status");
     if (status) {
-      status.textContent = "Counts are not built yet. From the repository root, run python scripts/build_site.py.";
+      status.textContent = "Coverage counts are temporarily unavailable. You can still search the Directory or browse a journal list.";
     }
   });
 })();
+

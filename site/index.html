@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal Editors — FT50, ABDC, and AJG</title>
-  <meta name="description" content="Current editors on FT50, ABDC, and AJG-gap boards. The hub shows the counts. The directory opens on FT50 and loads other lists on demand.">
+  <meta name="description" content="Search journal editors by name, journal, institution, or subject. Explore FT50, ABDC, and AJG editorial boards, institutions, and journal rankings.">
   <link rel="canonical" href="https://kochiuyu.github.io/econ-journal-dispersion/">
   <meta property="og:title" content="Journal Editors — FT50, ABDC, and AJG">
   <meta property="og:description" content="Current editors on FT50, ABDC, and AJG-gap boards. The directory opens on FT50 and loads other lists on demand.">
@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=table-usability">
+  <link rel="stylesheet" href="style.css?v=home-search-20261113">
   <script>
     /* Old directory URLs lived on this page. Send them to directory.html. */
     (function () {
@@ -34,7 +34,7 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#lists">Skip to lists</a>
+  <a class="skip" href="#home-search">Skip to search</a>
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="./">
@@ -45,7 +45,7 @@
         </span>
       </a>
       <nav class="nav" aria-label="Site">
-        <a href="./" class="active">Home</a>
+        <a href="./" class="active" aria-current="page">Home</a>
         <a href="directory.html">Directory</a>
         <a href="journals.html">Journals</a>
         <a href="institutions.html">Institutions</a>
@@ -57,18 +57,40 @@
   </header>
 
   <main class="wrap">
-    <p class="intro" id="intro">
-      Current editorial boards for the Financial Times FT50 list, the 2025 ABDC Journal Quality List
-      (A*, A, B, and C), and AJG-gap journals that are not already on those boards.
-      Top 5 and UTD24 are tags on the FT50 and ABDC boards.
-      AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1) on the boards in this directory.
-      The <a href="directory.html">directory</a> opens on FT50 and loads another list when you choose it.
-      <span id="asof">Board year 2026.</span>
-    </p>
+    <section class="home-hero" aria-labelledby="home-title">
+      <p class="home-eyebrow">FT50 · ABDC · AJG</p>
+      <h1 id="home-title">Explore journal editorial boards</h1>
+      <p class="home-lead" id="intro">Find editors by name, journal, institution, or subject.</p>
+      <form class="home-search" id="home-search" action="directory.html" method="get" role="search" aria-label="Editor directory">
+        <label for="home-q">Search the editor directory</label>
+        <div class="row">
+          <input type="search" id="home-q" name="q" placeholder="Name, journal, institution, or subject" enterkeyhint="search">
+          <button class="home-primary" type="submit">Search directory</button>
+        </div>
+        <p class="hint">Starts with FT50. Choose more lists in the Directory.</p>
+      </form>
+      <p class="home-browse"><a href="directory.html">Browse all FT50 editors →</a></p>
+    </section>
 
-    <p class="home-action"><a href="directory.html">Search the editor directory</a></p>
+    <h2 class="section-title" id="explore-title">Explore the data</h2>
+    <div class="explore">
+      <a href="journals.html">
+        <span class="label">Journals</span>
+        <span class="sub">Browse journals by subject and list, with editor counts.</span>
+      </a>
+      <a href="institutions.html">
+        <span class="label">Institutions</span>
+        <span class="sub">Find institutions and the editorial boards they serve on.</span>
+      </a>
+      <a href="rankings.html">
+        <span class="label">Rankings</span>
+        <span class="sub">Look up journal ratings across ranking systems and editions.</span>
+      </a>
+    </div>
 
-    <section class="stats" id="stats" aria-label="Directory totals">
+    <h2 class="section-title" id="coverage-title">Directory coverage</h2>
+    <p class="hint home-coverage-note">Totals across all lists. <span id="asof">Board year 2026.</span></p>
+    <section class="stats stats-compact" id="stats" aria-labelledby="coverage-title">
       <div class="stat">
         <div class="n" id="n-appointments">…</div>
         <div class="l">Appointments</div>
@@ -92,114 +114,104 @@
     </section>
     <p class="hint meta-status" id="meta-status" aria-live="polite"></p>
 
-    <h2 class="section-title" id="lists">Lists</h2>
-    <div class="universe-grid" id="universe-summary">
-      <a class="universe-card" href="directory.html?u=ft50" data-universe="ft50">
+    <section class="home-lists" aria-labelledby="lists">
+      <h2 class="section-title" id="lists">Browse by journal list</h2>
+      <p class="hint">Card totals count editorial appointments. Lists overlap and should not be added together.</p>
+      <div id="universe-summary">
+      <section class="home-list-family">
+        <h3>FT50 & tags</h3>
+        <p class="hint">FT50, plus Top 5 and UTD24 tags across boards.</p>
+        <div class="universe-grid">
+          <a class="universe-card" href="directory.html?u=ft50" data-universe="ft50">
         <span class="label">FT50</span>
-        <span class="n" data-universe-count>…</span>
-        <span class="sub"><span data-universe-journals>…</span> journals · opens first</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
+        <span class="sub"><span data-universe-journals>…</span> journals · default list</span>
       </a>
-      <a class="universe-card" href="directory.html?u=a_star" data-universe="a_star">
-        <span class="label">ABDC A*</span>
-        <span class="n" data-universe-count>…</span>
-        <span class="sub"><span data-universe-journals>…</span> journals</span>
-      </a>
-      <a class="universe-card" href="directory.html?u=a" data-universe="a">
-        <span class="label">ABDC A</span>
-        <span class="n" data-universe-count>…</span>
-        <span class="sub"><span data-universe-journals>…</span> journals</span>
-      </a>
-      <a class="universe-card" href="directory.html?u=b" data-universe="b">
-        <span class="label">ABDC B</span>
-        <span class="n" data-universe-count>…</span>
-        <span class="sub"><span data-universe-journals>…</span> journals</span>
-      </a>
-      <a class="universe-card" href="directory.html?u=c" data-universe="c">
-        <span class="label">ABDC C</span>
-        <span class="n" data-universe-count>…</span>
-        <span class="sub"><span data-universe-journals>…</span> journals</span>
-      </a>
-      <a class="universe-card" href="directory.html?u=top5" data-universe="top5">
+          <a class="universe-card" href="directory.html?u=top5" data-universe="top5">
         <span class="label">Top 5</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=utd24" data-universe="utd24">
+          <a class="universe-card" href="directory.html?u=utd24" data-universe="utd24">
         <span class="label">UTD24</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=ajg_4star" data-universe="ajg_4star" title="CABS Academic Journal Guide 2024, grade 4*">
+        </div>
+      </section>
+      <section class="home-list-family">
+        <h3>ABDC</h3>
+        <p class="hint">2025 Journal Quality List grades.</p>
+        <div class="universe-grid">
+          <a class="universe-card" href="directory.html?u=a_star" data-universe="a_star">
+        <span class="label">ABDC A*</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+          <a class="universe-card" href="directory.html?u=a" data-universe="a">
+        <span class="label">ABDC A</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+          <a class="universe-card" href="directory.html?u=b" data-universe="b">
+        <span class="label">ABDC B</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+          <a class="universe-card" href="directory.html?u=c" data-universe="c">
+        <span class="label">ABDC C</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
+        <span class="sub"><span data-universe-journals>…</span> journals</span>
+      </a>
+        </div>
+      </section>
+      <section class="home-list-family">
+        <h3>AJG</h3>
+        <p class="hint">2024 CABS grades on boards in the Directory.</p>
+        <div class="universe-grid">
+          <a class="universe-card" href="directory.html?u=ajg_4star" data-universe="ajg_4star" title="CABS Academic Journal Guide 2024, grade 4*">
         <span class="label">AJG 4*</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=ajg_4" data-universe="ajg_4" title="CABS Academic Journal Guide 2024, grade 4">
+          <a class="universe-card" href="directory.html?u=ajg_4" data-universe="ajg_4" title="CABS Academic Journal Guide 2024, grade 4">
         <span class="label">AJG 4</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=ajg_3" data-universe="ajg_3" title="CABS Academic Journal Guide 2024, grade 3">
+          <a class="universe-card" href="directory.html?u=ajg_3" data-universe="ajg_3" title="CABS Academic Journal Guide 2024, grade 3">
         <span class="label">AJG 3</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=ajg_2" data-universe="ajg_2" title="CABS Academic Journal Guide 2024, grade 2">
+          <a class="universe-card" href="directory.html?u=ajg_2" data-universe="ajg_2" title="CABS Academic Journal Guide 2024, grade 2">
         <span class="label">AJG 2</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-      <a class="universe-card" href="directory.html?u=ajg_1" data-universe="ajg_1" title="CABS Academic Journal Guide 2024, grade 1">
+          <a class="universe-card" href="directory.html?u=ajg_1" data-universe="ajg_1" title="CABS Academic Journal Guide 2024, grade 1">
         <span class="label">AJG 1</span>
-        <span class="n" data-universe-count>…</span>
+        <span class="n" data-universe-count>…</span><span class="home-count-label">appointments</span>
         <span class="sub"><span data-universe-journals>…</span> journals</span>
       </a>
-    </div>
+        </div>
+      </section>
+      </div>
+    </section>
 
-    <h2 class="section-title" id="explore-title">Explore</h2>
-    <div class="explore">
-      <a href="journals.html">
-        <span class="label">Journals</span>
-        <span class="sub">One row per journal, with list badges, field, and appointment counts.</span>
-      </a>
-      <a href="institutions.html">
-        <span class="label">Institutions</span>
-        <span class="sub">One row per institution. A name opens the directory on that affiliation.</span>
-      </a>
-      <a href="rankings.html">
-        <span class="label">Rankings</span>
-        <span class="sub">ABS/AJG, CNRS, Handelsblatt/VWL, FNEGE, Tilburg, ERIM, Stern, Shanghai, SHUFE, and the membership lists.</span>
-      </a>
-    </div>
-
-    <section class="prose" id="about">
-      <h2>About</h2>
-      <p>
-        This site is the public editor list for
-        <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">econ-journal-dispersion</a>.
-        It is built from the releases under <code>data/editors/*/releases/current/</code>, not from a live scrape.
-        FT50, the 2025 ABDC list (A*, A, B, and C), and AJG-gap boards are the directory.
-        AJG-gap is <code>data/editors/abs_ajg_gap/releases/current/</code>: journals in the 2024 guide that are not already on an FT50 or ABDC board.
-        Top 5 and UTD24 are tags on the FT50 and ABDC rows. AJG chips are 2024 CABS grades (AJG 4*, AJG 4, AJG 3, AJG 2, and AJG 1).
-        A gap row carries its panel grade and does not receive an FT50 or ABDC badge.
-        core49 is not a separate list.
-      </p>
-      <p>
-        <span id="about-asof">Board year 2026.</span>
-        The counts above are every current appointment, including AJG-gap boards.
-        The directory downloads FT50 first. Other lists arrive when you select them, or when a journal or institution link needs them.
-        A name opens a faculty profile when the release has one. AJG-gap profiles are partial. Emails, phone numbers, and photos are not published.
-      </p>
-      <p>
-        The notes on overlap, Top 5, UTD24, and AJG-gap grades are on the <a href="directory.html#about">directory</a>.
-        Full AJG editions stay on <a href="rankings.html">Rankings</a>.
-      </p>
-      <p class="small">
-        Dataset license CC-BY-4.0. Journal mastheads remain the publishers’.
-        Build locally with <code>python scripts/build_site.py</code>.
-        The project site is
-        <a href="https://kochiuyu.github.io/econ-journal-dispersion/">kochiuyu.github.io/econ-journal-dispersion</a>.
-      </p>
+    <section class="prose home-about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About this directory</h2>
+      <p>Explore published snapshots of journal editorial boards. FT50, ABDC, and AJG-gap boards form the Directory; Top 5 and UTD24 are tags on those boards.</p>
+      <details class="about-data">
+        <summary>Coverage and data notes</summary>
+        <div class="about-data-body">
+          <p><span id="about-asof">Board year 2026.</span> The totals include all current appointments. Editors are counted by distinct name; one person may hold several appointments.</p>
+          <p>ABDC grades follow the 2025 Journal Quality List. AJG badges use 2024 CABS grades. AJG-gap adds journals that are not already on FT50 or ABDC boards. Overlapping lists should not be added together. Full ranking editions are available on <a href="rankings.html">Rankings</a>.</p>
+          <p>Board snapshots come from the project's published releases. Faculty profile links are shown where available; AJG-gap profiles are partial. Emails, phone numbers, and photos are not published.</p>
+          <p>Read the <a href="directory.html#about">Directory data notes</a> or the <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">repository documentation</a> for sources and methods.</p>
+          <p class="small">Dataset license: CC-BY-4.0. Journal mastheads remain the publishers’.</p>
+        </div>
+      </details>
     </section>
   </main>
 
@@ -213,6 +225,7 @@
     </p>
   </footer>
 
-  <script src="hub.js"></script>
+  <script src="hub.js?v=home-search-20261113"></script>
 </body>
 </html>
+

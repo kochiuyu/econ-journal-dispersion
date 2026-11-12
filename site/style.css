@@ -423,3 +423,33 @@ a.person { font-weight: 650; }
   .page-title { font-size: 25px; }
   .controls input[type="search"] { min-width: 0; }
 }
+
+
+
+/* Home: a direct route into the directory, then coverage and list browsing. */
+.home-hero { max-width: 860px; padding: 36px 0 6px; }
+.home-eyebrow { margin: 0 0 8px; color: var(--accent); font: 700 13px "Segoe UI", sans-serif; letter-spacing: .08em; }
+.home-hero h1 { margin: 0; color: var(--navy); font-size: clamp(30px, 4vw, 42px); line-height: 1.15; }
+.home-lead { margin: 12px 0 22px; color: var(--muted); font: 18px/1.5 "Segoe UI", sans-serif; }
+.home-search { padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: var(--shadow); }
+.home-search label { display: block; margin-bottom: 8px; font: 650 15px "Segoe UI", sans-serif; }
+.home-search input { min-width: 0; width: 100%; }
+.home-primary { padding: 10px 16px; min-height: 44px; border: 1px solid var(--accent); border-radius: 8px; background: var(--accent); color: var(--panel); font: 700 15px "Segoe UI", sans-serif; cursor: pointer; }
+.home-primary:hover { filter: brightness(.9); }
+.home-browse { margin: 12px 0 0; font: 14px "Segoe UI", sans-serif; }
+.home-coverage-note { margin-top: 0; }
+.home-list-family { margin-top: 20px; }
+.home-list-family h3 { margin: 0; color: var(--navy); font-size: 19px; }
+.home-list-family .hint { margin: 3px 0 10px; }
+.home-count-label { color: var(--muted); font: 12px "Segoe UI", sans-serif; }
+.home-about { margin-top: 32px; }
+.home-search :focus-visible, .home-browse a:focus-visible, .universe-card:focus-visible, .explore a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 560px) {
+  .home-hero { padding-top: 24px; }
+  .home-search { padding: 14px; }
+  .home-search .row { align-items: stretch; }
+  .home-search input { flex-basis: 100%; }
+  .home-primary { width: 100%; }
+  .home-lists .universe-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-lists .universe-card { padding: 12px; min-width: 0; }
+}
