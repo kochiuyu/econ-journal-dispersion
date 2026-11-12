@@ -1,0 +1,11 @@
+Core49 backfill freeze editors_backfill_red_jbes_20261113 is ready to replace live editors_backfill_red_gap_20261112 (PR #70).
+
+It adds RED 2025 (44 rows, #15664–#15707) and Journal of Business & Economic Statistics 2019 (87, #15708–#15794) and 2020 (78, #15795–#15872), from the official issue front matter (JSTOR stable/45181150 and stable/45282197).
+
+Panel 15,873; long 12,102. JBES 2019/2020 inventory is ok_issue_front_matter 87/84 and 78/75; JBES match rate 0.9302.
+
+Do not publish the two JBES source PDFs — they print staff contact emails and a phone number. All text and CSV files are clean.
+
+No Directory or build_site.py change. Headers and line endings are unchanged. The scrubbed spotcheck is unchanged. Base and RED 2025 rows are an exact byte prefix of the new panel, long, gaps, and staff files.
+
+Path: /workspace/econ-journal-editors/releases/editors_backfill_red_jbes_20261113/
