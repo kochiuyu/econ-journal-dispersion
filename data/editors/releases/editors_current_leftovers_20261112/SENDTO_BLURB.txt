@@ -1,0 +1,8 @@
+editors_current_leftovers_20261112 published on top of editors_leftover_fixes_20261112 (PR #69); web main was c4d24a7 (icons/CSS only, data identical).
+
+- 121 panel rows applied cell by cell on published keys (472 cells): D 7 attaches + 19 Marks-style DROPs (European Transport 2+2, JMID 5+17), E 27 school-unit rematches, F 68 printed-country fills.
+- directory_diff 341 cells: 0 missing keys, 0 old-value mismatches; all new values in place.
+- Long table: 117 parts on 117 keys (ror_country 76, ror_id/ror_name/is_panel_ror 32, ror_match_note 49, editor_name 17); raw_aff_part unchanged; 4 European Transport keys have no long part (none invented); B13 scrub kept.
+- Not published: FT50 #577/#578, the 10 AJG1 nav rows incl. JMID #11210; pilots.
+- build_site.py: AJG_GAP_FILES ajg1 expected_dropped 15 -> 32 (ajg2 stays 1; shared-name guard stays 43).
+- Directory: 11,074 -> 11,065 institutions; 6,698 with ROR (distinct 6,698); 169 countries; 43 shared names; appointments 162,574 -> 162,555; editors 112,718 -> 112,699; without institution 13,413 -> 13,387.

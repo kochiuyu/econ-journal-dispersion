@@ -1,0 +1,50 @@
+{
+ "status": "HELD (unpublished; for Journal-Editor-Web)",
+ "published": false,
+ "built_at": "2026-11-12T23:35:00+08:00",
+ "tag": "backfill_red_gap_20261112",
+ "base": "core49 releases/editors_ra_ta_merge_rebuild_20261112 as on edj-web main 59652942 (copied to /tmp/backfill_live, incl. web-scrubbed editors_backfill_scale_spotcheck.csv)",
+ "script": "abs_ajg/scripts/backfill_red_gap_20261112.py",
+ "changes": {
+  "panel_rows_added": 86,
+  "long_rows_added": 86,
+  "new_keys": "editors_backfill_scale_panel#15578-#15663",
+  "RED_2022_rows": 43,
+  "RED_2023_rows": 43,
+  "inventory_rows_changed": [
+   "RED 2021 -> ok_issue_front_matter rows_parsed 45/45",
+   "RED 2022 -> ok_wayback 43/43",
+   "RED 2023 -> ok_wayback 43/43"
+  ],
+  "gaps_rows_changed": [
+   "RED 2021/2022/2023 blocked -> resolved"
+  ],
+  "match_rates_rows_changed": [
+   "RED"
+  ]
+ },
+ "header_changes": "none",
+ "line_endings": "CRLF preserved",
+ "base_rows_changed": 0,
+ "md5": {
+  "editors_backfill_scale_ror_panel.csv": "4a3e624c9ae58976ca17982bcff9a97a",
+  "editor_affiliations.csv": "a93b5dae0f27669377c765e1ebfd7773",
+  "editors_backfill_scale_inventory.csv": "ba2e798b74b64a6d51857653e72a7705",
+  "editors_backfill_scale_gaps.csv": "96b00bd937321bcf25b070261539ca70",
+  "BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv": "c707d28514c2a58a5b204855bcc81538",
+  "editors_backfill_scale_spotcheck.csv": "da6059469d1eee4d841cc9f2a58626f3",
+  "RED_2022_2023_board_changes_20261112.csv": "4433ae306fcdd5cb56fd9f4afcf2c2df"
+ },
+ "held": {
+  "RED 2025": "no 2025 board source reachable; needs ScienceDirect Vol 55 (2025-01) front matter",
+  "JBES 2019-2020": "needs JSTOR front matter via CUHK Easy Access"
+ },
+ "web_publish": {
+  "status": "PUBLISHED (pending PR merge)",
+  "published_at": "2026-11-12 (Asia/Taipei)",
+  "repo_path": "data/editors/core49/releases/editors_backfill_red_gap_20261112/",
+  "branch": "publish-editors-current-leftovers-20261112",
+  "replaces_current_backfill": "editors_ra_ta_merge_rebuild_20261112",
+  "note": "Top-level status fields are the collector state at hand-off. All files byte-identical to the collector pack; editors_backfill_scale_spotcheck.csv is byte-identical to the phone/fax-scrubbed web copy."
+ }
+}
