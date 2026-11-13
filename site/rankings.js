@@ -73,6 +73,7 @@
   var labels = DATA.subjectLabels || {};
   var total = rows.length;
   var hay = new Array(total);
+  var editionCache = new Map();
 
   var qEl = document.getElementById("q");
   var systemEl = document.getElementById("system");
@@ -252,20 +253,12 @@
     if (next !== current) history.replaceState(null, "", next);
   }
 
-  function fillHay() {
-    for (var i = 0; i < total; i++) {
-      var row = rows[i];
-      var code = row[5] || "";
-      hay[i] = [
-        row[3] || "",
-        row[2] || "",
-        code,
-        subjectLabel(row[0], code),
-        row[6] || "",
-        row[7] || "",
-        row[8] || ""
-      ].join(" ").toLowerCase();
-    }
+  function searchText(index) {
+    if (hay[index] !== undefined) return hay[index];
+    var row = rows[index];
+    var code = row[5] || "";
+    hay[index] = [row[3] || "", row[2] || "", code, subjectLabel(row[0], code), row[6] || "", row[7] || "", row[8] || ""].join(" ").toLowerCase();
+    return hay[index];
   }
 
   function addOption(select, value, label) {
@@ -375,6 +368,8 @@
 
   function editionRows() {
     var year = String(state.year);
+    var key = state.system + "\n" + year;
+    if (editionCache.has(key)) return editionCache.get(key);
     var matched = [];
     for (var i = 0; i < total; i++) {
       var row = rows[i];
@@ -382,6 +377,7 @@
       if (String(row[1]) !== year) continue;
       matched.push(i);
     }
+    editionCache.set(key, matched);
     return matched;
   }
 
@@ -399,7 +395,7 @@
           if (sternParts(rowField).dept !== field) return;
         } else if (rowField !== field) return;
       }
-      if (query && hay[index].indexOf(query) === -1) return;
+      if (query && searchText(index).indexOf(query) === -1) return;
       matched.push(index);
     });
     var dir = state.dir === "desc" ? -1 : 1;
@@ -554,7 +550,6 @@
     writeUrl();
   }
 
-  fillHay();
   fillSystems();
 
   qEl.addEventListener("input", function () {

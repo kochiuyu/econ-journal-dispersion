@@ -3,6 +3,7 @@
   "use strict";
 
   var icons = window.INSTITUTION_ICONS || {};
+  var failed = new Set();
 
   function forAffiliation(name, country) {
     if (Object.prototype.hasOwnProperty.call(icons, name)) return icons[name][country || ""];
@@ -18,8 +19,15 @@
     icon.width = 18;
     icon.height = 18;
     icon.loading = "lazy";
-    icon.addEventListener("error", function () { icon.remove(); });
-    icon.src = url;
+    icon.decoding = "async";
+    icon.fetchPriority = "low";
+    icon.addEventListener("error", function () {
+      failed.add(url);
+      icon.style.visibility = "hidden";
+    });
+    // Keep the reserved 18px box after failures so adjacent text never jumps.
+    if (failed.has(url)) icon.style.visibility = "hidden";
+    else icon.src = url;
     container.prepend(icon);
   }
 

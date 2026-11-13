@@ -50,6 +50,8 @@
   };
   Object.keys(aliases).forEach(function (name) { byName.set(key(name), aliases[name]); });
 
+  var failed = new Set();
+
   function update(container, country) {
     if (!container) return;
     var code = byName.get(key(country || ""));
@@ -65,9 +67,15 @@
     flag.width = 18;
     flag.height = 12;
     flag.loading = "lazy";
+    flag.decoding = "async";
+    flag.fetchPriority = "low";
     flag.referrerPolicy = "no-referrer";
-    flag.addEventListener("error", function () { flag.hidden = true; });
-    flag.src = "https://flagcdn.com/" + code.toLowerCase() + ".svg";
+    flag.addEventListener("error", function () {
+      failed.add(code);
+      flag.style.visibility = "hidden";
+    });
+    if (failed.has(code)) flag.style.visibility = "hidden";
+    else flag.src = "https://flagcdn.com/" + code.toLowerCase() + ".svg";
     container.prepend(flag);
   }
 

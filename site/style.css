@@ -601,3 +601,18 @@ th.num button { text-align: right; }
   .mobile-results td, .directory-table td { padding: 10px 8px; }
   .table-note { padding: 8px; }
 }
+
+
+
+/* Reserve the result surface so loading rows do not push visible content around. */
+.results-stage { min-block-size: max(25rem, 75vh); }
+.results-stage[data-results-state="loading"] .tbl-wrap,
+.results-stage[data-results-state="loading"] .directory-mobile-sort,
+.results-stage[data-results-state="loading"] .results-mobile-sort { display: none; }
+#field { min-width: 0; }
+@media (min-width: 641px) { .controls #universe-row { min-block-size: 6rem; } }
+@media (min-width: 641px) and (max-width: 900px) { .controls #universe-row { min-block-size: 12rem; } }
+@media (max-width: 640px) {
+  .page-title + .intro #asof { min-block-size: 3em; }
+  .results-stage .count { min-block-size: 3em; }
+}

@@ -4,6 +4,7 @@
   var count = document.getElementById("count");
   var table = document.querySelector(".tbl-wrap");
   if (!count || !table) return;
+  var stage = table.closest(".results-stage");
   var page = document.getElementById("system") ? "rankings" : document.getElementById("institution") ? "directory" : document.getElementById("continent") ? "institutions" : "journals";
   var entity = page === "directory" ? "editors" : page === "institutions" ? "institutions" : "journals";
   var form = document.getElementById("filters");
@@ -21,6 +22,7 @@
   (document.querySelector(".directory-mobile-sort") || table).before(panel);
 
   function show(kind, heading, message, showTable) {
+    if (stage) stage.dataset.resultsState = kind;
     panel.hidden = false;
     panel.dataset.kind = kind;
     title.textContent = heading;
@@ -53,6 +55,7 @@
 
   window.resultStates = {
     ready: function () {
+      if (stage) stage.dataset.resultsState = "ready";
       panel.hidden = true;
       panel.dataset.kind = "ready";
       table.hidden = false;
@@ -105,5 +108,12 @@
       window.resultStates.error({ fatal: true });
     }
   }, true);
+  // Deferred fetch failures can precede our error listener. Controllers always
+  // initialize aria-sort before starting asynchronous data requests.
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!document.querySelector("th[aria-sort]") && panel.dataset.kind !== "error") {
+      window.resultStates.error({ fatal: true });
+    }
+  }, { once: true });
   window.resultStates.loading("Loading " + entity + "…", page === "rankings" ? "Fetching journal rankings and editions. Your selected ranking and filters will be kept." : undefined);
 })();
