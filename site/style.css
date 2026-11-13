@@ -534,3 +534,19 @@ a.person { font-weight: 650; }
   .compact-filter > .hint { margin-bottom: 10px; }
   .compact-filter > summary:focus-visible, .compact-coverage > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 }
+
+
+
+/* Distinct, actionable states for pending, empty, and incomplete results. */
+.result-state { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 10px 0; font-family: "Segoe UI", sans-serif; }
+.result-state h2 { margin: 0 0 6px; color: var(--navy); font-size: 20px; line-height: 1.3; }
+.result-state p { margin: 0; max-width: 680px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.result-state-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.result-state-actions:empty { display: none; }
+.result-state-actions .btn { min-height: 44px; }
+.result-state-actions .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.result-state[data-kind="error"] { border-color: var(--accent); }
+.controls .btn:disabled, .share-results .btn:disabled { opacity: 0.5; cursor: default; }
+.controls input:disabled { opacity: 0.6; }
+.result-state[hidden], .tbl-wrap[hidden], .directory-mobile-sort[hidden], .results-mobile-sort[hidden] { display: none; }
+@media (max-width: 640px) { .result-state { padding: 16px; } }

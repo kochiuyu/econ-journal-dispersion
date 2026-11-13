@@ -17,7 +17,7 @@
   var rowsEl = document.getElementById("rows");
 
   if (!DATA || !DATA.rows) {
-    countEl.textContent = "Institution data is not built yet. From the repository root, run python scripts/build_site.py.";
+    window.resultStates.error({ fatal: true });
     return;
   }
 
@@ -473,6 +473,8 @@
     });
     renderTable(matched);
     renderPager(matched.length);
+    if (matched.length) window.resultStates.ready();
+    else window.resultStates.empty();
     writeUrl();
   }
 
@@ -564,6 +566,7 @@
 
   render();
 })();
+
 
 
 

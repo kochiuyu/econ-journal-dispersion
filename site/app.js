@@ -18,7 +18,7 @@
 
   if (!SHELL || !SHELL.universes || !SHELL.counts || !SHELL.journals) {
     if (countEl) {
-      countEl.textContent = "Directory data is not built yet. From the repository root, run python scripts/build_site.py.";
+      window.resultStates.error({ fatal: true });
     }
     return;
   }
@@ -84,6 +84,8 @@
   var clearBtn = document.getElementById("clear");
   var activeFiltersEl = document.getElementById("active-filters");
   var clearEmptyBtn = document.getElementById("clear-empty");
+  var loadFailure = "";
+  var loadPendingText = "";
 
   var state = readUrl();
   var debounce = 0;
@@ -427,12 +429,15 @@
     });
     var busy = ids.length ? "true" : "false";
     if (directoryEl) directoryEl.setAttribute("aria-busy", busy);
-    countEl.setAttribute("aria-busy", busy);
+    // Keep progress announcements live while the controls and table are busy.
+    countEl.removeAttribute("aria-busy");
   }
 
   function showPending(text) {
+    loadPendingText = text;
     clearEmptyBtn.hidden = true;
-    countEl.textContent = text;
+    window.resultStates.loading(text);
+    pagerEl.hidden = true;
     if (rows.length) return;
     var tr = document.createElement("tr");
     var td = document.createElement("td");
@@ -445,6 +450,8 @@
   }
 
   function schedule() {
+    loadFailure = "";
+    loadPendingText = "Loading selected lists…";
     var gen = ++generation;
     syncControls();
     writeUrl();
@@ -454,6 +461,7 @@
       if (gen !== generation) return null;
       var ids = chunksToFetch();
       if (!ids.length) {
+        loadPendingText = "";
         markBusy([]);
         render();
         return null;
@@ -471,16 +479,16 @@
       });
     }).then(function (failed) {
       if (gen !== generation || failed === null) return;
+      loadPendingText = "";
+      loadFailure = failed.length ? failed.join(", ") : "";
       markBusy([]);
       render();
-      if (failed.length) {
-        countEl.textContent = "Could not load " + failed.join(", ") + ". Showing appointments already loaded.";
-      }
     }).catch(function (error) {
       if (gen !== generation) return;
+      loadPendingText = "";
+      loadFailure = "institution information";
       markBusy([]);
       render();
-      countEl.textContent = "Could not load " + (error && error.message ? error.message : "directory data") + ". From the repository root, run python scripts/build_site.py.";
     });
   }
 
@@ -1387,7 +1395,7 @@
     syncControls();
     var result = applyFilters();
     var matched = result.matched;
-    clearEmptyBtn.hidden = !!matched.length || !activeFilters().length;
+    clearEmptyBtn.hidden = true;
     var pages = Math.max(1, Math.ceil(matched.length / state.pageSize) || 1);
     if (state.page > pages) state.page = pages;
     var start = matched.length ? (state.page - 1) * state.pageSize + 1 : 0;
@@ -1408,6 +1416,15 @@
     });
     renderTable(matched);
     renderPager(matched.length);
+    if (loadPendingText) window.resultStates.loading(loadPendingText);
+    else if (loadFailure) {
+      window.resultStates.error({
+        partial: !!matched.length,
+        message: "Could not load " + loadFailure + ". " + (matched.length ? "Results below use only the lists already loaded. " : "") + "Try again to load the missing records. Your filters will be kept.",
+        retry: schedule
+      });
+    } else if (matched.length) window.resultStates.ready();
+    else window.resultStates.empty(!rows.length && state.universeMode === "none" && !state.journal && !state.journals && !state.aff);
     writeUrl();
     if (suggestOpen && document.activeElement === institutionEl) openSuggest(institutionEl.value);
   }
@@ -1581,5 +1598,6 @@
 
   schedule();
 })();
+
 
 
