@@ -616,3 +616,26 @@ th.num button { text-align: right; }
   .page-title + .intro #asof { min-block-size: 3em; }
   .results-stage .count { min-block-size: 3em; }
 }
+
+
+/* Long tables keep natural page scrolling and one semantic set of headings. */
+.long-table-page { padding-block-end: calc(5rem + env(safe-area-inset-bottom)); }
+.pinned-heading {
+  position: fixed; z-index: 30; box-sizing: border-box;
+  overflow-x: auto; scrollbar-width: none;
+  border: 1px solid var(--line); background: var(--panel);
+  box-shadow: 0 4px 12px #0002;
+}
+.pinned-heading::-webkit-scrollbar { display: none; }
+.pinned-heading table { table-layout: fixed; margin: 0; }
+.pinned-heading th { position: static; box-sizing: border-box; }
+.long-return {
+  position: fixed; z-index: 40;
+  right: calc(16px + env(safe-area-inset-right));
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  max-width: calc(100vw - 32px); min-height: 44px;
+  box-shadow: var(--shadow); background: var(--panel);
+}
+.pinned-heading[hidden], .long-return[hidden] { display: none; }
+.long-table-page .skip-link:focus { z-index: 60; }
+.controls { scroll-margin-block-start: 16px; }
