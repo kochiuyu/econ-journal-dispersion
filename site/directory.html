@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=result-states-20261113">
+  <link rel="stylesheet" href="style.css?v=accessibility-20261113">
   <script>
     /* Start the shell, and the FT50 chunk unless the URL names another scope. */
     (function () {
@@ -55,7 +55,7 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#directory">Skip to directory</a>
+  <a class="skip" href="#main-content">Skip to main content</a>
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="./">
@@ -67,7 +67,7 @@
       </a>
       <nav class="nav" aria-label="Site">
         <a href="./">Home</a>
-        <a href="directory.html" class="active">Directory</a>
+        <a href="directory.html" class="active" aria-current="page">Directory</a>
         <a href="journals.html">Journals</a>
         <a href="institutions.html">Institutions</a>
         <a href="rankings.html">Rankings</a>
@@ -77,16 +77,17 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main-content" tabindex="-1">
     <h1 class="page-title">Editor directory</h1>
     <p class="intro" id="intro">Search current journal editors by name, journal, institution, or subject. Start with FT50, or combine lists below. <span id="asof">Board year 2026.</span></p>
 
 
     <section class="controls" id="directory" aria-label="Filter editors">
-      <form id="filters" role="search">
+      <p id="search-shortcut" class="sr-only">Press Alt and slash to focus search.</p>
+      <form id="filters" role="search" aria-label="Search and filter editors">
         <div class="row">
           <label class="sr-only" for="q">Search editors</label>
-          <input id="q" type="search" name="q" placeholder="Search name, journal, affiliation, field, or role" autocomplete="off" spellcheck="false">
+          <input aria-keyshortcuts="Alt+/" aria-describedby="search-shortcut" id="q" type="search" name="q" placeholder="Search name, journal, affiliation, field, or role" autocomplete="off" spellcheck="false">
           <button class="btn" type="submit">Search</button>
           <button class="btn" type="button" id="clear">Clear filters</button>
           <button class="btn" type="button" id="reset-default">Reset to FT50</button>
@@ -114,8 +115,10 @@
             </select>
             <label class="lbl" for="institution">Institution</label>
             <div class="combo">
-              <input id="institution" type="search" name="aff" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="institution-list" placeholder="All institutions" autocomplete="off" spellcheck="false">
-              <ul id="institution-list" class="suggest" role="listbox" hidden></ul>
+              <input id="institution" aria-describedby="institution-help" type="search" name="aff" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="institution-list" placeholder="All institutions" autocomplete="off" spellcheck="false">
+              <ul id="institution-list" class="suggest" role="listbox" tabindex="-1" hidden></ul>
+              <p id="institution-help" class="sr-only">Type an institution, then use Up and Down arrows and Enter to choose. Escape closes suggestions.</p>
+              <span id="institution-status" class="sr-only" role="status" aria-atomic="true"></span>
             </div>
             <label class="lbl" for="field">Field</label>
             <select id="field" name="field">
@@ -364,11 +367,11 @@
   <script src="data/institution-icons.js?v=institution-icons-6666"></script>
   <script src="institution-icons.js?v=local-icons"></script>
   <script src="continent-icons.js"></script>
-  <script src="filter-controls.js?v=search-first-20261113"></script>
-  <script src="table-controls.js?v=mobile-tables-20261113"></script>
-  <script src="app.js?v=result-states-20261113"></script>
+  <script src="filter-controls.js?v=accessibility-20261113"></script>
+  <script src="table-controls.js?v=accessibility-20261113"></script>
+  <script src="app.js?v=accessibility-20261113"></script>
   <script src="share-controls.js?v=share-results-20261113"></script>
-  <script src="compact-controls.js?v=compact-filters-20261113"></script>
+  <script src="compact-controls.js?v=accessibility-20261113"></script>
 </body>
 </html>
 

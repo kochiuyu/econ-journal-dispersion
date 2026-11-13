@@ -17,10 +17,10 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=result-states-20261113">
+  <link rel="stylesheet" href="style.css?v=accessibility-20261113">
 </head>
 <body>
-  <a class="skip" href="#rankings">Skip to rankings</a>
+  <a class="skip" href="#main-content">Skip to main content</a>
   <header class="topbar">
     <div class="wrap bar">
       <a class="brand" href="./">
@@ -35,23 +35,24 @@
         <a href="directory.html">Directory</a>
         <a href="journals.html">Journals</a>
         <a href="institutions.html">Institutions</a>
-        <a href="rankings.html" class="active">Rankings</a>
+        <a href="rankings.html" class="active" aria-current="page">Rankings</a>
         <a href="#about">About</a>
         <a href="https://github.com/kochiuyu/econ-journal-dispersion#readme">GitHub</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main-content" tabindex="-1">
     <h1 class="page-title">Journal rankings</h1>
     <p class="intro" id="intro">Find journals across ranking systems and editions. Choose a ranking and edition to compare its published ratings.</p>
 
 
     <section class="controls" id="rankings" aria-label="Filter rankings">
-      <form id="filters" role="search">
+      <p id="search-shortcut" class="sr-only">Press Alt and slash to focus search.</p>
+      <form id="filters" role="search" aria-label="Search and filter rankings">
         <div class="row">
           <label class="sr-only" for="q">Search journals</label>
-          <input id="q" type="search" name="q" placeholder="Search journal title" autocomplete="off" spellcheck="false">
+          <input aria-keyshortcuts="Alt+/" aria-describedby="search-shortcut" id="q" type="search" name="q" placeholder="Search journal title" autocomplete="off" spellcheck="false">
           <button class="btn" type="submit">Search</button>
           <button class="btn" type="button" id="clear">Clear filters</button>
         </div>
@@ -342,11 +343,11 @@
 
   <script src="result-states.js?v=result-states-20261113"></script>
   <script src="rankings-data.js"></script>
-  <script src="filter-controls.js?v=search-first-20261113"></script>
-  <script src="table-controls.js?v=mobile-tables-20261113"></script>
-  <script src="rankings.js?v=result-states-20261113"></script>
+  <script src="filter-controls.js?v=accessibility-20261113"></script>
+  <script src="table-controls.js?v=accessibility-20261113"></script>
+  <script src="rankings.js?v=accessibility-20261113"></script>
   <script src="share-controls.js?v=share-results-20261113"></script>
-  <script src="compact-controls.js?v=compact-filters-20261113"></script>
+  <script src="compact-controls.js?v=accessibility-20261113"></script>
 </body>
 </html>
 

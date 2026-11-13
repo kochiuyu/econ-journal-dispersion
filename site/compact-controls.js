@@ -19,7 +19,7 @@
   function note(summary) {
     var span = document.createElement("span");
     span.className = "compact-selection";
-    summary.appendChild(span);
+    summary.append(" ", span);
     return span;
   }
 

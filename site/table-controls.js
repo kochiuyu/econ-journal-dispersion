@@ -68,7 +68,7 @@
     });
     mobileSort.value = currentKey;
     mobileDirection.textContent = currentDirection === "desc" ? "Descending ↓" : "Ascending ↑";
-    mobileDirection.setAttribute("aria-label", "Sort " + (currentDirection === "desc" ? "ascending" : "descending"));
+    mobileDirection.setAttribute("aria-label", currentDirection === "desc" ? "Descending sort; change to ascending" : "Ascending sort; change to descending");
   }
 
   function mobileRows() {
@@ -128,6 +128,9 @@
       mobileSortState();
       headers.forEach(function (button) {
         var header = button.closest("th");
+        var label = button.dataset.label || button.textContent;
+        if (button.dataset.sort === "appointments" && mobileTable && window.matchMedia("(max-width: 640px)").matches) label = "Appts (appointments)";
+        button.setAttribute("aria-label", button.dataset.sort === key ? label + ", sorted " + (direction === "desc" ? "descending; sort ascending" : "ascending; sort descending") : "Sort by " + label);
         if (button.dataset.sort === key) {
           header.setAttribute("aria-sort", direction === "desc" ? "descending" : "ascending");
         } else {
@@ -151,5 +154,8 @@
       }
     }
   };
+  window.matchMedia("(max-width: 640px)").addEventListener("change", function () {
+    if (currentKey) window.tableControls.sort(currentKey, currentDirection);
+  });
 })();
 

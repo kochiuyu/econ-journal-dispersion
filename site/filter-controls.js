@@ -44,7 +44,7 @@
         button.className = "chip filter-remove";
         var value = filter.value === "__blank__" ? "Unknown" : (filter.display || filter.value);
         button.textContent = filter.label + ": " + value + " \u00d7";
-        button.setAttribute("aria-label", "Remove " + filter.label.toLowerCase() + " filter: " + value);
+        button.setAttribute("aria-label", filter.label + ": " + value + ", remove filter");
         button.dataset.filter = filter.key;
         button.addEventListener("click", function () {
           remove(filter);

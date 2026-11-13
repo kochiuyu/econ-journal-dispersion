@@ -387,6 +387,7 @@
         boardLink.target = "_blank";
         boardLink.rel = "noopener noreferrer";
         boardLink.textContent = "Board";
+        boardLink.setAttribute("aria-label", "Board for " + row[0] + " (opens in a new tab)");
         board.appendChild(boardLink);
       } else {
         board.className = "muted";
@@ -503,7 +504,7 @@
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "/" && document.activeElement !== qEl && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT") {
+    if (event.key === "/" && event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey && !document.activeElement.closest("input, select, textarea, [contenteditable]:not([contenteditable=false])")) {
       event.preventDefault();
       qEl.focus();
     }

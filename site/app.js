@@ -965,6 +965,7 @@
     suggestEl.hidden = true;
     institutionEl.setAttribute("aria-expanded", "false");
     institutionEl.removeAttribute("aria-activedescendant");
+    document.getElementById("institution-status").textContent = "";
   }
 
   function paintSuggest() {
@@ -972,6 +973,8 @@
     if (!suggestItems.length) {
       var empty = document.createElement("li");
       empty.className = "empty";
+      empty.setAttribute("role", "option");
+      empty.setAttribute("aria-disabled", "true");
       empty.textContent = "No loaded institutions match.";
       suggestEl.appendChild(empty);
     }
@@ -982,19 +985,25 @@
       button.type = "button";
       button.id = "institution-opt-" + index;
       button.setAttribute("role", "option");
+      button.tabIndex = -1;
       button.setAttribute("aria-selected", index === suggestIndex ? "true" : "false");
       button.textContent = item.label;
       button.addEventListener("mousedown", function (event) {
         event.preventDefault();
-        chooseSuggest(index);
       });
+      button.addEventListener("click", function () { chooseSuggest(index); });
       li.appendChild(button);
       suggestEl.appendChild(li);
     });
+    var status = document.getElementById("institution-status");
+    var message = suggestItems.length ? suggestItems.length + " institutions suggested." : "No institutions match your text in the loaded lists.";
+    if (status.textContent !== message) status.textContent = message;
     suggestEl.hidden = false;
     institutionEl.setAttribute("aria-expanded", "true");
-    if (suggestIndex >= 0) institutionEl.setAttribute("aria-activedescendant", "institution-opt-" + suggestIndex);
-    else institutionEl.removeAttribute("aria-activedescendant");
+    if (suggestIndex >= 0) {
+      institutionEl.setAttribute("aria-activedescendant", "institution-opt-" + suggestIndex);
+      document.getElementById("institution-opt-" + suggestIndex).scrollIntoView({ block: "nearest" });
+    } else institutionEl.removeAttribute("aria-activedescendant");
   }
 
   function openSuggest(query) {
@@ -1018,11 +1027,9 @@
   }
 
   function moveSuggest(delta) {
-    if (suggestEl.hidden || !suggestItems.length) {
-      openSuggest(institutionEl.value);
-      return;
-    }
-    suggestIndex = (suggestIndex + delta + suggestItems.length) % suggestItems.length;
+    if (suggestEl.hidden) openSuggest(institutionEl.value);
+    if (!suggestItems.length) return;
+    suggestIndex = suggestIndex < 0 ? (delta < 0 ? suggestItems.length - 1 : 0) : (suggestIndex + delta + suggestItems.length) % suggestItems.length;
     paintSuggest();
   }
 
@@ -1033,6 +1040,7 @@
     state.page = 1;
     institutionEl.value = item.label;
     closeSuggest();
+    institutionEl.focus({ preventScroll: true });
     schedule();
   }
 
@@ -1145,8 +1153,9 @@
       button.className = "chip";
       button.classList.add("filter-remove");
       button.dataset.filter = filter[3] ? "universe" : key;
-      button.textContent = (label === "List" ? value : label + ": " + value) + " ×";
-      button.setAttribute("aria-label", "Remove " + label.toLowerCase() + " filter: " + value);
+      var visibleLabel = label === "List" ? value : label + ": " + value;
+      button.textContent = visibleLabel + " ×";
+      button.setAttribute("aria-label", visibleLabel + ", remove " + (label === "List" ? "list " : "") + "filter");
       button.addEventListener("click", function () {
         var hadFocus = document.activeElement === button;
         if (filter[3]) {
@@ -1206,6 +1215,7 @@
     window.tableControls.sort(state.sort, state.dir);
     mobileSortEl.value = state.sort;
     mobileDirectionEl.textContent = state.dir === "desc" ? "Descending ↓" : "Ascending ↑";
+    mobileDirectionEl.setAttribute("aria-label", state.dir === "desc" ? "Descending sort; change to ascending" : "Ascending sort; change to descending");
   }
 
   function badge(universe) {
@@ -1236,6 +1246,7 @@
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.title = "Faculty profile";
+      link.setAttribute("aria-label", name + ", faculty profile (opens in a new tab)");
       link.textContent = name;
       td.appendChild(link);
     } else {
@@ -1284,6 +1295,7 @@
         link.target = "_blank";
         link.rel = "noopener noreferrer";
         link.textContent = journalName;
+        link.setAttribute("aria-label", journalName + " editorial board (opens in a new tab)");
         journalCell.appendChild(link);
       } else {
         journalCell.textContent = journalName;
@@ -1590,7 +1602,7 @@
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "/" && document.activeElement !== qEl && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "SELECT" && document.activeElement.tagName !== "TEXTAREA") {
+    if (event.key === "/" && event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey && !document.activeElement.closest("input, select, textarea, [contenteditable]:not([contenteditable=false])")) {
       event.preventDefault();
       qEl.focus();
     }
