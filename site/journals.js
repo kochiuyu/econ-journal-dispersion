@@ -16,7 +16,7 @@
   var countEl = document.getElementById("count");
   var rowsEl = document.getElementById("rows");
 
-  if (!DATA || !DATA.rows) {
+  if (!DATA || !DATA.rows || !window.tableFormat) {
     window.resultStates.error({ fatal: true });
     return;
   }
@@ -327,7 +327,7 @@
   function numCell(value) {
     var td = document.createElement("td");
     td.className = "num";
-    td.textContent = formatNumber(value);
+    window.tableFormat.number(td, value);
     return td;
   }
 
@@ -365,13 +365,13 @@
           any = true;
         }
       });
-      if (!any) listCell.textContent = "—";
+      if (!any) window.tableFormat.missing(listCell, "No list badge");
       tr.appendChild(listCell);
 
       var field = fieldText(row[5]);
       var fieldCell = document.createElement("td");
       fieldCell.className = field ? "field" : "muted";
-      fieldCell.textContent = field ? fieldLabel(field) : "—";
+      window.tableFormat.text(fieldCell, field ? fieldLabel(field) : "");
       if (field && fieldLabel(field) !== field) fieldCell.title = field;
       tr.appendChild(fieldCell);
 
@@ -386,12 +386,12 @@
         boardLink.href = url;
         boardLink.target = "_blank";
         boardLink.rel = "noopener noreferrer";
-        boardLink.textContent = "Board";
-        boardLink.setAttribute("aria-label", "Board for " + row[0] + " (opens in a new tab)");
+        boardLink.textContent = "View board";
+        boardLink.setAttribute("aria-label", "View board for " + row[0] + " (opens in a new tab)");
         board.appendChild(boardLink);
       } else {
         board.className = "muted";
-        board.textContent = "—";
+        window.tableFormat.missing(board, "Board link not available");
       }
       tr.appendChild(board);
       fragment.appendChild(tr);

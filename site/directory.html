@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=accessibility-20261113">
+  <link rel="stylesheet" href="style.css?v=table-presentation-20261113">
   <script>
     /* Start the shell, and the FT50 chunk unless the URL names another scope. */
     (function () {
@@ -178,7 +178,8 @@
       <button class="btn" type="button" id="mobile-sort-direction">Ascending ↑</button>
     </div>
     <div class="tbl-wrap">
-      <table class="directory-table">
+      <p class="table-note" id="table-value-note">— = not reported or not applicable. 0 = recorded zero.</p>
+      <table class="directory-table" aria-describedby="table-value-note">
         <caption class="sr-only">Current FT50, ABDC, and AJG-gap journal editors</caption>
         <thead>
           <tr>
@@ -186,8 +187,8 @@
             <th scope="col"><button type="button" data-sort="role">Role</button></th>
             <th scope="col"><button type="button" data-sort="journal">Journal</button></th>
             <th scope="col"><button type="button" data-sort="field">Field</button></th>
-            <th scope="col"><button type="button" data-sort="universe">List</button></th>
-            <th scope="col"><button type="button" data-sort="affiliation">Affiliation</button></th>
+            <th scope="col"><button type="button" data-sort="universe">Lists</button></th>
+            <th scope="col"><button type="button" data-sort="affiliation">Institution</button></th>
             <th scope="col"><button type="button" data-sort="country">Country</button></th>
             <th scope="col"><button type="button" data-sort="continent">Continent</button></th>
           </tr>
@@ -368,8 +369,9 @@
   <script src="institution-icons.js?v=local-icons"></script>
   <script src="continent-icons.js"></script>
   <script src="filter-controls.js?v=accessibility-20261113"></script>
+  <script src="table-format.js?v=table-presentation-20261113"></script>
   <script src="table-controls.js?v=accessibility-20261113"></script>
-  <script src="app.js?v=accessibility-20261113"></script>
+  <script src="app.js?v=table-presentation-20261113"></script>
   <script src="share-controls.js?v=share-results-20261113"></script>
   <script src="compact-controls.js?v=accessibility-20261113"></script>
 </body>

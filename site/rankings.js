@@ -60,7 +60,7 @@
   var countEl = document.getElementById("count");
   var rowsEl = document.getElementById("rows");
 
-  if (!DATA || !DATA.rows) {
+  if (!DATA || !DATA.rows || !window.tableFormat) {
     window.resultStates.error({ fatal: true });
     return;
   }
@@ -431,10 +431,10 @@
     return matched;
   }
 
-  function cell(text, className) {
+  function cell(text, className, missingLabel) {
     var td = document.createElement("td");
     if (className) td.className = className;
-    td.textContent = text || "";
+    window.tableFormat.text(td, text, missingLabel);
     return td;
   }
 
@@ -491,7 +491,7 @@
       var tr = document.createElement("tr");
       var name = cell(row[3], "journal");
       tr.appendChild(name);
-      var ratingCell = cell(row[4] || "—", row[4] ? "rating" : "muted");
+      var ratingCell = cell(row[4], "rating", Object.prototype.hasOwnProperty.call(RATING_RANK, state.system) ? "No rating reported" : "Not applicable to this list");
       if (row[4] && state.system === "tilburg") ratingCell.title = "TISEM top journal list";
       if (row[4] && state.system === "fnege") ratingCell.title = "FNEGE " + row[1];
       if (row[4] && state.system === "erim") ratingCell.title = "ERIM Journals List Core 2024–2028";
@@ -502,15 +502,20 @@
       if (row[4] && state.system === "shufe") ratingCell.title = "SHUFE Tenure-Track Journal List";
       tr.appendChild(ratingCell);
       var fieldText = row[5] ? subjectLabel(state.system, row[5]) : "";
-      var fieldCell = cell(fieldText || "—", row[5] ? "field" : "muted");
+      var fieldCell = cell(fieldText, "field");
       if (state.system === "stern" && row[5]) {
         var sternField = sternParts(row[5]);
         fieldCell.title = sternField.sub ? sternField.dept + " · " + sternField.sub : sternField.dept;
       } else if (row[5] && fieldText !== row[5]) fieldCell.title = row[5];
       tr.appendChild(fieldCell);
-      tr.appendChild(cell(String(row[1])));
-      if (showsWeight(state.system)) tr.appendChild(cell(row[8] || "—", row[8] ? "weight" : "muted"));
-      tr.appendChild(cell(row[2] || "—", row[2] ? "idcode" : "muted"));
+      tr.appendChild(cell(row[1], "edition", "Edition not reported"));
+      if (showsWeight(state.system)) {
+        var weightCell = document.createElement("td");
+        weightCell.className = "num weight";
+        window.tableFormat.decimal(weightCell, row[8]);
+        tr.appendChild(weightCell);
+      }
+      tr.appendChild(cell(row[2], "idcode", "Journal ID not reported"));
       fragment.appendChild(tr);
     });
     rowsEl.replaceChildren(fragment);

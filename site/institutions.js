@@ -16,7 +16,7 @@
   var countEl = document.getElementById("count");
   var rowsEl = document.getElementById("rows");
 
-  if (!DATA || !DATA.rows) {
+  if (!DATA || !DATA.rows || !window.tableFormat) {
     window.resultStates.error({ fatal: true });
     return;
   }
@@ -397,14 +397,13 @@
   function numCell(value) {
     var td = document.createElement("td");
     td.className = "num";
-    td.textContent = formatNumber(value);
+    window.tableFormat.number(td, value);
     return td;
   }
 
   function textCell(text) {
     var td = document.createElement("td");
-    td.textContent = text || "—";
-    if (!text) td.className = "muted";
+    window.tableFormat.text(td, text);
     return td;
   }
 
@@ -439,8 +438,8 @@
       var continentCell = textCell(continentName(row));
       window.updateContinentIcon(continentCell, continentName(row));
       tr.appendChild(continentCell);
-      tr.appendChild(numCell(row[3]));
       tr.appendChild(numCell(row[4]));
+      tr.appendChild(numCell(row[3]));
       tr.appendChild(numCell(row[5]));
       fragment.appendChild(tr);
     });

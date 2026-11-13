@@ -16,7 +16,7 @@
   var pagerEl = document.getElementById("pager");
   var directoryEl = document.getElementById("directory");
 
-  if (!SHELL || !SHELL.universes || !SHELL.counts || !SHELL.journals) {
+  if (!SHELL || !SHELL.universes || !SHELL.counts || !SHELL.journals || !window.tableFormat) {
     if (countEl) {
       window.resultStates.error({ fatal: true });
     }
@@ -1228,8 +1228,7 @@
 
   function cell(text) {
     var td = document.createElement("td");
-    td.textContent = text || "—";
-    if (!text) td.className = "muted";
+    window.tableFormat.text(td, text);
     return td;
   }
 
@@ -1250,8 +1249,7 @@
       link.textContent = name;
       td.appendChild(link);
     } else {
-      td.textContent = name || "—";
-      if (!name) td.className = "muted";
+      window.tableFormat.text(td, name, "Editor name not reported");
     }
     return td;
   }
@@ -1287,7 +1285,7 @@
       var journalCell = document.createElement("td");
       journalCell.className = "journal";
       var url = urls.values[row[7]] || "";
-      var journalName = journalNames[row[2]] || "—";
+      var journalName = journalNames[row[2]] || "";
       if (httpUrl(url)) {
         var link = document.createElement("a");
         link.className = "journal";
@@ -1298,14 +1296,14 @@
         link.setAttribute("aria-label", journalName + " editorial board (opens in a new tab)");
         journalCell.appendChild(link);
       } else {
-        journalCell.textContent = journalName;
+        window.tableFormat.text(journalCell, journalName, "Journal name not reported");
       }
       tr.appendChild(journalCell);
 
       var fieldName = fieldOf(row);
       var fieldCell = document.createElement("td");
       fieldCell.className = fieldName ? "field" : "muted";
-      fieldCell.textContent = fieldName ? fieldLabel(fieldName) : "—";
+      window.tableFormat.text(fieldCell, fieldName ? fieldLabel(fieldName) : "");
       if (fieldName && fieldLabel(fieldName) !== fieldName) fieldCell.title = fieldName;
       tr.appendChild(fieldCell);
 
@@ -1317,7 +1315,7 @@
           any = true;
         }
       });
-      if (!any) listCell.textContent = "—";
+      if (!any) window.tableFormat.missing(listCell, "No list badge");
       tr.appendChild(listCell);
 
       var affiliation = cell(row[4]);
@@ -1333,11 +1331,11 @@
       tr.appendChild(continentCell);
       fragment.appendChild(tr);
       appendMobileDetails(fragment, person, row[0], index, [
-        ["Affiliation", affiliation],
+        ["Institution", affiliation],
         ["Country", countryCell],
         ["Continent", continentCell],
         ["Field", fieldCell],
-        ["List", listCell]
+        ["Lists", listCell]
       ]);
     });
     rowsEl.replaceChildren(fragment);

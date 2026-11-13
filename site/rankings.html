@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=accessibility-20261113">
+  <link rel="stylesheet" href="style.css?v=table-presentation-20261113">
 </head>
 <body>
   <a class="skip" href="#main-content">Skip to main content</a>
@@ -112,16 +112,17 @@
     </div>
 
     <div class="tbl-wrap">
-      <table class="mobile-results" data-mobile-table="rankings">
+      <p class="table-note" id="table-value-note">— = not reported or not applicable. 0 = recorded zero.</p>
+      <table class="mobile-results" data-mobile-table="rankings" aria-describedby="table-value-note">
         <caption class="sr-only">Journal rankings</caption>
         <thead>
           <tr>
             <th scope="col"><button type="button" data-sort="name">Journal</button></th>
             <th scope="col"><button type="button" data-sort="rating">Rating</button></th>
             <th scope="col"><button type="button" data-sort="field">Field</button></th>
-            <th scope="col"><button type="button" data-sort="year">Edition</button></th>
-            <th scope="col" id="col-weight" hidden><button type="button" data-sort="weight">Weight</button></th>
-            <th scope="col"><button type="button" data-sort="id">Journal id</button></th>
+            <th scope="col" class="num"><button type="button" data-sort="year">Edition</button></th>
+            <th scope="col" id="col-weight" hidden class="num"><button type="button" data-sort="weight">Weight</button></th>
+            <th scope="col"><button type="button" data-sort="id">Journal ID</button></th>
           </tr>
         </thead>
         <tbody id="rows"></tbody>
@@ -344,8 +345,9 @@
   <script src="result-states.js?v=result-states-20261113"></script>
   <script src="rankings-data.js"></script>
   <script src="filter-controls.js?v=accessibility-20261113"></script>
+  <script src="table-format.js?v=table-presentation-20261113"></script>
   <script src="table-controls.js?v=accessibility-20261113"></script>
-  <script src="rankings.js?v=accessibility-20261113"></script>
+  <script src="rankings.js?v=table-presentation-20261113"></script>
   <script src="share-controls.js?v=share-results-20261113"></script>
   <script src="compact-controls.js?v=accessibility-20261113"></script>
 </body>

@@ -583,3 +583,21 @@ input[type="search"], select, .btn, .chip, .share-manual input, .suggest { borde
   :focus-visible { outline-color: Highlight; }
   .chip[aria-pressed="true"], .suggest button[aria-selected="true"] { border: 2px solid Highlight; }
 }
+
+
+
+/* Consistent table rhythm, quantitative alignment, and missing-value cues. */
+th, td { padding: 12px; }
+th { font: 650 .8125rem/1.4 "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; color: var(--muted); vertical-align: bottom; }
+th button { font: inherit; color: inherit; text-transform: none; letter-spacing: normal; }
+th.num, td.num, td.edition, td.weight { text-align: right; font-variant-numeric: tabular-nums; }
+th.num button { text-align: right; }
+.table-note { margin: 0; padding: 10px 12px; border-bottom: 1px solid var(--line); color: var(--muted); font: .78125rem/1.5 "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; }
+.missing-value { color: var(--muted); font-weight: 400; white-space: nowrap; }
+.badge { line-height: 1.5; vertical-align: baseline; }
+@media (max-width: 640px) {
+  .mobile-results th, .directory-table th { font-size: .75rem; }
+  .mobile-results th button, .directory-table th button { font-size: inherit; letter-spacing: normal; overflow-wrap: anywhere; }
+  .mobile-results td, .directory-table td { padding: 10px 8px; }
+  .table-note { padding: 8px; }
+}
