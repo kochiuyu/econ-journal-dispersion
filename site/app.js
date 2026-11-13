@@ -1548,6 +1548,20 @@
     });
   });
 
+  document.addEventListener("prepare-share", function () {
+    window.clearTimeout(debounce);
+    var query = qEl.value.trim();
+    var before = state.aff;
+    applyInstitutionText();
+    closeSuggest();
+    if (query !== state.q || state.aff !== before) {
+      state.q = query;
+      state.page = 1;
+      if (state.aff !== before || needsInstitutionIndex()) schedule();
+      else render();
+    } else writeUrl();
+  });
+
   window.addEventListener("popstate", function () {
     window.clearTimeout(debounce);
     state = readUrl();
@@ -1567,4 +1581,5 @@
 
   schedule();
 })();
+
 

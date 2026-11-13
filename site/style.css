@@ -486,3 +486,20 @@ a.person { font-weight: 650; }
   .pager .btn, .pager select { min-height: 44px; }
   .pager-size { justify-content: center; flex-basis: 100%; }
 }
+
+
+
+/* Share the URL that restores the current result view. */
+.results-summary, .directory-results { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 14px 2px 8px; }
+.results-summary .count, .directory-results .count { margin: 0; }
+.share-results { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; flex: 1 1 auto; font-family: "Segoe UI", sans-serif; }
+.share-results .btn { min-height: 44px; }
+.share-status { font-size: 13px; color: var(--muted); }
+.share-manual { flex-basis: 100%; min-width: 0; }
+.share-manual[hidden] { display: none; }
+.share-manual label { display: block; margin-bottom: 4px; }
+.share-manual input { display: block; width: 100%; min-width: 0; padding: 8px 10px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); font: 14px "Segoe UI", sans-serif; }
+.share-results :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 640px) {
+  .share-results { flex-basis: 100%; }
+}

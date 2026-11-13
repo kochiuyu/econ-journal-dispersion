@@ -538,6 +538,16 @@
     });
   });
 
+  document.addEventListener("prepare-share", function () {
+    window.clearTimeout(debounce);
+    var query = qEl.value.trim();
+    if (query !== state.q) {
+      state.q = query;
+      state.page = 1;
+      render();
+    } else writeUrl();
+  });
+
   window.addEventListener("popstate", function () {
     window.clearTimeout(debounce);
     state = readUrl();
@@ -554,5 +564,6 @@
 
   render();
 })();
+
 
 

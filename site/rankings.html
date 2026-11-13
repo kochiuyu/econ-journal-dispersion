@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=mobile-tables-20261113">
+  <link rel="stylesheet" href="style.css?v=share-results-20261113">
 </head>
 <body>
   <a class="skip" href="#rankings">Skip to rankings</a>
@@ -98,7 +98,17 @@
       </div>
     </section>
 
+    <div class="results-summary">
     <p class="count" id="count" aria-live="polite" tabindex="-1">Loading rankings…</p>
+      <div class="share-results" role="group" aria-label="Share results">
+        <button class="btn" type="button" id="copy-link">Copy link</button>
+        <span class="share-status" id="copy-link-status" role="status"></span>
+        <div class="share-manual" id="copy-link-manual" hidden>
+          <label class="lbl" for="copy-link-url">Link to these results</label>
+          <input type="text" id="copy-link-url" readonly spellcheck="false" aria-describedby="copy-link-status">
+        </div>
+      </div>
+    </div>
 
     <div class="tbl-wrap">
       <table class="mobile-results" data-mobile-table="rankings">
@@ -333,8 +343,10 @@
   <script src="rankings-data.js"></script>
   <script src="filter-controls.js?v=search-first-20261113"></script>
   <script src="table-controls.js?v=mobile-tables-20261113"></script>
-  <script src="rankings.js?v=mobile-tables-20261113"></script>
+  <script src="rankings.js?v=share-results-20261113"></script>
+  <script src="share-controls.js?v=share-results-20261113"></script>
 </body>
 </html>
+
 
 
