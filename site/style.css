@@ -503,3 +503,34 @@ a.person { font-weight: 650; }
 @media (max-width: 640px) {
   .share-results { flex-basis: 100%; }
 }
+
+
+
+/* Mobile disclosures keep search and active filters close to the results. */
+.compact-filter, .compact-coverage { display: contents; }
+.compact-filter > summary, .compact-coverage > summary { display: none; }
+.compact-inline > .compact-extra-fields { display: contents; }
+.compact-filter:not(.compact-inline) > .row:not(.list-families) { margin-top: 10px; }
+.compact-selection { display: none; }
+.compact-field-control, .compact-scope-control { display: contents; }
+@media (max-width: 640px) {
+  .compact-field-control, .compact-scope-control { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .compact-field-control { flex: 1 1 180px; }
+  .compact-scope-control { flex: 1 1 140px; }
+  .compact-scope-control:has(#year) { flex: 0 0 80px; }
+  .compact-field-control select, .compact-field-control .combo, .compact-scope-control select { width: 100%; max-width: 100%; flex: none; }
+  .compact-filter, .compact-coverage { display: block; }
+  .compact-filter { margin-top: 10px; border-top: 1px solid var(--line); }
+  .compact-filter > summary, .compact-coverage > summary { display: list-item; cursor: pointer; padding: 10px 0; min-height: 44px; color: var(--accent); font: 600 14px/24px "Segoe UI", sans-serif; }
+  .compact-selection { display: inline; margin-left: 8px; color: var(--muted); font-size: 12px; font-weight: 400; }
+  .compact-selection:empty { display: none; }
+  .compact-inline { flex-basis: 100%; width: 100%; }
+  .compact-inline > .compact-extra-fields { display: flex; }
+  .compact-coverage { margin: 12px 0; border-bottom: 1px solid var(--line); }
+  .compact-coverage > summary { color: var(--muted); font-size: 13px; }
+  .compact-coverage .stats { margin-top: 4px; }
+  .compact-directory-more > summary { min-height: 44px; padding: 10px 0; }
+  .compact-filter .list-families { margin-top: 0; }
+  .compact-filter > .hint { margin-bottom: 10px; }
+  .compact-filter > summary:focus-visible, .compact-coverage > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+}
