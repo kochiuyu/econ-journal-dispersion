@@ -2,509 +2,9 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 1000,
-  "round_progress_after_this_batch": 350,
-  "batch": 7,
+  "round_progress_after_this_batch": 400,
+  "batch": 8,
   "pending_candidates": [
-    {
-      "journal_id": "review_african_political_economy",
-      "journal_name": "Review of African Political Economy",
-      "appointments": 67,
-      "priority_rank": 661,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0305-6244",
-      "source_page": "https://www.tandfonline.com/journals/crea20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=crea20"
-    },
-    {
-      "journal_id": "tourism_management_perspectives",
-      "journal_name": "Tourism Management Perspectives",
-      "appointments": 67,
-      "priority_rank": 663,
-      "publisher": "Elsevier",
-      "issn": "2211-9736",
-      "source_page": "https://www.sciencedirect.com/journal/tourism-management-perspectives",
-      "image_url": "https://ars.els-cdn.com/content/image/X22119736.jpg"
-    },
-    {
-      "journal_id": "transportmetrica_transport_science",
-      "journal_name": "Transportmetrica A: Transport Science",
-      "appointments": 67,
-      "priority_rank": 664,
-      "publisher": "Taylor & Francis Online",
-      "issn": "2324-9935",
-      "source_page": "https://www.tandfonline.com/journals/ttra20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ttra20"
-    },
-    {
-      "journal_id": "econometric_theory",
-      "journal_name": "Econometric Theory",
-      "appointments": 66,
-      "priority_rank": 667,
-      "publisher": "Cambridge University Press",
-      "issn": "0266-4666",
-      "source_page": "https://www.cambridge.org/core/journals/econometric-theory",
-      "image_url": "https://static.cambridge.org/covers/ECT_0_0_0/econometric_theory.jpg?send-full-size-image=true"
-    },
-    {
-      "journal_id": "eurasian_economic_review",
-      "journal_name": "Eurasian Economic Review",
-      "appointments": 66,
-      "priority_rank": 669,
-      "publisher": "Springer International Publishing",
-      "issn": "1309-422X",
-      "source_page": "https://link.springer.com/journal/40822/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/40822.jpg"
-    },
-    {
-      "journal_id": "international_journal_social_research_methodology",
-      "journal_name": "International Journal of Social Research Methodology",
-      "appointments": 66,
-      "priority_rank": 672,
-      "publisher": "Taylor & Francis Online",
-      "issn": "1364-5579",
-      "source_page": "https://www.tandfonline.com/journals/tsrm20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tsrm20"
-    },
-    {
-      "journal_id": "journal_applied_statistics",
-      "journal_name": "Journal of Applied Statistics",
-      "appointments": 66,
-      "priority_rank": 675,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0266-4763",
-      "source_page": "https://www.tandfonline.com/journals/cjas20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=cjas20"
-    },
-    {
-      "journal_id": "journal_engineering_technology_management",
-      "journal_name": "Journal of Engineering and Technology Management",
-      "appointments": 66,
-      "priority_rank": 677,
-      "publisher": "Elsevier",
-      "issn": "0923-4748",
-      "source_page": "https://www.sciencedirect.com/journal/journal-of-engineering-and-technology-management",
-      "image_url": "https://ars.els-cdn.com/content/image/X09234748.jpg"
-    },
-    {
-      "journal_id": "land_use_policy",
-      "journal_name": "Land Use Policy",
-      "appointments": 66,
-      "priority_rank": 680,
-      "publisher": "Elsevier",
-      "issn": "0264-8377",
-      "source_page": "https://www.sciencedirect.com/journal/land-use-policy",
-      "image_url": "https://ars.els-cdn.com/content/image/X02648377.jpg"
-    },
-    {
-      "journal_id": "mathematical_social_sciences",
-      "journal_name": "Mathematical Social Sciences",
-      "appointments": 66,
-      "priority_rank": 681,
-      "publisher": "Elsevier",
-      "issn": "0165-4896",
-      "source_page": "https://www.sciencedirect.com/journal/mathematical-social-sciences",
-      "image_url": "https://ars.els-cdn.com/content/image/X01654896.jpg"
-    },
-    {
-      "journal_id": "political_communication",
-      "journal_name": "Political Communication",
-      "appointments": 66,
-      "priority_rank": 682,
-      "publisher": "Taylor & Francis Online",
-      "issn": "1058-4609",
-      "source_page": "https://www.tandfonline.com/journals/upcp20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=upcp20"
-    },
-    {
-      "journal_id": "r_d_management",
-      "journal_name": "R&D Management",
-      "appointments": 66,
-      "priority_rank": 684,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "0033-6807",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/14679310/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/14679310-cover.jpg"
-    },
-    {
-      "journal_id": "real_estate_economics",
-      "journal_name": "Real Estate Economics",
-      "appointments": 66,
-      "priority_rank": 685,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "1080-8620",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/15406229/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/15406229-cover.jpg"
-    },
-    {
-      "journal_id": "review_public_personnel_administration",
-      "journal_name": "Review of Public Personnel Administration",
-      "appointments": 66,
-      "priority_rank": 686,
-      "publisher": "Sage Publications",
-      "issn": "0734-371X",
-      "source_page": "https://journals.sagepub.com/home/rop",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=rop"
-    },
-    {
-      "journal_id": "transportation_research_part_f_traffic_psychology",
-      "journal_name": "Transportation Research Part F: Traffic Psychology and Behaviour",
-      "appointments": 66,
-      "priority_rank": 687,
-      "publisher": "Elsevier",
-      "issn": "1369-8478",
-      "source_page": "https://www.sciencedirect.com/journal/transportation-research-part-f-traffic-psychology-and-behaviour",
-      "image_url": "https://ars.els-cdn.com/content/image/X13698478.jpg"
-    },
-    {
-      "journal_id": "advances_accounting",
-      "journal_name": "Advances in Accounting",
-      "appointments": 65,
-      "priority_rank": 688,
-      "publisher": "Elsevier",
-      "issn": "0882-6110",
-      "source_page": "https://www.sciencedirect.com/journal/advances-in-accounting",
-      "image_url": "https://ars.els-cdn.com/content/image/X08826110.jpg"
-    },
-    {
-      "journal_id": "computer_supported_cooperative_work",
-      "journal_name": "Computer Supported Cooperative Work",
-      "appointments": 65,
-      "priority_rank": 690,
-      "publisher": "Springer International Publishing",
-      "issn": "0925-9724",
-      "source_page": "https://link.springer.com/journal/10606/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10606.jpg"
-    },
-    {
-      "journal_id": "entrepreneurship_regional_development",
-      "journal_name": "Entrepreneurship and Regional Development",
-      "appointments": 65,
-      "priority_rank": 693,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0898-5626",
-      "source_page": "https://www.tandfonline.com/journals/tepn20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tepn20"
-    },
-    {
-      "journal_id": "international_journal_internet_marketing_advertising",
-      "journal_name": "International Journal of Internet Marketing and Advertising",
-      "appointments": 65,
-      "priority_rank": 695,
-      "publisher": "Inderscience Enterprises Ltd.",
-      "issn": "1477-5212",
-      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijima",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijima.jpg"
-    },
-    {
-      "journal_id": "jet",
-      "journal_name": "Journal of Economic Theory",
-      "appointments": 65,
-      "priority_rank": 698,
-      "publisher": "Elsevier",
-      "issn": "0022-0531",
-      "source_page": "https://www.sciencedirect.com/journal/journal-of-economic-theory",
-      "image_url": "https://ars.els-cdn.com/content/image/X00220531.jpg"
-    },
-    {
-      "journal_id": "journal_strategic_marketing",
-      "journal_name": "Journal of Strategic Marketing",
-      "appointments": 65,
-      "priority_rank": 701,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0965-254X",
-      "source_page": "https://www.tandfonline.com/journals/rjsm20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rjsm20"
-    },
-    {
-      "journal_id": "journal_urban_affairs",
-      "journal_name": "Journal of Urban Affairs",
-      "appointments": 65,
-      "priority_rank": 702,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0735-2166",
-      "source_page": "https://www.tandfonline.com/journals/ujua20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ujua20"
-    },
-    {
-      "journal_id": "public_relations_inquiry",
-      "journal_name": "Public Relations Inquiry",
-      "appointments": 65,
-      "priority_rank": 706,
-      "publisher": "Sage Publications",
-      "issn": "2046-147X",
-      "source_page": "https://journals.sagepub.com/home/pri",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=pri"
-    },
-    {
-      "journal_id": "sustainable_development",
-      "journal_name": "Sustainable Development",
-      "appointments": 65,
-      "priority_rank": 707,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "1099-1719",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/10991719/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/10991719-cover.jpg"
-    },
-    {
-      "journal_id": "annals_tourism_research_empirical_insights",
-      "journal_name": "Annals of Tourism Research Empirical Insights",
-      "appointments": 64,
-      "priority_rank": 708,
-      "publisher": "Elsevier",
-      "issn": "2666-9579",
-      "source_page": "https://www.sciencedirect.com/journal/annals-of-tourism-research-empirical-insights",
-      "image_url": "https://ars.els-cdn.com/content/image/X26669579.jpg"
-    },
-    {
-      "journal_id": "applied_cognitive_psychology",
-      "journal_name": "Applied Cognitive Psychology",
-      "appointments": 64,
-      "priority_rank": 709,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "0888-4080",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/10990720/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/10990720-cover.jpg"
-    },
-    {
-      "journal_id": "case_studies_transport_policy",
-      "journal_name": "Case Studies on Transport Policy",
-      "appointments": 64,
-      "priority_rank": 712,
-      "publisher": "Elsevier",
-      "issn": "2213-624X",
-      "source_page": "https://www.sciencedirect.com/journal/case-studies-on-transport-policy",
-      "image_url": "https://ars.els-cdn.com/content/image/X2213624X.jpg"
-    },
-    {
-      "journal_id": "contemporary_sociology",
-      "journal_name": "Contemporary Sociology",
-      "appointments": 64,
-      "priority_rank": 713,
-      "publisher": "Sage Publications",
-      "issn": "0094-3061",
-      "source_page": "https://journals.sagepub.com/home/csx",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=csx"
-    },
-    {
-      "journal_id": "flexible_services_manufacturing_journal",
-      "journal_name": "Flexible Services and Manufacturing Journal",
-      "appointments": 64,
-      "priority_rank": 716,
-      "publisher": "Springer International Publishing",
-      "issn": "1936-6582",
-      "source_page": "https://link.springer.com/journal/10696/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10696.jpg"
-    },
-    {
-      "journal_id": "information_polity",
-      "journal_name": "Information Polity",
-      "appointments": 64,
-      "priority_rank": 718,
-      "publisher": "Sage Publications",
-      "issn": "1570-1255",
-      "source_page": "https://journals.sagepub.com/home/ipo",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=ipo"
-    },
-    {
-      "journal_id": "international_journal_industrial_organization",
-      "journal_name": "International Journal of Industrial Organization",
-      "appointments": 64,
-      "priority_rank": 720,
-      "publisher": "Elsevier",
-      "issn": "0167-7187",
-      "source_page": "https://www.sciencedirect.com/journal/international-journal-of-industrial-organization",
-      "image_url": "https://ars.els-cdn.com/content/image/X01677187.jpg"
-    },
-    {
-      "journal_id": "international_tax_public_finance",
-      "journal_name": "International Tax and Public Finance",
-      "appointments": 64,
-      "priority_rank": 721,
-      "publisher": "Springer International Publishing",
-      "issn": "0927-5940",
-      "source_page": "https://link.springer.com/journal/10797",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10797.jpg"
-    },
-    {
-      "journal_id": "journal_behavioral_experimental_finance",
-      "journal_name": "Journal of Behavioral and Experimental Finance",
-      "appointments": 64,
-      "priority_rank": 723,
-      "publisher": "Elsevier",
-      "issn": "2214-6350",
-      "source_page": "https://www.sciencedirect.com/journal/journal-of-behavioral-and-experimental-finance",
-      "image_url": "https://ars.els-cdn.com/content/image/X22146350.jpg"
-    },
-    {
-      "journal_id": "journal_economic_interaction_coordination",
-      "journal_name": "Journal of Economic Interaction and Coordination",
-      "appointments": 64,
-      "priority_rank": 724,
-      "publisher": "Springer International Publishing",
-      "issn": "1860-711X",
-      "source_page": "https://link.springer.com/journal/11403/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11403.jpg"
-    },
-    {
-      "journal_id": "journal_financial_services_research",
-      "journal_name": "Journal of Financial Services Research",
-      "appointments": 64,
-      "priority_rank": 725,
-      "publisher": "Springer International Publishing",
-      "issn": "0920-8550",
-      "source_page": "https://link.springer.com/journal/10693",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10693.jpg"
-    },
-    {
-      "journal_id": "jme",
-      "journal_name": "Journal of Monetary Economics",
-      "appointments": 64,
-      "priority_rank": 726,
-      "publisher": "Elsevier",
-      "issn": "0304-3932",
-      "source_page": "https://www.sciencedirect.com/journal/journal-of-monetary-economics",
-      "image_url": "https://ars.els-cdn.com/content/image/X03043932.jpg"
-    },
-    {
-      "journal_id": "jue",
-      "journal_name": "Journal of Urban Economics",
-      "appointments": 64,
-      "priority_rank": 727,
-      "publisher": "Elsevier",
-      "issn": "0094-1190",
-      "source_page": "https://www.sciencedirect.com/journal/journal-of-urban-economics",
-      "image_url": "https://ars.els-cdn.com/content/image/X00941190.jpg"
-    },
-    {
-      "journal_id": "journal_history_economic_thought",
-      "journal_name": "Journal of the History of Economic Thought",
-      "appointments": 64,
-      "priority_rank": 728,
-      "publisher": "Cambridge University Press",
-      "issn": "1053-8372",
-      "source_page": "https://www.cambridge.org/core/journals/journal-of-the-history-of-economic-thought",
-      "image_url": "https://static.cambridge.org/covers/HET_0_0_0/journal_of%20the%20history%20of%20economic%20thought.jpg?send-full-size-image=true"
-    },
-    {
-      "journal_id": "maritime_economics_logistics",
-      "journal_name": "Maritime Economics & Logistics",
-      "appointments": 64,
-      "priority_rank": 729,
-      "publisher": "Springer International Publishing",
-      "issn": "1479-2931",
-      "source_page": "https://link.springer.com/journal/41278/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/41278.jpg"
-    },
-    {
-      "journal_id": "organizational_dynamics",
-      "journal_name": "Organizational Dynamics",
-      "appointments": 64,
-      "priority_rank": 730,
-      "publisher": "Elsevier",
-      "issn": "0090-2616",
-      "source_page": "https://www.sciencedirect.com/journal/organizational-dynamics",
-      "image_url": "https://ars.els-cdn.com/content/image/X00902616.jpg"
-    },
-    {
-      "journal_id": "philosophy_social_sciences",
-      "journal_name": "Philosophy of the Social Sciences",
-      "appointments": 64,
-      "priority_rank": 731,
-      "publisher": "Sage Publications",
-      "issn": "0048-3931",
-      "source_page": "https://journals.sagepub.com/home/pos",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=pos"
-    },
-    {
-      "journal_id": "security_studies",
-      "journal_name": "Security Studies",
-      "appointments": 64,
-      "priority_rank": 732,
-      "publisher": "Taylor & Francis Online",
-      "issn": "0963-6412",
-      "source_page": "https://www.tandfonline.com/journals/fsst20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=fsst20"
-    },
-    {
-      "journal_id": "structural_change_economic_dynamics",
-      "journal_name": "Structural Change and Economic Dynamics",
-      "appointments": 64,
-      "priority_rank": 734,
-      "publisher": "Elsevier",
-      "issn": "0954-349X",
-      "source_page": "https://www.sciencedirect.com/journal/structural-change-and-economic-dynamics",
-      "image_url": "https://ars.els-cdn.com/content/image/X0954349X.jpg"
-    },
-    {
-      "journal_id": "world_leisure_journal",
-      "journal_name": "World Leisure Journal",
-      "appointments": 64,
-      "priority_rank": 736,
-      "publisher": "Taylor & Francis Online",
-      "issn": "1607-8055",
-      "source_page": "https://www.tandfonline.com/journals/rwle20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rwle20"
-    },
-    {
-      "journal_id": "biometrical_journal",
-      "journal_name": "Biometrical Journal",
-      "appointments": 63,
-      "priority_rank": 737,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "0323-3847",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/15214036/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/15214036-cover.jpg"
-    },
-    {
-      "journal_id": "cleaner_logistics_supply_chain",
-      "journal_name": "Cleaner Logistics and Supply Chain",
-      "appointments": 63,
-      "priority_rank": 738,
-      "publisher": "Elsevier Ltd",
-      "issn": "2772-3909",
-      "source_page": "https://www.sciencedirect.com/journal/cleaner-logistics-and-supply-chain",
-      "image_url": "https://ars.els-cdn.com/content/image/X27723909.jpg"
-    },
-    {
-      "journal_id": "culture_organization",
-      "journal_name": "Culture and Organization",
-      "appointments": 63,
-      "priority_rank": 739,
-      "publisher": "Taylor & Francis Online",
-      "issn": "1475-9551",
-      "source_page": "https://www.tandfonline.com/journals/gsco20",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=gsco20"
-    },
-    {
-      "journal_id": "health_policy",
-      "journal_name": "Health Policy",
-      "appointments": 63,
-      "priority_rank": 741,
-      "publisher": "Elsevier",
-      "issn": "0168-8510",
-      "source_page": "https://www.sciencedirect.com/journal/health-policy",
-      "image_url": "https://ars.els-cdn.com/content/image/X01688510.jpg"
-    },
-    {
-      "journal_id": "italian_economic_journal",
-      "journal_name": "Italian Economic Journal",
-      "appointments": 63,
-      "priority_rank": 743,
-      "publisher": "Springer Nature",
-      "issn": "2199-322X",
-      "source_page": "https://link.springer.com/journal/40797/editorial-board",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/40797.jpg"
-    },
-    {
-      "journal_id": "journal_accounting_auditing_finance",
-      "journal_name": "Journal of Accounting Auditing and Finance",
-      "appointments": 63,
-      "priority_rank": 744,
-      "publisher": "Sage Publications",
-      "issn": "0148-558X",
-      "source_page": "https://journals.sagepub.com/home/jaf",
-      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=jaf"
-    },
     {
       "journal_id": "regional_science_urban_economics",
       "journal_name": "Regional Science and Urban Economics",
@@ -1004,6 +504,506 @@
       "issn": "0022-0787",
       "source_page": "https://onlinelibrary.wiley.com/page/journal/21611920/homepage/editorialboard.html",
       "image_url": "https://media.wiley.com/journal/21611920-cover.jpg"
+    },
+    {
+      "journal_id": "journal_entrepreneurship",
+      "journal_name": "Journal of Entrepreneurship",
+      "appointments": 59,
+      "priority_rank": 846,
+      "publisher": "Sage Publications",
+      "issn": "0971-3557",
+      "source_page": "https://journals.sagepub.com/home/joe",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=joe"
+    },
+    {
+      "journal_id": "journal_real_estate_finance_economics",
+      "journal_name": "Journal of Real Estate Finance and Economics",
+      "appointments": 59,
+      "priority_rank": 847,
+      "publisher": "Springer International Publishing",
+      "issn": "0895-5638",
+      "source_page": "https://link.springer.com/journal/11146",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11146.jpg"
+    },
+    {
+      "journal_id": "journal_social_entrepreneurship",
+      "journal_name": "Journal of Social Entrepreneurship",
+      "appointments": 59,
+      "priority_rank": 848,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1942-0676",
+      "source_page": "https://www.tandfonline.com/journals/rjse20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rjse20"
+    },
+    {
+      "journal_id": "managing_sport_leisure",
+      "journal_name": "Managing Sport and Leisure",
+      "appointments": 59,
+      "priority_rank": 850,
+      "publisher": "Taylor & Francis Online",
+      "issn": "2375-0472",
+      "source_page": "https://www.tandfonline.com/journals/rmle21",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rmle21"
+    },
+    {
+      "journal_id": "optimization",
+      "journal_name": "Optimization",
+      "appointments": 59,
+      "priority_rank": 851,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0233-1934",
+      "source_page": "https://www.tandfonline.com/journals/gopt20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=gopt20"
+    },
+    {
+      "journal_id": "public_administration_quarterly",
+      "journal_name": "Public Administration Quarterly",
+      "appointments": 59,
+      "priority_rank": 852,
+      "publisher": "Sage Publications",
+      "issn": "0734-9149",
+      "source_page": "https://journals.sagepub.com/home/paq",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=paq"
+    },
+    {
+      "journal_id": "urban_affairs_review",
+      "journal_name": "Urban Affairs Review",
+      "appointments": 59,
+      "priority_rank": 856,
+      "publisher": "Sage Publications",
+      "issn": "1078-0874",
+      "source_page": "https://journals.sagepub.com/home/uar",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=uar"
+    },
+    {
+      "journal_id": "written_communication",
+      "journal_name": "Written Communication",
+      "appointments": 59,
+      "priority_rank": 859,
+      "publisher": "Sage Publications",
+      "issn": "0741-0883",
+      "source_page": "https://journals.sagepub.com/home/wcx",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=wcx"
+    },
+    {
+      "journal_id": "australian_accounting_review",
+      "journal_name": "Australian Accounting Review",
+      "appointments": 58,
+      "priority_rank": 862,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1035-6908",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/18352561/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/18352561-cover.jpg"
+    },
+    {
+      "journal_id": "energy_environment",
+      "journal_name": "Energy and Environment",
+      "appointments": 58,
+      "priority_rank": 865,
+      "publisher": "Sage Publications",
+      "issn": "0958-305X",
+      "source_page": "https://journals.sagepub.com/home/eae",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=eae"
+    },
+    {
+      "journal_id": "finance_research_letters",
+      "journal_name": "Finance Research Letters",
+      "appointments": 58,
+      "priority_rank": 869,
+      "publisher": "Elsevier",
+      "issn": "1544-6123",
+      "source_page": "https://www.sciencedirect.com/journal/finance-research-letters",
+      "image_url": "https://ars.els-cdn.com/content/image/X15446123.jpg"
+    },
+    {
+      "journal_id": "international_journal_strategic_communication",
+      "journal_name": "International Journal of Strategic Communication",
+      "appointments": 58,
+      "priority_rank": 873,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1553-118X",
+      "source_page": "https://www.tandfonline.com/journals/hstc20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=hstc20"
+    },
+    {
+      "journal_id": "journal_banking_regulation",
+      "journal_name": "Journal of Banking Regulation",
+      "appointments": 58,
+      "priority_rank": 875,
+      "publisher": "Springer International Publishing",
+      "issn": "1745-6452",
+      "source_page": "https://link.springer.com/journal/41261/editorial-board",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/41261.jpg"
+    },
+    {
+      "journal_id": "journal_career_development",
+      "journal_name": "Journal of Career Development",
+      "appointments": 58,
+      "priority_rank": 876,
+      "publisher": "Sage Publications",
+      "issn": "0894-8453",
+      "source_page": "https://journals.sagepub.com/home/jcd",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=jcd"
+    },
+    {
+      "journal_id": "journal_common_market_studies",
+      "journal_name": "Journal of Common Market Studies",
+      "appointments": 58,
+      "priority_rank": 877,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0021-9886",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/14685965/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/14685965-cover.jpg"
+    },
+    {
+      "journal_id": "journal_housing_economics",
+      "journal_name": "Journal of Housing Economics",
+      "appointments": 58,
+      "priority_rank": 878,
+      "publisher": "Elsevier",
+      "issn": "1051-1377",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-housing-economics",
+      "image_url": "https://ars.els-cdn.com/content/image/X10511377.jpg"
+    },
+    {
+      "journal_id": "journal_leisure_research",
+      "journal_name": "Journal of Leisure Research",
+      "appointments": 58,
+      "priority_rank": 880,
+      "publisher": "Taylor & Francis Ltd.",
+      "issn": "0022-2216",
+      "source_page": "https://www.tandfonline.com/journals/ujlr20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ujlr20"
+    },
+    {
+      "journal_id": "journal_regional_science",
+      "journal_name": "Journal of Regional Science",
+      "appointments": 58,
+      "priority_rank": 882,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0022-4146",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/14679787/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/14679787-cover.jpg"
+    },
+    {
+      "journal_id": "journal_travel_tourism_marketing",
+      "journal_name": "Journal of Travel & Tourism Marketing",
+      "appointments": 58,
+      "priority_rank": 883,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1054-8408",
+      "source_page": "https://www.tandfonline.com/journals/wttm20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=wttm20"
+    },
+    {
+      "journal_id": "journal_trust_research",
+      "journal_name": "Journal of Trust Research",
+      "appointments": 58,
+      "priority_rank": 884,
+      "publisher": "Taylor & Francis Online",
+      "issn": "2151-5581",
+      "source_page": "https://www.tandfonline.com/journals/rjtr20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rjtr20"
+    },
+    {
+      "journal_id": "new_technology_work_employment",
+      "journal_name": "New Technology, Work & Employment",
+      "appointments": 58,
+      "priority_rank": 885,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0268-1072",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/1468005x/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/1468005X-cover.jpg"
+    },
+    {
+      "journal_id": "population_research_policy_review",
+      "journal_name": "Population Research and Policy Review",
+      "appointments": 58,
+      "priority_rank": 886,
+      "publisher": "Springer International Publishing",
+      "issn": "0167-5923",
+      "source_page": "https://link.springer.com/journal/11113",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11113.jpg"
+    },
+    {
+      "journal_id": "public_choice",
+      "journal_name": "Public Choice",
+      "appointments": 58,
+      "priority_rank": 887,
+      "publisher": "Springer International Publishing",
+      "issn": "0048-5829",
+      "source_page": "https://link.springer.com/journal/11127",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11127.jpg"
+    },
+    {
+      "journal_id": "quality_life_research",
+      "journal_name": "Quality of Life Research",
+      "appointments": 58,
+      "priority_rank": 888,
+      "publisher": "Springer International Publishing",
+      "issn": "0962-9343",
+      "source_page": "https://link.springer.com/journal/11136",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11136.jpg"
+    },
+    {
+      "journal_id": "review_economics_household",
+      "journal_name": "Review of Economics of the Household",
+      "appointments": 58,
+      "priority_rank": 889,
+      "publisher": "Springer International Publishing",
+      "issn": "1569-5239",
+      "source_page": "https://link.springer.com/journal/11150",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11150.jpg"
+    },
+    {
+      "journal_id": "travel_behaviour_society",
+      "journal_name": "Travel Behaviour and Society",
+      "appointments": 58,
+      "priority_rank": 892,
+      "publisher": "Elsevier",
+      "issn": "2214-367X",
+      "source_page": "https://www.sciencedirect.com/journal/travel-behaviour-and-society",
+      "image_url": "https://ars.els-cdn.com/content/image/X2214367X.jpg"
+    },
+    {
+      "journal_id": "western_journal_communication",
+      "journal_name": "Western Journal of Communication",
+      "appointments": 58,
+      "priority_rank": 894,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1057-0314",
+      "source_page": "https://www.tandfonline.com/journals/rwjc20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rwjc20"
+    },
+    {
+      "journal_id": "european_financial_management",
+      "journal_name": "European Financial Management",
+      "appointments": 57,
+      "priority_rank": 897,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1354-7798",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/1468036x/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/1468036X-cover.jpg"
+    },
+    {
+      "journal_id": "global_journal_flexible_systems_management",
+      "journal_name": "Global Journal of Flexible Systems Management",
+      "appointments": 57,
+      "priority_rank": 898,
+      "publisher": "Springer Nature",
+      "issn": "0972-2696",
+      "source_page": "https://link.springer.com/journal/40171",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/40171.jpg"
+    },
+    {
+      "journal_id": "industry_higher_education",
+      "journal_name": "Industry and Higher Education",
+      "appointments": 57,
+      "priority_rank": 899,
+      "publisher": "Sage Publications",
+      "issn": "0950-4222",
+      "source_page": "https://journals.sagepub.com/home/ihe",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=ihe"
+    },
+    {
+      "journal_id": "journal_management_analytics",
+      "journal_name": "Journal of Management Analytics",
+      "appointments": 57,
+      "priority_rank": 905,
+      "publisher": "Taylor & Francis Ltd.",
+      "issn": "2327-0012",
+      "source_page": "https://www.tandfonline.com/journals/tjma20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tjma20"
+    },
+    {
+      "journal_id": "journal_medical_economics",
+      "journal_name": "Journal of Medical Economics",
+      "appointments": 57,
+      "priority_rank": 906,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1369-6998",
+      "source_page": "https://www.tandfonline.com/journals/ijme20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ijme20"
+    },
+    {
+      "journal_id": "journal_productivity_analysis",
+      "journal_name": "Journal of Productivity Analysis",
+      "appointments": 57,
+      "priority_rank": 907,
+      "publisher": "Springer International Publishing",
+      "issn": "0895-562X",
+      "source_page": "https://link.springer.com/journal/11123",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11123.jpg"
+    },
+    {
+      "journal_id": "journal_retailing_consumer_services",
+      "journal_name": "Journal of Retailing and Consumer Services",
+      "appointments": 57,
+      "priority_rank": 909,
+      "publisher": "Elsevier",
+      "issn": "0969-6989",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-retailing-and-consumer-services",
+      "image_url": "https://ars.els-cdn.com/content/image/X09696989.jpg"
+    },
+    {
+      "journal_id": "journal_scheduling",
+      "journal_name": "Journal of Scheduling",
+      "appointments": 57,
+      "priority_rank": 910,
+      "publisher": "Springer International Publishing",
+      "issn": "1094-6136",
+      "source_page": "https://link.springer.com/journal/10951",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10951.jpg"
+    },
+    {
+      "journal_id": "management_labour_studies",
+      "journal_name": "Management and Labour Studies",
+      "appointments": 57,
+      "priority_rank": 912,
+      "publisher": "Sage Publications",
+      "issn": "0258-042X",
+      "source_page": "https://journals.sagepub.com/home/mls",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=mls"
+    },
+    {
+      "journal_id": "quality_technology_quantitative_management",
+      "journal_name": "Quality Technology and Quantitative Management",
+      "appointments": 57,
+      "priority_rank": 915,
+      "publisher": "Taylor & Francis",
+      "issn": "1684-3703",
+      "source_page": "https://www.tandfonline.com/journals/ttqm20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ttqm20"
+    },
+    {
+      "journal_id": "regulation_governance",
+      "journal_name": "Regulation and Governance",
+      "appointments": 57,
+      "priority_rank": 916,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1748-5991",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/17485991/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/17485991-cover.jpg"
+    },
+    {
+      "journal_id": "sex_roles",
+      "journal_name": "Sex Roles",
+      "appointments": 57,
+      "priority_rank": 919,
+      "publisher": "Springer International Publishing",
+      "issn": "0360-0025",
+      "source_page": "https://link.springer.com/journal/11199",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11199.jpg"
+    },
+    {
+      "journal_id": "transportation",
+      "journal_name": "Transportation",
+      "appointments": 57,
+      "priority_rank": 922,
+      "publisher": "Springer International Publishing",
+      "issn": "0049-4488",
+      "source_page": "https://link.springer.com/journal/11116",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11116.jpg"
+    },
+    {
+      "journal_id": "business_politics",
+      "journal_name": "Business and Politics",
+      "appointments": 56,
+      "priority_rank": 923,
+      "publisher": "Cambridge University Press",
+      "issn": "1369-5258",
+      "source_page": "https://www.cambridge.org/core/journals/business-and-politics",
+      "image_url": "https://static.cambridge.org/covers/BAP_0_0_0/business_and%20politics.jpg?send-full-size-image=true"
+    },
+    {
+      "journal_id": "climate_policy",
+      "journal_name": "Climate Policy",
+      "appointments": 56,
+      "priority_rank": 924,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1469-3062",
+      "source_page": "https://www.tandfonline.com/journals/tcpo20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tcpo20"
+    },
+    {
+      "journal_id": "critical_asian_studies",
+      "journal_name": "Critical Asian Studies",
+      "appointments": 56,
+      "priority_rank": 926,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1467-2715",
+      "source_page": "https://www.tandfonline.com/journals/rcra20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rcra20"
+    },
+    {
+      "journal_id": "economics_education_review",
+      "journal_name": "Economics of Education Review",
+      "appointments": 56,
+      "priority_rank": 927,
+      "publisher": "Elsevier",
+      "issn": "0272-7757",
+      "source_page": "https://www.sciencedirect.com/journal/economics-of-education-review",
+      "image_url": "https://ars.els-cdn.com/content/image/X02727757.jpg"
+    },
+    {
+      "journal_id": "health_economics",
+      "journal_name": "Health Economics",
+      "appointments": 56,
+      "priority_rank": 929,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1057-9230",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/10991050/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/10991050-cover.jpg"
+    },
+    {
+      "journal_id": "infor_infor_information_systems_operational_research",
+      "journal_name": "INFOR (INFOR: Information Systems and Operational Research)",
+      "appointments": 56,
+      "priority_rank": 930,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0315-5986",
+      "source_page": "https://www.tandfonline.com/journals/tinf20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tinf20"
+    },
+    {
+      "journal_id": "journal_choice_modelling",
+      "journal_name": "Journal of Choice Modelling",
+      "appointments": 56,
+      "priority_rank": 935,
+      "publisher": "Elsevier",
+      "issn": "1755-5345",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-choice-modelling",
+      "image_url": "https://ars.els-cdn.com/content/image/X17555345.jpg"
+    },
+    {
+      "journal_id": "journal_public_policy",
+      "journal_name": "Journal of Public Policy",
+      "appointments": 56,
+      "priority_rank": 938,
+      "publisher": "Cambridge University Press",
+      "issn": "0143-814X",
+      "source_page": "https://www.cambridge.org/core/journals/journal-of-public-policy",
+      "image_url": "https://static.cambridge.org/covers/PUP_0_0_0/journal_of%20public%20policy.jpg?send-full-size-image=true"
+    },
+    {
+      "journal_id": "journal_royal_statistical_society_series_statistics",
+      "journal_name": "Journal of the Royal Statistical Society, Series A (Statistics in Society)",
+      "appointments": 56,
+      "priority_rank": 940,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1467-985X",
+      "source_page": "https://academic.oup.com/jrsssa/pages/editorial-board",
+      "image_url": "https://media.wiley.com/journal/1467985X-cover.jpg"
+    },
+    {
+      "journal_id": "local_government_studies",
+      "journal_name": "Local Government Studies",
+      "appointments": 56,
+      "priority_rank": 941,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0300-3930",
+      "source_page": "https://www.tandfonline.com/journals/flgs20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=flgs20"
     }
   ],
   "rejected_candidates": [
