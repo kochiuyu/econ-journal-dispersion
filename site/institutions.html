@@ -17,7 +17,7 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=data-context-20261114">
+  <link rel="stylesheet" href="style.css?v=directory-links-20261114">
   <script defer src="compact-controls.js?v=performance-20261113"></script>
   <script defer src="result-states.js?v=performance-20261113"></script>
   <script defer fetchpriority="high" src="institutions-data.js?v=institution-icons-6666"></script>
@@ -27,7 +27,7 @@
   <script defer src="filter-controls.js?v=accessibility-20261113"></script>
   <script defer src="table-format.js?v=table-presentation-20261113"></script>
   <script defer src="table-controls.js?v=accessibility-20261113"></script>
-  <script defer src="institutions.js?v=table-presentation-20261113"></script>
+  <script defer src="institutions.js?v=directory-links-20261114"></script>
   <script defer src="share-controls.js?v=share-results-20261113"></script>
   <script defer src="long-table-nav.js?v=long-tables-20261114"></script>
 </head>
@@ -56,7 +56,7 @@
 
   <main class="wrap" id="main-content" tabindex="-1">
     <h1 class="page-title">Institutions</h1>
-    <p class="intro" id="intro">Explore the institutions represented on current journal editorial boards. Select an institution to see its editors.</p>
+    <p class="intro" id="intro">Explore the institutions represented on current journal editorial boards. Use View editors to open Directory results with your selected lists.</p>
 
 
     <section class="controls" id="institutions" aria-label="Filter institutions">
@@ -117,7 +117,7 @@
         <div class="context-body">
         <p><strong>Appointments</strong> count a person’s role on a journal. One person with roles on two journals contributes two appointments. Overlapping list records are combined where the same appointment matches. Different roles or affiliations can remain separate rows.</p>
         <p><strong>Editors</strong> are distinct normalized names, not verified person identities. Identical names can merge; different spellings can count separately. Editor totals across journals or institutions should not be added together.</p>
-        <p><strong>What changes with filters?</strong> Filters select institution rows. Each row’s appointment, editor, and journal counts remain totals across all lists for that institution; the coverage cards also cover all lists.</p>
+        <p><strong>What changes with filters?</strong> Filters select institution rows. Each row’s appointment, editor, and journal counts remain totals across all lists for that institution; the coverage cards also cover all lists. View editors keeps your selected lists; without a list selection, it opens the relevant results across all lists.</p>
         <p><strong>Institutions.</strong> Records group by Research Organization Registry (ROR) identifier when available, otherwise by affiliation name. Separate ROR institutions or campuses can have separate rows. Country and continent follow the recorded affiliation, not nationality.</p>
         <p><strong>Missing affiliations.</strong> Blank or non-institution affiliations are omitted. An unnamed editor with a matched ROR institution can still count as an appointment here, but not as an editor.</p>
         <p><strong>Lists and grades.</strong> FT50, Top 5, and UTD24 indicate list membership. ABDC A*–C are 2025 Journal Quality List grades; AJG 4*–1 are 2024 CABS Academic Journal Guide grades. These are separate systems, not equivalent scores. AJG-gap adds boards for journals outside the FT50 and ABDC editor files.</p>
@@ -197,7 +197,7 @@
       <p>
         <span id="about-unmatched">Appointments with no named institution are omitted.</span>
         <span id="about-ror"></span>
-        Opening a name filters the directory to that affiliation and, when the row has one, that country.
+        View editors filters the directory to that affiliation and, when the row has one, that country, while keeping your selected lists.
         A person counted at two institutions is two appointments. The same person on two journals at one institution is one editor and two appointments.
         Emails, phone numbers, and photos are not published.
       </p>
@@ -218,7 +218,7 @@
 <h2>Coverage and scope</h2><p>
       One row per institution on the current FT50, ABDC, and AJG-gap boards.
       A ROR id is one row when the release matched one. Otherwise the row is the affiliation name.
-      The name opens the <a href="directory.html">directory</a> on that affiliation and country.
+      View editors opens the <a href="directory.html">directory</a> on that affiliation and country, with your selected lists.
       
     </p>
 <h2>Using the filters</h2><p>Selecting more than one list shows institutions with an appointment on any of them. An AJG chip is the 2024 CABS grade on a journal in this directory, including AJG-gap boards. Many ABDC journals have no grade. Titles with no board stay on Rankings. Country follows the continent you pick. Appointments with no affiliation are left out. So are unmatched affiliations that are only a country or territory, fully enclosed in brackets, or a street, PO Box, or postal code with no organization name.</p>

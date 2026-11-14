@@ -132,6 +132,12 @@
   function directoryUrl(name) {
     var params = new URLSearchParams();
     params.set("journal", name);
+    // Carry only list choices: search terms describe this page's entities,
+    // and its sort/page settings do not describe Directory appointments.
+    var lists = universes.filter(function (universe) {
+      return state.universes.has(universe.id);
+    }).map(function (universe) { return universe.id; });
+    if (lists.length) params.set("u", lists.join(","));
     return "directory.html?" + params.toString();
   }
 
@@ -354,6 +360,16 @@
       link.className = "journal";
       link.href = directoryUrl(row[0]);
       link.textContent = row[0];
+      link.classList.add("directory-result-link");
+      link.appendChild(document.createTextNode(" "));
+      var action = document.createElement("span");
+      action.className = "row-directory-action";
+      action.textContent = "View editors →";
+      link.appendChild(action);
+      var scope = document.createElement("span");
+      scope.className = "sr-only";
+      scope.textContent = (selectedMask() ? " in selected lists" : " across all lists");
+      link.appendChild(scope);
       nameCell.appendChild(link);
       tr.appendChild(nameCell);
 
