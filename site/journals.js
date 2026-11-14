@@ -371,6 +371,7 @@
       scope.textContent = (selectedMask() ? " in selected lists" : " across all lists");
       link.appendChild(scope);
       nameCell.appendChild(link);
+      window.journalIcons.prepend(nameCell, row[0]);
       tr.appendChild(nameCell);
 
       var listCell = document.createElement("td");

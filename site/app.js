@@ -1298,6 +1298,7 @@
       } else {
         window.tableFormat.text(journalCell, journalName, "Journal name not reported");
       }
+      window.journalIcons.prepend(journalCell, journalName);
       tr.appendChild(journalCell);
 
       var fieldName = fieldOf(row);

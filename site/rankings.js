@@ -514,6 +514,7 @@
       var row = rows[index];
       var tr = document.createElement("tr");
       var name = cell(row[3], "journal");
+      window.journalIcons.prepend(name, row[3]);
       tr.appendChild(name);
       var ratingCell = cell(row[4], "rating", Object.prototype.hasOwnProperty.call(RATING_RANK, state.system) ? "No rating reported" : "Not applicable to this list");
       if (row[4] && state.system === "tilburg") ratingCell.title = "TISEM top journal list";

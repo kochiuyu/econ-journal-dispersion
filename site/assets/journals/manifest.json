@@ -1,0 +1,449 @@
+{
+  "note": "Images identify journal titles, not the ranking edition or board snapshot. Other journals use initials.",
+  "images": [
+    {
+      "journal_id": "aos",
+      "journal_name": "Accounting Organizations and Society",
+      "issn": "0361-3682",
+      "publisher": "Elsevier",
+      "file": "aos.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/accounting-organizations-and-society",
+      "image_url": "https://ars.els-cdn.com/content/image/X03613682.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 1974,
+      "sha256": "33a95f978af5c216af94973767aad26f32dd6d9da3bbce09704e98f448476132"
+    },
+    {
+      "journal_id": "aer",
+      "journal_name": "American Economic Review",
+      "issn": "0002-8282",
+      "publisher": "American Economic Association",
+      "file": "aer.webp",
+      "type": "logo",
+      "source_page": "https://www.aeaweb.org/journals/aer",
+      "image_url": "https://www.aeaweb.org/assets/afc4f66/images/aer-icon.svg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 3382,
+      "sha256": "ac156b0b15eb41a7222c8b2eb5705a123f2141c17baffe2824f0e83101b8b4d1"
+    },
+    {
+      "journal_id": "hbr",
+      "journal_name": "Harvard Business Review",
+      "issn": "0017-8012",
+      "publisher": "Harvard Business Publishing",
+      "file": "hbr.webp",
+      "type": "cover",
+      "source_page": "https://hbr.org/magazine",
+      "image_url": "https://hbr.org/resources/images/article_assets/2026/11/BR2606_500.png",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 2694,
+      "sha256": "7cfcda687801eb2b09abb6bc233eeb25c7429e28e8b898e6302321e8c379e4f1"
+    },
+    {
+      "journal_id": "jae",
+      "journal_name": "Journal of Accounting and Economics",
+      "issn": "0165-4101",
+      "publisher": "Elsevier",
+      "file": "jae.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-accounting-and-economics",
+      "image_url": "https://ars.els-cdn.com/content/image/X01654101.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 2276,
+      "sha256": "e438664422ad5b39330f471d768fb523fbccf16ad523262bcc6cfeb01d8e1641"
+    },
+    {
+      "journal_id": "jbv",
+      "journal_name": "Journal of Business Venturing",
+      "issn": "0883-9026",
+      "publisher": "Elsevier",
+      "file": "jbv.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-business-venturing",
+      "image_url": "https://ars.els-cdn.com/content/image/X08839026.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 1182,
+      "sha256": "e166cfd142945addd35ea94e03dd11ebf2514b40e62c720fd638333c118edaba"
+    },
+    {
+      "journal_id": "jfqa",
+      "journal_name": "Journal of Financial and Quantitative Analysis",
+      "issn": "0022-1090",
+      "publisher": "Cambridge University Press",
+      "file": "jfqa.webp",
+      "type": "cover",
+      "source_page": "https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis",
+      "image_url": "https://static.cambridge.org/covers/JFQ_0_0_0/journal_of%20financial%20and%20quantitative%20analysis.jpg?send-full-size-image=true",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 1764,
+      "sha256": "7e582afde32233837474cae406d1703cd65e78b885d508f1fd37b4ad55f6588a"
+    },
+    {
+      "journal_id": "jfe",
+      "journal_name": "Journal of Financial Economics",
+      "issn": "0304-405X",
+      "publisher": "Elsevier",
+      "file": "jfe.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/journal-of-financial-economics",
+      "image_url": "https://ars.els-cdn.com/content/image/X0304405X.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 1590,
+      "sha256": "162c21214af6ac5255c1cba79e3134669eb24b6ae6081d5c4f5936ede1a0f077"
+    },
+    {
+      "journal_id": "jibs",
+      "journal_name": "Journal of International Business Studies",
+      "issn": "0047-2506",
+      "publisher": "Palgrave / AIB",
+      "file": "jibs.webp",
+      "type": "cover",
+      "source_page": "https://link.springer.com/journal/41267",
+      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/41267.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 2262,
+      "sha256": "3d1552d0bd73bf586c951e43aba6d7ba756e7798c22163852ed029d4685c94a3"
+    },
+    {
+      "journal_id": "jams",
+      "journal_name": "Journal of the Academy of Marketing Science",
+      "issn": "0092-0703",
+      "publisher": "Springer",
+      "file": "jams.webp",
+      "type": "cover",
+      "source_page": "https://link.springer.com/journal/11747",
+      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/11747.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 2750,
+      "sha256": "dc589cc1997bb6f1620599c7f672f6196eddc058bf5f522b3037581cceaa9ada"
+    },
+    {
+      "journal_id": "obhdp",
+      "journal_name": "Organizational Behavior and Human Decision Processes",
+      "issn": "0749-5978",
+      "publisher": "Elsevier",
+      "file": "obhdp.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes",
+      "image_url": "https://ars.els-cdn.com/content/image/X07495978.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 2846,
+      "sha256": "737b395892b4d4ec36cd701d2d702144d56fe2a69827d88145e0ecbf2811bb8e"
+    },
+    {
+      "journal_id": "rp",
+      "journal_name": "Research Policy",
+      "issn": "0048-7333",
+      "publisher": "Elsevier",
+      "file": "rp.webp",
+      "type": "cover",
+      "source_page": "https://www.sciencedirect.com/journal/research-policy",
+      "image_url": "https://ars.els-cdn.com/content/image/X00487333.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 902,
+      "sha256": "d9b3201ac674e75ba8fefa441327485aff266b61bbccfd7ca98f08e36fc92272"
+    },
+    {
+      "journal_id": "rast",
+      "journal_name": "Review of Accounting Studies",
+      "issn": "1380-6653",
+      "publisher": "Springer",
+      "file": "rast.webp",
+      "type": "cover",
+      "source_page": "https://link.springer.com/journal/11142",
+      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/11142.jpg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 1714,
+      "sha256": "c367bf3ecb4b83e541133d319af22038c0dcafede798188e43f1694530e95f4a"
+    },
+    {
+      "journal_id": "restud",
+      "journal_name": "Review of Economic Studies",
+      "issn": "0034-6527",
+      "publisher": "Oxford University Press",
+      "file": "restud.svg",
+      "type": "logo",
+      "source_page": "https://www.restud.com/",
+      "image_url": "https://www.restud.com/wp-content/themes/project/img/logo.svg",
+      "checked": "2026-11-14",
+      "rights": "Publisher or journal artwork; no open license asserted.",
+      "bytes": 6761,
+      "sha256": "27f63528c5f5875dd7391074ce3da342ab792b3bc9bae724411bebc5bfe66f14"
+    }
+  ],
+  "reviewed_ft50": 50,
+  "fallbacks": [
+    {
+      "journal_id": "aom_annals",
+      "journal_name": "Academy of Management Annals",
+      "checked": "2026-11-14",
+      "source_page": "https://aom.org/research/journals/annals",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "amj",
+      "journal_name": "Academy of Management Journal",
+      "checked": "2026-11-14",
+      "source_page": "https://aom.org/research/journals/journal",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "amr",
+      "journal_name": "Academy of Management Review",
+      "checked": "2026-11-14",
+      "source_page": "https://aom.org/research/journals/review",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "tar",
+      "journal_name": "The Accounting Review",
+      "checked": "2026-11-14",
+      "source_page": "https://aaahq.org/Research/Journals/The-Accounting-Review",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "asq",
+      "journal_name": "Administrative Science Quarterly",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/ASQ",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "asr",
+      "journal_name": "American Sociological Review",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/ASR",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "car",
+      "journal_name": "Contemporary Accounting Research",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/19113846",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "econometrica",
+      "journal_name": "Econometrica",
+      "checked": "2026-11-14",
+      "source_page": "https://www.econometricsociety.org/publications/econometrica",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "etp",
+      "journal_name": "Entrepreneurship Theory and Practice",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/ETP",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "hrm",
+      "journal_name": "Human Resource Management",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/1099050x",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "isr",
+      "journal_name": "Information Systems Research",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/isre",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jar",
+      "journal_name": "Journal of Accounting Research",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/1475679x",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jap",
+      "journal_name": "Journal of Applied Psychology",
+      "checked": "2026-11-14",
+      "source_page": "https://www.apa.org/pubs/journals/apl",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jcp",
+      "journal_name": "Journal of Consumer Psychology",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/15327663",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jcr",
+      "journal_name": "Journal of Consumer Research",
+      "checked": "2026-11-14",
+      "source_page": "https://academic.oup.com/jcr",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jf",
+      "journal_name": "Journal of Finance",
+      "checked": "2026-11-14",
+      "source_page": "https://afajof.org/journal-of-finance/",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jom",
+      "journal_name": "Journal of Management",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/JOM",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jmis",
+      "journal_name": "Journal of Management Information Systems",
+      "checked": "2026-11-14",
+      "source_page": "https://www.tandfonline.com/journals/mmis20/about-this-journal#editorial-board",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jms",
+      "journal_name": "Journal of Management Studies",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/14676486",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jm",
+      "journal_name": "Journal of Marketing",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/JMX",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jmr",
+      "journal_name": "Journal of Marketing Research",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/MRJ",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "joom",
+      "journal_name": "Journal of Operations Management",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/18731317",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "jpe",
+      "journal_name": "Journal of Political Economy",
+      "checked": "2026-11-14",
+      "source_page": "https://www.journals.uchicago.edu/journals/jpe/board",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "ms",
+      "journal_name": "Management Science",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/mnsc",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "msom",
+      "journal_name": "Manufacturing and Service Operations Management",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/msom",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "mktg_sci",
+      "journal_name": "Marketing Science",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/mksc",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "misq",
+      "journal_name": "MIS Quarterly",
+      "checked": "2026-11-14",
+      "source_page": "https://misq.umn.edu",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "sloan_mr",
+      "journal_name": "MIT Sloan Management Review",
+      "checked": "2026-11-14",
+      "source_page": "https://sloanreview.mit.edu/about/",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "or",
+      "journal_name": "Operations Research",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/opre",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "orgsci",
+      "journal_name": "Organization Science",
+      "checked": "2026-11-14",
+      "source_page": "https://pubsonline.informs.org/journal/orsc",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "pom",
+      "journal_name": "Production and Operations Management",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/PAO",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "psych_sci",
+      "journal_name": "Psychological Science",
+      "checked": "2026-11-14",
+      "source_page": "https://journals.sagepub.com/home/PSS",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "qje",
+      "journal_name": "Quarterly Journal of Economics",
+      "checked": "2026-11-14",
+      "source_page": "https://academic.oup.com/qje",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "rof",
+      "journal_name": "Review of Finance",
+      "checked": "2026-11-14",
+      "source_page": "https://academic.oup.com/rof",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "rfs",
+      "journal_name": "Review of Financial Studies",
+      "checked": "2026-11-14",
+      "source_page": "https://academic.oup.com/rfs",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "sej",
+      "journal_name": "Strategic Entrepreneurship Journal",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/1932443x",
+      "reason": "No usable journal-specific image verified in this pass."
+    },
+    {
+      "journal_id": "smj",
+      "journal_name": "Strategic Management Journal",
+      "checked": "2026-11-14",
+      "source_page": "https://onlinelibrary.wiley.com/journal/10970266",
+      "reason": "No usable journal-specific image verified in this pass."
+    }
+  ]
+}
