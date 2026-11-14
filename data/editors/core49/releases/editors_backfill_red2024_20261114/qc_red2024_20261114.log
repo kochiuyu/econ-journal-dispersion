@@ -1,0 +1,66 @@
+PASS no unexpected new files []
+PASS every live data file present (only live docs replaced) ['HANDOFF.md', 'SENDTO_BLURB.txt', '_summary_20261113.json']
+PASS RED 2024 PDF not in release folder; no new PDF
+PASS 38 other live files byte-identical (spotcheck, staff rows, matched/unmatched, crosswalk, change CSVs, PDFs) []
+PASS BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv: CRLF throughout
+PASS RED_2024_board_changes_20261114.csv: CRLF throughout
+PASS RED_2024_match_rate_changes_20261114.csv: CRLF throughout
+PASS editor_affiliations.csv: CRLF throughout
+PASS editors_backfill_scale_gaps.csv: CRLF throughout
+PASS editors_backfill_scale_inventory.csv: CRLF throughout
+PASS editors_backfill_scale_ror_panel.csv: CRLF throughout
+PASS red_2024_board_extracted.csv: LF, as red_2025_board_extracted.csv
+PASS BACKFILL_SCALE_ROR_match_rates_by_journal_20261031.csv: header unchanged
+PASS editor_affiliations.csv: header unchanged
+PASS editors_backfill_scale_gaps.csv: header unchanged
+PASS editors_backfill_scale_inventory.csv: header unchanged
+PASS editors_backfill_scale_ror_panel.csv: header unchanged
+PASS panel rows 15917 = 15873 + 44
+PASS panel: live file is a byte prefix of the new file (no existing row changed)
+PASS new keys #15873-#15916, contiguous, in board order
+PASS panel keys unique
+PASS all new rows RED 2024
+PASS live had no RED 2024 rows
+PASS source_url/board_urls = ScienceDirect article URL, board_url_count 1, DOI in source_note, issue Vol 52 (2024-04), no archive_url
+PASS roles as printed {'CO-ORDINATING EDITOR': 1, 'EDITORS': 9, 'ASSOCIATE EDITORS': 30, 'EDITORIAL ADVISORY BOARD': 4}
+PASS role_class editor 10 / board 30 / advisory 4 (as RED 2025)
+PASS every new row equals its RED 2025 twin on all non-provenance fields (names, roles, raw, institution, ROR, geo, flags)
+PASS every editor_name_raw printed on the PDF (initials as printed; La’O apostrophe normalised as on RED 2021/2025)
+PASS editor_name = printed except the 4 advisory expansions (as RED 2021/2025)
+PASS every raw_affiliation occurs verbatim (whitespace-joined) in the pdftotext -raw text
+PASS one printed affiliation per person; single/primary columns as RED 2025
+PASS every printed name in the transcript
+PASS 29 distinct RORs API-active (ROR v2 API re-checked 2026-11-14)
+PASS ror_name/ror_country/canonical = API display name/country
+PASS no ROR new to the backfill
+PASS 44/44 ROR matched, 0 blank
+PASS no EUI / UW-system / CEPR-UK / INSEAD ids on new rows
+PASS U Minnesota rows -> Twin Cities campus 017zqws13 (as RED 2021/2025)
+PASS research institutes keep own ROR (CREI, EIEF)
+PASS geo fields equal those on existing rows with the same ROR
+PASS long rows 12164 = 12120 + 44
+PASS long: live file is a byte prefix (no existing long row changed)
+PASS long: 44 rows appended, one per new key, same order
+PASS appended long rows: rank 1, sole, single, is_panel_ror=1, row_index=key, raw/name/ROR = panel
+PASS each long row equals the RED 2025 twin long row on non-provenance fields
+PASS every long key exists in panel
+PASS every panel row with raw affiliation has a long row
+PASS global rank-1 long ROR vs panel: only the 2 pre-existing live exceptions ['editors_backfill_scale_panel#5078', 'editors_backfill_scale_panel#5126']
+PASS inventory: only the RED 2024 row changed
+PASS inventory RED 2024: ok_issue_front_matter 44/44, source_url kept
+PASS gaps: RED 2024 queued -> resolved (only changed line); 3 lines appended
+PASS SED officers excluded and logged as gaps (same gap_type as 2025): ['Ellen McGrattan, President', 'Erwan Quintin, Treasurer', 'Marina Azzimonti, Secretary']
+PASS no society officer on panel rows (M. Azzimonti Renzo is the printed AE)
+PASS match_rates: only the RED row changed
+   RED match rate 281 / 282 0.9965 -> 325 / 326 0.9969
+PASS RED match_rates row equals a recount of the panel
+   RED rows by board_year: {'2018': 36, '2019': 36, '2020': 35, '2021': 45, '2022': 43, '2023': 43, '2024': 44, '2025': 44}
+PASS no email addresses in non-PDF files []
+PASS no phone numbers in files written by this freeze []
+PASS no phone numbers in new panel/long rows
+PASS no CUHK proxy URL in changed/new data files
+PASS reserved pack 2 SHA256SUMS all OK
+PASS shipped RA pack zip checksum unchanged
+PASS live freeze folder checksums unchanged vs manifest taken before the build
+
+62 PASS / 0 FAIL
