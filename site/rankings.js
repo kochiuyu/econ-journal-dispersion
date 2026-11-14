@@ -434,6 +434,34 @@
     return td;
   }
 
+  function renderContext() {
+    var definitions = {
+      abs_ajg: "ABS/AJG is the CABS Academic Journal Guide. Grades run from 4* (highest) to 1; the 2010 edition has no 4* grade.",
+      abdc: "ABDC is the Australian Business Deans Council Journal Quality List. Grades run from A* (highest) through A and B to C.",
+      cnrs: "CNRS is the Section 37 journal categorisation. Category 1, including 1e, 1g, and 1eg, is the highest; categories continue through 2, 3, and 4.",
+      handelsblatt_vwl: "Handelsblatt/VWL combines Forschungsmonitoring weights and the 2015 Handelsblatt list. Higher weights rank first; letter classes run from A+ to F where reported. The 2015 rows have weights without letter classes.",
+      tilburg: "Tilburg is the TISEM top journal list. Its published tiers are Top-core, Top, and Very good.",
+      fnege: "FNEGE is the Journal Quality List. Grades run from 1* (highest) through 1, 2, 3, and 4. EM and NC labels are retained where the source reports them.",
+      erim: "ERIM is the Journals List Core for 2024–2028. Classes retain the Core list’s own labels, including STAR, M-STAR, P, EP*, PA, S, S (3=1), and M.",
+      stern: "Stern combines NYU Stern’s departmental journal lists. Ratings follow each department’s memo; Field identifies the department and, where available, its subject heading.",
+      shanghai: "Shanghai is the ShanghaiRanking top-journal list for Economics, Business Administration, Finance, and Management. Top indicates membership; it is not a numeric score.",
+      shufe: "SHUFE is the SUFE Tenure-Track Journal List. Its tiers are Top Tier, First Tier, Second Tier, and Third Tier.",
+      ft50: "FT50 is a membership list of 50 journals, not a graded ranking. No rating is assigned here.",
+      utd24: "UTD24 is the UT Dallas Naveen Jindal list of 24 business journals. It records membership, without grade tiers.",
+      top5: "Top 5 is American Economic Review, Econometrica, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies. It records membership, without grade tiers."
+    };
+    var definition = definitions[state.system] || "Ratings retain the selected source’s labels.";
+    definition += " Grades are not interchangeable between systems.";
+    var editionLabel = yearEl.selectedOptions[0] ? yearEl.selectedOptions[0].textContent : state.year;
+    var edition = editionLabel === "Current"
+      ? "Undated source list. Current refers to the saved list, not a live update."
+      : "Edition: " + editionLabel + ". This is the ranking/list edition, not the board collection year.";
+    var definitionEl = document.getElementById("ranking-definition");
+    var editionEl = document.getElementById("ranking-edition-context");
+    if (definitionEl && definitionEl.textContent !== definition) definitionEl.textContent = definition;
+    if (editionEl && editionEl.textContent !== edition) editionEl.textContent = edition;
+  }
+
   function renderStats(indexes) {
     var grades = ratingsFor(state.system, state.year);
     var topGrade = grades.length ? grades[0] : "";
@@ -533,6 +561,7 @@
     var weightCol = document.getElementById("col-weight");
     if (weightCol) weightCol.hidden = !showsWeight(state.system);
     syncControls();
+    renderContext();
     var edition = editionRows();
     renderStats(edition);
     var matched = applyFilters(edition);

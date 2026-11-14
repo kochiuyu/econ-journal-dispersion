@@ -17,14 +17,14 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=long-tables-20261114">
+  <link rel="stylesheet" href="style.css?v=data-context-20261114">
   <script defer src="compact-controls.js?v=performance-20261113"></script>
   <script defer src="result-states.js?v=performance-20261113"></script>
   <script defer fetchpriority="high" src="rankings-data.js"></script>
   <script defer src="filter-controls.js?v=accessibility-20261113"></script>
   <script defer src="table-format.js?v=table-presentation-20261113"></script>
   <script defer src="table-controls.js?v=accessibility-20261113"></script>
-  <script defer src="rankings.js?v=performance-20261113"></script>
+  <script defer src="rankings.js?v=data-context-20261114"></script>
   <script defer src="share-controls.js?v=share-results-20261113"></script>
   <script defer src="long-table-nav.js?v=long-tables-20261114"></script>
 </head>
@@ -67,9 +67,9 @@
         </div>
         <div class="row">
           <label class="lbl" for="system">Ranking</label>
-          <select id="system" name="system"></select>
+          <select id="system" name="system" aria-describedby="ranking-definition"></select>
           <label class="lbl" for="year">Edition</label>
-          <select id="year" name="year"></select>
+          <select id="year" name="year" aria-describedby="ranking-edition-context"></select>
           <label class="lbl" for="rating">Rating</label>
           <select id="rating" name="rating">
             <option value="">All ratings</option>
@@ -107,6 +107,22 @@
         <div class="sub" id="s-editions">Editions on file</div>
       </div>
     </section>
+
+    <aside class="data-context" aria-label="Ranking definitions and counting methods">
+      <p id="ranking-definition">Ratings follow the selected ranking’s own definitions; grades are not interchangeable between systems.</p>
+      <p class="data-context-date" id="ranking-edition-context">Edition identifies the source list, not the year editorial boards were collected.</p>
+      <details class="count-context">
+        <summary>How these counts work</summary>
+        <div class="context-body">
+          <p><strong>Coverage cards</strong> describe the entire selected edition, before search, rating, or field filters. Editions counts all editions on file for the selected ranking. The results summary reflects your filters; pagination changes only the displayed rows.</p>
+          <p><strong>Journals</strong> counts source rows. A title can appear more than once when a source lists it in multiple departments or combines lists, such as Stern or Handelsblatt/VWL 2015.</p>
+          <p><strong>Mapped</strong> means a row has a catalog journal identifier. It does not guarantee Directory board data. Unmatched titles remain in Rankings.</p>
+          <p><strong>Ratings</strong> retain the source system’s labels. FT50, UTD24, and Top 5 are membership lists with no grade tiers. Shanghai records membership as Top. A missing rating is not a zero score.</p>
+          <p><strong>Dates</strong> describe saved ranking editions. Current means the source did not specify an edition year; it does not mean the list was checked today. Board collection dates are shown separately on the Directory, Journals, and Institutions pages.</p>
+          <p><a href="#about">Full ranking definitions and source notes</a></p>
+        </div>
+      </details>
+    </aside>
 
     <div class="results-stage" data-results-state="loading">
     <div class="results-summary">
