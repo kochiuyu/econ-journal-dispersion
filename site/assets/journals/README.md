@@ -3,7 +3,8 @@
 This directory holds local, small journal-specific cover thumbnails and logos.
 `manifest.json` records each image's journal title, ISSN, official source page,
 original image URL, review date, rights note, and SHA-256 checksum. It also lists
-the reviewed FT50 titles that currently use initials.
+the reviewed FT50 titles that currently use initials. Additional pending candidates
+and higher-priority unresolved sources are in `docs/journal-image-candidates.json`.
 
 The shared `site/journal-icons.js` helper matches complete normalized journal
 titles. It ignores a leading "The" and normalizes punctuation and `&`/`and`;
