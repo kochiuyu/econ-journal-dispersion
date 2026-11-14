@@ -1,0 +1,62 @@
+built 165 panel rows, 162 long rows; gaps + 49 ; staff + 2
+match rates JBES: {'rows_non_staff': '681', 'no_affiliation': '94', 'with_affiliation': '587', 'matched': '546', 'unmatched': '41', 'match_rate': '0.9302'}
+
+== QC (qc_red_jbes_20261113.py) ==
+PASS editors_backfill_scale_ror_panel.csv: intermediate bytes are an exact prefix (base + RED 2025 untouched)
+PASS editors_backfill_scale_ror_panel.csv: header unchanged
+PASS editors_backfill_scale_ror_panel.csv: CRLF throughout
+PASS editor_affiliations.csv: intermediate bytes are an exact prefix (base + RED 2025 untouched)
+PASS editor_affiliations.csv: header unchanged
+PASS editor_affiliations.csv: CRLF throughout
+PASS editors_backfill_scale_gaps.csv: intermediate bytes are an exact prefix (base + RED 2025 untouched)
+PASS editors_backfill_scale_gaps.csv: header unchanged
+PASS editors_backfill_scale_gaps.csv: CRLF throughout
+PASS BACKFILL_SCALE_ROR_staff_rows_20261031.csv: intermediate bytes are an exact prefix (base + RED 2025 untouched)
+PASS BACKFILL_SCALE_ROR_staff_rows_20261031.csv: header unchanged
+PASS BACKFILL_SCALE_ROR_staff_rows_20261031.csv: CRLF throughout
+PASS panel 15873 = 15,708 + 165
+PASS long 12102 = 11,940 + 162
+PASS editors_backfill_scale_ror_panel.csv: live base rows identical (15664)
+PASS editor_affiliations.csv: live base rows identical (11896)
+PASS RED 2025 panel rows #15664-#15707 identical to intermediate
+PASS long rows incl. RED 2025 identical to intermediate
+PASS panel keys unique
+PASS new keys #15708-#15872 contiguous
+PASS every long key exists in panel
+PASS panel-long sync: long rows exactly for affiliated new rows
+PASS long rank-1 ROR == panel ROR
+PASS panel-only rows = Hutchens/Martin/Zellner x2
+PASS 83 distinct RORs on new rows all API-active []
+PASS ror_name/country = API display/country
+   RORs new to the backfill: {'https://ror.org/02jkmyk67'}
+PASS no EUI 0031wrj91 / no UW system 03ydkyb10
+PASS no email addresses in any non-PDF file []
+PASS jbes.asa contact not present
+PASS BACKFILL_SCALE_ROR_affiliation_count_changes_20261031.csv byte-identical to intermediate
+PASS BACKFILL_SCALE_ROR_crosscheck_20261031.csv byte-identical to intermediate
+PASS BACKFILL_SCALE_ROR_curated_log_20261031.csv byte-identical to intermediate
+PASS BACKFILL_SCALE_ROR_ri_decisions_20261031.csv byte-identical to intermediate
+PASS BACKFILL_SCALE_ROR_spotcheck_20261031.csv byte-identical to intermediate
+PASS BACKFILL_SCALE_ROR_unmatched_strings_20261031.csv byte-identical to intermediate
+PASS JBES_2018_board_changes_20261106.csv byte-identical to intermediate
+PASS RA_FIX_retry_changes_20261106.csv byte-identical to intermediate
+PASS RA_TA_merge_changes_20261106.csv byte-identical to intermediate
+PASS RED_2021_board_changes_20261106.csv byte-identical to intermediate
+PASS RED_2022_2023_board_changes_20261112.csv byte-identical to intermediate
+PASS RED_2025_board_changes_20261113.csv byte-identical to intermediate
+PASS editors_backfill_scale_ror_matched.csv byte-identical to intermediate
+PASS editors_backfill_scale_ror_unmatched.csv byte-identical to intermediate
+PASS editors_backfill_scale_row_key_crosswalk.csv byte-identical to intermediate
+PASS editors_backfill_scale_spotcheck.csv byte-identical to intermediate
+PASS red_2025_board_extracted.csv byte-identical to intermediate
+PASS spotcheck = live scrubbed copy
+PASS inventory: only JBES 2019/2020 changed [('Journal of', '2019'), ('Journal of', '2020')]
+   ('Journal of', '2019') {'issue': 'Vol 37 No. 1 (January 2019) Front Matter', 'source_type': 'official_issue', 'capture_route': 'jstor_front_matter_cuhk', 'source_file': 'tmp/jbes_2019_2020/jbes_2019_front_matter_extract.txt', 'source_text_file': 'tmp/jbes_2019_2020/jbes_2019_board_extracted.csv', 'source_url': 'https://www.jstor.org/stable/45181150', 'snapshot_year_offset': '0', 'capture_date': '2026-11-13', 'name_style': 'full', 'affiliations_present': 'partial', 'rows_parsed': '87', 'rows_with_affiliation': '84', 'parser': 'jbes_2019_2020_board_20261113', 'status': 'ok_issue_front_matter'}
+   ('Journal of', '2020') {'issue': 'Vol 38 No. 1 (January 2020) Front Matter', 'source_type': 'official_issue', 'capture_route': 'jstor_front_matter_cuhk', 'source_file': 'tmp/jbes_2019_2020/jbes_2020_front_matter_extract.txt', 'source_text_file': 'tmp/jbes_2019_2020/jbes_2020_board_extracted.csv', 'source_url': 'https://www.jstor.org/stable/45282197', 'snapshot_year_offset': '0', 'capture_date': '2026-11-13', 'name_style': 'full', 'affiliations_present': 'partial', 'rows_parsed': '78', 'rows_with_affiliation': '75', 'parser': 'jbes_2019_2020_board_20261113', 'status': 'ok_issue_front_matter'}
+PASS match_rates: only JBES row changed
+   [('Journal of Business and Economic Statistics', {'rows_non_staff': ('518', '681'), 'no_affiliation': ('90', '94'), 'with_affiliation': ('428', '587'), 'matched': ('399', '546'), 'unmatched': ('29', '41'), 'match_rate': ('0.9322', '0.9302'), 'high': ('327', '450'), 'medium': ('72', '96'), 'staff_rows_excluded': ('5', '7')})]
+PASS inventory 2019 counts 87/84
+PASS inventory 2020 counts 78/75
+   JBES 2019/2020 gaps: Counter({('2019', 'excluded_asa_committee_on_publications'): 23, ('2020', 'excluded_asa_committee_on_publications'): 20, ('2019', 'no_affiliation_printed'): 3, ('2020', 'no_affiliation_printed'): 3, ('2019', 'no_snapshot'): 1, ('2020', 'no_snapshot'): 1})
+   2025 JBES inventory: [('no_snapshot', '0')]
+Front-matter contact line (Editorial Coordinator) not transcribed: [email removed]

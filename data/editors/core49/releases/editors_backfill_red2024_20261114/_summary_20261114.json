@@ -1,0 +1,359 @@
+{
+ "api": {
+  "017zqws13": {
+   "status": "active",
+   "name": "University of Minnesota",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "44.97997",
+   "lon": "-93.26384"
+  },
+  "03n7scr80": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Chicago",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "41.85003",
+   "lon": "-87.65005"
+  },
+  "000e0be47": {
+   "status": "active",
+   "name": "Northwestern University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "42.04114",
+   "lon": "-87.69006"
+  },
+  "026zzn846": {
+   "status": "active",
+   "name": "Queen Mary University of London",
+   "country": "United Kingdom",
+   "continent": "Europe",
+   "lat": "51.50853",
+   "lon": "-0.12574"
+  },
+  "00v448643": {
+   "status": "active",
+   "name": "Federal Reserve Board of Governors",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "38.89511",
+   "lon": "-77.03637"
+  },
+  "05qwgg493": {
+   "status": "active",
+   "name": "Boston University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "42.35843",
+   "lon": "-71.05977"
+  },
+  "0241avf06": {
+   "status": "active",
+   "name": "Centre de Recerca en Economia Internacional",
+   "country": "Spain",
+   "continent": "Europe",
+   "lat": "41.38879",
+   "lon": "2.15899"
+  },
+  "05hwvzg47": {
+   "status": "active",
+   "name": "Federal Reserve Bank of New York",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.71427",
+   "lon": "-74.00597"
+  },
+  "046rm7j60": {
+   "status": "active",
+   "name": "University of California, Los Angeles",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "34.05223",
+   "lon": "-118.24368"
+  },
+  "01an3r305": {
+   "status": "active",
+   "name": "University of Pittsburgh",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.44062",
+   "lon": "-79.99589"
+  },
+  "0380n5h16": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Minneapolis",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "44.97997",
+   "lon": "-93.26384"
+  },
+  "05qghxh33": {
+   "status": "active",
+   "name": "Stony Brook University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.92565",
+   "lon": "-73.14094"
+  },
+  "022kthw22": {
+   "status": "active",
+   "name": "University of Rochester",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "43.15478",
+   "lon": "-77.61556"
+  },
+  "00py81415": {
+   "status": "active",
+   "name": "Duke University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "35.99403",
+   "lon": "-78.89862"
+  },
+  "03efmqc40": {
+   "status": "active",
+   "name": "Arizona State University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "33.41477",
+   "lon": "-111.90931"
+  },
+  "05abbep66": {
+   "status": "active",
+   "name": "Brandeis University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "42.37649",
+   "lon": "-71.23561"
+  },
+  "04n0g0b29": {
+   "status": "active",
+   "name": "Universitat Pompeu Fabra",
+   "country": "Spain",
+   "continent": "Europe",
+   "lat": "41.38879",
+   "lon": "2.15899"
+  },
+  "00hj8s172": {
+   "status": "active",
+   "name": "Columbia University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.71427",
+   "lon": "-74.00597"
+  },
+  "04e874t64": {
+   "status": "active",
+   "name": "Einaudi Institute for Economics and Finance",
+   "country": "Italy",
+   "continent": "Europe",
+   "lat": "41.89193",
+   "lon": "12.51133"
+  },
+  "02jx3x895": {
+   "status": "active",
+   "name": "University College London",
+   "country": "United Kingdom",
+   "continent": "Europe",
+   "lat": "51.50853",
+   "lon": "-0.12574"
+  },
+  "02skhjj30": {
+   "status": "active",
+   "name": "Federal Reserve Bank of St. Louis",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "38.62727",
+   "lon": "-90.19789"
+  },
+  "02gsb6172": {
+   "status": "active",
+   "name": "Federal Reserve Bank of Philadelphia",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "39.95238",
+   "lon": "-75.16362"
+  },
+  "04p491231": {
+   "status": "active",
+   "name": "Pennsylvania State University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.79339",
+   "lon": "-77.86"
+  },
+  "05x2bcf33": {
+   "status": "active",
+   "name": "Carnegie Mellon University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.44062",
+   "lon": "-79.99589"
+  },
+  "00rs6vg23": {
+   "status": "active",
+   "name": "The Ohio State University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "39.96118",
+   "lon": "-82.99879"
+  },
+  "00f54p054": {
+   "status": "active",
+   "name": "Stanford University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "37.42411",
+   "lon": "-122.16608"
+  },
+  "04cvxnb49": {
+   "status": "active",
+   "name": "Goethe University Frankfurt",
+   "country": "Germany",
+   "continent": "Europe",
+   "lat": "50.11552",
+   "lon": "8.68417"
+  },
+  "0190ak572": {
+   "status": "active",
+   "name": "New York University",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "40.71427",
+   "lon": "-74.00597"
+  },
+  "0168r3w48": {
+   "status": "active",
+   "name": "University of California San Diego",
+   "country": "United States",
+   "continent": "North America",
+   "lat": "32.71571",
+   "lon": "-117.16472"
+  }
+ },
+ "new_rows": 44,
+ "new_long": 44,
+ "totals": {
+  "panel": 15917,
+  "long": 12164
+ },
+ "by_role": {
+  "CO-ORDINATING EDITOR": 1,
+  "EDITORS": 9,
+  "ASSOCIATE EDITORS": 30,
+  "EDITORIAL ADVISORY BOARD": 4
+ },
+ "by_role_class": {
+  "editor": 10,
+  "board": 30,
+  "advisory": 4
+ },
+ "keys": [
+  "editors_backfill_scale_panel#15873",
+  "editors_backfill_scale_panel#15916"
+ ],
+ "ror_matched": 44,
+ "ror_blank": [],
+ "footer_excluded": [
+  "Ellen McGrattan, President",
+  "Erwan Quintin, Treasurer",
+  "Marina Azzimonti, Secretary"
+ ],
+ "inv_changes": [
+  {
+   "source_type": [
+    "",
+    "official_issue"
+   ],
+   "capture_route": [
+    "",
+    "publisher_pdf_capture_institutional"
+   ],
+   "source_file": [
+    "",
+    "abs_ajg/reports/RED_2024_editorial_board.pdf"
+   ],
+   "source_text_file": [
+    "",
+    "tmp/red_2024_board_extracted.csv"
+   ],
+   "snapshot_year_offset": [
+    "",
+    "0"
+   ],
+   "capture_date": [
+    "",
+    "2026-11-14"
+   ],
+   "name_style": [
+    "",
+    "mixed_initials_full"
+   ],
+   "affiliations_present": [
+    "",
+    "yes"
+   ],
+   "rows_parsed": [
+    "0",
+    "44"
+   ],
+   "rows_with_affiliation": [
+    "0",
+    "44"
+   ],
+   "parser": [
+    "",
+    "red_2024_board_20261114"
+   ],
+   "status": [
+    "queued",
+    "ok_issue_front_matter"
+   ],
+   "note": [
+    "capture still queued behind the ScienceDirect limit; not parsed",
+    "RED 2024 board from ScienceDirect Vol 52 (2024-04) Editorial Board front matter (page ii, DOI 10.1016/S1094-2025(24)00006-1; retrieved via CUHK Easy Access 2 institutional sign-in on 2026-11-14); 44 rows on panel 15873-15916; SED officers excluded (gaps); red_2024_board_20261114"
+   ]
+  }
+ ],
+ "gap_changes": [
+  [
+   "2024",
+   "queued",
+   "resolved"
+  ]
+ ],
+ "gaps_added": 3,
+ "match_rates": {
+  "before": {
+   "journal_id": "S163499366",
+   "journal": "Review of Economic Dynamics",
+   "rows_non_staff": "282",
+   "no_affiliation": "0",
+   "with_affiliation": "282",
+   "matched": "281",
+   "unmatched": "1",
+   "match_rate": "0.9965",
+   "high": "234",
+   "medium": "47",
+   "low": "0",
+   "staff_rows_excluded": "0"
+  },
+  "after": {
+   "journal_id": "S163499366",
+   "journal": "Review of Economic Dynamics",
+   "rows_non_staff": "326",
+   "no_affiliation": "0",
+   "with_affiliation": "326",
+   "matched": "325",
+   "unmatched": "1",
+   "match_rate": "0.9969",
+   "high": "278",
+   "medium": "47",
+   "low": "0",
+   "staff_rows_excluded": "0"
+  }
+ },
+ "ror_new_to_backfill": []
+}

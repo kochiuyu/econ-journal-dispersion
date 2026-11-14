@@ -1,0 +1,2 @@
+journal,rows_non_staff_before,no_affiliation_before,with_affiliation_before,matched_before,unmatched_before,match_rate_before,high_before,medium_before,low_before,staff_rows_excluded_before,rows_non_staff_after,no_affiliation_after,with_affiliation_after,matched_after,unmatched_after,match_rate_after,high_after,medium_after,low_after,staff_rows_excluded_after
+Review of Economic Dynamics,282,0,282,281,1,0.9965,234,47,0,0,326,0,326,325,1,0.9969,278,47,0,0
