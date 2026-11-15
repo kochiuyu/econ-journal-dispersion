@@ -1,8 +1,8 @@
 {
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
-  "round_target": 648,
-  "round_progress_after_this_batch": 42,
+  "round_target": 606,
+  "round_progress_after_this_batch": 33,
   "batch": 1,
   "pending_candidates": [
     {
