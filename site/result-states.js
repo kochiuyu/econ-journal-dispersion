@@ -71,10 +71,10 @@
     },
     empty: function (chooseLists) {
       var message = page === "rankings"
-        ? "Try a different search, rating, or field. Clear filters keeps your selected ranking and edition."
-        : "Try a different search or remove a filter. Clear filters keeps your selected journal lists.";
+        ? "Try a different search, rating, or field. Clearing search and filters keeps your selected ranking and edition."
+        : "Try a different search or remove a filter. Clearing search and filters keeps your selected journal lists.";
       show("empty", chooseLists ? "Choose a journal list" : "No " + entity + " found", chooseLists ? "Open Journal lists and choose a list to load its editorial boards." : message, false);
-      if (!chooseLists) action("Clear filters", function () { document.getElementById("clear").click(); });
+      if (!chooseLists) action("Clear search & filters", function () { document.getElementById("clear").click(); });
       action(page === "rankings" ? "Change ranking or edition" : "Choose journal lists", changeScope);
     },
     error: function (options) {
@@ -117,3 +117,4 @@
   }, { once: true });
   window.resultStates.loading("Loading " + entity + "…", page === "rankings" ? "Fetching journal rankings and editions. Your selected ranking and filters will be kept." : undefined);
 })();
+
