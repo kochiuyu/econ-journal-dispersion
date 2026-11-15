@@ -17,8 +17,8 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=journal-icons-20261114">
-  <script defer src="compact-controls.js?v=performance-20261113"></script>
+  <link rel="stylesheet" href="style.css?v=results-layout-20261116">
+  <script defer src="compact-controls.js?v=results-layout-20261116"></script>
   <script defer src="result-states.js?v=performance-20261113"></script>
   <script defer fetchpriority="high" src="rankings-data.js"></script>
   <script defer src="filter-controls.js?v=accessibility-20261113"></script>
@@ -66,7 +66,7 @@
           <button class="btn" type="submit">Search</button>
           <button class="btn" type="button" id="clear">Clear filters</button>
         </div>
-        <div class="row">
+        <div class="row filter-grid">
           <label class="lbl" for="system">Ranking</label>
           <select id="system" name="system" aria-describedby="ranking-definition"></select>
           <label class="lbl" for="year">Edition</label>
@@ -84,46 +84,6 @@
       <div class="active-filters row" id="active-filters" role="group" aria-label="Active filters" hidden></div>
 <p class="hint">Clear filters keeps the selected ranking and edition.</p>
     </section>
-
-    <section class="stats stats-compact" id="stats" aria-label="Edition totals">
-      <p class="stats-scope">Coverage for the selected edition</p>
-      <div class="stat">
-        <div class="n" id="n-journals">…</div>
-        <div class="l">Journals</div>
-        <div class="sub" id="s-journals">This edition</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-top">…</div>
-        <div class="l" id="l-top">4*</div>
-        <div class="sub" id="s-top">Journals of Distinction</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-mapped">…</div>
-        <div class="l">Mapped</div>
-        <div class="sub" id="s-mapped">Catalog journal id</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-editions">…</div>
-        <div class="l">Editions</div>
-        <div class="sub" id="s-editions">Editions on file</div>
-      </div>
-    </section>
-
-    <aside class="data-context" aria-label="Ranking definitions and counting methods">
-      <p id="ranking-definition">Ratings follow the selected ranking’s own definitions; grades are not interchangeable between systems.</p>
-      <p class="data-context-date" id="ranking-edition-context">Edition identifies the source list, not the year editorial boards were collected.</p>
-      <details class="count-context">
-        <summary>How these counts work</summary>
-        <div class="context-body">
-          <p><strong>Coverage cards</strong> describe the entire selected edition, before search, rating, or field filters. Editions counts all editions on file for the selected ranking. The results summary reflects your filters; pagination changes only the displayed rows.</p>
-          <p><strong>Journals</strong> counts source rows. A title can appear more than once when a source lists it in multiple departments or combines lists, such as Stern or Handelsblatt/VWL 2015.</p>
-          <p><strong>Mapped</strong> means a row has a catalog journal identifier. It does not guarantee Directory board data. Unmatched titles remain in Rankings.</p>
-          <p><strong>Ratings</strong> retain the source system’s labels. FT50, UTD24, and Top 5 are membership lists with no grade tiers. Shanghai records membership as Top. A missing rating is not a zero score.</p>
-          <p><strong>Dates</strong> describe saved ranking editions. Current means the source did not specify an edition year; it does not mean the list was checked today. Board collection dates are shown separately on the Directory, Journals, and Institutions pages.</p>
-          <p><a href="#about">Full ranking definitions and source notes</a></p>
-        </div>
-      </details>
-    </aside>
 
     <div class="results-stage" data-results-state="loading">
     <div class="results-summary">
@@ -170,6 +130,49 @@
     </div>
 
     </div>
+
+    <details class="results-context">
+      <summary>Edition coverage and counting methods</summary>
+    <section class="stats stats-compact" id="stats" aria-label="Edition totals">
+      <p class="stats-scope">Coverage for the selected edition</p>
+      <div class="stat">
+        <div class="n" id="n-journals">…</div>
+        <div class="l">Journals</div>
+        <div class="sub" id="s-journals">This edition</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-top">…</div>
+        <div class="l" id="l-top">4*</div>
+        <div class="sub" id="s-top">Journals of Distinction</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-mapped">…</div>
+        <div class="l">Mapped</div>
+        <div class="sub" id="s-mapped">Catalog journal id</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editions">…</div>
+        <div class="l">Editions</div>
+        <div class="sub" id="s-editions">Editions on file</div>
+      </div>
+    </section>
+
+    <aside class="data-context" aria-label="Ranking definitions and counting methods">
+      <p id="ranking-definition">Ratings follow the selected ranking’s own definitions; grades are not interchangeable between systems.</p>
+      <p class="data-context-date" id="ranking-edition-context">Edition identifies the source list, not the year editorial boards were collected.</p>
+      <details class="count-context">
+        <summary>How these counts work</summary>
+        <div class="context-body">
+          <p><strong>Coverage cards</strong> describe the entire selected edition, before search, rating, or field filters. Editions counts all editions on file for the selected ranking. The results summary reflects your filters; pagination changes only the displayed rows.</p>
+          <p><strong>Journals</strong> counts source rows. A title can appear more than once when a source lists it in multiple departments or combines lists, such as Stern or Handelsblatt/VWL 2015.</p>
+          <p><strong>Mapped</strong> means a row has a catalog journal identifier. It does not guarantee Directory board data. Unmatched titles remain in Rankings.</p>
+          <p><strong>Ratings</strong> retain the source system’s labels. FT50, UTD24, and Top 5 are membership lists with no grade tiers. Shanghai records membership as Top. A missing rating is not a zero score.</p>
+          <p><strong>Dates</strong> describe saved ranking editions. Current means the source did not specify an edition year; it does not mean the list was checked today. Board collection dates are shown separately on the Directory, Journals, and Institutions pages.</p>
+          <p><a href="#about">Full ranking definitions and source notes</a></p>
+        </div>
+      </details>
+    </aside>
+    </details>
 
     <section class="prose" id="about"><details class="about-data">
         <summary>About this data</summary>
@@ -372,6 +375,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

@@ -671,3 +671,33 @@ th.num button { text-align: right; }
   .mobile-results .journal-identity { gap: 6px; }
 }
 @media (forced-colors: active) { .journal-mark { border-color: CanvasText; color: CanvasText; background: Canvas; } }
+
+/* Results first; supporting coverage remains available after the table. */
+.results-context { margin: 20px 0 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.results-context > summary { cursor: pointer; padding: 12px 16px; min-height: 44px; color: var(--accent); font: 600 .875rem/1.5 "Segoe UI", sans-serif; }
+.results-context > .stats { margin: 0; padding: 4px 16px 12px; }
+.results-context > .data-context { margin: 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; }
+.compact-field-control, .compact-scope-control { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.filter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); align-items: start; gap: 12px; }
+.filter-grid select, .filter-grid #field, .filter-grid #journal, .filter-grid .combo { width: 100%; max-width: none; min-width: 0; flex: none; }
+.filter-grid .lbl { display: block; }
+@media (min-width: 641px) {
+  .filter-grid > .compact-inline, .filter-grid .compact-extra-fields { display: contents; }
+  .directory-table { table-layout: fixed; min-width: 70rem; }
+  .directory-table th:nth-child(1) { width: 12%; }
+  .directory-table th:nth-child(2) { width: 13%; }
+  .directory-table th:nth-child(3) { width: 22%; }
+  .directory-table th:nth-child(4) { width: 14%; }
+  .directory-table th:nth-child(5) { width: 10%; }
+  .directory-table th:nth-child(6) { width: 14%; }
+  .directory-table th:nth-child(7) { width: 8%; }
+  .directory-table th:nth-child(8) { width: 7%; }
+  .directory-table td { overflow-wrap: anywhere; }
+}
+@media (max-width: 640px) {
+  .directory-table { min-width: 0; }
+  .filter-grid { grid-template-columns: minmax(0, 1fr); }
+  .filter-grid > .compact-inline { width: 100%; }
+  .filter-grid .compact-extra-fields { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+

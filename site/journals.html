@@ -17,8 +17,8 @@
     A root-absolute path would be requested from the user-site root.
   -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142833'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='15' fill='%23f4f1ea'%3EJe%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=journal-icons-20261114">
-  <script defer src="compact-controls.js?v=performance-20261113"></script>
+  <link rel="stylesheet" href="style.css?v=results-layout-20261116">
+  <script defer src="compact-controls.js?v=results-layout-20261116"></script>
   <script defer src="result-states.js?v=performance-20261113"></script>
   <script defer fetchpriority="high" src="journals-data.js"></script>
   <script defer src="filter-controls.js?v=accessibility-20261113"></script>
@@ -69,7 +69,7 @@
         <div class="row" id="universe-row">
           <span class="sr-only" id="universe-label">List</span>
         </div>
-        <div class="row">
+        <div class="row filter-grid">
           <label class="lbl" for="field">Field</label>
           <select id="field" name="field">
             <option value="">All fields</option>
@@ -79,46 +79,6 @@
       <div class="active-filters row" id="active-filters" role="group" aria-label="Active filters" hidden></div>
 <p class="hint">Select one or more lists to combine them. Clear filters keeps your selected lists.</p>
     </section>
-
-    <section class="stats stats-compact" id="stats" aria-label="Journal totals">
-      <p class="stats-scope">Coverage across all lists</p>
-      <div class="stat">
-        <div class="n" id="n-journals">…</div>
-        <div class="l">Journals</div>
-        <div class="sub">FT50, ABDC, and AJG-gap</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-appointments">…</div>
-        <div class="l">Appointments</div>
-        <div class="sub">Person, role, and journal</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-editors">…</div>
-        <div class="l">Editors</div>
-        <div class="sub">Distinct names</div>
-      </div>
-      <div class="stat">
-        <div class="n" id="n-countries">…</div>
-        <div class="l">Countries</div>
-        <div class="sub">Matched affiliation</div>
-      </div>
-    </section>
-
-    <aside class="data-context" aria-label="Data coverage and counting methods">
-      <p class="data-context-date"><span id="asof">Board year 2026; collection dates are available once the data loads.</span> Saved board data, not a live feed.</p>
-      <details class="count-context">
-        <summary>How these counts work</summary>
-        <div class="context-body">
-        <p><strong>Appointments</strong> count a person’s role on a journal. One person with roles on two journals contributes two appointments. Overlapping list records are combined where the same appointment matches. Different roles or affiliations can remain separate rows.</p>
-        <p><strong>Editors</strong> are distinct normalized names, not verified person identities. Identical names can merge; different spellings can count separately. Editor totals across journals or institutions should not be added together.</p>
-        <p><strong>What changes with filters?</strong> Filters select journal rows. Each row’s appointment, editor, and country counts remain totals across all lists for that journal; the coverage cards also cover all lists. View editors keeps your selected lists; without a list selection, it opens the relevant results across all lists.</p>
-        <p><strong>Scope.</strong> This table includes journals with Directory board data. A journal in Rankings may have no board here. Countries follow recorded affiliations, not editors’ nationalities.</p>
-        <p><strong>Lists and grades.</strong> FT50, Top 5, and UTD24 indicate list membership. ABDC A*–C are 2025 Journal Quality List grades; AJG 4*–1 are 2024 CABS Academic Journal Guide grades. These are separate systems, not equivalent scores. AJG-gap adds boards for journals outside the FT50 and ABDC editor files.</p>
-        <p><strong>Coverage.</strong> Collection dates describe the saved board releases across all lists, not a live check of every journal. Individual boards can be older, including the archived African Affairs board. Missing grades or affiliations mean information is unavailable, not zero.</p>
-        <p><a href="#about">Full source and coverage notes</a></p>
-        </div>
-      </details>
-    </aside>
 
     <div class="results-stage" data-results-state="loading">
     <div class="results-summary">
@@ -166,6 +126,49 @@
     </div>
 
     </div>
+
+    <details class="results-context">
+      <summary>Coverage and counting methods</summary>
+    <section class="stats stats-compact" id="stats" aria-label="Journal totals">
+      <p class="stats-scope">Coverage across all lists</p>
+      <div class="stat">
+        <div class="n" id="n-journals">…</div>
+        <div class="l">Journals</div>
+        <div class="sub">FT50, ABDC, and AJG-gap</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-appointments">…</div>
+        <div class="l">Appointments</div>
+        <div class="sub">Person, role, and journal</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-editors">…</div>
+        <div class="l">Editors</div>
+        <div class="sub">Distinct names</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="n-countries">…</div>
+        <div class="l">Countries</div>
+        <div class="sub">Matched affiliation</div>
+      </div>
+    </section>
+
+    <aside class="data-context" aria-label="Data coverage and counting methods">
+      <p class="data-context-date"><span id="asof">Board year 2026; collection dates are available once the data loads.</span> Saved board data, not a live feed.</p>
+      <details class="count-context">
+        <summary>How these counts work</summary>
+        <div class="context-body">
+        <p><strong>Appointments</strong> count a person’s role on a journal. One person with roles on two journals contributes two appointments. Overlapping list records are combined where the same appointment matches. Different roles or affiliations can remain separate rows.</p>
+        <p><strong>Editors</strong> are distinct normalized names, not verified person identities. Identical names can merge; different spellings can count separately. Editor totals across journals or institutions should not be added together.</p>
+        <p><strong>What changes with filters?</strong> Filters select journal rows. Each row’s appointment, editor, and country counts remain totals across all lists for that journal; the coverage cards also cover all lists. View editors keeps your selected lists; without a list selection, it opens the relevant results across all lists.</p>
+        <p><strong>Scope.</strong> This table includes journals with Directory board data. A journal in Rankings may have no board here. Countries follow recorded affiliations, not editors’ nationalities.</p>
+        <p><strong>Lists and grades.</strong> FT50, Top 5, and UTD24 indicate list membership. ABDC A*–C are 2025 Journal Quality List grades; AJG 4*–1 are 2024 CABS Academic Journal Guide grades. These are separate systems, not equivalent scores. AJG-gap adds boards for journals outside the FT50 and ABDC editor files.</p>
+        <p><strong>Coverage.</strong> Collection dates describe the saved board releases across all lists, not a live check of every journal. Individual boards can be older, including the archived African Affairs board. Missing grades or affiliations mean information is unavailable, not zero.</p>
+        <p><a href="#about">Full source and coverage notes</a></p>
+        </div>
+      </details>
+    </aside>
+    </details>
 
     <section class="prose" id="about"><details class="about-data">
         <summary>About this data</summary>
@@ -227,6 +230,7 @@
   </footer>
 </body>
 </html>
+
 
 
 

@@ -82,7 +82,7 @@
   }
 
   var stats = document.getElementById("stats");
-  if (stats) {
+  if (stats && !stats.closest(".results-context")) {
     var title = document.getElementById("system") ? "Coverage · selected edition" : "Coverage · all lists";
     var coverage = disclosure(title, "compact-coverage");
     stats.before(coverage);
@@ -116,3 +116,4 @@
   layout();
   updateNotes();
 })();
+
