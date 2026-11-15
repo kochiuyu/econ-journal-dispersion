@@ -2,399 +2,9 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 1000,
-  "round_progress_after_this_batch": 550,
-  "batch": 11,
+  "round_progress_after_this_batch": 600,
+  "batch": 12,
   "pending_candidates": [
-    {
-      "journal_id": "journal_2127",
-      "journal_name": "Information Research",
-      "appointments": 24,
-      "priority_rank": 2127,
-      "publisher": "",
-      "issn": "",
-      "source_page": "https://publicera.kb.se/ir",
-      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/ae/2018_Inf_Res_logo.gif/330px-2018_Inf_Res_logo.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
-    },
-    {
-      "journal_id": "international_journal_energy_sector_management",
-      "journal_name": "International Journal of Energy Sector Management",
-      "appointments": 24,
-      "priority_rank": 2130,
-      "publisher": "Emerald Group Publishing",
-      "issn": "1750-6220",
-      "source_page": "https://www.emerald.com/ijesm/issue/19/6",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ijesm/issue/19/6/1/m_cover.jpeg?Expires=1841459243&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=4XlnLZkmFmNL~PmoSG~lS3hG-8bsbwbBF-jc9GgkkfifOPEJQ6eOCVGnanQEMci4d6ATIxoAfFAJ2Y9eEMO4uEbIBCJAMBZ90I8Cwn1PDnZCZnew~v3ar7XHhB~2WeaDLLV3qEYTDil26BTWpPXttcLe4m5ZVfq0-i2lKq~yZ4B277voS8wcwSXWpFBppu4QRgZ3auIQrEqedTHN3EnQOKqvWGGQZxq386O8kFuSj6s1IMlpokg42TaCZT9w8a4d7bt5jFXDSsmpcdCWvJFC2PoQorjGH-M1m6YqrDV5cEmcOYJNCdy3HisyrjavspaIBgs8MTSlmYPi2hB6bNliTg__"
-    },
-    {
-      "journal_id": "journal_chinese_economic_foreign_trade_studies",
-      "journal_name": "Journal of Chinese Economic and Foreign Trade Studies",
-      "appointments": 24,
-      "priority_rank": 2137,
-      "publisher": "Emerald Group Publishing",
-      "issn": "1754-4408",
-      "source_page": "https://www.emerald.com/jcefts/article/18/3/429/1251642/Investor-protection-and-stock-price-crash-risk-in",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jcefts/issue/18/3/1/m_cover.jpeg?Expires=1824963265&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=HESvnBfsSBpTC36oNrtAAL1C-8caPMIR-zkMUBUXJstflSAKxEw8lvL5IDkKbwRxUm6dRy7hWJ2oWSf3y-gFeEsOd5H3vPjF1zsZd~U11d-dngHbJy5tZ~VWroXRxhAPC9RPipJmJ7JKsEW~8Hq9VFrC8r0crbZkighJPhSfoJcNAtxrcFWqLdYHD8P1p6uKd8KtJhCl6WtquHIACNgrYHhXNj-sDuliejw0-EsUti~z039~xESmT2AYBR8i-bv0fC8yi71HBRlfHiCkRdKrjGpBrWUj764igObSqV0Vs-LXG8opEFWLZ7y28zjv6LEDtcxWb370viqJFhDDRn7l4g__"
-    },
-    {
-      "journal_id": "journal_systems_information_technology",
-      "journal_name": "Journal of Systems and Information Technology",
-      "appointments": 24,
-      "priority_rank": 2144,
-      "publisher": "Emerald Group Publishing",
-      "issn": "1328-7265",
-      "source_page": "https://www.emerald.com/jsit/article/11/2/168/252634/Web-design-a-key-factor-for-the-website-success",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jsit/issue/11/2/2/m_jsit_cover.jpeg?Expires=1843557141&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=AfZbP19AblimemtUnN8lIVWEWvVxq7sfyxZc0I~QyXoPJMGi5GRDeffH6JGyFZgZYtuZ~vvWG9Ktg9jEfGPoEfRQpb0JLgrNxlUD~65mpupkWarKtpUeTwoyQNHL5PvdZx~3kXNty~Mfm1KtOWHBcfrDGSLKYMZe4EvXKQ9lFRchuEsQKB-Wcen4V8cf51c7IPZ8MwERm1ZW~wuxUVbVT5d0VramhVIR7~oJupaNVJbk5MacV1w7sgUElkmGGiHgDIvB7u82eBOPXQ7Nw1-P69LKsrPTZBD5jPmke4dO6lEuKikNo6O4yn7wlmQo1yMNz9bZO07w-yBUJN83aEtNvw__"
-    },
-    {
-      "journal_id": "new_zealand_journal_employment_relations",
-      "journal_name": "New Zealand Journal of Employment Relations",
-      "appointments": 24,
-      "priority_rank": 2146,
-      "publisher": "ER Publishing Ltd.",
-      "issn": "1176-4716",
-      "source_page": "https://ojs.aut.ac.nz/nzjer/about/editorialTeam",
-      "image_url": "https://ojs.aut.ac.nz/nzjer/public/journals/1/pageHeaderLogoImage_en_US.png"
-    },
-    {
-      "journal_id": "public_finance_analysis_finanzarchiv",
-      "journal_name": "Public Finance Analysis / FinanzArchiv",
-      "appointments": 24,
-      "priority_rank": 2149,
-      "publisher": "Mohr Siebeck Verlag",
-      "issn": "0015-2218",
-      "source_page": "https://www.mohrsiebeck.com/en/journal/finanzarchiv-fa/editors/",
-      "image_url": "https://cmsapp.mohrsiebeck.com/assets/7d2f4777-0c00-4524-bebe-1117ce98b58e"
-    },
-    {
-      "journal_id": "journal_2155",
-      "journal_name": "The International Journal of Aerospace Psychology",
-      "appointments": 24,
-      "priority_rank": 2155,
-      "publisher": "Taylor & Francis",
-      "issn": "2472-1840",
-      "source_page": "https://www.tandfonline.com/toc/hiap21/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=hiap21"
-    },
-    {
-      "journal_id": "journal_private_equity",
-      "journal_name": "The Journal of Private Equity",
-      "appointments": 24,
-      "priority_rank": 2157,
-      "publisher": "Euromoney Institutional Investor",
-      "issn": "1096-5572",
-      "source_page": "http://iijournals.com/JPE",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/7/77/The_Journal_of_Private_Equity.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
-      "journal_id": "berkeley_business_law_journal",
-      "journal_name": "Berkeley Business Law Journal",
-      "appointments": 23,
-      "priority_rank": 2164,
-      "publisher": "UC Berkeley School of Law",
-      "issn": "1548-7067",
-      "source_page": "https://businesslawjournal.org/executive-board/",
-      "image_url": "https://businesslawjournal.org/wp-content/uploads/2024/08/screenshot-2024-08-27-at-11.20.03e280afam.png"
-    },
-    {
-      "journal_id": "central_european_journal_economic_modelling",
-      "journal_name": "Central European Journal of Economic Modelling and Econometrics",
-      "appointments": 23,
-      "priority_rank": 2165,
-      "publisher": "Central European Journal of Economic Modelling and Econometrics",
-      "issn": "2080-0886",
-      "source_page": "http://cejeme.org",
-      "image_url": "https://wydawnictwo.pan.pl/public/journals/2/pageHeaderLogoImage_en_US.png"
-    },
-    {
-      "journal_id": "european_review_economic_history",
-      "journal_name": "European Review of Economic History",
-      "appointments": 23,
-      "priority_rank": 2174,
-      "publisher": "Oxford University Press",
-      "issn": "1361-4916",
-      "source_page": "https://academic.oup.com/ereh",
-      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/ereh/ereh_ogimage.png"
-    },
-    {
-      "journal_id": "journal_2176",
-      "journal_name": "International Journal of Business Competition and Growth",
-      "appointments": 23,
-      "priority_rank": 2176,
-      "publisher": "Inderscience Publishers",
-      "issn": "2042-3845",
-      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijbcg",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijbcg.jpg"
-    },
-    {
-      "journal_id": "journal_malaysian_comparative_law",
-      "journal_name": "Journal of Malaysian and Comparative Law",
-      "appointments": 23,
-      "priority_rank": 2184,
-      "publisher": "Cambridge University Press",
-      "issn": "0126-6322",
-      "source_page": "https://ejournal.um.edu.my/index.php/JMCL",
-      "image_url": "https://ejournal.um.edu.my/public/journals/105/cover_issue_2798_en.png"
-    },
-    {
-      "journal_id": "studies_business_economics",
-      "journal_name": "Studies in Business and Economics",
-      "appointments": 23,
-      "priority_rank": 2193,
-      "publisher": "Sciendo",
-      "issn": "1842-4120",
-      "source_page": "https://reference-global.com/journal/SBE?tab=editorial-board#journal-tabs",
-      "image_url": "https://paradigm-files.s3.eu-central-1.amazonaws.com/SBE/cover-image.jpg"
-    },
-    {
-      "journal_id": "studies_nonlinear_dynamics_econometrics",
-      "journal_name": "Studies in Nonlinear Dynamics & Econometrics",
-      "appointments": 23,
-      "priority_rank": 2194,
-      "publisher": "De Gruyter",
-      "issn": "1081-1826",
-      "source_page": "http://www.bepress.com/snde",
-      "image_url": "https://media.ffycdn.net/eu/elsevier/d/rRvZWT7bXa7GEHwE?w=1200&q=75"
-    },
-    {
-      "journal_id": "adam_smith_review",
-      "journal_name": "The Adam Smith Review",
-      "appointments": 23,
-      "priority_rank": 2198,
-      "publisher": "The International Adam Smith Society",
-      "issn": "1743-5285",
-      "source_page": "https://www.routledge.com/The-Adam-Smith-Review/book-series/ASR",
-      "image_url": "https://www.routledge.com/images/routledge-logo.png"
-    },
-    {
-      "journal_id": "transforming_government_people_process_policy",
-      "journal_name": "Transforming Government: People, Process and Policy",
-      "appointments": 23,
-      "priority_rank": 2200,
-      "publisher": "Emerald Group Publishing Limited",
-      "issn": "1750-6166",
-      "source_page": "https://www.emerald.com/tg/issue/19/4",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/tg/issue/19/4/1/m_cover.jpeg?Expires=1825602373&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=oFqfPJJf27hbohrIq4tWQwNHWkU9GRFfawpbOQPInJIn~ieawSXI~CIbjlPdBXvlIRoxOw1pDO6uRF9AuJ3VdqxEDExX7Jsakw4klUBRdUVtEZ0l~E36eJ-MyAhhrx7AxlOXmJwsPIfp0HxE1khVes4DppNBWNOb280vd3tfdKZiaj57sKKhD~sJKlfhl8PaL6T5MHvtECUGr4rjQ6mreCtg4YLMKa5UaCe9asQnbAahBY67upXQLr8z1G67FmfpH0gCmcHXpyXzoHWMhew2EL7nr5S2rXxInmQv9qUclnzk4v684YhdPlZdolS5w7p2xpdCmeHq32rs1xkjD0QZRg__"
-    },
-    {
-      "journal_id": "journal_2201",
-      "journal_name": "Utilities Policy",
-      "appointments": 23,
-      "priority_rank": 2201,
-      "publisher": "Elsevier BV",
-      "issn": "0957-1787",
-      "source_page": "https://www.journals.elsevier.com/utilities-policy",
-      "image_url": "https://ars.els-cdn.com/content/image/X09571787.jpg"
-    },
-    {
-      "journal_id": "african_development_review",
-      "journal_name": "African Development Review",
-      "appointments": 22,
-      "priority_rank": 2203,
-      "publisher": "Wiley",
-      "issn": "1017-6772",
-      "source_page": "https://onlinelibrary.wiley.com/journal/14678268",
-      "image_url": "https://media.wiley.com/journal/10176772-cover.jpg"
-    },
-    {
-      "journal_id": "journal_2204",
-      "journal_name": "African Evaluation Journal",
-      "appointments": 22,
-      "priority_rank": 2204,
-      "publisher": "AOSIS",
-      "issn": "2310-4988",
-      "source_page": "https://aejonline.org/index.php/aej",
-      "image_url": "https://aejonline.org/public/aosis_og.jpg"
-    },
-    {
-      "journal_id": "applied_mathematical_finance",
-      "journal_name": "Applied Mathematical Finance",
-      "appointments": 22,
-      "priority_rank": 2207,
-      "publisher": "Taylor & Francis",
-      "issn": "1350-486X",
-      "source_page": "https://www.tandfonline.com/toc/ramf20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ramf20"
-    },
-    {
-      "journal_id": "business_economics",
-      "journal_name": "Business Economics",
-      "appointments": 22,
-      "priority_rank": 2210,
-      "publisher": "Springer International Publishing",
-      "issn": "0007-666X",
-      "source_page": "https://link.springer.com/journal/11369",
-      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/11369.jpg"
-    },
-    {
-      "journal_id": "homo_oeconomicus",
-      "journal_name": "Homo Oeconomicus",
-      "appointments": 22,
-      "priority_rank": 2216,
-      "publisher": "Springer International Publishing",
-      "issn": "0943-0180",
-      "source_page": "https://link.springer.com/journal/41412",
-      "image_url": "https://media.springernature.com/w88/springer-static/cover-hires/journal/41412?as=webp"
-    },
-    {
-      "journal_id": "information_communications_technology_law",
-      "journal_name": "Information and Communications Technology Law",
-      "appointments": 22,
-      "priority_rank": 2217,
-      "publisher": "Taylor & Francis",
-      "issn": "1360-0834",
-      "source_page": "https://www.tandfonline.com/toc/cict20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=cict20"
-    },
-    {
-      "journal_id": "international_journal_corporate_governance",
-      "journal_name": "International Journal of Corporate Governance",
-      "appointments": 22,
-      "priority_rank": 2220,
-      "publisher": "Inderscience Publishers",
-      "issn": "1754-3037",
-      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijcg",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijcg.jpg"
-    },
-    {
-      "journal_id": "international_journal_financial_markets_derivatives",
-      "journal_name": "International Journal of Financial Markets and Derivatives",
-      "appointments": 22,
-      "priority_rank": 2221,
-      "publisher": "Inderscience Publishers",
-      "issn": "1756-7130",
-      "source_page": "http://www.inderscience.com/browse/index.php?journalID=307",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijfmd.jpg"
-    },
-    {
-      "journal_id": "journal_2222",
-      "journal_name": "International Journal of Services Economics and Management",
-      "appointments": 22,
-      "priority_rank": 2222,
-      "publisher": "Inderscience Publishers",
-      "issn": "1753-0822",
-      "source_page": "http://www.inderscience.com/browse/index.php?journalID=26",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijstm.jpg"
-    },
-    {
-      "journal_id": "international_journal_technology_management",
-      "journal_name": "International Journal of Technology Management",
-      "appointments": 22,
-      "priority_rank": 2223,
-      "publisher": "Inderscience Publishers",
-      "issn": "0267-5730",
-      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtm",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtm.jpg"
-    },
-    {
-      "journal_id": "international_review_applied_economics",
-      "journal_name": "International Review of Applied Economics",
-      "appointments": 22,
-      "priority_rank": 2224,
-      "publisher": "Taylor & Francis",
-      "issn": "0269-2171",
-      "source_page": "https://www.tandfonline.com/toc/cira20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=cira20"
-    },
-    {
-      "journal_id": "international_review_retail_distribution_consumer",
-      "journal_name": "International Review of Retail, Distribution and Consumer Research",
-      "appointments": 22,
-      "priority_rank": 2226,
-      "publisher": "Routledge",
-      "issn": "0959-3969",
-      "source_page": "https://www.tandfonline.com/toc/rirr20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rirr20"
-    },
-    {
-      "journal_id": "journal_computational_finance",
-      "journal_name": "Journal of Computational Finance",
-      "appointments": 22,
-      "priority_rank": 2227,
-      "publisher": "Incisive Risk Information Limited",
-      "issn": "1460-1559",
-      "source_page": "http://www.thejournalofcomputationalfinance.com",
-      "image_url": "https://www.risk.net/sites/default/files/styles/metatag_image/public/2017-03/risk%20brand%20logo%20grey_0.png.webp?h=796e638f&itok=uxOrKTDz"
-    },
-    {
-      "journal_id": "journal_econometric_methods",
-      "journal_name": "Journal of Econometric Methods",
-      "appointments": 22,
-      "priority_rank": 2228,
-      "publisher": "De Gruyter",
-      "issn": "2156-6674",
-      "source_page": "https://www.degruyterbrill.com/journal/key/jem/html",
-      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/JEM/product_pages"
-    },
-    {
-      "journal_id": "journal_international_education_business",
-      "journal_name": "Journal of International Education in Business",
-      "appointments": 22,
-      "priority_rank": 2230,
-      "publisher": "Emerald Group Publishing Limited",
-      "issn": "2046-469X",
-      "source_page": "https://www.emerald.com/jieb/article/19/1/9/1298400/Exploring-student-acceptance-of-digital-accounting",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jieb/issue/19/1/1/m_cover.jpeg?Expires=1839255709&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=oteKeyRybJY73i6Eye~bCZU~rfZR416Rp7BULck8AHEP7jIygnimTwFLl9t0iJ01LSGVvzsLnqtK0R-RcJ7Y3bTgKyR7QUnTaAtMqKQ6-~zhcGCivSZe1jybwEUFs4pT7Jn66jcQv9mnBv~HmzkdGbmYBUERhaoj5EhHaMz6IycIVyucQknQ1LdfVtk7hb9a1FE8pl6uz8zstsRuSltz7tmM2MhaNv0R1dyKtpYNmcxWC0e40guwUksD4bhQGqWCozxXsvdeBahNJfVSGHL8iDOUVjpj8E9oaA3jsT6Nlo-zmUk-3NVRP2SmdWcyggO2U5zdt7rL3rxozTlK5Wi-mg__"
-    },
-    {
-      "journal_id": "journal_internet_commerce",
-      "journal_name": "Journal of Internet Commerce",
-      "appointments": 22,
-      "priority_rank": 2231,
-      "publisher": "Taylor & Francis",
-      "issn": "1533-2861",
-      "source_page": "https://www.tandfonline.com/toc/wico20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=wico20"
-    },
-    {
-      "journal_id": "journal_australasian_law_academics_association",
-      "journal_name": "Journal of the Australasian Law Academics Association",
-      "appointments": 22,
-      "priority_rank": 2232,
-      "publisher": "ALAA",
-      "issn": "1836-5612",
-      "source_page": "https://www.alaa.asn.au",
-      "image_url": "https://static.wixstatic.com/media/e86d8d_6643b53d6ebd40eb8b5b9fe3c5c59f17~mv2.png/v1/fill/w_129,h_159,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Color%20logo%20-%20no%20background.png"
-    },
-    {
-      "journal_id": "narrative_inquiry",
-      "journal_name": "Narrative Inquiry",
-      "appointments": 22,
-      "priority_rank": 2234,
-      "publisher": "John Benjamins Publishing Company",
-      "issn": "1387-6740",
-      "source_page": "https://benjamins.com/catalog/ni",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3e/2022_cover_Narrative_Inquiry.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
-      "journal_id": "qut_law_review",
-      "journal_name": "QUT Law Review",
-      "appointments": 22,
-      "priority_rank": 2238,
-      "publisher": "Queensland University of Technology",
-      "issn": "1445-6230",
-      "source_page": "https://lr.law.qut.edu.au/about/editorialTeam.html",
-      "image_url": "https://lr.law.qut.edu.au/public/site/images/qut_bolingfo/22381_LAW-QUT-Law-Review-Banner-August-2016-v11.jpg"
-    },
-    {
-      "journal_id": "scandinavian_journal_hospitality_tourism",
-      "journal_name": "Scandinavian Journal of Hospitality and Tourism",
-      "appointments": 22,
-      "priority_rank": 2240,
-      "publisher": "Taylor & Francis",
-      "issn": "1502-2250",
-      "source_page": "https://www.tandfonline.com/toc/sjht20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=sjht20"
-    },
-    {
-      "journal_id": "journal_2241",
-      "journal_name": "Symbolic Interaction",
-      "appointments": 22,
-      "priority_rank": 2241,
-      "publisher": "Wiley",
-      "issn": "0195-6086",
-      "source_page": "http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1533-8665",
-      "image_url": "https://media.wiley.com/journal/01956086-cover.jpg"
-    },
     {
       "journal_id": "world_journal_management_economics",
       "journal_name": "World Journal of Management and Economics",
@@ -476,16 +86,6 @@
       "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmd.jpg"
     },
     {
-      "journal_id": "journal_statistical_research",
-      "journal_name": "Journal of Statistical Research",
-      "appointments": 21,
-      "priority_rank": 2258,
-      "publisher": "Bangladesh Academy of Sciences",
-      "issn": "0256-422X",
-      "source_page": "https://www.banglajol.info/index.php/JStR",
-      "image_url": "https://www.banglajol.info/public/site/jol-logo-green-small.png"
-    },
-    {
       "journal_id": "jurnal_akuntansi_dan_keuangan_indonesia",
       "journal_name": "Jurnal Akuntansi dan Keuangan Indonesia",
       "appointments": 21,
@@ -504,26 +104,6 @@
       "issn": "0964-7775",
       "source_page": "https://www.tandfonline.com/toc/rmmc20/current",
       "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rmmc20"
-    },
-    {
-      "journal_id": "new_perspectives_political_economy",
-      "journal_name": "New Perspectives on Political Economy",
-      "appointments": 21,
-      "priority_rank": 2263,
-      "publisher": "CEVRO Institut",
-      "issn": "1801-0938",
-      "source_page": "http://nppe.libinst.cz/",
-      "image_url": "https://nppe.eu/public/journals/1/pageHeaderLogoImage_en.png"
-    },
-    {
-      "journal_id": "romanian_economic_business_review",
-      "journal_name": "Romanian Economic Business Review",
-      "appointments": 21,
-      "priority_rank": 2267,
-      "publisher": "Romanian-American University",
-      "issn": "1842-2497",
-      "source_page": "https://rebe.rau.ro/editorial%20board.html",
-      "image_url": "https://rebe.rau.ro/mm_entertainment_image.jpg"
     },
     {
       "journal_id": "journal_2269",
@@ -646,16 +226,6 @@
       "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=amj"
     },
     {
-      "journal_id": "business_law_review",
-      "journal_name": "Business Law Review",
-      "appointments": 19,
-      "priority_rank": 2309,
-      "publisher": "Husson University",
-      "issn": "1533-7421",
-      "source_page": "https://www.husson.edu/college-of-business/publications-from-the-cob/businesslawreview",
-      "image_url": "https://www.husson.edu/_global/images/logo/logogreen.png"
-    },
-    {
       "journal_id": "common_law_world_review",
       "journal_name": "Common Law World Review",
       "appointments": 19,
@@ -714,16 +284,6 @@
       "issn": "1481-9112",
       "source_page": "https://jaed.ca/index.php/jaed/about/editorialMasthead",
       "image_url": "https://jaed.ca/public/journals/1/pageHeaderLogoImage_en_US.jpg"
-    },
-    {
-      "journal_id": "journal_accountancy",
-      "journal_name": "Journal of Accountancy",
-      "appointments": 19,
-      "priority_rank": 2320,
-      "publisher": "Association of International Certified Professional Accountants",
-      "issn": "0021-8448",
-      "source_page": "https://www.journalofaccountancy.com/info/contact/",
-      "image_url": "https://www.journalofaccountancy.com/wp-content/uploads/sites/3/2025/01/logo.png"
     },
     {
       "journal_id": "journal_forecasting",
@@ -886,16 +446,6 @@
       "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11294.jpg"
     },
     {
-      "journal_id": "international_journal_economic_perspectives",
-      "journal_name": "International Journal of Economic Perspectives",
-      "appointments": 18,
-      "priority_rank": 2350,
-      "publisher": "International Economic Society",
-      "issn": "1307-1637",
-      "source_page": "https://ijeponline.com/index.php/journal",
-      "image_url": "https://ijeponline.com/public/site/images/admin/ugc-logo-png-4-transparent-images-free.png"
-    },
-    {
       "journal_id": "international_journal_electronic_marketing_retailing",
       "journal_name": "International Journal of Electronic Marketing and Retailing",
       "appointments": 18,
@@ -966,16 +516,6 @@
       "image_url": "https://ars.els-cdn.com/content/image/X30507901.jpg"
     },
     {
-      "journal_id": "public_policy_research",
-      "journal_name": "Public Policy Research",
-      "appointments": 18,
-      "priority_rank": 2363,
-      "publisher": "Wiley-Blackwell Publishing",
-      "issn": "1744-5396",
-      "source_page": "https://onlinelibrary.wiley.com/page/journal/25732331/homepage/editorialboard.html",
-      "image_url": "https://media.wiley.com/journal/25732331-cover.jpg"
-    },
-    {
       "journal_id": "risk_management_insurance_review",
       "journal_name": "Risk Management and Insurance Review",
       "appointments": 18,
@@ -1004,6 +544,466 @@
       "issn": "0317-0861",
       "source_page": "https://www.cpp-adp.ca/english-menu",
       "image_url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdXHqa9ppFFrs1ZVN33IDbfnuAwXoKTbHRRcG6X9P1NHgiH0sUlkGYm1jtUbx8RVDlx30dPC_EZao3Bczo5Bda1I76geIxCakLMmG-2iP-ckjQKVV0den3gHoAWsu2HTb9ORavbLuQXSXMGNjfAsmKb-aI_9GmckDQ5kJ5Jl9LAJUw-IeTldogMmt5ojdZwCFG0X5f079PnSjZty3bJtqUdyItFOK4Nk55bfCTHNyU=w1280"
+    },
+    {
+      "journal_id": "eastern_economic_journal",
+      "journal_name": "Eastern Economic Journal",
+      "appointments": 17,
+      "priority_rank": 2373,
+      "publisher": "Springer International Publishing",
+      "issn": "0094-5056",
+      "source_page": "https://link.springer.com/journal/41302/editorial-board",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/41302.jpg"
+    },
+    {
+      "journal_id": "foreign_policy_washington",
+      "journal_name": "Foreign Policy (Washington)",
+      "appointments": 17,
+      "priority_rank": 2375,
+      "publisher": "National Affairs, Inc.",
+      "issn": "0015-7228",
+      "source_page": "https://foreignpolicy.com/staff/",
+      "image_url": "https://foreignpolicy.com/wp-content/uploads/2026/09/fall-2026-print-cover-web.jpg"
+    },
+    {
+      "journal_id": "journal_2377",
+      "journal_name": "Human Organization",
+      "appointments": 17,
+      "priority_rank": 2377,
+      "publisher": "Society for Applied Anthropology",
+      "issn": "0018-7259",
+      "source_page": "http://www.sfaa.net/publications/human-organization/",
+      "image_url": "https://appliedanthro.org/wp-content/uploads/2024/01/Human-Organization-Cover.jpeg"
+    },
+    {
+      "journal_id": "impact_assessment_project_appraisal",
+      "journal_name": "Impact Assessment and Project Appraisal",
+      "appointments": 17,
+      "priority_rank": 2378,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1461-5517",
+      "source_page": "https://www.tandfonline.com/journals/tiap20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tiap20"
+    },
+    {
+      "journal_id": "international_comparative_law_quarterly",
+      "journal_name": "International & Comparative Law Quarterly",
+      "appointments": 17,
+      "priority_rank": 2379,
+      "publisher": "Cambridge University Press",
+      "issn": "0020-5893",
+      "source_page": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly",
+      "image_url": "https://static.cambridge.org/covers/ILQ_0_0_0/international_&%20comparative%20law%20quarterly.jpg?send-full-size-image=true"
+    },
+    {
+      "journal_id": "international_journal_development_issues",
+      "journal_name": "International Journal of Development Issues",
+      "appointments": 17,
+      "priority_rank": 2380,
+      "publisher": "Emerald Group Publishing",
+      "issn": "1446-8956",
+      "source_page": "https://www.emerald.com/ijdi/article/19/2/145/122229/Development-aid-and-its-impact-on-poverty",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ijdi/issue/19/2/3/m_ijdi_cover.jpeg?Expires=1820002761&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=q-7TC7Kcok0WIuYmX-BF~4Co2UVUWilli8NLGT6k4gSSM4sAesNp1kMMYSA5wWfFtu5dCJhqwD4FxaAyxn-Nu2Wz3Z6Fi13trEhtbrDuFsl-Up6Of8LGhF-aof5sBHeiiGAEamJGxUQy9xfJ1gCwb1vuiccfwO~kH14mQv8bZga14uDE~T~6tKjwYdMwTet-ZLHWEsXSX4LRiAPSYFEOfdYtRTg6XUWZT~DnMtFxRUBemJqKAI8fE7ItKYIr2qADwDiD936QkCOiZaQrxCnKYCUAB-4sNK87lz8eBgMiUXqJBL7Q6eaWiVa-loqrNJDnFCSfv3HxcLo43YQxSRFpNQ__"
+    },
+    {
+      "journal_id": "international_journal_information_learning_technology",
+      "journal_name": "International Journal of Information and Learning Technology",
+      "appointments": 17,
+      "priority_rank": 2381,
+      "publisher": "Emerald Group Publishing",
+      "issn": "2056-4880",
+      "source_page": "https://www.emerald.com/ijilt/issue/43/1",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ijilt/issue/43/1/1/m_cover.jpeg?Expires=1844745749&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=u5rmLcFsZYLySgBjDCMYRXsroPSN9VFiiVTg36Q92ofxV5BvN0aJp6alQR~ohFXX7tarfcYeMq~AUfpGpb1WOkgAH4eF2vTWJY0dr78hhpIHY8YFoViza6XE7DFzKCGPjqJAcJUgk31vRytLnHgjWZjeFsJa7LjU33UIPb2EuDZKqcnNVBhZQ05l10f60SzdhbIVxmDm~kQkjudvR-H6eMU0UG5i2D8MefqZeld1LlARzs8gUZrUpghb4CGIy7fBavSNEruTD8douG4ga~2pX1X3meautaSb4v1AlqCM8PmOYimUanNG2NKVokYqaaCG-a-QUFhHmm~CoT-o5S0loQ__"
+    },
+    {
+      "journal_id": "journal_2382",
+      "journal_name": "International Journal of Internet Manufacturing and Services",
+      "appointments": 17,
+      "priority_rank": 2382,
+      "publisher": "Inderscience Publishers",
+      "issn": "1751-6048",
+      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijims",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijims.jpg"
+    },
+    {
+      "journal_id": "journal_economics_theology_religion",
+      "journal_name": "Journal of Economics, Theology and Religion",
+      "appointments": 17,
+      "priority_rank": 2384,
+      "publisher": "Erasmus University Rotterdam",
+      "issn": "2772-9001",
+      "source_page": "https://j-etr.org/about-the-journal/",
+      "image_url": "https://j-etr.org/wp-content/uploads/2021/11/cover.png"
+    },
+    {
+      "journal_id": "journal_interdisciplinary_economics",
+      "journal_name": "Journal of Interdisciplinary Economics",
+      "appointments": 17,
+      "priority_rank": 2386,
+      "publisher": "Sage Publications",
+      "issn": "0260-1079",
+      "source_page": "https://journals.sagepub.com/home/jie",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=jie"
+    },
+    {
+      "journal_id": "journal_international_food_agribusiness_marketing",
+      "journal_name": "Journal of International Food and Agribusiness Marketing",
+      "appointments": 17,
+      "priority_rank": 2387,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0897-4438",
+      "source_page": "https://www.tandfonline.com/journals/wifa20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=wifa20"
+    },
+    {
+      "journal_id": "journal_time_series_econometrics",
+      "journal_name": "Journal of Time Series Econometrics",
+      "appointments": 17,
+      "priority_rank": 2389,
+      "publisher": "De Gruyter",
+      "issn": "1941-1928",
+      "source_page": "https://www.degruyterbrill.com/journal/key/jtse/html",
+      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/JTSE/product_pages"
+    },
+    {
+      "journal_id": "nber_macroeconomics_annual",
+      "journal_name": "NBER Macroeconomics Annual",
+      "appointments": 17,
+      "priority_rank": 2391,
+      "publisher": "University of Chicago Press",
+      "issn": "0889-3365",
+      "source_page": "https://www.journals.uchicago.edu/journals/ma/board",
+      "image_url": "https://www.journals.uchicago.edu/action/showCoverImage?type=current&journalCode=ma"
+    },
+    {
+      "journal_id": "opec_energy_review",
+      "journal_name": "OPEC Energy Review",
+      "appointments": 17,
+      "priority_rank": 2392,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1753-0229",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/17530237/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/17530237-cover.jpg"
+    },
+    {
+      "journal_id": "philosophy_public_affairs",
+      "journal_name": "Philosophy & Public Affairs",
+      "appointments": 17,
+      "priority_rank": 2393,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0048-3915",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/10884963/homepage/editorial-board",
+      "image_url": "https://media.wiley.com/journal/10884963-cover.jpg"
+    },
+    {
+      "journal_id": "journal_2394",
+      "journal_name": "Public and Municipal Finance",
+      "appointments": 17,
+      "priority_rank": 2394,
+      "publisher": "Business Perspectives",
+      "issn": "2222-1867",
+      "source_page": "https://businessperspectives.org/journals/public-and-municipal-finance#general-information",
+      "image_url": "https://businessperspectives.org/cache/com_zoo/images/PMF_1_2012_8ddd4bd3e82a3d5d28b9960029f96e51.jpg"
+    },
+    {
+      "journal_id": "publishing_research_quarterly",
+      "journal_name": "Publishing Research Quarterly",
+      "appointments": 17,
+      "priority_rank": 2395,
+      "publisher": "Springer International Publishing",
+      "issn": "1053-8801",
+      "source_page": "https://link.springer.com/journal/12109/editorial-board",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/12109.jpg"
+    },
+    {
+      "journal_id": "sociologie_du_travail",
+      "journal_name": "Sociologie du Travail",
+      "appointments": 17,
+      "priority_rank": 2397,
+      "publisher": "Association Sociologie du travail / OpenEdition (left Elsevier 2016)",
+      "issn": "0038-0296",
+      "source_page": "https://www.sociologiedutravail.org/Comite-de-redaction",
+      "image_url": "https://ars.els-cdn.com/content/image/X00380296.jpg"
+    },
+    {
+      "journal_id": "south_asia_economic_journal",
+      "journal_name": "South Asia Economic Journal",
+      "appointments": 17,
+      "priority_rank": 2398,
+      "publisher": "Sage Publications",
+      "issn": "1391-5614",
+      "source_page": "https://journals.sagepub.com/home/sae",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=sae"
+    },
+    {
+      "journal_id": "asia_pacific_tax_bulletin",
+      "journal_name": "Asia-Pacific Tax Bulletin",
+      "appointments": 16,
+      "priority_rank": 2403,
+      "publisher": "IBFD",
+      "issn": "1385-3082",
+      "source_page": "https://www.ibfd.org/journals/journal-article-collection-asia-pacific",
+      "image_url": "https://www.ibfd.org/sites/default/files/styles/portrait_xl/public/2026-06/aptb-1.jpg.webp?h=f61ad192&itok=X60zSFfB"
+    },
+    {
+      "journal_id": "design_studies",
+      "journal_name": "Design Studies",
+      "appointments": 16,
+      "priority_rank": 2406,
+      "publisher": "Elsevier",
+      "issn": "0142-694X",
+      "source_page": "https://www.sciencedirect.com/journal/design-studies",
+      "image_url": "https://ars.els-cdn.com/content/image/X0142694X.jpg"
+    },
+    {
+      "journal_id": "journal_2413",
+      "journal_name": "Insurance Markets and Companies",
+      "appointments": 16,
+      "priority_rank": 2413,
+      "publisher": "Business Perspectives",
+      "issn": "2616-3551",
+      "source_page": "https://businessperspectives.org/journals/insurance-markets-and-companies?category_id=30",
+      "image_url": "https://businessperspectives.org/cache/com_zoo/images/IMC_2017_a0ea63289d9083ee53abf9133488a0ec.jpg"
+    },
+    {
+      "journal_id": "international_migration",
+      "journal_name": "International Migration",
+      "appointments": 16,
+      "priority_rank": 2414,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0020-7985",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/14682435/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/14682435-cover.jpg"
+    },
+    {
+      "journal_id": "loisir_et_societe_society_leisure",
+      "journal_name": "Loisir et Societe (Society and Leisure)",
+      "appointments": 16,
+      "priority_rank": 2419,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0705-3436",
+      "source_page": "https://www.tandfonline.com/journals/rles20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rles20"
+    },
+    {
+      "journal_id": "margin_journal_applied_economic_research",
+      "journal_name": "Margin: The journal of applied economic research",
+      "appointments": 16,
+      "priority_rank": 2420,
+      "publisher": "Sage Publications",
+      "issn": "0973-8010",
+      "source_page": "https://journals.sagepub.com/home/mara",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=mara"
+    },
+    {
+      "journal_id": "melbourne_journal_international_law",
+      "journal_name": "Melbourne Journal of International Law",
+      "appointments": 16,
+      "priority_rank": 2421,
+      "publisher": "The University of Melbourne",
+      "issn": "1444-8602",
+      "source_page": "https://law.unimelb.edu.au/mjil",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/8/83/Melbourne_Journal_of_International_Law_-_Logo_%28Updates_2018%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "journal_id": "chinese_economy_translation_studies",
+      "journal_name": "The Chinese Economy: translation and studies",
+      "appointments": 16,
+      "priority_rank": 2424,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1097-1475",
+      "source_page": "https://www.tandfonline.com/journals/mces20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=mces20"
+    },
+    {
+      "journal_id": "journal_2425",
+      "journal_name": "Agrekon",
+      "appointments": 15,
+      "priority_rank": 2425,
+      "publisher": "Taylor & Francis",
+      "issn": "0303-1853",
+      "source_page": "https://www.tandfonline.com/toc/ragr20/current",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ragr20"
+    },
+    {
+      "journal_id": "algorithmic_finance",
+      "journal_name": "Algorithmic Finance",
+      "appointments": 15,
+      "priority_rank": 2426,
+      "publisher": "Sage Publications",
+      "issn": "2158-5571",
+      "source_page": "https://journals.sagepub.com/home/alg",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=alg"
+    },
+    {
+      "journal_id": "american_economist",
+      "journal_name": "American Economist",
+      "appointments": 15,
+      "priority_rank": 2427,
+      "publisher": "Sage Publications",
+      "issn": "0569-4345",
+      "source_page": "https://journals.sagepub.com/home/aex",
+      "image_url": "https://journals.sagepub.com/action/showCoverImage?type=current&journalCode=aex"
+    },
+    {
+      "journal_id": "economic_papers_journal_applied_economics_policy",
+      "journal_name": "Economic Papers: a journal of applied economics and policy",
+      "appointments": 15,
+      "priority_rank": 2430,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "1759-3441",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/17593441/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/17593441-cover.jpg"
+    },
+    {
+      "journal_id": "journal_2431",
+      "journal_name": "Economic Research-Ekonomska Istraživanja",
+      "appointments": 15,
+      "priority_rank": 2431,
+      "publisher": "Taylor & Francis",
+      "issn": "1331-677X",
+      "source_page": "https://www.tandfonline.com/toc/rero20/current",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rero20"
+    },
+    {
+      "journal_id": "journal_2432",
+      "journal_name": "Feminist Review",
+      "appointments": 15,
+      "priority_rank": 2432,
+      "publisher": "SAGE Publications",
+      "issn": "0141-7789",
+      "source_page": "https://journals.sagepub.com/home/fer",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/3/36/Feminist_Review_cover.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "journal_id": "financial_planning_research_journal",
+      "journal_name": "Financial Planning Research Journal",
+      "appointments": 15,
+      "priority_rank": 2433,
+      "publisher": "Financial Advice Association of Australia, in partnership with Paradigm Publishing Services",
+      "issn": "2206-1355",
+      "source_page": "https://reference-global.com/journal/FPRJ?tab=editorial-board#journal-tabs",
+      "image_url": "https://paradigm-files.s3.eu-central-1.amazonaws.com/FPRJ/cover-image.jpg"
+    },
+    {
+      "journal_id": "international_journal_bonds_derivatives",
+      "journal_name": "International Journal of Bonds and Derivatives",
+      "appointments": 15,
+      "priority_rank": 2437,
+      "publisher": "Inderscience Publishers",
+      "issn": "2050-2281",
+      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijbd#issue",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijbd.jpg"
+    },
+    {
+      "journal_id": "journal_2440",
+      "journal_name": "International Journal of Six Sigma and Competitive Advantage",
+      "appointments": 15,
+      "priority_rank": 2440,
+      "publisher": "Inderscience Publishers",
+      "issn": "1479-2494",
+      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijssca",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijssca.jpg"
+    },
+    {
+      "journal_id": "journal_applied_economic_sciences",
+      "journal_name": "Journal of Applied Economic Sciences",
+      "appointments": 15,
+      "priority_rank": 2441,
+      "publisher": "ASERS Publishing",
+      "issn": "1843-6110",
+      "source_page": "https://www.ritha.eu/journals/JAES#editorial_board",
+      "image_url": "https://ritha.eu/storage/2099/newest_Cover-JAES.png"
+    },
+    {
+      "journal_id": "journal_political_economy_macroeconomics",
+      "journal_name": "Journal of Political Economy: Macroeconomics",
+      "appointments": 15,
+      "priority_rank": 2442,
+      "publisher": "University of Chicago Press",
+      "issn": "2832-9341",
+      "source_page": "https://www.journals.uchicago.edu/journals/jpema/board",
+      "image_url": "https://www.journals.uchicago.edu/action/showCoverImage?type=current&journalCode=jpema"
+    },
+    {
+      "journal_id": "journal_political_economy_microeconomics",
+      "journal_name": "Journal of Political Economy: Microeconomics",
+      "appointments": 15,
+      "priority_rank": 2443,
+      "publisher": "University of Chicago Press",
+      "issn": "2832-9368",
+      "source_page": "https://www.journals.uchicago.edu/journals/jpemi/board",
+      "image_url": "https://www.journals.uchicago.edu/action/showCoverImage?type=current&journalCode=jpemi"
+    },
+    {
+      "journal_id": "journal_taxation_investments",
+      "journal_name": "Journal of Taxation of Investments",
+      "appointments": 15,
+      "priority_rank": 2444,
+      "publisher": "Civic Research Institute",
+      "issn": "0747-9115",
+      "source_page": "https://www.civicresearchinstitute.com/jti_board.html",
+      "image_url": "https://www.civicresearchinstitute.com/covers/JTI.jpg"
+    },
+    {
+      "journal_id": "kings_law_journal",
+      "journal_name": "King's Law Journal",
+      "appointments": 15,
+      "priority_rank": 2445,
+      "publisher": "Taylor & Francis Online",
+      "issn": "0961-5768",
+      "source_page": "https://www.tandfonline.com/journals/rklj20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rklj20"
+    },
+    {
+      "journal_id": "middle_east_development_journal",
+      "journal_name": "Middle East Development Journal",
+      "appointments": 15,
+      "priority_rank": 2446,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1793-8120",
+      "source_page": "https://www.tandfonline.com/journals/rmdj20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rmdj20"
+    },
+    {
+      "journal_id": "milbank_quarterly",
+      "journal_name": "The Milbank Quarterly",
+      "appointments": 15,
+      "priority_rank": 2454,
+      "publisher": "Wiley-Blackwell Publishing",
+      "issn": "0887-378X",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/14680009/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/14680009-cover.jpg"
+    },
+    {
+      "journal_id": "journal_2456",
+      "journal_name": "Transactions of the Institute of British Geographers",
+      "appointments": 15,
+      "priority_rank": 2456,
+      "publisher": "Wiley",
+      "issn": "0020-2754",
+      "source_page": "http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1475-5661",
+      "image_url": "https://media.wiley.com/journal/00202754-cover.jpg"
+    },
+    {
+      "journal_id": "visitor_studies",
+      "journal_name": "Visitor Studies",
+      "appointments": 15,
+      "priority_rank": 2457,
+      "publisher": "Taylor & Francis Online",
+      "issn": "1064-5578",
+      "source_page": "https://www.tandfonline.com/journals/uvst20",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=uvst20"
+    },
+    {
+      "journal_id": "african_economic_history",
+      "journal_name": "African Economic History",
+      "appointments": 14,
+      "priority_rank": 2460,
+      "publisher": "University of Wisconsin Press",
+      "issn": "0145-2258",
+      "source_page": "https://aeh.uwpress.org/content",
+      "image_url": "https://aeh.uwpress.org/sites/default/files/styles/medium/public/highwire/wpaeh/54/2.cover-source.jpg?itok=yCLCFtzo"
     }
   ],
   "rejected_candidates": [
@@ -2133,6 +2133,171 @@
       "journal_id": "journal_1672",
       "journal_name": "Journal of Financial Market Infrastructures",
       "reason": "Text-heavy call-for-papers flyer unsuitable as journal icon"
+    },
+    {
+      "journal_id": "studies_nonlinear_dynamics_econometrics",
+      "journal_name": "Studies in Nonlinear Dynamics & Econometrics",
+      "reason": "Unrelated photograph"
+    },
+    {
+      "journal_id": "adam_smith_review",
+      "journal_name": "The Adam Smith Review",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "journal_2204",
+      "journal_name": "African Evaluation Journal",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "journal_2222",
+      "journal_name": "International Journal of Services Economics and Management",
+      "reason": "Different journal title: International Journal of Services Technology and Management"
+    },
+    {
+      "journal_id": "journal_computational_finance",
+      "journal_name": "Journal of Computational Finance",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "journal_australasian_law_academics_association",
+      "journal_name": "Journal of the Australasian Law Academics Association",
+      "reason": "Association logo without journal identity"
+    },
+    {
+      "journal_id": "qut_law_review",
+      "journal_name": "QUT Law Review",
+      "reason": "Header too wide to remain legible at icon size"
+    },
+    {
+      "journal_id": "journal_statistical_research",
+      "journal_name": "Journal of Statistical Research",
+      "reason": "Generic journal hosting platform logo"
+    },
+    {
+      "journal_id": "new_perspectives_political_economy",
+      "journal_name": "New Perspectives on Political Economy",
+      "reason": "Generic link icon"
+    },
+    {
+      "journal_id": "romanian_economic_business_review",
+      "journal_name": "Romanian Economic Business Review",
+      "reason": "Decorative image without journal identity"
+    },
+    {
+      "journal_id": "business_law_review",
+      "journal_name": "Business Law Review",
+      "reason": "Generic university logo"
+    },
+    {
+      "journal_id": "journal_accountancy",
+      "journal_name": "Journal of Accountancy",
+      "reason": "Blank artwork"
+    },
+    {
+      "journal_id": "international_journal_economic_perspectives",
+      "journal_name": "International Journal of Economic Perspectives",
+      "reason": "Generic commission logo"
+    },
+    {
+      "journal_id": "public_policy_research",
+      "journal_name": "Public Policy Research",
+      "reason": "Different current journal title: Progressive Review"
+    },
+    {
+      "journal_id": "manchester_journal_international_economic_law",
+      "journal_name": "Manchester Journal of International Economic Law",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "restitution_law_review",
+      "journal_name": "Restitution Law Review",
+      "reason": "Generic ISSN organization logo"
+    },
+    {
+      "journal_id": "financijska_teorija_i_praksa",
+      "journal_name": "Financijska Teorija i Praksa",
+      "reason": "Generic institute logo"
+    },
+    {
+      "journal_id": "journal_new_business_ideas_trends",
+      "journal_name": "Journal of New Business Ideas and Trends",
+      "reason": "Different journal title: IAR Journal of Medicine and Surgery Research"
+    },
+    {
+      "journal_id": "journal_social_political_economic_studies",
+      "journal_name": "Journal of Social, Political and Economic Studies",
+      "reason": "Header too wide to remain legible at icon size"
+    },
+    {
+      "journal_id": "asian_journal_agriculture_development",
+      "journal_name": "Asian Journal of Agriculture and Development",
+      "reason": "Book cover rather than journal artwork"
+    },
+    {
+      "journal_id": "new_zealand_journal_applied_business_research",
+      "journal_name": "New Zealand Journal of Applied Business Research",
+      "reason": "Article first page"
+    },
+    {
+      "journal_id": "academia_economic_papers",
+      "journal_name": "Academia Economic Papers",
+      "reason": "Generic institute logo"
+    },
+    {
+      "journal_id": "asian_journal_accounting_governance",
+      "journal_name": "Asian Journal of Accounting and Governance",
+      "reason": "Header too wide to remain legible at icon size"
+    },
+    {
+      "journal_id": "australasian_agribusiness_review",
+      "journal_name": "Australasian Agribusiness Review",
+      "reason": "Generic university logo"
+    },
+    {
+      "journal_id": "journal_econometric_study_northeast_asia_jesna",
+      "journal_name": "The Journal of Econometric Study of Northeast Asia (JESNA)",
+      "reason": "Generic institute logo"
+    },
+    {
+      "journal_id": "bulletin_international_taxation",
+      "journal_name": "Bulletin for International Taxation",
+      "reason": "Generic tax platform advertisement"
+    },
+    {
+      "journal_id": "population_development_review",
+      "journal_name": "Population and Development Review",
+      "reason": "Book-like supplement cover without a prominent journal identity"
+    },
+    {
+      "journal_id": "sydney_law_review",
+      "journal_name": "The Sydney Law Review",
+      "reason": "Building photograph"
+    },
+    {
+      "journal_id": "acta_oeconomica",
+      "journal_name": "Acta Oeconomica",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "journal_2533",
+      "journal_name": "Acta Commercii",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "annual_review_banking_financial_law",
+      "journal_name": "Annual Review of Banking and Financial Law",
+      "reason": "Different displayed journal title: Review of Banking and Financial Law"
+    },
+    {
+      "journal_id": "journal_2001",
+      "journal_name": "AER: Insights",
+      "reason": "Composite editor photograph rather than standalone journal artwork"
+    },
+    {
+      "journal_id": "economia",
+      "journal_name": "Economia",
+      "reason": "Different Economia journal: publisher and ISSN do not match the PUCP catalog record"
     }
   ]
 }
