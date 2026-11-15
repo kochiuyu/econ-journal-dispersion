@@ -2,8 +2,8 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 756,
-  "round_progress_after_this_batch": 100,
-  "batch": 2,
+  "round_progress_after_this_batch": 108,
+  "batch": 3,
   "pending_candidates": [
     {
       "journal_id": "journal_465",
@@ -94,36 +94,6 @@
       "issn": "2433-3689",
       "source_page": "https://www.jil.go.jp/english/jli/intro.html",
       "image_url": "https://www.jil.go.jp/english/images/e-mm_ovoff.png"
-    },
-    {
-      "journal_id": "ieee_transactions_engineering_management",
-      "journal_name": "IEEE Transactions on Engineering Management",
-      "appointments": 6,
-      "priority_rank": 2648,
-      "publisher": "Institute of Electrical and Electronics Engineers",
-      "issn": "1558-0040",
-      "source_page": "https://www.ieee-tems.org/ieee-transactions-on-engineering-management/",
-      "image_url": "https://i0.wp.com/www.ieee-tems.org/wp-content/uploads/2024/12/IEEE-TEM-3.png?resize=270%2C375"
-    },
-    {
-      "journal_id": "oxford_university_commonwealth_law_journal",
-      "journal_name": "Oxford University Commonwealth Law Journal",
-      "appointments": 6,
-      "priority_rank": 2657,
-      "publisher": "Taylor & Francis",
-      "issn": "1472-9342",
-      "source_page": "https://www.law.ox.ac.uk/ouclj/editorial-board",
-      "image_url": "https://www.law.ox.ac.uk/sites/default/files/filebIEZyN"
-    },
-    {
-      "journal_id": "lloyds_maritime_commercial_law_quarterly",
-      "journal_name": "Lloyd's Maritime and Commercial Law Quarterly",
-      "appointments": 1,
-      "priority_rank": 2743,
-      "publisher": "Informa Law",
-      "issn": "0306-2945",
-      "source_page": "https://www.i-law.com/ilaw/publicationlist.htm?format=Journal",
-      "image_url": "https://static.i-law.com/ilaw/CLQ/images/CLQ_cover.jpg"
     }
   ],
   "rejected_candidates": [
