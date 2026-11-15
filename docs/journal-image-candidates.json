@@ -2,159 +2,9 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 1000,
-  "round_progress_after_this_batch": 200,
-  "batch": 4,
+  "round_progress_after_this_batch": 250,
+  "batch": 5,
   "pending_candidates": [
-    {
-      "journal_id": "journal_1115",
-      "journal_name": "Journal of Responsible Innovation",
-      "appointments": 50,
-      "priority_rank": 1115,
-      "publisher": "Taylor & Francis",
-      "issn": "2329-9460",
-      "source_page": "https://www.tandfonline.com/toc/tjri20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tjri20"
-    },
-    {
-      "journal_id": "journal_1120",
-      "journal_name": "Review of Policy Research",
-      "appointments": 50,
-      "priority_rank": 1120,
-      "publisher": "Wiley",
-      "issn": "1541-132X",
-      "source_page": "http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1541-1338",
-      "image_url": "https://media.wiley.com/journal/1541132X-cover.jpg"
-    },
-    {
-      "journal_id": "journal_1182",
-      "journal_name": "Queueing Systems",
-      "appointments": 48,
-      "priority_rank": 1182,
-      "publisher": "Springer Science+Business Media",
-      "issn": "0257-0130",
-      "source_page": "http://www.springer.com/business+%26+management/operations+research/journal/11134",
-      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/11134.jpg"
-    },
-    {
-      "journal_id": "journal_1193",
-      "journal_name": "Career Development Quarterly",
-      "appointments": 47,
-      "priority_rank": 1193,
-      "publisher": "Wiley",
-      "issn": "0889-4019",
-      "source_page": "https://onlinelibrary.wiley.com/journal/21610045",
-      "image_url": "https://media.wiley.com/journal/08894019-cover.jpg"
-    },
-    {
-      "journal_id": "euro_journal_transportation_logistics",
-      "journal_name": "EURO Journal on Transportation and Logistics",
-      "appointments": 47,
-      "priority_rank": 1197,
-      "publisher": "Springer Science+Business Media",
-      "issn": "2192-4376",
-      "source_page": "https://www.journals.elsevier.com/euro-journal-on-transportation-and-logistics",
-      "image_url": "https://ars.els-cdn.com/content/image/X21924376.jpg"
-    },
-    {
-      "journal_id": "journal_1242",
-      "journal_name": "Latin American Business Review",
-      "appointments": 46,
-      "priority_rank": 1242,
-      "publisher": "Taylor & Francis",
-      "issn": "1097-8526",
-      "source_page": "https://www.tandfonline.com/toc/wlab20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=wlab20"
-    },
-    {
-      "journal_id": "journal_1261",
-      "journal_name": "European Journal of Higher Education",
-      "appointments": 45,
-      "priority_rank": 1261,
-      "publisher": "Taylor & Francis",
-      "issn": "2156-8235",
-      "source_page": "http://www.tandfonline.com/toc/rehe20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rehe20"
-    },
-    {
-      "journal_id": "journal_1270",
-      "journal_name": "International Journal of Computer Integrated Manufacturing",
-      "appointments": 45,
-      "priority_rank": 1270,
-      "publisher": "Taylor & Francis",
-      "issn": "0951-192X",
-      "source_page": "https://www.tandfonline.com/toc/tcim20/current",
-      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=tcim20"
-    },
-    {
-      "journal_id": "eph_international_journal_business_management_science",
-      "journal_name": "EPH-International Journal of Business & Management Science",
-      "appointments": 44,
-      "priority_rank": 1298,
-      "publisher": "Southern Cross Academic Press",
-      "issn": "2208-2190",
-      "source_page": "https://eijbms.com/index.php/ms",
-      "image_url": "https://eijbms.com/public/site/images/simi/screenshot-2026-09-04-164544.png"
-    },
-    {
-      "journal_id": "review_law_economics",
-      "journal_name": "Review of Law & Economics",
-      "appointments": 44,
-      "priority_rank": 1323,
-      "publisher": "De Gruyter",
-      "issn": "2194-6000",
-      "source_page": "https://www.degruyterbrill.com/journal/key/rle/html",
-      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/RLE/product_pages"
-    },
-    {
-      "journal_id": "asia_pacific_journal_health_management",
-      "journal_name": "Asia Pacific Journal of Health Management",
-      "appointments": 43,
-      "priority_rank": 1328,
-      "publisher": "Australian College of Health Service Executives",
-      "issn": "1833-3818",
-      "source_page": "https://journal.achsm.org.au",
-      "image_url": "https://journal.achsm.org.au/public/journals/1/submission_5933_5959_coverImage_en_US.jpg"
-    },
-    {
-      "journal_id": "current_issues_auditing",
-      "journal_name": "Current Issues in Auditing",
-      "appointments": 43,
-      "priority_rank": 1333,
-      "publisher": "American Accounting Association",
-      "issn": "1936-1270",
-      "source_page": "https://aaahq.org/Research/Journals/Current-Issues-in-Auditing#editorialBoardAnchor",
-      "image_url": "https://aaahq.org/portals/0/images/journals/journal%20covers/JournalCover_CurrentIssues-Web.png"
-    },
-    {
-      "journal_id": "development_learning_organizations",
-      "journal_name": "Development and Learning in Organizations",
-      "appointments": 43,
-      "priority_rank": 1334,
-      "publisher": "Emerald Group Publishing",
-      "issn": "1477-7282",
-      "source_page": "https://www.emerald.com/dlo/article/40/2/66/1342539/Knowledge-management-as-a-force-for-good",
-      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/dlo/issue/40/2/1/m_cover.jpeg?Expires=1836546189&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=hrG6fVLmPsGmkf1BgkoopE5v7zIT1kDddTRdL89HWxiE3udO6yMC3f04XvjOcNw-u2UjsX-YjcDApjYRtM3cj8zsG0M9T3gg4IGZx9VVcp4~kayvt1foUxMhkPa-GeZ7vs4JjCACXRuZpGftCBkxUq8HyzN~Mtg8Qgp0vM8kI21GCXJIEO7xsgTHzXMhVWYV588mBLqMOr00V9WTx80~Iw6wV8tY4SmdistaumINYJWZuyNHMErelBS-cDirj9nFlbpqoYdKkXbU0GO4Tm7RaeGF1Il9B784DtrTvl9wVIkC20s-PHbe~LZdbioL~oFnRbQmLPm3bgZXwYlm5FGVdQ__"
-    },
-    {
-      "journal_id": "journal_1335",
-      "journal_name": "EURO Journal on Computational Optimization",
-      "appointments": 43,
-      "priority_rank": 1335,
-      "publisher": "Springer Science+Business Media",
-      "issn": "2192-4406",
-      "source_page": "https://www.sciencedirect.com/journal/euro-journal-on-computational-optimization",
-      "image_url": "https://ars.els-cdn.com/content/image/X21924406.jpg"
-    },
-    {
-      "journal_id": "econometrics_journal",
-      "journal_name": "Econometrics Journal",
-      "appointments": 43,
-      "priority_rank": 1336,
-      "publisher": "Oxford University Press",
-      "issn": "1368-4221",
-      "source_page": "https://academic.oup.com/ectj",
-      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/ectj/ectj_ogimage.png"
-    },
     {
       "journal_id": "journal_1349",
       "journal_name": "Journal of Co-operative Organization and Management",
@@ -274,6 +124,16 @@
       "issn": "1460-6712",
       "source_page": "https://www.inderscience.com/jhome.php?jcode=ijfsm",
       "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijfsm.jpg"
+    },
+    {
+      "journal_id": "international_journal_housing_markets_analysis",
+      "journal_name": "International Journal of Housing Markets and Analysis",
+      "appointments": 41,
+      "priority_rank": 1421,
+      "publisher": "Emerald Group Publishing",
+      "issn": "1753-8270",
+      "source_page": "https://www.emerald.com/ijhma/article/17/6/1351/1215061/Mining-activities-and-housing-price-nexus-evidence",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ijhma/issue/17/6/1/m_ijhma_cover.jpeg?Expires=1824411176&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=PX7ShZEg9WiQP32Xs56xD95e1p1XmVY2UdjLPAPEOph9KBv-tQ4vpqimC-AtdVWGeny1Me-rmoIEhJX9fqtt5Y8-RV0~y0Vu7J2hR528ytrq283I2og5kcEWrhcd2r6spRXhMhxPPHlLCqGMZ0BrMpsmcoTYXKqruuxRYt-vh57X3NtR-GdmlDr~bG2wXW2U2~lbbdJIo8DxLBIac6YnITTaD3UcW8X~9t2OPUESv31smmRgB6oIzoTOsJ12b~NVbYLFpXhAdau-X6e4~0K7w37JfSffcFUEQseIh51BIyBHcAzQj3ISUcArb8sVRYOzdKI9km7sGTnDGjCCY9gPsA__"
     },
     {
       "journal_id": "journal_1428",
@@ -746,6 +606,16 @@
       "image_url": "https://aaahq.org/portals/0/images/journals/journal%20covers/JournalCover_Government-Web.png"
     },
     {
+      "journal_id": "journal_research_marketing_entrepreneurship",
+      "journal_name": "Journal of Research in Marketing and Entrepreneurship",
+      "appointments": 32,
+      "priority_rank": 1811,
+      "publisher": "Emerald Group Publishing",
+      "issn": "1471-5201",
+      "source_page": "https://www.emerald.com/jrme/article/28/3/229/1380472/Gender-and-age-structure-of-the-Czech",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jrme/issue/28/3/2/m_cover.jpeg?Expires=1847401159&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=DJM685XUvOSk-7c7O23HYJtf~-cgikk1OmjLkFoJV~6JNyrkgFk600ZyBbreiFkv6bbo-8GX9XpUkgfYGo19bk2PS6DEX~k5JUVN0N-zd0BRKn2iCrLdOGAiBbK-nxfwA4a76AxiiKiwI0aVNZMzhhlV759RsXxEPndw91XJ0civ3Pvoz6WgtmQ8MUy1uZHHTWziTH~n09oP2T4CaCTtUUXuJ989t0cvqW-3orCLRocvl5bbHQKJkpa75sRnQhv4tU~vITPFs4QZ~63wRwz5gXtPaSQQDo9O3Ny35j8lxyaBiHjvmuRHB8j99KhzSlnTALoaw9qDEgM-FEW7rxlRBQ__"
+    },
+    {
       "journal_id": "review_middle_east_economics_finance",
       "journal_name": "Review of Middle East Economics and Finance",
       "appointments": 32,
@@ -896,6 +766,16 @@
       "image_url": "https://ars.els-cdn.com/content/image/X17511577.jpg"
     },
     {
+      "journal_id": "journal_investment_compliance",
+      "journal_name": "Journal of Investment Compliance",
+      "appointments": 29,
+      "priority_rank": 1935,
+      "publisher": "Emerald Group Publishing",
+      "issn": "1528-5812",
+      "source_page": "https://www.emerald.com/joic/issue/16/1",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/joic/issue/16/1/2/m_joic_cover.jpeg?Expires=1816238911&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=autvWZg06TDUvXaKtfLtDSrQHjWduWLu202jphKOW9RJPBk6x6be1~pRnmYQzcyJDOIbAa8iIPHwjB79hwmwXLzpqLsu~HzARErMDiYFFVMr06H13FdcEc-Hj07uBJRK4W~EiuDFcQxEcGXQvkDIHw0HhaINWsECdQd~8CH6iaZABKxx~q8sW6R0dMnlxoYeSAWNfPonfXqxz7eQzJNecA79JM1Oisi4xNtfdO3a1bK99bP6CJjJe~ATbKQfhS8ptvemXMSxAMDIEvRiWmABZW9p5p8epJonscJMaUkLK2U0jnx6xzqbsqHVJkpm8WCyqnsrZj8xoPN0BX4B8AVkyA__"
+    },
+    {
       "journal_id": "oxford_review_economic_policy",
       "journal_name": "Oxford Review of Economic Policy",
       "appointments": 29,
@@ -1004,6 +884,126 @@
       "issn": "2196-7040",
       "source_page": "https://www.degruyterbrill.com:443/journal/key/strm/html",
       "image_url": "https://www.degruyterbrill.com:443/document/cover/journal_key/STRM/product_pages"
+    },
+    {
+      "journal_id": "american_journal_business_ajb",
+      "journal_name": "American Journal of Business (AJB)",
+      "appointments": 27,
+      "priority_rank": 2006,
+      "publisher": "Emerald Publishing",
+      "issn": "1935-519X",
+      "source_page": "https://www.emerald.com/ajb/article/41/1/18/1345523/Incentive-strategy-and-employee-performance-a",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ajb/issue/41/1/1/m_cover.jpeg?Expires=1844272943&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=BxhArQRwefNKKu0wYK7GSC0EJCKZxGrbfPhuD77pmR2~~SVrD2Cl8lg5ge-UQdghxa~FyNfMgXVtAayTNHh9Pnt4MuHkulBV3XqBG7uVdY00D183CAKww6dgBVaDgKI1Zf5JCaNCnIj0jt-XvkQtIrgILABgWuwIRkW8d6L2dLYtWY0U3Yv6R96svSrCzYFWVlS4bqVfC04FPpJ0b8XUXxuTOiqkeyJAYXqWZqlhAHO73fQiSOOfRXmxjV1lz49xa1RKcX-xSKb57nslwSEc7xDbxzIdizSPWWZ6Fbz8aR1uKp1OcaBKy~-cT4t-4UloraMWcBtksw3ukrsWWvdIZw__"
+    },
+    {
+      "journal_id": "asia_pacific_journal_risk_insurance",
+      "journal_name": "Asia-Pacific Journal of Risk and Insurance",
+      "appointments": 27,
+      "priority_rank": 2008,
+      "publisher": "De Gruyter",
+      "issn": "2194-606X",
+      "source_page": "https://www.degruyterbrill.com/journal/key/apjri/html#editorial",
+      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/APJRI/product_pages"
+    },
+    {
+      "journal_id": "journal_2023",
+      "journal_name": "Journal of European Social Policy",
+      "appointments": 27,
+      "priority_rank": 2023,
+      "publisher": "SAGE Publishing",
+      "issn": "0958-9287",
+      "source_page": "http://www.sagepub.com/journalsProdDesc.nav?prodId=Journal200915",
+      "image_url": "https://cmn-cdn-001.sagepub.com/spinjournals/titles/200915/cov_sj_150778.jpg"
+    },
+    {
+      "journal_id": "annals_american_academy_political_social_science",
+      "journal_name": "Annals of the American Academy of Political and Social Science",
+      "appointments": 26,
+      "priority_rank": 2036,
+      "publisher": "SAGE Publishing",
+      "issn": "0002-7162",
+      "source_page": "https://us.sagepub.com/en-us/nam/the-annals-of-the-american-academy-of-political-and-social-science/journal200750",
+      "image_url": "https://cmn-cdn-001.sagepub.com/spinjournals/titles/200750/cov_sj_150519.jpg"
+    },
+    {
+      "journal_id": "enterprise_development_microfinance",
+      "journal_name": "Enterprise Development & Microfinance",
+      "appointments": 26,
+      "priority_rank": 2042,
+      "publisher": "Practical Action Publishing",
+      "issn": "1755-1978",
+      "source_page": "https://papjournals.com/index.php/edm",
+      "image_url": "https://papjournals.com/public/journals/1/cover_issue_121_en_US.jpg"
+    },
+    {
+      "journal_id": "foreign_affairs",
+      "journal_name": "Foreign Affairs",
+      "appointments": 26,
+      "priority_rank": 2046,
+      "publisher": "Council on Foreign Relations",
+      "issn": "0015-7120",
+      "source_page": "https://www.foreignaffairs.com/staff",
+      "image_url": "https://cdn-live.foreignaffairs.com/sites/default/files/styles/_webp_issue_small_2x/public/images/2026/08/17/FA_SO_2026_Cover.jpg.webp?itok=TyWQpa4o"
+    },
+    {
+      "journal_id": "journal_agricultural_food_industrial_organization",
+      "journal_name": "Journal of Agricultural & Food Industrial Organization",
+      "appointments": 26,
+      "priority_rank": 2055,
+      "publisher": "De Gruyter",
+      "issn": "1542-0485",
+      "source_page": "https://www.degruyterbrill.com/journal/key/jafio/html",
+      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/JAFIO/product_pages"
+    },
+    {
+      "journal_id": "journal_corporate_real_estate",
+      "journal_name": "Journal of Corporate Real Estate",
+      "appointments": 26,
+      "priority_rank": 2058,
+      "publisher": "Emerald Group Publishing",
+      "issn": "1463-001X",
+      "source_page": "https://www.emerald.com/jcre/issue/25/4",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jcre/issue/25/4/3/m_jcre_cover.jpeg?Expires=1842360749&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=TbaRMM974CQWCqm2ju7o5SRW2~3fxK1O2tVW2U6H72I6V8jvSKKrBJWPrvo7n8hDtweueXdMmVPjQ1L6JXWC-SX9ilepn1GrEAb6VS8pLDxyWKynpMk~wWF5oAW4o9Wgo-aXGaVXjjAOOC9SwGf8hlwJ52KjrkSG3UnKlNoCzz9hl~OaRZ1Dz9DtV17QIcQRjBKRwmmCWpCT37hVc~N6AxV2PXokEgSccphPT3mqPibe01mhoDAd-ZI891AvxInV~18AUoRqZbFszbKPqwc6fMU0feSC4FPoUMvsi~HYtjWvNg0LzH7eFfjW9mCYq6SJbzIMPkxwkszYoWBblLCfhQ__"
+    },
+    {
+      "journal_id": "journal_2062",
+      "journal_name": "Journal of International Entrepreneurship",
+      "appointments": 26,
+      "priority_rank": 2062,
+      "publisher": "Springer Science+Business Media",
+      "issn": "1570-7385",
+      "source_page": "https://link.springer.com/journal/10843",
+      "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10843.jpg"
+    },
+    {
+      "journal_id": "journal_tax_administration",
+      "journal_name": "Journal of Tax Administration",
+      "appointments": 26,
+      "priority_rank": 2066,
+      "publisher": "University of Exeter Business School",
+      "issn": "2059-190X",
+      "source_page": "http://jota.website/index.php/JoTA",
+      "image_url": "https://jota.website/public/journals/1/submission_175_175_coverImage_en_US.jpg"
+    },
+    {
+      "journal_id": "journal_american_taxation_association",
+      "journal_name": "Journal of the American Taxation Association",
+      "appointments": 26,
+      "priority_rank": 2067,
+      "publisher": "American Accounting Association",
+      "issn": "0198-9073",
+      "source_page": "https://aaahq.org/Research/Journals/The-Journal-of-the-American-Taxation-Association#editorialBoardAnchor",
+      "image_url": "https://aaahq.org/portals/0/images/journals/journal%20covers/JournalCover_Taxation-Web.png"
+    },
+    {
+      "journal_id": "review_network_economics",
+      "journal_name": "The Review of Network Economics",
+      "appointments": 26,
+      "priority_rank": 2076,
+      "publisher": "De Gruyter",
+      "issn": "1446-9022",
+      "source_page": "https://www.degruyterbrill.com/journal/key/rne/html",
+      "image_url": "https://www.degruyterbrill.com/document/cover/journal_key/RNE/product_pages"
     }
   ],
   "rejected_candidates": [
@@ -1124,6 +1124,13 @@
       "journal_name": "Journal of Enterprise Information Management",
       "reason": "Artwork shows a historical predecessor title; awaiting a cover or logo bearing the displayed journal title.",
       "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/jeim/issue/14/5-6/2/m_lim_cover.jpeg?Expires=1841457739&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=sz7R9VLCiN~UTD2ntPaey12MR90oHC8fiTPCKHiH3NVeXP259~PD6eRtGcHI3l710Tnfh89RiJ~RG2AQEkjKUFFwRYyVllOfRAIQLa0O4vmYDB~EMK~3IgNDXIZKvn4-x2WqJZNFjmPnKJTxyXu3zMJ2DNGDIRaIpjQTuf1fjv3o4MpiI~UL7CKK9I9yfW3WZIU9DBKXfppgLqJDDs-oAgJ7lrQQfssGvt8YuSv4gnjGBrWPQSSLke7e7b6D~qr0W3tPDulKZ3gzpw9MOl5D4NeWkWSeo5w8FLXRPSaDbEiuuUdWT4ZxXA9c8XtI7cbcFceomRzCvGW3E-oA6k4-PQ__",
+      "checked": "2026-11-15"
+    },
+    {
+      "journal_id": "cross_cultural_strategic_management",
+      "journal_name": "Cross Cultural & Strategic Management",
+      "reason": "Artwork bears the earlier Cross Cultural Management title; awaiting current-title artwork.",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/ccsm/issue/21/4/3/m_ccm_cover.jpeg?Expires=1817350674&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=f57bxKo10FE~IoXHbdRxXLVzl6UwTIMGRylD0iaQVHsIFld6tYJsjxGTfOjI5yoqnp1HhXMa-mnh9BGkGhSW6XRQILlieTgClhJ4~K-jStc3e1bH7cF5W1yMGZT5Lm6V7VTzkTAxvhRBB~kFME2DIHcjcer~eg-v4CWjfeVgZzKTmfTD~FAJfyFl7RanydZpnBSR372kfiT61Dfo5jLMJvU4Hmmn-KQEuv1T0c~iI80GXc-YBRgd9LTW83Tl38wqjHm7iuH0F3rXHHJwJK1fLkyrOrHuyM3qVuDqKWcCHlxbP~pvg1mrqTJxGzfk27G6cJGHBi~ZpyKQRprTzr8dSQ__",
       "checked": "2026-11-15"
     }
   ]
