@@ -1,9 +1,9 @@
 {
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
-  "round_target": 756,
-  "round_progress_after_this_batch": 108,
-  "batch": 3,
+  "round_target": 648,
+  "round_progress_after_this_batch": 42,
+  "batch": 1,
   "pending_candidates": [
     {
       "journal_id": "journal_465",
@@ -24,16 +24,6 @@
       "issn": "",
       "source_page": "https://ephemerajournal.org/what-ephemera",
       "image_url": "https://ephemerajournal.org/sites/default/files/styles/large/public/2026-10/Quicksand%20cover_0.jpg?itok=qTJ7C_KK"
-    },
-    {
-      "journal_id": "journal_1479",
-      "journal_name": "European Psychologist",
-      "appointments": 39,
-      "priority_rank": 1479,
-      "publisher": "Hogrefe Verlag",
-      "issn": "1016-9040",
-      "source_page": "https://www.hogrefe.com/eu/journal/european-psychologist/",
-      "image_url": "https://www.hogrefe.com/index.php?eID=dumpFile&t=p&p=254794&token=e0c9673318f6db760208d423b6616d89a048307f"
     },
     {
       "journal_id": "asian_academy_management_journal_accounting_finance",
