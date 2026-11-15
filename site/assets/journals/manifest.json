@@ -27245,20 +27245,25 @@
     {
       "journal_id": "journal_751",
       "journal_name": "Policing",
-      "issn": "",
-      "image_url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/policing/Issue/17/91/m_cover.jpeg?Expires=1800115812&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=GhZajg4MVrulND0hk-gMSgEl4kne1gBP08cBI8cUt2KU95DMxUcCUdi-Anz83CXcC9sRGr~1nHeIWvkKoTvTkij5YCj-x7qpg5rxrgfyju-dcnmB6j9xXXEyfLrwZXSwOkfzT-KRdb0lYDriZ9OH1kvnUB2KPaL2-yp62lTuHpbfLzlQ92AtqCj-FNBe3U5GiG-2omCsXutL8JV~DoWWQfJ1LzmgJwvYGoGJSGQNiZE1px4C6b492RUfdzoPyu11gmlPRBpezLk9L8Prc287NmWsKT-3y27sF2loWfPjssx9xNnWGBDVrUb9GvB0bKTaLFO8UIuuXkIFmPqJ0J4Ozg__",
-      "publisher": "Official journal website",
-      "source_page": "https://academic.oup.com/policing/article-abstract/doi/10.1093/police/paac077/6775092",
+      "issn": "1363-951X",
+      "image_url": "https://emer.silverchair-cdn.com/emer/content_public/journal/pijpsm/issue/36/3/2/m_pijpsm_cover.jpeg?Expires=1823540660&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&Signature=ixlNkSpvNX4HzTtLUF-avYqMdY96z7ukbkUjyVxFy-NhjcTa5wMThT9PvJPZYAekYifB~zcVdfKmmJu~LgMXtpx~3CJwTdFmrWse8WV638IYUPVpGFBvnTHC4fksx7Yih4~9V8psJEyezPXrmrToTErriapb41Jie9jk~tHiSrqrJ5-kQroDXlyxLQ3eKV2F0fA7hQGN2Ff0beME8-STf62BTVCGSpDTwkurx66NuFxLYEEOlJbXm~cS5nJizGhVfi1MVhwQAuJSGNyudsTRbJFVsu36JZsTVTxsh8V4KuhsK4TZPhMfOlVbaQ7nMoam1o~8kElJ2J1GqgoIlXCKGg__",
+      "publisher": "Emerald Publishing",
+      "source_page": "https://www.emerald.com/pijpsm/pages/editorial-board",
       "file": "journal_751.webp",
       "type": "cover",
       "checked": "2026-11-15",
       "rights": "Publisher or journal artwork; no open license asserted.",
-      "bytes": 2476,
-      "sha256": "712b5f535d7f1b092764ae54051a67264c96925d20c13603d1c53a081fe70c7d",
+      "bytes": 2948,
+      "sha256": "5b6288959389e2a689b368c74403b7c7a3300f57786ac03da17d26078b47ab59",
       "directory_appointments_at_review": 63,
       "missing_image_priority_rank": 751,
       "expansion_round": 2,
-      "expansion_batch": 10
+      "expansion_batch": 10,
+      "canonical_journal_title": "Policing: An International Journal",
+      "cache_version": "emerald-20261115",
+      "identity_source": "https://www.emerald.com/pijpsm/pages/editorial-board",
+      "identity_match": "Directory source URL and cover print ISSN 1363-951X",
+      "correction_checked": "2026-11-15"
     },
     {
       "journal_id": "tobacco_control",
@@ -36428,5 +36433,15 @@
     "titles_reviewed": 50,
     "verified_images": 47,
     "initials": 3
-  }
+  },
+  "corrections": [
+    {
+      "date": "2026-11-15",
+      "journal_id": "journal_751",
+      "reason": "Short name previously matched to the OUP journal; Directory board source identifies the Emerald journal.",
+      "previous_image_sha256": "712b5f535d7f1b092764ae54051a67264c96925d20c13603d1c53a081fe70c7d",
+      "new_image_sha256": "5b6288959389e2a689b368c74403b7c7a3300f57786ac03da17d26078b47ab59",
+      "count_change": 0
+    }
+  ]
 }
