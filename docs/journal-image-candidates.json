@@ -2,8 +2,8 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 756,
-  "round_progress_after_this_batch": 50,
-  "batch": 1,
+  "round_progress_after_this_batch": 100,
+  "batch": 2,
   "pending_candidates": [
     {
       "journal_id": "journal_465",
@@ -16,16 +16,6 @@
       "image_url": "https://ijms.ut.ac.ir/data/ijms/coversheet/head_en.jpg"
     },
     {
-      "journal_id": "journal_523",
-      "journal_name": "Canadian Psychology",
-      "appointments": 75,
-      "priority_rank": 523,
-      "publisher": "",
-      "issn": "",
-      "source_page": "https://www.apa.org/pubs/journals/cap",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/9/92/Canadian_Psychology_journal_cover.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
       "journal_id": "journal_866",
       "journal_name": "Ephemera: Critical Dialogues on Organization",
       "appointments": 58,
@@ -34,26 +24,6 @@
       "issn": "",
       "source_page": "https://ephemerajournal.org/what-ephemera",
       "image_url": "https://ephemerajournal.org/sites/default/files/styles/large/public/2026-10/Quicksand%20cover_0.jpg?itok=qTJ7C_KK"
-    },
-    {
-      "journal_id": "journal_942",
-      "journal_name": "Management Revue",
-      "appointments": 56,
-      "priority_rank": 942,
-      "publisher": "Rainer Hampp Verlag",
-      "issn": "0935-9915",
-      "source_page": "https://www.imrpress.com/journal/MREV",
-      "image_url": "https://storage.imrpress.com/IMR/2072624553453740000/image/MRev_FullLogo_White.png?x-oss-process=image/resize,h_48"
-    },
-    {
-      "journal_id": "journal_1442",
-      "journal_name": "Cognition, Technology and Work",
-      "appointments": 40,
-      "priority_rank": 1442,
-      "publisher": "",
-      "issn": "",
-      "source_page": "https://link.springer.com/journal/10111",
-      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/10111.jpg"
     },
     {
       "journal_id": "journal_1479",
@@ -66,16 +36,6 @@
       "image_url": "https://www.hogrefe.com/index.php?eID=dumpFile&t=p&p=254794&token=e0c9673318f6db760208d423b6616d89a048307f"
     },
     {
-      "journal_id": "journal_1503",
-      "journal_name": "Work Organisation, Labour and Globalisation",
-      "appointments": 39,
-      "priority_rank": 1503,
-      "publisher": "",
-      "issn": "",
-      "source_page": "https://www.plutojournals.com/world-organisation-labour-and-globalisation/",
-      "image_url": "https://www.plutojournals.com/wp-content/uploads/WOLG_20_2_Cover.png"
-    },
-    {
       "journal_id": "asian_academy_management_journal_accounting_finance",
       "journal_name": "Asian Academy of Management Journal of Accounting and Finance",
       "appointments": 38,
@@ -84,26 +44,6 @@
       "issn": "1823-4992",
       "source_page": "https://ejournal.usm.my/aamjaf",
       "image_url": "https://ejournal.usm.my/public/journals/18/pageHeaderLogoImage_en_US.png"
-    },
-    {
-      "journal_id": "journal_1574",
-      "journal_name": "International Journal of Services Operations and Informatics",
-      "appointments": 37,
-      "priority_rank": 1574,
-      "publisher": "Inderscience Publishers",
-      "issn": "1741-539X",
-      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijsoi",
-      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijsoi.jpg"
-    },
-    {
-      "journal_id": "rationality_society",
-      "journal_name": "Rationality and Society",
-      "appointments": 37,
-      "priority_rank": 1591,
-      "publisher": "SAGE Publishing",
-      "issn": "1043-4631",
-      "source_page": "https://journals.sagepub.com/home/rss",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/1/11/Rationality_and_Society.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "journal_id": "journal_1646",
@@ -116,46 +56,6 @@
       "image_url": "https://www.hogrefe.com/index.php?eID=dumpFile&t=p&p=304458&token=e2cc5e77218440e85e721003e3c0d489a58d0800"
     },
     {
-      "journal_id": "journal_1674",
-      "journal_name": "Journal of Information Technology Management",
-      "appointments": 35,
-      "priority_rank": 1674,
-      "publisher": "",
-      "issn": "",
-      "source_page": "https://jitm.ut.ac.ir/journal/editorial.board",
-      "image_url": "https://jitm.ut.ac.ir/data/jitm/coversheet/head_en.jpg"
-    },
-    {
-      "journal_id": "journal_international_technology_information_management",
-      "journal_name": "Journal of International Technology and Information Management",
-      "appointments": 34,
-      "priority_rank": 1723,
-      "publisher": "International Information Management Association (IIMA)",
-      "issn": "1543-5962",
-      "source_page": "https://iima.org/wp/jitim/",
-      "image_url": "http://iima.org/wp/wp-content/uploads/2017/04/JITIM-22-4-3013-Cover-232x300.jpg"
-    },
-    {
-      "journal_id": "auckland_university_law_review",
-      "journal_name": "Auckland University Law Review",
-      "appointments": 32,
-      "priority_rank": 1778,
-      "publisher": "Auckland University Law Students' Society",
-      "issn": "0067-0510",
-      "source_page": "https://www.aulr.org/advisory-board",
-      "image_url": "https://images.squarespace-cdn.com/content/v1/5a8ba998ccc5c51cc17e48cd/a56e48eb-13b4-404a-8f2e-21072b5128e8/Screenshot%2B2021-05-11%2Bat%2B2.05.51%2BPM.jpg?format=1500w"
-    },
-    {
-      "journal_id": "review_corporate_finance_studies",
-      "journal_name": "Review of Corporate Finance Studies",
-      "appointments": 32,
-      "priority_rank": 1819,
-      "publisher": "Oxford University Press",
-      "issn": "2046-9128",
-      "source_page": "https://sfs.org/review-of-corporate-finance-studies/editorial-team/",
-      "image_url": "https://sfs.org/wp-content/uploads/2023/07/REVCFS-cover-crop.png"
-    },
-    {
       "journal_id": "journal_1925",
       "journal_name": "Journal of Developing Areas",
       "appointments": 29,
@@ -164,6 +64,66 @@
       "issn": "1548-2278",
       "source_page": "https://muse.jhu.edu/journal/228",
       "image_url": "https://muse.jhu.edu/journal/228/image/front_cover?format=180"
+    },
+    {
+      "journal_id": "journal_1991",
+      "journal_name": "Psychologist",
+      "appointments": 28,
+      "priority_rank": 1991,
+      "publisher": "",
+      "issn": "",
+      "source_page": "https://www.bps.org.uk/psychologist",
+      "image_url": "https://www.bps.org.uk/_next/image?url=https%3A%2F%2Fcms.bps.org.uk%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fresponsive%2Fpublic%2F765%2F534%2F0%2F2025-01%2Fblueskygrab.png&w=3840&q=75"
+    },
+    {
+      "journal_id": "journal_2048",
+      "journal_name": "Hacienda Pública Española / Review of Public Economics",
+      "appointments": 26,
+      "priority_rank": 2048,
+      "publisher": "",
+      "issn": "",
+      "source_page": "https://hpe-rpe.org",
+      "image_url": "https://hpe-rpe.org/wp-content/uploads/LogoWebIEF_04_2026.jpg"
+    },
+    {
+      "journal_id": "japan_labor_issues",
+      "journal_name": "Japan Labor Issues",
+      "appointments": 13,
+      "priority_rank": 2500,
+      "publisher": "Japan Institute for Labour Policy and Training",
+      "issn": "2433-3689",
+      "source_page": "https://www.jil.go.jp/english/jli/intro.html",
+      "image_url": "https://www.jil.go.jp/english/images/e-mm_ovoff.png"
+    },
+    {
+      "journal_id": "ieee_transactions_engineering_management",
+      "journal_name": "IEEE Transactions on Engineering Management",
+      "appointments": 6,
+      "priority_rank": 2648,
+      "publisher": "Institute of Electrical and Electronics Engineers",
+      "issn": "1558-0040",
+      "source_page": "https://www.ieee-tems.org/ieee-transactions-on-engineering-management/",
+      "image_url": "https://i0.wp.com/www.ieee-tems.org/wp-content/uploads/2024/12/IEEE-TEM-3.png?resize=270%2C375"
+    },
+    {
+      "journal_id": "oxford_university_commonwealth_law_journal",
+      "journal_name": "Oxford University Commonwealth Law Journal",
+      "appointments": 6,
+      "priority_rank": 2657,
+      "publisher": "Taylor & Francis",
+      "issn": "1472-9342",
+      "source_page": "https://www.law.ox.ac.uk/ouclj/editorial-board",
+      "image_url": "https://www.law.ox.ac.uk/sites/default/files/filebIEZyN"
+    },
+    {
+      "journal_id": "lloyds_maritime_commercial_law_quarterly",
+      "journal_name": "Lloyd's Maritime and Commercial Law Quarterly",
+      "appointments": 1,
+      "priority_rank": 2743,
+      "publisher": "Informa Law",
+      "issn": "0306-2945",
+      "source_page": "https://www.i-law.com/ilaw/publicationlist.htm?format=Journal",
+      "image_url": "https://static.i-law.com/ilaw/CLQ/images/CLQ_cover.jpg"
     }
   ],
   "rejected_candidates": [
