@@ -683,6 +683,7 @@ th.num button { text-align: right; }
 .filter-grid .lbl { display: block; }
 @media (min-width: 641px) {
   .filter-grid > .compact-inline, .filter-grid .compact-extra-fields { display: contents; }
+  .directory-more .filter-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .directory-table { table-layout: fixed; min-width: 70rem; }
   .directory-table th:nth-child(1) { width: 12%; }
   .directory-table th:nth-child(2) { width: 13%; }
@@ -693,6 +694,9 @@ th.num button { text-align: right; }
   .directory-table th:nth-child(7) { width: 8%; }
   .directory-table th:nth-child(8) { width: 7%; }
   .directory-table td { overflow-wrap: anywhere; }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .directory-more .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   .directory-table { min-width: 0; }
