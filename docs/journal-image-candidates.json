@@ -2,18 +2,478 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 1000,
-  "round_progress_after_this_batch": 900,
-  "batch": 18,
+  "round_progress_after_this_batch": 950,
+  "batch": 19,
   "pending_candidates": [
     {
-      "journal_id": "journal_1340",
-      "journal_name": "Geoforum",
+      "journal_id": "journal_1309",
+      "journal_name": "International Journal of Manufacturing Technology and Management",
+      "appointments": 44,
+      "priority_rank": 1309,
+      "publisher": "Inderscience Publishers",
+      "issn": "1368-2148",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijmtm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmtm.jpg"
+    },
+    {
+      "journal_id": "journal_1341",
+      "journal_name": "International Journal of Business Environment",
       "appointments": 43,
-      "priority_rank": 1340,
-      "publisher": "Official journal website",
+      "priority_rank": 1341,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-0589",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijbe",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijbe.jpg"
+    },
+    {
+      "journal_id": "journal_1346",
+      "journal_name": "International Journal of Management and Decision Making",
+      "appointments": 43,
+      "priority_rank": 1346,
+      "publisher": "Inderscience Publishers",
+      "issn": "1462-4621",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijmdm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmdm.jpg"
+    },
+    {
+      "journal_id": "journal_1378",
+      "journal_name": "International Journal of Globalisation and Small Business",
+      "appointments": 42,
+      "priority_rank": 1378,
+      "publisher": "Inderscience Publishers",
+      "issn": "1479-3059",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijgsb",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijgsb.jpg"
+    },
+    {
+      "journal_id": "journal_1379",
+      "journal_name": "International Journal of Indian Culture and Business Management",
+      "appointments": 42,
+      "priority_rank": 1379,
+      "publisher": "Inderscience Publishers",
+      "issn": "1753-0806",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijicbm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijicbm.jpg"
+    },
+    {
+      "journal_id": "journal_economic_geography",
+      "journal_name": "Journal of Economic Geography",
+      "appointments": 42,
+      "priority_rank": 1383,
+      "publisher": "Oxford University Press",
+      "issn": "1468-2702",
+      "source_page": "https://academic.oup.com/joeg/pages/Editorial_Board",
+      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/joeg/joeg_ogimage.png"
+    },
+    {
+      "journal_id": "international_journal_internet_enterprise_management",
+      "journal_name": "International Journal of Internet and Enterprise Management",
+      "appointments": 41,
+      "priority_rank": 1423,
+      "publisher": "Inderscience Publishers",
+      "issn": "1476-1300",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijiem",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijiem.jpg"
+    },
+    {
+      "journal_id": "journal_1448",
+      "journal_name": "International Journal of Business Performance and Supply Chain Modelling",
+      "appointments": 40,
+      "priority_rank": 1448,
+      "publisher": "Inderscience Publishers",
+      "issn": "1758-9401",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijbpscm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijbpscm.jpg"
+    },
+    {
+      "journal_id": "international_journal_global_energy_issues",
+      "journal_name": "International Journal of Global Energy Issues",
+      "appointments": 40,
+      "priority_rank": 1449,
+      "publisher": "Inderscience Publishers",
+      "issn": "0954-7118",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijgei",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijgei.jpg"
+    },
+    {
+      "journal_id": "journal_1451",
+      "journal_name": "International Journal of Product Development",
+      "appointments": 40,
+      "priority_rank": 1451,
+      "publisher": "Inderscience Publishers",
+      "issn": "1477-9056",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijpd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijpd.jpg"
+    },
+    {
+      "journal_id": "international_journal_economics_accounting",
+      "journal_name": "International Journal of Economics and Accounting",
+      "appointments": 39,
+      "priority_rank": 1485,
+      "publisher": "Inderscience Publishers",
+      "issn": "2041-868X",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijea",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijea.jpg"
+    },
+    {
+      "journal_id": "journal_1486",
+      "journal_name": "International Journal of Entrepreneurial Venturing",
+      "appointments": 39,
+      "priority_rank": 1486,
+      "publisher": "Inderscience Publishers",
+      "issn": "1742-5360",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijev",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijev.jpg"
+    },
+    {
+      "journal_id": "journal_1487",
+      "journal_name": "International Journal of Learning and Change",
+      "appointments": 39,
+      "priority_rank": 1487,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-2875",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijlc",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijlc.jpg"
+    },
+    {
+      "journal_id": "international_journal_work_organisation_emotion",
+      "journal_name": "International Journal of Work Organisation and Emotion",
+      "appointments": 39,
+      "priority_rank": 1488,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-8938",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijwoe#edboard-content",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijwoe.jpg"
+    },
+    {
+      "journal_id": "journal_1496",
+      "journal_name": "Production & Manufacturing Research",
+      "appointments": 39,
+      "priority_rank": 1496,
+      "publisher": "Taylor & Francis",
       "issn": "",
-      "source_page": "https://ojs3.unpatti.ac.id/index.php/jgse/issue/archive",
-      "image_url": "https://ojs3.unpatti.ac.id/public/journals/135/cover_issue_1335_en_US.jpg"
+      "source_page": "https://www.tandfonline.com/journals/tpmr20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/TPMR_MR.jpg"
+    },
+    {
+      "journal_id": "afro_asian_journal_finance_accounting",
+      "journal_name": "Afro-Asian Journal of Finance and Accounting",
+      "appointments": 38,
+      "priority_rank": 1507,
+      "publisher": "Inderscience Publishers",
+      "issn": "1751-6447",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=aajfa",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoveraajfa.jpg"
+    },
+    {
+      "journal_id": "interdisciplinary_environmental_review",
+      "journal_name": "Interdisciplinary Environmental Review",
+      "appointments": 38,
+      "priority_rank": 1520,
+      "publisher": "Inderscience Publishers",
+      "issn": "1521-0227",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ier",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverier.jpg"
+    },
+    {
+      "journal_id": "international_journal_accounting_finance",
+      "journal_name": "International Journal of Accounting and Finance",
+      "appointments": 38,
+      "priority_rank": 1522,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-8224",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijaf",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijaf.jpg"
+    },
+    {
+      "journal_id": "international_journal_computational_economics",
+      "journal_name": "International Journal of Computational Economics and Econometrics",
+      "appointments": 38,
+      "priority_rank": 1523,
+      "publisher": "Inderscience Publishers",
+      "issn": "1757-1170",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijcee",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijcee.jpg"
+    },
+    {
+      "journal_id": "international_journal_economic_policy_emerging",
+      "journal_name": "International Journal of Economic Policy and Emerging Economies",
+      "appointments": 38,
+      "priority_rank": 1524,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-0452",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijepee",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijepee.jpg"
+    },
+    {
+      "journal_id": "journal_1525",
+      "journal_name": "International Journal of Foresight and Innovation Policy",
+      "appointments": 38,
+      "priority_rank": 1525,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-2816",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijfip",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijfip.jpg"
+    },
+    {
+      "journal_id": "global_business_economics_review",
+      "journal_name": "Global Business and Economics Review",
+      "appointments": 37,
+      "priority_rank": 1564,
+      "publisher": "Inderscience Publishers",
+      "issn": "1097-4954",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=gber",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scovergber.jpg"
+    },
+    {
+      "journal_id": "journal_1567",
+      "journal_name": "International Journal of Agile Systems and Management",
+      "appointments": 37,
+      "priority_rank": 1567,
+      "publisher": "Inderscience Publishers",
+      "issn": "1741-9174",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijasm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijasm.jpg"
+    },
+    {
+      "journal_id": "international_journal_enterprise_network_management",
+      "journal_name": "International Journal of Enterprise Network Management",
+      "appointments": 37,
+      "priority_rank": 1570,
+      "publisher": "Inderscience Publishers",
+      "issn": "1748-1260",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijenm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijenm.jpg"
+    },
+    {
+      "journal_id": "journal_1573",
+      "journal_name": "International Journal of Innovation and Learning",
+      "appointments": 37,
+      "priority_rank": 1573,
+      "publisher": "Inderscience Publishers",
+      "issn": "1471-8197",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijil",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijil.jpg"
+    },
+    {
+      "journal_id": "international_journal_social_humanistic_computing",
+      "journal_name": "International Journal of Social and Humanistic Computing",
+      "appointments": 37,
+      "priority_rank": 1575,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-6124",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijshc",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijshc.jpg"
+    },
+    {
+      "journal_id": "international_journal_sustainable_economy",
+      "journal_name": "International Journal of Sustainable Economy",
+      "appointments": 36,
+      "priority_rank": 1621,
+      "publisher": "Inderscience Publishers",
+      "issn": "1756-5804",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijse",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijse.jpg"
+    },
+    {
+      "journal_id": "journal_public_relations_education",
+      "journal_name": "Journal of Public Relations Education",
+      "appointments": 36,
+      "priority_rank": 1626,
+      "publisher": "AEJMC",
+      "issn": "2573-1742",
+      "source_page": "https://journalofpreducation.com/editorial-board-and-staff/",
+      "image_url": "https://i0.wp.com/journalofpreducation.com/wp-content/uploads/2023/01/cropped-JPRE-logo.png?fit=192%2C192&ssl=1"
+    },
+    {
+      "journal_id": "journal_1662",
+      "journal_name": "International Journal of Learning and Intellectual Capital",
+      "appointments": 35,
+      "priority_rank": 1662,
+      "publisher": "Inderscience Publishers",
+      "issn": "1479-4853",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijlic",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijlic.jpg"
+    },
+    {
+      "journal_id": "international_journal_logistics_economics_globalisation",
+      "journal_name": "International Journal of Logistics Economics and Globalisation",
+      "appointments": 35,
+      "priority_rank": 1663,
+      "publisher": "Inderscience Publishers",
+      "issn": "1741-5373",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijleg",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijleg.jpg"
+    },
+    {
+      "journal_id": "journal_1666",
+      "journal_name": "International Journal of Technology Intelligence and Planning",
+      "appointments": 35,
+      "priority_rank": 1666,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-2832",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtip",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtip.jpg"
+    },
+    {
+      "journal_id": "international_journal_technology_marketing",
+      "journal_name": "International Journal of Technology Marketing",
+      "appointments": 35,
+      "priority_rank": 1667,
+      "publisher": "Inderscience Publishers",
+      "issn": "1741-878X",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtmkt",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtmkt.jpg"
+    },
+    {
+      "journal_id": "gospodarka_narodowa",
+      "journal_name": "Gospodarka Narodowa",
+      "appointments": 34,
+      "priority_rank": 1702,
+      "publisher": "SGH Warsaw School of Economics",
+      "issn": "0867-0005",
+      "source_page": "http://gnpje.sgh.waw.pl",
+      "image_url": "https://gnpje.sgh.waw.pl/_static/gna.svg"
+    },
+    {
+      "journal_id": "international_journal_agricultural_resources",
+      "journal_name": "International Journal of Agricultural Resources, Governance and Ecology",
+      "appointments": 34,
+      "priority_rank": 1705,
+      "publisher": "Inderscience Publishers",
+      "issn": "1462-4605",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijarge",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijarge.jpg"
+    },
+    {
+      "journal_id": "journal_1708",
+      "journal_name": "International Journal of Management Practice",
+      "appointments": 34,
+      "priority_rank": 1708,
+      "publisher": "Inderscience Publishers",
+      "issn": "1477-9064",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijmp",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmp.jpg"
+    },
+    {
+      "journal_id": "international_journal_monetary_economics_finance",
+      "journal_name": "International Journal of Monetary Economics and Finance",
+      "appointments": 34,
+      "priority_rank": 1709,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-0479",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijmef",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmef.jpg"
+    },
+    {
+      "journal_id": "international_journal_vehicle_design_journal_vehicle",
+      "journal_name": "International Journal of Vehicle Design: journal of vehicle engineering, automotive technology and components",
+      "appointments": 34,
+      "priority_rank": 1713,
+      "publisher": "Inderscience Publishers",
+      "issn": "0143-3369",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijvd#edboard-content",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijvd.jpg"
+    },
+    {
+      "journal_id": "land_economics",
+      "journal_name": "Land Economics",
+      "appointments": 34,
+      "priority_rank": 1732,
+      "publisher": "University of Wisconsin Press",
+      "issn": "0023-7639",
+      "source_page": "https://le.uwpress.org/content/editorial-board",
+      "image_url": "https://le.uwpress.org/sites/default/files/images/favicon.ico"
+    },
+    {
+      "journal_id": "international_journal_business_management_ijbm",
+      "journal_name": "International Journal of Business and Management (IJBM)",
+      "appointments": 33,
+      "priority_rank": 1752,
+      "publisher": "International Emerging Scholars Society",
+      "issn": "2815-9330",
+      "source_page": "https://iessociety.org/index.php/IJBM",
+      "image_url": "https://iessociety.org/public/journals/1/favicon_en.png"
+    },
+    {
+      "journal_id": "journal_1753",
+      "journal_name": "International Journal of Entrepreneurship and Innovation Management",
+      "appointments": 33,
+      "priority_rank": 1753,
+      "publisher": "Inderscience Publishers",
+      "issn": "1368-275X",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijeim",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijeim.jpg"
+    },
+    {
+      "journal_id": "international_journal_tourism_policy",
+      "journal_name": "International Journal of Tourism Policy",
+      "appointments": 33,
+      "priority_rank": 1754,
+      "publisher": "Inderscience Publishers",
+      "issn": "1750-4090",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtp",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtp.jpg"
+    },
+    {
+      "journal_id": "international_journal_electronic_finance",
+      "journal_name": "International Journal of Electronic Finance",
+      "appointments": 32,
+      "priority_rank": 1795,
+      "publisher": "Inderscience Publishers",
+      "issn": "1746-0069",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijef",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijef.jpg"
+    },
+    {
+      "journal_id": "journal_1796",
+      "journal_name": "International Journal of Knowledge-Based Development",
+      "appointments": 32,
+      "priority_rank": 1796,
+      "publisher": "Inderscience Publishers",
+      "issn": "2040-4468",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijkbd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijkbd.jpg"
+    },
+    {
+      "journal_id": "international_journal_risk_assessment_management",
+      "journal_name": "International Journal of Risk Assessment and Management",
+      "appointments": 31,
+      "priority_rank": 1849,
+      "publisher": "Inderscience Publishers",
+      "issn": "1466-8297",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijram",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijram.jpg"
+    },
+    {
+      "journal_id": "journal_1850",
+      "journal_name": "International Journal of Value Chain Management",
+      "appointments": 31,
+      "priority_rank": 1850,
+      "publisher": "Inderscience Publishers",
+      "issn": "1741-5357",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijvcm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijvcm.jpg"
+    },
+    {
+      "journal_id": "journal_1873",
+      "journal_name": "International Journal of Logistics Systems and Management",
+      "appointments": 30,
+      "priority_rank": 1873,
+      "publisher": "Inderscience Publishers",
+      "issn": "1742-7967",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijlsm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijlsm.jpg"
+    },
+    {
+      "journal_id": "journal_1905",
+      "journal_name": "Asia and the Pacific Policy Studies",
+      "appointments": 29,
+      "priority_rank": 1905,
+      "publisher": "Wiley",
+      "issn": "",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/20502680/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/20502680-cover.jpg"
     },
     {
       "journal_id": "journal_1911",
@@ -24,6 +484,386 @@
       "issn": "2673-8627",
       "source_page": "https://econtent.hogrefe.com/journal/epo",
       "image_url": "https://upload.wikimedia.org/wikipedia/en/3/36/European_Journal_of_Psychology_Open.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+      "journal_id": "journal_1919",
+      "journal_name": "International Journal of Happiness and Development",
+      "appointments": 29,
+      "priority_rank": 1919,
+      "publisher": "Inderscience Publishers",
+      "issn": "2049-2790",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijhd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijhd.jpg"
+    },
+    {
+      "journal_id": "journal_1920",
+      "journal_name": "International Journal of Information Technology and Management",
+      "appointments": 29,
+      "priority_rank": 1920,
+      "publisher": "Inderscience Publishers",
+      "issn": "",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijitm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijitm.jpg"
+    },
+    {
+      "journal_id": "international_journal_information_systems_change",
+      "journal_name": "International Journal of Information Systems and Change Management",
+      "appointments": 28,
+      "priority_rank": 1978,
+      "publisher": "Inderscience Publishers",
+      "issn": "1479-3121",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijiscm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijiscm.jpg"
+    },
+    {
+      "journal_id": "journal_1980",
+      "journal_name": "International Journal of the Digital Human",
+      "appointments": 28,
+      "priority_rank": 1980,
+      "publisher": "Inderscience Publishers",
+      "issn": "2046-3375",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijdh",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijdh.jpg"
+    },
+    {
+      "journal_id": "american_journal_finance_accounting",
+      "journal_name": "American Journal of Finance and Accounting",
+      "appointments": 27,
+      "priority_rank": 2007,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-7767",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ajfa",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverajfa.jpg"
+    },
+    {
+      "journal_id": "indonesian_management_accounting_research",
+      "journal_name": "Indonesian Management and Accounting Research",
+      "appointments": 27,
+      "priority_rank": 2015,
+      "publisher": "Universitas Trisakti",
+      "issn": "1411-8858",
+      "source_page": "http://www.online.fe.trisakti.ac.id",
+      "image_url": "https://e-journal.trisakti.ac.id/public/journals/26/favicon_en_US.png"
+    },
+    {
+      "journal_id": "journal_2016",
+      "journal_name": "Intelligent Systems in Accounting, Finance and Management",
+      "appointments": 27,
+      "priority_rank": 2016,
+      "publisher": "Wiley",
+      "issn": "1550-1949",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/21600074/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/21600074-cover.jpg"
+    },
+    {
+      "journal_id": "world_review_science_technology_sustainable_development",
+      "journal_name": "World Review of Science, Technology and Sustainable Development",
+      "appointments": 27,
+      "priority_rank": 2034,
+      "publisher": "Inderscience Publishers",
+      "issn": "1741-2242",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=wrstsd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverwrstsd.jpg"
+    },
+    {
+      "journal_id": "economic_policy_european_forum",
+      "journal_name": "Economic Policy: a European forum",
+      "appointments": 26,
+      "priority_rank": 2040,
+      "publisher": "Oxford University Press",
+      "issn": "0266-4658",
+      "source_page": "https://academic.oup.com/economicpolicy/pages/Editorial_Board",
+      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/economicpolicy/economicpolicy_ogimage.png"
+    },
+    {
+      "journal_id": "international_journal_electronic_banking",
+      "journal_name": "International Journal of Electronic Banking",
+      "appointments": 26,
+      "priority_rank": 2052,
+      "publisher": "Inderscience Publishers",
+      "issn": "1753-5239",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijebank",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijebank.jpg"
+    },
+    {
+      "journal_id": "international_journal_sustainable_design",
+      "journal_name": "International Journal of Sustainable Design",
+      "appointments": 26,
+      "priority_rank": 2053,
+      "publisher": "Inderscience Publishers",
+      "issn": "1743-8284",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijsdes",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijsdes.jpg"
+    },
+    {
+      "journal_id": "journal_2083",
+      "journal_name": "Coaching",
+      "appointments": 25,
+      "priority_rank": 2083,
+      "publisher": "Taylor & Francis",
+      "issn": "",
+      "source_page": "https://www.tandfonline.com/journals/rcoa20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/RCOA_MR.jpg"
+    },
+    {
+      "journal_id": "international_journal_political_economy",
+      "journal_name": "International Journal of Political Economy",
+      "appointments": 25,
+      "priority_rank": 2095,
+      "publisher": "Taylor & Francis",
+      "issn": "0891-1916",
+      "source_page": "https://www.tandfonline.com/journals/mijp20/about-this-journal",
+      "image_url": "https://covers.tandf.co.uk/covers/MIJP_MR.jpg"
+    },
+    {
+      "journal_id": "journal_2096",
+      "journal_name": "International Journal of Process Management and Benchmarking",
+      "appointments": 25,
+      "priority_rank": 2096,
+      "publisher": "Inderscience Publishers",
+      "issn": "1460-6739",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijpmb",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijpmb.jpg"
+    },
+    {
+      "journal_id": "african_journal_economic_sustainable_development",
+      "journal_name": "African Journal of Economic and Sustainable Development",
+      "appointments": 24,
+      "priority_rank": 2113,
+      "publisher": "Inderscience Publishers",
+      "issn": "2046-4770",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ajesd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverajesd.jpg"
+    },
+    {
+      "journal_id": "international_journal_knowledge_management_studies",
+      "journal_name": "International Journal of Knowledge Management Studies",
+      "appointments": 24,
+      "priority_rank": 2131,
+      "publisher": "Inderscience Publishers",
+      "issn": "1743-8268",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijkms",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijkms.jpg"
+    },
+    {
+      "journal_id": "journal_2132",
+      "journal_name": "International Journal of Technology and Globalisation",
+      "appointments": 24,
+      "priority_rank": 2132,
+      "publisher": "Inderscience Publishers",
+      "issn": "1476-5667",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtg",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtg.jpg"
+    },
+    {
+      "journal_id": "journal_european_economic_history",
+      "journal_name": "Journal of European Economic History",
+      "appointments": 24,
+      "priority_rank": 2138,
+      "publisher": "Banco di Roma",
+      "issn": "0391-5115",
+      "source_page": "https://jeeh.it/en/the-journal/editorial-board/",
+      "image_url": "https://jeeh.it/media/images/favicon-jeeh.2e16d0ba.fill-32x32.png"
+    },
+    {
+      "journal_id": "african_journal_accounting_auditing_finance",
+      "journal_name": "African Journal of Accounting, Auditing and Finance",
+      "appointments": 23,
+      "priority_rank": 2160,
+      "publisher": "Inderscience Publishers",
+      "issn": "2046-8083",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ajaaf",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverajaaf.jpg"
+    },
+    {
+      "journal_id": "econometrics",
+      "journal_name": "Econometrics",
+      "appointments": 22,
+      "priority_rank": 2215,
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "issn": "2225-1146",
+      "source_page": "https://www.mdpi.com/journal/econometrics",
+      "image_url": "https://pub.mdpi-res.com/img/journals/econometrics-logo.png"
+    },
+    {
+      "journal_id": "journal_2222",
+      "journal_name": "International Journal of Services Economics and Management",
+      "appointments": 22,
+      "priority_rank": 2222,
+      "publisher": "Inderscience Publishers",
+      "issn": "1753-0822",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijsem",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijsem.jpg"
+    },
+    {
+      "journal_id": "world_economics",
+      "journal_name": "World Economics",
+      "appointments": 22,
+      "priority_rank": 2243,
+      "publisher": "World Economics Limited",
+      "issn": "1468-1838",
+      "source_page": "https://www.world-economics-journal.com/Information/Editorial-Board/",
+      "image_url": "https://www.world-economics-journal.com/images/iPhone-P.png"
+    },
+    {
+      "journal_id": "international_journal_cultural_policy",
+      "journal_name": "International Journal of Cultural Policy",
+      "appointments": 21,
+      "priority_rank": 2252,
+      "publisher": "Taylor & Francis",
+      "issn": "1028-6632",
+      "source_page": "https://www.tandfonline.com/journals/gcul20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/GCUL_MR.jpg"
+    },
+    {
+      "journal_id": "journal_2253",
+      "journal_name": "International Journal of Innovation and Sustainable Development",
+      "appointments": 21,
+      "priority_rank": 2253,
+      "publisher": "Inderscience Publishers",
+      "issn": "1740-8822",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijisd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijisd.jpg"
+    },
+    {
+      "journal_id": "journal_2289",
+      "journal_name": "International Journal of Psychology",
+      "appointments": 20,
+      "priority_rank": 2289,
+      "publisher": "Wiley",
+      "issn": "",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/1464066x/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/1464066X-cover.jpg"
+    },
+    {
+      "journal_id": "journal_2317",
+      "journal_name": "International Journal of Technology, Policy and Management",
+      "appointments": 19,
+      "priority_rank": 2317,
+      "publisher": "Inderscience Publishers",
+      "issn": "1468-4322",
+      "source_page": "https://www.inderscience.com/jhome.php?jcode=ijtpm",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijtpm.jpg"
+    },
+    {
+      "journal_id": "journal_accountancy",
+      "journal_name": "Journal of Accountancy",
+      "appointments": 19,
+      "priority_rank": 2320,
+      "publisher": "Association of International Certified Professional Accountants",
+      "issn": "0021-8448",
+      "source_page": "https://www.journalofaccountancy.com/info/contact/",
+      "image_url": "https://www.journalofaccountancy.com/wp-content/uploads/sites/3/2025/03/jofa-favicon-256.ico?w=32"
+    },
+    {
+      "journal_id": "international_journal_economic_perspectives",
+      "journal_name": "International Journal of Economic Perspectives",
+      "appointments": 18,
+      "priority_rank": 2350,
+      "publisher": "International Economic Society",
+      "issn": "1307-1637",
+      "source_page": "https://ijeponline.com/index.php/journal",
+      "image_url": "https://ijeponline.com/public/journals/1/favicon_en_US.gif"
+    },
+    {
+      "journal_id": "journal_2388",
+      "journal_name": "Journal of Leadership Studies",
+      "appointments": 17,
+      "priority_rank": 2388,
+      "publisher": "Wiley",
+      "issn": "",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/1935262x/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/1935262X-cover.jpg"
+    },
+    {
+      "journal_id": "ubc_law_review",
+      "journal_name": "UBC Law Review",
+      "appointments": 17,
+      "priority_rank": 2400,
+      "publisher": "University of British Columbia",
+      "issn": "0068-1849",
+      "source_page": "https://www.ubclawreview.ca/team",
+      "image_url": "https://static.wixstatic.com/media/51b84e_2c2381fa612145ceb7f58101b1d19437%7Emv2.jpeg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/51b84e_2c2381fa612145ceb7f58101b1d19437%7Emv2.jpeg"
+    },
+    {
+      "journal_id": "journal_2412",
+      "journal_name": "Health Information and Libraries Journal",
+      "appointments": 16,
+      "priority_rank": 2412,
+      "publisher": "Wiley",
+      "issn": "",
+      "source_page": "https://onlinelibrary.wiley.com/page/journal/14711842/homepage/editorialboard.html",
+      "image_url": "https://media.wiley.com/journal/14711842-cover.jpg"
+    },
+    {
+      "journal_id": "new_zealand_journal_applied_business_research",
+      "journal_name": "New Zealand Journal of Applied Business Research",
+      "appointments": 15,
+      "priority_rank": 2447,
+      "publisher": "Te Pūkenga",
+      "issn": "1175-8007",
+      "source_page": "https://nzjabr.ac.nz/index.php/nzjabr",
+      "image_url": "https://nzjabr.ac.nz/public/journals/1/favicon_en_US.png"
+    },
+    {
+      "journal_id": "population_studies_journal_demography",
+      "journal_name": "Population Studies: a journal of demography",
+      "appointments": 15,
+      "priority_rank": 2449,
+      "publisher": "Taylor & Francis",
+      "issn": "0032-4728",
+      "source_page": "https://www.tandfonline.com/journals/rpst20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/RPST_MR.jpg"
+    },
+    {
+      "journal_id": "journal_2495",
+      "journal_name": "Cybernetics and Systems",
+      "appointments": 13,
+      "priority_rank": 2495,
+      "publisher": "Taylor & Francis",
+      "issn": "",
+      "source_page": "https://www.tandfonline.com/journals/ucbs20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/UCBS_MR.jpg"
+    },
+    {
+      "journal_id": "economic_social_review",
+      "journal_name": "Economic and Social Review",
+      "appointments": 13,
+      "priority_rank": 2496,
+      "publisher": "Economic and Social Studies Council",
+      "issn": "0012-9984",
+      "source_page": "https://esr.ie/index.php/esr",
+      "image_url": "https://esr.ie/public/journals/3/favicon_en_US.jpg"
+    },
+    {
+      "journal_id": "journal_2536",
+      "journal_name": "Assessment and Evaluation in Higher Education",
+      "appointments": 11,
+      "priority_rank": 2536,
+      "publisher": "Taylor & Francis",
+      "issn": "",
+      "source_page": "https://www.tandfonline.com/journals/caeh20/about-this-journal#editorial-board",
+      "image_url": "https://covers.tandf.co.uk/covers/CAEH_MR.jpg"
+    },
+    {
+      "journal_id": "journal_2547",
+      "journal_name": "Perspectives on Public Management & Governance",
+      "appointments": 11,
+      "priority_rank": 2547,
+      "publisher": "Oxford University Press",
+      "issn": "",
+      "source_page": "https://academic.oup.com/ppmg/pages/Editorial_Board",
+      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/ppmg/ppmg_ogimage.png"
+    },
+    {
+      "journal_id": "texas_international_law_journal",
+      "journal_name": "Texas International Law Journal",
+      "appointments": 5,
+      "priority_rank": 2680,
+      "publisher": "University of Texas School of Law",
+      "issn": "0163-7479",
+      "source_page": "https://tilj.org/editorial-board",
+      "image_url": "https://images.squarespace-cdn.com/content/v1/5ba411207d0c915e83da6421/39f94b27-434f-423b-9fab-d9b8df5ffc0f/favicon.ico?format=100w"
     },
     {
       "journal_id": "south_asian_journal_business_studies",
@@ -79,7 +919,9 @@
       "journal_name": "Transportmetrica B: Transport Dynamics",
       "reason": "Candidate is Transportmetrica A, not Transportmetrica B.",
       "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=ttra21",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_advertising_education",
@@ -272,7 +1114,9 @@
       "journal_name": "European Journal of International Law",
       "reason": "Candidate is not verified journal-specific artwork: generic publisher, institution or society branding, unrelated imagery, or a blank asset.",
       "image_url": "http://www.ejil.org/images/logo_oups.png",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_statistical_software",
@@ -479,7 +1323,9 @@
       "journal_name": "Journal of Media Business Studies",
       "reason": "Candidate shows generic, unrelated or historical-title imagery rather than verified artwork for the displayed journal.",
       "image_url": "http://ju.se/images/18.5b56781918a3bf3a00b158b9/1710838118453/JU-campus-jibs-jth-bibliotek.webp",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_international_maritime_law",
@@ -546,7 +1392,9 @@
       "journal_name": "International Journal of Product Development",
       "reason": "Candidate is generic, blank, unrelated, or bears a historical predecessor title; no verified current-title artwork.",
       "image_url": "https://metapress.com/wp-content/uploads/2026/10/ai-platforms-discover-novel-antibiotic-molecules-2026-615x410.jpg",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "revista_de_economia",
@@ -562,7 +1410,9 @@
       "journal_name": "Land Economics",
       "image_url": "https://le.uwpress.org/sites/default/files/wple_mobile_b.png",
       "reason": "Header is wider than 8:1 and becomes unrecognizable at icon size; retain initials pending a usable cover or logo.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "economic_business_review",
@@ -578,7 +1428,9 @@
       "journal_name": "Texas International Law Journal",
       "image_url": "https://images.squarespace-cdn.com/content/v1/5ba411207d0c915e83da6421/1646080593380-X031XVJUEE4T3BL2BO54/TILJ+Website+Cover+%282000+%C3%97+1080+px%29+%281%29.png",
       "reason": "Header is wider than 8:1 and becomes unrecognizable at icon size; retain initials pending a usable cover or logo.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "asia_pacific_journal_information_systems",
@@ -594,7 +1446,9 @@
       "journal_name": "European Journal of Tourism Research",
       "image_url": "https://ejtr.vumk.eu/public/journals/1/pageHeaderLogoImage_en_US.png",
       "reason": "Header is wider than 8:1 and becomes unrecognizable at icon size; retain initials pending a usable cover or logo.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "international_journal_economics_financial_issues",
@@ -636,7 +1490,9 @@
       "journal_name": "World Economics",
       "image_url": "https://www.world-economics-journal.com/Images/WorldEconomicsJournalLogo.png",
       "reason": "Header is wider than 8:1 and becomes unrecognizable at icon size; retain initials pending a usable cover or logo.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "ciclos_en_la_historia_la_economia_y_la_sociedad",
@@ -650,7 +1506,9 @@
       "journal_name": "Economic and Social Review",
       "image_url": "https://esr.ie/public/journals/3/pageHeaderLogoImage_en_US.png",
       "reason": "Header is wider than 8:1 and becomes unrecognizable at icon size; retain initials pending a usable cover or logo.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "australian_tax_forum",
@@ -680,7 +1538,9 @@
       "journal_name": "International Journal of Accounting and Finance",
       "image_url": "https://metapress.com/wp-content/uploads/2025/03/Content-Coach-Lindsay-Steps-into-New-TV-Show-by-Popular-Demand.jpg",
       "reason": "Identical image is used for at least three distinct journals; excluded as generic or ambiguous branding.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_1687",
@@ -694,7 +1554,9 @@
       "journal_name": "International Journal of Agricultural Resources, Governance and Ecology",
       "image_url": "https://metapress.com/wp-content/uploads/2025/03/Content-Coach-Lindsay-Steps-into-New-TV-Show-by-Popular-Demand.jpg",
       "reason": "Identical image is used for at least three distinct journals; excluded as generic or ambiguous branding.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_alternative_investments",
@@ -969,7 +1831,9 @@
       "journal_name": "Journal of Public Relations Education",
       "image_url": "https://journalofpreducation.com/wp-content/uploads/2022/12/7b821-cpre-logo.png",
       "reason": "Candidate is generic organization branding, a blank asset, or unrelated imagery rather than verified journal artwork.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "journal_sport_history",
@@ -990,7 +1854,9 @@
       "journal_name": "Gospodarka Narodowa",
       "image_url": "https://www.editorialsystem.com/g/logo/mnisw-en.png",
       "reason": "Candidate is generic organization branding, a blank asset, or unrelated imagery rather than verified journal artwork.",
-      "checked": "2026-11-15"
+      "checked": "2026-11-15",
+      "resolved": true,
+      "resolution": "Verified original journal SVG wordmark rendered without altering its design"
     },
     {
       "journal_id": "jel",
@@ -1173,7 +2039,9 @@
     {
       "journal_id": "journal_european_economic_history",
       "journal_name": "Journal of European Economic History",
-      "reason": "Generic decorative header without journal identity"
+      "reason": "Generic decorative header without journal identity",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "journal_international_finance_economics",
@@ -1230,7 +2098,9 @@
     {
       "journal_id": "journal_2222",
       "journal_name": "International Journal of Services Economics and Management",
-      "reason": "Different journal title: International Journal of Services Technology and Management"
+      "reason": "Different journal title: International Journal of Services Technology and Management",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_computational_finance",
@@ -1270,12 +2140,16 @@
     {
       "journal_id": "journal_accountancy",
       "journal_name": "Journal of Accountancy",
-      "reason": "Blank artwork"
+      "reason": "Blank artwork",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "international_journal_economic_perspectives",
       "journal_name": "International Journal of Economic Perspectives",
-      "reason": "Generic commission logo"
+      "reason": "Generic commission logo",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "public_policy_research",
@@ -1315,7 +2189,9 @@
     {
       "journal_id": "new_zealand_journal_applied_business_research",
       "journal_name": "New Zealand Journal of Applied Business Research",
-      "reason": "Article first page"
+      "reason": "Article first page",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "academia_economic_papers",
@@ -1555,7 +2431,9 @@
     {
       "journal_id": "econometrics",
       "journal_name": "Econometrics",
-      "reason": "Different journal title and ISSN: Journal of Financial Econometrics"
+      "reason": "Different journal title and ISSN: Journal of Financial Econometrics",
+      "resolved": true,
+      "resolution": "Verified official publisher journal graphic"
     },
     {
       "journal_id": "journal_derivatives",
@@ -1565,7 +2443,9 @@
     {
       "journal_id": "ubc_law_review",
       "journal_name": "UBC Law Review",
-      "reason": "Promotional portrait poster rather than a standalone journal cover or mark"
+      "reason": "Promotional portrait poster rather than a standalone journal cover or mark",
+      "resolved": true,
+      "resolution": "Verified journal-specific mark from the journal website and Directory source"
     },
     {
       "journal_id": "informs_journal_applied_analytics",
@@ -1575,7 +2455,9 @@
     {
       "journal_id": "journal_815",
       "journal_name": "International Journal of Business Innovation and Research",
-      "reason": "Same-name journal from a different publisher; catalog identity is not resolved"
+      "reason": "Same-name journal from a different publisher; catalog identity is not resolved",
+      "resolved": true,
+      "resolution": "Verified exact-title publisher artwork using the Directory board source"
     },
     {
       "journal_id": "journal_962",
@@ -1587,6 +2469,17 @@
       "journal_name": "Economic Sciences",
       "reason": "Artwork site cannot be tied to the original Polish journal; original publisher records show publication ended in 2005 before a journal merger",
       "identity_source": "https://czasopisma.uwm.edu.pl/index.php/oej/about"
+    },
+    {
+      "journal_id": "journal_2340",
+      "journal_name": "Annual Review of Information Science and Technology",
+      "reason": "Different journal title: Journal of the Association for Information Science and Technology"
+    },
+    {
+      "journal_id": "journal_1340",
+      "journal_name": "Geoforum",
+      "reason": "Different Geoforum journal; Directory source identifies Elsevier, not Universitas Pattimura",
+      "identity_source": "https://www.sciencedirect.com/journal/geoforum/about/editorial-board"
     }
   ]
 }
