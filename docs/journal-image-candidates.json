@@ -2,159 +2,9 @@
   "date": "2026-11-15",
   "basis": "Current all-list Directory appointment counts. Pending candidates need review before publication.",
   "round_target": 1000,
-  "round_progress_after_this_batch": 400,
-  "batch": 8,
+  "round_progress_after_this_batch": 450,
+  "batch": 9,
   "pending_candidates": [
-    {
-      "journal_id": "journal_personality_social_psychology",
-      "journal_name": "Journal of Personality and Social Psychology",
-      "appointments": 316,
-      "priority_rank": 2,
-      "publisher": "American Psychological Association",
-      "issn": "0022-3514",
-      "source_page": "http://www.apa.org/pubs/journals/psp/",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/1/17/Journal_of_Personality_and_Social_Psychology_cover.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
-      "journal_id": "journal_knowledge_management",
-      "journal_name": "Journal of Knowledge Management",
-      "appointments": 172,
-      "priority_rank": 25,
-      "publisher": "Emerald Publishing Limited",
-      "issn": "1367-3270",
-      "source_page": "http://emeraldgrouppublishing.com/products/journals/journals.htm?id=jkm",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Journal_of_Knowledge_Management_Cover.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
-      "journal_id": "american_psychologist",
-      "journal_name": "American Psychologist",
-      "appointments": 146,
-      "priority_rank": 68,
-      "publisher": "American Psychological Association",
-      "issn": "0003-066X",
-      "source_page": "http://www.apa.org/pubs/journals/amp/index.aspx",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/58/Cover_Image_for_American_Psychologist%2C_Vol_71_Correct_Size.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
-    },
-    {
-      "journal_id": "oxford_review_economic_policy",
-      "journal_name": "Oxford Review of Economic Policy",
-      "appointments": 29,
-      "priority_rank": 1942,
-      "publisher": "Oxford University Press",
-      "issn": "0266-903X",
-      "source_page": "https://academic.oup.com/oxrep",
-      "image_url": "https://academic.oup.com/data/sitebuilderassetsoriginals/live/images/oxrep/oxrep_ogimage.png"
-    },
-    {
-      "journal_id": "south_african_journal_business_management",
-      "journal_name": "South African Journal of Business Management",
-      "appointments": 29,
-      "priority_rank": 1945,
-      "publisher": "AOSIS",
-      "issn": "2078-5585",
-      "source_page": "https://sajbm.org",
-      "image_url": "https://sajbm.org/public/aosis_og.jpg"
-    },
-    {
-      "journal_id": "south_carolina_journal_international_law_business",
-      "journal_name": "South Carolina Journal of International Law and Business",
-      "appointments": 29,
-      "priority_rank": 1946,
-      "publisher": "University of South Carolina",
-      "issn": "1936-4334",
-      "source_page": "https://scholarcommons.sc.edu/scjilb/editorialboard.html",
-      "image_url": "https://scholarcommons.sc.edu/assets/md5images/3520fc995eebf31886e2a6089187f71c.jpg"
-    },
-    {
-      "journal_id": "sporting_traditions",
-      "journal_name": "Sporting Traditions",
-      "appointments": 29,
-      "priority_rank": 1947,
-      "publisher": "Australian Society for Sports History",
-      "issn": "0813-2577",
-      "source_page": "https://sporthistory.net.au/sporting-traditions/",
-      "image_url": "https://s0.wp.com/i/blank.jpg"
-    },
-    {
-      "journal_id": "statistics_education_research_journal",
-      "journal_name": "Statistics Education Research Journal",
-      "appointments": 29,
-      "priority_rank": 1948,
-      "publisher": "International Association for Statistical Education",
-      "issn": "1570-1824",
-      "source_page": "http://www.stat.auckland.ac.nz/~iase/publications.php?show=serj",
-      "image_url": "http://www.stat.auckland.ac.nz/error/images/logo.png"
-    },
-    {
-      "journal_id": "indonesian_journal_accounting_research",
-      "journal_name": "The Indonesian Journal of Accounting Research",
-      "appointments": 29,
-      "priority_rank": 1951,
-      "publisher": "Indonesian Institute of Accountants -Compartment of Accounting Educators",
-      "issn": "2086-6887",
-      "source_page": "http://ijar-iaikapd.or.id/",
-      "image_url": "http://ijar-iaikapd.or.id/public/journals/1/homeHeaderTitleImage_en_US.jpg"
-    },
-    {
-      "journal_id": "applied_economic_perspectives_policy",
-      "journal_name": "Applied Economic Perspectives and Policy",
-      "appointments": 28,
-      "priority_rank": 1959,
-      "publisher": "Wiley",
-      "issn": "2040-5804",
-      "source_page": "https://onlinelibrary.wiley.com/journal/20405804",
-      "image_url": "https://media.wiley.com/journal/20405790-cover.jpg"
-    },
-    {
-      "journal_id": "australasian_accounting_business_finance_journal",
-      "journal_name": "Australasian Accounting Business and Finance Journal",
-      "appointments": 28,
-      "priority_rank": 1961,
-      "publisher": "University of Wollongong",
-      "issn": "1834-2000",
-      "source_page": "https://www.uowoajournals.org/aabfj/editorialteam/",
-      "image_url": "https://www.uowoajournals.org/media/cover_images/9f3d8b9e-3bbf-4be3-8074-ec091ed6aa96.png"
-    },
-    {
-      "journal_id": "journal_1967",
-      "journal_name": "Current Sociology",
-      "appointments": 28,
-      "priority_rank": 1967,
-      "publisher": "SAGE Publishing",
-      "issn": "0011-3921",
-      "source_page": "http://www.sagepub.com/journalsProdDesc.nav?prodId=Journal200820",
-      "image_url": "https://cmn-cdn-001.sagepub.com/spinjournals/titles/200820/cov_sj_150675.jpg"
-    },
-    {
-      "journal_id": "journal_1970",
-      "journal_name": "Environmental Economics",
-      "appointments": 28,
-      "priority_rank": 1970,
-      "publisher": "Business Perspectives",
-      "issn": "1998-6041",
-      "source_page": "https://businessperspectives.org/journals/environmental-economics?category_id=30",
-      "image_url": "https://businessperspectives.org/cache/com_zoo/images/ee_493ccc066f11b59dc94a55b29b79d298.jpg"
-    },
-    {
-      "journal_id": "european_journal_government_economics",
-      "journal_name": "European Journal of Government and Economics",
-      "appointments": 28,
-      "priority_rank": 1972,
-      "publisher": "University of A Coruña",
-      "issn": "2254-7088",
-      "source_page": "http://revistas.udc.es/index.php/ejge",
-      "image_url": "https://revistas.udc.es/public/journals/18/cover_issue_590_en.png"
-    },
-    {
-      "journal_id": "fiscal_studies",
-      "journal_name": "Fiscal Studies",
-      "appointments": 28,
-      "priority_rank": 1974,
-      "publisher": "Wiley",
-      "issn": "0143-5671",
-      "source_page": "http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1475-5890",
-      "image_url": "https://media.wiley.com/journal/01435671-cover.jpg"
-    },
     {
       "journal_id": "journal_1977",
       "journal_name": "International Archives of Occupational and Environmental Health",
@@ -324,6 +174,16 @@
       "issn": "1570-7385",
       "source_page": "https://link.springer.com/journal/10843",
       "image_url": "https://media.springernature.com/w160/springer-static/cover/journal/10843.jpg"
+    },
+    {
+      "journal_id": "journal_southeast_asian_studies",
+      "journal_name": "Journal of Southeast Asian Studies",
+      "appointments": 26,
+      "priority_rank": 2065,
+      "publisher": "Cambridge University Press",
+      "issn": "0022-4634",
+      "source_page": "http://journals.cambridge.org/action/displayJournal?jid=SEA",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/2/25/Journal_of_Southeast_Asian_Studies.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
     },
     {
       "journal_id": "journal_tax_administration",
@@ -554,6 +414,16 @@
       "issn": "0019-4670",
       "source_page": "https://link.springer.com/journal/41775",
       "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/41775.jpg"
+    },
+    {
+      "journal_id": "journal_2127",
+      "journal_name": "Information Research",
+      "appointments": 24,
+      "priority_rank": 2127,
+      "publisher": "",
+      "issn": "",
+      "source_page": "https://publicera.kb.se/ir",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/ae/2018_Inf_Res_logo.gif/330px-2018_Inf_Res_logo.gif?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "journal_id": "international_journal_asian_studies",
@@ -1004,6 +874,136 @@
       "issn": "1095-6298",
       "source_page": "http://www.alliedacademies.org/academy-of-marketing-studies-journal",
       "image_url": "https://www.abacademies.org/admin/flyers/academy-of-marketing-studies-journal-flyer.jpg"
+    },
+    {
+      "journal_id": "comparative_economic_studies",
+      "journal_name": "Comparative Economic Studies",
+      "appointments": 21,
+      "priority_rank": 2248,
+      "publisher": "Springer International Publishing",
+      "issn": "0888-7233",
+      "source_page": "https://link.springer.com/journal/41294",
+      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/41294.jpg"
+    },
+    {
+      "journal_id": "economia_journal_latin_american_caribbean_economic",
+      "journal_name": "Economia, the Journal of Latin American and Caribbean Economic Association (LACEA)",
+      "appointments": 21,
+      "priority_rank": 2249,
+      "publisher": "Brookings Press",
+      "issn": "1529-7470",
+      "source_page": "https://economia.lse.ac.uk/en/about/editorialteam",
+      "image_url": "https://storage.googleapis.com/jnl-lse-j-elaceaj-public/journals/1/journalThumbnail_en_US.png"
+    },
+    {
+      "journal_id": "european_journal_health_economics",
+      "journal_name": "European Journal of Health Economics",
+      "appointments": 21,
+      "priority_rank": 2250,
+      "publisher": "Springer International Publishing",
+      "issn": "1618-7598",
+      "source_page": "https://link.springer.com/journal/10198/editors",
+      "image_url": "https://media.springernature.com/w92/springer-static/cover/journal/10198.jpg"
+    },
+    {
+      "journal_id": "ier",
+      "journal_name": "International Economic Review",
+      "appointments": 21,
+      "priority_rank": 2251,
+      "publisher": "Wiley",
+      "issn": "0020-6598",
+      "source_page": "https://onlinelibrary.wiley.com/journal/14682354",
+      "image_url": "https://media.wiley.com/journal/00206598-cover.jpg"
+    },
+    {
+      "journal_id": "journal_2254",
+      "journal_name": "International Journal of Management Concepts and Philosophy",
+      "appointments": 21,
+      "priority_rank": 2254,
+      "publisher": "Inderscience Publishers",
+      "issn": "1478-1484",
+      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijmcp",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmcp.jpg"
+    },
+    {
+      "journal_id": "journal_2255",
+      "journal_name": "International Journal of Management Development",
+      "appointments": 21,
+      "priority_rank": 2255,
+      "publisher": "Inderscience Publishers",
+      "issn": "1752-8240",
+      "source_page": "http://www.inderscience.com/jhome.php?jcode=ijmd",
+      "image_url": "https://www.inderscience.com/mobile/common/images/cover/scoverijmd.jpg"
+    },
+    {
+      "journal_id": "journal_statistical_research",
+      "journal_name": "Journal of Statistical Research",
+      "appointments": 21,
+      "priority_rank": 2258,
+      "publisher": "Bangladesh Academy of Sciences",
+      "issn": "0256-422X",
+      "source_page": "https://www.banglajol.info/index.php/JStR",
+      "image_url": "https://www.banglajol.info/public/site/jol-logo-green-small.png"
+    },
+    {
+      "journal_id": "jurnal_akuntansi_dan_keuangan_indonesia",
+      "journal_name": "Jurnal Akuntansi dan Keuangan Indonesia",
+      "appointments": 21,
+      "priority_rank": 2259,
+      "publisher": "Universitas Indonesia",
+      "issn": "1829-8494",
+      "source_page": "https://scholarhub.ui.ac.id/jaki/editorialboard.html",
+      "image_url": "https://scholarhub.ui.ac.id/assets/md5images/daa70d512981b94578bcdb4c6178e062.png"
+    },
+    {
+      "journal_id": "journal_2262",
+      "journal_name": "Museum Management and Curatorship",
+      "appointments": 21,
+      "priority_rank": 2262,
+      "publisher": "Taylor & Francis",
+      "issn": "0964-7775",
+      "source_page": "https://www.tandfonline.com/toc/rmmc20/current",
+      "image_url": "https://www.tandfonline.com/action/showCoverImage?type=current&journalCode=rmmc20"
+    },
+    {
+      "journal_id": "new_perspectives_political_economy",
+      "journal_name": "New Perspectives on Political Economy",
+      "appointments": 21,
+      "priority_rank": 2263,
+      "publisher": "CEVRO Institut",
+      "issn": "1801-0938",
+      "source_page": "http://nppe.libinst.cz/",
+      "image_url": "https://nppe.eu/public/journals/1/pageHeaderLogoImage_en.png"
+    },
+    {
+      "journal_id": "romanian_economic_business_review",
+      "journal_name": "Romanian Economic Business Review",
+      "appointments": 21,
+      "priority_rank": 2267,
+      "publisher": "Romanian-American University",
+      "issn": "1842-2497",
+      "source_page": "https://rebe.rau.ro/editorial%20board.html",
+      "image_url": "https://rebe.rau.ro/mm_entertainment_image.jpg"
+    },
+    {
+      "journal_id": "journal_2269",
+      "journal_name": "Software Impacts",
+      "appointments": 21,
+      "priority_rank": 2269,
+      "publisher": "Elsevier BV",
+      "issn": "2665-9638",
+      "source_page": "https://www.journals.elsevier.com/software-impacts",
+      "image_url": "https://ars.els-cdn.com/content/image/X26659638.jpg"
+    },
+    {
+      "journal_id": "asean_journal_hospitality_tourism",
+      "journal_name": "ASEAN Journal on Hospitality and Tourism",
+      "appointments": 20,
+      "priority_rank": 2274,
+      "publisher": "Bandung Institute of Technology",
+      "issn": "1412-2073",
+      "source_page": "http://journals.itb.ac.id/index.php/ajht/index",
+      "image_url": "https://journals.itb.ac.id/public/journals/5/cover_issue_1380_en_US.png"
     }
   ],
   "rejected_candidates": [
@@ -1976,6 +1976,41 @@
       "image_url": "http://www.aeaweb.org/assets/afc4f66/images/x-logo-black.png",
       "reason": "Generic publisher or social-network logo, not journal artwork.",
       "checked": "2026-11-15"
+    },
+    {
+      "journal_id": "yale_journal_regulation",
+      "journal_name": "Yale Journal on Regulation",
+      "reason": "Artwork is mostly black with no readable journal title"
+    },
+    {
+      "journal_id": "south_african_journal_business_management",
+      "journal_name": "South African Journal of Business Management",
+      "reason": "Generic publisher logo"
+    },
+    {
+      "journal_id": "south_carolina_journal_international_law_business",
+      "journal_name": "South Carolina Journal of International Law and Business",
+      "reason": "Generic law school logo"
+    },
+    {
+      "journal_id": "sporting_traditions",
+      "journal_name": "Sporting Traditions",
+      "reason": "Blank artwork"
+    },
+    {
+      "journal_id": "statistics_education_research_journal",
+      "journal_name": "Statistics Education Research Journal",
+      "reason": "Generic university logo"
+    },
+    {
+      "journal_id": "indonesian_journal_accounting_research",
+      "journal_name": "The Indonesian Journal of Accounting Research",
+      "reason": "Header too wide to identify journal at icon size"
+    },
+    {
+      "journal_id": "australasian_accounting_business_finance_journal",
+      "journal_name": "Australasian Accounting Business and Finance Journal",
+      "reason": "Generic university logo"
     }
   ]
 }
